@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Kamar 3 Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Kamar 3 Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/34/a7/a9/34a7a9cbe6f2ce6e0e832c37d3765c2f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+kamar+3+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Kamar 3 Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Kamar 3 Sederhana</strong>. Jika budget membangun rumah terbatas maka konsep Desain Rumah 8 x 12 Sederhana ini cocok untuk kamu terapkan dengan 2 kamar tidur Desain Rumah 8 x 12 Sederhana 18. Inspirasi Gambar Model Desain Rumah Sederhana.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/3f/fa/9e/3ffa9e19b727facad12ee00da0b09f82.jpg" alt="Sketsa Denah Rumah Minimalis 3 Kamar Tidur 3d Denah Rumah Desain Rumah Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJOBI-CGxnr-PoNIGc36D3bhdLkFqXdEf7uUXJvCdHngtWpn71Tqrv295xeT_bz2Qqr8M';">
+        <figcaption>Sketsa Denah Rumah Minimalis 3 Kamar Tidur 3d Denah Rumah Desain Rumah Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        50 Ide Desain Rumah Modern Sederhana 3 Kamar Yang Belum Banyak Diketahui 58 Model Desain Rumah Modern Sederhana 3 Kamar Paling Populer di Dunia 36 Arsitektur Desain Rumah Modern Sederhana 3 Kamar Terbaru dan Terbaik. Itulah dia beberapa model denah rumah mungil 3 kamar tidur yang dapat kami sampaikan kali ini. Denah rumah yang satu ini memiliki model yang sederhana.
+    </p>
+    <h3>Inspirasi Gambar Model Desain Rumah Sederhana.</h3>
+    <p>Anda dapat membuat 2 kamar tidur utama dan 1 kamar tidur kecil. Dengan model minimalis yang simpel dan sederhana. Rumah Sederhana 3 Kamar Tidur Rumah sederhana yang akan kita tempati bersama keluarga melewati proses kehidupan bersama saling mendukung satu sama lain merupakan impian kebanyakan orang. Denah rumah ini memiliki dua taman depan dan belakang yang bisa membuat rumah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Modern Desain Rumah Modern" src="https://i.pinimg.com/originals/a8/d0/8f/a8d08fc055334ba054b176193403314a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfvBitnoIBuHh00yZsK-_n75Nz8II-7TN9Fw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis 1 lantai 3 kamar tidur dengan lemari built-in.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/df/4c/a4/df4ca4040fb77220502b149575c8cf43.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRolxWNuY8MJ5Z4BIqfdkGszdG9HZrVc05goQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah tugas sederhana menemukan 12 item untuk membuang 12 item untuk menyumbang dan 12 item dikembalikan ke contoh rumah sederhana 3 kamar tepat bisa menjadi benar-benar menyenangkan dan menarik cara cepat untuk mengatur 36 hal untuk foto desain rumah minimalis sederhana tapi mewah di kampung milik Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Denah Rumah 3 Kamar Tidur Ada Garasi Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/60/de/de/60dede26dce8941c1cd448b09b3e3840.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeDBg5JhrKYoUEoA2HvZVsdBGSeDBhNn10zLrXbYTxF3Xo5n0LOHwGWa0VhgXttr_QW74';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Sederhana Tapi Indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Desain Rumah Bungalow Rumah" src="https://i.pinimg.com/474x/3c/0c/dd/3c0cdd4f9532dffe3b9e3f0fa2d43e47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Fj2OSPWHP5Afz_y0LyLIxMB2lZuKqRs1vUB1OVdiUOPaFyQJ2dJaIpMIaBNPy00Skks';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah tugas sederhana menemukan 12 item untuk membuang 12 item untuk menyumbang dan 12 item dikembalikan ke contoh rumah sederhana 3 kamar tepat bisa menjadi benar-benar menyenangkan dan menarik cara cepat untuk mengatur 36 hal untuk foto desain rumah minimalis sederhana tapi mewah di kampung milik Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai 3 Kamar Tidur Https Space Made Com 368 Denah Rumah 3 Kamar Denah Rumah Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/11/d2/06/11d206e68a65da349e1e1d832f4b3a26.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiI0pLq-uEn4ZLRF-TXBEOJe1BUm-MduBdvqyhsdkztvAxfP3SmxZ_hQPLCw3yeVVYRHw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan model minimalis yang simpel dan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Tidur 1 Mushola Minimalis Denah Rumah Tata Letak Rumah House Blueprints" src="https://i.pinimg.com/originals/95/83/3c/95833c5e25a795d29cdbb25d587334f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSv8c67VEOVu0pqaTz3iSPKXRQo_xTd5aIxCTC-jcrKXxuT_g4Im0hv6tPbK1KDPddOo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan demikian kamar tidur akan terlihat lebih lapang dan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Denah Rumah 3 Kamar Ukuran 7x9 Paling Dicari Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/14/f8/fd/14f8fd3b2e9d891f12e34678cf187c17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZsPmo2Tuq2E0OzIt42zmoPebIt__qPQciw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>50 Ide Desain Rumah Modern Sederhana 3 Kamar Yang Belum Banyak Diketahui 58 Model Desain Rumah Modern Sederhana 3 Kamar Paling Populer di Dunia 36 Arsitektur Desain Rumah Modern Sederhana 3 Kamar Terbaru dan Terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Denah Rumah 3 Kamar Ukuran 7x9 Paling Dicari Denah Rumah Rumah Desain Rumah Modern" src="https://i.pinimg.com/474x/f2/b6/03/f2b60348ad697f47ac030084dbc86757.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPPjQY6qXydMT1yL9zA1G6s-TGJQuKtD2mVA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah yang satu ini memiliki model yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Rekomendasi Desain Rumah Sederhana 3 Kamar Terbaru Yang Cocok Unt Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/2a/78/e8/2a78e8a4310db4b73b00e0cd96418e58.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiiLLZldov8JYCZJM0hHFCiDHJXLNF0WAn9zrLSVgXQ_sVFc48AjUYMo2T_enCt08rUIA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika Anda berpikir untuk punyai rumah besar yang modern cantik dan mengesankan penuh bersama dengan bermacam elemen yang berbeda sebaiknya Anda berpikir ulang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Model Rumah Terbaru" src="https://i.pinimg.com/originals/0f/be/41/0fbe41cdf2c89e924acc665991980936.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-E24sb0IpipCEsmGYXHcUZfac_7b9n-6F6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Modern Sederhana 3 Kamar memberikan inpirasi unik guna desain rumah idaman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Denah Rumah Minimalis 3 Kamar Tidur Ukuran 6x12 Dengan Gambar Denah Rumah Minimalis 6x12 3 Kamar Tidur Terbaik Inspirasi Clip Art Baskin Robbins Desain" src="https://i.pinimg.com/originals/7c/a4/35/7ca435a79f7223577bbba9192505f7e5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv7DFYSYtUTxsXCHe7-ggrsB-6OMN-2JPOgoM4Eeowt7jE2xTN8C1yezGA8vwxM6nXX6w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika Anda berpikir untuk punyai rumah besar yang modern cantik dan mengesankan penuh bersama dengan bermacam elemen yang berbeda sebaiknya Anda berpikir ulang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berikut Rekomendasi Denah Rumah Minimalis 3 Kamar Ukuran 7x9 81 Contoh Desain Rumah 7x9 3 Kamar Terbaik 8 De Denah Rumah Rumah Minimalis Desain Rumah Kecil" src="https://i.pinimg.com/originals/ce/5e/c0/ce5ec0527189829c3e0725ad6cefdf13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs4Kz-TE0e7roXqsjUJpBUvtN9AGikqkcEYl_qlY2giQM0_RNJTEjKND4_xaQZo9ZTyoI';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Itulah dia beberapa model denah rumah mungil 3 kamar tidur yang dapat kami sampaikan kali ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Eps 27 Desain Rumah Modern Minimalis 9x12 3 Kamar Tidur Youtube Desain Rumah Rumah Modern Rumah" src="https://i.pinimg.com/564x/5c/09/04/5c0904996b73380f0171ab556b7fe1f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBFO5amZCUvNaBLp3Q76i3lv4AiK3l-Ax0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar model rumah simple di kampung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/564x/c0/f1/b7/c0f1b75283a5642b37e265c57e536ba4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrj3Pid3E4VIEpEgAy5xEh3ql6bXTZ65OwlAvFYNaga_ePq5F8Q_ll2oRxvJARDzCnjsk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah sederhana 3 kamar tidur Designplans Denah rumah sederhana 1 lantai 3 kamar tidur memberikan kenyamanan dan hemat dari segi kantong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Tidur 1 Mushola Dalam Rumah Terbaru Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/736x/c4/2d/fa/c42dfa23d37496ee165cae924e6ba6fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSogXrqXi2SJcE3K0E2f7w_vr9qDMwqxFLmOA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah 3 kamar tidur dengan 1 lantai ini dapat anda tiru lalu diterapkan pada konsep anda untuk membuat sebuah rumah minimalis yang modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Type 45 3 Kamar Terbaru Rumah Minimalis Ruang Keluarga Minimalis Denah Rumah" src="https://i.pinimg.com/originals/2e/3c/e1/2e3ce18a1eb1c1c7a0cdef6028c82231.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutskE7O2NrNOXwhw2NSWfO84idryjjmJxNFjeU77Tp0g4fGvRztHD8ub0Yi4PyzdDor4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Humdecor 104 Gambar Pondasi Rumah Minimalis Sederhana Denah Pondasi Rumah Minimalis 3 Kamar Huniankini Denah Pondasi Rumah 3 Ka Floor Plans Home Home Decor" src="https://i.pinimg.com/736x/c7/94/7a/c7947a7548d543cc42e9482565eeab87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStFUgdg0r76VReAER5u2ldOqU1AbQRxwmvSA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah 8 x 12 2 Lantai selanjutnya ini memiliki model desain yang tampak mewah dan minimalis dari depan Desain Rumah 8 x 12 2 Lantai 17.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tren Contoh Gambar Denah Rumah Minimalis 3 Kamar Tidur Inspirasi Contoh Gambar Denah Rumah Minimalis 3 Ka Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/564x/4c/59/8d/4c598db45bad93fe90c2cd2aef2562f3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZsYwtb_eTFDikxnWQDHhXhCUL2SP6VhkeIQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis satu lantai tiga kamar tidur ini dilengkapi dengan lemari minimalis built-in.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrsdsjjzaitilwbvztzv89ytbokdqgjkosrm0rdrzaaidazsisn Usqp Cau" src="/search?q=denah+rumah+3+kamar+ukuran+7x9&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+3+kamar+ukuran+7x9&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Pada lebih dari satu kesempatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah House Blueprints Denah Desain Rumah" src="https://i.pinimg.com/originals/bc/3c/cb/bc3ccb15046c9d7741ab662c115c9676.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnrcp7C7_LaspQznsZurP02yToGbKpJqeYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Rumah Sederhana Tapi Indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 3 Kamar Tidur Sederhana Denah Rumah 3d Denah Rumah Rumah" src="https://i.pinimg.com/originals/19/58/bc/1958bcb41f7f66fd1234a9be06e64589.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcve5bz1l7DZzgJEx0h5FoRPwoMTapDL4QTw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Baca dulu sejumlah inspirasi desain rumah kecil atau sederhana persembahan homify.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Sketsa Desain Interior" src="https://i.pinimg.com/originals/a0/ce/fb/a0cefbdb187d9fe201acf7f7def99773.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4zqMsV1Bwn6-KE2mLV-sDAMOxl9VQhkcAB3JTWHtf1vALJ91vZ9WF4LzwH2bLkV7Bsu0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah tugas sederhana menemukan 12 item untuk membuang 12 item untuk menyumbang dan 12 item dikembalikan ke contoh rumah sederhana 3 kamar tepat bisa menjadi benar-benar menyenangkan dan menarik cara cepat untuk mengatur 36 hal untuk foto desain rumah minimalis sederhana tapi mewah di kampung milik Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4 Aneka Denah Rumah 7x10 Kamar 3 Lantai 1 Minimalis Admin Bagikan Hari Ini Lebih Dari Satu Contoh Denah Rumah 7x10 Kamar Denah Rumah Rumah Minimalis Desain" src="https://i.pinimg.com/originals/89/a1/a0/89a1a04770aa196bbe270bf083ed6b7e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ27hD2fdKTd_tKWdxwj9mKjAUwkXIk0o2sSw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>GAMBAR DAN DENAH RUMAH 3 KAMAR UKURAN 7X9 model rumah sederhana tapi indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Contoh Desain Rumah" src="https://i.pinimg.com/564x/96/a4/b9/96a4b98815de4fa4ac2ee5200abf7d1f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGdL3p052Q1LWHlJ9CDx3WJwGSoRdiTJsWhQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Denah Rumah Minimalis 3 Kamar Tidur 1 Lantai 2021 Beserta Keterangannya Dekor Rumah Rumah Minimalis Rumah Denah Rumah" src="https://i.pinimg.com/originals/03/11/14/03111484bf460676f4c2ffe0fe40f2f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPGVsEiffLkwRaI7pprAs4sZO_6DPcok4TA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Sederhana 3 Kamar Tidur Rumah sederhana yang akan kita tempati bersama keluarga melewati proses kehidupan bersama saling mendukung satu sama lain merupakan impian kebanyakan orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/84/ec/c7/84ecc72feadad3a64062e2fcc438a81c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQK0-sdhv2o-8TYFyciNK9dP3ezBoEbYLNPw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah selain beberapa informasi diatas kali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Model Mewah Dan Istimewa Ukuran 6x7 M 3 Kamar Youtube Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/564x/f1/56/81/f15681aafe69cbad89de33565d490c21.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTto-NwZorB-YEzexcDpB-DKpySFx26ILnT5w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah sederhana 3 kamar tidur Designplans Denah rumah sederhana 1 lantai 3 kamar tidur memberikan kenyamanan dan hemat dari segi kantong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Denah Rumah 3 Kamar Tidur 1 Mushola Kenapa Tidak Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/a4/9b/61/a49b61f8a4699e6c7ccdde202cb8e54e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqBvptqU0MZfGgXVu2t7bov1F0YwJVr6OcUg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beberapa model rumah sederhana dengan 3 kamar tidur yang sering di gunakan dalam membuat rumah idaman adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketsa Denah Rumah Minimalis 3 Kamar Tidur 3d Denah Rumah Desain Rumah Rumah" src="https://i.pinimg.com/originals/3f/fa/9e/3ffa9e19b727facad12ee00da0b09f82.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJOBI-CGxnr-PoNIGc36D3bhdLkFqXdEf7uUXJvCdHngtWpn71Tqrv295xeT_bz2Qqr8M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis 1 lantai 3 kamar tidur dengan lemari built-in.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Denah Rumah Sederhana Terbaru" src="https://i.pinimg.com/originals/23/f4/cc/23f4ccf6edabf240c8b18fa41d5889f6.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdKSJNZpkiMwxbVT2tUrJaOl05VVUhnmQH3wZxN2l_vbMTZvHoWnbRKic689TFXOZCTg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Itulah dia beberapa model denah rumah mungil 3 kamar tidur yang dapat kami sampaikan kali ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 7x12 4 Rumah Minimalis Denah Rumah Rumah" src="https://i.pinimg.com/originals/5a/8d/02/5a8d02e07e39ee1756f10064c07af6f3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-mku1Oi78T5Hlk3HMSHvci-x3VhjL4PPvEQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah rumah yang satu ini memiliki model yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 3 Kamar Tidur Denah Rumah Minimalis 3 Desain Rumah Minimalis 3 Kamar Tidur 1 Floor Plan Design Sims House Plans Home Design Floor Plans" src="https://i.pinimg.com/564x/10/f8/03/10f8033cf7a4346b2c67558edf38f2f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2TPltFdVnJgji2r37V47JIiAlbUyFzWUtwnUXl1vSO5IYaDIENEOO_w2stcHvEtHlb5I';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Nah selain beberapa informasi diatas kali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana 4 Kamar Tidur 3 Denah Rumah Tata Letak Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/2d/57/15/2d5715c7572b677d2c53723a2d360506.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOuPBdMeLEoH1BNWF7H0A0nJgWUbDmymABSw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dari gambar Desain Rumah Sederhana 3 Kamar Lebar 6 Meter ini memiliki carport disebelah kiri dan taman disebelah kanan di depan teras rumah sedangkan terdapat sedikit bagian teras untuk penghubung ke area dalam rumahModel atapnya menggunakan model atap pelana dengan rangka baja ringan sdangkan dibagian teras mengunakan cor dak yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 1 Lantai 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Rumah" src="https://i.pinimg.com/originals/11/1d/d2/111dd25308b240e615a2beefeca38fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZEn_TfzXFKe9MSmM7lz0_hA3OhfZCuZOeffzr-UwmhbL3aGZvWz4-Gizyr0VFw8GBnQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana di kampung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Alejandra Chavez Di Interior Home Denah Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/07/79/9d/07799db209b0eb57e739b821880997a1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7PVOjX_Tgywz1Un-1WGnJYC_RZqZZvKJqNNpodohm3EjQ3gzP6PyzsJ3cNwijfBx0UGk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Gambar Rumah Minimalis Sederhana Gambar Rumah Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/71/ef/8d/71ef8d4b5039d2d9a1c93188087a30bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4VLw_6BzxeBpjHdEEbAHy9znRD7v0gPAWAud5UQ2NuIKvYieR2eGclHBwN6wo6qI8JIk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda dapat membuat 2 kamar tidur utama dan 1 kamar tidur kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wow Ini Dia Denah Rumah Minimalis Type 45 3 Kamar Terbaru Denah Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/ac/eb/e3/acebe3951f92fa81a481fd034fa3ae65.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTvJG0-bc656MM2nZX8blHeOqA1oKfpTlzsQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar model rumah simple di kampung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 3 Kamar Tidur Type 36 3d 3dimensi Denah Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/90/f8/8d/90f88d1beb25cf1cd8dac1ea5301ba35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpLkam-Ya3sI8NRj3YS77wH5BMUFuhzRHMQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 8 5x7 Dengan 3 Kamar Tidur Zidan Desain Youtube Desain Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/236x/30/7b/49/307b49cc3c64ab0dec35d146d1be7dbc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJASclLA5uG4dlRsWIEW-yPmgi_Ly_VQPEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah tugas sederhana menemukan 12 item untuk membuang 12 item untuk menyumbang dan 12 item dikembalikan ke contoh rumah sederhana 3 kamar tepat bisa menjadi benar-benar menyenangkan dan menarik cara cepat untuk mengatur 36 hal untuk foto desain rumah minimalis sederhana tapi mewah di kampung milik Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kecil Sederhana 3 Kamar Inspirasi Dekorasi Rumah 17 Gambar Denah Rumah Minimalis Keluarga 3 K Simple House Design Simple House Home Design Plans" src="https://i.pinimg.com/originals/83/e1/01/83e1017d70a5f3afafefe5cae359cc0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQrxBvArdfQDo9DagAovWHoJ0mzFYjJKz4NdslWe-hDmL0HqGXjR3IP0kEwdY713JUCY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Semoga beberapa model denah diatas akan dapat membantu anda menemukan denah yang cocok dan mudah anda tiru Dengan begini maka impian memiliki rumah idaman sederhana yang nyaman bisa anda dapatkan dengan mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 1 Lantai 3 Kamar Tidur 3d Rumah Minimalis Rumah Denah Rumah 3d" src="https://i.pinimg.com/564x/32/0d/9d/320d9dc9ffb617aafc2f2216f42790ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRMsNDGqa8hwt_9zagKphWLFuAt9TfzvafyV5oeq2zw0dKKnhoFolBvqnZs3kk9-jWA5k';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Sederhana Tapi Indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Model" src="https://i.pinimg.com/originals/f2/68/87/f268872803c9c4b5f0df4b3ec01dcad2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQ3SenP-RKSG23eNrdqcVV55ZwQx9id6nRw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya model rumah ini menjadi pilihan favorit bagi orang yang ingin membangun rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/564x/52/d5/d4/52d5d45b4b116939bd746a088c116acb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5QNi7_-eua9CV9NESvftkspzVbfHc-ecXwQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan model minimalis yang simpel dan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur 19 Desain Rumah Minimalis Desain Rumah Desain Rumah Minimalis Denah Rumah" src="https://i.pinimg.com/originals/b5/17/4c/b5174c88b6b4b13dbacfdf99cae0f938.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZzNv6QJwN_Nn19F4IV3tOkIjTu7IArv6Nw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>50 Ide Desain Rumah Modern Sederhana 3 Kamar Yang Belum Banyak Diketahui 58 Model Desain Rumah Modern Sederhana 3 Kamar Paling Populer di Dunia 36 Arsitektur Desain Rumah Modern Sederhana 3 Kamar Terbaru dan Terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 7x12 3 Kamar Tidur 2 Wc 1 Lantai Di Kampung Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/236x/e4/39/b2/e439b27b215fd097a5eec91bef20ad7f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-p1AgqK8ekdH-xz4sw071qstfB1xtQAqH2O-75DYtpKe1zvM5ADzEsMPY7pUyV-W2DDw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah minimalis 3 kamar tidur ini bisa menjadi contoh yang sempurna untuk anda yang ingin membangun rumah idaman untuk keluarga di atas lahan yang terbatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Minimalis Desain Gudang" src="https://i.pinimg.com/originals/43/f2/b5/43f2b58085d7383d962dae5fc226c4a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpuHHzgDFQQ35ezNHYFhzgd_bGSMTmGz7o0tMQPGsuTl-5xXrJOCiIc9MR4uT16_SJNsc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Itulah dia beberapa model denah rumah mungil 3 kamar tidur yang dapat kami sampaikan kali ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Perumahan Minimalis Perumahan Graha Purwosari Regency Type 65 Denah Denah Rumah Desain Rumah Kecil House Blueprints" src="https://i.pinimg.com/originals/a0/0b/db/a00bdb17c2d9baaa965a61c20bf60b90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJaKvBEFhh-CT3GAMFPEFKedE0UamEI_VWwQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah selain beberapa informasi diatas kali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 2 Lantai 2 Kamar Tidur 3d Denah Rumah Desain Rumah 2 Lantai Denah Rumah 3d" src="https://i.pinimg.com/originals/bd/54/b5/bd54b5629387f28518e9574c496ac13a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjrboBD-sVtSolSbwxL_LaTy94oyCSgznIg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bagaimana jika memiliki rumah yang mewah namun terasa sepi bahkan terasa tanpa adanya harmonisasi kehidupan di dalam rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctjgx9kr2lk Fwgg Xe1gxd2rqe0tr1j9pfsnqpsnb Tlqkq2if Usqp Cau" src="/search?q=desain+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Pada lebih dari satu kesempatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Denah Rumah 3 Kamar Tidur 1 Mushola 1 Garasi Oleh 20 Desain Rumah 3 Kamar Tidur 1 Mushola Desain Ruma Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/34/a7/a9/34a7a9cbe6f2ce6e0e832c37d3765c2f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp9CjCchysxdWx0M00_qWO_xgQEOzEh2iZig';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beberapa model rumah sederhana dengan 3 kamar tidur yang sering di gunakan dalam membuat rumah idaman adalah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-simple-minimalis-modern.html"><i>&larr; desain rumah simple minimalis modern</i></a>
+                                                                    
+                                        <a href="/desain-rumah-tanah-100-meter.html"><i>desain rumah tanah 100 meter &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

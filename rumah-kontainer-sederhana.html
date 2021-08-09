@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Kontainer Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Kontainer Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/98/08/75/980875bab2607a3466074a776ed80eb4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+kontainer+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Kontainer Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Kontainer Sederhana</strong>. Aplikasi rumah kontainer merupakan salah satu gambar rumah minimalis sederhana terbaik yang bisa diaplikasikan pada ruangan sempit. Rumah kontainer yang dibalut dengan aksen kayu di sekelilingnya hingga halaman depannya pun terbuat dari kayu.</p>
+            <figure>
+        <img class="v-cover ads-img" src="/search?q=truk+kontainer&amp;tbm=isch" alt="1" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='/search?q=truk+kontainer&amp;tbm=isch';">
+        <figcaption>1 from encrypted-tbn0.gstatic.com</figcaption>
+    </figure>
+        <p>
+        Eksterior dari kedua lantai tersebut tampak kontras sehingga membuat rumah telihat menarik. 111 Rumah Kontainer Box. Desain Rumah Kontainer.
+    </p>
+    <h3>Namun hunian idaman yang tetap gaya dan dapat dijangkau dengan harga yang murah adalah rumah kontainer.</h3>
+    <p>Ini adalah rumah berlantai dua dengan kombinasi tiga wadah dasar. Rumah kontainer sederhana Rumah kontainer sederhana. Pakai bantuan arsitek yang berkualitas. 112 Rumah Kayu Gubug.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 6x12 1 Lantai Sumber Snowpolodavos Com Denah Rumah Rumah Minimalis Desain Rumah Kontainer" src="https://i.pinimg.com/originals/04/db/95/04db9583e315a9dff5efb7b931ebba30.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicmJbyC1xH-sAij65V3c1brlGP7xoSwc7ng';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Kontainer Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Inspirasi Desain Rumah Kontrakan Sederhana Dan Modern Punya Container Architecture Desain Rumah Kontainer Rumah" src="https://i.pinimg.com/564x/a7/29/80/a729806f3e25c849a6e42cf15d32f900.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfPnLKbdJIdgrDonrg-ifV3eh3EmvtoW14_fGcoe6o6MYFbg7p2Nj2m1n7fTJJXgPsZN8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bangunan utamanya dibuat dari 6 kontainer sementara bangunan kedua adalah campuran dari rumah beton dan kontainer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Contoh Penerapan Rumah Joglo Di Hunian Modern Mewah Dan Antik Modern Rumah Kemewahan" src="https://i.pinimg.com/736x/ac/96/87/ac9687ff6da4603576b9ff9ec3aeea18.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKnLXFDJ9thIyQG0dFmJVSsaeg4aXmSBRLA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bangunan utamanya dibuat dari 6 kontainer sementara bangunan kedua adalah campuran dari rumah beton dan kontainer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ingin Punya Rumah Kontainer Simak Dulu Plus Minus Dan Tipsnya Ada Juga Ide Desain Rumah Peti Kemas Rumah Kontainer Desain Rumah Kontainer Desain Rumah" src="https://i.pinimg.com/736x/86/18/20/86182015ed28f16c43a9a27d72ec34fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLHfvwzAj98Tk9T0UrBL0rEYHokRI1K7OEoM0GzKG4j_vgW2QQcIfi6DmSq27TEajk2o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>114 Rumah Batu Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Mewah Terbaru Dan Sederhana Dizeen Arsitektur Modern Desain Rumah Kontainer Rumah Keluarga" src="https://i.pinimg.com/564x/fa/f4/e4/faf4e4e7e5f197679cff6f8b09177c6c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK29c_KDcDgqQsNvfV_j6zEL8pGy8JCG7aiA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut ini beberapa contoh desain rumah kontainer yang dapat kita jadikan inspirasi mari kita simak ulasanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Page Not Found Rumah Desain Rumah Desain Rumah Kontainer" src="https://i.pinimg.com/originals/05/7b/d9/057bd991335b9445a6740739afa2618a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiUsezQ51MH59Is39HSxrrYNTylaLnKxOhg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ukuran kontainer yang biasa digunakan adalah 20 ft standar 40 ft standar 20 ft high cube dan 40 ft hight cube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Denah Rumah Sederhana Minimalis Check More At Https Space Made Com 91 Denah Rumah Sederhana Denah Rumah Desain Rumah Kontainer Rumah" src="https://i.pinimg.com/originals/bd/59/b4/bd59b40038e2897a248f53559f4e72e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6VYHr6dlXkIaW-ytQ0I70-8LegWLUgspylw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>11 Contoh Konsep Rumah Unik Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Container Cafe 2 3d Model Cgtrader Rumah Kontainer Kedai Kopi Ide Dapur" src="https://i.pinimg.com/564x/72/6b/b4/726bb4e716a7f4d66c0aecf047e47372.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrbVjaahX6N1dEtwNXheVRCttke2UTbjvTuSOgyGsUo2N2VjdUE02nBGxFmC_XI0_Y40';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar diatas merupakan gambar dengan judul Rumah Kontainer Sederhana Yang diupload oleh Mietha Fanza dengan kategori postingan Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Warung Semi Kontainer Desain Inspirasi Warung Kopi" src="https://i.pinimg.com/originals/40/7d/b4/407db4006af28a6c06b1b4688b62cb92.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjB1Y32Hc2MQJuKLN0ae1sYd18bMeI4f1YmtWlHR1Mu7mxGAVTNUVYlxifvPwqACSEW8I';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>111 Rumah Kontainer Box.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Stop Your Shit Desain Eksterior Interior Kafe Rumah Kontainer" src="https://i.pinimg.com/originals/1f/28/b3/1f28b32fc7b90af3bc7dad9b56b61aaa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5W0VLnNV0EnGBu41cHbzz8SLVuLHqjMSyA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kontainer itu unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Yang Unik Mampu Mengkombinasikan Kontainer Dengan Pintu Sliding Atau Sejenis Nya Yang Bernuansa Unik Tidak Heran Distro Atau Cafe Me Desain Pintu Cocok" src="https://i.pinimg.com/originals/46/dc/6c/46dc6cc4151ffcdf8f1094b6adfde441.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx4O_5rl32-3Kg9tpGkgmX9d1CZeioi4-IfZpbL5k40UTnXQvv3sgvcSnBCQK6fAS3VFc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah ini menggunakan kontainer yang ditumpuk kontainer di tata sedemikian rupa dengan baja ringan sebagai rangka rumah agar tidak terjatuh atau roboh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Arsitektur Rumah Kontainer Desain Arsitektur" src="https://i.pinimg.com/originals/80/50/9d/80509d308baf67f7969832879d6a211f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmU-pTZE9XQZxfn87WBMGaCz3eWMFwc51QQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kontainer itu unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Booth Semi Container Dekorasi Interior Interior Desain" src="https://i.pinimg.com/originals/90/a8/70/90a870dbd2cc71f47d04cf5713efc1b6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLdt9i69Bu3sJA9EtDadbLgD39vu9PnuWBVQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Salah satu keuntungan memiliki rumah kontainer adalah mudah dipindahkan namun pastikan lebih dahulu ya apakah lokasi yang baru memadai untuk pembangunan rumah kontainer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Oferta Strozowek Arsitektur Arsitektur Hijau Rumah Kontainer" src="https://i.pinimg.com/originals/b2/41/39/b24139cab09ca70ff4c92e8028baab25.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmsLW3WXXd2maj71WiXKgIlxUaTHVOn-TJg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kontainer memang sengaja di desain dengan minimalis sehingga terlihat lebih sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="17 Contoh Denah Rumah Minimalis 2020 Modern Nyaman Dan Sederhana Denah Rumah Desain Rumah Kontainer Rumah Arsitektur" src="https://i.pinimg.com/564x/d2/c7/bd/d2c7bdbca15f208282ba9e3377acffb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBc2T9Ku2xdgACJhjaq8tV8L4fyzMBap-SzNogWyMwwfB2sEZ1QS6mrFXLwwTKyLvJmN0';" />
+        <small>Source: tr.pinterest.com</small>
+                    <p>Desain rumah ini menggunakan kontainer yang ditumpuk kontainer di tata sedemikian rupa dengan baja ringan sebagai rangka rumah agar tidak terjatuh atau roboh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas De Campo" src="https://i.pinimg.com/originals/69/c6/af/69c6af1cd3eb115198815427d9b90a87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4pgOadN53TX4XPRa_Hz4VDE33pbP0sjo7Rw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kontainer ini sebenarnya terdiri dari dua bagian yang dipecah dengan halaman di tengah-tengah membuat desain rumah ini cocok untuk keluarga yang memiliki anak kecil dan hewan peliharaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bangun Rumah Murah Biaya 25 Juta Edisi Komplit Dg Progres Testing Dana Youtube Membangun Rumah Rumah Rumah Kontainer" src="https://i.pinimg.com/564x/40/16/30/40163022796e2fb86c340748e1dd5800.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVApaRp0LmuCwyZyu-O_HYglEUpL8LwtlrGg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>114 Rumah Batu Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Shipping Containers For Sale In Melbourne Containerspace Rumah Kontainer Rumah Rumah Teras" src="https://i.pinimg.com/564x/1a/d6/08/1ad608783e789ba45d1f6822571267f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIlTeyIUXhOlIeGl9wYUj0F9uKtM0r7Tr2J1_8lG984JyHEzzDi9Af2Go1lJgghz5rrdg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah ini juga menyediakan ruang bagi tiga atau lebih anggota keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kontainer 2x6 Cuman 50jt Sudah Punya Rumah Youtube Desain Rumah Kontainer Rumah Kontainer Desain Rumah" src="https://i.pinimg.com/564x/40/36/3d/40363dd1eab32f17259850063a2d5a82.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ntyBCM-2CcyAUkIWx9npRzY5ab0JkPWXHp9_k8GTuKWIN3LJ_EmFBY_c1Mu9V04q8xs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aplikasi rumah kontainer merupakan salah satu gambar rumah minimalis sederhana terbaik yang bisa diaplikasikan pada ruangan sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai Type 120 Denah Rumah Rumah Minimalis Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/cf/f6/1a/cff61a3f45dc59b5b67fe88f3175a745.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Pd010IxKoXLmpeIiY2Lunr1t3eOEQHZV1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>SEMOGA SEMUA DOA HAJAT KITA DIMUDAHKAN TERKABUL.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=kontainer+plastik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=kontainer+plastik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Ukuran kontainer yang biasa digunakan adalah 20 ft standar 40 ft standar 20 ft high cube dan 40 ft hight cube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruko Minimalis Sederhana Modern Ruko Rumah Kontainer Minimalis" src="https://i.pinimg.com/originals/fd/cb/7d/fdcb7d43be9c39b00e4850c1850cb5f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU4Mt3Y_imWUApk3cvbV_8r-oA7TTpfEiGpw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pilihan tempat tinggal dengan memanfaatkan shipping container ini merupakan pilihan dan alternatif terbaik yang pernah ada untuk mengkreasi ruang hidup yang sangat unik dan menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Denah Rumah Sederhana Minimalis Denah Rumah Desain Rumah Kontainer Rumah" src="https://i.pinimg.com/originals/bf/57/ae/bf57ae37aaa4305e6c230c99393aac35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_dgpcnQnPXgFQcN1waKJc5eMUJghQ9LwJGg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bangunan utamanya dibuat dari 6 kontainer sementara bangunan kedua adalah campuran dari rumah beton dan kontainer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ingin Punya Rumah Kontainer Simak Dulu Plus Minus Dan Tipsnya Ada Juga Ide Desain Rumah Peti Kemas Dekorasi Luar Ruangan Rumah Kontainer Desain Rumah" src="https://i.pinimg.com/736x/1e/1f/c2/1e1fc2b908677c0a62d3949adb98326e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMunW17-IRI7U83Nx56QZ2PNbjAdrG5Vq2FJKf6TC77p8ZjoH9d4_q1DUEa9Xjgh8ozWM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah kontainer Anda akan dibangun dengan bagus dengan bantuan arsitek yang telah berpengalaman dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0812 8462 8080 Jasa Arsitek Rumah Sederhana Jakarta Selatan Harga Jasa Desain Rumah Klasik Modern Desain Rumah Kontainer Desain Rumah Arsitek" src="https://i.pinimg.com/originals/96/7a/36/967a36f38f81083c1742cb90b99fee13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQumxABb4TTMvfUrzdpzODXc06_nOoVCACfA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Kontainer Sederhana Sesuai Tanah Budget SILAHKAN VIEW LIKE SUBSCRIBE YA.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai 3 Kamar Tidur Desain Rumah Kontainer Denah Rumah Rumah" src="https://i.pinimg.com/originals/8b/35/78/8b35781a3a48297ac2ac713895203538.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSdpFcDfRZvamLUHp6yaOGULG3h7rJSH4RjlpLwxVxmVBfFofpObknXzwHtwpRJFVzLJE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah kontainer ini dipadukan dengan menggunakan aksen kayu yang ada di sekelilingnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sederhana 2017 Rumah Kontainer Rumah Minimalis Rumah Pantai" src="https://i.pinimg.com/originals/7e/15/bd/7e15bd5fadde62ab84bbfb663cd89634.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcbqBFKQLEyM5nbalMJGZfpVP3YRlH1lQNnxUDxZwg7tnT9jXMpzcHoGfYxHgpDM283DM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah kontainer Lantai 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Denah Rumah Sederhana Minimalis Check More At Https Space Made Com 91 Denah Rumah Sederhana Denah Rumah Rumah Desain Rumah Kontainer" src="https://i.pinimg.com/originals/0a/7f/3b/0a7f3b06c3e6ba7f5a6916239d4cbd32.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR50QRaHRU3exDUf-63kAA6_6YQFi_K8svb2Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kontainer memang sengaja di desain dengan minimalis sehingga terlihat lebih sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Inspirasi Terbaik Gambar Denah Rumah Sederhana Minimalis Desain Rumah Kontainer Rumah Minimalis Denah Rumah" src="https://i.pinimg.com/736x/f1/9f/ec/f19fec248e7fd21e0bae168671c2a59e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLmwO5a4GfNEtbPNciCq9qboZCveqbhYpTORwManL35_gVXY5UKOZMsnoWWGhk3rDeoU';" />
+        <small>Source: gr.pinterest.com</small>
+                    <p>Desain rumah ini menggunakan kontainer yang ditumpuk kontainer di tata sedemikian rupa dengan baja ringan sebagai rangka rumah agar tidak terjatuh atau roboh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Rumah Minimalist 50 Denah Rumah Minimalis 3d 3 Kamar Tidur 2 Lantai Dan 2 Kamar Tidur Denah Lantai Rumah Denah Rumah Rumah Kontainer" src="https://i.pinimg.com/originals/27/e4/42/27e442a53effc23fc630ce23847ee318.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYNkmNr_xR6dTwJn6Ab3YiDhA3xMKeQLY3Rw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar diatas bisa anda unduh gratis dengan mudah dan cepat silahkan tekan tombol download dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Call Wa 0813 4381 2803 Harga Office Container Container Office Surabaya Kantor" src="https://i.pinimg.com/originals/35/db/15/35db155663222ce2237afa05ee5ecbb0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdS1CEfYXr4j6ujpEqkgQgT5NyGgwgWZ8Rzw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>113 Rumah Atap Corong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Contoh Denah Rumah Minimalis Modern Nyaman Dan Sederhana Arsitag Denah Rumah Rumah Arsitektur Modern Rumah Arsitektur" src="https://i.pinimg.com/474x/b8/ae/6e/b8ae6ed9ce047bbc9c1458201b1b613f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY9Dba1rBfZQGSZDrxKO42-OcTuqlaf8cAV_vlHgLIYWy-uakc-CPI5B1GrG9gLw5t9ok';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kami pusat pembuatan kontainer modifikasi modifikasi kontainer bekas siap melayani seluruh Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Desain Rumah Kecil Rumah Kontainer Dekorasi Rumah Pedesaan" src="https://i.pinimg.com/564x/0a/18/c9/0a18c9ce8854142a80566a180cb480c8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj5qwTrf-y1jkzGhrrkH0PAV3e4Z_Hy5qqo7RfoUrudKDGh5WzYfFi0eIJCJHS3YOne84';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Namun hunian idaman yang tetap gaya dan dapat dijangkau dengan harga yang murah adalah rumah kontainer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Contoh Fasad Rumah Minimalis Dan Modern Terbaru Dizeen Desain Depan Rumah Desain Rumah Eksterior Desain Rumah Kontainer" src="https://i.pinimg.com/564x/4d/13/fd/4d13fdf677ab13923df5c9b9d1e056e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5y_592odCn6BdblidHkT7sDKCxbJY3DyaBA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun hunian idaman yang tetap gaya dan dapat dijangkau dengan harga yang murah adalah rumah kontainer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="B7f42357fceae518c4d9ab02acaa4de3 Jpg 1 024 1 024 Pixels Rumah Kontainer Desain Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/78/f1/7c/78f17cf77b69d96290f64072f833d4e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLimUmha5dQte34vo5JDa_vtFWBmj5p6DCu17lYgdodoIzfHjTcHDU5V5RRdMR83lWQk';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah ini juga menyediakan ruang bagi tiga atau lebih anggota keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Denah Rumah Sederhana Minimalis Check More At Https Space Made Com 91 Denah Rumah Sederhana Denah Rumah Desain Rumah Kontainer Rumah" src="https://i.pinimg.com/originals/3d/41/07/3d410758209c8f31f2d03d1195c2b063.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnpRdWCa6ax5KDPBcu1zMzA2vVbB7hZ5CeVw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana ini cocok bagi Anda yang sedang mencari rumah yang terkesan elegan dan mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Denah Rumah Sederhana Minimalis Check More At Https Space Made Com 91 Denah Rumah Sederhana Desain Rumah Kecil Denah Rumah Desain Rumah Kontainer" src="https://i.pinimg.com/originals/d4/9d/0e/d49d0e01b91b522e4a5dcbd4d49ca134.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJaVPVs6BU-3cOF8HvF28fJf79ZHZM2Gg8DtNi12wTu4IveptXC071K2TvtmSziyyM0W4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bukan hanya itu rumah kontainer yang biasanya berukuran kecil dan instalasi serta konstruksinya yang menggunakan tidak lebih dari dua kontainer seperti semacam upaya untuk mencapai gagasan hidup sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Gambar Denah Desain Rumah Minimalis Dengan 4 Kamar Tidur Denah Rumah Desain Rumah Kontainer Denah Desain Rumah" src="https://i.pinimg.com/originals/97/a3/4a/97a34a767087d92d1bd878e75e07cd4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbrIFyLZ2iffcPYaFpjDEK7GYsMeGRFSHiPg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski menggunakan susunan kontainer Will punya suasana rumah yang nyaman dan modern bak di hotel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tinggal Sederhana Dua Lantai Desain Rumah Kontainer Rumah Arsitektur Arsitektur" src="https://i.pinimg.com/736x/d2/e4/d8/d2e4d8182929e86ae7c2047a099b84b4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1D1s0yl40wmKvqioSVWH3sz5Txd8aAlTjxOAawVejqPiNMX9NNTXGOddzVUoxqjKdxCc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain dibuat dengan kontainer desain ini juga identik dengan atap tanpa genting dan berbentuk persegi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Arada Chaiwiwatpong Di Shop Design Rumah Kontainer Kedai Kopi Desain" src="https://i.pinimg.com/736x/d2/b6/3a/d2b63ace43fc66422c8366a8e788f0e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcIUjueMzq660B3fBx9W0TBxr8R1kP8PUgg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pakai bantuan arsitek yang berkualitas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Bimbim Varatrisa Di Loft Distribution Rumah Minecraft Sederhana Rumah Studio Rumah Kontainer" src="https://i.pinimg.com/474x/bc/71/a1/bc71a1c00df5dc3bf8ea7b186ca43283.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA26V1XKcllS3dVv1Nm_kxF3nYdqFe2L492g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bukan hanya itu rumah kontainer yang biasanya berukuran kecil dan instalasi serta konstruksinya yang menggunakan tidak lebih dari dua kontainer seperti semacam upaya untuk mencapai gagasan hidup sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Kreatif Rumah Unik Dari Kontainer Desain Rumah Kontainer Container Architecture Home Deco" src="https://i.pinimg.com/600x315/a6/63/aa/a663aa07d4c68a1babd635888f0378b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSePjVv5TJd8BKbV-feXS9SgSsDVDgSmnS0EA';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>085336164074 Rumah Kontainer Sederhana Sesuai Tanah Budget DJAYA KONTAINER.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Denah Rumah Sederhana Taman Depan Denah Rumah Rumah Kontainer House Blueprints" src="https://i.pinimg.com/564x/ae/18/a9/ae18a9cea465c3ece5b5b54f0ea047e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8iOxvpSUURLxaPwILdSdCCwPxSmzgJS0nzzLKgUgyRqrn66mrgFtbdh0TwI8t4samir8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>1 Desain Rumah Unik Minimalis Sederhana Modern Terbaru dan Murah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Inspirasi Terbaik Gambar Denah Rumah Sederhana Minimalis Desain Rumah Kontainer Desain Rumah Bungalow Rumah" src="https://i.pinimg.com/736x/ec/1a/f3/ec1af36672e658b33e27dffe9320d2ec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAw48hGr9hiiGKNLy3UkggWw7J9lP22eVitPVSiZlkFVyR1yIYHKzuRsTC-pava9JWPr4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Kontainer Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kafe Kontainer C 2016 Brilio Net Desain Rumah Kontainer Arsitektur Kontemporer Desain Produk" src="https://i.pinimg.com/564x/80/bc/7c/80bc7c0e1b0bf8a16995070f76ca8a20.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnh92gTU6C6QLETbleWBBoefSRw2ay7lj5Rw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kemudian bagian halaman depan rumah juga menggunakan aksen kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Inspirasi Desain Rumah Kontrakan Sederhana Dan Modern Punya Desain Rumah Kontainer Rumah Desain" src="https://i.pinimg.com/564x/14/9c/1e/149c1e3a4b7166889625df3390d8af3e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR52TjVNr48slkmmazKO6wTQZhHO2DV9oWk9rRmyMBNAI5LQjtQoUkL-Yy8U4i9WSW_-I4';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Desain Rumah Kontainer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Shipping Containers For Sale In Melbourne Containerspace Rumah Kontainer Kedai Kopi Arsitektur" src="https://i.pinimg.com/originals/8e/34/c7/8e34c79ad3568f08f52b6ad6e6933683.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVq1d8B1QjK2zoRW5HiaYGSBKe-LKcpyiYdQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Perkiraannya untuk satu kontainer kamu membutuhkan 20-60 juta Rupiah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Denah Rumah Sederhana Minimalis Denah Rumah Desain Rumah Kontainer Rumah" src="https://i.pinimg.com/736x/ea/64/65/ea64656c412f1983ef74b75ffdc03d03.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwUoxc_OlUfYxnfbVCX9043eDhOdQjfDCaAw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Salah satu keuntungan memiliki rumah kontainer adalah mudah dipindahkan namun pastikan lebih dahulu ya apakah lokasi yang baru memadai untuk pembangunan rumah kontainer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Fasad Rumah Tinggal 2 Lantai Di Lahan Tanah Ukuran 6 X 12 M2 Dengan Konsep Sederhana Dan Bentuk Yang Tidak Lazim Desain Fasad Desain Rumah Kontainer" src="https://i.pinimg.com/originals/98/08/75/980875bab2607a3466074a776ed80eb4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToY_5EL8QxbFpcBq_5dKrbEn7F8bQ5GGGnfA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ia pemilik rumah yang bangga dengan bangunan rumah yang ia miliki ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=truk+kontainer&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=truk+kontainer&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Banyak ide kreatif yang bisa dituangkan dalam desain ketika.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-mewah-kolam-renang.html"><i>&larr; rumah mewah kolam renang</i></a>
+                                                                    
+                                        <a href="/rumah-mewah-dijual-di-jakarta-barat.html"><i>rumah mewah dijual di jakarta barat &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

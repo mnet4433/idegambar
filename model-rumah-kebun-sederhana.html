@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Kebun Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Kebun Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/f7/f4/d3/f7f4d3f898975bac54ee9f0b4416b2e4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+kebun+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Kebun Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Kebun Sederhana</strong>. Pilih tanaman yang mudah perawatannya dan rimbun. Namun bahan bangunan dan atapnya harus berkualitas.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/be/06/2e/be062e501a43205c08093909a046cdc7.jpg" alt="Miniatur Rumah Pohon Sederhana Dari Stik Es Cream Desain Rumah Pohon Rumah Pohon Pondok Kebun" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDInxp3oy-uiZaWAdTzmMS0W89x60zRKOlzg';">
+        <figcaption>Miniatur Rumah Pohon Sederhana Dari Stik Es Cream Desain Rumah Pohon Rumah Pohon Pondok Kebun from co.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Hot Trend Model Rumah Pondok Kebun. Beberapa tips berikut ini membantu anda memahami bahwa sesungguhnya konsep desain minimalis tidak membatasi anda untuk mendapatkan model rumah sederhana tapi kelihatan mewah. Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru.
+    </p>
+    <h3>Pilih tanaman yang mudah perawatannya dan rimbun.</h3>
+    <p>Model rumah sederhana ini cocok bagi Anda yang sedang mencari rumah yang terkesan elegan dan mewah. Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana. Desain rumah kebun yang baik tak hanya enak dilihat tapi juga punya makna yang baik untuk sebuah keluarga. Inspirasi rumah kebun diatas menggunakan model taman rumah di lahan sempit dan elemen dekorasi modern yang tampil di dinding rumah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kontraktor Bangunan Surabaya Desain Rumah Biaya Murah Jasa Gambar Rumah Surabaya Tips Membuat Rumah Mu Rumah Dan Kebun Kebun Kecil Pertamanan Belakang Rumah" src="https://i.pinimg.com/originals/cb/46/e6/cb46e68352baf1b4d13e9cd9aaf107a2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCnEUHzzKv45LUxLZfKz0sPHwG_Tbqrf1Vug';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>16 Model Rumah Sederhana Tapi Kelihatan Mewah 16 Model rumah sederhana tapi kelihatan mewah 1 lantai yang akan membuat Anda bisa memiliki konsep rumah sederhana namun tampak elegan dan tidak membutuhkan banyak anggaran pembangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Miniatur Rumah Pohon Sederhana Dari Stik Es Cream Desain Rumah Pohon Rumah Pohon Pondok Kebun" src="https://i.pinimg.com/originals/be/06/2e/be062e501a43205c08093909a046cdc7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDInxp3oy-uiZaWAdTzmMS0W89x60zRKOlzg';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Eksterior Rumah Rumah Kayu Rumah Kebun" src="https://i.pinimg.com/originals/f7/f4/d3/f7f4d3f898975bac54ee9f0b4416b2e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVHgLzaHQ5gB43O3O89DfiYx1yHZPt3wAC6NpBd2wIzeyOUNNJ4fuxYdG_1Rt5zUDirMA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Disamping cantik dilihat sayuran yang Anda tanam juga bisa Anda masak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Bangun Rumah 30 Juta Saja Dijamin Jadi Dan Indah Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/236x/21/a3/4e/21a34ea6372efe4d0c850e85ecd4c82e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbe58X1w47xIQWgr52pqwT9uv_D_7p_FUCuA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain pemilihan bahan yang lebih minimalis dan strategis eksteriornya juga dihiasi dengan kebun hijau yang atraktif sehingga tampil lebih natural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Terbaru Contoh Rumah Kebun Desain Rumah Kebun Sederhana Rumah Kebun Rumah Desain Rumah" src="https://i.pinimg.com/originals/f1/f1/d1/f1f1d1edc046bb29bce6c34f2090b4df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREw0pj4Ecz-DCiFShEnw04UgIMkqY9Yo0oQIko8X6Cgr7v0nt8I8x3pVkZrOxIRBHNyDc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memanfaatkan dekorasi batu alam yang berbeda warna jalan setapak di landskap rumah kebun dan juga didekorasi dengan simpel tapi mampu menghasilkan corak yang klasik dan indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Tiny Houses For Living In Small Homes Home Ideas Hq Rumah Kebun Membangun Rumah Tiny House" src="https://i.pinimg.com/originals/3a/ad/38/3aad38ef5cdd0512cb6f5d3c3b5800b9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYCNA6xg04u3cShjK9qhfmT7Bfh51QXw0LHmZVRmRCWYzfc6Vmn8fh5G-6Gk6kcOB54lY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Menggunakan garis yang simpel dan bersih rumah kebun ini hadir di belakang rumah dengan elemen alami yang lugas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Minimalis Modern Panggungrumah Kayu Minimalis Modern Panggung Rumah Kayu Rumah Desain Rumah" src="https://i.pinimg.com/originals/5d/42/0d/5d420d7a5557d305ca9f8730bf9397ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3CNT6qVmvZjw7Vq8BEboxSvlfNGKzHpEBw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pilih Rumah Model Rumah Sederhana yang Indah dan Menawan Happy Living dengan Rumah Sederhana Bagi setiap orang tempat tinggal merupakan kebutuhan primer sehingga jika tidak dipenuhi maka akan mengganggu hidupnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Kayu Keren Desain Rumah Kayu Modern Mewah Rumah Kayu Minimalis Modern Rumah Kayu Arsitektur Rumah Pohon" src="https://i.pinimg.com/originals/bf/2f/a5/bf2fa5324446fd346678e60c17bc688c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0n27lejVVOQtV41nlqErFfrC0GyQEbGiWdQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beberapa tips berikut ini membantu anda memahami bahwa sesungguhnya konsep desain minimalis tidak membatasi anda untuk mendapatkan model rumah sederhana tapi kelihatan mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Teras Rumah Minimalis Beserta Taman Minimalis Terbaru Kebun Kecil Ide Berkebun Teras Taman" src="https://i.pinimg.com/originals/e2/11/52/e211528febed34bb79d1a956126d7128.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgIx5UEkz9gf-AjEP9bjvvyllaEE8cEqsJJw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Satun Rumah Kayu Arsitektur Rumah Kebun" src="https://i.pinimg.com/originals/dc/37/c4/dc37c4e0f277fbefcf89eea7b1c5e343.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIE_T4au9lOhs1tpp7J-ACDXBgL22BHoVQ9oti9-vimDkxUcaxAV92niJeqCV7NMdPNMg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kebun sebaiknya didesain sederhana mungkin untuk memudahkan perawatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Kobong Rumah Kebun Pondok Kebun Pondokan" src="https://i.pinimg.com/736x/5a/ce/1b/5ace1be9e4f81e8ee82911149ca90868.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqd73kk3Qu8Zu1RKF7z6JiX1_dK8mp_ZauGBRlsGUUUHmMznEKF-k9sBm79KYaU5A00yQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Gazebo Kayu Kelapa Murah Kayu Kelapa Di Kenal Kuat Dan Awet Di Segala Cuaca Dan Iklim Sangat Cocok Digunakan Untu Desain Rumah Desa Rumah Kebun Gazebo" src="https://i.pinimg.com/originals/78/ca/4d/78ca4d8f34785b59f5b39e0f3dfa7051.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYS0pSvxhfqyM--hIwud_rfgWRsj6CaqaDvQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kebun sebaiknya didesain sederhana mungkin untuk memudahkan perawatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Pembangunan Rumah Kayu Dan Gazebo Sesuai Budget Rumah Kayu Rumah Kebun Desain Rumah" src="https://i.pinimg.com/originals/29/f0/08/29f00834fe0849ddab96d839eb744a7e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRowqXJPGNOhp5BRESrP3so83id9TR-NAxtNYcj6ZGoWIsQYoOwPr0ym07IPr3_bEpHFGI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika Anda tertarik untuk menata kebun di rumah berikut beberapa gambar model kebun sayur di pekarangan yang bisa Anda jadikan referensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Rumah Minimalis 1 Lantai Mewah Nyaman Elegan Tampak Depan Warna Putih Bahan Kayu Alam Klasik Rumah Kebun Arsitektur Desain Rumah" src="https://i.pinimg.com/564x/73/8e/9d/738e9d2d20d0726c99b45a7a9230a44b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi_toqvlJXHuqgZ2lB1-8fMIFCi3V7t4bABQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hot Trend Model Rumah Pondok Kebun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Rumah Minimalis 1 Lantai Mewah Nyaman Elegan Warna Krem Dengan Kebun Yang Luas Terlihat Masa Kini Desain Atap Desain Rumah Kecil Rumah Minimalis" src="https://i.pinimg.com/originals/ae/1f/bd/ae1fbdb685bc35f30029b85fe40c1c1b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9US2uT8OwNa-mOdhjg0xCosdu6yOQpYikpVCcbfftX1gfg_spO2qNWs6hzoeJul92rsc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain inspirasi kebun sederhana terdiri dari beberapa bagian tanaman hijau rumah yang unik yang ditanam pada lokasi strategis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu 70 M2 7 X 10 Rumah Kayu Di Bandung Di 2021 Rumah Kayu Desain Rumah Pohon Rumah Kebun" src="https://i.pinimg.com/originals/6e/cb/d7/6ecbd7e355c3edc932c7266546ef1d47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwy5zwYaXcXqpjMa0EqLZhCrudvpoOoffrQw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Rumah Kayu Thai House Rumah Kebun" src="https://i.pinimg.com/originals/93/b0/fd/93b0fd769a8cfe88afbf3fae895518b7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqbtk6ylqWgOuvWJqBx_OFuk2NtCBoolAvW3MGaKZqRmBFSUijEiXlOsW9eUcf-tgT4NE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Malang Desain Rumah Ibu Pongky Desain Rumah Minimalis Desain Rumah Rumah Kebun" src="https://i.pinimg.com/originals/f8/93/fa/f893fa4e6d9cbddb8224387aad4b4809.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTag8d1aXjeRNOLCV_1Av_Cp9ChzJ7i4_ePww';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model kebun anggur sederhana seperti di atas juga bisa anda jadikan pilihan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctf2terpj7szxjokirghd Olbn2vpjlzkxowhtoinn5r2xgmy01 Usqp Cau" src="/search?q=pondok+kebun+unik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=pondok+kebun+unik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Model rumah sederhana ini memanfaatkan batu kerikil kecil sebagai elemen yang menutupi pilar pada pagar dan setengah pilar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Unik Gaya Jepang Terbaru 2016 Rumah Kayu Rumah Arsitektur" src="https://i.pinimg.com/originals/50/8d/82/508d82fb1fb33d8451df86dc933e8b9d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlj08a49kbZQw8L33yFnu94OpxoFKLIE2yCA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Rumah Minimalis Sebagai Pengganti Ruang Tamu Eksterior Rumah Teras Pedesaan Rumah Kebun" src="https://i.pinimg.com/736x/5f/67/00/5f670035d6d8bca9297c5661c3f81b47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIsNKuc27nbAISb7o2lnZqGObFKjPVLlkkA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hunian dengan suasana hijau akan membuat suasana lebih nyaman sejuk dan asri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Bagus Sederhana Gambar Rumah Bagus Sederhana Motif Karpet Lantai Ruang Tamu Rumah 75 Model Rumah Minimalis Home Fashion Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/69/39/37/693937cb2202f641bbdec966d693e542.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKi1Flmt9SX0_DqTOrRuZvOIndBrtAX9Skw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>53 bentuk model rumah minimalis sederhana modern di kampung desa 53 model desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Rumah Kayu Rumah Pedesaan Rumah Kebun" src="https://i.pinimg.com/originals/33/0a/d1/330ad1c4c6cf49880bd32cb28ac56e9e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYZXM-RdXnkmVnHQ2TbbmKWSlZy-TQWeJCzEDhePHI2k_WPagdfbuj4WqgoVwFB4M2jY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana ini memanfaatkan batu kerikil kecil sebagai elemen yang menutupi pilar pada pagar dan setengah pilar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Pohon Untuk Anak Tersayang Rumah Pohon Rumah Kebun Rumah" src="https://i.pinimg.com/originals/22/25/17/22251719f2222edd171d575a15a2ec31.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIVc71y1Ficc_BPaqMFbUS8l9Cu70k53QpEw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana ini memanfaatkan batu kerikil kecil sebagai elemen yang menutupi pilar pada pagar dan setengah pilar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Halaman Belakang Rumah Kebun Rumah Kayu" src="https://i.pinimg.com/originals/ef/4a/ac/ef4aac7ee4cf1f59119e1ae0bbd830b9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJMF1eykMy3V_FsCL0rtZWBXHkqgxCEgFqi3_4mdWQKSJpAaHBYJw6aamxey0HWpQygY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Time to get rid of tiredness finish working and relaxing with family in the family room and bedroom.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost Mewah Di Bandung Rumah Kebun Patio Desain Rumah" src="https://i.pinimg.com/originals/18/08/d3/1808d3fd6223f52dd5adcb951a7eac47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYYq-iHmmw5uM7BeRKtFarmp74ulQGxEyuxw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Templat yang dibuat berdasarkan tema savon ini menyediakan contoh konten untuk bisnis desain lanskap dan penitipan anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Rumah Kayu Arsitektur Rumah Kebun" src="https://i.pinimg.com/originals/95/d2/b6/95d2b62c2ef3a0dc92199b8e9735c774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7y_0MzTvkB1zlUra_BfcKjB-tWtxXaJ0BxwQtkX7ljyMPATRtJJkUmZpQi8fiHp-xcsY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Time to get rid of tiredness finish working and relaxing with family in the family room and bedroom.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Rumah Kebun Rumah Kayu Rumah Pedesaan" src="https://i.pinimg.com/originals/01/b7/aa/01b7aa17697c9d3278f86f4349cb379d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv_8mCsTqZfjTAvf8iXv8hHeXHedkVTQp9Uh1AVaGFwXDkhrhuJu5sqJwGScPtyGFkQq4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Kebun Anggur Sederhana Menciptakan hunian hijau bukanlah hal yang sulit dilakukan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Minimalisgazebo Minimalis Modern Kayu Jati Anda Masih Bingung Dengan Dekorasi Taman Atau Halaman Rumah Yang Masih Kurang Bagus Gazebo Rumah Kebun Kayu" src="https://i.pinimg.com/474x/55/ed/1a/55ed1a56ba726c2c9cb60213f4abe2d0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfJjgVEIsRrhDSvihWrDEAbwZAFyM3ApHZXw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan begitu proses fotosintesis bisa berjalan dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="67 Desain Rumah Minimalis 2018 Desain Rumah Minimalis Terbaru Kumpulan 30 Model Rumah Minimalis Sederhana 2018 Dekor Rumah Home Fashion Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/49/e7/63/49e76317d09b17699283493305d08cf3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeT9UgGdr9sHNp48JfFCCBAX3ajM3s5xYPiA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model kebun anggur sederhana seperti di atas juga bisa anda jadikan pilihan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Ide Model Desain Rumah Minimalis Type 45 Modern Sederhana Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/32/bc/32/32bc3203016da363df5f693fa271b57b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMNh2zJYh_32Eh2hRa8kLyQnkKDpGekYHNA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Templat yang dibuat berdasarkan tema savon ini menyediakan contoh konten untuk bisnis desain lanskap dan penitipan anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+kayu+sederhana+cantik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+kayu+sederhana+cantik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah kayu minimalis di kebun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Rumah Kayu Rumah Kebun Desain Eksterior" src="https://i.pinimg.com/600x315/4f/3a/ed/4f3aed82a0a9fee4c7d11798791ca88d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm19nqmU2_1QCxfrGHdIHFw9MustRxuTIJhalzVGTkTZVTj-6MgiWrSSRcxXjj0b7OMYc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hunian dengan suasana hijau akan membuat suasana lebih nyaman sejuk dan asri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Carrie Claycomb King Di Home Rumah Kebun Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/73/1d/36/731d36fb5a61233e08b7c0ed60763421.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS285349cgZjeEgeUn0j63PIPs9dXbYdU6jqw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pilih pondasi dan material jenis kayu yang kuat misalnya kayu jati sehingga mengingat rmah model ini juga cocok di daerah yang rawan banjir.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Rumah Kayu Rumah Kebun Dekorasi Rumah Pedesaan" src="https://i.pinimg.com/originals/4a/77/c8/4a77c87277144f6ce05678a140ae87b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy2QVn__KcHkCq5xmQhfeRDnj-qeDibe3LFzU7PmLu-kM0KkADHizB-jo14rJh50Ir3Ac';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Having a dream home is probably one of the biggest dreams for every family.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah 9 Gambar Rumah Sederhana Nan Unik Desain Rumah Rumah Kebun Rumah" src="https://i.pinimg.com/originals/47/69/e0/4769e0ea4e81f86d99d4c9d9d5802191.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrgex0q7U98HwRcMg7JQsOPoKlK8sRAteI6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menggunakan garis yang simpel dan bersih rumah kebun ini hadir di belakang rumah dengan elemen alami yang lugas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="17 Desain Rumah Dengan Teras Dak Minimalis Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/originals/34/72/45/34724593bdeaabaacadcca5445ed42aa.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLR50jKouaWFDnHpYaPIWjjkYxOMekfIK36Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>16 Model Rumah Sederhana Tapi Kelihatan Mewah 16 Model rumah sederhana tapi kelihatan mewah 1 lantai yang akan membuat Anda bisa memiliki konsep rumah sederhana namun tampak elegan dan tidak membutuhkan banyak anggaran pembangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Rumah Kayu Rumah Petani Rumah Mungil" src="https://i.pinimg.com/originals/91/7b/bc/917bbcb0a071d5b83a9c7ed41429eb58.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_QrEFoN8ipEHzqoYsTQGblCaj6i0jWIla2R64q25ZQnBBRaEDG-DEpUkEr4A-2Cm5ObI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan begitu proses fotosintesis bisa berjalan dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Halaman Depan Rumah Joglo Minimalis Rumah Kebun Dekorasi Rumah Pedesaan Rumah Tropis" src="https://i.pinimg.com/474x/24/9f/ba/249fba1546a910af62666188e9e7eaa4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlp1HLIuml5YwsVuRVwbgwI-gW1uAQKOmy-w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah kebun sederhana gambar pondok di sawah pondok kebun sawit buat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berikut Rekomendasi Gambar Denah Rumah Minimalis Modern 2 Gambar Denah Rumah Sederhana Lantai Atas Rumahmen 29 Contoh Desai Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/736x/00/7d/11/007d1190a02298f20fc11ddbfa48e983.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlUG5TxZAuIUwTm7Jr9AW1Ss1jn_CerOqNA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kebun sebaiknya didesain sederhana mungkin untuk memudahkan perawatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Gazebo Jati Ukiran Masa Kini Model Desain Gazebo Halaman Rumah Spesifikasi Gazebo Jati Minimalis Trend Gazebo Glugu Terbaru Gazebo Rumah Kebun Desain" src="https://i.pinimg.com/736x/5b/0e/85/5b0e8580602844c5d5211205907439d0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJHKPaHX99YJcp7Gg7ZcrTHz-ol9hr1430Vw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Rumah Kebun Rumah Kayu Arsitektur Rumah" src="https://i.pinimg.com/originals/15/0f/a3/150fa33a47c57c31a6dc123e11be0f3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEWWVMJqvUPAnzwYpgsG5W5vKqM7CBTqow5iDpg_Qk1v3w-v_xhVU59btmRoFPSkatbCM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain inspirasi kebun sederhana terdiri dari beberapa bagian tanaman hijau rumah yang unik yang ditanam pada lokasi strategis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kebun Minimalis Rumah Kebun Dekorasi Luar Ruangan Desain Rumah" src="https://i.pinimg.com/originals/2d/dd/f8/2dddf87d7ce2456846c6acf1421c4def.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSASqrPVMuoUAhwzch5MiViXH5S1qtyqabU-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Disamping cantik dilihat sayuran yang Anda tanam juga bisa Anda masak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Limasan Modern Minimalis Jual Rumah Limasan Kayu Jati Adat Jawa Harga Murah Desain Rumah Rumah Kebun Rumah" src="https://i.pinimg.com/originals/63/ba/d0/63bad0b067896fdcfdb57cefa6fdb7bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBQHFcysHRAUivYM2M00X1vDYmL_gyjRW6ul62JiH2UqahhQTHyYdNmKTroI1oUepYeV0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pohon anggur yang ditanam di antara tanaman hias membuat suasana semakin hijau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Limasan Ukuran 9 X 7 Rumah Rumah Indah Rumah Kebun" src="https://i.pinimg.com/originals/2f/50/e5/2f50e553c420f87a9adb091fe90b9c45.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo22UqKHo_zZye6sugFNNcTgUwuWfgcjLKcg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kebun sebaiknya didesain sederhana mungkin untuk memudahkan perawatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desain Rumah Minimalis Rumah Kayu Eksterior Rumah Modern" src="https://i.pinimg.com/originals/e5/62/30/e5623036b68ee7099108d61d3a23cffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4J5Y_sUkIljA9z5soYB5ErOI3CPLGYsisd0Qukrg5_I6aeRquXBcRypJ1UjFlZX692cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Tingkat Model Gazebo 2 Lantai Kayu Kelapa Harga Murah Desain Rumah Eksterior Gazebo Desain Produk" src="https://i.pinimg.com/originals/e0/33/d4/e033d4a019e7fa8e22ba9bf018285979.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFCs7OGK09iNCWP-soi2mFh44FTAp2pVj6ew';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi rumah kebun diatas menggunakan model taman rumah di lahan sempit dan elemen dekorasi modern yang tampil di dinding rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Rumah Kecil Modern Depan Rumah Kebun Kecil Ide Berkebun Desain Kebun Modern" src="https://i.pinimg.com/564x/d2/b2/18/d2b2185de8efcbfebd2ac610acc4a90e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-zNZmxtC3pKtd40GtZgedZ7YcExX1dZElH-3Mg6UiVMdRX7UjWFKyC2q20UionjYOjLo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Time to get rid of tiredness finish working and relaxing with family in the family room and bedroom.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Di Atas Kolam Ikan Model Minimalis Desain Terbaru Kayu Kelapa Atap Sirap Ulin Gazebo Rumah Kebun Rumah Indah" src="https://i.pinimg.com/originals/6d/7a/54/6d7a5400ffe7d0b2ad52aca276161091.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy020N0wXSAwpZigmjtsQTDBoksmczbGQslQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>16 Model Rumah Sederhana Tapi Kelihatan Mewah 16 Model rumah sederhana tapi kelihatan mewah 1 lantai yang akan membuat Anda bisa memiliki konsep rumah sederhana namun tampak elegan dan tidak membutuhkan banyak anggaran pembangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="200 Contoh Gambar Model Desain Rumah Minimalis Idaman Sederhana Modern Dan Mewah Renovasi Rumah Net Desain Eksterior Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/84/d0/68/84d068656f5ff7eac629eb37788bdf1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_tooUNtQoeCiYG10QZ_B4KX3z_2M-dfRR4NOprr7hJcBHp-y30cjKYb0nBQuKQYHAlc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana ini cocok bagi Anda yang sedang mencari rumah yang terkesan elegan dan mewah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-tampak-depan-samping-atas.html"><i>&larr; desain rumah tampak depan samping atas</i></a>
+                                                                    
+                                        <a href="/desain-rumah-simple-tapi-cantik.html"><i>desain rumah simple tapi cantik &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

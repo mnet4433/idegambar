@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Sawah Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Sawah Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/600x315/92/25/3d/92253d1b678fc5125fda1fe0c8dde877.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+sawah+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Sawah Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Sawah Sederhana</strong>. Selama ini istilah Rumah Mewah diatas sering dijadikan istilah merendahkan diri atau juga olok-olok untuk seseorang yang memiliki rumah sederhana atau biasa saja dan terletak di biasanya perkampungan yang masih memiliki banyak sawah. Denah rumah sederhana tapi mewah atau rumah indah di desa ini juga bisa dijadikan rumah penginapan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/90/00/40/900040d251598d2f84d661b99c82b946.jpg" alt="Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYmZGjqSJ8mg0PAg_IX-6E-vHPWX8HLH23qw';">
+        <figcaption>Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Rumah di Tengah Sawah Menjadi Impian Siti Badriah Muhammad Husni menyatakan impian rumah di tengah sawah memang menjadi mimpi dia dan Sibad. Rumah dengan Pemandangan Alam yang Indah Biasanya gambar desain rumah sederhana di desa memang tidak serumit hunian yang ada di kota. Dilihat dari luar fasad rumah tampak sederhana.
+    </p>
+    <h3>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</h3>
+    <p>Rumah itu berlokasi di Bekasi dengan pemandangan sawah hijau mengelilinginya. Cat bagian dalam rumah Siti Badriah ini didominasi warna biru sementara cat luar rumah. Gambar rumah di tepi sawah dengan pemandangan alam berupa tanaman padi pegunungan dan pepohonan. Hunian masa lalu sang artis tampak sangat sederhana dan berada di tepi sawah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=sketsa+gambar+pedesaan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=sketsa+gambar+pedesaan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Sawah Padi Yang Cantik Google Has Many Special Features To Help You Find Exactly What Youre Looking Pemandangan Pemandangan Yang Indah Alam Yang Indah" src="https://i.pinimg.com/originals/fd/6b/5f/fd6b5f34d75850c0fc5a2e0b71092358.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Qn_ECQv7mJl1i9rIobpfuFLBXqxE4YkM-g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah makan sederhana ala Jogjakarta dengan atap jerami dan lampu gantung klasik Desain rumah makan sederhana ala Jogjakarta 23.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1 Gambar Denah Desain Rumah Minimalis Mewah Pinggir Sawah Desain Rumah Minimalis 2019 Desain Rumah Minima Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/564x/c1/55/59/c15559d7b7f977be8114f581c3044d93.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzhs1TwDOTX5kqsWWKsPDvvquSZBbzSKzoF8tNfleyCmFN7O5oiYCz9wwa7Ttj6AbdVb0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah makan di tepi kolam ikan tempat yang asyik untuk keluar dari rutinitas harian Desain Rumah Makan Sederhana Menarik Ada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Modern Bentuk L Deagam Design Lingkar Warna 15 Inspirasi Desain Rumah Minimalis 1 Lantai Contoh Model Atap Rum Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/0c/d7/90/0cd790cf229a0be5d52094428e6b9fcd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr6ePoU3Q9RtIUnSeuKadYgsQQkh6EyZJUl1-ned3Dg7tl-F4-NXKpwrGdHypcqmjdNLs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kedua orang tua Siti mendiami rumah tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Model Rumah Minimalis Rekomendasi Langsung Dari Admin Youtube Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/564x/41/2c/8b/412c8b9feab69216bc6f4f4c69e6a4d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT7QVA6ecGW1r_ABST9qGjPgtoV0jN_xxVFQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wujud rumah milik Siti Badriah itu pernah didokumentasikan oleh Seleb Expose pada April 2019 lalu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Cara Membuat Gubuk Sawah Dari Stik Es Krim Youtube Kerajinan Gagang Es Krim Es Krim Kreatif" src="https://i.pinimg.com/originals/47/95/5a/47955a5900be7b8d939224d126a027dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnOa16lll6CkywC2_KtkSjVUzlKv6-u0p4w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penyanyi dangdut yang populer dengan lagu Lagi Syantik ini memiliki rumah sederhana dengan pemandangan sawah mengelilinginya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tinggal Harus Bisa Mewadahi Kebutuhan Penghuninya Lahan Terbatas Dengan Lebar 6m Dan Panjang 14m Ini Bisa Mewadahi Semua Kebutuh Rumah Instagram Ruangan" src="https://i.pinimg.com/originals/ac/8a/10/ac8a10501ff7feade0dbeed60531fcbf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHXydoot3Vx4IwVl5sS3lwAXZvjYaI_xSHA';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Wujud rumah milik Siti Badriah itu pernah didokumentasikan oleh Seleb Expose pada April 2019 lalu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Alvita Bintaro 2 Lantai Furnished Depan Stasiun Jurangmangu Rumah Rumah Murah Alamat Jalan Garuda Kampung Sawah Ciputat Ba Rumah Lantai Desain" src="https://i.pinimg.com/originals/ee/c2/ae/eec2ae594e05340aeaefd064b7eaade8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwrC4hnO2UfoQ4nX7enpKUBq6B8cLenzV5tGVZhvTK7oEo2QekBiNsdUfOwcv-0Wl-dA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ia pemantik sasana dan tempat pembelajaran yang paling membuatku berkesan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Terbaru 28 Gambar Rumah Anak Tk Gambar Mewarnai Rumah Sederhana Contoh Gambar Mewarnai Menggambar Rumah Mudah Untuk Anak Tk Gambar Gambar Keren Langit Biru" src="https://i.pinimg.com/600x315/33/a3/4f/33a34f34800308d03a51942c0c6cf971.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjP47NbEH3EaBeQS42XXabA4qhafxyOWhIx17zaS73ob9KAmyM27GbUgEoeL-TnuZ9XL8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Simak ulasan informasi yang dihimpun dari video akun YouTube Trans7 Official Eksklusif Inilah Rumah Siti Badriah di Tengah Sawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dijual Komplek Bca Perumnas Cirebon Kota Komplek Bca Kecapi Harjamukti Raquo Cirebon Raquo Jawa Barat Rumah Kota" src="https://i.pinimg.com/600x315/92/25/3d/92253d1b678fc5125fda1fe0c8dde877.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoPvG41-TtQCXKWe8N2VdJAdbuPgYOST08w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kedua orang tua Siti mendiami rumah tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Minimalis Untuk Mewarnai Gambar Mewarnai Cara Menggambar Gambar Warna" src="https://i.pinimg.com/originals/95/e6/c9/95e6c96fcb746ed8c330cea3547df0e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8wUq1F0o6t26hU-2Qwnetbs9qt1SAQu4oVf4bm4CSgmde2ZS2OvkUkX7G6cHu9ZnOnpw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan Pemandangan Alam yang Indah Biasanya gambar desain rumah sederhana di desa memang tidak serumit hunian yang ada di kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tanah Pinggir Jalan Rembangan Dekat Green Hill Hotel Tanah Tanah Murah Alamat Rembangan Jawa Timur Hotel Tanah Jalan" src="https://i.pinimg.com/originals/ad/ed/e5/adede5fe5fe26449e0b72a37e83a28ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3u6RSjWRR9ciR7qXOR_17UK4im9gl8dR0w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cerita di Balik Rumah Sederhana Tengah Sawah Milik Pedangdut Siti Badriah Jadi Impian Sejak Kecil Jadi artis dangdut dengan honor terbilang fantastis siapa sangka Siti Badriah pilih bangun rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Pemandangan 2018 Google Has Many Special Features To Help You Find Exactly What Youre Looking For Cikgu Pemandangan Pemandangan Kota Gambar Pedesaan" src="https://i.pinimg.com/originals/07/fa/ac/07faac1a4cdfa1aec44e2bda0b0fc9f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQakOSz7iSnYfqtcc2DPgJveUE-fZgYyjEaAg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dilihat dari luar fasad rumah tampak sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 2 Lantai Krem Coklat Desain Rumah Minimalis Modern 2 Lantai Rhdesainrumah Model Desain Rumah House Styles House Architecture" src="https://i.pinimg.com/originals/1b/fb/79/1bfb79110be9fe0b2f57b814859a2568.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoNDa-FXHU0fxJIAQaKTb_kqJ33GN--6ruBw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Banyak hal yang sudah Sigab kerjakan untuk kemanusiaan dan perubahan tapi bukan berarti cita-cita inklusi sudah tercapai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/90/00/40/900040d251598d2f84d661b99c82b946.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYmZGjqSJ8mg0PAg_IX-6E-vHPWX8HLH23qw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cerita di Balik Rumah Sederhana Tengah Sawah Milik Pedangdut Siti Badriah Jadi Impian Sejak Kecil Jadi artis dangdut dengan honor terbilang fantastis siapa sangka Siti Badriah pilih bangun rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bali Outbound Coffee Break Bisa Dinikmati Pada Sebuah Bangunan Sederhana Dengan Pemandangan Alam Karangasem Dimana Bisa Melihat Coffee Break Bali Pemandangan" src="https://i.pinimg.com/600x315/d8/91/b3/d891b32eaa4ddc4ea1f6041ec196456b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9vhHiJP2c11MQvOIkBQDOya72CsNErXHpyg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah makan di tepi kolam ikan tempat yang asyik untuk keluar dari rutinitas harian Desain Rumah Makan Sederhana Menarik Ada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Gambar Rumah Minimalis Klasik Sederhana Gambar Desain 70 Desain Rumah Minimalis Klasik 1 Lantai Desain Rumah Model Home Fashion Rumah Minimalis Arsitek" src="https://i.pinimg.com/originals/da/15/33/da1533a91d77ffcdc8a3cac84a11f6d3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRixmAM490zbsi695kCk1FWfSKbzaP3L3HQBN29LPuwc_JIqrl-7QKzR8EUeyfU1Q6q9RA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wujud rumah milik Siti Badriah itu pernah didokumentasikan oleh Seleb Expose pada April 2019 lalu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Fasad" src="https://i.pinimg.com/736x/9a/05/91/9a05912ec1e29d4b37e4ad96b9ea47ec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpl27pR2f-rLKQg45HO_WbxpXiZA68Wpsew';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah tersebut merupakan hunian yang menjadi impian Siti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/originals/7a/20/6b/7a206bb4440a79f36e8e864b76631ad9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQOPkMpjIlsk72MAsw_Mzoae_BhrNzHsE8cUreA9JRR9AYk4Y9Zy6nXtXaDH9XgAoQbco';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penyanyi dangdut yang populer dengan lagu Lagi Syantik ini memiliki rumah sederhana dengan pemandangan sawah mengelilinginya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Pemandangan Rumah Pedesaan Gambar Lanskap Gambar Pedesaan Sketsa" src="https://i.pinimg.com/originals/04/c7/ed/04c7edca220f8b53596940e3cbcaa6a0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-IbwW2oROILC8BFK3lR1hKcPaTCol-CltjJA6Ruwq4FAmWkeMcKhcw0szpqwMISmWBqc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wujud rumah milik Siti Badriah itu pernah didokumentasikan oleh Seleb Expose pada April 2019 lalu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kontrakan Tipe 36 Daerah Kalasan Rumah Tempat Ibadah Penyewaan" src="https://i.pinimg.com/736x/db/f7/48/dbf7487ed0dfefb443c11121bebfabe9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLLXUYK0qpzHBq0Xlu2GYYQHJCsUFUwsMvQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ad Find What You Need At BookingCom The Biggest Travel Site In The World.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Rumah Toko Terbaru 2014 Black Bedroom Furniture Sets Home Design Ideas Desain Rumah Desain Rumah" src="https://i.pinimg.com/474x/01/d5/a5/01d5a526bc69311142629528e77a9b3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1vTkNJ3dlpbAQjcHlSHaO9jr7PmsdHjzPA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan Pemandangan Sawah dan Gunung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dikontrakan Rumah Minimalis Di Perumahan Nuansa Kedaung Dekorasi Luar Ruangan Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/5b/7a/47/5b7a47618ff2c1ea1e8c4c4ca1086634.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILhqRNYAsl0FsCcsJG53Cb_R5GhMGgyNg9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sangat sederhana view sawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="64 Desain Rumah Minimalis Dua Muka Desain Rumah Minimalis 101 Gambar Rumah Minimalis 2 Lantai Pojok Gambar Desai Desain Rumah Minimalis Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/29/ec/6c/29ec6c82d595abee54a35d083eb91023.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqCjqq_azta5M9ySDWFCxCAkKONwXSyfVTqtGTTiKL3QQOyRPFtLkzM9p5wSiVUCWiS3E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selama ini istilah Rumah Mewah diatas sering dijadikan istilah merendahkan diri atau juga olok-olok untuk seseorang yang memiliki rumah sederhana atau biasa saja dan terletak di biasanya perkampungan yang masih memiliki banyak sawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Property For Sale" src="https://i.pinimg.com/474x/53/74/8d/53748d4e92721ead2d535135d844baa4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPKPwuIypxj5wk-l97N4uC2H9PsC9RzT5xA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>TRIBUNJATIMCOM - Ternyata Siti Badriah punya sebuah rumah yang diimpikannya sejak dahulu rumah itu berada di tengah sawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 7 X 16 Di Dalamnya Sangat Luas Pemandangannya Langsung Sawah Youtube Home Fashion Denah Rumah Rumah" src="https://i.pinimg.com/564x/a6/49/4e/a6494e563ee4b90d6158a03a53c488a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmNw1C7gJJR56auDpQrkyPw6vq31AQW8iKf5_b3xW1Xbl034byswXNW9Ol1qDql7K5kM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah itu berlokasi di Bekasi dengan pemandangan sawah hijau mengelilinginya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Warna Cat Rumah Minimalis Merah Hitam Terbaik Kombinasi Warna Cat Teras Rumah Merah Hitam Warna Cat Tren Rumah Minimalis Rumah Warna Cat Kamar Mandi" src="https://i.pinimg.com/originals/ae/4e/39/ae4e391461c8e63abf8b3c35163b7060.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzp1ZTq1nxpVXEq_FwjLqMvMfrxjE1gE6o9SDpnsNM5eNFmBfH8XPV_6wlDnzowUl3cM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dilihat dari luar fasad rumah tampak sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menggambar Sawah Terasiring Rumah Dan Pemandangan Pegunungan Denga Art Lessons For Kids Oil Pastel Painting" src="https://i.pinimg.com/originals/b5/5d/0b/b55d0be58e5b79bb43b0a0bfbf77a56c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_RDQ27bo2IqRdMakt7-yHE6hGtraMtnCLw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah itu berlokasi di Bekasi dengan pemandangan sawah hijau mengelilinginya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rmh Sewa Mutiara Gading City Bangunan Rumah Penyewaan" src="https://i.pinimg.com/474x/f5/70/ed/f570edbce75c801b4e00a314672d398b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3T0aIVs_yS1JcNf5GQ3X9qcNhX1OyWIOwkg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan Pemandangan Sawah dan Gunung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bursa Kompetensi Venue Jawa Barat Indonesia In 2021 Farm Stay Model Homes Wooden House" src="https://i.pinimg.com/originals/19/d2/95/19d295e38c642ba2aeb2e05639fd43b4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbjiHDc7hePAtdq1X7B9jjGsMkChP1VlS3Bw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Makan Sederhana Menarik Jimbaran Lounge 29.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah New Minimalis Modern Dengan Pemandangan View Sawah Yang Sejuk Dan Asri Berada Dilingkungan Pemukiman Pendatang Dengan S Bahan Bangunan Bali Rumah" src="https://i.pinimg.com/originals/32/9e/1f/329e1f071d803c1b3bc46621413b1347.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ATfYLWVplQ2VW008WXH6CMwJDQBm7aPJdHVqKZZzf5WaCnaLPjGbAlhiQ7t6YMLY0Gw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah makan di tepi sawah denagn pemandangan padi yang menghijau yang memanjakan mata Desain Rumah Makan Sederhana Menarik Tepi Sawah 30.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Dekorasi Rumah Unik Rumahrumahunik Menambah Foto Pada Akaun Instagram Mereka Ada Yg Mau Tinggal Disini Golf Courses Landscape Art Landscape" src="https://i.pinimg.com/736x/72/65/63/7265635b000a4fb9ac3d47ae8c02d983.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTviBJ0jcYWWj1nAnQhC7X9mOrTM9MK28_MMy9U93ve2dOcxwMTPrUcXG6U35tJbArB5uc';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Desain rumah makan di tepi sawah denagn pemandangan padi yang menghijau yang memanjakan mata Desain Rumah Makan Sederhana Menarik Tepi Sawah 30.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menggambar Rumah Sederhana Dan Alam Pedesaan Dengan Crayon Oil Pastel Pedesaan Cara Menggambar Gambar" src="https://i.pinimg.com/originals/e5/1e/b2/e51eb24336ab7370d8c133a28a95e9aa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDlBa9huwTStT3wqcK_gK4kZpVaYvLwCdXO0w_JK-5VyBT9R-KZBIFmcPVj5heD12ZCHA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah tersebut baru dimiliki Siti Badriah pada awal tahun 2019 dan kini ditempati oleh kakaknya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menggambar Rumah Sederhana Dan Sungai Di Pegunungan Dengan Crayo Oi Proyek Seni Cara Menggambar Gambar" src="https://i.pinimg.com/564x/90/a0/6b/90a06b3ca73085fdea34bc42cbbb1482.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJWZQtKEFBE0CiS3zmPo5mys7CHi8vqVMVXK2KBcD9blRsINnIDUD0leGLNRBROWhR5-A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah di Tengah Sawah Menjadi Impian Siti Badriah Muhammad Husni menyatakan impian rumah di tengah sawah memang menjadi mimpi dia dan Sibad.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Kombinasi Cat Rumah Minimalis Warna Hijau Rumah Minimalis Rumah Hijau Rumah" src="https://i.pinimg.com/564x/83/47/24/834724c7b9b919ec33f4a3f8ade061f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu16rc5IijUNQ5DvuXHjCAaEeaSCdvfLQogQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Simak ulasan informasi yang dihimpun dari video akun YouTube Trans7 Official Eksklusif Inilah Rumah Siti Badriah di Tengah Sawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Populer 36 Warna Cat Rumah Hijau Kuning Berikut Rekomendasi Kombinasi Cat Rumah Warna Kuning Dan Ide Kombinasi Warna Cat Ruma Outdoor Decor Decor Wallpaper" src="https://i.pinimg.com/originals/3e/9c/5b/3e9c5b5eb52e303e41088ff171e2981b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJURDVAPzMB994G84JzEeiDq0CThyzMTAksw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah sangat sederhana view sawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Iqbalrm" src="https://i.pinimg.com/736x/eb/a0/0c/eba00c570c58ed5748eef3b9e1ed74d5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnLfLgLaDZfHsV8A88pno7PWw2OvndZF6Hrg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini mempunyai tiga kamar tidur ruang tamu dapur dan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Salah Satu Style Atau Gaya Rumah Yang Masih Jarang Ada Adalah Rumah Amerika Klasik Desain Rumah Gaya Amerika Klasik Yan Gaya Rumah Rumah Minimalis Rumah Besar" src="https://i.pinimg.com/600x315/82/34/c9/8234c9bb0a1b9a1ce09da944098bc9ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlum_FHpvroHk97fr3rX9y2HVeGokeKrKvMw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah itu berlokasi di Bekasi dengan pemandangan sawah hijau mengelilinginya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Tampak Depan Rumah Minimalis Batu Alam Rumah Minimalis Rumah Minimalis Rumah Batu Eksterior Rumah" src="https://i.pinimg.com/originals/5a/f7/b2/5af7b2599c2e0649f447daa9893d364f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwzUM0q71hAFJ3u95DbtLoTIRjiTD_hdmCQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dilihat dari luar fasad rumah tampak sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Sederhana Layak Huni Di Srengseng Sawah Jagakarsa Jakarta Selatan Jalan Raya Srengseng Sawah Srengseng Sawah Jagak Outdoor Decor Decor Home Decor" src="https://i.pinimg.com/600x315/b1/64/0e/b1640e7bd97b449348e8f753b4876214.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhgN4vcazKb33X1UQSfjEaAVTvHmUmyNeaRuBQ4tQEOYHw6ZTfeeL10MsDLeE7nr-uJM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dilihat dari luar fasad rumah tampak sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Dijual Ciputat" src="https://i.pinimg.com/originals/37/08/01/370801fa1209ab35362e625bd63040b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShewvmCnRo8Zz4bl-NSkOkdbS9cuJqatXhnA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lantas bagaimana penampilan rumah sederhana Siti Badriah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lihat Saja Latar Gunung Di Belakangnya Itu Apalagi Jika Anda Ingin Membangun Rumah Di Atasnya Tetapi Ada Solusi Rumah Minimalis Arsitektur Rumah Home Fashion" src="https://i.pinimg.com/originals/e2/6d/0a/e26d0a71df101b290e4cf61065b82cb6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlNbQQGPzLoSp1QH0auoVSJlS0lIcXziaeJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Intip Rumah Ibunda Luna Maya yang Ada di Bali Sederhana dan Ada di Tepi Sawah Intip kediaman ibu Luna Maya di Bali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Din" src="https://i.pinimg.com/564x/b3/31/66/b331660e0e87cadc95d817e91937647c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSICc_uAlLf-kp3MDoqN8V0Skyp7eQ2HtofxDw4xaUI1JaeLAvFJ1TLTdG9Zwr9dkyDK58';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lantas bagaimana penampilan rumah sederhana Siti Badriah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Mewarnai Gunung Dan Sawah Www Gambar Mewarnai Com Wallpaper Cantik Pemandangan Lukisan" src="https://i.pinimg.com/736x/ad/4e/33/ad4e33ae220b932cb8bfe8f85a3edb4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXDsvAN7HE5ZHoltFYWtjK4HP7h34NgNMcw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah dengan Pemandangan Sawah dan Gunung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=mewarnai+rumah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=mewarnai+rumah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah dengan dua pilar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gunung Sahari Rumah Minimalis Asri 2 5lt Jakarta Pusat Jalan Kartini Jakarta Pusat Sawah Besar Sawah Besar Jakarta Outdoor Decor Property For Sale Property" src="https://i.pinimg.com/originals/a3/ef/2e/a3ef2e4dc66a9de84410188343a5a9a1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEN6OpZGNeO1zwoUC7yQgIi8Cr2SAPfXzxqg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil di pinggir sawah itu bukan hanya tempat bekerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Sederhana Denah 6x10 Meter 3 Kamar Tidur Lantai 1 Full Tampak" src="https://i.pinimg.com/600x315/fd/c7/f5/fdc7f568170fbc4e0f92b667b43c1a2c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6UdN_-lEEXfUbVQWtK7MNj-tyJHsdx28oJMrt-H4EaKaT31WVIWYxwcXoqWmB7RIeRVg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Intip Rumah Ibunda Luna Maya yang Ada di Bali Sederhana dan Ada di Tepi Sawah Intip kediaman ibu Luna Maya di Bali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menggambar Rumah Pohon Anak Anak Bermain Dan Pemandangan Tepian Tel Cara Menggambar Gambar Rumah Pohon" src="https://i.pinimg.com/originals/b8/72/df/b872dfdc1cab8ba52438f640a2e07802.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoyuXk_xgfW5QdcyaaVgmDelb4lVJnfgLwYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 9x12 Minimalis Modern Youtube Desain Rumah 9 X 12 M 3 Kamar Tidur 2 Km Wc Mushola Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/54/9b/21/549b21a016e547faeba07a9ca6e9838b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqWlujh0M1z2-zuWLrVlru4sCqlHaFJ-wPw6Oq48ZV4I8SKDATgUCvixQoI-w-xK0SJo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wujud rumah milik Siti Badriah itu pernah didokumentasikan oleh Seleb Expose pada April 2019 lalu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 176 Sukaan 148 Komen Inspirasi Dekorasi Rumah Unik Rumahrumahunik Pada Instagram Rumah Ditengah Sawah Enak Kayaknya House Styles House Mansions" src="https://i.pinimg.com/originals/50/39/f1/5039f1aa9b179d594ecabd3fd3765d48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKiZyQYtdzq8X5-aBYa1tz9JgXg9Le9Vhcgax95rfrMDi7o7XmV7QgDZyok0CBN2SC-o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Menariknya rumah yang terletak di tengah sawah ini merupakan hunian impian sang penyanyi.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-minimalis-ukuran-5x7.html"><i>&larr; rumah minimalis ukuran 5x7</i></a>
+                                                                    
+                                        <a href="/rumah-minimalis-type-36-72.html"><i>rumah minimalis type 36 72 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

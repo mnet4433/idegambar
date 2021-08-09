@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Rumah Dan Toko Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Rumah Dan Toko Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/e2/f3/c5/e2f3c5aa28d873a0bf9b42fc115d4ee3.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+rumah+dan+toko+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Rumah Dan Toko Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Rumah Dan Toko Sederhana</strong>. Galeri Desain Rumah dan Toko Kelontong 20. Rumah dan Toko Banjar Negara- Jawa Tengah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/86/f9/a3/86f9a3629bbaf932140a0aea83ca7944.jpg" alt="Contoh Denah Ruko 2 Lantai 2015 Denah Rumah Desain Rumah Minimalis Lantai Rumah Desain" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyM-36VGhlcqY9yHcivfmsROy-2I7obQT_ScZJWGHsoiC0ynhnZCv2V7paamUL9713aqQ';">
+        <figcaption>Contoh Denah Ruko 2 Lantai 2015 Denah Rumah Desain Rumah Minimalis Lantai Rumah Desain from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Simak gambar denah di bawah ini. Jika daerahnya sempit pintunya sederhana. 45 Denah Desain Rumah Sederhana Bagus dan Nyaman 8 31 2020 Berikut ini 45 denah dan desain rumah sederhana yang inspiratif dan trendi dengan ragam konsep type 36 type 60 2 kamar ide lainnya Desain Rumah Toko Sederhana.
+    </p>
+    <h3>Untuk bagian toko anda bisa mendaptkan banyak jendela di bagian depannya sehingga dari jendela itu nantinya bisa memperlihatkan isi di dalam ruko toko anda.</h3>
+    <p>Apakah mungkin anda ingin benar-benar menggabungkan rumah dengan toko anda. Desain fasad rumah toko ini terlihat classy dan focal point. Di kota-kota besar telah marak desain rumah toko yang dibuat seminimalis mungkin. Denah Rumah Dan Toko 2 Lantai Desain Rumah 04 08 2019 Most Views 100 Contoh Desain Rumah 2 Lantai Yang Cocok anda Tiru 130 931 views 100 Contoh Denah Rumah toko Paling Keren Terbaru 92 176 views 100 Contoh Desain Rumah Kayu Terbaru 65 731 views 95 Model atap Rumah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Denah Rumah 12x8 Rumah Minimalis Apartemen Minimalis Denah Rumah" src="https://i.pinimg.com/originals/0e/2a/04/0e2a0470923fcd8bfd49776d8dd02819.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSbu4gi1TuXHYOHwcI5JWhzcdPMAOoM4SIdmrk-4TEY7xCPpg7qJWb2ifcHHZ79mam3o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain itu di bagian lantai satu bisa Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Modern Dengan Toko 1 Lantai Lebar 9 Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/fb/aa/ad/fbaaad38878f267b34aba89a5a49fd6f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBI_M2XT8Pv0X0kB_nnflLALBR5mKm3dvzw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di sini kita kan memberikan contoh denah rumah yang dilengkapi dengan toko di depan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Denah Ruko 2 Lantai 2015 Denah Rumah Desain Rumah Minimalis Lantai Rumah Desain" src="https://i.pinimg.com/originals/86/f9/a3/86f9a3629bbaf932140a0aea83ca7944.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyM-36VGhlcqY9yHcivfmsROy-2I7obQT_ScZJWGHsoiC0ynhnZCv2V7paamUL9713aqQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah toko minimalis sederhana begitu cocok untuk semua kalangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Denah Rumah Minimalis 3 Kamar Tidur 1 Lantai 2021 Beserta Keterangannya Dekor Rumah Rumah Minimalis Rumah Denah Rumah" src="https://i.pinimg.com/originals/03/11/14/03111484bf460676f4c2ffe0fe40f2f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPGVsEiffLkwRaI7pprAs4sZO_6DPcok4TA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nantinya bisa menyambung ke bagian dalam rumah anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Yang Saya Simpan" src="https://i.pinimg.com/564x/a6/36/90/a63690b12a6b9e43c1fbd6e089319651.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSelzIPZ_CKyeZBWROzoL80isjsXoXqvGqev_Mm4lprTtbZ97GwhXMx8yskM3T6VdqE-UU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Toko ukuran 4 x 3 m teras depan 2 x 1 m area parkir 3 x 4 m.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah 2 Lantai 5 Kamar Tidur Kolam Renang Home Fashion Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/42/62/0d/42620d0cd6fcc65e2f06605abbf06fc0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjvmcE00JO9r0yW3Sa9st7XL2HoFs8SkgNA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Memperhatikan sambungan ruangan toko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana Ukuran 6x6 Tampak Depan Terbaik Desain Rumah Minimalis Ukuran 2 Kamar Deagam Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/12/6e/3d126ea34e66af8d4c8b06231c62b775.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTbBsPMwZZdc3BsnE-4G_8CBrKKJNGag3oSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika lahan depan rumah sudah sangat terbatas kamu bisa mendesain boot seperti ini untuk dijadikan warung kelontong berukuran kecil Desain Rumah dan Toko Kelontong Minimalis Terbaru 21.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 003 Contoh Desain Rumah Tinggal 1 Lantai Di Lahan Denah Rumah Desain Rumah Rumah" src="https://i.pinimg.com/originals/68/a5/d1/68a5d16709e11a6d95de73679a6646d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloNbPsxl1-qj0wGnaS6ViASXC3rvZOsVGxA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lahan 6 meter bisa dibilang cukup sempit namun bisakah kita membuatnya menjadi rumah dengan toko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Sketsa Desain Interior" src="https://i.pinimg.com/originals/a0/ce/fb/a0cefbdb187d9fe201acf7f7def99773.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlya8drsA7EKhjv6176_BSXkeCmeOkYMuVg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Toko ukuran 4 x 3 m teras depan 2 x 1 m area parkir 3 x 4 m.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tinggal 10x26 M2 Building Plans House Architectural House Plans House Plan Gallery" src="https://i.pinimg.com/564x/56/06/4b/56064ba4eb274b8d91abda02d9ba72be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiqEd6pGlHHDF8muGOnJFR4FFfj4M8zb7VqAHt4J5emkoqnxAz4KogucBKPCdI-FygcCw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain itu di bagian lantai satu bisa Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="82 Denah Rumah Minimalis Ukuran 7x7 Dari Rumah Hook Minimalis Modern 2 Lantai Desainrumahminimalis Desainkanopirumahminima Rumah Minimalis Denah Rumah Rumah" src="https://i.pinimg.com/originals/80/35/67/8035676100017af0857886f0ba971c15.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2h0kYM88gJNTti7dXxrJmQwfCl9xZtz7f1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>45 Denah Desain Rumah Sederhana Bagus dan Nyaman 8 31 2020 Berikut ini 45 denah dan desain rumah sederhana yang inspiratif dan trendi dengan ragam konsep type 36 type 60 2 kamar ide lainnya Desain Rumah Toko Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sekaligus Toko Sederhana Youtube Rumah Sederhana Desain" src="https://i.pinimg.com/564x/d0/79/db/d079db1710cebb283ba7570394ea6702.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMdJVf48FlIRIqEaq2JEGX12LnFO6CCSu_aA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dan Toko Banjar Negara- Jawa Tengah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Cara Desain Rumah Ukuran 2x4 Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/97/3a/2e/973a2e3f4a53eeb17d4beb8b968eb4c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4GL0kK8kwR1Z_5-44vG1j3i1jMkTLoetOg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Toko yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x9 Youtube Di 2021 Desain Rumah Rumah Indah Denah Rumah" src="https://i.pinimg.com/564x/e9/ed/91/e9ed9185d2a42834e7553bb90032e1e7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0p3vw7OoyX80HyjN-Zho0e9TLJ39wQ5TsW16rH9SdbGTJu14Ea16drKmYzPVbTnKHL9Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lahan 6 meter bisa dibilang cukup sempit namun bisakah kita membuatnya menjadi rumah dengan toko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Dibawah Jalan Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/e1/4b/96/e14b96a01c98089700d14e171c76026f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzy5K0Vw7hOHr-kqyANOMOk_q0uXFWRKPG_g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda bisa membuat desain toko dalam bentuk ruko yang sederhana dan miniamlis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Posisi Hook Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/25/80/56/2580564611a93a779f43d2beded369ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFmytH631qZbqWhfgVsumnaQxBI2Kt0zTz3OpZdBjxC682ZIYrl_QNULRcTZLHoIze748';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dan toko ini terdapat 3 kamar tidur dan 2 kamar mandi luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+sekaligus+toko&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+sekaligus+toko&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Untuk bagian toko anda bisa mendaptkan banyak jendela di bagian depannya sehingga dari jendela itu nantinya bisa memperlihatkan isi di dalam ruko toko anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Selain Rumah Ada Juga Jenis Rumah Toko Atau Ruko Modern Yang Hingga Sekarang Masih Populer Di Tengah Masyarakat Desain Rumah Kontemporer Rumah Minimalis Desain" src="https://i.pinimg.com/originals/26/82/f6/2682f6a576c01647c70f554da44dbabf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSJ6egE1kUYwluzyoFz3Fu6J5g1owHonvgg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pasalnya lahan yang tidak begitu luas membuat mereka membangun rumah minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Satu Lantai Luas 144m2 4 Kamar Tidur Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/e3/b1/c0/e3b1c05408b793f1c90540bfa81bf3e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP1lT_0hoPXenp3mJ4r3B7vQygAS327OgEgue49ntUz-MD12xrqwPCEX_5_-SQRqLZO04';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep ini diambil juga dari konsep desain rumah mewah ala korea dengan toko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6 X16 M Dengan 4 Kamar Full Tampak Luar Dalam Rumah Desain Rumah Desain" src="https://i.ytimg.com/vi/y0OWfOnf2O4/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-P-OoVD18Jeec0yOlrzf5-9Bnw71M5v-Jcw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Apakah mungkin anda ingin benar-benar menggabungkan rumah dengan toko anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Rekomendasi Desain Rumah Sederhana 3 Kamar Terbaru Yang Cocok Unt Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/2a/78/e8/2a78e8a4310db4b73b00e0cd96418e58.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiiLLZldov8JYCZJM0hHFCiDHJXLNF0WAn9zrLSVgXQ_sVFc48AjUYMo2T_enCt08rUIA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk bagian toko anda bisa mendaptkan banyak jendela di bagian depannya sehingga dari jendela itu nantinya bisa memperlihatkan isi di dalam ruko toko anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Toko Mewah 2 Lantai Di Bandung Rumah Kemewahan Denah Rumah" src="https://i.pinimg.com/originals/53/25/64/5325644c103f1711d754f04456ac0e57.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUuxz6-gB4IwP_p_pDCHzbtH7Ts3gpGtwVzw';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Bentuk yang unik sangat cocok Anda gunakan sebagai desain cafe atau tempat pusat perbelanjaan oleh-oleh khas daerah Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layanan Jasa Gambar Rumah Rumah Toko 2 Lantai Di Tulungagung Desain Rumah 2 Lantai Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/f3/89/5e/f3895ec2bac5402655e6dc187e5fc71e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZao5-Ne39NwYJt1E9eyKcsDLZcKoqy13HhyTBobNo-hl_ttRJv0W99g9nOarkp6HpGmo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagi kamu yang tidak memeiliki lahan terlalu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/ca/6e/9b/ca6e9b8b5d83abdfcb6d27c585696925.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr094ncFfW0TKdJOmgkIVcNgPEn5vHVTNrWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>100 Contoh Denah Rumah toko Paling Keren Terbaru Pada kesempatan ini kami akan berbagi tulisan mengenai 100 Contoh Denah Rumah toko Paling Keren Terbaru yang sedang anda cari-cari untuk design rumah andatak tanggung- tanggung kami memberikan design ini hingga 100 gambaryang tentunya sangat dan paling lengkap untuk anda dari segala contoh yang anda inginkan jika anda tidak sabar berikut ini adalah 100 Contoh Denah Rumah toko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Toko" src="https://i.pinimg.com/564x/74/a9/6d/74a96d175a7592faf11758411efd7afd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdVsLdgKoNG7ImD_2uEWmmqFa9TZFfmjcq8kWqbkiqsNC4tUnxHXzxuzToH28GM2SXZc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Memperhatikan sambungan ruangan toko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ruko 2 Lantai 7x10 M Yang Minimalis Denah Rumah Desain Rumah 2 Lantai Lantai" src="https://i.pinimg.com/originals/6d/01/1a/6d011a63550703994ae6963dc1a969fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOyFVjMdjJgjl2mO64XKSZqcIj0Nad0OLi-UwX4DoW5-xxJqKVOw06xaONp-t1VveX4Rk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ini adalah salon rambut dengan suasana santai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai 3 Kamar Tidur Https Space Made Com 368 Denah Rumah 3 Kamar Denah Rumah Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/11/d2/06/11d206e68a65da349e1e1d832f4b3a26.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiI0pLq-uEn4ZLRF-TXBEOJe1BUm-MduBdvqyhsdkztvAxfP3SmxZ_hQPLCw3yeVVYRHw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ornamen kayu di bagian pagar dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 1 Lantai 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Rumah" src="https://i.pinimg.com/originals/11/1d/d2/111dd25308b240e615a2beefeca38fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZEn_TfzXFKe9MSmM7lz0_hA3OhfZCuZOeffzr-UwmhbL3aGZvWz4-Gizyr0VFw8GBnQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar Denah Rumah Toko Sederhana - Contoh denah rumah sederhana dapat membantu Anda merancang rumah Anda sendiri dengan sangat praktis menyenangkan dan tidak sulit untuk dilakukan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Denah Rumah 3 Kamar Tidur Ada Garasi Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/60/de/de/60dede26dce8941c1cd448b09b3e3840.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeDBg5JhrKYoUEoA2HvZVsdBGSeDBhNn10zLrXbYTxF3Xo5n0LOHwGWa0VhgXttr_QW74';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Warna yang elegan seperti kayu membuat desain toko dan rumah ini tampak sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ukuran Lebar 10 Panjang 20 Terupdate Denahom Contoh Rumah Minimalis Ukuran 8 10 Sederhana Denah Rumah 25 Inspirasi Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/ae/20/3dae2030fe92fbadf130f001b5851cf6.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTBxHjtLXnM9KCxaNEAJ3kFULNo73Z0Bbo7OO3JgWLiNULWA0tB1n5Y18Tds8QTZm5sT8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Toko ukuran 4 x 3 m teras depan 2 x 1 m area parkir 3 x 4 m.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Eksterior Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/originals/3c/1d/df/3c1ddfe8346b6f7bdcdf58a73bae0e8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP8prYsPp8JXBYcS0HiZMoRrcZlsUqulaRUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dan jika kamu tertarik dalam membuat rumah toko berikut ini kami sajikan beberapa desain ruko minimalis dan modern terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Toko Minimalis Sederhana Youtube Rumah Minimalis Denah Rumah" src="https://i.pinimg.com/564x/a6/89/54/a6895458b14ccf98caba0f7a6e3e7493.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScH5iItLFrsB8_R5NBMDJ43wYGgZdOiaiagNZ_OWWwdvp-VFtvIt8fMo7-tvtDNUTHUII';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dan Toko Banjar Negara- Jawa Tengah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Minimalis 1 Lantai Ini Merupakan Desain Rumah Gratis Yang Kami Berikan Kepada Bapak Yon Rumah Arsitektur Denah Lantai Rumah Desain Rumah" src="https://i.pinimg.com/736x/0b/d6/81/0bd6814c4cae1cf40f2ecdf73b9cb86b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIZfWs8M_1CRPYly7dkHC-mVm9NyOxAnTe6B-mVSIxSOTffgPdL92m1toCcdiwaou6U0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika lahan depan rumah sudah sangat terbatas kamu bisa mendesain boot seperti ini untuk dijadikan warung kelontong berukuran kecil Desain Rumah dan Toko Kelontong Minimalis Terbaru 21.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Toko" src="https://i.pinimg.com/564x/3b/9f/c1/3b9fc165b49c93dac884b4156582fca3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRShu8goNMbMRqG33Ph7sJkvLAuK4IUsV-f2lwID_FB04CoqlrxUVIcfVNDXbSVGWH6M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aspek kedua yang harus anda perhatikan dalam membuat denah rumah dan toko sederhana adalah anda harus memperhatikan sambungan dari ruang toko yang anda bangun karena hal ini sangatlah penting untuk dilakukan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="14 Denah Rumah Minimalis 2 Lantai Modern Sederhana 2020 Dekor Rumah Rumah Minimalis Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/e2/f3/c5/e2f3c5aa28d873a0bf9b42fc115d4ee3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgMGdp2u50GMMocBkEg8A0viNCkxvALGI2Hg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>45 Denah Desain Rumah Sederhana Bagus dan Nyaman 8 31 2020 Berikut ini 45 denah dan desain rumah sederhana yang inspiratif dan trendi dengan ragam konsep type 36 type 60 2 kamar ide lainnya Desain Rumah Toko Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ruko 2 Lantai 7x10 M Yang Terkini Denah Rumah Lantai Rumah" src="https://i.pinimg.com/originals/25/50/3d/25503defa35ebb1a7831b1884b4e5b45.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRK-Hp05On_VPY25heCIoIhWdYR3uCHETL8FTkFR1pjD-HpmYsbFfLBOzi6tNEfCGwp2o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah dan toko ini terdapat 3 kamar tidur dan 2 kamar mandi luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Perumahan Minimalis Perumahan Graha Purwosari Regency Type 65 Denah Denah Rumah Desain Rumah Kecil House Blueprints" src="https://i.pinimg.com/originals/a0/0b/db/a00bdb17c2d9baaa965a61c20bf60b90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJaKvBEFhh-CT3GAMFPEFKedE0UamEI_VWwQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah Rumah Dan Toko 2 Lantai Desain Rumah 04 08 2019 Most Views 100 Contoh Desain Rumah 2 Lantai Yang Cocok anda Tiru 130 931 views 100 Contoh Denah Rumah toko Paling Keren Terbaru 92 176 views 100 Contoh Desain Rumah Kayu Terbaru 65 731 views 95 Model atap Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Modern 1 Lantai Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/c3/e5/47/c3e547e8ee2c2bf27a1ce5fc990f1f1b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsLRS3rVWNq0DoE8j1N9EvsVpBRk7QqbzwEQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Fungsi yang dimiliki bisa saja tak hanya satu namun juga 2 fungsi yang berbeda dalam satu bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=desain+ruko+2+lantai+terbaik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+ruko+2+lantai+terbaik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Dan juga nama toko dan gunting emas membuatnya segera mengerti bahwa toko ini adalah salon rambut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Ruko 2 Lantai Sobat Interior Rumah Desain Rumah Tingkat Bawah Tukang Desain Rumah Desain Rumah Minimalis Plus Minimalis Rumah Minimalis Desain" src="https://i.pinimg.com/originals/f0/46/dc/f046dc1bb20285d7b09227519aa8a2ea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1f28go14dmV8qvcf762kO3bvafnn0240AIw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna yang elegan seperti kayu membuat desain toko dan rumah ini tampak sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 8x7 5m Tapi Mewah Youtube Rumah Minimalis Dekorasi Luar Ruangan Arsitektur" src="https://i.pinimg.com/564x/d4/c8/46/d4c84691e29f0c5aac8f5e9e69ba7939.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBIZ36tSp4NIpEYO8qQfSX5_LLUf9O6XFm5g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk warna anda bisa memilih warna yang netral seperti coklat abu-abu atau putih yang mencerminkan warna minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Gambar Denah Desain Rumah Minimalis Dengan 4 Kamar Tidur Denah Rumah Desain Rumah Kontainer Denah Desain Rumah" src="https://i.pinimg.com/originals/97/a3/4a/97a34a767087d92d1bd878e75e07cd4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbrIFyLZ2iffcPYaFpjDEK7GYsMeGRFSHiPg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk bagian toko anda bisa mendaptkan banyak jendela di bagian depannya sehingga dari jendela itu nantinya bisa memperlihatkan isi di dalam ruko toko anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Toko Minimalis Modern Ukuran 8x16 3 Kamar Tidur 1 Lantai Desain Rumah Kecil Desain Eksterior Rumah" src="https://i.pinimg.com/originals/0a/ac/43/0aac43c75156f707772c611de1f306f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYHL-p00c52rB0NsnlPSGKNa7UQ1WoXfDDhxWX6AZ34e9Kbhaq044lxdtX1MWers4k1LQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini adalah beberapa contoh desain rumah sederhana yang dapat Anda terapkan untuk hunian Anda sendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis" src="https://i.pinimg.com/736x/0d/fa/d1/0dfad1dabe7c386648adbaeb55ca6429.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbPHjxIsxR1TyO8EO74sfSSpUklV5Jbttzw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dan jika kamu tertarik dalam membuat rumah toko berikut ini kami sajikan beberapa desain ruko minimalis dan modern terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Ruko Minimalis Sederhana Rumah Desain Rumah Desain" src="https://i.pinimg.com/474x/6e/2b/43/6e2b434aa73f735a778d12bbc8edff7d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPy46CRUpTcbdRmBpeaMED7_cDikgSh5X0PQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Toko ukuran 4 x 3 m teras depan 2 x 1 m area parkir 3 x 4 m.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Ukuran 9x6 2 Kamar Tidur 1 Mushola Dan Hal Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/cb/91/f4/cb91f4c339daa59054eff1de3ed4af90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlmGruHIZH38etYgShjq8-UgvJk_2Jvp6vYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep ini diambil juga dari konsep desain rumah mewah ala korea dengan toko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Minimalis Desain Gudang" src="https://i.pinimg.com/originals/43/f2/b5/43f2b58085d7383d962dae5fc226c4a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGTu3V0J2aiTNU1hQSCXbbYfDMO0Nfqp3hw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan kata unik sederhana canggih ruang secara presentasi pintar namun dengan tenang menenangkan efek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/originals/c1/2e/95/c12e95dfef56c2409d13cfeb1c352dc2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTE1vgTKnaA5eHkxj2Dg_sWg4ZUybRShlIBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>45 Denah Desain Rumah Sederhana Bagus dan Nyaman 8 31 2020 Berikut ini 45 denah dan desain rumah sederhana yang inspiratif dan trendi dengan ragam konsep type 36 type 60 2 kamar ide lainnya Desain Rumah Toko Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Eksterior Rumah Minimalis 2 Lantai Desain Rumah 75 Model Rumah Minimalis 2 Lantai Sederhana Modern Tip Home Fashion Desain Eksterior Rumah Minimalis" src="https://i.pinimg.com/originals/ab/03/6e/ab036e5701a4bb4f31d310d37d99a7bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XVptgCuu_UrBWqk6V2sImEvYThYM2rtA7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dan jika kamu tertarik dalam membuat rumah toko berikut ini kami sajikan beberapa desain ruko minimalis dan modern terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Ideas Apartment Floor Plan Dimensions House Layout Plans Apartment Floor Plan Home Design Plans" src="https://i.pinimg.com/474x/d4/0e/08/d40e086e6e2305502a082d7257630019.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoe3Ntah8rgFjvC4TN_yxg_hbvWv5FIZcQ8Q';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Lahan 6 meter bisa dibilang cukup sempit namun bisakah kita membuatnya menjadi rumah dengan toko.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-mewah-jakarta.html"><i>&larr; desain rumah mewah jakarta</i></a>
+                                                                    
+                                        <a href="/desain-rumah-minecraft-simple.html"><i>desain rumah minecraft simple &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

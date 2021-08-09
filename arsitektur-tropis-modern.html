@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Arsitektur Tropis Modern
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Arsitektur Tropis Modern",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/bf/38/cc/bf38cca540cb808d6799cde9eff78163.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=arsitektur+tropis+modern",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Arsitektur Tropis Modern
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Arsitektur Tropis Modern</strong>. Bioklimatik menggambarkan suatu pendekatan desain bangunan yang diinspirasikan keadaan alam dan menggunakan logika yang berkelanjutan didalam setiap aspek suatu proyek memfokuskan pada. Apa itu Arsitektur Modern Tropis.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/30/86/13/308613ff4c336c8dc4040da49f597b76.jpg" alt="Desain Rumah Tropis Modern Desain Rumah Eksterior Home Fashion Rumah Tropis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2layHjBj4A6c40ftd0KW_NjGttaCHuSqYJCX43Zy5vIdThvoazbK_lBtVAmyYcQMd-UI';">
+        <figcaption>Desain Rumah Tropis Modern Desain Rumah Eksterior Home Fashion Rumah Tropis from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Arsitektur modern adalah sebuah sesi dalam perkembangan arsitektur dimana ruang menjadi objek utama untuk diolah. Merancang bangunan yang memiliki ruang yang efisien dan fungsional sesuai kegiatan yang terdapat di Pusat Pelatihan dan Pembinaan Pemain Muda Persebaya di Surabaya. Kami juga bergerak dalam desain baik untuk interior maupun exterior untuk rumah apartemen kantor dan komersial bisnis lainnya.
+    </p>
+    <h3>Arsitek biasanya memasukkan unsur ini ke dalam rumah sebagai dekorasi dan juga bagian dari menghadirkan unsur rumah tropis modern.</h3>
+    <p>Rumah yang Selaras dengan Alam Tidak usah heran jika arsitek merancang desain rumah modern tropis dengan tidak memindahkan pohon dan malah memasukkannya ke dalam desain. Contoh arsitektur tropis yang paling mudah ditemui adalah pada arsitektur rumah tradisional di Indonesia. Pengertian Arsitektur Tropis Modren BY BENNY ET 1004205099 Pemahaman Arsitektur Iklim Aritektur dan iklim dikenal salah satunya sebagai pendekatan arsitektur bioklimatik. Luas Lantai 2.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tropis Modern Desain Arsitektur Rumah Tropis Rumah" src="https://i.pinimg.com/originals/b7/36/88/b736885e898a43deae70790ac27d458a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY7DXQsq3XAlfzwN8s6HpF7PEZV_1pkRmzBA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Luas Lantai 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Home Design House House Design Rumah Tropis Tropicah House Concept Architecture Villa Design House Styles" src="https://i.pinimg.com/originals/e4/64/e0/e464e0ca5f6f1c8e239254b564d43dc4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFOB2gR-aS_XXOM1uLiFebFSRtDcp5rRT2rw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut data desain arsitektur rumah diatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Bapak Arnold Ii Di Jakarta Eksterior Rumah Modern Desain Rumah Desain Produk" src="https://i.pinimg.com/originals/d1/a1/ac/d1a1ac4c5acddb7a0ab038b3d66bdced.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREj2es5Ib5xuaig0UyN1FEJE8OWIM7y1SNuA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jasa Arsitek Desain Rumah Tropis Modern 3 Lantai di Setiabudi Jakarta.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Inspirasi Desain Rumah Modern Tropis Minimalis Di 2020 Home Fashion Arsitektur Arsitek" src="https://i.pinimg.com/564x/2d/60/51/2d6051aaee36f12ad5f5fd064cc1cba2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4IslhTLE2Lk8Ip3Jh3_wjNTh5sZ4pTjXuIg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami adalah jasa arsitek rumah tropis modern minimalis dan mediterania.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+tropis+kontemporer&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+tropis+kontemporer&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Prinsip Arsitektur Modern Tropis dilakukan beberapa penerapan dasar yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Home Fashion Arsitektur Desain Rumah" src="https://i.pinimg.com/originals/16/ba/49/16ba496bbe87ae8aa034fe622b643995.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmTJ9-HHiPvy3kUAiLAkDGnfK4TxO8qxgopc85oriTe7xre5URqhX8U_0qxPcTEIz-13A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penyelesaian dari permasalahan tersebut dapat diselesaikan dengan menerapkan aspek-aspek arsitektur tropis modern yang menghasilkan pada bentuk dan wujud bangunan museum tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Maluku Desain Rumah Bapak Fahrul Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tropis Profesion Desain Rumah Arsitektur Arsitek" src="https://i.pinimg.com/originals/5c/cd/4a/5ccd4ae46e423e43fb7ea19e5f90e2c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkM2FYo9wy5BofqTUUHPwUB6RvEx5eQGyhog';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Strategi pendekatan Arsitektur Tropis Modern Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Modern Minimalis 2 Lantai Bp Andri Jpg Jpeg Image 711 972 Pixels Scaled 68 Desain Rumah 2 Lantai Rumah Modern Desain Rumah" src="https://i.pinimg.com/originals/1c/56/68/1c5668af9e35ac73a903a45a2e8e08b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWV16t8nOGOnJdkTxJJ2kAFgvKRDFpORGAjA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Luas Lantai 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Arash Armin Di Front Facade Desain Fasad Rumah Tropis Rumah" src="https://i.pinimg.com/originals/a5/30/9b/a5309be349241061b2b730cf899d1950.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWnVkBNY2dC2pSjXUeiH1ozjzykmuw6Uf6jK3LvXZB14zzceRY-NOEENlN-XgAO3NVEY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pengertian Arsitektur Tropis Modren BY BENNY ET 1004205099 Pemahaman Arsitektur Iklim Aritektur dan iklim dikenal salah satunya sebagai pendekatan arsitektur bioklimatik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Bogor Jawa Barat Desain Rumah Ibu Febby Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali M Di 2020 Desain Eksterior Desain Arsitektur Arsitektur" src="https://i.pinimg.com/originals/8f/a3/11/8fa311d66ba40ec2f47fe06510b31c94.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTnbF0tFC7hAao-ZbzlHiOPhP1wntiez5hQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsitektur tropis merupakan arsitektur yang berada di daerah tropis dan telah beradaptasi dengan iklim tropis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Desain Rumah Ibu Ocha Jakarta Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tropis Profesi Arsitektur Desain Rumah Rumah Modern" src="https://i.pinimg.com/originals/11/06/43/110643d50a9d65d414e1540800a3744a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZHforEsUUXJS4NXpnLww5_za-dg1hYE4Gw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karakteristik Alami dalam Gaya Arsitektur Modern Tropis by Anovalia February 19 2019 Patisandhika Sidarta membangun hamparan sawah di Bali menjadi taman surgawi untuk ditinggali keluarga Hilda dan Daniel Mitchell yang berjiwa artistik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Vampire Hwang Hyunjin Rumah Tropis Desain Rumah Rumah" src="https://i.pinimg.com/736x/13/22/e8/1322e8147691f6d73c477aca46428ce4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDQ_psga1TtbovZz248qH5yxIdxJmFxUKFyQMArrVyXBMnHEp0O2OeCHFSf9vP2o7G_nU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yuk simak ulasan singkat mengenai arsitektur tropis serta karakteristik yang dimilikinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tipe Alona A Lb 170 Lt 239 Rumah 2 Lantai Bergaya Modern Tropis Ini Berada Di Cluster Flinder Park Citragran Ci Arsitektur Rumah Rumah Modern Desain Rumah" src="https://i.pinimg.com/originals/4f/98/d8/4f98d869391928c2c70988c52fd321b5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2XQ9qidRRiswuJXvowXsgIrFPycOwaLveww';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsitektur tropis merupakan arsitektur yang berada di daerah tropis dan telah beradaptasi dengan iklim tropis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Semarang Desain Rumah Ibu Via Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tropis P Arsitektur Rumah Desain Rumah Rumah Modern" src="https://i.pinimg.com/originals/13/f1/75/13f175cc0a1199f748227fea9e690d1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslpe5qpwWw2lxs9BsQUxialCGxKOSPO4dsA';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Lebar Tanah Bagian Depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Di 2021 Rumah Tropis Rumah Arsitektur Interior" src="https://i.pinimg.com/originals/c6/23/7d/c6237d4e6cc9cc47b7f30dcecb566358.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR66SZ89MUOFKoHX4g2m9dbzPX7L_VrZioPIFchGT-N5OAAguxLlx0uFWtLIy3x7C24v-o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yuk simak ulasan singkat mengenai arsitektur tropis serta karakteristik yang dimilikinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tropis Dengan Balutan Modern Di Sertai Dengan Pagar Yang Lebih Kekinian Membuat Kesatuan Bangunan Yang Arsitektur Rumah Desain Rumah Eksterior Arsitektur" src="https://i.pinimg.com/originals/15/5b/27/155b2770ac73ae037d39fefd52f7bba0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnctG-c2_VLJTUDzY5fZBHeVVOJXjglzRYqnXkKrnsfqZ42Qs2TPcTgPryzAdnutaqo4o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jasa Arsitek Desain Rumah Tropis Modern 3 Lantai di Setiabudi Jakarta.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Pojok Tropis Modern View Samping Desain Rumah Modern Rumah Home Fashion" src="https://i.pinimg.com/originals/3f/f1/31/3ff131d2774d8c5aa3ac572ea4259efa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFm-DTGJXZ4o5i7vF4gLPTeTENhjFVFvFkFg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yuk simak ulasan singkat mengenai arsitektur tropis serta karakteristik yang dimilikinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsi7ly6hyhjbi1o 6ka42bn510ilwsbmtyedf9mixg Usqp Cau" src="/search?q=desain+rumah+minimalis+2+lantai+6x12&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis+2+lantai+6x12&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Konsep selanjutnya adalah ventilasi silang dimana arsitektur tropis pada desain interior rumah minimalis bergaya modern ini harus menerapkan jenis ventilasi silang tersebut pada sistem sirkulasi di rumah Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Trop V House Arsitektur Kontemporer Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/56/a8/1f/56a81f7c1c19b6314e3437e82e1b75da.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVx2CCAg8kKq_dUYY8TCsYKkLgVEWfRbHxl6x0OEsYvM6DbctnEijGxjsDvboG0UjgTdw';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Merancang bangunan yang memiliki ruang yang efisien dan fungsional sesuai kegiatan yang terdapat di Pusat Pelatihan dan Pembinaan Pemain Muda Persebaya di Surabaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Di 2021 Arsitektur Rumah Indah Rumah Tropis" src="https://i.pinimg.com/originals/65/39/c0/6539c0f9f4d7d914436df5df072e47e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYT9mxbeOaT4CuuC8QT11yHkD2GvpQrgeXR_dTRPRbug8UEs2ITy1pluWeZCfohPcQgII';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Luas Tanah Keseluruhan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Di 2021 Arsitektur Rumah Tropis Rumah" src="https://i.pinimg.com/originals/bf/38/cc/bf38cca540cb808d6799cde9eff78163.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ZEX-9N4uzWlQLpS5v-ZegO3AbxSNUeQl7aaPSc6x53La0Nx2-mUaAMHNDfqXB1m1HMk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Yuk simak ulasan singkat mengenai arsitektur tropis serta karakteristik yang dimilikinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Desain Rumah Bapak Andreas Jakarta Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tropis Pr Arsitektur Modern Arsitektur Arsitek" src="https://i.pinimg.com/originals/a2/fd/cd/a2fdcd68357ea939f9adfc5d9891182d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYeKKVbgOpBb49tTLDu7xZreOit390UzJ3Gg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Luas Lantai 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Asia Arsitek 7 Desain Rumah Kontemporer Rumah Kontemporer Arsitek" src="https://i.pinimg.com/originals/cf/09/f0/cf09f0e1c4749eec46016e71e8ca13cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO4sLPEH4DkSwsiHyUX00L9iY92-WozeeUC9FV-J8WjrfERADhl2PFrCskzAO_Vtj9nPM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Luas Tanah Keseluruhan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Desain Rumah Eksterior Home Fashion Rumah Tropis" src="https://i.pinimg.com/originals/30/86/13/308613ff4c336c8dc4040da49f597b76.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2layHjBj4A6c40ftd0KW_NjGttaCHuSqYJCX43Zy5vIdThvoazbK_lBtVAmyYcQMd-UI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Banyak arsitektur tradisional dan arsitektur vernakular di Indonesia merupakan arsitektur yang beradaptasi baik dengan lingkungan tropis misalnya kita lihat pada arsitektur rumah joglo rumah bali rumah minang dan masih banyak lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Arsitektur Tropis Modern" src="https://i.pinimg.com/564x/b0/c4/7d/b0c47d56453bcf6f17a0c8d12573c19f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnnDL3E06ucTF99fzKQZITDs7uR2XaweuwNg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Distort House Sumber Gambar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Rumah Indah Rumah Desain Rumah" src="https://i.pinimg.com/originals/2b/d8/1f/2bd81fe0ce7d5c18bc652ad8f5b8ad3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVG5u-nbkp0Up2GLiuyU15QM_6XDbd5tCEKNuXREWQGdmbcMaF8vuYs6kFL7cTtP9VU9w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pengertian Arsitektur Tropis Modren BY BENNY ET 1004205099 Pemahaman Arsitektur Iklim Aritektur dan iklim dikenal salah satunya sebagai pendekatan arsitektur bioklimatik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Rumah Tropis Arsitektur Desain Rumah" src="https://i.pinimg.com/originals/4e/f6/22/4ef62288b009ffb30ac1153ffdb983ec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY5R9QRebANre635Q-o2dPV57RqCGjvjWCNg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menyediakan ruang terbuka ruang hijau pada bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Desain Rumah Desain Arsitektur" src="https://i.pinimg.com/originals/ee/14/d1/ee14d145865bd71c6a81a72758980584.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZtuxorbR0otWMDeIZNBApbcxqKGLYSGfoQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Taman kecil tropis minimalis dengan bambu jepang aneka pohon palem diselingi daun kemerahan tanaman puring menciptakan keindahan yang menyejukkan mata sekaligus kesegaran dari kayanya oksigen yang dihasilkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Jakarta Desain Rumah Bapak Anton Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tropis Rumah Modern Desain Rumah Arsitektur Rumah" src="https://i.pinimg.com/originals/b1/29/c8/b129c85fc96701484311bfb993926a6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRACnsJuy7lUbnxHlvPklG8WZkdYPCzQZjYQQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsitektur modern tropis merupakan arsitektur yang dianggap berwajah natural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Interior Arsitektur Tropis Modern Arsitektur Tropis Desain" src="https://i.pinimg.com/originals/f7/34/8e/f7348eee573c6864ab11633196d9ad77.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgyLYJT_hmTBEcHDeF025QvR8QkoxNqMJyPA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lebar Tanah Bagian Depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Home Fashion Arsitektur Rumah Indah" src="https://i.pinimg.com/originals/f3/b8/d2/f3b8d214045a03d0aa962548db695dea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq8Q6Cs32whqVLsHllPbz8TmfskWcpsPTql5yen9kLB1ZPKM7djAZ1oeuoMr4P7AlSPRs';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Arsitektur modern tropis merupakan arsitektur yang dianggap berwajah natural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tinggal Tropis Modern Di Lahan 17x25 Youtube Desain Rumah Minimalis Rumah Arsitektur Desain Depan Rumah" src="https://i.pinimg.com/564x/61/c8/0a/61c80ad7d6a2632e6c370e6e21a970a1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6Q1TNfuQmKDl16qBbW6XK6Yw2fD2U8HbHw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>TWS Partners via Architecture Art Designs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern In 2020 House Styles House Mansions" src="https://i.pinimg.com/originals/ea/0a/7b/ea0a7b46aa0e2467f4358f408c687a39.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2_OM2G9XD4fHCyjzqY-SW2N9KGE1HIVg3w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan perabotan kayu yang digunakan kamu dapat memberikan sentuhan tropis yang konvesional namun modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah 2 Lantai Kolam Renang Privat Modern Minimalis Arsitektur Modern Rumah Tropis Arsitektur" src="https://i.pinimg.com/originals/41/ea/a5/41eaa5326392d4cd67446f9fc7da2f71.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzxXAmL5WjyhfxIwi2589m6ybzJsZ9G9selA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Keindahan alam tropis dengan kehangatan sinar matahari dan sejuknya semilir angin menjadi elemen positif yang harus diikutsertakan dalam arsitektur rumah tropis modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Inspirasi Desain Rumah Modern Minimalis Tropis Home Fashion Arsitektur Arsitek" src="https://i.pinimg.com/564x/db/f7/e4/dbf7e41e0b80acf1677c84127376e977.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKaY_NYhBv8-ycDWHSLquOEnJrttjrC_Idw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika pada masa sebelumnya arsitektur lebih memikirkan bagaimana cara mengolah façade ornamen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dedsain Rumah Tropis Modern Di 2021 Rumah Tropis Modern Arsitektur" src="https://i.pinimg.com/originals/85/4d/e1/854de1f813edb4d543d52e01a108ab08.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhQ0k1VX_CJzKIbp2G2VjgH1PHn5LsgBk66106mYUXNigx3CAoRqVm05yf4oZTpLh96CE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Distort House Sumber Gambar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Adalah Sebuah Konsep Yang Benar Benar Cocok Untuk Diterapkan Di Negara Negara Tropis Seperti Indonesia Konse Arsitektur Rumah Tropis Rumah" src="https://i.pinimg.com/originals/2a/83/31/2a833167838f489a5c0e1a7dbbbdcddb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLf93o1am9fOJ7q8Vyp-fD5g6SEvUbUtCGZyxHA8Y_t0OoOudu4nZq0BLtSrDAlZ8LIQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Distort House Sumber Gambar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Tropis Modern 1 Lantai 3 Kamar Tidur Google Search Modern Tropical House Modern Properties Exterior Design" src="https://i.pinimg.com/originals/14/96/a6/1496a662b19fa01b7d8755e7db65ce7f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2IWVsjRDuDBlH0pTjzI6QC489o5VxFBOrU7zrVK5weNXnNRvQRVhGV1XPdjV9ql434Sk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pengertian Arsitektur Tropis Modren BY BENNY ET 1004205099 Pemahaman Arsitektur Iklim Aritektur dan iklim dikenal salah satunya sebagai pendekatan arsitektur bioklimatik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Ibu Indah Di Jakarta Arsitektur Rumah Indah Arsitektur Interior" src="https://i.pinimg.com/originals/0a/e8/4e/0ae84e5287d6ca4eb5afe6a01518873f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvpj7rvT7eLFkLFDzmPxNGMhn9mgpblPjuNSGsWeE_T3pmFpMJBx5kV51VteKCa0WP5U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah ini terinspirasi dari gaya arsitektur tradisional dari Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Pojok Semy Basement Arsitektur Rumah Tropis Modern Kavling Hook 2 1 X2f 2 Lantai Type Rumah X2f 500 M2 Ga Arsitektur Desain Rumah Desain" src="https://i.pinimg.com/originals/ee/e5/5c/eee55ce3eab501b7606c70aa6cc53ff8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmc1HaOLc9JrFG8qMyO1Eb9wK0paLbD_FiVfG117RY5vAdLuRSspJrVkg7JKXG5Clbqfc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Keindahan alam tropis dengan kehangatan sinar matahari dan sejuknya semilir angin menjadi elemen positif yang harus diikutsertakan dalam arsitektur rumah tropis modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Apa Itu Arsitektur Tropis Yuk Ketahui Ciri Cirinya Arsitektur Modern Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/3c/c1/cf/3cc1cf9276e11520b5029b53b282c014.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAdYmuHpR_qVZDQPCyVXR5-H4TyGwinL468tl_bO-LFesiDf8FsgwFInUV5PCYLwcOjcM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Modern Tropis Singapura Yang diangkat menjadi tema dari bangunan ini adalah integrasi antara bangunan di bagian dalam dan luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tropis Profesional Berpengalaman Dari Emporio Ar Desain Rumah Modern Rumah Modern Desain Rumah" src="https://i.pinimg.com/originals/56/c4/1e/56c41ec551ca357a38f1d1717dca28c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToEnUkUEeo6ppeleJtCUIYLTwOc1OMIpuGiA';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Berikut data Ukuran Bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Padang Sumatera Barat Desain Rumah Villa Bali Tropis Bapak Rusli Jasa Arsitek Desain Rumah Berku Arsitektur Minimalis Arsitektur Desain Arsitektur" src="https://i.pinimg.com/originals/bf/af/53/bfaf537b7792bbdf9f15f013ab069495.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQplAk4qsplnk_0lDciBS-L9qv_eXqAiofAA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Modern Tropis Singapura Yang diangkat menjadi tema dari bangunan ini adalah integrasi antara bangunan di bagian dalam dan luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Batam Desain Rumah Bapak Baron Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tr House Design Facade House House Designs Exterior" src="https://i.pinimg.com/originals/be/79/b6/be79b6090720186c0bbffaecc7278e04.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgLdRHNg7orYY6CNrVMrO3RyWtz_BDtzn9oA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bioklimatik menggambarkan suatu pendekatan desain bangunan yang diinspirasikan keadaan alam dan menggunakan logika yang berkelanjutan didalam setiap aspek suatu proyek memfokuskan pada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Arsitektur Tropis Menangkis Panas Dan Hujan Dengan Gaya Modern Konsep Arsitektur Arsitektur Home Fashion" src="https://i.pinimg.com/originals/a9/77/e2/a977e2c176a74f084bd6dfb51c9bb191.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrX0_FjoZbNsDr5KCvRgwmfJlxRvb68bH3t6DrMLffG2VC6yI1dUlmdOXTk2h3CyGQGt0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep selanjutnya adalah ventilasi silang dimana arsitektur tropis pada desain interior rumah minimalis bergaya modern ini harus menerapkan jenis ventilasi silang tersebut pada sistem sirkulasi di rumah Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cascading Courts Hyla Architects Desain Rumah Kontemporer Rumah Arsitektur Rumah Tropis" src="https://i.pinimg.com/originals/92/7e/c4/927ec43e749ab14e24988bdff267960c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmqSOANk2FaWjYf5YjaHB6EM3YFLFFFIq-dQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sebagai arsitek perancang Guz Architects mendesain rumah ini untuk merangkul iklim tropis Singapura yakni diwujudkan dengan sebuah ruang terbuka yang memungkinkan terjadi interaksi antara laut kolam renang taman serta rumah itu sendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Jakarta Desain Rumah Bapak Ismail Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tropis Profesio Desain Rumah Rumah Modern Rumah" src="https://i.pinimg.com/originals/02/16/ab/0216abc68a32c91079332a51583f235a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxhTuizgsu3M70bHoXOCOk12hg8HXepQAAPA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsitektur Tropis Modern terhadap Museum dapat disimpulkan bahwa permasalahan utama adalah bangunan yang belum menyesuaikan iklim di Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Jawa Tengah Desain Rumah Bapak Dwi Harsono Jasa Arsitek Desain Rumah Berkualitas Desain Villa Desain Rumah Minimalis Arsitektur Rumah Arsitektur" src="https://i.pinimg.com/originals/b7/91/c1/b791c1e851a804819eb186330387add3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXfJHIJovGgIW96-raBMtLfa2sV3RqS8HeQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Apa itu Arsitektur Modern Tropis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Pojok Tropis Modern Unik Dengan Aksen Material Kayu Pada Finishing Fasade Rumah Lahan Desain Rumah Eksterior Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/0f/ca/59/0fca59e886766643af90f37b1b01688b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bLucdCxcyPP-qLjVFJsFvL9_L0e4U3ueERexB9gftGpf9I7J6Z6qaopcPz-ZZG7taus';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Panjang Tanah Kebelakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Tangerang Banten Desain Rumah Bapak Ale Jasa Arsitek Desain Rumah Berkualitas Desain Villa Desain Rumah Kontemporer Rumah Kontemporer Rumah Mewah" src="https://i.pinimg.com/564x/d3/a4/c2/d3a4c23df224c6e885336d1aed0409d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuUv4ACfzqWIW-a2W1A4iw-RyfmZk84m5czg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hal ini juga merupakan salah satu karakter utama dari arsitektur tropis.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/ruang-tamu-minimalis-modern.html"><i>&larr; ruang tamu minimalis modern</i></a>
+                                                                    
+                                        <a href="/ruang-tamu-lesehan-minimalis-modern.html"><i>ruang tamu lesehan minimalis modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Grc Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Grc Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/42/59/98/4259981c34ea059729a515e9d27d8ba9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+grc+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Grc Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Grc Sederhana</strong>. Gambar rumah kayu sederhana dengan dinding grc 2018 dapatkan ragam kumpulan wangsit buat gambar rumah kayu sederhana dengan dinding grc 2018 menurut berbagai contoh. SNI 17262012 tentang Tata cara perencanaan ketahanan gempa untuk struktur bangunan gedung dan non gedung.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ea/4e/7c/ea4e7c315ee86f0c8ed9d5d7df9abd17.jpg" alt="Http Bit Ly 2ccasrv Pagar Minimalis Modern Sederhana Vertikal Garis Besi Galvanis Di Parahyangan Tajur Bogor Pagar Minimalis Moder Minimalis Modern Pagar" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLhvKMj3A1JWN5V1oQEmWQC48BMIrdtb3Ng';">
+        <figcaption>Http Bit Ly 2ccasrv Pagar Minimalis Modern Sederhana Vertikal Garis Besi Galvanis Di Parahyangan Tajur Bogor Pagar Minimalis Moder Minimalis Modern Pagar from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Rumah dengan dua pilar. Download Gambar Rumah Grc Sederhana PNG. Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.
+    </p>
+    <h3>Selain berfungsi sebagai penutup bagian atas ruang plafon juga biasa digunakan oleh rumah minimalis sederhana sebagai cara menyulap rumah biasa menjadi mewah.</h3>
+    <p>Model Rumah Sangat Sederhana Sekali Dapat Disesuaikan Grc Pilaster Desain Untuk Rumah Dinding Eksternal Rumah Minimalis Dinding Grc Pagar Rumah Roster Homkonsep Bangun Rumah Pemborong Rumah Murah Renovasi Rumah Tukang Rumah Minimalis Tepat Untuk Pasangan Muda Properti Liputan6 Com Cara Cepat Membangun Rumah Sederhana Jasa Desain Rumah. Mengapa GRC Karna selain Ekonomis juga mempercepat Pekerjaan. Sederhana namun tetap terlihat nyaman. Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat No.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pt Adirahma Harapan Jaya Memproduksi Berbagai Macam Grc Seperti Grc Krawangan Grc Masiv Grc Kubah Grc Li Ide Penataan Rumah Ide Dekorasi Rumah Desain Kamar" src="https://i.pinimg.com/originals/ee/93/f6/ee93f630f7ffa09e3b8b161cb3078c35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBPoMe9CwjNmndUjb9GJpNj10FfxI27S5Rw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>SNI 28472013 tentang Persyaratan Beton Bertulang Untuk Bangunan Gedung 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Grc Krawangan Rumah" src="https://i.pinimg.com/736x/0b/c3/ca/0bc3ca2293c54f8e5ab35fe12be038f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQPl0ZSR9SXYhT7KYq17fbXxMpAyRNt1qcz6n6VvRDyx-d3tJCDSnKDKbirYguABoGSc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah kalau di rumah kamu terdapat ruangan atau gabungan ruangan tanpa sekat dinding yang berbentuk memanjang kamu bisa memakai plafon grc untuk mendesain langit langit berbentuk busur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Bit Ly 2ccasrv Kanopi Minimalis Grc Spandek Di Ciracas Kanopi Minimalis Grc Spandek Di Ciracas Wa 08125227383 Untuk Pemesa Kanopi Minimalis Modern" src="https://i.pinimg.com/originals/fb/9d/c8/fb9dc86fa96a19166481ec46cbe3a10b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTElRiUI8RhNzCxHa0l8WaIcKTlt-gKZTs3HQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kaligrafi Sederhana Rumah Dan Musolla Media Tripleks 4 Hiasan Dinding Galeri" src="https://i.pinimg.com/474x/21/35/d4/2135d4a461f3a2b411441abc3b50ca23.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6pE1vKrZ8m2oBB1WKwbQVhn9oYTtB1M_RIw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>43 Desain Rumah Minimalis 2 Lantai Ukuran 5X12 Pics.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Foto Rumah Minimalis Modern Mewah Dan Sederhana 2019 Terbaru Dekor Rumah Rumah Minimalis Rumah Modern" src="https://i.pinimg.com/originals/42/a1/7b/42a17b4672f858c3d661dec27ac14e87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjEqN7DO-Tnb6V9rsdIpodTnXeJSfxw3gNfw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctpaxstv73zbearanfo4amqw8sptxp1 Ky30nalsuvt8grb6hj6 Usqp Cau" src="/search?q=rumah+grc+board&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+grc+board&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Dan plafon grc ini biasa di aplikasikan di rumah rumah huni atau rumah tinggal bermodelkan rumah minimalis sederhana dan ini adalah merupakan salah satu cara untuk menyulap rumah menjadi sebuah rumah minimalis nan mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Grc Sederhana Architect Outdoor Decor Home" src="https://i.pinimg.com/originals/64/50/b6/6450b60660e1458a222f4991043afc51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIEwDQN8k4BHceoObLGAO-2FB96PNi5m6OWOse5nitOMDG2Dg36X8f7pnn139LZa2I4ZE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain arsitektur rumah selalu mengalami perkembangan seiring berjalannya waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 3 Lantai Desain Produk Desain Rumah Rumah" src="https://i.pinimg.com/originals/28/22/67/282267464bc983ecb5afba9e01d5f65e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkGkG8NrPMZATdjmRqlOMcYN1Q3l6rxOaxbA';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Download Now Rumah Pracetak Dibangun Kurang Dari 2 Minggu Download Now Rumah Minimalis Grc Rumah Idaman Impian Kita Download Now Rumah Instan Buatan Indocement Hanya Rp 35 Juta Per Unit Download Now Desain Rumah Grc Minimalis Situs Properti Indonesia Download Now Rumah Minimalis Dari Grc Rumah Idaman Impian Kita Download Now Seperti Inilah 42 Desain Rumah Sederhana Di Pedesaan Download Now Dijual Rumah Murah Citayam Depok Halaman 4 Waa2 Download Now Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Plan Rumah Sederhana Ukuran 5x7 Denah Rumah Rumah Minimalis Desain Interior" src="https://i.pinimg.com/originals/0e/0c/d6/0e0cd6068c41889c5c5bd7acd3d585f8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDD6DOOwHXnsJsOpiPvQKeg4kxH_Ndge9QTZrnVMeGsdeJMoxqJURGBYBQoaifdcffIU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Sangat Sederhana Sekali Dapat Disesuaikan Grc Pilaster Desain Untuk Rumah Dinding Eksternal Rumah Minimalis Dinding Grc Pagar Rumah Roster Homkonsep Bangun Rumah Pemborong Rumah Murah Renovasi Rumah Tukang Rumah Minimalis Tepat Untuk Pasangan Muda Properti Liputan6 Com Cara Cepat Membangun Rumah Sederhana Jasa Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Grc Rumah Minimalis Desain Desain Arsitektur" src="https://i.pinimg.com/originals/10/a1/51/10a15169bb0027446a14dc2f06c4282d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQobRT97NCfCqN4bM_4VQDw50zF7QXcOUykZ9awnxreAd5OHSftR_BVAJIzJq7iDQu2vNA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh plafon minimalis seperti yang telah kita ketahui bahwa plafon rumah adalah keliru satu komponen krusial pada rumah selesainya atap yang bermanfaat buat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Grc Dinding Luar Rumah 082122129291 Kota Ruangan" src="https://i.pinimg.com/originals/ca/bd/a9/cabda953e8b30ef7419cec8a7f147df7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfMyFofv-OhXKRys3BsL4YIzL-0gFaAm1pg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain berfungsi sebagai penutup bagian atas ruang plafon juga biasa digunakan oleh rumah minimalis sederhana sebagai cara menyulap rumah biasa menjadi mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kecil Dinding Grc Desain Rumah Kecil Rumah Kecil Rumah" src="https://i.pinimg.com/originals/c4/26/5d/c4265d2fbb981f8caed9231591fb9d7a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhxNhEUi2povV9yfNSVPfpfF1P58DHdf2vlTtVAGzfmhxRsDgRTrUNcXS2iWrC65JPVjc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain ini memanfaatkan lahan berukuran 612 meter untuk menjadi rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Minimalis Dengan Biaya 50 Juta Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/3a/7e/3a/3a7e3ac1514632b94a03ae98519e9d92.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYG9h0jsEbpo7IPWKlhP52WF_1IFZJlIGqWg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sederhana namun tetap terlihat nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Bit Ly 2ccasrv Kanopi Minimalis Sederhana Modern Keren Dengan Plafon Grc Di Sentul City Kanopi Minimalis Sederhana Modern Ker Kanopi Modern Minimalis" src="https://i.pinimg.com/originals/f7/f1/67/f7f167c200facae62008db647b2b2d00.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14mqL-YTNyuwwoKMxe-7Hd8cw7R8J0nXmsSLcAspJldcimSUmaw-N5jOQKAzyZwQEyvk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>43 Desain Rumah Minimalis 2 Lantai Ukuran 5X12 Pics.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Grc Krawangan Masjid Desain Eksterior Seni Seni Islami" src="https://i.pinimg.com/originals/48/0a/e4/480ae4b72b6376c482334c19ea741bc2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvGlAZ3VygQwCVS86VdDEB6oHwfoawkncnw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Konstruksi rumah sederhana harus memenuhi persyaratan sebagai berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Model Rumah Minimalis 2020 Modern Dan Sederhana Youtube Rumah Minimalis Rumah Rumah Hijau" src="https://i.pinimg.com/564x/b8/e8/c9/b8e8c9c6a0ffebe4b9cde3d535b638ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vyGF4FggTZ0J5wPvfGarl2bCI9bFs4GiFA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh plafon minimalis seperti yang telah kita ketahui bahwa plafon rumah adalah keliru satu komponen krusial pada rumah selesainya atap yang bermanfaat buat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 7x15 Di Lahan 12x15 3 Kamar Tidur Lantai Rumah Minimalis Rumah Rumah Pedesaan" src="https://i.pinimg.com/originals/42/59/98/4259981c34ea059729a515e9d27d8ba9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsr3a8dHbVkuVuES5s8IO2Y_EXgISLK5ml1EXMKzXj0cSr7g_zV4lkQBE57GqJxPbPgYI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Now Rumah Pracetak Dibangun Kurang Dari 2 Minggu Download Now Rumah Minimalis Grc Rumah Idaman Impian Kita Download Now Rumah Instan Buatan Indocement Hanya Rp 35 Juta Per Unit Download Now Desain Rumah Grc Minimalis Situs Properti Indonesia Download Now Rumah Minimalis Dari Grc Rumah Idaman Impian Kita Download Now Seperti Inilah 42 Desain Rumah Sederhana Di Pedesaan Download Now Dijual Rumah Murah Citayam Depok Halaman 4 Waa2 Download Now Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Contoh Desain Pagar Kayu Minimalis Terbaru Pagar Kayu Pagar Kayu" src="https://i.pinimg.com/originals/51/d0/a2/51d0a21ba7a62acafcb6e5a4a66cecde.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpsHyqmF1FtSwtPON4Nwu-7gsCTjVWKyNbQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Grc Sederhana merupakan ide desain rumah yang dirancang serta di kerjakan dengan hati - hati untuk menciptakan rumah idaman keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sign In Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/600x315/dd/03/86/dd03863bcf38ab4ee13cd1d227074ccd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-HQ6K3IT2H7n_iz6GI85hezhuXhZPLODQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sederhana namun tetap terlihat nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Jawa Timur Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/a9/e1/da/a9e1da39fe7a15390c34c0cf8403b226.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Nq7ao1GLQtWryQqJyIoBbYJP08-4MFJWQ8lMxBimrG1ZGAIyUHJv9z09AhVucs25vPc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kali ini mengunakan material salah satunya GRC.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Grc Sederhana Desain Rumah Kecil Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/c5/6d/51/c56d5124f9072d5d6b26c827f8399eca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM9FHtcIrJDiPhbDIKUvHaps83wqyZg4PpfEX2_YtovjqGGNc6llmNr7iQfV1lInWO0ws';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dan plafon grc ini biasa di aplikasikan di rumah rumah huni atau rumah tinggal bermodelkan rumah minimalis sederhana dan ini adalah merupakan salah satu cara untuk menyulap rumah menjadi sebuah rumah minimalis nan mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Distributor Grc Krawangan Di Surabaya 082122129291" src="https://i.pinimg.com/originals/51/98/9e/51989ed5a8cb0e2c5cce08c166176c82.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVOoF0vUgsWTWfGP2eJFIjj7xkwZF4p_BDw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kali ini desain dengan ukuran 857.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/originals/e1/bc/ec/e1bcec73a4d4e0b72ff7494372f9c1c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3pZGvUSC70mpQa9v562PRYRSKxuCG0pODIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>21 gambar bentuk rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Modern Di Awal 2020 Youtube In 2021 House Styles House Modern" src="https://i.pinimg.com/564x/9d/36/93/9d3693d73a6db40d3270f89706e4902c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmHj6K8Q7iXKuTcZjJ8K3vcMIzi7FQU60LWw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah kalau di rumah kamu terdapat ruangan atau gabungan ruangan tanpa sekat dinding yang berbentuk memanjang kamu bisa memakai plafon grc untuk mendesain langit langit berbentuk busur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/de/f7/c9/def7c93efa77517046d716da6d71c718.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTETG9X3sCm5kM_kCj4ogV7_x9nPhD-w-cI-TH0rSx-RQ8L5LBy2BKOgjCgyc_lQ3Et55k';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat No.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Pagar Tembok Minimalis Cantik Sederhana Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/88/eb/38/88eb38388efdfb868b21978a490e5ffe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF50hIhWSYNiOajRpOpzH03ovLmP7s3cGJqmmbyDiUL0PI2a0K_aVEMBrHOpdfrGv9bLA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas Pequenas Planos E Ideas" src="https://i.pinimg.com/564x/72/d3/db/72d3dba26b5bb9aa6b18b543c5694bee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghuMHGsosC1414n0RbgUmwmD2rV9MICMDclmNa3uqg4dM3R4lhG-90XC13QnoEA3iDig';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain berfungsi sebagai penutup bagian atas ruang plafon juga biasa digunakan oleh rumah minimalis sederhana sebagai cara menyulap rumah biasa menjadi mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Tahun Kerja Di Taiwan Bisa Bikin Rumah Gedong Episode Ke 2 Pemasangan Pagar Besi Youtube Warna Eksterior Rumah Home Fashion Rumah" src="https://i.pinimg.com/564x/13/5c/a8/135ca8c3bc81a2321883f6d5a181cfb7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeFUTCP1hypmJiof4U9nXHOFDCpv1efNYFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Now Rumah Pracetak Dibangun Kurang Dari 2 Minggu Download Now Rumah Minimalis Grc Rumah Idaman Impian Kita Download Now Rumah Instan Buatan Indocement Hanya Rp 35 Juta Per Unit Download Now Desain Rumah Grc Minimalis Situs Properti Indonesia Download Now Rumah Minimalis Dari Grc Rumah Idaman Impian Kita Download Now Seperti Inilah 42 Desain Rumah Sederhana Di Pedesaan Download Now Dijual Rumah Murah Citayam Depok Halaman 4 Waa2 Download Now Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Bit Ly 2ccasrv Pagar Minimalis Modern Sederhana Vertikal Garis Besi Galvanis Di Parahyangan Tajur Bogor Pagar Minimalis Moder Minimalis Modern Pagar" src="https://i.pinimg.com/originals/ea/4e/7c/ea4e7c315ee86f0c8ed9d5d7df9abd17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLhvKMj3A1JWN5V1oQEmWQC48BMIrdtb3Ng';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Mengapa GRC Karna selain Ekonomis juga mempercepat Pekerjaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ornamen Grc Variasi Rumah Ornamen Rumah Indah Dekorasi Interior" src="https://i.pinimg.com/originals/6b/c4/2d/6bc42d6e7f8d68b62440b3660827f4b9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVcIpuJFaVpi8N1GmhZ6wfRL_FZ8wpyT1cheYSPZGng7Sl_yzAGVKE1seGjyN0jZI1svs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain arsitektur rumah selalu mengalami perkembangan seiring berjalannya waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Grc Sederhana 082122129291 Gambar Rumah Kota" src="https://i.pinimg.com/originals/33/d1/44/33d1444a13f4f8c7449e9dfadcc38719.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6Ba1fi4K_9x9Hv2JSyfC_4X8CfxlCFLevWdWPx1vpd2PHI4aYC1LmlMsjfoYoPSUhPE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar rumah kayu sederhana dengan dinding grc 2018 dapatkan ragam kumpulan wangsit buat gambar rumah kayu sederhana dengan dinding grc 2018 menurut berbagai contoh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gandeng 37 Bank Kementerian Pupr Siapkan Rumah Subsidi Syariah Rumah Bangunan Kpr" src="https://i.pinimg.com/originals/32/3a/6a/323a6a2dcc31a12eb98fa1cacca8d60e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReGDU7WCAdgTmFHhcTwK5SgnhkZpQ3eAuLTm_WPeHhFdz5GyQfWqEXEDPDcoWP3D5KEhE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kali ini mengunakan material salah satunya GRC.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Model Rumah Minimalis Dengan Atap Limas Terbaik 2020 Youtube Rumah Minimalis Rumah Rumah Indah" src="https://i.pinimg.com/564x/f1/07/97/f107977b92e98930b7adc4ac9bae05af.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQDXI7HmBV2z0aWxgK9ShHAmemd4NCE2Z00g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain interior rumah minimalis sederhana juga membahas mengenai desain kamar mandi kecil biasanya kamar mandi di Indonesia memang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern House 7 05 X 10 Leter L 3 K Tidur Desain Rumah Minimalis Lantai 1 Youtube House Arch Design Minimalist House Design Small House Design Plans" src="https://i.pinimg.com/564x/bd/0d/bf/bd0dbff64b0695d6c5d5314e95d4580f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQZ7JX1G_sctrI2AQphhS90WFJ0PnFmIsLw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain kali ini mengunakan material salah satunya GRC.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berisi Informasi Tentang Gambar Contoh Model Teras Rumah Minimalis Modern Mewah Sederhana Cantik Klasik Terbaru Dengan Ber Gaya Rumah Desain Rumah Home Fashion" src="https://i.pinimg.com/originals/1a/53/ea/1a53eac086d5519c117f8229f6234b8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThMUw_k6v7qHVFJ38mVRxtemJFLbAz2cbwWL5xEl1y5CrH0exvaGHxkfWfeSzlwiumeo4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kali ini mengunakan material salah satunya GRC.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kanopi Minimalis Sederhana Atap Spandek Besi Galvanis Dengan Palang Air Di Villa Bogor Indah Jual Kanopi Tralis Kanopi Villa Atap" src="https://i.pinimg.com/originals/ca/dd/95/cadd95f7786bb3fa9d2565bea372a01f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsL0XjKX_POr5tmraCmiJaaFm6paMYXYuEyA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah kalau di rumah kamu terdapat ruangan atau gabungan ruangan tanpa sekat dinding yang berbentuk memanjang kamu bisa memakai plafon grc untuk mendesain langit langit berbentuk busur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Grc Minimalis 082122129291 Desain Minimalis Rumah" src="https://i.pinimg.com/originals/55/d1/6b/55d16b6f929903b49451ba6bb5e8dec5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvghkxuUtQ-uzSW41yEEgz12wZg-dOoONvgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penggunaan plafon jenis Glassfiber Teinforced Cement Board GRC kini mulai marak digunakan karena harganya yang bersahabat lebih murah dari triplek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Minimalis Motif Kayu Grc Di Citayam Bogor Pagar Minimalis Motif Kayu Grcdi Citayam Bogor Pintu Besi Terali Desain Rumah Bungalow Desain Eksterior Pagar" src="https://i.pinimg.com/originals/8d/29/84/8d2984c6716ebee411b21ff01722bcf0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSQmeyYjvKoxJWR8HGFNaVGqknnJGxhzlzOUDOpKIBq3nFoogtK2XFOv2CNTbgWSQ4xY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>SNI 28472013 tentang Persyaratan Beton Bertulang Untuk Bangunan Gedung 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 1 Lantai Atap Limas Desain Rumah Minimalis 27 Desain Inspiratif Rumah Minimalis Atap Limas 1 Lantai Rumah Mewah Home Fashion Rumah Minimalis" src="https://i.pinimg.com/originals/47/50/2b/47502b075e3e856d3600cf9793c88511.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPWaKDXMFi_CrHNbs4yboriw2GkQEwpepBg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>43 Desain Rumah Minimalis 2 Lantai Ukuran 5X12 Pics.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Masjid Minimalis Youtube Mansion Designs Masjid Mosque" src="https://i.pinimg.com/564x/0b/7c/11/0b7c1159e7afc24afd4d2cd8affd286d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP0mE_NE0-t2Xfya4t_0QTW4AjpF2_L8JGA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Grc Sederhana Rumah Minimalis Membangun Rumah Rumah" src="https://i.pinimg.com/originals/b9/45/e1/b945e19ff146893e2b8d90b280a4d29e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpi2i_Mj5OYvCVMhuWgIZsMK0h_h-M-k2ErCddpbGqZOlO9WJwsMZXdppEJss0P10EoFc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh plafon minimalis seperti yang telah kita ketahui bahwa plafon rumah adalah keliru satu komponen krusial pada rumah selesainya atap yang bermanfaat buat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Lantai 1 Modern House 8x15 3 K Tidur Youtube Warna Eksterior Rumah Home Fashion Denah Rumah Pedesaan" src="https://i.ytimg.com/vi/t_DKQs8q0K4/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5HXszOMfDRcCEeTe01MzI2lHcVq8itdAHMw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>SNI 17262012 tentang Tata cara perencanaan ketahanan gempa untuk struktur bangunan gedung dan non gedung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sederhana Archives Arcadia Desain Desain Rumah Desain Rumah" src="https://i.pinimg.com/474x/f8/1e/7b/f81e7b1d112e7cd13ac859070287b9b4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVL78AYRxXuln-PW2SKx91POQhawVJgF11O2ukV_A5ZF59ys1LVvpov8PctV8pBAdTiF8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Modular GRC board 5 Keunggulan Rumah Modular GRC board - YouTube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/564x/41/d8/25/41d8253a58c3589faa609caa6ee55dfa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbSuZk9b25D1pwkKYCF1hZS8Y5M6w6WQbYA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh plafon minimalis seperti yang telah kita ketahui bahwa plafon rumah adalah keliru satu komponen krusial pada rumah selesainya atap yang bermanfaat buat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Bit Ly 2ccasrv Kanopi Minimalis Atap Spandek Dengan Peredam Grc Di Ciherang Bogor Kanopi Minimalis Atap Span Desain Gudang Kanopi Desain Pintu Utama" src="https://i.pinimg.com/originals/fa/26/7e/fa267e8d47521ff2cf326a99d55314c7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aVYqnLDfxSKPItpimLXV8ZVfepGp-feYEg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>21 gambar bentuk rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="21 Gambar Rumah Minimalis Ukuran 7x9 Denah Rumah Desain Produk Rumah Minimalis" src="https://i.pinimg.com/originals/67/fa/f2/67faf2593f48146fcb0c3cb62be4b298.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Z4_45ChEN64wP23TxQNNiSyzBDrp5outog';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Villas" src="https://i.pinimg.com/originals/f5/c0/c6/f5c0c6f211c9c39004d67f32414e30cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb8acH3geCw7q8RlbIDLRlNf0WGMls7Z2SOg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Foto Rumah Minimalis 2 Lantai Desain Rumah Minimalis Contoh Desain Rumah Mewah Minimalis Modern Desain Rumah Minimalis Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/9f/e5/32/9fe532510536d7e289afcbcbaf4a6ecf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5JiUhShgTbB3cClW-Z5Y68EzZI7pKkYVQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kanopi Minimalis Spandek Grc Di Bogor Baru Jual Kanopi Tralis Kanopi Desain Lantai Rumah Minimalis" src="https://i.pinimg.com/originals/7b/e3/e7/7be3e7c14643b69883b4d33100d0d776.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQei7xDFtoDvQM3qkhlakWLps25Hq8ynuxzoQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>18 Inspirasi Rumah Sederhana Grc Inspirasi Dekorasi Keluarga Rumah Modern Dengan Grc Krawangan Bomu Architect Foto Rumah Sederhana Di Desa Dan Kampung Terbaru Warnacat Net Woodplank Arsitektur Rumah Tinggal Dan Desain Interior Desain Rumah Kos Mr Iswahyudi Jogjakarta Desain Rumah Idaman Desain Rumah Minimalis Kontemporer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Minimalis Motif Kayu Grc Di Citayam Pagar Minimalis Motif Kayu Grc Di Citayam Bogor Pintu Besi Teralis Minimalis Bogor Teral Pagar Kanopi Rumah Impian" src="https://i.pinimg.com/originals/81/ea/11/81ea113f8315a371b1088aad5127d323.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg32L5wehA3UttFvDuR3Wm9pUc4BMxVa1DX7vTvXfS5MXYIQZQ5PAhRsMwuKV9X9XO7k8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>SNI 17262012 tentang Tata cara perencanaan ketahanan gempa untuk struktur bangunan gedung dan non gedung.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-kecil-cantik-sederhana.html"><i>&larr; rumah kecil cantik sederhana</i></a>
+                                                                    
+                                        <a href="/rumah-kost-minimalis.html"><i>rumah kost minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

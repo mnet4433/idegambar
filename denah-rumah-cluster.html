@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Rumah Cluster
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Rumah Cluster",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/236x/31/b9/24/31b924c11179e8fdfb169466fd868955.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+rumah+cluster",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Rumah Cluster
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Rumah Cluster</strong>. Desain Rumah Cluster Desain Eksterior Rumah Cluster Tipe 36 72 Dengan Denah Yang Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Cluster Keren Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini. Rumah-rumah dalam satu cluster dibangun dengan tipe dan desain yang sama persis.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ff/1e/37/ff1e37542310aa9ba0a593ceb9268cda.jpg" alt="Desain Rumah 2 Lantai Di Lahan 8 X 18 M2 Dr Rm 801 Desain Rumah Jakarta Desain Rumah 2 Lantai Rumah Desain Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bbaKRYmT_pZWQtLVSMXgextc8a-A3N_3Iz6PxAx__vCPn4_VEbmvl3Oi46Xn5yez7LU';">
+        <figcaption>Desain Rumah 2 Lantai Di Lahan 8 X 18 M2 Dr Rm 801 Desain Rumah Jakarta Desain Rumah 2 Lantai Rumah Desain Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Rumah-rumah dalam satu cluster dibangun dengan tipe dan desain yang sama persis. Denah tempat tinggal cluster karya akanoma yu sing asal. Meski begitu desain cluster satu ini permanen terlihat berkelas.
+    </p>
+    <h3>4 Lantai 2 Carport 2 Mobil SHM IMB Listrik.</h3>
+    <p>Permintaan rumah cluster terbilang tinggi apalagi untuk rumah cluster yang dirancang dengan gaya arsitektur dan desain minimalis. Desain Rumah Cluster Model Rumah Hook 2 Lantai 15 X 13 M2 Berdiri Diatas Lahan Sudut Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Cluster Keren Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini. Rumah-rumah dalam satu cluster dibangun dengan tipe dan desain yang sama persis. Meski begitu desain cluster satu ini tetap terlihat berkelas.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kelebihan Rumah Hook Dan Desain Rumah Modern Rumah Hook Rumah Home Fashion Denah Rumah" src="https://i.pinimg.com/736x/d3/e3/75/d3e3758b72dbd2cff1c8f1f4f7b8dbbf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xlP4tmLij8gd2XQZyMgf0pPqb5LTH6Fyww';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dibangun dengan desain yang sama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Surabaya Barat Citraland Tipe Turquoise Tata Letak Rumah Desain Rumah Denah Rumah" src="https://i.pinimg.com/originals/24/ec/5c/24ec5c3599952f1c384b3a7fe0cf92ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDF2Qt96AX2yXq-Dab1ZMik6a6JDUF18xdg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu rumah serta denah rumah dengan interior yang elegan bisa mengundang banyak orang buat bertamu ke hunian serta denah rumah sebab hunian dan denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Lantai Type 80 Gambar Foto Desain Rumah Denah Rumah Rumah Minimalis Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/00/65/5e/00655e873c60b1553eb067203eaad14a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsAc577dj4pU32Yf2infW8yBYrVj5vxMRV4wjHnx-PqoOMlsnLKxj12loh47HehoSY85M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski begitu desain cluster satu ini permanen terlihat berkelas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="55 Denah Rumah Minimalis 2 Lantai Dengan Kolam Renang Terbaru Koleksi Gambar Rumah Terlengkap Denah Rumah Denah Rumah Eropa Rumah Minimalis" src="https://i.pinimg.com/originals/5d/98/18/5d9818588be5b2e274fcf16596d261a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUS8Tdn-1ou2TRLjm6qOha9OiwVDKRz6idHg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah cluster selanjutnya ini sedikit berbeda dari sebelumnya berukuran minimalis namun terlihat stylish berkat model atap semi klasik dengan warna coklat serasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Macam Maket Rumah Minimalis Desain Rumah Eksterior Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/70/36/9e/70369e430d06aa6d0b2ceb9de2a9f3f8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9YOcln8DWgZEjDdt58wV-Zdb9n4GATMwhQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harga standarGb3D tampak depan 550rb gb 3D lingkungan 750rb denah berwarna 2D 250rb pengerjaan 2-3 hari revisi 2x freeharga bisa berubah naikturun tergantung tingkat kesulitan harga pastinya setelah kita pelajari datanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Projects To Try" src="https://i.pinimg.com/originals/26/03/7a/26037a878c650bef6db7b83637634317.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ04Rhx8ns7PLIqWD4NQ_Vs6Ejj5BkIMb3EO1ZuuAoM2rsvi54HJV4Y8r0KGQWUkBOe74';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>600 jutaan dengan desain rumah modern minimalis dan kekinian seperti desain rumah Waterfront Estate Lippo Cikarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Type 36 Di Awal 2017 Desain Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/564x/9c/40/a9/9c40a9ec46a8cb50e9d1dd0e5151abf8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2t3VuOA5KybITeWg3V_aLRPJPyCLQuH6QA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain itu rumah serta denah rumah dengan interior yang elegan bisa mengundang banyak orang buat bertamu ke hunian serta denah rumah sebab hunian dan denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini Dia Contoh Bangunan Desain Rumah Minimalis Sederhana Daftar Rumah Minimalis Rumah Rumah Indah" src="https://i.pinimg.com/originals/6a/b8/15/6ab8155c6e9d66e388e645c3ddd4bc5f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIHFWgCtXvVqqtBGeYtk0DGzlmxnIawktLOw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Homepage Desain 44 Contoh Rumah Cluster Type 45 Pictures.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Tipe 10 Rumah Cluster Yarra Jakarta Garden City Rumahjgc Jakartagardencity Garden City City Desktop Screenshot" src="https://i.pinimg.com/originals/42/7a/c1/427ac1ab495029ad522bcc865dcc5524.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRMBF6Hm0HAw2EM8H6uF4BnJkl3_qvsRTWHplbzCfGEwqxwAw5-39t5Z_SnIeBgw5ZLI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Saya mau desain 3d rumah untuk brosur Saya perlu desain tampak depan desain lingkungan cluster dan denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar 2bdenah Rumah Ukuran 10 X 20 M 173x300 Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/236x/31/b9/24/31b924c11179e8fdfb169466fd868955.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROrlhrpFIehN89T3ot6KuC-DiFDBHp0jHAPw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Permintaan rumah cluster terbilang tinggi apalagi untuk rumah cluster yang dirancang dengan gaya arsitektur dan desain minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Rumah Di Palangkaraya Cluster Minimalis Sejuk Modern Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/c7/48/a6/c748a6eb41a78fdf7305b915982ec70c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnqztirqtZUM5ZwuoIv3GmJc2jG1QSbI-Pxw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>4 Lantai 2 Carport 2 Mobil SHM IMB Listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Cluster Lakewood Navapark Bsd Tipe 10 Denah Lantai Denah Rumah Kemewahan" src="https://i.pinimg.com/originals/22/12/0b/22120b08d0e3555b047f16b92bd9e4a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIRMnd3YJre8bq6T9sD4b4vf94YHOwF6pWulTiQZFhl1Za7wznYoShwmng0NOHZZxe5Zo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>101 andi januar 34 378 просмотров.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Dan Denah Rumah Minimalis Type 60 Desain Rumah Minimalis Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/64/b8/7e/64b87e96b355e629b8d2a21ec8177d87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74TRkQjobijvD66QZ6TH76JVOduaLUO4N05Wbcqu9ze0pWBmdDon-sHK0AbpRrZ4AAYM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu rumah serta denah rumah dengan interior yang elegan bisa mengundang banyak orang buat bertamu ke hunian serta denah rumah sebab hunian dan denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Gambar Desain Rumah Tipe 45 Dan Denah Lengkap Desain Rumah Desain Eksterior Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/564x/2e/32/9b/2e329bf2d7402710eb70509ac500edcf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxPUz9U29_GOBe0AbUKeLKYOvHFl2lRWM5w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah cluster memiliki beberapa ciri-ciri antara lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tipe Luna 7x17 M2 Cluster Leora Alam Sutera Leorasitaraalamsutera Model House Plan Floor Plans House Plans" src="https://i.pinimg.com/originals/78/bd/22/78bd2282f8842957210f2cf6dc40dd44.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpOUDAJMqronQ-Bh9c1hUjiIbBgHXXIjtMcQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah satu dengan rumah lainnya juga tetap masih memiliki jarak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Ini Terletak Di Sidoarjo Dengan Menempati Lahan Seluas 7000 M2 Perumahan Ini Menyediakan 3 Type Rumah Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/a1/09/c0/a109c0b9daafa70a2f8d9c818f490842.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSc69HueTlnzIYhFvHF6yKKsMStEH0VF_9w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Mudah-mudahan isi postingan Artikel Rumah Minimalis yang kami tulis ini dapat anda pahami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Cluster Dakota Suvarna Sutera Denah Rumah Apartemen Rumah Baru" src="https://i.pinimg.com/originals/3e/50/1e/3e501ee4c1e9da1008054aeabbd0a14a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9ebL2122QR9Dj4ve_ZKpu7Wu4_dQS1UqX0btBLjkmoyo1yehrJ1ipY38sz9zQFyCE88';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Cluster Model Rumah Hook 2 Lantai 15 X 13 M2 Berdiri Diatas Lahan Sudut Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Cluster Keren Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Cluster Rumah Indah Rumah Denah Rumah Desain Rumah Bungalow" src="https://i.pinimg.com/originals/9f/70/b3/9f70b3b94b959e095a56ecea678d088b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ju2wCmf0OjUrEHY9uU7cU1iYMQD9MC0U7AM9SPp8-e48pwj22TZLflB_0GaEIafjDlU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>4 Lantai 2 Carport 2 Mobil SHM IMB Listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Padasuka Teraace Bandung Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/c6/bd/b6/c6bdb6a1cf4dd18a7cce46924fa2b148.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjSU_el748n_aZotq7q8rAms6MzrubBzAJNDQ98gMV0sJvuU0HUwuLT8bcerVB4_DRnls';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memilih desain rumah cluster yang menggunakan desain pintu dan jendela kaca yang lebar akan memberikan tampilan yang menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctjgx9kr2lk Fwgg Xe1gxd2rqe0tr1j9pfsnqpsnb Tlqkq2if Usqp Cau" src="/search?q=desain+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>44 Contoh Rumah Cluster Type 45 Pictures By admin Posted on 12062020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2 Lantai Di Lahan Trapesium Setiap Lahan Punya Karakternya Sendiri Sendiri Termasuk Bentuknya Klien Kami Y Denah Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/17/f8/94/17f894ae962104d35ee71c8e20bcc908.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPapVcbSe02wjWf3s2lx-fHMB371qqclidw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Com material yg digunakan adalah material ekspos yang menampakan bahan bangunan seperti batu bata semen dan kayu apa adanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Luxmore Greenwich Park Bsd City Denah Rumah Arsitektur Rumah" src="https://i.pinimg.com/originals/f1/9a/e3/f19ae3a2623c290bdcaaebb31909e325.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV4Ng9Zrojg9Pt_0_TUpA0nUgw9B9UnvPxRQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Homepage Desain 44 Contoh Rumah Cluster Type 45 Pictures.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Green Land Villa Denah Type 55 Denah Rumah Tata Letak Rumah House Blueprints" src="https://i.pinimg.com/originals/03/d0/71/03d071e09fe9ff1f4d2aa84809bde0cc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqIGIbwMZ1Com-74tQ4QGXiSKLKdNoEP81kHZrKEQtciwmrC66n6_J-pjOXeEoau4ZIG0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>101 andi januar 34 378 просмотров.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tipe Alona A Lb 170 Lt 239 Rumah 2 Lantai Bergaya Modern Tropis Ini Berada Di Cluster Flinder Park Citragran Ci Arsitektur Rumah Rumah Modern Desain Rumah" src="https://i.pinimg.com/originals/4f/98/d8/4f98d869391928c2c70988c52fd321b5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5gRj0KmW7uLaTHMn_vuC0AIZIVBIlPeW78NV3JO3NmxvCOavx8bSXhfu2LASfQODEMXk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar Denah Rumah Cluster - kalian dapat membersihkan debu dengan mudah di hunian dan denah rumah maka semua barang-barang yang ada didalam tempat tinggal dan denah rumah kamu supaya tetap tertata serta tetap memperoleh kesan yang bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Informasi Desain Rumah Cluster 2 Lantai Prosforjda Denah Rumah Desain Rumah Kontainer Rumah Minimalis" src="https://i.pinimg.com/736x/c6/70/34/c67034ff249b45eac60b986b88b60b04.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ2JlV8cSSwGFPVsltcUec4AEjikY9_SPHaS2My9ecZwEKX7YPIzWWD5U5O3evMRe35_g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Homepage Desain 44 Contoh Rumah Cluster Type 45 Pictures.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Denah Rumah Minimalis 2 Lantai Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/e1/cd/c4/e1cdc4050964b3e46ec07b1f2d8fc17d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxoLxjZII6WMO5XiOTAisiXghOcpbGwDD-rNj-sarYJhTuj6Z_UZkK8k0EeZgEXpGZeq8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah tempat tinggal cluster karya akanoma yu sing asal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Arsitektur" src="https://i.pinimg.com/originals/be/b5/74/beb574c27a6645e994464411cde13078.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoseF9YCx5pHuXJUjrFeW_4OfBk65AJopcA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Cluster Contoh Denah Gambar Rumah Minimalis Ukuran 7 X 8 Terbaru Rumah Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Cluster Keren Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Summarecon Emerald Karawang" src="https://i.pinimg.com/originals/4e/44/7b/4e447bcd5f2b68ab13e4e042a04e059b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfitF36ibsZiXTaNlLkb1nM7wLEl_kMHVIw3xAnrCgRKoRj4lYGArEamdhwsIDXTNOJA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Cluster Desain Rumah Minimalis 1 Lantai Type 80 Foto Desain Rumah Terbaru Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Cluster Keren Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Citra Raya Tangerang Cluster Fresco Citra Raya Tangerang Terbaru 2015 750jtan Soft Launching 11 24 Feb 15 Tambahan Disk Planos De Casas Arquitectura Casas" src="https://i.pinimg.com/originals/3b/b3/96/3bb3966873635e2894fe6d0406ca087a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1_b7j2bnccPIR7vBsZNzGqJpa3rw1XU-gw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meski begitu desain cluster satu ini tetap terlihat berkelas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+cluster+2+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+cluster+2+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Meski begitu desain cluster satu ini tetap terlihat berkelas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Kimora Thezorabsd Tipe 8 Denah Rumah Ruko Apartemen" src="https://i.pinimg.com/originals/73/3d/29/733d294174e5035ee9dff42694156683.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl44fnm1LGU_QSDDzqm3Q1NfZTp2lUWIulbg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada umumnya rumah cluster memang memiliki desain dan tipe yang sama mulai dari eksterior hingga interiornya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Denah Gambar Rumah Minimalis Ukuran 7 X 8 Terbaru Rumah Arsitektur Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/ef/90/20/ef9020d39a5f8e7cee7275f9b3318b5c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1v-w45RTmdkScwUZFnEzYuFvZb3-HB4WUlUXzR7VTHIN_z0MWJ-BcuPcUoCG5d9wQjw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah Rumah Cluster Bintaro - Lengkong Raya Lengkong Wetan Serpong Tangerang Selatan Banten Telp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Di Lahan 8 X 18 M2 Dr Rm 801 Desain Rumah Jakarta Desain Rumah 2 Lantai Rumah Desain Rumah" src="https://i.pinimg.com/originals/ff/1e/37/ff1e37542310aa9ba0a593ceb9268cda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bbaKRYmT_pZWQtLVSMXgextc8a-A3N_3Iz6PxAx__vCPn4_VEbmvl3Oi46Xn5yez7LU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Cluster Desain Rumah Minimalis 1 Lantai Type 80 Foto Desain Rumah Terbaru Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Cluster Keren Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai Dan 2 Lantai 2015 Rumah Minimalis Desain Rumah Eksterior Denah Rumah" src="https://i.pinimg.com/originals/43/83/6e/43836e301b370d689f0fe21729eafe66.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrBn_jQpXV49uaPqvauTkvuii1KgjNkwYZg';" />
+        <small>Source: cz.pinterest.com</small>
+                    <p>Pada umumnya rumah cluster memang memiliki desain dan tipe yang sama mulai dari eksterior hingga interiornya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Gambar Desain Rumah Tipe 45 Dan Denah Lengkap Desain Rumah Tata Letak Rumah Denah Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/4b/30/38/4b30385f91982bc2f41283e0723a7d5e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQryvK_9F_qlTctSs-tBrDOcuP7xf2XaKsew';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Permintaan rumah cluster terbilang tinggi apalagi untuk rumah cluster yang dirancang dengan gaya arsitektur dan desain minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Surabaya Barat Citraland Tipe Magnolia Tata Letak Rumah Desain Rumah Denah Rumah" src="https://i.pinimg.com/originals/d0/15/c1/d015c1739b7cdd611db15b1f1bfb091a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4659Lhisvde_nZOFacj8YgfT8jDaZSfI38w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yogyakarta untuk melaksanakan pekerjaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Contoh Rumah Ukuran 5x7 Modern 7 Denah Minimalis 2 Lantai Minimalist House Design House Plans House Floor Plans" src="https://i.pinimg.com/originals/75/a6/0f/75a60fe57515f7ca63337f9a43d1103f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQsioSZj8tiHc0LGISb3vC4Rc8TENNicKFvk1vIwx9OmFtpstCMA1FoyY_OS-k6tGDqCg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah dibangun dengan desain yang sama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Cluster Rumah Indah Rumah Minimalis Membangun Rumah Rumah" src="https://i.pinimg.com/originals/0f/b4/ff/0fb4ff0965203ac40712077fc2b57585.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIo5Bh5gq1fbRGWBldI-duZh99C-BWuSMGID0knW8D0fam-w3Ur-GxfKHwc4QRmYNwyGk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meski begitu desain cluster satu ini tetap terlihat berkelas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Narayaparkdeltamas Denah Rumah Rumah Apartemen" src="https://i.pinimg.com/474x/08/73/6e/08736ea75453b890948a63962145ecb0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7lohF7aVOvyQHX0tFA-r7PyG7PYytBZMf2w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar Denah Rumah Cluster - kalian dapat membersihkan debu dengan mudah di hunian dan denah rumah maka semua barang-barang yang ada didalam tempat tinggal dan denah rumah kamu supaya tetap tertata serta tetap memperoleh kesan yang bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tipe Rialto Citragran Cibubur Minimal House Design Building Renovation Facade House" src="https://i.pinimg.com/originals/61/f2/b9/61f2b9e695ca0ca08a73d3a2bcb5727d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9-zUef3YMDqfAhPj5fW6sKnQ9uM74eJuFNA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah cluster selanjutnya ini sedikit berbeda dari sebelumnya berukuran minimalis namun terlihat stylish berkat model atap semi klasik dengan warna coklat serasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ma Belle Monaco Village Paramount Serpong Denah Rumah Arsitektur Bangunan" src="https://i.pinimg.com/originals/87/74/27/87742743da1eb35321051df00cd0e3ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3jRnz6X4Qdgd6-9JRWa7XzIekGnjcI5xvFJyG9cDR02NxNWu-CElclWJs0epP7dtS3YY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain itu rumah serta denah rumah dengan interior yang elegan bisa mengundang banyak orang buat bertamu ke hunian serta denah rumah sebab hunian dan denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ukuran 9x10 Yg Terbaru Denah Rumah Denah Lantai Rumah Denah Lantai" src="https://i.pinimg.com/originals/f0/a8/af/f0a8af2481d7141ccd51ef40bc5f7b57.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxkDSNsFNPIB93NVL_1XA5zX4gjiHfGbrWFA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu rumah serta denah rumah dengan interior yang elegan bisa mengundang banyak orang buat bertamu ke hunian serta denah rumah sebab hunian dan denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis Type 45" src="https://i.pinimg.com/originals/25/85/09/25850956f87f293947515aaecbe18931.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHotR6qIsxSjPGfX9RBKlgXsumvVx8_3IBOQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah tempat tinggal cluster karya akanoma yu sing asal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Desain Rumah Modern Ukuran 3x6 Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/13/e6/44/13e64485c4d499bf9bb8caa1cde6d543.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-02uZLLlYJYJivR6j3luJ39fnAdJ8CBvXBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Cluster Desain Eksterior Rumah Cluster Tipe 36 72 Dengan Denah Yang Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Cluster Keren Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Cluster Yarra Tipe Mezzanine Jakarta Garden City Denah Rumah Mezzanine Desain" src="https://i.pinimg.com/originals/18/4a/af/184aafae50fa389fb5ae4efaf7a51ff4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzAFUaYANF9Wn3jmFVKLSvupcakO6QXUMm5BfqhgBBg-hXeTi7REZ-gm_43Jqe1AEv9mE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada umumnya rumah cluster memang memiliki desain dan tipe yang sama mulai dari eksterior hingga interiornya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Karawang Jawa Barat Desain Cluster Kaliska Desain Depan Rumah Denah Rumah 3d Home Fashion" src="https://i.pinimg.com/originals/f2/55/61/f255619923c3a2db9ef81d453d9eb45b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjH_jiVy5yTHGufy9kldkLQYFf-GAkDUt9g';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah dibangun dengan desain yang sama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis Type 36" src="https://i.pinimg.com/originals/0e/34/0c/0e340c01da0883cf8250fef9ff7f5512.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimkvD977uSgQmuQPbmEe0w3Szn9Xn11fwDDU-fYOo5qoOl19fvm3zmk1v_ZFNM2_l60M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dibangun dengan desain yang sama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ukuran 9x9 M 1 2 Lantai 3 Denah Rumah Desain Rumah 2 Lantai Rumah" src="https://i.pinimg.com/originals/c0/42/93/c04293f32cde7058823c406f4ce9f155.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjGlYEmACj6hlKYLpxRIlvETsP2PPCQy073w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memilih desain rumah cluster yang menggunakan desain pintu dan jendela kaca yang lebar akan memberikan tampilan yang menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai Sederhana Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/66/20/98/6620982c0c35aefbbae68791c03a8967.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlzcF_UuPpSPlIEYJX9nb-QKMoodnLKZDvbg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mudah-mudahan isi postingan Artikel Rumah Minimalis yang kami tulis ini dapat anda pahami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di House Plans" src="https://i.pinimg.com/originals/47/83/92/47839283bc7a5ef73c81b7d828242a3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKuCjXqqk8RSqay5X_5Q72OWwn9rC6D8hdmQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Permintaan rumah cluster terbilang tinggi apalagi untuk rumah cluster yang dirancang dengan gaya arsitektur dan desain minimalis.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-makan-padang-modern.html"><i>&larr; rumah makan padang modern</i></a>
+                                                                    
+                                        <a href="/rumah-makan-kayu-manis.html"><i>rumah makan kayu manis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

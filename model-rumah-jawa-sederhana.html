@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Jawa Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Jawa Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/af/c2/5d/afc25df420eb69e5fa460092ff853ca5.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+jawa+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Jawa Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Jawa Sederhana</strong>. Dijelaskan rumah tradisional tempat tinggal masyarakat Jawa umumnya dibedakan dari jenis atapnya. Rumah minimalis sangat populer di antara kalangan masyarakat yang memiliki anggaran terbatas untuk memiliki rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/28/18/cf/2818cf822921d68aa28da0a2790f9ae9.jpg" alt="Desain Rumah Kampung Jawa Desain Rumah Desa Rumah Pedesaan Desain Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAQOHvRFKlVK5I1m5GkbWGHQCgDLC9qT_H8g';">
+        <figcaption>Desain Rumah Kampung Jawa Desain Rumah Desa Rumah Pedesaan Desain Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Ya perbedaan model atap rumah Jawa melambangkan status sosial penghuninya. Saat ini membangun rumah kampung jawa juga merupakan salah satu hal yang umum terjadi di. Poin pembahasan Top Baru 23 Rumah Sederhana Jawa Tengah adalah.
+    </p>
+    <h3>Meski diakui sebagai rumah adat khas Jawa Tengah namun tidak semua masyarakat jawa memiliki desain rumah joglo.</h3>
+    <p>Untuk bagian teras rumah kamu juga bisa buat ruang tamu dengan ruangan terbuka yang nyaman Desain Rumah Jawa Limasan Terbaik 21. Atap rumah Panggang Pe merupakan atap yang paling sederhana dibanding empat model. Sekaligus menjadi tempat tinggal yang unik dan memiliki nilai estetika cukup tinggi seperti pada beberapa contoh di bawah ini. Model rumah sederhana tapi kelihatan mewah di lahan sempit.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Desain Rumah Joglo Khas Jawa Tengah Arsitektur Rumah Desain Rumah" src="https://i.pinimg.com/originals/5b/cc/d0/5bccd035b7cd9c3ef8e7de9be52e7cb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHvwOXgmOiC-ozO9HIDklFX_aiHw9mbT1LRexfvnDEKuUM1L-4agWEJkmQniPw5zEaCOc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk contoh interior dari rumah khas jawa yang minimalis bisa kamu contoh dari rumah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Gambar Rumah Minimalis Klasik Sederhana Gambar Desain 70 Desain Rumah Minimalis Klasik 1 Lantai Desain Rumah Model Home Fashion Rumah Minimalis Arsitek" src="https://i.pinimg.com/736x/da/15/33/da1533a91d77ffcdc8a3cac84a11f6d3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9m7ixIFKnQuOwVgxb0QQqadCvSmZAcMZ2g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis type 45 ini sudah memiliki 3 kamar tidur 2 ruang kamar mandi ruang tamu ruang keluarga serta dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Limasan Modern Di Tanah Kapling Rumah Desain Rumah Arsitektur" src="https://i.pinimg.com/originals/95/2e/63/952e63252651e9b7dd7e725865911db6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLhwlcOLPZTMCdABuT-SJPetg2N_WxSAtYaA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>27 Interior Rumah Kayu Jawa Sederhana - Untuk memiliki rumah kayu ada sekomponen orang menggunakan jasa arsitek untuk sekedar berkonsultasi atau bekerjasama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Limasan Besar Arsitektur Rumah Minimalis Model Arsitektur" src="https://i.pinimg.com/originals/3c/0b/12/3c0b12cd1a1e94d85f429274b5d3ea8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmNzjchypfACxhKXyociFuY6048aj6RsNWdg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1473x999 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Limasan Modern 3 Kamar Tidur Desain Rumah Desa Rumah Desain Rumah" src="https://i.pinimg.com/originals/f3/5d/0c/f35d0c322232b9e4e2f32d61c57dc439.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7EyUpW33eEo4vgyYZV4PtVTyiIW3Zp9s94_3KskmxKw861p4sFktfpNlu4UHyvrjFPIE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Atap model Kampung ini biasa digunakan oleh kalangan rakyat biasa yakni dengan 2 sisi atap di bagian depan dan belakang yang dihubungkan dengan sebuah bubungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Rumah Dekorasi Luar Ruangan" src="https://i.pinimg.com/736x/a4/90/4a/a4904a7604c610e2a8adda1db9499341.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4uBmtZAS3y3y6TG01h6Cua4v9CRJytfkUusjZP4dN7F1SF5ojB0d7lXi5ZEsTuDHn2yE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Atap model Kampung ini biasa digunakan oleh kalangan rakyat biasa yakni dengan 2 sisi atap di bagian depan dan belakang yang dihubungkan dengan sebuah bubungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Jenis Rumah Limasan Untuk Bangun Hunian Disertai Beragam Desain Inspiratif Arsitektur Desain Rumah Rumah Arsitektur" src="https://i.pinimg.com/736x/49/bc/0b/49bc0bab93bd4272cee098d2cdc8a408.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_UxvDfsYUmea4zNnGmauecv66YxiSg8YzA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ya perbedaan model atap rumah Jawa melambangkan status sosial penghuninya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Joglo Dan Limasan" src="https://i.pinimg.com/564x/30/2a/52/302a52d294768db005fe8dc239001b22.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMDmDiZhThF8aQUzv4vdjeCBgkntTxSpZsaQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Makan Padang Sederhana Bintaro 43 19 Restoran Padang JL.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Terbaru Dengan Model Teras Batu Alam Rumah Batu Rumah Minimalis Desain Rumah Bungalow" src="https://i.pinimg.com/originals/af/c2/5d/afc25df420eb69e5fa460092ff853ca5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiuk9LcItIxGbqisS5LLN_eDePK_m44sXnNw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ya perbedaan model atap rumah Jawa melambangkan status sosial penghuninya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Di Kampung Desain Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/c8/20/38/c820383fe3e6fe25a5286ceb32d5331b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNzj6BSyfL29DglzXS2-VFduJbUz0qtuPHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Limasan Minimalis Desain Rumah Eksterior Rumah Kayu Rumah" src="https://i.pinimg.com/474x/84/f3/9d/84f39d9b2f277807b24a2ec784c78670.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQI2AaT83Jevc62YrynS0LBO5kAIFz4g1ycb3u-rv_fZLveHccNMP_ayUOwX3DccJMLs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Atap rumah Jawa memiliki banyak ragam model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Rumah Sederhana Terbaru Desain Rumah Desa Rumah Pedesaan Desain Rumah Satu Lantai" src="https://i.pinimg.com/originals/62/22/ce/6222cef6fa3bcdd81c14e2513f125c64.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-F9NAT3BKNBmbvSmlvMNHNeYhRbyqoSyQg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah 5 Model Rumah Limasan Modern Bergaya Klasik Pesona Rumah Arsitektur Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/736x/90/6a/d7/906ad7ce1dc3fcdf22380063cddbd66c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT626y_EvEqL2VhrDanx4iQ-TShSjXR9URbGVeCCM6AFWxSIOEsIl0ePs078Firavtdj7U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Rumah Jawa Sederhana Tapi Mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Jawa Rumah Arsitektur Desain Rumah Rumah" src="https://i.pinimg.com/originals/62/1c/34/621c344041d5081c2ac87a42234e8905.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ_klAuv39ptu5Fl4Atb7j9_SaboZI5KFptv6NhIjLGDNrKmyRrEr2Xb7ot2Hulm7W3zI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gayamsari IV No201B Buka pukul 0700 Top Baru 23 Rumah Sederhana Jawa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Desain Rumah Joglo Khas Jawa Tengah Desain Rumah Eksterior Desain Rumah Kecil Desain Rumah Bungalow" src="https://i.pinimg.com/originals/91/0d/68/910d68cffa62f15d80d7f1f4ef12347d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-hrAEXrOY6t12isnWetvKeXBR2HFbxKazQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah jawa ini sering kita temui di kampung-kampung dengan memiliki sisi atapnya yang berbentuk segitiga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Rumah Desain" src="https://i.pinimg.com/736x/c2/41/e7/c241e7505df26d0e0b92932a1485f3f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjeGp_VeWXi_8VHchArdRDDBcQRG5K05j4vw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana ini lebih kecil daripada rrumah minimalis yang type 54 rumah ini hanya memiliki ukuran 9 X 5 meter saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Desain Ruang Rumah Limasan Modern House Blueprints Eksterior Rumah Rumah" src="https://i.pinimg.com/736x/70/25/d3/7025d30078525616e7a7443059f256ce.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtN8w8ivgRq0B5Rg4-8yZ1Sb4Hk4sK9Eu4w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk bagian teras rumah kamu juga bisa buat ruang tamu dengan ruangan terbuka yang nyaman Desain Rumah Jawa Limasan Terbaik 21.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Limasan Jawa Klasik Modern Desain Rumah Rumah Gaya Rumah" src="https://i.pinimg.com/originals/9d/4a/3f/9d4a3fd52494d1a9d753399a805525b5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfNUpfjvSNfQhu0_3ZfF66guDTbD3obIAKHw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Jawa Modern Sederhana merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Desain Rumah Joglo Khas Jawa Tengah Desainrumahnya Com Desain Rumah Eksterior Desain Depan Rumah Desain Fasad" src="https://i.pinimg.com/564x/da/33/54/da3354b979b699afa0d3772d4d56c25c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStZk1YBfJjyXi1coTvHMTgOqLrqGtQMAl-r1bgNcoAvmvH9kUjn1ZT6ykJl3FqyQgjuiA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana ini lebih kecil daripada rrumah minimalis yang type 54 rumah ini hanya memiliki ukuran 9 X 5 meter saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Pdf Desain Rumah Kontemporer Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/8a/de/23/8ade23a4a34c63d413ec755b136153e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc0-ZNie3DJwqy7-2YkDhlML_Qh329kb5Wvw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada beberapa provisnsi di pulau Jawa yaitu Daerah Khusus Ibukota Jakarta Jawa Barat Jawa Tengah Jawa Timur Daerah Istimewa Yogyakarta dan Banten.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcto8tvqum74o16tzj7bmjavhc Ddvbkkuofbxgyrx7izd 8a6cq Usqp Cau" src="/search?q=desain+teras+rumah+limasan+jawa&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+teras+rumah+limasan+jawa&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Limasan 1 Kamar Tidur Rumah Kamar Tidur Rumah Konsep Arsitektur" src="https://i.pinimg.com/originals/d8/8f/51/d88f51f7441abf57b330a832c3fb796b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLA4g_Q0SZDhj6OKYR-nVJpUuAdJYSBYRViw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Masing-masing daerah mempunyai adat tersediri termasuk model dan desian rumah jawa sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Dan Toko Arsitektur Desain Rumah Rumah" src="https://i.pinimg.com/564x/05/a1/49/05a14988b2d3eb8c902b04204a5c8f1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStU8mRTmAaDuXZEKMO8sJgouZaw3sL9ZfclQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Poin pembahasan Top Baru 23 Rumah Sederhana Jawa Tengah adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Jawa Jogja Bantul Daerah Istimewa Yogyakarta Terbaik Arsitektur Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/474x/7c/6b/12/7c6b12f84a17d2056b8cd915e8ab9dd0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShHri55JRxEkyUbO3n8SJanCP5XncNgIJhYIseiSSVaWiboe6lxS4NH-Y5cnTaaJddFcU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Artinya dengan dana yang terbatas ada juga model rumah sederhana terbaru yang bisa Anda pilih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Joglo Modern Desain Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/ce/c1/7d/cec17dba4f4329a55ccefc715614ec44.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-apLnHGslc-_cZdK1qo4HOmrsYB481cA9_oigt-l_Xj0poNNKy9B4o0kXScAzBATGKgY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Umumnya tampilan rumah joglo terlihat sederhana namun kerumitan dalam bahan baku serta pembuatan menjadikan proses rumah joglo khas Jawa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Rumah Desain" src="https://i.pinimg.com/736x/4e/de/b8/4edeb856d35ef3ecebb3868191e93805.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4oBYoUOzCW_4nEQvSWHaoIrJvfF77Nt5wK9PDA7ZfY1bFIxHKa5H8ExZdIYTBn6nPW8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Atap model Kampung ini biasa digunakan oleh kalangan rakyat biasa yakni dengan 2 sisi atap di bagian depan dan belakang yang dihubungkan dengan sebuah bubungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Desain Rumah Joglo Khas Jawa Tengah Rumah Desain Rumah Home Fashion" src="https://i.pinimg.com/600x315/ea/9e/4e/ea9e4e765e22deac5cdf9af84ecc7721.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7AvFROLFiBSyH_Vj4BSO55p8nAb37Nt2sJIOiuLJYZ5EyH-AXIv1sDN6kCTxqG80fwT4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Atap model Kampung ini biasa digunakan oleh kalangan rakyat biasa yakni dengan 2 sisi atap di bagian depan dan belakang yang dihubungkan dengan sebuah bubungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Rumah Desain" src="https://i.pinimg.com/736x/9d/73/1d/9d731d981f942249936cb8d54e592d30.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlnrUCpLo9r1V39E0WFCBrOkQ5UNoI-iX65UviIzuTza67BZrf8x6tU_3MfL4KXMOMwcI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Masing-masing daerah mempunyai adat tersediri termasuk model dan desian rumah jawa sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Desain Rumah" src="https://i.pinimg.com/474x/3c/78/c7/3c78c7697430c1f67e7905934617b130.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqA_JPLiEPl2Imqqo-Luxt_rzhsg4Dhfa5dQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Atap rumah Panggang Pe merupakan atap yang paling sederhana dibanding empat model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi Gambar Rumah Minimalis Desain Rumah Sederhana Home Fashion Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/f4/32/a0/f432a00f72cd3e94946f5724cb2507db.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbCw2AStnmGmHB37HPn5TUaz500jJ7bRACA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pada bagian kiri dan kanannya terdapat peneduh yang cukup lebar sampai kedepan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Joglo Indonesia Ajilbabcom Portal Arsitektur Vernakular Desain Rumah Arsitektur" src="https://i.pinimg.com/originals/68/3c/c3/683cc394bba18c3e2f2863cfb46fe370.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHhJGLRNsnlfH9wCybbnxF_kVt5J_chqas41cUX3zbvSqJto2by7Ol-S4zSnkLAvkkm0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk bagian teras rumah kamu juga bisa buat ruang tamu dengan ruangan terbuka yang nyaman Desain Rumah Jawa Limasan Terbaik 21.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Image Result For Desain Rumah Joglo Minimalis Rumah Interior Rumah Desain" src="https://i.pinimg.com/originals/dd/0a/bf/dd0abf8b36c1ec31998d301da1a87118.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-yHRX0QL6XC18urcPPSGQYxPVW31H3PvDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mendapat rumah kayu yang sesuai harapan maka salah satu referensi yang harus anda perhatikan ialah interior rumah kayu jawa sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3 605 Likes 28 Comments Inspirasi Desain Rumah Pp Inspirasidesainrumah On Instagram Perpaduan Tradisional D Desain Rumah Bungalow Desain Rumah Rumah" src="https://i.pinimg.com/originals/b3/77/b1/b377b1792e673693a7b3294a2a47e277.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrG6_zzTjcWp-_P8od6I1vTWHTjC0HvPQxA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada tiga bentuk SEDERHANA CONTOH RUMAH GAMBAR JAWA atap desain rumah jawa sederhana dengan bentuk dari yg berikut beberapa model desain tempat tinggal minimalis gaya jawa yg sanggup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Terbaru Desain Rumah Minimalis 2016 Berbagai Type House Styles House Architect Design" src="https://i.pinimg.com/originals/3e/37/bd/3e37bd71b7ccf2f96c0de314865ab559.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8rKvnJ_9YkICgbjT4VrRLZbzqQzm2AgahQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah 3D Minimalis Modern 25.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Limasan Modern Minimalis Jual Rumah Limasan Kayu Jati Adat Jawa Harga Murah Desain Rumah Rumah Kebun Rumah" src="https://i.pinimg.com/originals/63/ba/d0/63bad0b067896fdcfdb57cefa6fdb7bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBQHFcysHRAUivYM2M00X1vDYmL_gyjRW6ul62JiH2UqahhQTHyYdNmKTroI1oUepYeV0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Simpang Lima Mal Ciputra 2nd Floor Buka pukul 1000 Rumah Makan Sederhana 47 10 Restoran Padang Jalan Jatingaleh Pondok Makan Sederhana 43 172 Restoran Padang Jl.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kampung Jawa Desain Rumah Desa Rumah Pedesaan Desain Rumah" src="https://i.pinimg.com/originals/28/18/cf/2818cf822921d68aa28da0a2790f9ae9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAQOHvRFKlVK5I1m5GkbWGHQCgDLC9qT_H8g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Poin pembahasan Top Baru 23 Rumah Sederhana Jawa Tengah adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 The Hidden Treasure Of Joglo House Yogyakarta Dizzyhome Com Indonesian House Bali House Villa Design" src="https://i.pinimg.com/736x/06/4a/2d/064a2d1e966757ea4e5bcf71eb19c015.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQurxuICmPCiN7NS2tJj0qUm0HySqd3xaXsy0y9K_AE2ZMdDKmkYYyOI0B6cQk2gawsvAc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Joglo Klasik Kontemporer Dan Morern Desain Rumah Minimalis Desain Arsitektur Arsitektur Arsitek" src="https://i.pinimg.com/originals/0f/18/f9/0f18f9ea87a24b68a59933f06fe82a97.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_TjtJswI0Ixi0E7dsJ7Wfukl8vfcSfGNO-w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Atap rumah Jawa memiliki banyak ragam model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Jawa Joglo Limasan" src="https://i.pinimg.com/736x/31/8d/ad/318dad986c08223e553dd88fe1cf0275.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSDzq2qfNgTLQaXatHds9C-qcLF4Cac_tNg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yang paling sederhana adalah atap model Rumah Kampung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Jenis Rumah Limasan Untuk Bangun Hunian Disertai Beragam Desain Inspiratif Dekorasi Rumah Pedesaan Desain Rumah Rumah" src="https://i.pinimg.com/736x/80/2d/d0/802dd036b7253165437aba11a6885691.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIueYd8Za9uYfSFQwlNplUKKeP2GaE0mOI0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dijelaskan rumah tradisional tempat tinggal masyarakat Jawa umumnya dibedakan dari jenis atapnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Rumah Desain" src="https://i.pinimg.com/736x/3b/9c/cd/3b9ccdf45e362a11565d8a0a91a92805.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMKeDN6gQwj1gnj_KdKgQc75PCDSVY3lCCoZKuxBjsNwuF8tGPjoxrOEWDmwJlG-yD-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>27 Interior Rumah Kayu Jawa Sederhana - Untuk memiliki rumah kayu ada sekomponen orang menggunakan jasa arsitek untuk sekedar berkonsultasi atau bekerjasama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Kinds Of Beautiful House Roof Design In 2021 Meggiehome House Roof Design Roof Design House Designs Exterior" src="https://i.pinimg.com/736x/1a/47/68/1a4768201016391096d9e906e8de7dc5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnyXDfBIqB8Sm3tskRPNYMzWniXIpI2Wpi5w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dijelaskan rumah tradisional tempat tinggal masyarakat Jawa umumnya dibedakan dari jenis atapnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Adat Jawa Paling Asri Arsitektur Rumah Tropis Desain Rumah" src="https://i.pinimg.com/originals/ef/ed/0c/efed0cbb2c0a4253e1da4db1894e0e7a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7XPO3gV4V6yknUyF0hHOMtyY-rUVQNO8wWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nov 4 2019 desain interior rumah jawa kuno.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Teras Rumah Yang Elegan Dan Nyaman Home Fashion Rumah Arsitektur Desain Rumah" src="https://i.pinimg.com/originals/6e/1d/3c/6e1d3cfa864c012b23c9ecdf7e1f7b5e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtPjp0V4vvLgYLHqrLNQJQBgxDfRPuNWwo41Snynq9AMGrPiZfQlJQnKLmF8RtsMDOzdk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Atap model Kampung ini biasa digunakan oleh kalangan rakyat biasa yakni dengan 2 sisi atap di bagian depan dan belakang yang dihubungkan dengan sebuah bubungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Dekorasi Luar Ruangan Rumah" src="https://i.pinimg.com/736x/da/5d/56/da5d56219e58c168ac9c0b40a3b22f4e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-r96vBwHqc8rJdBTYWr_CgyuCMZnnur8u-iPYWLqjUaTvA7b7IFIec6rkzJ-jWzaUCjM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Makan Padang Sederhana Bintaro 43 19 Restoran Padang JL.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Gladak 1 Kamat Tidur Rumah Dekorasi Luar Ruangan Rumah Beton" src="https://i.pinimg.com/originals/da/56/2b/da562b1bd3b3ecaaba14a53017ca373c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXRxTwNqb09a3uJSwjylzQjf1Vtw9LPYxTYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Poin pembahasan Top Baru 23 Rumah Sederhana Jawa Tengah adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Rumah Desain" src="https://i.pinimg.com/736x/4e/bb/f4/4ebbf49e128cf20d0b78080b3edfb196.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQML77VgENWXyJLndVmq1CR7ZFZNcBCYLVgIc0a1XOZPWM8L0ZTPvkjtz9-V0UXvBUw9j8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Arsitek Desain dan Bangun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Rumah Desain" src="https://i.pinimg.com/736x/23/41/4a/23414abd25de5c5623130fea51848c01.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmtZnQhmZrXiuAtaHWeoNVrfuqU-q8dRwhA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Saat ini membangun rumah kampung jawa juga merupakan salah satu hal yang umum terjadi di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Mendesain Rumah Jawa Modern Dengan Sentuhan Minimalis Rumah Minimalis Rumah Arsitektur" src="https://i.pinimg.com/originals/3c/b1/bd/3cb1bd30cffd2492dd9f6d2fab425368.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTLLJuDrKa3yq8B0lvN7g8GyTkTjKuXY1w4a_OQjvjaXJw5xTgdiusXx_ACk-2ALaYsrg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Jawa Modern Sederhana merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/dekorasi-rumah-36.html"><i>&larr; dekorasi rumah 36</i></a>
+                                                                    
+                                        <a href="/dekorasi-ruang-tamu-mewah.html"><i>dekorasi ruang tamu mewah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Tangga Minimalis Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Tangga Minimalis Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/82/de/5c/82de5c1cd5e6045e406d68c4898aa774.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=tangga+minimalis+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Tangga Minimalis Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Tangga Minimalis Sederhana</strong>. Jika kamu salah satunya maka silahkan terapkan desain tangga rumah minimalis sederhana. Fungsinya untuk mengarahkan pengguna menuju area loteng.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/d3/64/ea/d364eab8cd79d4a4768a2b63326087fc.jpg" alt="Desain Dapur Kecil Bawah Tangga Kamar Tidur Minimalis Kecil Ruang Keluarga Minimalis Kamar Tidur Minimalis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3YrR4k-uAj8ioFSxNeABDr3HY54Dbx8qP85tToocXRZYiYeKnP2IuWfvHY1_xDQE7ejg';">
+        <figcaption>Desain Dapur Kecil Bawah Tangga Kamar Tidur Minimalis Kecil Ruang Keluarga Minimalis Kamar Tidur Minimalis from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Pakailah besi yang kuat dan bahan-bahan berkualitas lainnya jika Anda berencana membuat desain tangga melayang ini. Cahayanya membantu kita melihat anak tangga lebih baik ketika sedang naik-turun tangga. Desain tangga melayang memang cocok jika dikombinasikan dengan interior rumah minimalis sederhana.
+    </p>
+    <h3>Selain dapat mempercantik tampilan lampu-lampu ini juga berguna sebagai pengaman.</h3>
+    <p>Jika kamu salah satunya maka silahkan terapkan desain tangga rumah minimalis sederhana. Jika kamu salah satunya maka silahkan terapkan desain tangga rumah minimalis sederhana. 40 Model Tangga Kayu Minimalis dan Modern - Saat ini kebutuhan akan lahan dan rumah tinggal meningkat tajam. Faktor-faktor tersebut di antaranya yaitu seperti berikut ini.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Rumah Minimalis Modern 2 Lantai Rumah Minimalis Rumah Penyimpanan Bawah Tangga" src="https://i.pinimg.com/originals/02/a2/ee/02a2ee26f0b2bff929634a6db4f924f2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPI914a4Wo4RZKfg0J0IFHhtsWu8HaHPAR4Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut adalah model lain dari tangga minimalis berbahan kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Beton Rumah Minimalis Rumah Minimalis Rumah Rumah Baru" src="https://i.pinimg.com/originals/1b/3c/14/1b3c14b3314d9dbde8aeaeaee2b73d57.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3l4QqANYypEa4pah9zrDzssgnWMT3Qs4XmQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Percantik tangga minimalis di rumah dengan menggunakan lampu hangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lemari Bawah Tangga Sederhana Finishing Hpl Livingroom Interiordesign Storagecabinet Desain Kamar Penyimpanan Bawah Tangga Rumah" src="https://i.pinimg.com/originals/a1/17/30/a11730abf508a8abee1232d38249a5fd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUD3j5TQqUSQK1crkc7SorB8WDIzsZwgHg4R3W8L1bo5dsnnRJ0BBIHjkvA3iWjqJ92s8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Percantik tangga minimalis di rumah dengan menggunakan lampu hangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Review Lemari Bawah Tangga Hpl Di Pondok Kelapa Jakarta Timur Produksi Lemari Pakaian Dan Lemari Dapur Custom Untuk Seluruh Wilay Tangga Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/22/1d/f5/221df532410f8e63a17a14375462f0e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3CkAUTymvKAIY4gzr2EToQACKgZ0aIWftQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain tangga melayang memang cocok jika dikombinasikan dengan interior rumah minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Beton Rumah Minimalis Desain Tangga Rumah Minimalis Desain" src="https://i.pinimg.com/originals/f7/af/a2/f7afa2b71e8341459e104507b88325af.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32HVr1rHoJlnhZBRJz1hP6bS5n1pc295uddeiCMdF_8fYG3HtOdbeLTgvkPZQyGq8ZSs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model atau desain tangga minimalis sederhana ini adalah lurus yaitu tanpa lekukan belokan atau tambahan aksen lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Contoh Model Desain Tangga Rumah Minimalis Modern Sederhana Rumah Minimalis Desain Rumah Minimalis Desain Eksterior" src="https://i.pinimg.com/originals/87/b1/2b/87b12b3326ac700851889c556e0c959d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xM4jUKEU_4EqKSyUcoEO-jp9yetPSg8FdDAkXviD2GTnFsfU11tKUMKmcNyXNS7w8Fg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kekosongan di bawah tangga bisa Kamu isi dengan sofa kursi atau perabotan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Dapur Minimalis Di Bawah Tangga Terkini 2016 Rumah Kamar Mandi Bawah Rumah Minimalis" src="https://i.pinimg.com/originals/71/01/ef/7101efd508356f35b0bc169a5c4047cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUUrddF7nlrXS_X2I4_wHljHY3S0WKuhMhdA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Faktor-faktor tersebut di antaranya yaitu seperti berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tukang Railing Tangga Besi Tangerang Serpong Bsd Pamulang Ciputat Bintaro Graha Raya Dekorasi Rumah Rumah Tangga" src="https://i.pinimg.com/originals/52/5a/04/525a0409311df8d070910baf31398a11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_LGlGR2C6yRBCigwJcQYD_SxQL7erZScgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebelum mulai merancang tangga tentukan model dan desain yang ingin kalian ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Deine Treppe Sieht Langweilig Aus Schau Dir Hier 10 Tolle Aufpimp Ideen Fur Die Treppe An Desain Tangga Desain Interior Tangga" src="https://i.pinimg.com/originals/df/96/c6/df96c68c92cd26e8469819075747dd75.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8tb09Vhzrv5eXxZ9V8Ncgg9PkRFMYc1oog';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Karena itulah anda sebaiknya beli saja yang minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Besi Tempa Putih Tangga Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/82/de/5c/82de5c1cd5e6045e406d68c4898aa774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhfQrLde3-C_dzjlSiUl01z1nrK2ftzQgOQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga minimalis yang terbuat dari material besi ini memiliki pegangan yang diletakkan pada bagian dinding saja untuk menciptakan kesan interior rumah yang lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="27 Model Tangga Rumah Minimalis Modern Terbaru 2021 Dekor Rumah Desain Tangga Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/0a/0c/69/0a0c699a0d3d431bfd43fce153397f7d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0HzLRP-HxZcJpVUD3R_JINBLnHidXPU3Cgw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika kamu ingin membuat rumah berkonsep minimalis tangga yang terbuat dari material kayu ini sangat direkomendasikan untuk menjadi pilihan karena kayu memiliki nilai lebih pada nilai keindahan estetikanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Furniture Kediri Furniture Minimalis Interior Minimalis Desain Minimalis Rumah Minimalis Rak Tv Backdrop Tv Lemari Bawah Tang Interior Desain Desain Dinding Tv" src="https://i.pinimg.com/originals/ed/b1/58/edb158affee8b89650949375416cffdd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEC8IVIpQnRmCEVqqugu4HVd-9OMfr8mBOiw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tapi sebenarnya setiap anak tangga ditahan oleh anak tangga di bawahnya yang kemudian berparalel dari atas ke bawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Railing Tangga" src="https://i.pinimg.com/564x/7b/24/f3/7b24f38b4d6fb54d60efad56b0503d88.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxzxKvn9yhyg0fraLTqi0d0W44z68c-DvfDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain tangga rumah minimalis juga diharapkan nggak menyulitkan penggunanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Pembuatan Lemari Bawah Tangga Minimalis Modern Profesional Desain Produk Penyimpanan Bawah Tangga Ruang Bawah Tangga" src="https://i.pinimg.com/564x/90/18/eb/9018eb71c69cf346136b2439a116409c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0imcjnlXps90epsuK3gM5ljPMWKpDcvNnvQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga melayang ini sekilas terlihat ditanam di dinding.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Besi Terbaru Arsitektur Interior Desain Tangga Rumah" src="https://i.pinimg.com/originals/37/1c/6a/371c6a48e12fabc4c628e0f284bfbca9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ18Iy6EgFd8bUYfiUGVgzdPXGn2bdfbAkw6okjh9iOG0o6rhv9QKImyBTackf3LVcAzo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah tangga ini tersedia dengan berbagai model dan jenis berdasarkan material yang digunakan untuk membuat tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Tangga Rumah Minimalis Terbaru Modern Rumah Minimalis Rumah Desain" src="https://i.pinimg.com/originals/ad/03/b6/ad03b6d62c154586e62425e6e1e563ad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQsC7YdGTCye2Z6jEtWe7B0wYwpEVkVyDjQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Model Tangga Rumah Minimalis 2 Lantai Sederhana merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idamanDengan gambar desain Desain Rumah Minimalis yang baik yaitu resolusi 1600x1011 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Kecil Bawah Tangga Kamar Tidur Minimalis Kecil Ruang Keluarga Minimalis Kamar Tidur Minimalis" src="https://i.pinimg.com/originals/d3/64/ea/d364eab8cd79d4a4768a2b63326087fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3YrR4k-uAj8ioFSxNeABDr3HY54Dbx8qP85tToocXRZYiYeKnP2IuWfvHY1_xDQE7ejg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hal yang harus Anda perhatikan adalah struktur atau rangka yang akan digunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Rumah Bertingkat Rumah Minimalis Rumah Tangga" src="https://i.pinimg.com/originals/a4/8b/c3/a48bc36c7ef9cde8c197979d3469e9e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQIvZJ21WNp0ur_F1Rjv8evfvKkUQ6EkW1fR6PMVwTpTcAzeRgkRuegmRZZxrIJHnbGY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fungsinya untuk mengarahkan pengguna menuju area loteng.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Casa A Estudio Gmarq Tangga Modern Tangga Rumah Minimalis" src="https://i.pinimg.com/originals/03/24/64/032464b75fdacab3973f41af4eac206c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGpPuRwNvUN81ZdBrKwGGx-31_5QAD6bKkP_OlUDwGEnqZUoJASysPI2iDBlwtREGOa3A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Model Tangga Rumah Minimalis 2 Lantai Sederhana merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idamanDengan gambar desain Desain Rumah Minimalis yang baik yaitu resolusi 1600x1011 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Kaca Dibuat Khusus Bagi Anda Yang Menyukai Dekorasi Rumah Dengan Desain Minimalis Tapi Terlihat Elegan Desain Minim Dekorasi Rumah Rumah Desain" src="https://i.pinimg.com/736x/cd/59/63/cd596356434dd291414e2a27127e5d71.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO85Y1f8spbD11fGjacSKDf2RErf0vqKy1Og';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tapi sebenarnya setiap anak tangga ditahan oleh anak tangga di bawahnya yang kemudian berparalel dari atas ke bawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Minimalis Besi Galvanis Di Puri Kinaya Bogor Minimalis Tangga Desain Tangga" src="https://i.pinimg.com/736x/69/69/13/696913ee7c4a5bd77221545d923be96c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj78076GJlYIqo7knFyx0WqEJ0QA7ZISFp4w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagian orang tidak suka tangganya didesain secara berlebihan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Malang Interior Nganjuk Interior Blitar Interior Jombang Interior Tulunga Desain Rumah Eksterior Desain Rumah Bungalow Rumah Minimalis" src="https://i.pinimg.com/originals/7f/11/df/7f11dfdf818ae1ca24065ec95c935e3a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmzODKsn5vl85oG9vtD8TncxyS_-t8AdGWbDesByrzaQpdJ1YpSAWHLaiAOvIP_-DxuM';" />
+        <small>Source: cz.pinterest.com</small>
+                    <p>Kalau begitu coba buat anak tangganya dengan bentuk tidak beraturan seperti desain tangga rumah minimalis di atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Tangga Minimalis Tangga 35 Desain Tangga Rumah Minimalis Tingkat Sederhana Terbaru Desain Rumah Kecil Rumah Rumah Minimalis" src="https://i.pinimg.com/736x/f7/5f/d2/f75fd23bb0f6b1e176c5e057dd45ea5d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF02n0nCdFMFFyLWglorgRIV7r8ChmovsjYbjKDSNMDWyihavG57nxoS6vd0lW-p9qa3E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain sederhana dengan variasi material.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Minimalis Di Bekasi Timur Jual Kanopi Termurah 08125227383 Rumah Desain Tangga Rumah Minimalis" src="https://i.pinimg.com/originals/78/25/3b/78253b94c0637cadf1531e256fa05c5e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCI6cCJgymEmN1CcFmw-fvsyF2XebT2CjVqQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk tangga minimalis ini pun tidak harus terlalu lebar namun bisa disesuaikan dengan luas ruangan yang akan diberikan interior tangga tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Tangga Minimalis Rumah Rumah Minimalis Dekorasi Rumah" src="https://i.pinimg.com/originals/96/2c/65/962c659749c7e51c6908174b6055830e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW0at6RTZjo8HjKj-j4oH08p121777Tt8jbRCNJcEwhEaBDxyCFncu_FwGFTE3WcUouvA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain tangga seperti ini cocok buat kamu yang berkarakter sederhana yang lebih menyukai konsep ruang yang tidak terlalu banyak detail seperti desain tangga tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Modern Sederhana Rumah Minimalis Tangga Minimalis" src="https://i.pinimg.com/originals/01/dc/72/01dc72106e6fc2c3cbbda61a58538736.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtS68gs_OEAg-BVmlpvxMUcfeq28ymT4dzcNhuPsWulcSnIo0rWpSWu8Z5Gp-JvZqWxVM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model 1 Jika ingin menciptakan konsep tangga minimalis sederhana maka Anda bisa membentuk anak tangga tanpa railing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jangan Biarkan Ruangan Di Bawah Tangga Rumah Anda Menjadi Tak Termanfaatkan Anda Dapat Memanfaatkan Ruang Di Bawah T Rumah Home Design Decor Desain Dinding Tv" src="https://i.pinimg.com/originals/77/b6/62/77b662c0174e7726ec3e7773a351efff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1KZp1_ao05hUpWMyuLm_AVetgrxZ5p9-tqA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan memiliki rumah yang indah dan nyaman akan membuat suasana hati menjadi senang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Dapur Di Bawah Tangga Portofolio By Consignment Interior Designer Di Sejasa Com Rumah Rumah Minimalis Desain" src="https://i.pinimg.com/originals/9e/c2/ed/9ec2edde24dc9803d3d0228e384be749.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSha76gexgXN7NgTbALlsPVrbvoVkqAWgPxIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Percantik tangga minimalis di rumah dengan menggunakan lampu hangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Malang Interior Nganjuk Interior Blitar Interior Jombang Interior Tulungagung Interior Trenggalek L Desain Interior Ide Dekorasi Rumah" src="https://i.pinimg.com/474x/e9/84/da/e984da357034d8ca62e36b0081f55048.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy5eUVDlepR1CHTD7-_8hA7BSdMN3k970K4Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain tangga rumah minimalis juga diharapkan nggak menyulitkan penggunanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Rumah Bertangga Tangga Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/b3/db/c5/b3dbc524a59437605122ec61b865d5d1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZv-sl9XwqiXKJlUI_nFZ2viqJAiiK50gw9Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harga tangga kayu rumah minimalis saat ini sangat terjangkau yang terbuat dari besi juga terjangkau jadi hemat di kantong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=ukuran+tangga+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ukuran+tangga+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Model 1 Jika ingin menciptakan konsep tangga minimalis sederhana maka Anda bisa membentuk anak tangga tanpa railing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Model Tangga Kayu Minimalis Dan Modern Rumah Rumah Minimalis Rumah Kayu" src="https://i.pinimg.com/originals/a2/25/6e/a2256e9f620bf49fdfcf130007e42d6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyEofXQrwexmJDnaHo7FCAthW51FqMEZWNVZTm2NlRKuePueIHqkcTjMDtSE_3BmBJbk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Baik itu untuk keluarga yang sudah lama berumah tangga ataupun untuk keluarga baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Tulungagung Lemari Bawah Tangga Fungsional Desain Depan Rumah Kecil Desain Pintu Utama Kayu Desain Depan Rumah" src="https://i.pinimg.com/originals/28/74/2f/28742f61a923b0ded3f3dd0332737c4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWlvAcjTNf25Dt06dW54hbYyj72XTo3pvNFYhCopLHE-wjXwYHLJEymJxqH8DmYaWexC4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model atau desain tangga minimalis sederhana ini adalah lurus yaitu tanpa lekukan belokan atau tambahan aksen lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Tangga Rumah Minimalis Sederhana Dan Cantik Tips Memilih Model Tangga Rumah Minimalis Desain Tangga Rumah Minimalis Minimalis" src="https://i.pinimg.com/474x/b6/93/a4/b693a43602217806ee6d388a73c2a852.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi2_PMEhmTDrJtknKaLR6_Gppidnc2CyYect-lKUF15Of4HUPuD3xc4pKv0UWCzq9CFAM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tapi sebenarnya setiap anak tangga ditahan oleh anak tangga di bawahnya yang kemudian berparalel dari atas ke bawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Praying Room Ideas To Bring Your Ramadan More Beautiful Prayer Room Muslim Prayer Room Ideas Home Room Design" src="https://i.pinimg.com/736x/b9/c3/cb/b9c3cb2e9ed408f50284c507e84206d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpzz7-7fu6hvPxVJRk9AJmha2bc34Iq2ueEw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tangga melayang ini sekilas terlihat ditanam di dinding.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lemari Bawah Tangga Minimalis Tuban Rak Bawah Tangga Interior Kediri Desain Interior Interior Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/04/7a/51/047a510da4bca830c2cdc2f7d1a25c8d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJU_ABUVq9jsscCsrwL776H1XSER9-ke7BoQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Buat ruang tamu rumah minimalis kamu jadi taman surga bagi tamu spesialmu dengan desain ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Ruang Keluarga Kekinian Ini Pas Untuk Rumah Mungil Ruang Keluarga Kecil Desain Rumah Rumah" src="https://i.pinimg.com/originals/1d/ff/4d/1dff4d42b0992de77b5f4cbaaef046f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZs4gVPaPHsr1-4Dg_kdjSIBQEaskBjKXNgw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan memiliki rumah yang indah dan nyaman akan membuat suasana hati menjadi senang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Railing Tangga Minimalis Modern Dengan Holder Tangan Kayu Harga Terjangkau Hubungi Www Appasco Com 08125227383 Tangga Arsitektur Rumah Minimalis" src="https://i.pinimg.com/736x/18/83/a0/1883a0ed1e79a0ee6521c4574fb0b659.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlSH6RRyhGwczfLc_XL2Bvhn8oZ3p6GmbM-b4iQC8x332jxho1Qwd_GiNCBFO9YNGjPTk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebelum membahas desain tangga rumah minimalis ada beberapa faktor penting yang harus kalian ketahui.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Rumah Kecil Beserta Contoh Keramik Tangga Rumah Minimalis Tangga Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/75/cf/9f/75cf9fd9cf82f28e46be37a493d60daf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC_AT_mcFSNUs9PnK9ZMcAVZ2N9YY530G5gQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tangga melayang ini sekilas terlihat ditanam di dinding.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ada Yang Tidak Boleh Dibawa Dalam Tidurmu Yaitu Kesalahan Orang Lain Terhadapmu Hari Ini Maafkanlah Ide Dekorasi Rumah Ide Kamar Mandi Dekorasi Rumah" src="https://i.pinimg.com/originals/15/90/9e/15909edb3483e01b7e85a620229bf7be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGy0B4kVKJBnDpf22VKQKASgwvymTJcfMdWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Tangga Kayu Rumah Minimalis Rumah bertingkat atau rumah 2 lantai pasti tidak terlepas dari yang namanya tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Terbaru Dengan Keramik Cantik Rumah Minimalis Rumah Desain" src="https://i.pinimg.com/originals/67/92/22/679222606e97531f93bc78cdef2e920f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwn4Sqe1VhwcKqd-b81Mwl5ufgsiezjxGWRsx5sutIP7ZL7AAHSo1pxvOunoSPR-wWUhk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anak tangga itu pun harus dibuat dengan bentukan yang sesederhana mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Proses Pemasangan Reling Tangga Minimalis Dari Alat Ukur Sederhana Tapi Akurat Youtube Tangga Alat Ukur Pengukur" src="https://i.pinimg.com/564x/fc/dc/35/fcdc35ff9801d19e3168de41b61831e1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOlFFFyHQSXxdbnIYjHOfT8MsLuOcnQMpDZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebelum mulai merancang tangga tentukan model dan desain yang ingin kalian ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Di Bawah Tangga Sederhana Dapur Minimalis Desain Dapur Dapur" src="https://i.pinimg.com/474x/ff/9d/bd/ff9dbd1c98411aca6c5e26e947cff096.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLTk92umNtNbZoFnzPnKtQiebpD3eIgRsGhA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena itulah anda sebaiknya beli saja yang minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Model Desain Tangga Rumah Minimalis Modern Terbaru Desain Tangga Rumah Desain Tangga Modern" src="https://i.pinimg.com/originals/05/eb/9c/05eb9c708d0655d7a8b4c275494c6978.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToeRGL7RVTUPDq-c1V1sTudyanftFo2bWidHruhpLi471T1f4BYPtu_C-AHBOwDqHC5Cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kalau begitu coba buat anak tangganya dengan bentuk tidak beraturan seperti desain tangga rumah minimalis di atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct3ixvpxpqpgqa2nzvqj Mxgkwzp3zos6p0strfuyq0utwurqap Usqp Cau" src="/search?q=desain+tangga+minimalis+cantik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+tangga+minimalis+cantik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Kalau begitu coba buat anak tangganya dengan bentuk tidak beraturan seperti desain tangga rumah minimalis di atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Tangga Rumah Minimalis Unik 16 Contoh Model Desain Tangga Rumah Minimalis Modern Sederhana Model Tangga Ru Tangga Kayu Membangun Rumah Desain Tangga" src="https://i.pinimg.com/originals/a7/75/19/a77519d12f2b0535c43525481c711ab7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc9IM6fXUhAX7v7Ns7kDT3lc2U_LHhKpCgbilS2l2nvjoGK_P60c8OzMrAjX-30oGwfCs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anak tangga itu pun harus dibuat dengan bentukan yang sesederhana mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Proyek Kami Bayu Welding Rumah Rumah Minimalis Dekorasi Rumah" src="https://i.pinimg.com/736x/3a/a9/0e/3aa90ebdd5e3b2ae9183c259bdfd8f5b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxLeKFoCDXC-wxXqNJBnMv_F11Gpz-TCeyVg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Faktor-faktor tersebut di antaranya yaitu seperti berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Rumah Kecil Sederhana Dari Kayu Desain Tangga Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/1d/ff/0a/1dff0a09ce7faf02a67f5ed8e229d52c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhww4Ry21_Iai2SGlACgisfb8zNPrJ1hZuFtpaE2YWAGAkwL4FIkN_fdzKPMSNsh-oysM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hal ini tidak lepas dari pertumbuhan penduduk yang meningkat cepat disetiap tahunnya sementara lahan yang ada di kota-kota besar sangat terbatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Staircase Design Ideas Stairways Design Ideas Modern Staircase Design Staircase Design For Small Home Stairs Design Stairs Design Modern Staircase Decor" src="https://i.pinimg.com/originals/1b/c1/d8/1bc1d852308449f1b43d338051dc7818.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJeH33JvjS-TuT9QbFpc_boHOBNfoxyKcJHIcukOPrI-lVqE-sXo8RRU-9uJp-QWG0vw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Perabotan rumah tangga minimalis yang satu ini memang harus melalui pemilihan yang jeli pasalnya sekarang banyak desain tangga minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Tembok Railing Tangga Sederhana Railing Tangga Layang Railing Tangga Minimalis Railing Tangga Minimalis Murah Rumah Mewah Tuscany Tangga Kayu" src="https://i.pinimg.com/originals/04/37/b5/0437b5bd81adb88b23f00dc87dc69e3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSVvBtXLH4SI66jx5_l2p7_N85d5L2pbkAA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga minimalis yang terbuat dari material besi ini memiliki pegangan yang diletakkan pada bagian dinding saja untuk menciptakan kesan interior rumah yang lapang.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/biaya-bangun-rumah-modern-minimalis.html"><i>&larr; biaya bangun rumah modern minimalis</i></a>
+                                                                    
+                                        <a href="/biaya-bangun-rumah-sederhana-per-meter.html"><i>biaya bangun rumah sederhana per meter &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

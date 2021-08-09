@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Sempit Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Sempit Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/736x/05/7f/9e/057f9efec7b98213b3dab866640c4550.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+sempit+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Sempit Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Sempit Sederhana</strong>. Model tangga rumah mewah tangga rumah sederhana ukuran tangga rumah minimalis tangga rumah unik model tangga beton tangga rumah besi tangga luar rumah model tangga depan rumah Baru 30 Desain Tangga Rumah Sempit Sederhana. Kamu pun akan memiliki ruang yang sesuai dengan semua kebutuhan mu.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/9c/3e/66/9c3e669293f8d57a2136acaf7a49ad6c.jpg" alt="Foto Taman Depan Rumah Minimalis Sederhana Modern Lahan Sempit Terbaru Dekorasi Luar Ruangan Rumah Minimalis Dekorasi Tanaman Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrjVhozBqyN4AZl6veJvauxj9vGauQUyA2A';">
+        <figcaption>Foto Taman Depan Rumah Minimalis Sederhana Modern Lahan Sempit Terbaru Dekorasi Luar Ruangan Rumah Minimalis Dekorasi Tanaman Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Dengan biaya ini pula anda sudah mendapatkan rumah dengan 3 kamar dalam 2 lantai 2 kamar mandi di lantai atas dan lantai bawah dapur dan ruang tv yang terpisah serta balkon kecil. Desain rumah kecil sederhana ini bisa dibangun di pedesaan atau area kota berkembang. Desain rumah kost lahan sempit.
+    </p>
+    <h3>Rumah dengan dua pilar.</h3>
+    <p>Tampilanya sederhana namun cukup bagus. Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini. Bagian tampak depan ada ornamen khas sebelum masuk ke dalam. Poin pembahasan Baru 30 Desain Tangga Rumah Sempit Sederhana adalah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Minimalis Kecil Sederhana Terbaru Desain Ruang Makan Ruang Makan Desain" src="https://i.pinimg.com/236x/f6/4c/1e/f64c1ee6ab3376ea2ca5870eb8ad3fbb--ruang-makan-sederhana.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMZbuyV1TnNaOnXjO56LnRhQi4aclH4cpEw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kediaman SBY bersama keluarga dari Pacitan memang terbilang cukup sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Kecil Tapi Mewah Disertai Gambar Gambar Rumah Kecil Sederhana Tapi Terkesa Warna Eksterior Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/29/a3/55/29a355a9a31dc2e7bf37fab96c7c0dcd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHh0E9GD1F-TYgo0mk3ctfZ-3Ps6jrlA1koURwe4o7RQofnP7nh6BrpHa6IlnLK4iVAeg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar mandi kecil yang memiliki wastafel kamar mandi toilet dan area mandi ini memang sesuai dengan desain interior rumah minimalis type 3672 dan desain interior rumah type 45.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Mungil" src="https://i.pinimg.com/564x/9f/60/d9/9f60d9bf1aba3130c7b5faa9b0c65ffd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZqtYLycq-44vu9kxo5ksc3pul1eYAqvJARA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan dua pilar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/736x/49/ca/f7/49caf7f6dcbb6d337ba0b34b801bb4cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9fAI4KmN2ij0MLNTRCQPWVvYqbr7eheSJA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika anda sudah memiliki lahan namun ingin maksimal sebaiknya melihat coba gambar rumah minimalis modern 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/90/00/40/900040d251598d2f84d661b99c82b946.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1BKz-EXh1_beJlYhlMW3epyxEdAzd-e7XpLFuhDkK2hfr9Wwa79iJ6fYMhx6s_pHfY18';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lahan sempit modern sederhana rumah minimalis 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Denah Rumah Kayu Minimalis 8 5 X 7 M Plano De Casa 8x7 Desain Rumah Papan Sederhana Rumah Murah Youtube Rumah Rumah Kayu Denah Rumah" src="https://i.pinimg.com/564x/da/d2/1c/dad21c54f26ee473e7fc1911a7e67e33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBfd0Tb_GOKxRaOUyNWSX5drC_jwhsWl_1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kita memang tidak dapat lagi berimprovisasi secara bebas untuk mengembangkan kreativitas kita khususnya pada saat membuat desain rumah hunian kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Minimalis Modern Ruang Keluarga Kecil Ide Dekorasi Rumah Ide Ruang Keluarga" src="https://i.pinimg.com/originals/4b/e7/90/4be790d857740209bc78741f9596b7a2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThp_FFpV7BgUJT0aV2HB55Pojf93CkOLOiqw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bahkan tidak hanya rumah bergaya modern anda bisa menerapkan cara ini pada rumah minimalis 2 lantai bergaya klasik sederhana dan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/564x/d0/5a/40/d05a400c0b297edeb60dc89df049f098.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoz4RdjQHd82u7wIyUkkw8rBk-QVSoI37FwvJzRN5jcJaKD5-6My71x0adhyp4IJmAe3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada banyak desain taman rumah sederhana yang bisa kamu aplikasikan meski di rumah sederhana dengan lahan sempit sekalipun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dengan 2 Kamar Tidur Itu Sendiri Fleksibel Jadi Jika Anda Ingin Mendapatkan Foto Indah Tentang Ru Desain Rumah 2 Lantai Rumah Minimalis Desain Eksterior" src="https://i.pinimg.com/originals/f4/53/c5/f453c5d7808f69197bff84e78f685615.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEkUe9lqyxGn-nHQVxf2wQMno_qxZw2XWKw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagian tampak depan ada ornamen khas sebelum masuk ke dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Tiang Teras Rumah Minimalis Modern Dengan Taman Sempit Serta Teras Rumah Batu Alam Rumah Minimalis Rumah Rumah Impian" src="https://i.pinimg.com/originals/45/cc/1a/45cc1a3d4f0bd29def709263ac29c672.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDfoHXG4DxMoWe6LesDhXF3uhS6S8gsbhikFbMdwnA7OiColxVLAwuN1syfdrMlWLF_Lg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model tangga rumah mewah tangga rumah sederhana ukuran tangga rumah minimalis tangga rumah unik model tangga beton tangga rumah besi tangga luar rumah model tangga depan rumah Baru 30 Desain Tangga Rumah Sempit Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/30/42/d4/3042d40d268984cb30b096fbeefa9c9a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7bHD3J4xMsv0g1rfDQ7xLGsVPfy8ZdIxhw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model berikut adalah tangga yang sering Kamu jumpai di mana-mana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Neutral Kitchen 4 Small Kitchen Decor Minimalist Kitchen Design Tiny House Kitchen" src="https://i.pinimg.com/originals/56/12/67/561267e4db8511dc135c7449010072dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRv4qhNsLfj7JDrs09Lygps15n-gdc7N5P7Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagian tampak depan ada ornamen khas sebelum masuk ke dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Menata Ruang Tamu Sempit Gaya Minimalis Menata Ruang Keluarga Yang Sekaligus Ruang Tamu Thumbnaildetail Jp Ruang Tamu Rumah Desain Interior Interior" src="https://i.pinimg.com/originals/21/25/43/212543c2eddd785a9adbb9eb56f93f6b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkyixWk3eUv5_BqGR3yIBo5t6oDfR3k5AJkA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah sempit seperti ini memang menjadi solusi bagi keluarga yang memiliki hunian namun dengan lahan terbatas sehingga bisa menekan biaya produksi juga nantinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Lahan Sempit Terbaru Projectos De Casas Casas Diferentes Plano De Casa" src="https://i.pinimg.com/originals/0f/3c/70/0f3c709d7ac845c95d8472bbf107011d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpm0W5173d6Lercqx7eN2sKXt83o5ikiG9BChatj_WWgVip-vgidRfWc4KpvVaoDqhow';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>7 Inspirasi Desain Dapur Minimalis dan Sederhana Untuk Hunianmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Rumah Kecil Gati Rizky Yang Minimalis Maksimal Desain Interior Rumah Minimalis Interior" src="https://i.pinimg.com/736x/ba/62/90/ba629020f8d2300d3b4bfb6c80a677b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFACmT45cy7ydEq9bvnJLUKQk3GgoOStEW4DXrgLa54Fw_jMa6-fzGPiB6im4WeSn9QIM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Terbaru Inspirasi Model Rumah Sederhana Tapi Kelihatan Mewah Di L Rumah Kemewahan Rumah Baru" src="https://i.pinimg.com/originals/c9/c2/c1/c9c2c162ab31c58dd16f89b13b711df1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC6oYtBYdFC2jF5QvQMexDs2Nl_yZcXn0yEA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah kost minimalis sederhana 1 lantai dan tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Warna Cat Ruang Tamu Agar Terlihat Luas Meski Aslinya Sempit Ruang Tamu Rumah Rumah Minimalis Desain Interior" src="https://i.pinimg.com/originals/99/be/f5/99bef5b99296dfd2d08152d1419fac53.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Gml2qrSpcfu9d3N-2pyIp8l-rZP1AeJCxK0X5YYXTmKQ95BumAzOvg0M-IM4HOYyDrQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sebuah rumah yang nyaman selalu dikaitkan dengan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Farmhouse Kitchen Tiny 23 Ideas Decorar Casas Pequenas Sala De Apartamento Pequeno Interiores De Casas Pequenas" src="https://i.pinimg.com/474x/ce/06/09/ce0609b8cc01dd07ecee8b0c5c5bf450.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt9brjkh--Z1Y7WLaUTbx5MuPiHl6nd9EMNg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamu pun akan memiliki ruang yang sesuai dengan semua kebutuhan mu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Design Rumah Kecil Model Denah Desain Rumah Minimalis Idenahrumah Com Holiday And Duplex House Design 2 Storey House Design Modern Small House Design" src="https://i.pinimg.com/originals/a6/a0/c7/a6a0c7bfbcf78baf289af6ae8ea65985.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7TLC3TSlpPZ6XRjrW5tvVT2Nko56Buy6W_A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tanaman yang ditanam di sekitar rumah bisa menghasilkan udara segar di sekitar rumah membantu sistem sirkulasi udara di dalam rumah bisa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+2+lantai+di+lahan+sempit&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+2+lantai+di+lahan+sempit&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Kita dapat memaksimalkan semua ruang yang ada sesuai dengan kebutuhan Jam Kerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Set Minimalis Modern Kecil 2017 Terbaru Minimalis Modern Rumah" src="https://i.pinimg.com/originals/37/cb/62/37cb625fdaa4a8336e97b13bfba6ea4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lzugmgW1f_9iCLa7O3OgL2lS9QHpaWDPkQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model tangga rumah mewah tangga rumah sederhana ukuran tangga rumah minimalis tangga rumah unik model tangga beton tangga rumah besi tangga luar rumah model tangga depan rumah Baru 30 Desain Tangga Rumah Sempit Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Desain Rumah Minimalis Modern 2 Lantai Jasa Gambar Rumah Murah Minimalis Home Fashion Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/b8/31/69/b83169f5f3fec56ab4ac676c11d4a033.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9vRtGGOUmOXiQLq-TNX-_iSnvSOqeWATyKiFGQ2OA77uAJkKjoUtc6y8m7hVFy54LXs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Kost 2 Lantai Minimalis Di Jakarta Jasa Desain Rumah Desain Rumah Kost 2 Lantai Farm6 Staticflickr Com 138 Desain Rumah Lantai Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Model Kitchen Set Minimalis Dapur Kecil Sederhana Namun Modern 2021 Dekor Rumah Tata Letak Dapur Dekorasi Rumah Dapur Dapur Rumah" src="https://i.pinimg.com/originals/eb/f8/42/ebf8426dad50a68c015e641df0ee478f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPOcRTiN_MdHfssOh6AlmwrgWiQqaBOFCpNA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang tambahan pada lantai 2 ini biasanya agak sempit nah berikut model tangga minimalis untuk rumah sederhana dengan ruang sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis" src="https://i.pinimg.com/736x/0d/fa/d1/0dfad1dabe7c386648adbaeb55ca6429.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6gnBgYjGG_Y8fzIjoyFawTe2CS7nXqPoo6kd7RpQFIDqEGIfePXu7NvyDdrkP_IQW1yw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Poin pembahasan Baru 30 Desain Tangga Rumah Sempit Sederhana adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On 085856528717 Jasa Gambar 3d Interior Murah" src="https://i.pinimg.com/originals/c5/85/ac/c585acb82dfb5e0ae9756ed84d3e040a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQviaxaMklYPQtZwVKdGot66-tuBR1ifmSQZA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Iwc" src="https://i.pinimg.com/736x/7f/6a/d9/7f6ad9a5c8770b57f5df612b731c9325.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZGcQ4dZPtJvMtj5vN6SPOh5msA1jc1XEe-8PsBat29PBUmqPH0yEyAVuf7cNpBpgHKk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tampilanya sederhana namun cukup bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Kecil" src="https://i.pinimg.com/564x/7b/ce/3e/7bce3ee8dc46321411ee2c810074727f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGTvAOmuY2-xQVftj3Qq_Gws2LXhEO_U61cAdF76SHgEPoB-qPudZF2zcLsyFsPckqZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 4x5 Sempit Tapi Bisa Luas Cuma 50 Juta Youtube Rumah Minimalis Desain Rumah Desain" src="https://i.pinimg.com/564x/db/40/c5/db40c56ee62e724f1c7f0633474052dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXNxqbAXRmErdtt_fs_7HftGXaDPDdzxkoNQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Sempit Sederhana - model kamar tidur utama modern desain ruang tamu kecil elegan desain rumah type 3684 desain rumah 3d android warna cat Kesehatan Bisnis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Ruang Tamu Sempit Dengan Karpet Bermotif Dekorasi Ruang Tamu Desain Ruang Tamu Ruang Tamu" src="https://i.pinimg.com/originals/56/a8/fc/56a8fc143351bda4e98ffe0bb2d4667d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMCi4pvOSDSKqSNK2WsbTPyXXQ5Ngf_2j3A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Tsuki Seinaru Di Halaman Belakang Sederhana Halaman Belakang Modern Taman Halaman Belakang Desain Halaman" src="https://i.pinimg.com/736x/60/d1/2a/60d12a1363fe01423fa07c7ef987ff8c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtAM0d2OlPdWnprXKWl1PoQ6gva9uBTNdYbx2CWDothOJZJbv-wR6HoDnD9A-TXwBWcb8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kita sudah tidak dapat membuat rumah berukuran besar yang sempat menjadi ciri khas bangunan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 3x4 2 Kamar Tidur Tiny House Indonesia Youtube Tiny House Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/05/7f/9e/057f9efec7b98213b3dab866640c4550.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslllprJtOCcKnCy-n51w9WyLojrTfq6SSUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kediaman SBY bersama keluarga dari Pacitan memang terbilang cukup sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctiddtn92snkmjnqizjjwh95yvmuxskm Dq6 R9texn 4hywsao Usqp Cau" src="/search?q=sederhana+model+rumah+minimalis+2+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=sederhana+model+rumah+minimalis+2+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Bagian tampak depan ada ornamen khas sebelum masuk ke dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x6 2 Lantai 3 Kamar Tidur 2 Dapur Ada Balkonnya 6x6 House Design Desain Rumah Kecil Youtube Desain Rumah Kecil Desain Rumah Rumah" src="https://i.pinimg.com/564x/25/60/f8/2560f837d3bcefcf2d63a75142c06565.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYozxtDFe5p0C07PIfUso_gzwgQGZjpxvDw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tanaman yang ditanam di sekitar rumah bisa menghasilkan udara segar di sekitar rumah membantu sistem sirkulasi udara di dalam rumah bisa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Solusi Tuntas Menata Rumah Kecil Di Lahan Sempit Dengan 4 Cara Jitu Kami Telah Catatkan Setidaknya Ada 4 Cara J Rumah Minimalis Rumah Desain Rumah Satu Lantai" src="https://i.pinimg.com/564x/3d/0d/36/3d0d361b3e10d894fab0c37289f4dfbc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbFdL1_n-JuLXiAXYas_jGtsqFGQPyllMiImSEmN41XKZg1ckq3hU1p6_JmrfgwBUX3A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lahan sempit modern sederhana rumah minimalis 2 lantai bahkan tidak hanya rumah bergaya modern anda bisa menerapkan cara ini pada rumah minimalis 2 lantai bergaya klasik sederhana dan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Interior Ruang Tamu Kecil Minimalis Ide Dekorasi Rumah Desain Interior Ide Dekorasi Ruang Tamu" src="https://i.pinimg.com/736x/cd/8e/92/cd8e92911b649777683a21d6702a0d8e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Z3D1FOjR2j5Uc-4oJG_wUYNF9COE1eX_YMTjkACSU-sOzfV8qboUolwsKDC9kXKvBjc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>7 Inspirasi Desain Dapur Minimalis dan Sederhana Untuk Hunianmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3x3 House Design Denah Rumah Kecil Tapi Mewah 3x3 Rumah Mini 3x3 Fasilitas Komplit Mini Youtube Rumah Denah Rumah Kecil Denah Rumah" src="https://i.pinimg.com/564x/03/23/4c/03234c31f243fbe70ceb57660918d14c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0R1GlCuY9JHVpeqxZLYgy1hn66s8wI36rvfA1z-VrPGa5rVx3DyNM_jmNI3uKgcDf28';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan mengikuti beberapa tips sederhana tentang men-dekorasi ruangan kecil untuk membuat ruangan terlihat lebih besar rumah akan merasa nyaman dan tidak terasa sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan 17 Dekorasi Rumah Minimalis Type 36 Sederhana Desain Rumah Minimalis Type 36 Rumah Kecil Sederhana Dan Desain Rumah Minimalis Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/5e/9c/4b/5e9c4b432220d643a42e56cc5d515de1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTttKHeYcZyAQTvE3tTFzteHHK87_EJzcRWQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biaya ini sudah termasuk biaya pembangunan dan membeli lahan tanah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teras Rumah Di Lahan Kecil Dan Sempit Rumah Minimalis Rumah Batu Desain Eksterior" src="https://i.pinimg.com/originals/fd/12/69/fd1269c473a5e55e4b54d11a9d4e7f74.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVKcHbcVwkMw7AZ9en8oMN9E0d1EOSdMB9A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biaya ini sudah termasuk biaya pembangunan dan membeli lahan tanah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Rumah Sederhana Rumah Kecil 5x5 Mini House Design Rumah Mikro Kekinian Youtube Rumah Rumah Arsitektur Desain Rumah Kecil" src="https://i.pinimg.com/564x/1d/b1/2a/1db12ae7f88c1a5581047b107513518a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYo7Tza1xGvCsEdkEOFFnixCuNVw2D6ViaiTO_ly2pSsS-ieD4whHnbYMCstnq1U0AENw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika anda sudah memiliki lahan namun ingin maksimal sebaiknya melihat coba gambar rumah minimalis modern 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Minimalist House Design Minimalist Living Room Design Minimalist Home" src="https://i.pinimg.com/originals/82/b5/f6/82b5f6ae1fe4900033576ad393c3d085.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJeFhV1N6Tt_L1YgpPj9hVbuPNu3boLGy4Z3jjdDzp0AnQjy1-xH06Z6nq0HCjfNQvs4k';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika anda sudah memiliki lahan namun ingin maksimal sebaiknya melihat coba gambar rumah minimalis modern 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Kecil Bawah Tangga Kamar Tidur Minimalis Kecil Ruang Keluarga Minimalis Kamar Tidur Minimalis" src="https://i.pinimg.com/originals/d3/64/ea/d364eab8cd79d4a4768a2b63326087fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPZDvfP2GbH445NDwjq2bA5Dg2spU919AoUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Desain Rumah Sederhana Minimalis Dilahan yang Sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Rumah Idaman Sederhana Di Desa Paling Bagus Rumah Pedesaan Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/originals/cf/5b/6e/cf5b6e5edbd7006cf897340ff8b784cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSowZ0mQGM1WV8EJb2IBvtbxQR0PNKHplkLsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada banyak desain taman rumah sederhana yang bisa kamu aplikasikan meski di rumah sederhana dengan lahan sempit sekalipun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Teras Rumah Sederhana Modern Unik Dekorasi Ruangan Kecil Rumah Minimalis Ruang Keluarga Minimalis" src="https://i.pinimg.com/originals/f4/27/15/f427154d695d72f48c30e0f1882a8b2a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV4i1adrYmU_mNWU1a8L5B49qhqgSa2-Rw2Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana minimalis sangat diperlukan jika lahan yang kita miliki sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Denah Rumah 3 Kamar Ukuran 7x9 Paling Dicari Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/14/f8/fd/14f8fd3b2e9d891f12e34678cf187c17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLCHNqZuKcZ8_3lLFb_HhE6rc4PuGq4nbrgzmKK5F-LswtsUoe9_CiYjqI1gq67QyDx3k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep Desain Rumah Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6 X 7 M Satu Lantai Dgn 2 Kamar Youtube Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/90/1b/54/901b548a62e1c18801b9b9fe46300efa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe4_D5cC-RrQITofbRg6POcvgnvvtKbhQciw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah kost lahan sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Rumah Kecil Modern Depan Rumah Kebun Kecil Ide Berkebun Desain Kebun Modern" src="https://i.pinimg.com/originals/d2/b2/18/d2b2185de8efcbfebd2ac610acc4a90e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJjYKDydiN-eFUK2snuE16j6JJCceOXpPqA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bahkan tidak hanya rumah bergaya modern anda bisa menerapkan cara ini pada rumah minimalis 2 lantai bergaya klasik sederhana dan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Rumah 2 Lantai Sederhana Minimalis Yang Bagus Di Lahan Sempit Ter Rumah Lantai Minimalis" src="https://i.pinimg.com/originals/60/85/ab/6085abd60072ab642afc00f7a90c840f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTicAirGUy-Jb48ERtnBatLOgR6wgFukVl7Tg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tampilanya sederhana namun cukup bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Taman Depan Rumah Minimalis Sederhana Modern Lahan Sempit Terbaru Dekorasi Luar Ruangan Rumah Minimalis Dekorasi Tanaman Rumah" src="https://i.pinimg.com/736x/9c/3e/66/9c3e669293f8d57a2136acaf7a49ad6c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrjVhozBqyN4AZl6veJvauxj9vGauQUyA2A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika anda sudah memiliki lahan namun ingin maksimal sebaiknya melihat coba gambar rumah minimalis modern 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Sketsa Rumah Sederhana Lengkap Rumah Minimalis Desain Rumah 2 Lantai Desain Rumah Minimalis" src="https://i.pinimg.com/originals/e9/46/7d/e9467de21589c98664efb2e5e360e1c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ95QA3_AwqgyLNn36VRCTO5_5EPcZozFegNwaZ-p2sqEioszv9ex8S2kFh5ZuG4MFrSi4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Minimalis adalah Konsekuensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/originals/d9/50/f7/d950f7254c364338e92becb27c887782.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzAuLLk6t6mQz4pdhHllWDqSBMkQd0n6kE0BElm1UDokAUmcY7-FyzEFbvrj8N4qkLxs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Desain Rumah Sederhana 22.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-simple-modern.html"><i>&larr; rumah simple modern</i></a>
+                                                                    
+                                        <a href="/rumah-tingkat-kayu.html"><i>rumah tingkat kayu &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

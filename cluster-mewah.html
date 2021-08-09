@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cluster Mewah
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Cluster Mewah",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/564x/73/4f/fa/734ffa308cd8e6bfe3d9eab0453d50c2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cluster+mewah",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Cluster Mewah
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Cluster Mewah</strong>. 89 m 2. 3 Kamar tidur 69 m² Bangunan 76 m².</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/e6/04/7c/e6047c1e2901b6ec3afa8d52930e17be.jpg" alt="Pin Di Villa Dijual Di Bogor" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG1bcg0Wf5Ejwd4i3ean7hI4_DLeGvxGunfq8Hn6sqZBPLTie9zKi1nlGdEwjjyp-MUv8';">
+        <figcaption>Pin Di Villa Dijual Di Bogor from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        28 Apr 2021 1338 15. Kami menghadirkan Premier Estate 3 rumah cluster hunian mewah terbaik untuk keluarga Anda untuk saat ini. Senior Member 0821 8088 2608.
+    </p>
+    <h3>Kami memiliki 1555 Rumah untuk dijual untuk cluster mewah jagakarsa Harga mulai dari Rp 455000000.</h3>
+    <p>BRITANIA BEKASI - Cluster mewah harga terjangkau Map 6 Hitung pinjaman Anda Rp 342800000. Dapatkan lebih dari 124 penawaran - Dijual rumah baru ready cluster mewah di condet dengan harga mulai dari Rp 1300000000 - hunian mewah dalam cluster 2 lantai sisa 14 unit dari total 16 unit di batu ampar condet jakarta timur. PROMO CLUSTER MEWAH GRATIS SHMAC Map 12 Hitung pinjaman Anda Rp 725000000. Perumahan ini beralamatkan di Jalan Raya Kranggan Jatiraden Jatisampurna Kota Bekasi Jawa Barat Kode Pos 17433.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Mewah 500 Jt An Free Biaya Puri Safira Kasyara Projects Garden Cluster" src="https://i.pinimg.com/736x/d1/df/65/d1df650171cbb32c0ce8c5feaa206197.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVN4fS9eRcWQNXy8bKWtDjKVcOJTT-xXI3y2_2of1Om0hTyR_tFQSbxZnuJSXoDtT2e1g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>3 Kamar tidur 42 m² Bangunan 72 m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah New Ready Stok Kolam Renang Elite Cluster Sentulcity Rumah Mewah Kolam Renang Rumah" src="https://i.pinimg.com/originals/1a/f6/d8/1af6d8589407e2b6b2b88f341b3a88c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-DfuXX4D1NA0fkZGPfvZ2ZU7snutDBftJA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah cluster Lyndon NavaPark BSD dijual terbatas yaitu hanya berjumlah 31 unit rumah saja dimana harga jual rumah Lyndon termurah adalah daripada Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0878 8293 1155 Tlp Wa Cluster Murah Cluster Bekasi Cluster Bekasi Barat Rumah Minimalis Rumah Rumah Mewah" src="https://i.pinimg.com/originals/16/b1/56/16b15649fccf14202fa13a225cf54a6c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWfb_EwKO4FxeC7ICNJl-3QnMzg_DaBhkvg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jual Rumah Cluster Mewah 2 Lantai Di Jagakarsa Jakarta Selatan Dekat Tol Andara - RumahDijual 28 Apr 2021 1338 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Premiere Rumah Cluster Mewah Villa Gading Indah Di Kelapa Gading Rumah Murah Lelang Villagadingindah Elite Vgi Cluster Kelapag Villa Lantai Kelapa" src="https://i.pinimg.com/originals/3b/01/62/3b0162e07489dd4ee608bd5263316b84.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm21zTcQ-ratd0P5cqkyx0S3YbelyN2h4-PA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cluster Mewah Dekat TMII Jakarta Timur Hanya 15M Map 10 Hitung pinjaman Anda Rp 1504000000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Mewah 2 Lantai 700 Jutaan Di Depan Mall Cinere Lantai Kemewahan Rumah" src="https://i.pinimg.com/474x/68/c0/ed/68c0ede9bdc75fcdc4411a760577ef6e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLATDoEhZY2RSl-2vv62n_fPAt_pB3x3_rg5ut1y5euEZXIXFlN6SYQ9Fn874_bGN3AU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami memiliki 667 Rumah untuk dijual untuk cluster mewah yogyakarta Harga mulai dari Rp 205000000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Best View Puncak Tertinggi Cluster Elite Empire Park Sentul City Bogor Youtube House Styles Bogor Views" src="https://i.pinimg.com/564x/03/45/cd/0345cd9a5b8927ab05e16b0d6064aad6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3VepRc-guu1ARYykec-EzfFGmmEVUgTG_6w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Temukan penawaran untuk Rumah untuk dijual dengan harga terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Mewah Harga Minimalis Persembahan Jaya Property Unit Terbatas Rumah" src="https://i.pinimg.com/originals/bf/31/b8/bf31b8e0656877298cd166daddfc05d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5nK9rR6VP8Ju--6RlXH2VKtNaMTSAmr7PyWxAJ0n7GV3Y6F8IWAYOS6ZlpXiYUGYAZmw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Temukan Rumah untuk dijual di yogyakarta dengan harga terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Cluster Mewah Di Anisa Regency Kota Malang Malang Regency Home" src="https://i.pinimg.com/originals/1c/dd/b8/1cddb8289440db571ad39a8bb16e85d1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9elFMpFiJykS14V5zd0oHkoV_wSkwpgqZUg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cluster mewah murah call 0819-7786-1009 permata jambu residence Rumah The permata jambu resindence tanpa dp call 0821-1269-7088 cukup booking fee 3 juta saja sudah all in klik https wame 6282112697088 rumah murah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Lakewood Navapark Tipe 12 Rumah Kemewahan Rumah Mewah" src="https://i.pinimg.com/originals/d9/bd/52/d9bd52bbe250752319fc958d6212b294.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFxVlyoEfdD7ZEnMjm4-Uf7svZndR43G2CQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kami menghadirkan Premier Estate 3 rumah cluster hunian mewah terbaik untuk keluarga Anda untuk saat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Villa Dijual Di Bogor" src="https://i.pinimg.com/736x/e6/04/7c/e6047c1e2901b6ec3afa8d52930e17be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG1bcg0Wf5Ejwd4i3ean7hI4_DLeGvxGunfq8Hn6sqZBPLTie9zKi1nlGdEwjjyp-MUv8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cluster Mewah Dekat TMII Jakarta Timur Hanya 15M Map 10 Hitung pinjaman Anda Rp 1504000000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Mewah Di Bintaro House Styles House Mansions" src="https://i.pinimg.com/originals/83/88/23/838823a3a898966cf79e7ee7144ebcc4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfwwI4x0Egi6t54oiXpwDMC_CohvTBm7F0LD9tKWqr-sGkwSDxTxh8sfLsLfBUoJgQwsU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>4 Kamar tidur 97 m² Bangunan 78 m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah 1 Lantai Model Spanyol Desain Rumah Eksterior Arsitek Desain Rumah" src="https://i.pinimg.com/originals/c3/43/ee/c343ee786f0a954cfd06da2a515aaa3a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBYxwaWGI4dWtZQ7Z6bBvGWFtx9hXDGQ7dw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>3 Kamar tidur 42 m² Bangunan 72 m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Baru Dan Murah Rumah Minimalis Dalam Cluster Di Cilandak Jakarta Selatan Rumah Minimalis Mewah Lokasi Strategis Ruma Rumah Minimalis Rumah Rumah Baru" src="https://i.pinimg.com/474x/7d/a1/47/7da147292e5bc8e9c7e647ea0f79a78c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99369zeBg0j5L849eznxrDJ89Y7pXkyrfRJkywNMoI-hGfSKVaghrDrvGttb-rP7QcyQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Temukan Rumah untuk dijual di yogyakarta dengan harga terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Security 24jam Free Ac Cash Only Cash Tempo 24x Free Biaya Bphtb Ppn Imb Biaya Penyambungan Listrik Terletak Dilereng Home Fashion Desain Rumah Rumah Mewah" src="https://i.pinimg.com/originals/ac/58/21/ac5821251d64ed63215e2fd91cd294a6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcEfjx-UjstIWsLweZs7mNRuwhoXPfm5OUkXcmikUShpX94I0ZWAxXoisWkD3JFEpPcAM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Senior Member 0821 8088 2608.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Super Cantik Di Alam Sutera Cluster Sutera Palma Youtube Rumah Mewah Rumah Kemewahan" src="https://i.pinimg.com/564x/73/4f/fa/734ffa308cd8e6bfe3d9eab0453d50c2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPl4jPh07iFxmLzAsEZ9HavEy9FaDLtfEeQw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Senior Member 0821 8088 2608.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Type 45 90 Di Cluster Padma Panji Buwono Residence Residences Outdoor Decor Home" src="https://i.pinimg.com/originals/9a/be/d5/9abed53281bf5a73e9047d22f98cdf31.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4C7qVsXFeLRKZulbzQQ5ZXwA7RunFTnia9g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cluster Mewah 2 Lantai Desain Klasik Modern Di Area Bisnis Cinere.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Lakewood Navapark Bsd Tipe 12 Navaparkbsd Rumah Kemewahan Desain" src="https://i.pinimg.com/originals/f0/d1/3d/f0d13de5b6968f445a97a1c6a6de405d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREtgJtY7mF9zAKPEhgQu1eHZgscgom7H6A9QmLKoKZDI4WsBVC_2DNy9FdHSgAYQpTrCM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>13 Apr 2021 1233.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Rumah Cluster Mewah Di Jakarta Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/originals/55/34/e7/5534e79cc51ca8014ea2c39127771603.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudLAbfVJSRXsK-PmqgwI7BnI-UHUU3ljju8zf0GpuOEJ2mluHcvQPz23orlmeIVqjzjM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Temukan Rumah untuk dijual di sleman dengan harga terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tipe 12 Lancewood Nava Park Bsd Rumah Mewah Desain Arsitektur Arsitektur" src="https://i.pinimg.com/originals/25/97/7c/25977c2c0110d8f00f259090f0721f05.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqz704ULpOFvLNPxg8cnAXFFeOm7Q93aUdOw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapatkan lebih dari 693 penawaran - Disewakan cluster 2 lantai mewah dengan harga mulai dari Rp 45000000 - rumah disewakan berada di kawasan mewah dan elite cluster jasmine park plamongan indah semarang timur jawa tengah indonesia arsitektur eropa mediteranian kondisi rumah baru selesai dibangun novem.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Atau Jual Rumah Atau Perumahan Mewah Harga Murah Cluster Baru Rossini Di Daerah Lokasi Symphonia Summarecon Di Serpon Rumah Home Fashion Rumah Minimalis" src="https://i.pinimg.com/474x/7e/1c/53/7e1c53f855def742613287cd02b2a120.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rSQwbxyg5T6qR4m5eBzjhmRUz1vCIbCSvw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cluster Mewah 2 Lantai Desain Klasik Modern Di Area Bisnis Cinere.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hot Promo Wa 62 817 9622 976 Rumah Murah Pembelian Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/ed/a7/44/eda744cb41b0087b30f09e34d61ed36c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEST7tZKAnCwY_MsLfokPHgpPatwKTa0PEA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapatkan lebih dari 693 penawaran - Disewakan cluster 2 lantai mewah dengan harga mulai dari Rp 45000000 - rumah disewakan berada di kawasan mewah dan elite cluster jasmine park plamongan indah semarang timur jawa tengah indonesia arsitektur eropa mediteranian kondisi rumah baru selesai dibangun novem.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Cluster Mewah Daerah Blimbing Kota Malang Outdoor Decor Outdoor Home Decor" src="https://i.pinimg.com/originals/23/30/2c/23302c90104bc40f46b96322fde1ed1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSks3kDMKAdpRH46dO_V3XEoizXttvrnxG92Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah cluster Lyndon NavaPark BSD dijual terbatas yaitu hanya berjumlah 31 unit rumah saja dimana harga jual rumah Lyndon termurah adalah daripada Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis 1 Lantai Di Cluster Eksklusif Depok Dijual 4 35m Youtube Rumah Tropis Desain Rumah Tropis" src="https://i.pinimg.com/564x/9c/ce/09/9cce0913300e8441dfa81e381c3b22b7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsdQKfWYiqIk06SYW4QzhQNn492buhCG1cQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapatkan lebih dari 693 penawaran - Disewakan cluster 2 lantai mewah dengan harga mulai dari Rp 45000000 - rumah disewakan berada di kawasan mewah dan elite cluster jasmine park plamongan indah semarang timur jawa tengah indonesia arsitektur eropa mediteranian kondisi rumah baru selesai dibangun novem.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Asya Jakarta Cluster Eksklusif Rumah Minimalis Sampai Rumah Super Mewah Di Tepi Danau Hunian Eksklusif Yang Terintegrasi De Rumah Minimalis Rumah Mewah Rumah" src="https://i.pinimg.com/originals/d3/97/35/d3973503726ed1699472a1a1a1ba1cd8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfcM8AviHeWCn5-ykEwtMM4XqB71OfXrdfIYsxWCsCpUA26lBRMXbaVDOaqz6oFDpJZww';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentang daisan rumah cluster mewah nan elegant di tangerang Tempat sempurna untuk disebut rumah yang menawarkan kedamaian dan kualitas hidup sejati dengan esensi Jepang murni Terletak di 277 Hektar lahan utama di Tangerang New City Daisan adalah proyek pengembangan terintegrasi yang dirancang untuk menawarkan warga kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Laris Di Jual Cluster Emerald Garden At Citraland Pekanbaru Tipe Grassland Rumah Mewah Harga Heboh Rumah Mewah" src="https://i.pinimg.com/originals/79/bc/06/79bc066d865f1daf943a5c340d4d62ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNG8MdMumXR7I0AXD3kfRnIqPDDFdfQ2vosg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Temukan Rumah untuk dijual di sleman dengan harga terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Minimalis Di Sidoarjo Wa Hp 081357153390 Outdoor Structures Outdoor Decor Pergola" src="https://i.pinimg.com/originals/6a/b5/83/6ab583335255feea20e027c2b5ab1857.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI4ewD1oObiWN_ue6mJTYig7hdHnNVGwIwM5oSKuxsYYoMatknEyhrXaJRqBzXoCEoS2Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>3 Kamar tidur 55 m² Bangunan 60 m² Lahan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Zenith Merupakan Cluster Terbaru Dari Perumahan Serenia Hills Dengan Jumlah Unit Rumah Yang Terbatas Limited Unit Design Clutster Rumah Mewah Vila Minimalis" src="https://i.pinimg.com/474x/b3/91/d0/b391d0c93bfbc4338b0bcb556ff2fcdc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbU-ge4EM8JPdcJNng4PnWdvixL8RVqWJs-A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>28 Apr 2021 1338 15.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Di Cluster Mewah Di Jagakarsa Jakarta Selatan Rumah Kemewahan Bangunan" src="https://i.pinimg.com/originals/a7/ec/1d/a7ec1d02073d9fb1eea4f135e930cb21.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhukco7pPQuAkmWlir2-BGRpQG5vzl1h0YQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Temukan Rumah untuk dijual di yogyakarta dengan harga terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Master Plan Perumahan Thezorabsd" src="https://i.pinimg.com/474x/3a/75/ae/3a75aefb21564e534a4f156aef4b08a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwedjLRAjZdcF-VKZznLfWFcAggB7-jNzWA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dijual - CLUSTER BAGUS MURAH 200m Dari STASIUN KRL hanya 25menit ke Palmerah Jakarta Harga Diminta 465juta type 2790 luas bangunan 27 m2 1 kamar tidur 1 kamar mandi A NEW PROJECT from BSALand -Home living green shine-CLUSTER MEWAH.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kiyomi The Zora Bsd Rumah Mewah Gazebo Kemewahan" src="https://i.pinimg.com/600x315/74/33/38/743338e2533d33d9857a78fcff2e908f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe_s-ZWHlriHUgK8JmO55QhBv34KaobhX0ZA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami memiliki 360 Rumah untuk dijual untuk cluster mewah sleman yogyakarta Harga mulai dari Rp 445000000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Cluster Mewah Di Grand Mahira Sukun Malang Kota Outdoor Decor Malang Home" src="https://i.pinimg.com/originals/14/d0/3c/14d03c7510d54751e3804f32ee991e8c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk90JDohxg-iDKAFVdM5iR75JjpBMWfkvWQu5ZknE1GPoSMkEsg6Dc_LJVCUDJRLNvh3A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Cluster Mewah 2 Lantai Di Jagakarsa Jakarta Selatan Dekat Tol Andara Terakhir diedit oleh arisrindu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Modern Minimalis Cluster Bukit Golf Hijau Sentulcity Rumah Mewah Hijau Rumah" src="https://i.pinimg.com/originals/1c/ab/02/1cab0214e1b87a7bbfc031433aea6ead.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRHMBLWrc_xTeKzO1FHUee_cUtSIJ6XYVRwN6qUALMDAGRKocg62e2ctEb4aeN0qzKOFU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>28 Apr 2021 1338 15.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Forsale Rumah Mewah New Kolam Renang Cluster Elite Parahyangan Golf Estat Rumah Mewah Kolam Renang Rumah" src="https://i.pinimg.com/originals/80/af/93/80af93479454e432fe8943bdce69663a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_Hh8GuEeRv6wLEGTe9eAVlV9YAg69y1VvfFojSwqKS3ZNhylIzx0DexiX5WAKw7Kxro';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>13 Apr 2021 1233.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Mewah Di Cluster Terdepan Sentul City Bogor Rumah Mewah Rumah Kemewahan" src="https://i.pinimg.com/originals/41/9d/1b/419d1baf93bebbfcc60db3499c33c400.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0mIubzKFZ7IGLbKmEmNfny4iLF-y-bh-VA';" />
+        <small>Source: pt.pinterest.com</small>
+                    <p>Tentang daisan rumah cluster mewah nan elegant di tangerang Tempat sempurna untuk disebut rumah yang menawarkan kedamaian dan kualitas hidup sejati dengan esensi Jepang murni Terletak di 277 Hektar lahan utama di Tangerang New City Daisan adalah proyek pengembangan terintegrasi yang dirancang untuk menawarkan warga kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Mewah Pinggir Jl Raya Di Jagakarsa Jaksel Rumah Tempat Ibadah Kemewahan" src="https://i.pinimg.com/474x/1f/ee/26/1fee263076346ac24399dbae1ce7ad7c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz8KEDLAZRfL81m8WfZ0rSJpd38MSkKyqKtc3E_hVd8ojLFloaTKObL14mIL7GxCuH6T8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapatkan lebih dari 5364 penawaran - Dijual cluster mewah termurah boston residence bintaro dengan harga mulai dari Rp 600000000 - boston residence bintaro jl swadaya pondok aren bintaro tangsel exclusive cluster paling murah akses bintaro bsd cuma 600jtan rumah murah 600jtan di bintaro sektor 9 lokasi strategis selangkah ke bs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Cluster Lakewood Navapark Bsd Tipe 10 Denah Lantai Denah Rumah Kemewahan" src="https://i.pinimg.com/originals/22/12/0b/22120b08d0e3555b047f16b92bd9e4a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIRMnd3YJre8bq6T9sD4b4vf94YHOwF6pWulTiQZFhl1Za7wznYoShwmng0NOHZZxe5Zo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapatkan lebih dari 124 penawaran - Dijual rumah baru ready cluster mewah di condet dengan harga mulai dari Rp 1300000000 - hunian mewah dalam cluster 2 lantai sisa 14 unit dari total 16 unit di batu ampar condet jakarta timur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Properti Sentul City Rumah Super Mewah Murah Sentulcity Cluster Elite B Rumah Kemewahan Desain" src="https://i.pinimg.com/474x/73/82/d2/7382d2187f21cff7b6f3cd773c8917ce.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXw8Wcj5sYWEtptrr1NocxFUDu_l8_X7VSIajtJ6-8rkiXTBxrXcZcjTu96S1rNvMnOEk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dijual - CLUSTER BAGUS MURAH 200m Dari STASIUN KRL hanya 25menit ke Palmerah Jakarta Harga Diminta 465juta type 2790 luas bangunan 27 m2 1 kamar tidur 1 kamar mandi A NEW PROJECT from BSALand -Home living green shine-CLUSTER MEWAH.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lakeside Premium Home Cluster Mozart Summarecon Serpong Type 10x17 Dan 9x17 Youtube Rumah Mewah Rumah Kemewahan" src="https://i.pinimg.com/564x/ca/3e/d7/ca3ed7d588221a91c7d8cfd37690a1bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBz-aEoFjLY8APJQkFfWhSaNn6Za1G0_qReA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dijual - CLUSTER BAGUS MURAH 200m Dari STASIUN KRL hanya 25menit ke Palmerah Jakarta Harga Diminta 465juta type 2790 luas bangunan 27 m2 1 kamar tidur 1 kamar mandi A NEW PROJECT from BSALand -Home living green shine-CLUSTER MEWAH.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Mewah Eksklusif Dan Nyaman Di Bekasi Investasi Kpr Kolam Renang" src="https://i.pinimg.com/originals/a6/bf/df/a6bfdf5f1d173439519182685f07d9ed.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCAd-4H9hEWl2IBoSIr2CqcHHmhk221Uxt7A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Temukan Rumah untuk dijual di yogyakarta dengan harga terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Bagus Casa Azalea Residence Bintaro Rumah Mewah Rumah Nyaman Pondok" src="https://i.pinimg.com/originals/c5/e9/b1/c5e9b1db5218b33045c4225bc81255fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKf_ZJChD2A1R6HIjCk35Q8sgu_6hcc0Dpw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah cluster Lyndon NavaPark BSD dijual terbatas yaitu hanya berjumlah 31 unit rumah saja dimana harga jual rumah Lyndon termurah adalah daripada Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Property Indonesia Di Apartemen Dijual Rumah Mewah Rumah Kemewahan" src="https://i.pinimg.com/originals/5a/f6/be/5af6bef6350e0b6ae7ee2a7ac17314fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUQ9JpvsAWcmopAFTlzOe9Zf49_FSTmwy3DQ';" />
+        <small>Source: pl.pinterest.com</small>
+                    <p>28 Apr 2021 1338 15.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New The 10 Best Home Decor With Pictures Cluster Mewah Harga Murah 2 Lantai Harga 700 Jutaan Yuk Survei Sebelum Kehabisa Outdoor Decor Home Decor Decor" src="https://i.pinimg.com/originals/7f/a5/11/7fa511e280fda68bdb81e614170e9ab8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcResiuEDEuPGyC33kKAmZYb-zRuud7QA4Fluw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kami memiliki 667 Rumah untuk dijual untuk cluster mewah yogyakarta Harga mulai dari Rp 205000000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Besok Jam 12 Wib Tayang Perdana Ya Rumah Mewah Dalam Cluster Eksklusif Duren Sawit Dijual Harga 7 5m Home Fashion Rumah Mewah Rumah" src="https://i.pinimg.com/originals/08/d5/68/08d5683f2547980013a010f5dfe12479.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZGpsXh4CvLHbrmQHnIoIUCv_uuQYeT0bqFli75DqNRSf-NKE5LbmOa5zVZZuHqpJRGnM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cluster Mewah 2 Lantai Di Cibubur Harjamukti Cimanggis Depok Map 11 Hitung pinjaman Anda Rp 920540000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Cluster Mewah Lokasi Belakang Kampus Umm Malang House Styles House Home" src="https://i.pinimg.com/736x/5d/f8/10/5df810fb786a47a5b83011c425ed4a47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRlXuriraTZOn7pbBXPoyEV1KzUTNFZ9wWHnKWUm2bZUxda5rtBCih_OjHw6vUZzsd_Lo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Senior Member 0821 8088 2608.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Minimalis Wa Hp 081357153390 Outdoor Decor Installation All Over The World" src="https://i.pinimg.com/originals/82/36/5a/82365a00375fd8ddea8da054ebc149ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPa2kJZkZc7Z09u_-I-uqexgSi-lsWvew1Wg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Temukan Rumah untuk dijual di yogyakarta dengan harga terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Mewah Hanya 300 Jutaan Di Puri Diva Malang Kota House Styles Outdoor Decor House" src="https://i.pinimg.com/736x/d9/e6/06/d9e6064c9d962907651dd2da66002b88.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Q0tZ05BbLt4gQj6-8QOo5boiFAA3Abo3Bw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>3 Kamar tidur 69 m² Bangunan 76 m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bekasi Timur Rumah Cluster Minimalis Bekasi Utara Rumah Cluster Minimals Cari Harga Rumah Cluster Di Bekasi Info Jelas H Rumah Minimalis Rumah Rumah Mewah" src="https://i.pinimg.com/originals/62/d5/c7/62d5c7b293695d2359ba322e81d1ab11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQakX-b83VEuMuGumAPMGXP31kBByFaBQnSQw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapatkan lebih dari 693 penawaran - Disewakan cluster 2 lantai mewah dengan harga mulai dari Rp 45000000 - rumah disewakan berada di kawasan mewah dan elite cluster jasmine park plamongan indah semarang timur jawa tengah indonesia arsitektur eropa mediteranian kondisi rumah baru selesai dibangun novem.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah Ada Kolam Renang Depok Rumah Mewah Rumah Desain" src="https://i.pinimg.com/originals/82/37/0b/82370b3631fedfa2d6a6f6d4b4044193.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNTwUiri7KjxNJaX064W4KdvvIHaGWLPATA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>PROMO CLUSTER MEWAH GRATIS SHMAC Map 12 Hitung pinjaman Anda Rp 725000000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Empat Lima Ringroad Medan Hunian Mewah Dilokasi Strategis Dengan Harga Ekonomis Lima Empati Pemasaran" src="https://i.pinimg.com/originals/b1/2a/cc/b12acca070f93b1114f1eeba38916de0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjWVJWZmhkT_f2-jeIXFNoWKiCQemu4MWvQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>3 Kamar tidur 69 m² Bangunan 76 m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Lyndon Navapark Bsd Tipe 19 Home Fashion Rumah Mewah Rumah" src="https://i.pinimg.com/originals/14/02/23/14022340b0c8aa4e8715b38251f42e18.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmLIrF7yXX6b0wx9QWa92YpXlFjl9neov3DxK4diKBfw1Q416h6M59u2C2f4Z_SQbZmSo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jawa Barat Depok Limo Limo.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-2-tingkat-modern.html"><i>&larr; desain rumah 2 tingkat modern</i></a>
+                                                                    
+                                        <a href="/desain-rumah-10x20.html"><i>desain rumah 10x20 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

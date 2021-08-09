@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Dalam Gang Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Dalam Gang Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://rumahdijual.com/attachments/bandung/989465d1392004508-rumah-dalam-gang-300-meter-dari-pasar-ujungebrung-img_20140127_105307.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+dalam+gang+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Dalam Gang Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Dalam Gang Sederhana</strong>. Masih ada banyak ruangan untuk tambah kamar. Rumah ini terletak di sebuah gang kecil di kawasan Peckham London Selatan Inggris dengan lebar kavling sekitar 28 meter.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://img-ap-1.trovit.com/img1id/y1A1JnU1Us7/y1A1JnU1Us7.1_11.jpg" alt="Rumah Murah Dalam Gang Jakarta Trovit" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAt5KWBVxh48v2gPZbsTXqUx0XD7L89NYJnQ';">
+        <figcaption>Rumah Murah Dalam Gang Jakarta Trovit from rumah.trovit.co.id</figcaption>
+    </figure>
+        <p>
+        Masuk Gang Sempit Ini Penampakan Rumah Risa Culametan Met-Met Kamis 19 Maret 2020 0728 Reporter. Jual beli online aman dan nyaman hanya di Tokopedia. Saya Bangkrut Tak Bisa Bertemu Anak.
+    </p>
+    <h3>Ia memilih tinggal di rumah sederhana.</h3>
+    <p>Tak heran jika hunian dalam gang biasanya memiliki desain yang sangat sederhana. Masih ada banyak ruangan untuk tambah kamar. Dengan tajuk Bulux Superglad. Untuk menuju ke rumah Dimas tim Rans harus masuk dan melewati gang sempit terlebih dahulu.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Inspirasi Desain Rumah Minimalis Di Gang Sempit Terbaru Dan Terbaik Deagam Design" src="https://deagamdesign.com/wp-content/uploads/2019/10/35-Inspirasi-Desain-Rumah-Minimalis-Di-Gang-Sempit-Terbaru-dan-Terbaik.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw32Y2jREpBaBnkqwGMgOskLvEpeE3XkY5Kw';" />
+        <small>Source: deagamdesign.com</small>
+                    <p>Saya Bangkrut Tak Bisa Bertemu Anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Twins Solusi Rumah Sempit Dalam Gang" src="https://cdn.medcom.id/images/library/images/the%20twins%209.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrjgXFeSLU76O6OJabFr2XjHON0XkU_Llnn42v-q33NuLB2emrz4rLYToE0vfYimsRiA';" />
+        <small>Source: www.medcom.id</small>
+                    <p>Dikutip dari Archify firma arsitek Delution menawarkan solusi bagi hunian dengan lahan terbatas di dalam gang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dalam Gang Jakarta Selatan Trovit" src="https://img-ap-1.trovit.com/img1id/1gd1n01h1qX/1gd1n01h1qX.1_11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAKuTJvrJUUWjmMMLmh_nva2JsbNotbWhZSl6l1m9SQeji_saBTLfZRGaB9BJfqesTrI';" />
+        <small>Source: rumah.trovit.co.id</small>
+                    <p>Barang-barang di dalam rumah Dimas Ramadhan ini juga terlihat sedikit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Sederhana Dalam Gang Di Kampung Lima Paar Min Ggu" src="https://rumahhokie.com/upload-foto/1573911672_12.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThvwnbjCer2IYHeffspmgbqJN7EGZ3YYsJVA';" />
+        <small>Source: rumahhokie.com</small>
+                    <p>Dekat jalur angkot - 8 menit jalan kaki.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Kecil Sederhana Di Kebagusan Pasar Minggu Jakarta Selatan Siap Pakai Tidak Masuk Mobil 2360" src="https://www.jualrumahjakarta.com/iklan/images/2015/05/2121_1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGvzWV4SLHdOo4PSnuLmjIPXH3KqPTih9lq2Fyd20bt3Rj0tQyv17rGxNUyCasxZ-SMlQ';" />
+        <small>Source: www.jualrumahjakarta.com</small>
+                    <p>Masuk Gang Sempit Foto.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kecil Sederhana Dalam Gang Di Jl Swadaya 1 Poltangan Ps Minggu Jakarta Selatan Jualo" src="https://ik.imagekit.io/carro/jualo/original/11408907/image_20170712-11430-bz9vam.jpg?v=1499835460" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxEwTnd9eHu0boDA8K1i2rAsLfONPwXm7OvJQeeHRidLRp8BH_mijIKQ5U2SCY17EtfwA';" />
+        <small>Source: www.jualo.com</small>
+                    <p>Masih ada banyak ruangan untuk tambah kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sederhana Di Kebayoran Jakarta Selatan Dijual Rumah Apartemen 805597557" src="https://apollo-singapore.akamaized.net/v1/files/uwt2afxvc54q-ID/image;s=850x0" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqo9TwHaabO4V7XzIM7N9yaysywQnMDzzUg';" />
+        <small>Source: www.olx.co.id</small>
+                    <p>Dian Rosadi Rumah Risa Culametan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Rumah Minimalis Sederhana Dalam Gang" src="https://3.bp.blogspot.com/-sCmYigtTxtQ/VRIf7Pc4r0I/AAAAAAAABDg/e0blnV8MDKw/s1600/desain2Brumah2Bmungil2Bbaru.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuExcohricrM3nnU20L99huQ1MKYYIZSSSkg';" />
+        <small>Source: modelpinturumahh.blogspot.com</small>
+                    <p>Di Jual Rumah Sederhana Lokasi Strategis Cimahi Utara Harga 450 Juta nego Rumah sederhana dalam gg 5 langkah ke akses mobil lokasi cimahi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dijual Rumah Dalam Gang Di Purabaya Padalarang Bandung" src="https://rumahdijual.com/attachments/bandung/3624860d1444465203-rumah-dalam-gang-di-purabaya-padalarang-bandung-12059209_10206840776752295_439394549_o.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9g2z3-_6xnTSToRgO8kibSBUdln6YkN8djZav_kXB7fCK-0AFq97KswgKBJamn6YY-Y';" />
+        <small>Source: rumahdijual.com</small>
+                    <p>Barang-barang di dalam rumah Dimas Ramadhan ini juga terlihat sedikit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Namanya Terkenal Di Dunia Hiburan Rumah Sederet Artis Ini Justru Berada Di Gang Sempit" src="https://www.serumpi.com/wp-content/uploads/2019/09/750xauto-potret-rumah-5-seleb-yang-lokasinya-masuk-gang-ada-barbie-kumalasari-190711u.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4yR4Wor_0oK0n91yozSElyMNxw8LADcKo4A';" />
+        <small>Source: www.serumpi.com</small>
+                    <p>Ia pun kini tinggal di sebuah rumah sederhana yang ada di dalam gang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Sederhana Bagus Dalam Gang Di Kebagusan Jakarta Selatan" src="https://rumahhokie.com/upload-foto/1550304215_112.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ZvoJF-BV81iCnyRz1DawvCO7Mg-fleNqytj5UY5jmmo03r1XjpK9u9fvHCOx59XfPjg';" />
+        <small>Source: rumahhokie.com</small>
+                    <p>98 m 1 lantai Kt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Twins Solusi Rumah Sempit Dalam Gang" src="https://cdn.medcom.id/images/library/images/the%20twins%205(1).jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmMAbscF0SisZ32LOgBYJ9-nWwAPMaqPGgJw';" />
+        <small>Source: www.medcom.id</small>
+                    <p>Rumah Dalam Gang Cilandak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Sederhana Bagus Dalam Gang Di Kebagusan Jakarta Selatan" src="https://rumahhokie.com/upload-foto/1550304215_14.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5beTuoH_dQH011dZkeHWH_7wUM5aRuJ5eSg';" />
+        <small>Source: rumahhokie.com</small>
+                    <p>Melalui tayangan tersebut terlihat potret rumah pria penjual bakso yang mirip dengan Raffi Ahmad.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Dalam Gang Sukajadi Bandung" src="https://static-id.lamudi.com/static/media/bm9uZS9ub25l/2x2x5x880x396/c3ac49029bbfc6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGR8HOm7P8PPrEZ4XhcGcJCT6UKcfDqHlPRg';" />
+        <small>Source: www.lamudi.co.id</small>
+                    <p>Promo Diskon 15 Na Willa dan Rumah Dalam Gang dengan harga Rp49725 dari toko online Mojok Store Kab.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dalam Gang Dijual Di Jakarta Selatan Rumahdijual Com" src="https://gambar-rumah.com/athumb/1/2/f/57842247.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7Xcry7g0Uf3k6lx22_EdL7AlyaqkmKIRng';" />
+        <small>Source: rumahdijual.com</small>
+                    <p>Di Jual Rumah Sederhana Lokasi Strategis Cimahi Utara Harga 450 Juta nego Rumah sederhana dalam gg 5 langkah ke akses mobil lokasi cimahi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Rp350 Juta Di Jakarta Hanya Ada Di Gang Sempit" src="https://thumb.viva.co.id/media/frontend/thumbs3/2012/05/18/155301_pasar-tradisional-di-gang-sempit-jakarta_665_374.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTew8nt2vxmsgOWP-wpOha3SYnBK21QXhUrhw';" />
+        <small>Source: www.viva.co.id</small>
+                    <p>Pilihan Sarita ini tentu bukan hal mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ide Ide Untuk Rumah" src="https://i.pinimg.com/564x/e4/cb/68/e4cb680be9747fc1dc11451e41618176.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjPOo2BkoWZfuaNcO8hsmmCPee1oy42aWw1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Eksplorasi Perancangan Rumah Tinggal Sederhana di Daerah Permukiman Padat Kampung Kota dalam Menjawab Isu Efisiensi Energi Studi Kasus pada Lahan dengan Luas 40m2 JURNAL PERENCANAAN WILAYAH DAN KOTA 18 INSITUT TEKNOLOGI SAINS BANDUNG Eksplorasi Perancangan Rumah Tinggal Sederhana di Daerah Permukiman Padat Kampung Kota dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Gang Dijual Rumah Dijual Murah Cari Rumah Di Indonesia Olx Co Id" src="https://apollo-singapore.akamaized.net/v1/files/crxoni3b36uu2-ID/image;s=272x0" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt8nK-psNSx3_NoHqp87OusWU_HarmoRPJaQ';" />
+        <small>Source: www.olx.co.id</small>
+                    <p>Viral Inspirasi Desain Rumah Kecil Selebar 28 Meter di dalam Gang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Twins Solusi Rumah Sempit Dalam Gang" src="https://cdn.medcom.id/images/library/images/the%20twins%204.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDfxzew9QlIkPsJTcWzR2_knmZpJ7ukzngXDHu2W-GKcdm2EWygyvauEEtD_Do-d_6q00';" />
+        <small>Source: www.medcom.id</small>
+                    <p>Rumah Dalam Gang Cilandak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dalam Gang Cimahi Trovit" src="https://img-ap-1.trovit.com/img1id/1GRX1f-I1wu/1GRX1f-I1wu.1_11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtjV3ZgX0EsrnGL8diYVYvioG7Xg-vPl2JcA';" />
+        <small>Source: rumah.trovit.co.id</small>
+                    <p>Rumah sederhana di dalam gang Semula memang tidak ada perasaan apapun karena Bung Karno muda memang hanya seorang anak kos seperti anak-anak lainnya yang kos di rumah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Dalam Gang Sukajadi Bandung" src="https://static-id.lamudi.com/static/media/cXVhbGl0eS82NQ%3D%3D/2x2x5x881x390/29044a1da81a4d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIVGwm85kZlYS3KNhhTLDWYeX9ucWOzOjfEA';" />
+        <small>Source: www.lamudi.co.id</small>
+                    <p>Namun ia begitu bahagia dengan kehidupan baru nya setelah pindah rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mau Beli Rumah Dalam Gang Tidak Masalah Asal" src="https://surlenez.com/wp-content/uploads/2016/01/467187d1369191964-dalam-gang-layak-huni-300m-dari-jalan-raya-ah-cimg1335.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUYHIeZhs5YeaZVnleNT3MchS4HArC2Ij9HHslA9urjIAHwoFVbkatZkLx4f4tigwFGkw';" />
+        <small>Source: www.99.co</small>
+                    <p>Melalui proyek The Twins firma tersebut menawarkan hunian dengan konsep rumah tumbuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tinggal Sederhana Dan Biasa Saja Masuk Gang 12 Meter Dijual Rumah Apartemen 534775068" src="https://apollo-singapore.akamaized.net/v1/files/8wpm6ljc5q7g-ID/image;s=850x0" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3zPAuUCc-y4bB1o33qEThKz2eTOtNOnq1KavkSvYOUy3iSn_coKTr9CATdaelvj0DDfQ';" />
+        <small>Source: www.olx.co.id</small>
+                    <p>Ia pun kini tinggal di sebuah rumah sederhana yang ada di dalam gang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Sederhana Bagus Dalam Gang Di Kebagusan Jakarta Selatan" src="https://rumahhokie.com/upload-foto/1550304215_11.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-AABBr6IKcfFjJjv2MpVjkMGnsspMSdQ3YNauKoLG3-s27EPLxAGE1ckTRVPidhCWF_M';" />
+        <small>Source: rumahhokie.com</small>
+                    <p>Potret Rumah Orangtua Mpok Alpa Sederhana Masuk ke Dalam Gang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Twins Solusi Rumah Sempit Dalam Gang" src="https://cdn.medcom.id/dynamic/content/2019/12/09/1091276/QlspFjb7HN.jpg?w=480" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5OEMivlbj_5vUEX5LlMIkrtLm_WYuRMLlVtT3HbDNIBf-dKQeCIRSO1UmFDcB1uVMS6w';" />
+        <small>Source: www.medcom.id</small>
+                    <p>Jalan HajiTen I No.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Sederhana Bagus Dalam Gang Di Kebagusan Jakarta Selatan" src="https://rumahhokie.com/upload-foto/1550304215_13.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6HL0YlwmmP-EcwQ2r1jpGENgiZBkKcnbP7Q';" />
+        <small>Source: rumahhokie.com</small>
+                    <p>Rumah dalam gang 30 m gandaria selatan cilandak jakarta Harga Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Murah Dalam Gang Jakarta Trovit" src="https://img-ap-1.trovit.com/img1id/y1A1JnU1Us7/y1A1JnU1Us7.1_11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAt5KWBVxh48v2gPZbsTXqUx0XD7L89NYJnQ';" />
+        <small>Source: rumah.trovit.co.id</small>
+                    <p>Sukses meniti karier di dunia hiburan Nina Carolina atau lebih dikenal dengan nama Mpok Alpa rupanya masih memilih untuk bertahan di rumahnya yang sederhana dan berada di dalam gang sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Sederhana Bagus Dalam Gang Di Kebagusan Jakarta Selatan" src="https://rumahhokie.com/upload-foto/1550304215_12.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJnKVifSJN9mdofkXEI8ecS5O0PL1GrR2JCw';" />
+        <small>Source: rumahhokie.com</small>
+                    <p>Untuk menuju ke rumah Dimas tim Rans harus masuk dan melewati gang sempit terlebih dahulu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Gambar Rumah Dua Lantai Di Gang Terbaik Koleksi Gambar Rumah Terlengkap" src="https://rumahdijual.com/attachments/jakarta-barat/24184764d1527093472-dijual-cepat-rumah-2-lantai-dalam-gang-di-kemanggisan-img-20180522-wa0011.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-3Fgo_MR49En0pKVI3SxU2gjmADb0ln2mg';" />
+        <small>Source: topgambarrumah.blogspot.com</small>
+                    <p>Dengan tajuk Bulux Superglad.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dalam Gang Dijual Di Jakarta Barat Rumahdijual Com" src="https://gambar-rumah.com/athumb/e/9/c/52109490.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7X2XFCXGJozFrGEZq0gGb25cxKQ2z1SUhNw';" />
+        <small>Source: rumahdijual.com</small>
+                    <p>Eps 95 berikut potret rumah yang dihuni Buluk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Masuk Gang Bandung Mobil Trovit" src="https://img-ap-1.trovit.com/img1id/A1n15B13p13c/A1n15B13p13c.1_11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOYIgi1O9_oSfEgn6AqnAlMRsfednHV15Yg';" />
+        <small>Source: rumah.trovit.co.id</small>
+                    <p>Kondisi layak pakai hanya butuh sedikit renovasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Rumah Minimalis Masuk Gang Content" src="https://ik.imagekit.io/carro/jualo/original/14496331/rumah-minimalis-canti-rumah-dijual-14496331.jpg?v=1518687160" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiELxRDi63UiWIgaSHiGokkGCsbhAu3SkJA';" />
+        <small>Source: content.co.id</small>
+                    <p>Masih ada banyak ruangan untuk tambah kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mau Beli Rumah Dalam Gang Tidak Masalah Asal" src="https://rumahdijual.com/attachments/bandung/989465d1392004508-rumah-dalam-gang-300-meter-dari-pasar-ujungebrung-img_20140127_105307.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAQQODzPhgq2UUxGDld12R7Mqy5mZBPQNVQhNEtrgodfqtfHkQ3djgUM2pRdJDdej999c';" />
+        <small>Source: www.99.co</small>
+                    <p>2 2200 W PAM.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Sederhana Dalam Gang Di Kampung Lima Paar Min Ggu" src="https://rumahhokie.com/upload-foto/1573911672_11.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXjmvde60pJNIgOE_uwsYIYzwI2hLE9r8I7Q';" />
+        <small>Source: rumahhokie.com</small>
+                    <p>98 m 1 lantai Kt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Gang Dijual Rumah Dijual Murah Cari Rumah Di Indonesia Olx Co Id" src="https://apollo-singapore.akamaized.net/v1/files/4ejzg3ulgkmi1-ID/image;s=272x0" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxY8PFgDukLmno2XriQwi6vBj0bFjJJRFMbQ';" />
+        <small>Source: www.olx.co.id</small>
+                    <p>Melalui proyek The Twins firma tersebut menawarkan hunian dengan konsep rumah tumbuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kecil Dalam Gang Trovit" src="https://img-ap-1.trovit.com/img1id/1Q1I1E81vGbJ/1Q1I1E81vGbJ.1_11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-IkrAJon4456W944CWAG2Lcnkj7SbBQPvPLNSfRjMOJoTVnrdpkgdfUxlfniH2k6yj7A';" />
+        <small>Source: rumah.trovit.co.id</small>
+                    <p>Dari video di saluran YouTube Apunk65 GasJon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Di Gang Kota Bandung Icon Rumah" src="https://rumahdijual.com/attachments/bandung/35184755d1550221300-rumah-pusat-kota-bandung-dalam-gang-area-bebas-banjir-img-20181211-wa0004.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDTkp1HEAK1sAAOlCR9GJKkfG2C1K4U5ut1Q';" />
+        <small>Source: www.iconrumah.com</small>
+                    <p>Rumah sederhana di dalam gang Semula memang tidak ada perasaan apapun karena Bung Karno muda memang hanya seorang anak kos seperti anak-anak lainnya yang kos di rumah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dalam Gang Jakarta Selatan Trovit" src="https://img-ap-1.trovit.com/img1id/O1an4A51X7/O1an4A51X7.1_11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSaQ_vYxDss04ia3ZanzuH1_Opm6or-Xs_JpGqyl079KV2rXYnQhHinv7EJel4fDqGke4';" />
+        <small>Source: rumah.trovit.co.id</small>
+                    <p>Ia memilih tinggal di rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berita Harian Rumah Minimalis 2 Lantai Sederhana Terbaru Hari Ini Kompas Com" src="https://asset.kompas.com/crops/ke8jogvOHLF7V6WrDQzI8zhPNAQ=/3x289:1440x1248/490x326/data/photo/2021/01/08/5ff809293c4ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbWh7leXFpIqyiisbzz5uGV-iTK3oCCmwRxg';" />
+        <small>Source: www.kompas.com</small>
+                    <p>2 2200 W PAM.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lewat Gang Kecil Begini Penampakan Rumah Galih Ginanjar Dan Barbie Kumalasari Di Jakarta Timur Warta Kota" src="https://cdn-2.tstatic.net/wartakota/foto/bank/images/rumah-barbie07.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_CaLzDUpo__K8uO6wc3efA51eWfk8DiY5YSXiYu0cY5k7g0U5DZ7zCdGl3vOYohWNv3w';" />
+        <small>Source: wartakota.tribunnews.com</small>
+                    <p>Potret Rumah Orangtua Mpok Alpa Sederhana Masuk ke Dalam Gang Sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Sederhana Bagus Dalam Gang Di Kebagusan Jakarta Selatan" src="https://rumahhokie.com/upload-foto/1550304215_1.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS11pC0uei6cu1PGDnC9qS1dieAd1zp8BSP3ozFjgxfTvWH1Llr3Ejk_F5dA4qzLQwLF6c';" />
+        <small>Source: rumahhokie.com</small>
+                    <p>Tak heran jika hunian dalam gang biasanya memiliki desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="860 Gambar Rumah Sederhana Di Gang Hd Terbaik Gambar Rumah" src="https://rumahdijualdisurabaya.files.wordpress.com/2017/02/39226-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlC1C5Mb7wZ-KVbM5UpEyg4y_yp4Z9OHgn26L6IwLQjwFoCUaz_R_M0BmFLSkZDaQgeMc';" />
+        <small>Source: www.gambarrumah.pro</small>
+                    <p>Jakarta Selatan Daerah Khusus Ibukota Jakarta.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dijual Rumah Murah 2lt Dalam Gang Di Gunung Sahari Bebas Banjir" src="https://rumahdijual.com/attachments/jakarta-pusat/5145276d1459999196-rumah-murah-2lt-dalam-gang-di-gunung-sahari-bebas-13536156_3_644x461_rumah-murah-di-jakarta-pusat-dijual.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJud85Hz6pepHpDDy6qPi9sy4DGir5gvGfg';" />
+        <small>Source: rumahdijual.com</small>
+                    <p>Potret Rumah Orangtua Mpok Alpa Sederhana Masuk ke Dalam Gang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Merancang Rumah Idaman Di Gang Senggol Halaman All Kompas Com" src="https://asset.kompas.com/crop/0x0:845x563/750x500/data/photo/2017/03/31/4257870929.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0EeRQzEfLlncVqa8leQsDo2GqfYA1eb1eIprDe_Udw7u9el4cE6rEEcbGD2HeS6n0mS0';" />
+        <small>Source: properti.kompas.com</small>
+                    <p>Tak heran jika hunian dalam gang biasanya memiliki desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dijual Rumah Sederhana Masuk Dalam Gang Di Jelambar" src="https://rumahdijual.com/attachments/jakarta-barat/1166787d1397453588-rumah-sederhana-masuk-dalam-gang-di-jelambar-ga8517-b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpbFtgAofSX2vdiycfsl6S2ULMWzvD1kv3mA5-X5mBxSr4tHHLcrPw-gy10ynTmC82cBA';" />
+        <small>Source: rumahdijual.com</small>
+                    <p>Masuk Gang Sempit Foto.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dijual Rumah Dalam Gang Di Jakarta Selatan" src="https://rumahdijual.com/attachments/jakarta-selatan/987503d1391917498-rumah-dalam-gang-di-jakarta-selatan-c360_2014-02-01-17-37-09-002.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLVtNS-djaxlFCp76J5wASUcuinMV_WEq8-Q';" />
+        <small>Source: rumahdijual.com</small>
+                    <p>Eps 95 berikut potret rumah yang dihuni Buluk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Cepat Rumah Cocok Untuk Kosan Dalam Gang Sukajadi Bandung" src="https://picture.urbanindo.com/listing/214938283/01/b6658575/jual-cepat-rumah-cocok-untuk-kosan-dalam-gang-sukajadi-bandung/780/780.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyCyJjH0IB8tAsL3_R0OEW5wnr_wjMiMYJQ';" />
+        <small>Source: www.99.co</small>
+                    <p>Rumah Dimas Tukang Bakso Mirip Raffi Ahmad Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Unik Di Gang Sempit Bandung Youtube" src="https://i.ytimg.com/vi/ycSkd2Wo--4/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnwcR8bD01oz9jVrwceqVdFZbdIojqLXeNpw';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Pilihan Sarita ini tentu bukan hal mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dalam Gang Jakarta Selatan Trovit" src="https://img-ap-1.trovit.com/img1id/Q1D1zj1n1R1WX/Q1D1zj1n1R1WX.1_11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEl1kdKqP--8Kmjmh_rgo45F_D27cWBt9aIYFuI3_iMn7IlvR_VUAPwacXXMuI1WqrBzc';" />
+        <small>Source: rumah.trovit.co.id</small>
+                    <p>Tak heran jika hunian dalam gang biasanya memiliki desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Solusi Rumah Dalam Gang Kecil Cuma 3x8 Meter Youtube" src="https://i.ytimg.com/vi/HCsMLFktdsk/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW4vyaNU-RvfuuDJUnwyI_pTnp6VU5-6A7_w';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Bentuk bangunan ini identik dengan gaya arsitektur modern.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/pagar-rumah-besi-tempa-minimalis.html"><i>&larr; pagar rumah besi tempa minimalis</i></a>
+                                                                    
+                                        <a href="/mushola-minimalis-dalam-rumah.html"><i>mushola minimalis dalam rumah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

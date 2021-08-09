@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Tangga Putar
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Tangga Putar",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/2e/6f/02/2e6f027e2bf88031e8bff19652c941b3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+tangga+putar",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Tangga Putar
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Tangga Putar</strong>. Jika pesanan Anda menggunakan besi plat biasa jangan lupa memasang lapisan kasar pada setiap pijakan tangga. Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/f8/e3/fc/f8e3fc413ffc228b2ea45ad3b3a41f1c.png" alt="Teknik Sosrobahu Dan Cara Kerjanya Area Teknik Sipil Teknik Sipil Teknik Desain" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmoHrPDWUI20kyk3XnrWjHyFW3aSvdvth_bg';">
+        <figcaption>Teknik Sosrobahu Dan Cara Kerjanya Area Teknik Sipil Teknik Sipil Teknik Desain from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. Harga Tangga Putar Minimalis Per Meter Terbaru. Tangga putar yang lembut dengan rangka baja zigzag yang kuat menampilkan veneer kaca internal yang merupakan kombinasi menarik dari ruang di rumah.
+    </p>
+    <h3>Denah lainnya adalah tangga spiral atau denah tangga putar yaitu model tangga tanpa bordes.</h3>
+    <p>Harga Tangga Putar Minimalis Per Meter Harga Tangga Putar Minimalis STANDAR. Jika pesanan Anda menggunakan besi plat biasa jangan lupa memasang lapisan kasar pada setiap pijakan tangga. Desain rumah minimalis modern oleh Rakta Studio merepresentasikan kemewahan yang dibentuk dari detail struktur khas kubiknya. PANRITACOID Contoh Desain Denah dan Potongan Tangga Putar Besidwg berikut ini dapat digunakan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Tangga Putar Referensi Desain Arsitektur Desain Arsitektur Desain Arsitektur" src="https://i.pinimg.com/564x/53/fa/13/53fa1385790e13ccca18059566905904.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgTrYEpf4ALZ_Bk8BVpXFcFfpwM0RrP258i2uAOE8up92WrRvOvQGzQN_q-du2I2tGcZM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harga Tangga Putar Minimalis Per Meter Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Tangga Putar Murah Harga Tangga Putar 2018 Menierima Juga Spesifikasi Sesuai Kebutuhan Anda Desain Produk Desain Dapur Rumah Nyaman" src="https://i.pinimg.com/originals/5a/c3/a7/5ac3a78a8a69d7303f01605642b7c1ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv0TlrQFnAlUY86Agp_r_5C_IirySyI-QSHo3UuQXWobRAYzUcsioQSvg8DssCFjJXw2o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bentuknya yang hemat ruang ekonomis dan kemudahan pengaplikasiannya membuat tangga spiral memiliki nilai estetis yang tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Home Decor" src="https://i.pinimg.com/originals/7c/c5/2e/7cc52ef51adc7497192664ef61257527.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOM611LnM_xlqZkU-D_qP_b00tKg0O6k3cYnhf_IA0pAbWTTPRjKbN8KAa1i4FJbAYI9w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lampu-lampu yang jika dinyalakan akan membuat tangga seolah bersinar sebab pantulan dari lampu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Tutorial Cara Membuat Tangga Putar Youtube Petunjuk Putar Desain" src="https://i.pinimg.com/564x/d1/39/68/d13968703d5a2ba5199a96a87677aea7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0-SJ2LiWIk2FvWQAq5o-3jxB7FXFe0AhpBN0h4pGBZU1AQQFpaDE18s-oJBsUo_euMsU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Budget yang dibutuhkan untuk membuat tangga seperi ini sekitar Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah" src="https://i.pinimg.com/474x/aa/94/25/aa94254d8c6b0f3c6d496e45a866b3ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8ea5hmrY8Ar4G3VSKOFlFbwfY6H-2-OWng';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ditambah dominasi material dinding kaca semakin memikat pandangan dari luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di לייזר" src="https://i.pinimg.com/originals/bd/30/e4/bd30e49336d317334f063d6bf905f2a6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC6dF5anLhVd6Ma4T--O93t-PZn1JrKmnzyd069cIkwWyXSjbBjK3c1T-MHd4Yj0bcwQk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Budget yang dibutuhkan untuk membuat tangga seperi ini sekitar Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Merancang Tangga Beton Versi Tukang Bangunan Youtube Tangga Tangga Kayu Desain" src="https://i.pinimg.com/564x/fb/82/9c/fb829ce4fcbb638a4bbbf27e7dcd7ff8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBgSheQYh1YO7O9y6ffmmYIF7O9P1JgdoYIFW1tBIRYiA1xx2UjDiKwGQNRXJysDVP8j8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Denah dan Potongan Tangga Putar Besi KotakCAD.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 9 X 15 M2 2 Lantai Minimalis Tropis Desain Rumah Desain Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/b6/b9/c8/b6b9c8c8a4886a0c742dbabb496524c8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfSgi7ayOTjF4JbT0vDrTkhpulCON6I-HeTQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Denah dan Potongan Tangga Putar Besidwg adalah merupakan salah satu contoh yang ada pada umumnya diterapkan pada pekerjaan terkait.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi" src="https://i.pinimg.com/originals/51/73/28/51732859bde0ec129f537c7b48282ac5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArHEIulnepZlas3bYH3KVvsynMeg0rnFX-w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Tietie Mirza Di B Inggris Rumah Lantai Denah Rumah" src="https://i.pinimg.com/originals/b5/e4/6b/b5e46bf68ab5546a746a0438daccd587.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhAMQgBpbLZoteBb2qQ_GsmTI9zAPJhmmHtg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Besi ini mempunyai permukaan yang kasar dan keset yang membuat langkah kaki Anda akan tetap terasa nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Plugin Fredo 6 Fredo Scala Arsitek Desain Belajar" src="https://i.pinimg.com/originals/39/8c/f7/398cf78dffba06f6cde3675aedbaf53f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDo-pdxqbnEYETnR1zh0PyfE7jXjWhIJRUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Tangga Putar - Tangga putar atau tangga spiral kerap menjadi solusi sirkulasi vertikal untuk rumah bertingkat namun memiliki keterbatasan ruang untuk mengadirkan desain tangga dengan model yang lebih konvensional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Layer Tutorial Tahapan Penggunaan Layer Youtube Home Fashion Arsitek Desain" src="https://i.pinimg.com/564x/3f/7a/6c/3f7a6cb7e3b4f02996898e444210b6ea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3am1vKE-59B0bs7i7OXMqAhdMFTaSNcAR_g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>16 Model Tangga Putar Beton Minimalis Unik Tangga merupakan susunan dari beberapa anak tangga yang dapat kita lewati untuk ruangan bagian atas yaitu sebagai mempermudah kita melewati juga di buatnya rumah berlantai yaitu karena dengan ukuran tanah yang sempit sedangkan kita memerlukan ruangan yang cukup memadai sebagai ruang yang di butuhkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Putar Beton Sketchup Tutorial Arsitektur Arsitek Putar" src="https://i.pinimg.com/originals/2e/6f/02/2e6f027e2bf88031e8bff19652c941b3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxYyi_pl-z0q9t8tB2PDFQJUdeYJIlyZ1bYqMthqYjrLinrH8RyHBcOlKZYKFmeJsbBA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun hal ini jika kamu mampu mendesainnya dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Architecture" src="https://i.pinimg.com/736x/f6/7d/2c/f67d2c30db83081056fde6668ccdc51e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCWkhj_7_BpJ1m3G5bLuajW8efuMRjertaggp-ttqTAVUHtWXGV_EX4FR8OkreD-hD4aI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga ini akan membuat rumah anda nampak megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Tangga Baja File Dwg Lantai Anak Tangga Desain Tangga" src="https://i.pinimg.com/736x/c4/87/25/c487251c4ba70f372366d230d48a723c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_fNvOeHIyyiwIa7la3T8_O-2fbEQ46SXUArW6P3hHsGQ030TU2yTqV4Srmfyebdao-0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Posisi penopang yang ada di bawah anak tangga menjadikan tangga lingkar ini tampak seperti melayang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Pagar Besi Dan Pagar Tembok File Dwg Desain Pagar Keamanan Rumah Desain" src="https://i.pinimg.com/originals/59/c2/e0/59c2e08c6830906a18be3f57527445a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_4j1xx-MH_z2iaU7qzeHwJC7fbAE5sbLGnW0rLWerCzN_Us0BSYmoS-y-cUVhmRxa8k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Tangga Putar Referensi Desain Arsitektur Desain Arsitektur Desain Arsitektur" src="https://i.pinimg.com/170x/53/fa/13/53fa1385790e13ccca18059566905904.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprsOx4J_m21L2Tr7a3nO6x0vnJ3nSl2n7ag';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika kamu cocok dengan model tangga rumah minimalis ini siapkan budget Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Membuat Efek Matrix Photoshop Tutorial Photoshop Tutorial Photoshop" src="https://i.pinimg.com/originals/83/1d/ab/831dab044988c386066cd537553186c4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfATaD5y9LRuKM-T9jy1L75oQkSNY0wuiWA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ditambah dominasi material dinding kaca semakin memikat pandangan dari luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Supertree Sketchup Tutorial Arsitek Desain" src="https://i.pinimg.com/originals/aa/ef/03/aaef036bef511a4559eb9b2750bed9e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKgplQIskrEAS6fZv1PP0Rx9NNqwFDUQ2bg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Download gambar autocad tangga putar download gambar desain tangga rumah minimalis download gambar detail tangga download gambar kata rumah tangga download gambar perabotan rumah tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Tangga Putar Minimalis Murah Berkualitas Desain Tangga Tangga Desain" src="https://i.pinimg.com/236x/4f/20/f6/4f20f6f4ab2a68a8cc43315a70dd3bec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkq4csOHRT2FCcaOb6IUOL0ZgdSxDkrX0g4fRdTM1QBgnZqg2D-qP2is3dF9y-uj_g7s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bentuknya yang hemat ruang ekonomis dan kemudahan pengaplikasiannya membuat tangga spiral memiliki nilai estetis yang tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="087889863450 Pagar Besi Minimalis Teralis Jendela Pintu Besi Balkon Railing Tangga Kanopi Balkon Pintu Double Partisi Tangga Balkon Kanopi Pagar" src="https://i.pinimg.com/600x315/09/f8/0f/09f80fb6709d3960af7f2a0a56b7d887.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8OmLZWUeHlUEF86JeiD2fTwTzkH08V-RWw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah lainnya adalah tangga spiral atau denah tangga putar yaitu model tangga tanpa bordes.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=ukuran+tangga+putar&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ukuran+tangga+putar&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Jika kamu cocok dengan model tangga rumah minimalis ini siapkan budget Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Beton Rumah Minimalis Desain Tangga Rumah Minimalis Desain" src="https://i.pinimg.com/originals/f7/af/a2/f7afa2b71e8341459e104507b88325af.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGFu_G3f5fwlPohP9OB4LH_H6CL_zwshxtAw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download gambar autocad tangga putar download gambar desain tangga rumah minimalis download gambar detail tangga download gambar kata rumah tangga download gambar perabotan rumah tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Plugin Round Corner Tutorial Youtube Round Corner Tutorial Plugins" src="https://i.pinimg.com/600x315/9b/cb/f8/9bcbf8bf900fadbb5440623c41158f18.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOTbwYEHK-v6A8m-rpOe7uSTIVQZzpTcXEag';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Download gambar autocad tangga putar download gambar desain tangga rumah minimalis download gambar detail tangga download gambar kata rumah tangga download gambar perabotan rumah tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Cara Membuat Tiang Kolom Ornamen Dengan Sketchup Ornamen Desain Arsitek" src="https://i.pinimg.com/564x/18/d7/15/18d715b20108f598aaf8d815a9a62af4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDK8Yy-wjcC-A6JrBYI5WQ_yNysw_t7tgwg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warnanya pun pas menyeimbangkan warna anak tangga cokelat kayu dengan lis putih dan railing kaca bening.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Tangga Putar File Dwg Tangga Arsitektur Putar" src="https://i.pinimg.com/736x/0b/6b/2b/0b6b2b48ff66118d0c7e6f04c280f61e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbMJcpyOmWZRbTAjFOk6W_L0BlAPCv1MfXFSzmdiYoyIiIoqnPNz5IuAm-0rdMdWJuw4';" />
+        <small>Source: pt.pinterest.com</small>
+                    <p>Bagian jeruji railing memiliki sebuah pola yang menjadikan tangga putar ini semakin cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Photoshop Cs6 Tutorial Denah Berwarna Youtube Photoshop Desain Arsitek" src="https://i.pinimg.com/564x/84/cd/75/84cd75b63873d98f42fcc91515a3d100.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkWh6T8UtLMVGqYZilth-L6dlkPlySgk5IkQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>File Desain Denah dan Potongan Tangga Putar Besidwg tersedia dalam format dwg AutoCAD dimana file tersebut dapat di-edit editable yang dapat dikembangkan sesuai dengan kebutuhan pengguna.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=detail+ukuran+tangga+putar&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=detail+ukuran+tangga+putar&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Bagian jeruji railing memiliki sebuah pola yang menjadikan tangga putar ini semakin cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Photoshop Cara Buat Logo Tulisan Melingkar Photoshop Tulisan Lingkaran" src="https://i.pinimg.com/originals/8b/d5/30/8bd5303815f26723a5f565020937ef17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS91oLqyhmxBJdJKrw6jvf-4BvhtxdxVFAwuw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>File Desain Denah dan Potongan Tangga Putar Besidwg tersedia dalam format dwg AutoCAD dimana file tersebut dapat di-edit editable yang dapat dikembangkan sesuai dengan kebutuhan pengguna.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah" src="https://i.pinimg.com/564x/e5/3f/33/e53f338c34ff7176740223a0bf33ab16.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmA_bcYFjIilFitoaB4_Ly4RiD67Agt9cMoA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Tangga Putar - Tangga putar atau tangga spiral kerap menjadi solusi sirkulasi vertikal untuk rumah bertingkat namun memiliki keterbatasan ruang untuk mengadirkan desain tangga dengan model yang lebih konvensional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dzaky Jaya Dzaky Jaya Adalah Spesialis Pembuatan Pengerjaan Atau Pengrajin Pintu Gerbang Pagar Besi Tempa Pagar Kl Pintu Gerbang Klasik Pagar Besi Tempa" src="https://i.pinimg.com/236x/db/80/fb/db80fb94ad1c6eadc57e561718068582.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW05eSuJfLJZtoiPiAoAeW0LlZCDi_EykhhA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga Putar Minimalis Samping Tungku Api.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Tulungagung Lemari Bawah Tangga Fungsional Desain Depan Rumah Kecil Desain Pintu Utama Kayu Desain Depan Rumah" src="https://i.pinimg.com/originals/28/74/2f/28742f61a923b0ded3f3dd0332737c4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXiMcU1oOSJNOJn0-t0omxtXYpefwx2jfAPw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pembayangan akan rumah mewah tangga putar tak lagi tentang rumah dengan struktur yang terkesan berat ala rumah klasik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Tempa 3d Tangga Besi Tempa 3 Dimensi Klasik Tangga Kemewahan" src="https://i.pinimg.com/474x/e2/74/4e/e2744e06413d0f18186746c9e049bd45.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA2uQ1uEiqRatUYBxbMrWDS6I5_pfFruwcLg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga putar yang lembut dengan rangka baja zigzag yang kuat menampilkan veneer kaca internal yang merupakan kombinasi menarik dari ruang di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Intro Vidio Youtube Video Arsitek" src="https://i.pinimg.com/564x/e4/80/fe/e480fe535d41a69b1a5205e8b584d08a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmHRx0VqfjudMkj-k7kH9VDx7Hwhzd5dgrw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teknik Sosrobahu Dan Cara Kerjanya Area Teknik Sipil Teknik Sipil Teknik Desain" src="https://i.pinimg.com/originals/f8/e3/fc/f8e3fc413ffc228b2ea45ad3b3a41f1c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmoHrPDWUI20kyk3XnrWjHyFW3aSvdvth_bg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Panrita co id contoh detail pembesian tangga dwg berikut ini dapat digunakan sebagai referensi ataupun acuan gambar kerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Subscribe World Fun Slide Fun" src="https://i.pinimg.com/originals/47/51/57/475157f2609a9407bbd6dddffccdb03b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmlfzO4yPR-oVk7gmOnSr_zlteBTEZ7uQaw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warnanya pun pas menyeimbangkan warna anak tangga cokelat kayu dengan lis putih dan railing kaca bening.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di לייזר" src="https://i.pinimg.com/474x/fb/67/02/fb670227035693dce27265a032aaeba1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSy67PwBmvSiikcCE3kAOL60gakbWKpzZXyQ';" />
+        <small>Source: uk.pinterest.com</small>
+                    <p>Tangga ini biasa diterapkan pada rumah mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Detail Dan Potongan Tangga Putar Kayu Dan Besi File Dwg Putar Tangga Kayu Arsitektur" src="https://i.pinimg.com/originals/7b/cb/69/7bcb693c7d8a3ad0e73fc3259b379e37.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdrQMV5AKJm_c2tUf-drLxEzJvxQ6aoo2kWtN124zF1sDhlm2s8nDWAFoqBWYqFEvapdg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika pesanan Anda menggunakan besi plat biasa jangan lupa memasang lapisan kasar pada setiap pijakan tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sayembara Desain Prototipe Bangunan Evakuasi 2013 Bentara Arsitek Arsitek Bangunan Desain" src="https://i.pinimg.com/originals/6c/95/1c/6c951c7c1461b59b06a09336561f9e45.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZo0EqazjAtGd99GlnQHYQbGR2snQm8RynQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download gambar autocad tangga putar download gambar desain tangga rumah minimalis download gambar detail tangga download gambar kata rumah tangga download gambar perabotan rumah tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Melayani Jasa Pembuatan Dan Pemasangan Pagar Minimalis Teralis Jendela Pintu Besi Pagar Besi Pagar Rumah Minimalis Balkon Railin Jendela Balkon Minimalis" src="https://i.pinimg.com/originals/a0/f4/17/a0f417889a88e5de5172edbe76dd1a3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMIPjkv8FosgmzroZYAlKVZL1rDBe8t84XzA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tidak hanya cocok untuk gaya industri model ini mudah beradaptasi dengan banyak tren desain interior modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Putar Melingkar Rumah Minimalis Tangga Rumah" src="https://i.pinimg.com/originals/76/7e/10/767e10f7da764979d1b59a5516a94e2e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Tj22V_FKFcJv4jwq5grKUyLFwCaJ1p2hILtwAnOr-ywE8DO9tbOvkGn2mtRfG2GiSu4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Terdapat juga tangga putar yang pusat kekuatannya berada di bawah anak tangga seperti desain tangga ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lumion 8 5 Rendering Tutorial Rumah Tinggal 10x15 M 1 Youtube House Styles Rendering Tutorial" src="https://i.pinimg.com/736x/3c/91/0f/3c910fea39c57e8c66ec58990c18a600.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkWWPEcwcc2Ecpru60N9UuWHG9XUkwzR2Tw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tangga Putar Minimalis Samping Tungku Api.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Minimalis Cilengsi Murah Minimalis Pagar Rumah Minimalis" src="https://i.pinimg.com/originals/de/1c/4b/de1c4be3ab00e37f812d6ef058fe1613.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREtNSAjtFPOzU63be86lJi6bufHo-xOOjbpA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagian jeruji railing memiliki sebuah pola yang menjadikan tangga putar ini semakin cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Autocad Desain Denah Dan Potongan Tangga Gedung 5 Lantai Gedung Desain Lantai" src="https://i.pinimg.com/originals/bd/0b/36/bd0b3650d70a0954a92f5896fe7b5486.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxrJNXbzMjs0Whpeia3BOUCFVuprOWYWn8EYUvmWV_RZZMNCt8EqPwPGgqHGz45rlkiWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga putar yang lembut dengan rangka baja zigzag yang kuat menampilkan veneer kaca internal yang merupakan kombinasi menarik dari ruang di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsultan Desain Arsitektur Interior Desain Dan Perencanaan Rumah Tinggal Desain Rumah Klasik Klasik Modern Mini Virtual Office Architecture Floor Plans" src="https://i.pinimg.com/originals/a9/aa/a0/a9aaa035bedcdd4c4eaced7a31638e9f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7WuqqMyfZr52u2vLqsnxqD_9GPU4XNiLyyguVuMq30TOtIGgCD7_cSADO-BvXwQCjwyU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Download gambar autocad tangga putar download gambar desain tangga rumah minimalis download gambar detail tangga download gambar kata rumah tangga download gambar perabotan rumah tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Supertree Sketchup Tutorial Youtube Arsitek" src="https://i.pinimg.com/474x/60/61/33/606133832d3ef9217375f1eef87cd08a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyPPTjqY1j5o58mXPBKRfc0YZYBlUVBJTFjL4DHX2uULxO9Tu9xeIUxJk-IkFULiFpTso';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga model ini cocok buat rumah mewah yang kamu miliki lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Tutorial Tangga Putar Besi Desain Arsitek Putar" src="https://i.pinimg.com/originals/29/ce/86/29ce86c71c27b415b25fd622e9fe9a80.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7GCTzIK1ZZnKpcOVHjIcbCpBQkn12yK3o8chohy4O_GTu5QH3vdW5uWoD7Qz3-Ttjpmo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warnanya pun pas menyeimbangkan warna anak tangga cokelat kayu dengan lis putih dan railing kaca bening.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/originals/b9/38/37/b938377007a130d78c3942131b0280cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5MRVzpxVwnml8GPBTdDk5FQoCtI7oIMPZCKh2TxZk_kn5O-Hw9Dh8Jmoy-vvWYMh8LzY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga ini akan membuat rumah anda nampak megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Denah Dan Potongan Tangga Gedung 4 Lantai File Dwg Lantai Gedung Autocad" src="https://i.pinimg.com/736x/7a/a2/e3/7aa2e30744f84f77fd73c56554db0525.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWe0Oy1E553ZQeIq3P3_6wQ_C8VwDCIJNXL5ZJU18-sAU-EM4ZVcmMObm3GBBt5qKJDY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsitek Makassar Contoh Gambar AutoCAD Desain AutoCAD Gratis Desain CAD Gratis Desain interior Desain Rumah Desain Rumah Minimalis Desain Tangga Putar Desain Tangga Putar Besi Download AutoCAD DWG Download Autocad Gratis Download Contoh Gambar AutoCAD Download DWG Download DWG File.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Cara Buat Detail Atap Genteng 3d Dengan Sketchup Atap Arsitek Desain" src="https://i.pinimg.com/originals/ed/ca/cd/edcacd6e6b26f048a44fb4798335b03e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmDLoDUP3MQd51jIbvU8qpKS0NIBX_U-nbA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsitek Makassar Contoh Gambar AutoCAD Desain AutoCAD Gratis Desain CAD Gratis Desain interior Desain Rumah Desain Rumah Minimalis Desain Tangga Putar Desain Tangga Putar Besi Download AutoCAD DWG Download Autocad Gratis Download Contoh Gambar AutoCAD Download DWG Download DWG File.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/gambar-rumah-mewah-di-pondok-indah.html"><i>&larr; gambar rumah mewah di pondok indah</i></a>
+                                                                    
+                                        <a href="/gambar-rumah-sederhana-modern.html"><i>gambar rumah sederhana modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

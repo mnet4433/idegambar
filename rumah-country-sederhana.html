@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Country Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Country Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/c8/0c/5f/c80c5f41b90c2ee4e48e0fe6277b791f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+country+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Country Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Country Sederhana</strong>. Desain rumah sederhana COUNTRY RUMAH DESAIN SEDERHANA 612. Untuk bagian interior khususnya langit-langit lebih menonjolkan pada bagian atap.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/a4/73/40/a47340d07580050942b2ab4a88203c98.jpg" alt="100 Contoh Gambar Baru Contoh Rumah Minimalis 1 Lantai Desainataprumahminimalis Desainklasik Rumah Minimalis Home Fashion Desain Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-AFMoI_SB0DcSRN4lop3_KTSK7vq0YEMy_A';">
+        <figcaption>100 Contoh Gambar Baru Contoh Rumah Minimalis 1 Lantai Desainataprumahminimalis Desainklasik Rumah Minimalis Home Fashion Desain Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Sirkulasi juga akan semakin lancar dengan adanya jendela-jendela rumah yang lebar dan berjumlah banyak. Desain rumah sederhana COUNTRY RUMAH DESAIN SEDERHANA 612. Di tanah yang kecil.
+    </p>
+    <h3>Desainnya sederhana tapi terlihat unik dengan highlight pada balkonnya harus Anda tiru.</h3>
+    <p>Rumah kayu sederhana yang memiliki nuansa alami coklat kayu tanpa menggunakan cat tambahan agar terlihat lebih unik dan menarik Sketsa Desain Rumah Kayu Sederhana 25. 49 Model Desain Rumah Minimalis Dua Kamar Sederhana. Desain Rumah Country Sederhana merupakan ide desain rumah yang dirancang serta di kerjakan dengan hati - hati untuk menciptakan rumah idaman keluarga. Di tanah yang kecil.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Paling Sering Dijumpai Di Perkampungan Youtube Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/cb/c4/f4/cbc4f4c7eb6993bdbd0401f470d8c684.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqvDjMoeB7JLrAb8KHSlpgKUqPKoExIArduw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>30 Desain Rumah Minimalis Tampak Depan Dengan Batu Alam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Contoh Gambar Baru Contoh Rumah Minimalis 1 Lantai Desainataprumahminimalis Desainklasik Rumah Minimalis Home Fashion Desain Rumah" src="https://i.pinimg.com/originals/a4/73/40/a47340d07580050942b2ab4a88203c98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-AFMoI_SB0DcSRN4lop3_KTSK7vq0YEMy_A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di tanah yang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi Foto Desain Rumah Minimalis Sederhana Terbaru Rumah Minimalis Rumah Indah Arsitektur Rumah" src="https://i.pinimg.com/originals/a4/88/83/a488833593c5d83015ab516db967f241.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9rEg_28VudByrG9y0ATJW0c4nU5F8I0niA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Para penghuni pun dapat bersantap di luar sambil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=model+rumah+sederhana+tapi+indah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=model+rumah+sederhana+tapi+indah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah kayu sederhana yang memiliki nuansa alami coklat kayu tanpa menggunakan cat tambahan agar terlihat lebih unik dan menarik Sketsa Desain Rumah Kayu Sederhana 25.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Teras Rumah Minimalis Sederhana Simple Dan Terbaru Arsitektur Rumah Desain Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/8b/d3/61/8bd361ad0ef4eea30e81a37f77ce40ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW020t53aWigXzudHL60thvXlD11Z9EHdaMjxm-xCUUgXBrG-bvwm6cKinRC6rENXxCrc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di samping itu rumah ini pun mampu membuat Anda lebih rileks saat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Rumah Klasik Eropa Sederhana Desain Teras Depan Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/ad/46/0c/ad460c359ede5eb7945550434e5cb89b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBYtBfcmv-pY-bxOsMev9mOQy8ySBL6077FPGcRqVNEiyJyoh-3WV-Gaj2y0w3hffq57Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di samping itu rumah ini pun mampu membuat Anda lebih rileks saat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Keren Rumah Pedesaan Home Fashion Desain Rumah Desa" src="https://i.pinimg.com/originals/6e/5c/f4/6e5cf406678631afa9b12946397b450d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAd5qR-wDsly1eN-ca5RvUtpa6YdhiP-WPfQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di samping itu rumah ini pun mampu membuat Anda lebih rileks saat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Rumah Minimalis Dengan Batu Alam Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/b0/29/da/b029da102635d959322a4a6459f46988.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbqa831G8jgSyCjaVQPbDMD6dLWk0aNV-2A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kali ini buku ide mengajak Anda menikmati rumah country kecil membuat orang-orang memikirkan tentang bumi dan para ahli secara khusus berencana untuk menutup atapnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="21 Model Tiang Teras Rumah Minimalis Sederhana Terbaru 2018 Rumah Tiang Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/ce/61/e6/ce61e6559f1ebcf57566e7fc778a006e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBaIYC03IrOWOWaXUySdXkXddBLP75H18W3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Country Sederhana merupakan ide desain rumah yang dirancang serta di kerjakan dengan hati - hati untuk menciptakan rumah idaman keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Rumah Minimalis 2 Lantai Modern Sederhana Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/736x/b6/08/47/b6084762951c7c28146b9f0bd564e37b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwBmd_GcyltWMp75O27Y_JW-EBBtJkdVx1g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Salah satu tipe yg paling banyak dikembangkan sang para developer perumahan yaitu desain rumah sederhana 612.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi Gambar Rumah Minimalis Desain Rumah Sederhana Home Fashion Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/f4/32/a0/f432a00f72cd3e94946f5724cb2507db.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbCw2AStnmGmHB37HPn5TUaz500jJ7bRACA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Country Best Of Rumah Idaman Sederhana Dan Unik Desain Rumah Contoh Gambar Rumah Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Desain Rumah Country Keren Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="77 Gambar Desain Rumah Sederhana Di Desa Simple House Design House Design House Designs Exterior" src="https://i.pinimg.com/736x/31/09/da/3109da524c76292a7e5a9be5b987b1a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjM3kheIwAM3XX2eyreq84gzEBc9nh7OiVTw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Country Sederhana merupakan ide desain rumah yang dirancang serta di kerjakan dengan hati - hati untuk menciptakan rumah idaman keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Rumah Minimalis 1 Lantai Mewah Nyaman Elegan Tampak Depan Warna Putih Bahan Kayu Alam Klasik Rumah Kebun Arsitektur Desain Rumah" src="https://i.pinimg.com/originals/73/8e/9d/738e9d2d20d0726c99b45a7a9230a44b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeMs858GMCDyElJ0V-Vwr_ZZEhhOzEkK5cT8lrHbGYEnD5pR-j0BTLTLyFG0zCzfbQccI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>30 Inspirasi Desain Rumah Minimalis dengan Biaya 50 Juta.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="107 Gambar Rumah Minimalis Sederhana Di Desa Gambar Desain 9 Gambar Rumah Minimalis Sederhana Terkini 107 Desain Rumah Desa Rumah Minimalis Rumah Pedesaan" src="https://i.pinimg.com/originals/c2/96/af/c296af89f29520983f0b347e63e8d3ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUZ85MTy79fqmS303SjCjBBo1yHhX1FgUqcj8HeM_-V742gfZI8t43_irgi3LpU_32Kx4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>30 Inspirasi Desain Rumah Minimalis 3 Kamar 1 Mushola.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Eksterior Rumah Eksterior Modern Desain Eksterior" src="https://i.pinimg.com/736x/0f/91/3b/0f913b352aebbc654aeacd47e26674da.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIgLa1Y3bdZWN2JtCR6uvE71oP3Xp5ILAiw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rak dinding minimalis ini cocok untuk menyimpan koleksi kosmetik buku aksesori atau jika Anda punya koleksi hiasan rumah dari kayu lainnya untuk menambah suasana country.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Modern Terbaru Type 36 Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/c5/d0/79/c5d0795e974a98189931341f57e5b5e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjNtgQGZj81EQaONO-QphaMcga9JhG2YbX9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kayu bergaya country yang dibangun berjenjang ala rumah panggung ini memiliki kelebihan diantaranya melindungi terhadap banjir dan kolong rumahnya pun dapat mendinginkan suhu rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="53 Gambar Teras Belakang Rumah Minimalis Sederhana Rumah Minimalis Arsitektur Teras Belakang" src="https://i.pinimg.com/originals/f4/3f/94/f43f94cb62434476a9e1d3d221686316.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ7f7SeAb2oIA0ytfFBic_cwotPnU9Ojy0rvsnJvrByCZpFaCluNqFo7K2hg0N8ZO72V0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebaiknya ini dimanfaatkan dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Simple Minimalis Modern Desain Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/25/56/42/255642490e27a6d45ff1eb82e2e94be9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUKGMTzy5SBEkZuXtHaNkkRqT9KuVRX7ju0A';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Pondok Kecil Desain Rumah Kecil Rumah Kayu" src="https://i.pinimg.com/736x/05/8c/99/058c99a24a1a9461550db727e60791a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUnfRGbsckDrAzHeOOd53-wbG7JXMcBdEX9g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Di Kampung Desain Rumah Kecil Rumah Arsitektur House Blueprints" src="https://i.pinimg.com/originals/28/ca/dc/28cadc65e912342cbb5008015ff76b3f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFFgbAas4leWceeeWeuFnjnja9eRyJU3oeV2SCWle__eehuDE2njJocYdfEb9Ox9EQBY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di karenakan tempat tinggal serta denah rumah model ini akan lebih mudah buat merapikannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+indah+di+desa&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+indah+di+desa&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Sebaiknya ini dimanfaatkan dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Dua Lantai Minimalis Rumah Minimalis Desain Rumah Desain Rumah Modern" src="https://i.pinimg.com/originals/db/22/5d/db225d61fc474f13ca497ff5059723ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-QJzdL7d43QV8VkCjzmEAuFoz84XRezaXrQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tetapi perlu juga diingat jangan artikan sebagai sikap tidak menghargai upaya pemerintah untuk memastikan setiap warganya memiliki rumah atau inisiatif pihak swasta merancang ruang hidup dan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja S Rumah Pedesaan Rumah Kayu Desain Rumah Desa" src="https://i.pinimg.com/originals/ec/80/da/ec80da23c37747b69da305a6c20170e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7WGdV184saqzpfO6vCGseUuz6SUyXmoy3Rl2hVw9gO25hz2U7bfKyaRgKJKNfijonFY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebaiknya ini dimanfaatkan dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Denah Rumah Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/474x/8a/f2/2e/8af22edb78df38880adecad451d2f7bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS24TYv84FqPx2hBomWB3X7jcV6kb3QeB5TXfMbPyqWgiqPcrgABtJHgdC_3Iw4ZeEFZNE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ya kalau boleh dibilang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Bangun Rumah 30 Juta Saja Dijamin Jadi Dan Indah Rumah Minimalis Membangun Rumah Rumah" src="https://i.pinimg.com/originals/03/80/2b/03802b4b5fdea84c5c0298569597ecd9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStl944wLOIMMGlI6BYQM-FkGSv8f89fCxzAVczLMC4FnbzSb1Ta1inritzKMFBG47AtB0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Salah satu tipe yg paling banyak dikembangkan sang para developer perumahan yaitu desain rumah sederhana 612.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Type 36 1 Lantai Mewah Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/52/fb/aa/52fbaaf88899c36b602d73934e47ea82.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5KsO_sJXtQKlOiBtEwamBCpy8p8cPOSDMCIJuWc11DfwIaGiXw3W39LvDqBU5ttYZZM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Salah satu tipe yg paling banyak dikembangkan sang para developer perumahan yaitu desain rumah sederhana 612.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Macam Macam Rumah Tampak Depan Minimalis Rumah Minimalis Rumah Modern Rumah" src="https://i.pinimg.com/originals/a7/2d/6b/a72d6b201213b664df8bbcd838f95dfa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbuEbwH9iKCTDVfITps7HGEd7wGZ4ncrFqzA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jendela dirancang tidak terlalu besar yang sesungguhnya amat disayangkan untuk ukuran rumah yang memiliki pemandangan yang begitu menakjubkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Etnik Rumah Sederhana Di Desa Desain Rumah Desa Rumah Pedesaan Arsitektur" src="https://i.pinimg.com/originals/90/21/68/90216829ea6e3a30a8717422c9c51c3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0LtMsJ8onJkEPqx86VtsDmPDv-bKAB3-fuAW-uMVEL65GdvPl0li_w9y0MGJKbSlbP8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Atap tinggi memungkinkan sirkulasi udara di dalam rumah akan sangat lancar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Inspirasi Desain Rumah Kontrakan Sederhana Dan Modern Punya Rumah Minimalis Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/564x/74/50/73/745073f689182af4da75faf5330a351f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScA3-ganuWcSU6tmk8zDsS0V4ZsCAiS4lBSg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini dibanguan berjenjang sama halnya dengan rumah panggung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Rumah Sederhana Di Desa Rumah Warna Cat Dapur Desain Rumah" src="https://i.pinimg.com/originals/f2/22/ee/f222ee5c94727cba7489ecf43b540273.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueZob77e247lhAbK3528KOaoWdaVvk3t4LA';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Untuk bagian interior khususnya langit-langit lebih menonjolkan pada bagian atap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Rumah Bergaya Victoria Arsitektur Rumah Pedesaan" src="https://i.pinimg.com/originals/e2/04/26/e2042697657a6986a9503850a4c0586d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO-24WzqtYUy0XUwuChcSp-fb6DiZ0e2T1HUchYaOQa-kxlTTn-RnZyytylK_xocttUmU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sirkulasi juga akan semakin lancar dengan adanya jendela-jendela rumah yang lebar dan berjumlah banyak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Rumah Sederhana Minimalis Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/25/2b/ff/252bffd075401444da2c0a6d96ae6538.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwGfhIGZOhd2p9fNGTVpmJ6dPlcr3YyLpgw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Kayu Bergaya Country Rumah Kayu Bergaya Country.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Rumah Kayu Rumah Pedesaan Rumah" src="https://i.pinimg.com/originals/c2/f2/c3/c2f2c36f820b42235eea909cb452fb23.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeELLfNcCe4Ekzky2bkX2mOxUlMiciHsvfYzgWyBbLnSkTOSMFZRaCypcbfnntLcoTva0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jendela dirancang tidak terlalu besar yang sesungguhnya amat disayangkan untuk ukuran rumah yang memiliki pemandangan yang begitu menakjubkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Pedesaan Di Belanda Gambar Pedesaan Gambar Pedesaan Di Belandahttp Pemandanganoce Blogspot Com 2017 10 Gambar Pede Pondokan Rumah Pedesaan Rumah Indah" src="https://i.pinimg.com/originals/97/e0/fa/97e0faaf2b070d74708508d3c393a89e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNi3F1uD377v4Wec3ak4YHmoJv8IYQWyT6w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>30 Inspirasi Desain Rumah Minimalis dengan Biaya 50 Juta.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Remarkable Contemporary Interior Indoor Outdoor Ideas Modern House Plans House Exterior Modern Bungalow" src="https://i.pinimg.com/originals/b6/cd/82/b6cd82cbcdfe83b99a5e4a71f5b8e960.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-6ktEzeR2dBov95d_s5NvHR8WuZ-QV8fgZA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Epik Desain Rumah Country Sederhana 15 Dalam Perencanaan Desain Rumah oleh Desain Rumah Country Sederhana Jika saat ini anda sedang ingin membangun rumah merenovasi rumah ataupun hanya membutuhkan desain rumah dan memerlukan inspirasi dari konsep pilhan yang sangat tepat telah berkunjung di Arcadia Design Architect.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Terbaru Desain Rumah Minimalis 2016 Berbagai Type House Styles House Architect Design" src="https://i.pinimg.com/originals/3e/37/bd/3e37bd71b7ccf2f96c0de314865ab559.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8rKvnJ_9YkICgbjT4VrRLZbzqQzm2AgahQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kayu sederhana dengan kombinasi hijau sebagai atapnya dan krem untuk bagian dindingnya Konsep Desain Rumah Kayu Sederhana 24.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis" src="https://i.pinimg.com/originals/a8/52/d4/a852d4e668646a871af0428ba93f3c42.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUKUnMkNYEu9yYBnkAYdAfVueIqF5mT9Rvg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Country Sederhana merupakan ide desain rumah yang dirancang serta di kerjakan dengan hati - hati untuk menciptakan rumah idaman keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Follow Designrumahkita Follow Designrumahkita Follow Designrumahkita Konsep Ruma Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/41/7c/2d/417c2dc1672fac588837db6590ec80ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIF-8wIg2z4hgdVgGIwS1z6WEtENcqbq6ZQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Kayu Bergaya Country Rumah Kayu Bergaya Country.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Javier Vergara Di Rumah Minimalis Arsitektur Rumah Rumah Indah" src="https://i.pinimg.com/originals/37/a6/1a/37a61a6d2e1943e764c1df5afd4eab03.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLwVIGiuvZXV9B8EJrxmjypawlH-Bvo_TxQ';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Desainnya sederhana tapi terlihat unik dengan highlight pada balkonnya harus Anda tiru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Membangun Rumah Kecil Idaman Yang Nyaman Dan Terjangkau Rumah Kebun Membangun Rumah Tiny House" src="https://i.pinimg.com/474x/59/80/e0/5980e050ca7adf168050d02f85658630.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvDU9SjOOZUjikgj-oRBTDx9vLG8ntTfG0qLzjfEqFMUsqOl3uF2Hv8jDeHjj3Yv5tb5w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Para penghuni pun dapat bersantap di luar sambil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Rumah Sederhana Terbaru Desain Rumah Desa Rumah Pedesaan Desain Rumah Satu Lantai" src="https://i.pinimg.com/originals/c8/0c/5f/c80c5f41b90c2ee4e48e0fe6277b791f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzVtXt2kaVjlWtTJiA8aXdMb2MYHle2bzAnQ-XxsY22NSqzt3tam0hTaHthx13rxaInjg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Salah satu tipe yg paling banyak dikembangkan sang para developer perumahan yaitu desain rumah sederhana 612.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tingkat Minimalis Eksterior Rumah Rumah Kayu Rumah Kebun" src="https://i.pinimg.com/736x/c0/9e/25/c09e259571b7dc2905e512bf8ae0e3ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCvhFWR-yB2umAlv8nH-T-13U4dj6fYIFERt6alMIQsC1TOlHO-u7NbP4jCCz6Om6HFmg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini disebut Rumah Kotak Korek Api.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Bergaya Eropa Rumah Bergaya Country Desain Rumah Desa Desain Rumah Minimalis" src="https://i.pinimg.com/originals/79/a5/a5/79a5a596aba369ff87b23fa5304dfff4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtPnH-jw0Gynray6vwc_vDkh58hx4XaMD2E8lcWR5gQeXMvshx7I9gpTuRQ81ESxnnN2I';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Kayu Bergaya Country Rumah Kayu Bergaya Country.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Desain Rumah 2 Lantai Arsitektur Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/51/30/e1/5130e1bc759ce95de3d2c8bf07131788.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6N1gjJ7nV9wGPNrh55mMuI62SCj-bpTnSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lihat saja desain diatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Gambar Rumah Sederhana Tapi Terkesan Mewah Rumah Pedesaan Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/e8/07/29/e807290be0230f92e6f3f2c50fc9777f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsF9i5GPasc-MdzZUguNUTsqCzuoIxVC1nkhoPI-dAQWbuETkRLFLib17QF5APDaqCeVA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kayu sederhana dengan kombinasi hijau sebagai atapnya dan krem untuk bagian dindingnya Konsep Desain Rumah Kayu Sederhana 24.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Model Rumah Minimalis Sederhana 2017 Dekor Rumah Rumah Minimalis Home Fashion Rumah" src="https://i.pinimg.com/originals/2f/32/c5/2f32c50a22011b0f7ceb5f39ece70fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREXYtfzFfjRATbtolO0RpkYl9zv8P1mx5i5B9-JcbSmBBPPuKcVUotzeAQhXFlF79Xnq0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kayu bergaya country yang dibangun berjenjang ala rumah panggung ini memiliki kelebihan diantaranya melindungi terhadap banjir dan kolong rumahnya pun dapat mendinginkan suhu rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Rumah Kayu Arsitektur Rumah Kebun" src="https://i.pinimg.com/originals/95/d2/b6/95d2b62c2ef3a0dc92199b8e9735c774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7y_0MzTvkB1zlUra_BfcKjB-tWtxXaJ0BxwQtkX7ljyMPATRtJJkUmZpQi8fiHp-xcsY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Spot yang jadi favorit adalah area balkon yang bisa dijadikan teras untuk bersantai sambil menikmati suasana alam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Tampak Depan Rumah Minimalis Modern Terbaru" src="https://i.pinimg.com/originals/58/c0/f8/58c0f8198c343a6bf95781aeef59fae7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XPE6B0Y0sG0RdEEgvuzEXsH_TFeAlHpq2g';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah yang indah yang keseluruhannya menggunakan kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis Sederhana 1 Lantai 2 Lantai" src="https://i.pinimg.com/originals/87/1b/7f/871b7f1f1a06f8ce54df0652329275db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOG9TefZ6MR6JQgi0of2yRK2JbL8YDrdcWA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di karenakan tempat tinggal serta denah rumah model ini akan lebih mudah buat merapikannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="62 Foto Desain Rumah Kecil Sederhana Minimalis Gratis Unduh Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/bb/c9/7f/bbc97faddf57dee2c8b9347ee6ceeed8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIz7pLf0MVXutl0eqmBcml8Ia9ZZjcb-jYHA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ya di balik kesederhanaannya rumah bergaya country memang menawarkan kenyamanan khas yang tak dimiliki hunian bergaya minimalis.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/warna-cat-rumah-kayu-2020.html"><i>&larr; warna cat rumah kayu 2020</i></a>
+                                                                    
+                                        <a href="/warna-cat-rumah-mewah-2020.html"><i>warna cat rumah mewah 2020 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

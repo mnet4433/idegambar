@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Kamar Mezzanine Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Kamar Mezzanine Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://www.jendelabaru.com/wp-content/uploads/2020/03/mezzanine-cantik.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kamar+mezzanine+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Kamar Mezzanine Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Kamar Mezzanine Sederhana</strong>. Rak buku pun bisa kamu kreasikan dengan bentuk yang unik. CARA MEMBUAT MEZZANINE DARI KAYU BEKAS MEMBUAT KAMAR DIATAS KAMAR Assalamualaikum Video kali ini lagi bikin MEZZANINE RANGKA KAYU Karena luas kamar 3 x 35.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://courtina.id/ot/wp-content/uploads/2021/04/kamar-tidur-mezzanine-1.jpg" alt="7 Model Kamar Tidur Mezzanine Minimalis Dan Sederhana Courtina Courtina" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_XwW8lO1JCfOMfR0b864RWY8KyWjnrWppQQ';">
+        <figcaption>7 Model Kamar Tidur Mezzanine Minimalis Dan Sederhana Courtina Courtina from courtina.id</figcaption>
+    </figure>
+        <p>
+        Sebagai solusinya kamu bisa membuat mezzanine di dalam kamar tidur mereka. Dengan lahan yang sempit pengaturan tata letak kamar utama pun menjadi penting. Ide desain menciptakan kamar mandi mezzanine sebenarnya bukan hal baru lagi.
+    </p>
+    <h3>CARA MEMBUAT MEZZANINE DARI KAYU BEKAS MEMBUAT KAMAR DIATAS KAMAR Assalamualaikum Video kali ini lagi bikin MEZZANINE RANGKA KAYU Karena luas kamar 3 x 35.</h3>
+    <p>Misalkan saja mezzanine dengan ukuran kecil dapat digunakan sebagai perpustakaan tempat ibadah atau ruang kerja mungil. Mezzanine ini bisa dibuat untuk kamar tidur yang minimalis dan sederhana. Yuk simak beberapa inspirasi kamar tidur mezzanine berikut ini. Mezzanine adalah lantai tambahan fungsional yang terletak di tengah dinding bangunan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Inspirasi Desain Rumah Mezzanine Untuk Rumah Sempit Pilih Yang Mana" src="https://hg-images.condecdn.net/image/myQdm3qD8aY/crop/1020/f/DanielHopkinsonAedas-2-house-7sep16-daniel-hopkinson_b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5H5R9sUqkyP0DBu5Qo3eqfNoBI7Z_KuV_4Q';" />
+        <small>Source: www.99.co</small>
+                    <p>Mezzanine Minimalis dengan Langit-Langit Rendah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Model Kamar Tidur Mezzanine Minimalis Dan Sederhana Courtina Courtina" src="https://courtina.id/ot/wp-content/uploads/2021/04/kamar-tidur-mezzanine-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_XwW8lO1JCfOMfR0b864RWY8KyWjnrWppQQ';" />
+        <small>Source: courtina.id</small>
+                    <p>Dengan konsep mezzanine maka dibangun lah sebuah ruangan baru di antara lantai dan atap biasanya ruangan sederhana seperti tempat tidur working space reading room dan masih banyak lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Biaya Pembuatan Kamar Tidur Mezzanine Kamar Tidur Ranjang Bertingkat Youtube" src="https://i.ytimg.com/vi/Ph5bRk9TTLg/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZutJ3hY2IA1JQ9ITKFN2xmXZXj6NULehSeg';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Sebelum membangun mezzanine tentukan dulu fungsi dari mezzanine yang akan kita bangun tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Inspirasi Desain Mezzanine Yang Cocok Untuk Hunian Mungil Artikel Spacestock" src="https://s3.ap-southeast-1.amazonaws.com/assets-blog.spacestock.com/uploads/2020/05/Desain-Mezzanine-8-800x533.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREkabAnLevFGgACYY6PORb4ha9q-FtaUwfF6ZUi2MV_bOzwX_Fek9OKbEmdLfT7PVgIU0';" />
+        <small>Source: blog.spacestock.com</small>
+                    <p>Tinggi lantai mezzanine dan platform lebih rendah dari lantai biasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=mezzanine+bedroom&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=mezzanine+bedroom&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>DESAIN KAMAR TIDUR MEZZANINE ATAU BERTINGKAT UKURAN 3X3 METER RENOVASI KAMAR TIDUR SEDERHANA - YouTube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Desain Mezzanine Yang Buat Rumah Lebih Space Living" src="https://i0.wp.com/f1-styx.imgix.net/article/2020/02/21164059/mz3-mezzanine-pada-kamar-tidur-768x499.jpg?resize=951%2C618&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKmjVLN--qMyBXQY-n8bvJ-V5nhDeqGcRCGEO0iN4NoqJ5eCO5UxgBWJKq2LgQeQG-f88';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Ide desain menciptakan kamar mandi mezzanine sebenarnya bukan hal baru lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Contoh Desain Mezzanine Pada Hunian Mungil Auto Jadi Lega Rumah123 Com" src="https://d3p0bla3numw14.cloudfront.net/news-content/img/2019/04/12110049/Modern-Mezzanine-Design-19.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP7AA-5InrzAwuTNfrd8o0BexrzPZQXUx4rA';" />
+        <small>Source: artikel.rumah123.com</small>
+                    <p>Pas sekali untuk hunian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Desain Mezzanine Solusi Untuk Hemat Ruang Di Rumah Voire Project" src="https://voireproject.com/public/uploads/voire-artikel-desain-interior-519974187.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqs4jg_8NbTx6rPCgSVJt8K-UBMbvL17oNMkQzsjaJk8gqi6oeAvoyMlXaWueQU3hZHVo';" />
+        <small>Source: voireproject.com</small>
+                    <p>Mulailah dengan mengelilingi mezzanine untuk menentukan spot terbaik untuk area tidur atau area makan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Inspirasi Desain Kamar Tidur Mezzanine Gotomalls" src="https://cloudfront.gotomalls.com/uploads/media/images/article/MbBL5ct5IMFjWRzH/article_content_image/img-MbBL5ct5IMFjWRzH-m-med-15846006101761.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3rWB4n1DI3P0O-NPHC5KBvUSqJNxqRPKgDA';" />
+        <small>Source: www.gotomalls.com</small>
+                    <p>Kamar utama adalah salah satu ruangan yang menjadi prioritas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Hunian Dengan Mezzanine Pas Untuk Rumah Berlahan Kecil" src="https://cdn.idntimes.com/content-images/post/20180124/93d3e09026efb9cfd36b50a49c8919b9-aaab4fdff775d2f5862903c98afd6948.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JyicndmrTEW2vKQy7jxAhrZJW4V6eL2J32_s__Fl05hwgAnWKjraU1ahugdMhmU26yE';" />
+        <small>Source: www.idntimes.com</small>
+                    <p>Selain hemat tempat hunianmu juga jadi terlihat lebih kece dari sebelumnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Mezzanine Minimalis Dan Cara Penerapannya" src="https://ruangarsitek.id/wp-content/uploads/2020/04/Contoh-Mezzanine.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzu80LmREwW4Av3bhnHcNtt-H8rswpvPug6w';" />
+        <small>Source: ruangarsitek.id</small>
+                    <p>Desain Mezzanine sebagai Kamar Tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Model Kamar Tidur Mezzanine Minimalis Dan Sederhana Courtina Courtina" src="https://courtina.id/ot/wp-content/uploads/2021/04/kamar-tidur-mezzanine-2-675x1024.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-RgqPMDXCmPmFpKAQbXgmwZj-RWNSdgszrA';" />
+        <small>Source: courtina.id</small>
+                    <p>Misalkan saja mezzanine dengan ukuran kecil dapat digunakan sebagai perpustakaan tempat ibadah atau ruang kerja mungil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Desain Mezzanine Yang Buat Rumah Lebih Space Living" src="https://i2.wp.com/f1-styx.imgix.net/article/2020/02/21164037/mz1-mezzanine-minimalis-pada-kamar-tidur-dengan-langit-langit-rendah.jpg?fit=512%2C328&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBYB8e8gdn5mN2iaEwUUMYCznecML75Q6NEtKk3hl9FhntSHxh3sVz60iqs5THlpTdVfM';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Tangga dibangun menempel dengan dinding dan dibuat pegangan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Contoh Desain Mezzanine Pada Hunian Mungil Auto Jadi Lega Rumah123 Com" src="https://d3p0bla3numw14.cloudfront.net/news-content/img/2019/04/12110049/Screenshot_1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8D7SW2A0GZ9pJ63dNrliLG_hn23Vkr_YJdl-2LG0V0K4Nfmmxgjb-2UClYI-DQkMoRjc';" />
+        <small>Source: artikel.rumah123.com</small>
+                    <p>Mezzanine adalah tempat atau ruang tambahan yang tidak terbagi antara lantai di bawahnya dan langit-langit lantai tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Hunian Dengan Mezzanine Pas Untuk Rumah Berlahan Kecil" src="https://cdn.idntimes.com/content-images/post/20180124/5338f3bdfa39e9aa7c8152ecd29472f3-59a12c45a5b4a87db7dca5e028813e35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwDh9pvqshdwFTmmu-L4MK4ndv9jSL-vAgdw';" />
+        <small>Source: www.idntimes.com</small>
+                    <p>Sebagai solusinya kamu bisa membuat mezzanine di dalam kamar tidur mereka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Lantai Mezzanine Inspirasi Top" src="https://lh5.googleusercontent.com/proxy/n2CxUy5QEQrQIbKKkgMUCAcbO3E7PnBHBR27gn35rUlEcmYnDlhyuIv4w8AXFh_xTdk0kd2LiDU6yxQGsfaLHxDQCUVFIbE_FNqRF6-akGiWEAYTHibxRHeycgNdDbet=w1200-h630-p-k-no-nu" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzr-PKMUNgOWHtImuG2pCdNQKefdBMCw1v9g';" />
+        <small>Source: keramikmodel.blogspot.com</small>
+                    <p>Desain Mezzanine sebagai Kamar Tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Hunian Dengan Mezzanine Pas Untuk Rumah Berlahan Kecil" src="https://cdn.idntimes.com/content-images/post/20180124/f05300f8866fe3a3dc6a90aa21a2e3a5-7bee9cb815d28c43a4b97ecdbe0d16fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWXKxhSvJ3OPqiV4WbE2F4vt6pStptX87zAg';" />
+        <small>Source: www.idntimes.com</small>
+                    <p>Konsep mezzanine juga bisa diaplikasikan untuk kamar tidur utama tanpa harus menambahkan ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Desain Mezzanine Solusi Untuk Hemat Ruang Di Rumah Voire Project" src="https://voireproject.com/public/uploads/voire-artikel-desain-interior-1831577399.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa-B6bFgItR5TIU31NkKAu0e9BqVB54_ios6Bu9pHAB-BlV4mwFYN4ls68dSPI04zftjI';" />
+        <small>Source: voireproject.com</small>
+                    <p>Biasanya luas mezzanine ini sepertiga dari luas bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=mezzanine+kamar+tidur+anak&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=mezzanine+kamar+tidur+anak&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Mezzanine adalah ruang tambahan yang terletak diantara lantai dan juga plafon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Penerapan Mezzanine Dalam Berbagai Konsep Rumah Solusiruma Com" src="https://solusiruma.com/blog/wp-content/uploads/2019/12/Mezzanine.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTx5nhZKr3_bDbJCVV6QelCYuk174KBisY_A';" />
+        <small>Source: solusiruma.com</small>
+                    <p>Memberikan kamar tidur mezzanine dapat menciptakan langit-langit rumah yang lebih tinggi dan luas sehingga sirkulasi udara di dalam rumah lebih baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Hunian Dengan Mezzanine Pas Untuk Rumah Berlahan Kecil" src="https://cdn.idntimes.com/content-images/post/20180124/b53d858677b1740b92979d89d322de6f-be5f07be0ec8964e83a9a8e312758402.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHRUt-s8OGtSFn9hk6Xnqxtu3xn8DYzV87LQAfp2S7kUqtChsXCWsHkT-XvwPtNDL4FY';" />
+        <small>Source: www.idntimes.com</small>
+                    <p>CARA MEMBUAT MEZZANINE DARI KAYU.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Hunian Dengan Mezzanine Pas Untuk Rumah Berlahan Kecil" src="https://cdn.idntimes.com/content-images/post/20180124/d102f8517015bf612d93c6d15a92ec37-268d43af4725a18cba5b4a60a2048454.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKH2aGJdxLDuN0-f9jp669oFMDvO25NnZNDg';" />
+        <small>Source: www.idntimes.com</small>
+                    <p>Inilah 7 Model Kamar Tidur Mezzanine Minimalis dan Sederhana 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Inspirasi Kamar Tidur Kecil Yang Kekinian Dan Terasa Luas Suryani Studio" src="https://i.ibb.co/DrfG5wK/7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLEfcyfWoF-h3l5EAFFcstsnvhc4JZMMTM_w';" />
+        <small>Source: studio.suryanipalamui.com</small>
+                    <p>Namun perlu juga diperhatikan ukuran ruangan yang rumah anda miliki.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Inspirasi Desain Kamar Tidur Mezzanine Untuk Ruangan Sempit" src="https://blogpictures.99.co/tempa-tidur-mezzanine-header99.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdGmPS7B4C9YHZoAvK24G6r72bltdSNd3FM_ysgnSz_Jb55QghQQlMJNkRujEVJFOVAew';" />
+        <small>Source: www.99.co</small>
+                    <p>Yuk simak beberapa inspirasi kamar tidur mezzanine berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Inspirasi Desain Mezzanine Yang Cocok Untuk Hunian Mungil Artikel Spacestock" src="https://s3.ap-southeast-1.amazonaws.com/assets-blog.spacestock.com/uploads/2020/05/Desain-Mezzanine-9-800x534.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI5F4Q17t86cATMGbempNJX8oPEcmf1pKy9A';" />
+        <small>Source: blog.spacestock.com</small>
+                    <p>Jika diperhatikan dengan seksama rumah di atas memiliki luas lahan yang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Inspirasi Desain Kamar Tidur Mezzanine Gotomalls" src="https://cloudfront.gotomalls.com/uploads/media/images/article/MbBL5ct5IMFjWRzH/article_cover_image/img-MbBL5ct5IMFjWRzH-orig-15846070632265.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghwqXIo0vwDZns1GHGUVVnBQBETGfL0NjcCwfN_vybdvLBXrrLlOmAD7oYuONY3z-m5w';" />
+        <small>Source: www.gotomalls.com</small>
+                    <p>Kamar utama adalah salah satu ruangan yang menjadi prioritas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Desain Mezzanine Yang Buat Rumah Lebih Space Living" src="https://i1.wp.com/f1-styx.imgix.net/article/2020/02/21164106/mz5-mezzanine-dengan-konsep-natural-yang-efisien.jpg?fit=1320%2C880&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWzVNI4eN5874cn0hy9LnK4YYn8ngdXUIDA';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Selain hemat tempat hunianmu juga jadi terlihat lebih kece dari sebelumnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Berbagai Mezzanine Cantik Solusi Untuk Memperluas Rumah Minimalismu Yang Sempit" src="https://cdn-image.hipwee.com/wp-content/uploads/2017/12/hipwee-3a015cebb366dd03138efd4e616278cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT45PaGEXqCQpD6gE1LKajUCr9D-vFE5PauUQ';" />
+        <small>Source: www.hipwee.com</small>
+                    <p>Beberapa tips berikut untuk mendekorasi apartemen bergaya mezzanine bisa mengubah ruangan Anda jadi lingkungan yang lebih nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lingkar Warna 36 Desain Interior Rumah Minimalis Dengan Lantai Mezzanine" src="https://4.bp.blogspot.com/-Pzgd4RBBAIE/Wv-y4Vo9knI/AAAAAAAALyw/TB_4L6Fb9PolSyVI0Tam5jzz0r7GlNXPgCLcBGAs/s1600-rw/b%2B%252812%2529.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlmtKLqZcYx4-V78-65HT3dkfMHtCkFbRvw';" />
+        <small>Source: www.lingkarwarna.com</small>
+                    <p>Dengan membuat kamar tidur mezzanine Anda akan menambahkan luasan baru yang bisa dimanfaatkan kembali menjadi ruangan-ruangan lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Desain Mezzanine Solusi Untuk Hemat Ruang Di Rumah Voire Project" src="https://voireproject.com/public/uploads/voire-artikel-desain-interior-1205190204.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_tayRD08NbxvyhH-ky9V7MmOsCuVHLPXVFpv4OBytxQXiEui1rFNhJeqzeQW1GsYrAU';" />
+        <small>Source: voireproject.com</small>
+                    <p>Untuk bagian atas ruangan dibuat kamar tidur yang elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Tidur Mezzanine Cek Bahan Bangunan" src="https://i0.wp.com/i.pinimg.com/originals/5c/83/89/5c8389185ac62d1e86aa6a826025dd7d.jpg?ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSuq_6hbcV8Yot1Igl-VFUnefy0uM_XscFPA';" />
+        <small>Source: cekbahanbangunan.com</small>
+                    <p>Jika Anda tertarik inilah beberapa model kamar tidur mezzanine.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Kamar Mezzanine Rib Design" src="https://i2.wp.com/www.ribdesignindonesia.com/wp-content/uploads/2018/03/kamar-mezzanine.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBG-eRwbUZcvMDozSr-no-lX6i1XcAYh3N7w';" />
+        <small>Source: www.ribdesignindonesia.com</small>
+                    <p>Jika Anda tertarik inilah beberapa model kamar tidur mezzanine.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Desain Mezzanine Solusi Untuk Hemat Ruang Di Rumah Voire Project" src="https://voireproject.com/public/uploads/voire-artikel-desain-interior-403984730.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvLcoVv0N0FdSUUzzIX8-_n_qk0y1pUnpFMg';" />
+        <small>Source: voireproject.com</small>
+                    <p>Terutama jika kamu cukup familiar dalam memperhatikan desain-desain kamar hotel dan apartemen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Desain Rumah Dengan Mezzanine Terkini Design Rumah" src="https://www.designrumah.co.id/wp-content/uploads/2019/01/Contoh-Gambar-Desain-Rumah-dengan-Mezzanine-Terkini-17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaUPyaAhdOHjdZCTO2qQb2qFHOrjjYMsRGZmVAXXVwVl9zdZlcH3jGwcoi39ZTV4vWR10';" />
+        <small>Source: www.designrumah.co.id</small>
+                    <p>Kamar utama adalah salah satu ruangan yang menjadi prioritas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Renovasi Rumah Membuat Kamar Mezzanine Pt Mandala Pilar Indonesia" src="https://mandalapilar.com/wp-content/uploads/2019/03/ilustrasi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ltkkZqmE80b6oMqEB8K5jPm2e1IKoiuAV2pKC279A1VZX8ALn3Y7vCqd3O3CSPSZWmY';" />
+        <small>Source: mandalapilar.com</small>
+                    <p>Sebagai solusinya kamu bisa membuat mezzanine di dalam kamar tidur mereka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Renovasi Rumah Membuat Kamar Mezzanine Pt Mandala Pilar Indonesia" src="https://mandalapilar.com/wp-content/uploads/2019/03/ilustrasi-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBu09gdiTQIf_2OP6xReUnRJFNbxh60TG7p27ZQKg6Kz2ddg-NuH3SSQMNsw950BC3A60';" />
+        <small>Source: mandalapilar.com</small>
+                    <p>Ide desain menciptakan kamar mandi mezzanine sebenarnya bukan hal baru lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Berbagai Mezzanine Cantik Solusi Untuk Memperluas Rumah Minimalismu Yang Sempit" src="https://cdn-image.hipwee.com/wp-content/uploads/2017/12/hipwee-bc76186e133492c31a212d49c02d4645.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09IZINzIhcgVvw1XJ_Aqja5E1yuvIVGYoww';" />
+        <small>Source: www.hipwee.com</small>
+                    <p>Mezzanine dalam arsitektur memiliki banyak pilihan seperti menambahkan kamar sederhana ruang baca ruang kerja dll.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Hunian Dengan Mezzanine Pas Untuk Rumah Berlahan Kecil" src="https://cdn.idntimes.com/content-images/post/20190206/coverr-cf1c0606d97f0a471095d48508adc35a_600x400.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMv8Ih2eMBPBS4XNX1735mbHlufJpameeIZJT9iuiTz2kad6iDCM7zL6FNHa73ej3Svzk';" />
+        <small>Source: www.idntimes.com</small>
+                    <p>Sedangkan di bagian bawah mezzanine terdapat ruang tamu yang elegan dan menggunakan desain dinding batu bata merah alami serta dipadukan dengan elemen kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lingkar Warna 36 Desain Interior Rumah Minimalis Dengan Lantai Mezzanine" src="https://2.bp.blogspot.com/-VDLo3D7dooc/Wv-zMEd6bjI/AAAAAAAALzo/-1cHBCkbiwcrLmMvktGjL1ixexTOruvWgCLcBGAs/s1600-rw/b%2B%25287%2529.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLweimblAaErP8OddUGMb0rStPuQ9h58YhBA';" />
+        <small>Source: www.lingkarwarna.com</small>
+                    <p>Mezzanine ini bisa dibuat untuk kamar tidur yang minimalis dan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Inspirasi Desain Kamar Tidur Mezzanine Untuk Ruangan Sempit" src="https://blogpictures.99.co/mezzanine-8.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdC3kWaP4n7ZAu9uQJuGvtw7xyNVqb-A62ao0pvzi0rmgnF80lgp7s45NB0JPL1KRo43Y';" />
+        <small>Source: www.99.co</small>
+                    <p>Mezzanine sebagai Kamar Utama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Desain Mezzanine Solusi Untuk Hemat Ruang Di Rumah Voire Project" src="https://voireproject.com/public/uploads/voire-artikel-desain-interior-1982637168.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwehI3hqJSHffIKWwbvFNbDzam1oWMHZH6ng';" />
+        <small>Source: voireproject.com</small>
+                    <p>Tapi yang pasti apapun fungsinya pilihlah perabotan yang minimalis sehingga tidak akan membuat ruangan tersebut terasa sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lingkar Warna 36 Desain Interior Rumah Minimalis Dengan Lantai Mezzanine" src="https://1.bp.blogspot.com/-QGZg_NOTavY/Wv-zye1LyRI/AAAAAAAAL0M/0FwASIb8tzIWiZcIQejVTIxfcyhlL9hJwCLcBGAs/s1600-rw/b%2B%252813%2529.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GiQHMGe0DSHl5qJ2dQhpaJfUQwAx9eQC7g';" />
+        <small>Source: www.lingkarwarna.com</small>
+                    <p>Dengan lahan yang sempit pengaturan tata letak kamar utama pun menjadi penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Inspirasi Desain Kamar Tidur Mezzanine Untuk Ruangan Sempit" src="https://blogpictures.99.co/kamar-tidur-mezzanine-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRENgGhV3WfnmgVt0FgV_zz4w0ns_6WTTOIGQ';" />
+        <small>Source: www.99.co</small>
+                    <p>Pemilihan perabotan dalam mezzanine juga harus diperhatikan sesuai dengan fungsinya apakah ruangan tersebut berfungsi untuk kamar istirahat atau untuk ruang kerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 4x6 Meter 1 Lantai 2 Kamar Tidur Dengan Lantai Mezzanine Youtube" src="https://i.ytimg.com/vi/F425rczyZ6g/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdupDWJ3QsUtWtFxkeyz1Hh5-uQOCiacl2Ig';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Tinggi lantai mezzanine dan platform lebih rendah dari lantai biasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Contoh Desain Mezzanine Pada Hunian Mungil Auto Jadi Lega Rumah123 Com" src="https://picture-origin.rumah123.com/news-content/img/2019/04/12110049/GA00.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMJpNW4CJNW7stBErsEaWHW3gPDa0WuCg8EAK9gPSwY4HdHSA32bkCzi0k3sXpbOAGO0';" />
+        <small>Source: artikel.rumah123.com</small>
+                    <p>Hal yang membuat mezzanine ini menjadi pilihan banyak orang yaitu karena desainnya yang menarik dan penambahan fungsinya yang terbilang luar biasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Berbagai Mezzanine Cantik Solusi Untuk Memperluas Rumah Minimalismu Yang Sempit" src="https://cdn-image.hipwee.com/wp-content/uploads/2017/12/hipwee-0fe7ae6bd396f558132c69540ea42359-mezzanine-bedroom-bedroom-loft.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmTMyug9oU029R2mlY6HCxyww6amM1R4ZljuCjUgsd829o7h8wwbw3fShls5P4Y1Nt-co';" />
+        <small>Source: www.hipwee.com</small>
+                    <p>Kamar utama adalah salah satu ruangan yang menjadi prioritas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruangan Favoritmu Sempit Dan Terbatas 7 Konsep Mezzanine Ini Bisa Kamu Jadikan Inspirasi Membangun Ruangan Idaman" src="https://rumahcor.com/wp-content/uploads/2016/07/1-2-564x620.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVvqeziC1yP2u6rKnBQLmmbDwfPBAwcOrQsg';" />
+        <small>Source: rumahcor.com</small>
+                    <p>Mezzanine ini bisa dibuat untuk kamar tidur yang minimalis dan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lantai Mezzanine Apa Dan Gimana Cara Bikinya" src="https://www.jendelabaru.com/wp-content/uploads/2020/03/mezzanine-cantik.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEJHwKVJJlVgHNqTC-RljPFP9Ie3ZmjZGaWUj9-eXaMuL0zAdG93_nel23bcfP1Eu69B8';" />
+        <small>Source: www.jendelabaru.com</small>
+                    <p>Memberikan kamar tidur mezzanine dapat menciptakan langit-langit rumah yang lebih tinggi dan luas sehingga sirkulasi udara di dalam rumah lebih baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Mezzanine Minimalis Dan Cara Penerapannya" src="https://ruangarsitek.id/wp-content/uploads/2020/04/Mezzanine-Rumah-Mungil.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVGc-yGemuuKnkYcMEFb_GJtQ4N0WFWDyVPE0akwRXKz8oZUuw2eVvgqRUZpvnmBYwppA';" />
+        <small>Source: ruangarsitek.id</small>
+                    <p>Namun perlu juga diperhatikan ukuran ruangan yang rumah anda miliki.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Saat Menentukan Desain Rumah Mezzanine Perhatikan 7 Hal Ini" src="https://i0.wp.com/f1-styx.imgix.net/article/2019/09/21190534/2-17-768x552.jpg?resize=768%2C552&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsQveyqHmDnGQLD2ReKXWFisDujr_8_Z4FTg';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Pemilihan perabotan dalam mezzanine juga harus diperhatikan sesuai dengan fungsinya apakah ruangan tersebut berfungsi untuk kamar istirahat atau untuk ruang kerja.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-mewah-satu-tingkat.html"><i>&larr; rumah mewah satu tingkat</i></a>
+                                                                    
+                                        <a href="/rumah-mewah-semarang-atas.html"><i>rumah mewah semarang atas &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

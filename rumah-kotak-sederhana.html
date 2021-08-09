@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Kotak Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Kotak Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/d6/fc/3b/d6fc3be7889b91e0e88db7105131befe.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+kotak+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Kotak Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Kotak Sederhana</strong>. Penggunaan pintu kaca berukuran bersar membuat rumah ini mendapatkan asupan cahaya matahari. Ada juga rumput hijau dan pohon besar yang menyediakan lingkungan yang menyegarkan dan santai.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/600x315/a6/bb/f8/a6bbf8ca588acb050f6be7c3b64564a8.jpg" alt="Inspirasi Teras Rumah Minimalis 2013 Rumah Minimalis Desain Rumah Eksterior Rumah Minimalis Desain Rumah Modern" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmdOcSzx5_sLIU6k_2rBoAH3tgNxOhxo20t8B44NvvYKEFduREU1A7SuznojQSSBs6A-g';">
+        <figcaption>Inspirasi Teras Rumah Minimalis 2013 Rumah Minimalis Desain Rumah Eksterior Rumah Minimalis Desain Rumah Modern from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Selanjutnya desain tempat tinggal yang sederhana terkesan polos ini justru menciptakan fasad bangunan terlihat minimalis sekaligus terlihat lebih lega bila dipandang berdasarkan. Kisaran harga buat tempat tinggal minimalis KOTAK RUMAH MINIMALIS KECIL BENTUK sederhana 1 lantai adalah rp 300-600. Desain rumah 2 lantai Desain rumah 2 lantai.
+    </p>
+    <h3>Sedangkan untuk rumah minimalis terkini 1 lantai mulai harga rp 450-800.</h3>
+    <p>Buat beberapa tipe tempat tinggal minimalis yg ketika ini banyak di cari di pakai oleh masyarakat adalah desain tempat tinggal minimalis 2 lantai 612 tampak depan tempat tinggal. Sedangkan untuk rumah minimalis terkini 1 lantai mulai harga rp 450-800. Penggunaan pintu kaca berukuran bersar membuat rumah ini mendapatkan asupan cahaya matahari. RM 3800Bundle 5 Unit kedai kotak kilang kotak murah Kotak Pelbagai Kegunaan kotak pindah rumah Penstoran FRAGILE Item.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Proyek Untuk Dicoba" src="https://i.pinimg.com/564x/19/cd/a3/19cda315447d2848aef0064389939ce6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwm-aYnq8uf17Ew9OWIZWK_iqRvHNhgNvsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada desain pertama ini penggunaan warna serba putih pada eksterior rumah memberikan kesan bersih dan juga elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="108 Gambar Rumah Minimalis 2 Lantai Modrent Kubus Gambar Rumah Minimalis 2 Lantai Kotak Expo Desain Rumah 75 Model Rumah Minimali Rumah Desain Desain Rumah" src="https://i.pinimg.com/originals/25/a1/f8/25a1f80257b5b7f10151b9007178a6f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHi__MqhhN08ruOSIequqA9L5gD34B8xsjCZTIR8yOU6Hr9teP3q0pZ-gbDGlPNlvUZNs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>50 sqm Year.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Minimalis 6x10 Youtube Minimalist House Design House Design Design Rumah" src="https://i.pinimg.com/564x/fc/09/48/fc094857256c133f6dc2ca0506da44bd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpodQgDUMHOEEeaJNsoCkIz5FbWU4Qq-UQHN8oPusDXbmLJ9zSZRHCMkvGFUtl4Cytllw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti video yang pernah saya upload sebelumnya keti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Bentuk Kotak Desain Desain Produk Rumah" src="https://i.pinimg.com/736x/6d/d2/c3/6dd2c39fba9295688af379874bd0ecad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo23hixWowcakGcnP-hcK-Fu2xn9OGeOm3B6aSOPYBWCL7WBcePCkTLZn_63eozdSjQJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>MMEBUAT KOTAK RUMAH LEBAH MADU yang sederhana ini terinspirasi dari kotak punya bapak saya di kampung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/dc/c2/84/dcc284dff1b0673a08a5d90c9a898560.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTEzpw6u1Z37XWDhLqABy6sIpM_sjg3llVnx6sip7YzMq_8NfLFDj2ShRVTS945AFPyyA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>April 10 2020 April 10 2020 argajogja 0 comments House rumah kotak putih rumah kotak sederhana simple box house white box house Simple White Box House Design Project Name.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Rumah Sederhana Murah Minimalis Cantik Throughout Desain Rumah Sederhana Biaya Murah De Minimalist House Design Minimalist Bedroom Decor Minimalist Decor" src="https://i.pinimg.com/originals/40/c3/ca/40c3cac3ba3b9d0cfe3494b06b63a089.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9OOnYsY4qlJ5gz8I1dWYOiEZ9Wps3Uqm0g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Simple White Box House Design Area.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Rumah Minimalis Sederhana Modern Tampak Depan Rumah Minimalis Rumah Modern Desain Rumah Minimalis" src="https://i.pinimg.com/originals/5a/d7/63/5ad76389969c69b7052f12e1bc43293a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4rOwX_OewE7xVZ-pUa-u0fuenKrPoG559zA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah Kotak Minimalis 2 Lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="41 Rumah Ala Indonesia Paling Di Sukai Komunitas Fasad Rumah Modern Warna Eksterior Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/d5/99/14/d5991468ba1c024aba8c41cef29de104.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOSuDb9Qc_nPh-vzQBhFMguf5IRCO2yN9DACaKlWDdbLyHhTJ1v13EkQ3E-Ds_bMEjjis';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam desain pada rumah kali ini ada 2 rumah yang memiliki tema desain serupa yaitu desain rumah minimalis kotak yang memiliki beda luas bangunan dengan 1 lantai maupun 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="41 Rumah Ala Indonesia Paling Di Sukai Komunitas Home Fashion Rumah Arsitektur" src="https://i.pinimg.com/originals/43/8a/ca/438aca0f6ca1173977add6787560605b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIENSI5CfvdgwZBkrIsJ8SJtTFeFv9oeCikw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kotak putih elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Teras Rumah Minimalis 2013 Rumah Minimalis Desain Rumah Eksterior Rumah Minimalis Desain Rumah Modern" src="https://i.pinimg.com/600x315/a6/bb/f8/a6bbf8ca588acb050f6be7c3b64564a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmdOcSzx5_sLIU6k_2rBoAH3tgNxOhxo20t8B44NvvYKEFduREU1A7SuznojQSSBs6A-g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah itulah beberapa contoh rumah minimalis modern dan sederhana yang bisa sebagai rekomendasi hunian anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Exterior Rumah Minimalis Modern Tipe Rumah Minimalis Rumah Minimalis Desain Rumah Bungalow Desain Rumah Minimalis" src="https://i.pinimg.com/originals/09/20/36/092036ef3451151180d02674b5a25f8e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uxAKt3uO-qcVO6CUPyrps_0dDl0HGv9c8A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada desain pertama ini penggunaan warna serba putih pada eksterior rumah memberikan kesan bersih dan juga elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Dua Lantai Dengan Lantai Mezanine Tapak Dari Desain Kita Kali Ini Hambpir Berbentuk Kotak Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/564x/cb/34/21/cb342132b5dc0704c7a974e80089ac0f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LCb6CUt8XC6-sFPy7x04J1_4lcUuwWQFEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tata ruang bagian dalam memiliki elemen yang terbuka dari ruang tamu dengan pencahayaan natural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Model Desain Rumah Minimalis Sederhana Paling Keren Rumah Minimalis Renovasi Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/474x/07/39/d1/0739d19349a7da4ab34d0f918f28a8c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ZC8MeFCNqCnr20O2ysJnimVbRDyZIug_iQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini dibuat simpel dan dengan gaya yang modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Unik Maket Rumah Kebaya Dari Kardus Maket Rumah Betawi Dari Kardus Rumah Kardus Rumah Miniatur Rumah" src="https://i.pinimg.com/564x/40/81/08/4081081bf48e4c11441e280805f64647.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQueSF1ZKsAgUQGBoDfufXKfQD0x9e290O6A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Buat yang dua lantai sekitar rp 500-950.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Ide Desain Rumah Sederhana Pedesaan Tapi Nyentrik Dari Kayu Desain Arsitektur Desain Rumah Modern Arsitektur" src="https://i.pinimg.com/originals/e8/6e/a9/e86ea947ab9637049df8708507225771.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInCLWcTp9ieYgJXVj1sco7Ippcwe7yLYA9pAbm9FlTIEDZh9MWueUIXNzrNjf5B2WbAo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penggunaan batu alam juga bisa menambah keindahan rumah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Denga Rumah Minimalis Cat Rumah Eksterior Desain Rumah Minimalis" src="https://i.pinimg.com/600x315/23/57/b2/2357b276b537103566c87d62e3b9f87b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Pz6F2BHwlNWJdvTifnArJVnzR4fY9LQS2A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>April 10 2020 April 10 2020 argajogja 0 comments House rumah kotak putih rumah kotak sederhana simple box house white box house Simple White Box House Design Project Name.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Rumah Minimalis Sederhana Modern Tampak Depan Rumah Minimalis Arsitektur Minimalis Warna Cat Untuk Rumah" src="https://i.pinimg.com/originals/4e/4b/e6/4e4be68d9f1e5f368cc3e7513fbe2c7e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO2FRG6fV9j49QVA89Mv3t1bjMToArEEkV1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain tempat tinggal kotak minimalis 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Berbentuk Kotak Minimalis Modern Bentuk Rumah Minimalis Memang Cenderung Kotak Dan Luru Desain Rumah Eksterior Eksterior Modern Rumah Arsitektur" src="https://i.pinimg.com/736x/6b/91/25/6b912549a99cc8fee42672236f5d86f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDltseN6M0YH1tpppShVIaR0IdILU6mkOsD5jB2iXqzzizecb1DGI-Hoa74E7YW6UTeK8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Salah satu bentuk rumah yang diterapkan pada desain minimalis adalah rumah berbentuk kotak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Model Desain Rumah Minimalis Sederhana Paling Keren Desain Rumah Eksterior Rumah Minimalis Warna Cat Untuk Rumah" src="https://i.pinimg.com/originals/83/95/e5/8395e56f93ae68c71b40a5848188fc0f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTQqvPDJ_NcX7lbdwbPnC3uagKtK2TuITbQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Seperti video yang pernah saya upload sebelumnya keti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Tapi Mewah Modern Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/82/f0/12/82f01245efadbf103f57e21b3017b3ea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAGamuNJEnR4T3kXAXQgk_srvyJ3TSXe_YzxiBGN8hPxgokT-gpVwXmDUniitPGSfVEQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>RM 3800Bundle 5 Unit kedai kotak kilang kotak murah Kotak Pelbagai Kegunaan kotak pindah rumah Penstoran FRAGILE Item.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Mewah Tapi Murah Arcadia Desain 13 Contoh Desain Rumah Minimalis Mewah Murah Paling Terkenal Rumah Desain Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/63/ef/19/63ef1919501aa90b26ca6f7c7685b5c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnwbY5UIskHXQTjsOMsw9cuDEl4OX00BUxg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga dan teras rumah yang menyerupai sebuah balkon menggunakan kayu yang masih terlihat alami berwarna coklat terang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Model Atap Rumah Minimalis Modern Terbaru 2020 Model Atap Rumah Minimalis Tampak Atas Rumahminimalis44 35 Model Atap Rum Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/9c/6f/69/9c6f696f6d8e76f65946fd9453b46619.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI-WnxQ6iACp129pKol3vl9zTZSmt32n6E_A';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah yang dibangun dalam 2 lantai ini dibuat memanjang ke belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Atap Rumah Datar Untuk Tampilan Kontemporer Arsitektur Desain Villa Modern Rumah Arsitektur Modern" src="https://i.pinimg.com/originals/07/ec/b1/07ecb1743cbc6865926aa54a1e332963.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArYPnzlcbkZm1f1emTvWKMRabnZUe5GwduBsQuCssv3LnVE6vd3BC8ji8ZJ5B6BKIL38';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>1 rumah kotak putih elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Pagar Rumah Minimalis Kekinian Home Fashion Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/80/46/32/804632697c398b0d7b7adfb811a96ede.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRM_A_NL0opJfD7wBhbieKcO-X3xrv2Vq-eQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rendang Daging Sapi Kemasan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Itu Tampak Menonjol Dengan Beton Ekspos Abu Abu Bergaya Industrial Berkesan Kalem Cella Kota Industrial Interior Design Architecture 101 Dream House" src="https://i.pinimg.com/736x/cc/9a/a8/cc9aa846ab1491176d409ecd7d4f2309.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkzblweHjuQEmXrqu-JeIqw5ipJKTo3vFKvpmtB8dVC4ikCQRen8W_CBiix5F24blwME';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>MMEBUAT KOTAK RUMAH LEBAH MADU yang sederhana ini terinspirasi dari kotak punya bapak saya di kampung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="17 Desain Rumah Dengan Teras Dak Minimalis Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/f6/8f/7c/f68f7ca057514b77396336734568a26b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqueNddzrb8-E0sA8qvJwPWCWzxkfIPUj1YA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Saat ini konsep rumah minimalis semakin banyak dikembangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Limasan Minimalis Google Search Rumah Minimalis Rumah Modern Desain Rumah Minimalis" src="https://i.pinimg.com/originals/04/dd/bc/04ddbcf80e44b189cdf39c478b3c416c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr93A4Hp-UZq1Xul5P2x6UsJrp0qHYjxaxGw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah ini dibuat simpel dan dengan gaya yang modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Desain Rumah Minimalis Sederhana 1 Lantai 2 Lantai" src="https://i.pinimg.com/736x/ae/98/56/ae9856efe25492161fda42e75810f67b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogwPIvAj1vHJEEazDzScnnBGuS-npYPJ-0AgWQW8ED3_WOk-aMxSM5mb9Tc1pDCQH8fw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kotak dan Tangga Pohon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Di Bagian Belakang Bisa Dimanfaatkan Untuk Dapur Dan Kamar Mandi Rumah Minimalis 2018 2 Lantai De Rumah Minimalis Desain Rumah 2 Lantai Desain Rumah Minimalis" src="https://i.pinimg.com/originals/d6/fc/3b/d6fc3be7889b91e0e88db7105131befe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhG0EuBBcjwbjl39tlxXn0gSzobdDQc34gA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Seperti video yang pernah saya upload sebelumnya keti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fasad Rumah Minimalis Modern Agar Fasad Rumah Terkesan Modern Maka Ada Hal Khusus Yang Harus Dilengkapi Terutama Arsitektur Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/5a/85/97/5a85971373093b9f83d7abe2aa9c0976.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBtF2BU_vZZNv3m4I0H2jO9rDYZFOkv-irdhdykCwJjgwvJdJNuWX3qOAXAOfjqK3lWY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis berbentuk kotak yang satu ini terlihat sesuai dengan konsep sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2020 Sederhana Tapi Mewah Denah Ukuran 9x14 1 Lan Rumah Minimalis Rumah Kemewahan" src="https://i.pinimg.com/originals/eb/e4/0d/ebe40d0d1d7c8de635c70806d1c29cf2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaX3KNgKwCo6Ht98pYYHp5ho283ENLH0LmdT6Pxw1H9jKWgO_X66_REYRm4FkRphrIR64';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis berbentuk kotak yang satu ini terlihat sesuai dengan konsep sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2015 Gambar Rumah Sederhana Modern Desain Depan Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/d3/ac/ba/d3acba54743c72451c420604f259d773.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnjAtwDZC3RwPFwv-z8336M82tpjeM64ysA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Penggunaan pintu kaca berukuran bersar membuat rumah ini mendapatkan asupan cahaya matahari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Lingkaran Warna" src="https://i.pinimg.com/564x/b6/e7/a5/b6e7a597e2b594df650cd4fc16a7de24.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR46BDfzjwRO10ycspxvC5I3N4Q9Zr-Aap9rQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>50 sqm Year.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="37 Foto On Project Rumah Minimalis Ala Lingkarwarna 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi D Desain Rumah Bungalow Rumah Minimalis Arsitektur" src="https://i.pinimg.com/originals/82/0f/9e/820f9e0b46192417b9f0e911859121d2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT56p44fz5-82eRyDPuNxH-ceiqJ74mU8mzv6NoIFIzCzNaT8ukIq-VQJsHKJY8d-_XI4o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 rumah kotak putih elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Warna Cat Rumah Minimalis Merah Hitam Terbaik Kombinasi Warna Cat Teras Rumah Merah Hitam Warna Cat Tren Rumah Minimalis Rumah Warna Cat Kamar Mandi" src="https://i.pinimg.com/originals/ae/4e/39/ae4e391461c8e63abf8b3c35163b7060.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzp1ZTq1nxpVXEq_FwjLqMvMfrxjE1gE6o9SDpnsNM5eNFmBfH8XPV_6wlDnzowUl3cM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selanjutnya desain rumah yang sederhana dan terkesan polos ini justru membuat fasad bangunan terlihat minimalis sekaligus terlihat lebih lega jika dilihat dari depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pada Struktur Rumah 2 Lantai Biasanya Terdiri Dari Pondasi Sloof Tembok Plat Lantai Dak Lantai 2 Sederhana Di Desain Rumah 2 Lantai Denah Lantai Rumah Lantai" src="https://i.pinimg.com/originals/54/43/89/544389df69a30761a055816a25d9d0b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1qJQi6zxCF7FuGknrUg-_GeuDb50sb74Wfw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>April 10 2020 April 10 2020 argajogja 0 comments House rumah kotak putih rumah kotak sederhana simple box house white box house Simple White Box House Design Project Name.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Pagar Rumah Minimalis Warna Putih Warna Eksterior Rumah Home Fashion Rumah Beton" src="https://i.pinimg.com/originals/e6/36/96/e63696be6d5a2880f796fb49c3c6e31c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSygfmGFtO_HCSVaHxYwopJiwQqM0yXI0WqtA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah aksen kotak dengan balkon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah Besar Dengan Lahan Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/8c/41/3f/8c413f4dedef3dddf4c1aec163b161e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpvOuD9Q2lMXVFz0e39RPtHxHMXykhI6w5yQtSRgrgXlpwjVjyFapimZN_rAmOVkHlez8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>50 sqm Year.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Type 45 Merupakan Type Rumah Yang Paling Banyak Diminati Masyarakat Kalangan Menengah Karena Desain Rumah Eksterior Rumah Minimalis Desain Rumah Bungalow" src="https://i.pinimg.com/originals/f8/ce/07/f8ce070bc1bed2de4c28a52cfe39a055.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfMK_yLJuqmobv61Qalr8vw17Hz8pniWFYA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis berbentuk kotak yang satu ini terlihat sesuai dengan konsep sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Klasik Modern 1 Lantai Yang Tak Membosankan Rumah Yang Menggunakan Tipe Klasik Memi In 2021 Minimalist House Design House Design Modern Minimalist House" src="https://i.pinimg.com/originals/7f/6a/9e/7f6a9ef19d7ee9ee3ee7895c5c25984f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRe8SJDkMdiG125V1njHvemx0CiipydTnH2uObDRleauunTl9GkH4OcQHCsSEw0kXsNUM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah Kotak Minimalis 2 Lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Model Rumah Minimalis Modern Sederhana 2015 Desain Rumah Eksterior Eksterior Rumah Modern Desain Eksterior" src="https://i.pinimg.com/originals/66/7a/f1/667af1c968ba153c0edcd8ad5f178b56.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoeD3KWaL3A_D47PyRWn2wcIKwfZA-sMwVD6xliS4RkI55TxKR7fIgJZtMW_c8mNSgtmo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kotak sendiri cenderung mengusung gaya sederhana dari segi penampilannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/564x/75/63/d8/7563d817dbde7a511d930fe296e43f10.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPcge6B2LQqRtAf9j0y8eo8oa0qrPnKBWhA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kini tersedia rendang daging sapi dalam kemasan yang praktis untuk dibawa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah 2 Lantai Luas 800 M2 Dengan Tata Letak Ruang Sesuai Fengshui Menempati Kavling Hook X2f Pojok X2 Rumah Mewah Desain Rumah 2 Lantai Rumah" src="https://i.pinimg.com/originals/03/85/95/038595fec3c4ed6be64184513d5963f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-kBsFQ0lsXHD1xljVcyYv7PMzTvibFVHfA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang dibangun dalam 2 lantai ini dibuat memanjang ke belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+kotak+simple&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+kotak+simple&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah kotak dengan derajat kemiringan yang rendah atau hampir.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sederhana Leter L Rumah Minimalis Desain Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/7f/29/c7/7f29c7843bf5ebd1a2aca5936bd0ba2d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVjsx-ocquTU6O4Av2oHhqQ89747PcH38hRQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kini tersedia rendang daging sapi dalam kemasan yang praktis untuk dibawa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Contoh Gambar Elegant Rumah Minimalis Modern Kotak Desainrumahminimalis Desain6x12 Denah Rumah 4 Kamar Tidur Denah Rumah 2 Kamar Tidur Denah Rumah 3d" src="https://i.pinimg.com/originals/b8/73/69/b87369a6d67834c7c5ed0196b9167ebf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZ93hM9z3JfPvcRcDMLVvvIXgIgOHSaXDvQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dindingnya adalah pintu dengan pintu ayun ke dinding dengan pemandangan yang aneh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Arquitectura" src="https://i.pinimg.com/564x/75/58/83/7558830af375a54c22249bc8ba9473bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-0B7piKhnxfb3aWcj2lNHDN1EEeUY4vW1g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis dua lantai misalnya ini pula telah terbilang kekinian mempunyai 2 Lantai Kotak Rumah Desain tampilan yg cenderung lebih bagus dan menarik mata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Foto Rumah Minimalis Sederhana Modern Tampak Depan Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/83/1c/e5/831ce507ad4dfb76d50812f4c0a2bd7a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRotOtarRQWk4j9s6lhLXuPfpG8mawGer0XSD97X7hhSFbTuYw0joGkUarhlDNiGnjOBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sedangkan untuk rumah minimalis terkini 1 lantai mulai harga rp 450-800.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="64 Desain Rumah Minimalis Dua Muka Desain Rumah Minimalis 101 Gambar Rumah Minimalis 2 Lantai Pojok Gambar Desai Desain Rumah Minimalis Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/29/ec/6c/29ec6c82d595abee54a35d083eb91023.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjxxWyNGSKga78w0Lkh4ifIjwBYUS0KJYeXg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep arsitektur rumah minimalis sering bersanding dengan rumah kotak baik dari segi eksterior interior maupun keseluruhan dekor ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcry9uy2diie0jlntvvxb9x6zowr5bimwms2gs0nydrtun2clq E Usqp Cau" src="/search?q=desain+rumah+kotak+1+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+kotak+1+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Tangga dan teras rumah yang menyerupai sebuah balkon menggunakan kayu yang masih terlihat alami berwarna coklat terang.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/denah-rumah-tradisional-jawa.html"><i>&larr; denah rumah tradisional jawa</i></a>
+                                                                    
+                                        <a href="/denah-rumah-satu-kamar.html"><i>denah rumah satu kamar &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

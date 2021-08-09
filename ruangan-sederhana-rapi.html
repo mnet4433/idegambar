@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ruangan Sederhana Rapi
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Ruangan Sederhana Rapi",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/c0/a8/c0/c0a8c0aca96526123508fe4c5060c8d2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ruangan+sederhana+rapi",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Ruangan Sederhana Rapi
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Ruangan Sederhana Rapi</strong>. Gunakan Nampan Catchall Agar Ruangan Tertata. Tinggal di kosan memang seringkali bisa membuat bosan kalau tak pandai-pandai mendekornya agar tampak lebih menawan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ce/e4/10/cee41031bd027c75083592e5f3697188.jpg" alt="Model Dapur Sederhana Tanpa Kitchen Set Desain Desain Dapur Dapur" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9v_bi-PG6sLnRh0_nP3cfRBQfTwtcppqttK5bzp9wIanZFtp9V6CPtzzf9Q0TG_EdIc';">
+        <figcaption>Model Dapur Sederhana Tanpa Kitchen Set Desain Desain Dapur Dapur from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Terdapat banyak pilihan bahan dan motif yang unik sehingga bisa dipilih sesuai dengan keinginan apalagi harganya yang ramah di kantong. Semoga bs jadi inspirasi. Beberapa hal sederhana akan membantu kamu dalam hal ini seperti.
+    </p>
+    <h3>Memiliki ruangan yang rapi tentu akan memberikan kualitas tidur yang jauh lebih nyaman.</h3>
+    <p>Tinggal di kosan memang seringkali bisa membuat bosan kalau tak pandai-pandai mendekornya agar tampak lebih menawan. Selain menempatkan perabotan dapur pada lemari kabinet tertutup Anda juga dapat memanfaatkan area backsplash dengan maksimal. Dengan mendesain gambar dan model terbaru dapur minimalis sederhana sebaik mungkin ruang yang tidak terlalu luas pun bisa diatur menjadi terlihat lebih luas rapi nyaman dan menarik. Tak perlu banyak elemen tambahan untuk mempermanis ruangan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=dapur+kecil+tapi+rapi&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=dapur+kecil+tapi+rapi&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Beberapa desain rumah sederhana tapi indah seperti ruang tamu ruang keluarga dapur dan lain sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Tidur Anak Minimalis Ukuran 3 X 3 Desain Interior Kamar Tidur Kecil Interior" src="https://i.pinimg.com/originals/c6/b3/a8/c6b3a88681c880ad088b37d4384b6c09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3rFqQAgvWx7-2Lx_PXEDQJaPLl2efYfwUJw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beberapa hal sederhana akan membantu kamu dalam hal ini seperti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Inspiratif Desain Interior Rumah Minimalis Type 36 90 Dengan Warna Elegan 1000 Inspirasi Desain Ar Ide Dekorasi Rumah Desain Interior Interior Apartemen" src="https://i.pinimg.com/originals/6f/83/42/6f83425e242de49f0af530a3e0112e08.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFoHZ8DpT530tXUEs2Fgbk_GNSD6rwGKakKQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Coraknya yang beraneka ragam akan membuat dinding rumahmu akan terlihat lebih cantik dan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Enny Janetta Di Kitchen Dapur Rumah Model Dapur Desain Dapur" src="https://i.pinimg.com/originals/78/7a/5b/787a5b71ecce76058acb4be2b425d7eb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAB9lIRWlk6SjkZPGYS4impDO2ulfARDEOLA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Namun sayangnya tidak semua orang berhasil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Aakha" src="https://i.pinimg.com/originals/f8/f9/c9/f8f9c97b5eb206061d5f287377fdf459.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSw1gNYIcGbq3I9qhyGyXOmRbsby3zGFd0vw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beberapa gambar dapur sederhana dan rapi yang bisa anda contek untuk dihadirkan di rumah minimalis anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Dekorasi Kamar Tidur Sempit Remaja Sederhana Agar Terlihat Luas Terbaru Ide Dekorasi Kamar Tidur Ide Dekorasi Kamar Penataan Kamar Tidur" src="https://i.pinimg.com/564x/ac/f5/bb/acf5bb48642c5960fa7c29898d1d2f48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgupDpF7809o8zlbQAdi0gI6TsmI_zBtMFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mulai dari mencoba membersihkan noda pada pakaian menyetrika baju-baju yang telah kering bahkan kadang memandikan peliharaan pun dilakukan di ruangan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Inspirasi Sekat Pemisah Ruangan Dalam Rumah Ide Dekorasi Rumah Rumah Tanaman Dalam Rumah" src="https://i.pinimg.com/736x/09/12/e8/0912e852109f3162a25b849a4110f351.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDRmQ6xnwn30StHEAkaFIpp3ZAIMcWdPKOEteYZWo4VLTN7F7UrNKOKB8TMK30dxhWds';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beberapa desain rumah sederhana tapi indah seperti ruang tamu ruang keluarga dapur dan lain sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Ide Kamar Tidur Dengan Kasur Lesehan Agar Gak Membosankan Ide Kamar Tidur Kamar Anak Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/54/64/bf/5464bfd36746c56debb56cabecea0f9e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpmNfJeOITlC5JqzNQiK2gKySA0QQq19GkqQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di situlah nampan catchall bagus sebagai tempat untuk menyimpan buku favorit Anda dan pernak-pernik lainnya dengan lebih rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Merubah Teras Belakang Rumah Minimalis Sederhana Menjadi Laundry Room Room Laundry Room Home" src="https://i.pinimg.com/736x/00/ec/d8/00ecd8a564d32a9030fc52c56c307a7d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSENa7rM-3jb8KX2QFMlZbpGl1nvhBL_U5yBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yuk simak gambar dapur sederhana dan rapi di bawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Girly Banget 15 Inspirasi Hiasan Kamar Tidur Perempuan Dengan Kasur Lesehan Di 2021 Kamar Anak Kamar Tidur Anak Perempuan Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/e6/ad/83/e6ad838401708ba7924abc57aedd51b4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh6VJJvgZ1ERDi7O7Ipxegk-FaHjx6oos3ug';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pastikan kalau benda-benda tersebut selalu bersih dan kosong di akhir hari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kamar Tidur Sempit" src="https://i.pinimg.com/564x/06/b4/4f/06b44f83d315c75714e502b4d32dd920.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRii_p_DOLQLZi5HD8X5iRYjeehN5DrWsCvbQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk anda yang sedang mencari desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Selamat Hari Minggu Semangat Beres2 Rumah Bismillah Alhamdulillah Hanihadi Ide Dekorasi Rumah Ide Dekorasi Kamar Tidur Desain Interior" src="https://i.pinimg.com/originals/46/aa/24/46aa240d31a5dfee0e685b5d016268c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1F_kOu9jS0pq3OLZzNTORW_CB1EOYCDH4vQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak perlu banyak elemen tambahan untuk mempermanis ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New The 10 All Time Best Home Decor Right Now Home Decor By Alyssa Brook Inspirasi Ruang Tamu Coklat Yang Me Desain Interior Interior Ruang Tamu Rumah" src="https://i.pinimg.com/originals/0f/20/77/0f20772e8f6723818f3d375965fbcce2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu4Sc7jp8NxEF96t6P67rh512dpxIBhJY_2w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kania jamin kamu bisa lebih bahagia melihat dapur sederhana dan rapi hasil perawatan kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tak Lagi Kapal Pecah Ikuti Saja 6 Tips Ampuh Menata Kamar Tidur Berikut Ide Kamar Tidur Sederhana Interior Kamar Tidur Dekor Kamar Tidur" src="https://i.pinimg.com/originals/a8/9d/70/a89d70a17b632cfcc06011d101c13159.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUQBmhXJc-7nUN3bHL5iLBixeM5nIMijFKezBkkXInOqTCb2BdbvtDVltGZa2gEalVCy0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beberapa desain rumah sederhana tapi indah seperti ruang tamu ruang keluarga dapur dan lain sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Living Rooms Chairs" src="https://i.pinimg.com/originals/d6/80/80/d68080e0c298bf6f864d2d5605c7c4cc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx_XBL0BH2FlX09GuQSG-LtcXcue_7dozCfA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jauhkan barang-barang yang dicintai di tempat terbuka atau lebih baik lagi gunakan sebagai dekorasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lemari Gantung Sederhana Minimalis Untuk Dapur Kecil Yang Harga Nya Ekonomis Dekorasi Rumah Dapur Lemari Dapur Desain Dapur Kecil" src="https://i.pinimg.com/originals/cb/19/c7/cb19c73cda40ef6a726d8fc2c4f3aa7d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtg5XeoMA5dfOyyFkmRxVm3vX0SVdw8oYociDC5qWCyjKhBLYaBUBlaHA4KhAVCO1YKs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk anda yang sedang mencari desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Tips Sederhana Agar Kamar Kostmu Rapi Seperti Didesain Arsitek Handal Minimalist Bedroom Small Minimalist Bedroom Minimalist Kitchen Interiors" src="https://i.pinimg.com/originals/18/db/3c/18db3c9064297325f3082153e7ab4238.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvX5ulvoKj4NvTTs0lrmahHTZYNIExwMlJc8xRsKJkKK4u_VfCELmTM6dOvBUlgPR8bk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk anda yang sedang mencari desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Dapur Minimalis Jika Dapur Rapi Maka Aktivitas Memasak Semakin Menyenangkan Inspirasi Membuat R Ide Ruang Makan Kecil Ide Dapur Dapur Luar Ruangan" src="https://i.pinimg.com/736x/55/46/ef/5546ef8f5e6c55767db030ecf0a8f466.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjiTrL9v5FPM7LMKG3042_D4mM2rYy62S6JPfGvYH42pV6lEfKVG9APpp2xmIWTxYMeEs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak selamanya harus menghadap ke depan pintu masuk yang mengarah ke samping ini tampak bagus dan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Ruang Tamu Ruang Tamu Sederhana Dekorasi Ruang Tamu Ruang Tamu Desain" src="https://i.pinimg.com/originals/7f/05/ef/7f05efbd97a2373c1329239fd9ee3752.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhkJi6eGoauCYbmBYyrH9TfTWrZKO0cCsT4w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penggunaan lemari kabinet yang dipasang dengan posisi memanjang membuat dapur terlihat lebih rapi dan tidak sumpek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+dapur+minimalis+2x2&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+dapur+minimalis+2x2&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Awali hari-hari di dapur sederhana dan rapi dengan memperhatikan beberapa fitur penting dapur seperti wastafel dishwasher rak piring hingga gadget dapur lainnya yang berfungsi serupa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4100 Gambar Desain Dapur Sederhana Unik Hd Terbaru Untuk Di Contoh Desain Home Deco Dekorasi Apartemen" src="https://i.pinimg.com/736x/01/be/db/01bedb015d7000db946bd4d1bc18a4df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1mJQmHl97wYlW0S5VtOq1vTkBSK-qXVYzIQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Sederhana Tapi Indah Untuk Rumah Idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="26 Desain Inspiratif Dapur Rumah Minimalis Dalam Berbagai Ukuran Dapur 1000 Inspirasi Desain Arsitektur Dapur Rumah Dekorasi Rumah Dapur Dapur Luar Ruangan" src="https://i.pinimg.com/564x/cf/59/a1/cf59a17acad4abb699fe5d2307d591a6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeS2oPiailC2rqGq2eYi4IfOmbgY03XtwentDOfjBQtzuYJ8txpUOsCYAHzXIG8GD6aIc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beberapa gambar dapur sederhana dan rapi yang bisa anda contek untuk dihadirkan di rumah minimalis anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mungil Rapi Fungsional Dan Cantik Tentunya Jangan Follow Tipsdesainrumah Ntar Kebanyakan Ide Dekorasi Rumah India Ide Dekorasi Rumah Rumah" src="https://i.pinimg.com/originals/30/ad/44/30ad44df39499cc4565d04e94e5a5da3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrrwZS12B89AuJc0X2Ipa6klcWraFX4CdacEqyz9KHhXoPxCvZikNv7c8QpGlBun7USrc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Coraknya yang beraneka ragam akan membuat dinding rumahmu akan terlihat lebih cantik dan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Backdrop Tv Rak Tv Klasik Sederhana Gaya Ruang Tamu Desain Desain Interior" src="https://i.pinimg.com/originals/26/56/18/265618f66e6f10508896605dd6a71c6d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyaI2ipX3Lr0JlIs83IDMZxSXCDYaU7s9XRw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tidak ada satu orang pun yang menolak untuk datang kembali ke rumah bersih rapi dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Ruang Tamu" src="https://i.pinimg.com/originals/c0/a8/c0/c0a8c0aca96526123508fe4c5060c8d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqxe5i7ZxjTvl0rhABWK83JYB0YAO5uSjhyg';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Gambar Dapur Sederhana dan Rapi Untuk Rumah Minimalis Idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Mushola Dan Tempat Wudhu Dalam Rumah" src="https://i.pinimg.com/originals/4b/45/9b/4b459bdb7d4fa361e51367783ec7c8ce.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRIxiQQ0MAsPuOc0fhyOy7weysTUcI5Qr-Mw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Awali hari-hari di dapur sederhana dan rapi dengan memperhatikan beberapa fitur penting dapur seperti wastafel dishwasher rak pengering piring hingga gadget dapur lainnya yang berfungsi serupa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Keluarga Rapi Ala Mellyantika Permadani Dan Coffee Table Juga Memainkan Peran Penting Dalam Membang Desain Kamar Ide Ruang Keluarga Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/79/d3/06/79d30623b2d8160ef5e96d1d0cf9f618.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHkt67XGgmflWPzt6wSvbmNQBFAu084EdZLYenJw_22Ue4amc8Vwb0Z8SQt-fTvMGxEk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna-warna netral seperti putih abu-abu dan coklat membuat ruang tamu terlihat rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Minimalis Keren Kece Instagram Desain Dapur Dapur Minimalis Dekorasi Rumah India" src="https://i.pinimg.com/originals/c0/52/fc/c052fc6482a6f136c8a6a824035e3af7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2N438tdKmKJSM8hn_ry8Ps8AkEiahaPm1Tg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mulai dari mencoba membersihkan noda pada pakaian menyetrika baju-baju yang telah kering bahkan kadang memandikan peliharaan pun dilakukan di ruangan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga 70 Model Gambar Kitchen Set Minimalis Memiliki Dapur Yang Rapi Bersih Dan Semua Barang Ruang Tamu Eklektik Desain Lemari Dapur Desain Dapur Kecil" src="https://i.pinimg.com/600x315/d2/c6/80/d2c6801f53644a38c75525945bda3287.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzcepbdw2yfGhIjVaWFQWJbbfyP2qy58kRhfM6Nva1jigm7IlfiIR_mI8y2guPgXdAdU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sirkulasi udara merupakan salah satu faktor penting dalam menata rumah agar menjadi sehat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Menata Ruang Dapur Untuk Rumah Mungil Dan Minimalis Dapur Rumah Interior Desain Dapur Kecil" src="https://i.pinimg.com/originals/f2/75/bb/f275bbc970a15d231358c260e31b2d38.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo696WT9iCLL8e3s-c0SC69Z13Wlbs3QVU_w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pastikan kalau benda-benda tersebut selalu bersih dan kosong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Inspirasi Penempatan Tanaman Hias Di Dapur Agar Terlihat Lebih Cantik Di 2021 Rumah Desain Desain Produk" src="https://i.pinimg.com/originals/08/5b/aa/085baad710ac8c28fff3c216dad65673.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3y19vuBBzoOq62dNaOAvdY0eAbv2VShFKvkNOc3luT1mvC9fghsBqk67r3jhzbX71GzA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna-warna netral seperti putih abu-abu dan coklat membuat ruang tamu terlihat rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Decor Interior Design" src="https://i.pinimg.com/originals/92/fd/c5/92fdc578f76c032be8d59f51dd509af9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfaunh1Zj6jf0szSNVwtJQKks7L-TfMEI28Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wastafel Kosong Gadget Dapur Bersih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Makan Minimalis Sederhana Yang Unik Lagi Ngetren Rumah Minimalis Rumah Desain Interior" src="https://i.pinimg.com/originals/39/dc/56/39dc5614bc5a4666bde91f0a0cab5ba8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRIbXZuAXgPeMeQZxcLxL_CbvvORUF2lL0srFRJS6s1A1lnZFsj-vVaHQQk8rN5kx6hVo';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Yuk simak gambar dapur sederhana dan rapi di bawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Ide Kamar Tidur Dengan Kasur Lesehan Agar Gak Membosankan Ide Kamar Tidur Ide Dekorasi Kamar Ide Dekorasi Kamar Tidur" src="https://i.pinimg.com/564x/89/85/7e/89857ec7511e73d93447cd0b4609dbfd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JRV2ljHxTjoL3nd9QM6pOJ1B7Q_x1PuNEw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jauhkan barang-barang yang dicintai di tempat terbuka atau lebih baik lagi gunakan sebagai dekorasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Model Kamar Tidur Utama Dengan Bentuk Lesehan Yang Tidak Membosankan Ide Dekorasi Kamar Ide Dekorasi Kamar Tidur Ide Kamar Tidur" src="https://i.pinimg.com/originals/3a/1b/7c/3a1b7cbbead43a308e42040b8408664d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFe7Lgv4yq8A_sf0tZVlx-Z4hywqmtM2Os9U0hQ3Uv3OhdKcqH8mLMjOQ8y5pIOcDamls';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tirai umumnya dijadikan sebagai penutup jendela namun sebenarnya bisa dijadikan sebagai partisi ruangan sederhana yang lebih tertutup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Annafardiana Com Ide Dekorasi Ruang Tamu Rumah Desain" src="https://i.pinimg.com/originals/18/5e/ca/185ecad2b89f767c700dcb104fbb0648.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7sLt2C4ez_RoDaFvZtQSPWEA4H_tRRYU9236Fvr3V7lUcPU3r8nixaRuqqEdQ0ZIpJls';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Menata rumah kecil dengan sedikit ruang dapat disiasati dengan membuat sebuah ruangan memiliki beberapa fungsi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Dapur Sederhana Tanpa Kitchen Set Desain Desain Dapur Dapur" src="https://i.pinimg.com/originals/ce/e4/10/cee41031bd027c75083592e5f3697188.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9v_bi-PG6sLnRh0_nP3cfRBQfTwtcppqttK5bzp9wIanZFtp9V6CPtzzf9Q0TG_EdIc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sudah Dicoba 15 Cara Menata Dapur Sederhana dan Rapi Peletakan peralatan dapur juga bisa disiasati dengan storage-storage tersembunyi demi memaksimalkan ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Rumah Minimalis Modern Sederhana Dan Cantik Dapur Rumah Ide Dekorasi Rumah Rumah Minimalis" src="https://i.pinimg.com/474x/fc/25/15/fc2515436081a4462e4feea5a9321b28.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_t0rewhkLS81FXZ_p0rwUORZ5AISerCkJf_zw1M1WsRJhehvo9pDFiDgo3lMgC12iy6M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semoga bs jadi inspirasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Sederhana Dan Murah Dapur Rumah Model Dapur Desain Dapur Kecil" src="https://i.pinimg.com/originals/d0/0b/40/d00b408602cd20202100e81da3e90195.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxFBkjyl1e7cwlf2BdhBRin0vFbHAVKaS9Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pastikan kalau benda-benda tersebut selalu bersih dan kosong di akhir hari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Makan Minimalis Sederhana Kayu Jati Terbaru 2017 Desain Meja Makan Set Ruang Makan Desain Ruang Makan" src="https://i.pinimg.com/originals/28/52/08/28520890d9d733ab639e13d39db7bdfc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dW2orGdxQOhnrAT4LkBa-j-Ud7TNN7_85Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang tamu yang bersih dan rapi bisa memberikan kesan pertama yang baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Dan Ruang Makan Desain Dapur Sederhana Dengan Kitchen Set Desain Dapur Dapur Ruang Makan" src="https://i.pinimg.com/originals/62/5f/2c/625f2c06e1faf22a7bf0904cd1e5104f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuwEXrOAWsYCp2_KDMAVfDMDVb05KgpY-DkA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain menempatkan perabotan dapur pada lemari kabinet tertutup Anda juga dapat memanfaatkan area backsplash dengan maksimal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tata Ruang Rumah Minimalis Terbaru Dan Terlengkap 2015 Rumah Interior Rumah Minimalis" src="https://i.pinimg.com/originals/44/cc/0d/44cc0d4c0e3660417f7c9d9be3d20dca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4t_EPZukBKajV9ZQ_gBXMyU1QFIz7IbWZvw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain ruang dapur minimalis yang simpel terlihat dari model dapur yang satu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Ide Menata Ruang Jahit Di Rumah Seputar Dunia Rumah Rumah Ruang Jahit Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/45/c7/1c/45c71c48a07d07f8b3029eb3e2653433.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNwoFTK8CONfteEVTlF8L-oSXjXROt7s20tA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nggak perlu khawatir privasimu di dalam rumah terganggu berikut beberapa inspirasi sekat ruang tamu tanpa tembok yang bisa kamu aplikasikan di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Ruang Keluarga Ruang Makan Jadi Satu Ruang Tamu Rumah Ruang Keluarga Desain Interior" src="https://i.pinimg.com/originals/f9/40/c3/f940c36007b5c45470e1f2ea581345d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkV7AW_-ATJ4X7r1XO8QlOBC1ITUvLVvXYZw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu kamar tidur juga merupakan beristirahat dari rutinitas harian yang melelahkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Ruang Tamu Kecil" src="https://i.pinimg.com/736x/63/52/67/63526772c907d0eaac663f3005b7c9e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Kfng1hKoK9nOkZu-OUPCRPzlbamSARKqj9pM78__vwIM6Oybjlz_VIIyXEmQJ2ePE0k';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>10 Tips Sederhana Agar Kamar Kostmu Rapi Seperti Didesain Arsitek Handal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Ruang Makan Minimalis Sederhana Yang Rapi Desain Kamar Ide Dekorasi Rumah Interior" src="https://i.pinimg.com/originals/1c/06/0e/1c060eedd3cfeff058d980d6688da3a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHou1ZBbcxYx61wZ9sC3xXjIKCDZ2e9AMvF9nbxZ7l1XKOHtSjjFZF-FCqHkfhY0uWFY0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dikelilingi pohon rindang dan rerumputan hijau semakin lengkap dengan desain rumah sedehana yang menawan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Kost Rapi Biaya Murah Desain Interior Rumah Dekorasi Kamar Kecil Interior Kamar Tidur" src="https://i.pinimg.com/originals/80/ea/7b/80ea7bbc000857769efc7b95d8f4fe34.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Z8ILKZNPVmQttPAfTUSLyPKtZGwXUNqrW80UsUgJq0Lg3I3V7BzkfysaR27nEOxpBK0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Maksimalkan ruang bawah wastafel Untuk membuatnya terlihat lebih rapi kamu bisa memanfaatkan area bawah wastafel sebagai tempat penyimpanan barang seperti spons lap sikat atau sabun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Anak Konsep Klasik Modern Minimalis Interior Master Bedroom Apartemen In Decorar Pared Habitacion Decoraciones De Dormitorio Dormitorios" src="https://i.pinimg.com/originals/61/77/6a/61776af1f23f882bc498665dffc2faee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FZLtGhpESO9263b9YCI-1HtO3LM-gWx3zA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tidak ada satu orang pun yang menolak untuk datang kembali ke rumah bersih rapi dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Dapur Minimalis Modern Bikin Rumah Makin Kece Dapur Rumah Dekorasi Dapur Kecil Desain Dapur" src="https://i.pinimg.com/originals/94/d4/71/94d4711760b42e4ea31ecb9c9b48ee61.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTe7TNQFLa6OIGHUuKX0_aZ1SlVGfpjIAYo8M3zWV5A9-5S2pVeFl7gS6pP00PEFWRRA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Awali hari-hari di dapur sederhana dan rapi dengan memperhatikan beberapa fitur penting dapur seperti wastafel dishwasher rak piring hingga gadget dapur lainnya yang berfungsi serupa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Tips Menata Ruang Tamu Minimalis Yang Rapi Nyaman Dan Melegakan Desain Kamar Desain Interior Ruang Tamu Ide Ruang Tamu Modern" src="https://i.pinimg.com/736x/1f/e7/7c/1fe77ca6bcc7cf2025b10cbf8a58d074.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWROkM5_eYzf-35b5a5moDz3chveO52jzV9MB2qVvyP98uYaxOmH3wVXuBi-QcefrwGpA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk anda yang sedang mencari desain.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-mewah-warna-biru.html"><i>&larr; rumah mewah warna biru</i></a>
+                                                                    
+                                        <a href="/rumah-mewah-ruang-tamu.html"><i>rumah mewah ruang tamu &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

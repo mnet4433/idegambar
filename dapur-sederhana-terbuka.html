@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Dapur Sederhana Terbuka
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Dapur Sederhana Terbuka",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/40/e0/e4/40e0e4c0d0dda3c80881a5a816db1518.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dapur+sederhana+terbuka",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Dapur Sederhana Terbuka
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Dapur Sederhana Terbuka</strong>. Dapur Terbuka yang Menghadap Taman Bagi kamu yang suka aktivitas di luar ruangan dapur terbuka menghadap taman ini bisa menjadi pilihan. Desain ruang dapur terbuka di atas memang sangat cocok bagi Anda yang memiliki sebuah ruang terbuka di belakang rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/79/1d/09/791d09ab6af2d5382fac033c8dcb79d2.jpg" alt="Foto Desain Dapur Semi Outdoor Di Belakang Rumah Desain Dapur Luar Ruangan Dapur Terbuka Dekorasi Rumah Dapur" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJZg2TLoap6hODfMSotL3R64pCe3v2pmwDR7K4aGXuIgKt-KlU3SF3QXtlVu_DW1BqBc';">
+        <figcaption>Foto Desain Dapur Semi Outdoor Di Belakang Rumah Desain Dapur Luar Ruangan Dapur Terbuka Dekorasi Rumah Dapur from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Menariknya lagi Anda juga bebas berkreasi menata interiornya sedemikian rupa supaya tampil beda. Dimulai dari dapur sebagai jantung pemompa semangat seisi rumah. Menggunakan atap dari daun kelapa atau welit akan memberikan sensasi seolah kita sedang.
+    </p>
+    <h3>Selain itu suasana terbuka tampil dengan sangat nyaman untuk memasak terlebih penempatan aksen dapur tersimpan menghadap jendela.</h3>
+    <p>Dalam mendesainnya anda tidak perlu bingung. Dapur terbuka minimalis ini memang terlihat sangat simpel dan sederhana tapi mempunyai cita rasa nilai estetika tinggi. Dapur terbuka minimalis ini cocok untuk menyiapkan makanan yang dipanggang dan juga minuman ringan. Tips Mendesain Dapur Terbuka Minimalis.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Budget Terbatas Coba 7 Aplikasi Dapur Terbuka Sederhana Ini Desain Ruang Makan Ruang Makan Tata Letak Dapur" src="https://i.pinimg.com/originals/23/94/a7/2394a701280d1dd0d6f23b6a1966ddb9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-C1-STqEHZ6z9__POADujvcMnO2VycIfQ-Q';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Dapur terbuka minimalis ini cocok untuk menyiapkan makanan yang dipanggang dan juga minuman ringan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Ide Inspiratif Dapur Dan Ruang Makan Terbuka Menghadap Taman 1000 Inspirasi Desain Arsitektur Teknolog Dapur Luar Ruangan Ide Dekorasi Rumah Luar Ruangan" src="https://i.pinimg.com/564x/02/7f/87/027f870faa26a1f00f66f3645a17473b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLYbobrSZbSvj3ytud5r-3ozxXspR9rQECZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda boleh menyimak uraian berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+dapur+kecil+terbuka+dibelakang+rumah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+dapur+kecil+terbuka+dibelakang+rumah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Dapur Terbuka Sederhana yang Menyatu dengan Area Kolam Renang Dapur dengan desain ini bisa dibilang sangat sederhana karena tidak adanya ruang makan yang tersedia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Dapur Rumah Desain Interior Dapur Luar Ruangan" src="https://i.pinimg.com/736x/6c/30/07/6c30072c26ccebbb66fabe36b9c7dd45.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhGTCjQROPJs9HVjWxkCUTfEeoFPSFjbp3A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semakin rapi sebuah dapur akan membuat nyaman pemilik rumah dan akan memanjakan mata yang memandang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Desain Dan Konsep Dapur Outdoor Semi Terbuka Rumah Dapur Terbuka Dekorasi Rumah" src="https://i.pinimg.com/474x/98/26/13/9826133bb96b7c58fb0b86ff1d9cd925.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcyx_VmottxqpSTzHBaycOew1sTuAjZRIeL8JoqNO-IxXTNAm4oRTVpgxbcRRbsaDUwA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain dapat dibuat dalam kemasan minimalis model ini juga mengesankan kesan elegan yang rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Budget Terbatas Coba 7 Aplikasi Dapur Terbuka Sederhana Ini Dekorasi Rumah Dapur Desain Lemari Dapur Dekorasi Dapur" src="https://i.pinimg.com/originals/0e/77/78/0e7778d2e2d3966fb73e61fb4f4e6930.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPe0__6dyQwqohHbWkh689vUoPCYTDH7gRyA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dapur terbuka minimalis ini memang terlihat sangat simpel dan sederhana tapi mempunyai cita rasa nilai estetika tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Minimalis Keren Kece Instagram Desain Dapur Dapur Minimalis Dekorasi Rumah India" src="https://i.pinimg.com/originals/c0/52/fc/c052fc6482a6f136c8a6a824035e3af7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2N438tdKmKJSM8hn_ry8Ps8AkEiahaPm1Tg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Dapur Sederhana Minimalis Terbuka Maaf form komentar dinonaktifkan untuk produkartikel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Neutral Kitchen 4 Small Kitchen Decor Minimalist Kitchen Design Tiny House Kitchen" src="https://i.pinimg.com/originals/56/12/67/561267e4db8511dc135c7449010072dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRv4qhNsLfj7JDrs09Lygps15n-gdc7N5P7Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di bawah ini adalah tips mendesain dapur terbuka minimalis yang mudah untuk diikuti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Dapur Semi Outdoor Di Belakang Rumah Desain Dapur Luar Ruangan Dapur Terbuka Dekorasi Rumah Dapur" src="https://i.pinimg.com/originals/79/1d/09/791d09ab6af2d5382fac033c8dcb79d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJZg2TLoap6hODfMSotL3R64pCe3v2pmwDR7K4aGXuIgKt-KlU3SF3QXtlVu_DW1BqBc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Guna memaksimalkan dapur sebagai tempat berkumpul kini banyak keluarga mendesain dapur terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Dapur Terbuka Minimalis Dapur Terbuka Model Dapur Dapur" src="https://i.pinimg.com/originals/12/db/11/12db110cc3b27a568f03dde62354e950.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1UYpKtcpgjZcTKrzDDLBzx_dDfT0VHxzfMA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur terbuka minimalis ini cocok untuk menyiapkan makanan yang dipanggang dan juga minuman ringan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Pembatas Dapur Sederhana Desain Dapur Dapur Terbuka Rumah Minimalis" src="https://i.pinimg.com/originals/f2/24/4f/f2244f2a7968dd83cc0524dce89f24c2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzwdwOYVmAW4MJmExfT3gnOqSNaH5JiIofA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lalu silakan pertimbangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctkjcafvblhexnzx7nlnbyeaggi0lbxuoc8vwqojurgkyvgrphc Usqp Cau" src="/search?q=dapur+terbuka+sederhana+di+belakang+rumah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=dapur+terbuka+sederhana+di+belakang+rumah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Konsep dapur terbuka bukan lagi hal yang asing dewasa ini terutama untuk interior rumah modern dan desain kontemporer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Dapur Terbuka Bikin Masak Kian Asyik Desain Dapur Luar Ruangan Dapur Luar Ruangan Luar Ruangan" src="https://i.pinimg.com/736x/58/dc/8e/58dc8e97f350daa6c282efa23e5b7734.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnI1QSwrTcgoZfIFFrJmVTZ2GadBlYhIYRsc1pboQzhqmavOobNvmQoaRdf58D4y9atG4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Panggangan berbahan dasar keramik dan dispenser air unik menjadi titik fokus dari rak dapur sederhana dan terbuka dengan dominasi warna coklat keabu-abuan yang soft.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Luar Ruangan Dapur Luar Ruangan Dapur Rumah" src="https://i.pinimg.com/originals/98/af/4a/98af4aee2125bbfa9701a117be0343a0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fKpsb_nHaQRl1l67rZXga7Ol4joxQYdUsdyfNHPTWO47Vi3cN_A5uG3IiY6E9Qj-FhU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Memasak di luar ruangan mendatangkan sensasi berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Dapur Kecil Terbuka Dengan Taman Dapur Model Dapur Dapur Minimalis" src="https://i.pinimg.com/originals/50/b4/b6/50b4b6b19f472f69ab927d2eb97256ea.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeARC8H_JfrNeFIvVj9WtfYBW4rqY3ZFJgP8-1QkJVqk5UualmKYmTuANM12GYY_0Ts14';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagaimana tidak kamu bisa memasak sekaligus menyatu dengan alam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Dapur Terbuka Yang Sederhana Dan Mewah Pindesain Dapur Terbuka Dapur Desain" src="https://i.pinimg.com/originals/c0/26/00/c02600dd1190c90ea0812abe69fea33b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFV1Q9lgh3fDg1yrHOOD5QLBjEN-MLqTRPtQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kecenderungan untuk membuat alur ruangan yang fluid memang kian dilirik dengan cara menghadirkan open space atau ruang terbuka pada hunian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Semi Terbuka Dengan Kaca Menghadap Taman Rumah Desain Rumah Dapur Terbuka" src="https://i.pinimg.com/originals/d4/51/b9/d451b9e89811ae7f5b95a307556d10e7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNpyrWPivBY0pMbvN5IMRFNY05BHVqt_pHw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di bawah ini adalah tips mendesain dapur terbuka minimalis yang mudah untuk diikuti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Outdoor Kitchen Dapur Kotor Desain Perbaikan Rumah Dapur" src="https://i.pinimg.com/originals/ff/b2/34/ffb2342e5e12927cb1e7f28e0e748469.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStnsFvs_triT9Hv8tqShpZG2ApBJBvnQaMEQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menggunakan atap dari daun kelapa atau welit akan memberikan sensasi seolah kita sedang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Villa 4 Kamar Yang Disewakan Harian Di Bali Dapur Terbuka Lengkap Dengan Perabot Di Villa Thiara Kitchen Rules Home Decor Industrial House" src="https://i.pinimg.com/600x315/bc/0f/48/bc0f48ad3edca365f740831198437890.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqH3gNilp6bTcwMop8utgzXF5mIxWQpGrl2xUMavNx99oQ137qygJyGa1Qf7pQnpYPiM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Dapur Sederhana Minimalis Terbuka Maaf form komentar dinonaktifkan untuk produkartikel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Budget Terbatas Coba 7 Aplikasi Dapur Terbuka Sederhana Ini Dekorasi Rumah Dapur Desain Dapur Kecil Interior Dapur" src="https://i.pinimg.com/564x/97/d9/3e/97d93e8fdc53eb6d0ecae89222bedb0f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHVSUxiddlVcXqjcMiR_XnZcciejMz9wAeBiqlUK35Qz6etQ0sr_L-Kg2N-uRckWA99XE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur yang rapi adalah hal terpenting untuk setiap dapur dengan berbagai tema yang diaplikasikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Budget Terbatas Coba 7 Aplikasi Dapur Terbuka Sederhana Ini Model Dapur Dekor Meja" src="https://i.pinimg.com/originals/cf/8e/fa/cf8efa7b8e7903aa07bc5ac669dd852f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSORcPW-zJhEsF2gqfQZ0Q_rBAILIBPZ6ymxw';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Dapur Terbuka Sederhana yang Menyatu dengan Area Kolam Renang Dapur dengan desain ini bisa dibilang sangat sederhana karena tidak adanya ruang makan yang tersedia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Interior Dan Eksterior Rumah" src="https://i.pinimg.com/originals/40/e0/e4/40e0e4c0d0dda3c80881a5a816db1518.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWbc_3OURRRiDjQyFyLODp1DiATCVBW6_w3Nk2ns_qDl7GSetIKPF9kRfWoZvIgvyRAiQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tanpa dapur sebuah rumah tidak bisa dikatakan sempurna bahkan jika sebenarnya sang pemilik rumah tidak bisa memasak sehingga jarang menggunakan dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Cocina" src="https://i.pinimg.com/originals/bb/4c/d7/bb4cd77259e7957f1c6875dd51643de3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIYvgNv3-Lrr1MqmQQlgpxpkxYd_KKiVgqTlLRBEc1o0Xozx39BcQSA0SKGDjvL77cqg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur dengan konsep terbuka pada umumnya di tempatkan di area belakang berbatasan langsung dengan area terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Minimalis Terbuka Membuat Suasana Memasak Lebih Seru Check More At Https Space Made Com 963 Dapur Dekorasi Rumah Dapur Dapur Terbuka Dapur Luar Ruangan" src="https://i.pinimg.com/originals/02/9a/1e/029a1ec9ce968a02bce560d099b5f7ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhIVWiCfuHpyveM8MQnG77fYHekKodezq0bA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur terbuka ini terletak di sebuah halaman belakang dengan kolam renang lengkap dengan meja dapur dan tempat penyimpanan di bawahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Dapur Minimalis Modern Bikin Rumah Makin Kece Dapur Rumah Model Dapur Dapur Kecil" src="https://i.pinimg.com/originals/1e/d0/82/1ed0826ba8f47aec1bae42b9684a6e55.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS4CwvUh0SZL3fpcUV0oy9KvOAF3NbYmBKSg';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Desain ruang dapur terbuka di atas memang sangat cocok bagi Anda yang memiliki sebuah ruang terbuka di belakang rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Dapur Minimalis Modern Bikin Rumah Makin Kece Dapur Rumah Dekorasi Dapur Kecil Desain Dapur" src="https://i.pinimg.com/originals/94/d4/71/94d4711760b42e4ea31ecb9c9b48ee61.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTe7TNQFLa6OIGHUuKX0_aZ1SlVGfpjIAYo8M3zWV5A9-5S2pVeFl7gS6pP00PEFWRRA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dapur terbuka ini terletak di sebuah halaman belakang dengan kolam renang lengkap dengan meja dapur dan tempat penyimpanan di bawahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Contoh Desain Kitchen Set Untuk Dapur Minimalis Dapur Rumah Ide Dapur Dapur Pedesaan" src="https://i.pinimg.com/originals/e7/e6/d8/e7e6d85ee841d34c1bc16574184e68ea.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDijLHKfW1EPGHXZVowAwaMw0BHYcXxUVxmthZG-_jkCvnBgtG8cXXmpZx7gqITO_UNk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda dapat membentuk sebuah kitchen sets yang dibentuk melingkar sehingga Anda dapat melihat-lihat pemandangan disekitar taman belakang Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Dapur Outdoor Semi Terbuka Luar Ruangan Rumah Desain Dapur Luar Ruangan Tata Letak Dapur Dapur Terbuka" src="https://i.pinimg.com/originals/3a/8c/3c/3a8c3c306f24d4274ea3663b2d801c1a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYt7atUDPBGnI7tHtaxiE5zjH-xs-WrdKfSpriPoxS4DoIiA7sscimSoDCHokknK3Q7c';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dari segi warna biasanya digunakan jenis warna yang lembut seperti pastel atau warna netral seperti hitam dan putih atau silver seperti pada gambar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Referensi 16 Model Kitchen Set Letter L Minimalis Untuk Dapur Kecil Di 2021 Desain Dapur Dapur Rumah Dapur Kecil" src="https://i.pinimg.com/originals/01/c2/31/01c231028c1adaf51e30cd063df164f2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88B82bDiXsj-F2kTWnyc4VCFXnxVqQ3bbD_ulK5h_FOSJbtSlKr2bbLSBwN_GDPw-vzE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adapun aksen terbuka tampil secara menarik khususnya pada sisi lemari dapur maupun meja dapur minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Dapur Minimalis Modern Bikin Rumah Makin Kece Dapur Rumah Dekorasi Rumah Dapur Dapur Luar Ruangan" src="https://i.pinimg.com/474x/ef/cd/90/efcd9048ed237526a1ae4551a59b7253.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDnfHSaDCshY1Durlhlie5IlcOVYOxDJ0nbA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meski layout-nya cukup penuh tetapi masih tampak lega karena permainan warna konvensional plus kehadiran penerangan alami dan buatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Terbuka Minimalis Dapur Terbuka Desain Desain Ruang Makan" src="https://i.pinimg.com/originals/b9/50/ba/b950baf35f55830cfb6d7ed5d840b582.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_UKB3Jo39GUAZSg7q8HhHQIR-j6I4dr9Md9mWfEHKu-RNfvwZRJ9-x2qaMf0ByXRLgg8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur terbuka ini terletak di sebuah halaman belakang dengan kolam renang lengkap dengan meja dapur dan tempat penyimpanan di bawahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Dapur Terbuka Bikin Masak Kian Asyik Interior Dapur Desain Dapur Dapur" src="https://i.pinimg.com/originals/d5/3b/4a/d53b4aabe501c676603e55e59739f5ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXUJWuz3xH0CX2qaCJvCgsU-Ts6bCdZ5sbw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain debu penggunaan tirai bambu juga dapat dimanfaatkan untuk menghalau angin supaya api kompor tetap stabil saat dipakai memasak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Desain Semi Outdoor Minimalis Sederhana Desain Dapur Luar Ruangan Rumah Rumah Minimalis" src="https://i.pinimg.com/474x/76/ba/5a/76ba5a6e1fe9473bfd33511389923b39.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm7znhrcUhRagtxfi30lB0xLZdEbSTBxEFIA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di satu sisi dapur ruang terbuka dilengkapi dengan meja tengah dapur untuk memasak menyiapkan makanan sambil mengobrol atau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Dapur Outdoor Semi Terbuka Luar Ruangan Rumah Dapur Terbuka Desain Dapur Dapur" src="https://i.pinimg.com/originals/19/d2/d6/19d2d6792299617630fb77862dfba760.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsXU3Z_Zsb4PZJe5atpQ8pVGQFC_GD-DMT7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda dapat membentuk sebuah kitchen sets yang dibentuk melingkar sehingga Anda dapat melihat-lihat pemandangan disekitar taman belakang Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Dapur Rumah Indah Desain Dapur Luar Ruangan Luar Ruangan" src="https://i.pinimg.com/originals/b5/45/a4/b545a4d99fb37bc3da2de86593c0e79c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGa5MuSJW7lKW7BlwdjInVAH3Xz3cbRImGQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dapur dengan konsep terbuka pada umumnya di tempatkan di area belakang berbatasan langsung dengan area terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="436 Likes 3 Comments Inspirasi Rumah Idaman Kumpulanrumahcantik On Instagram Dapur Terbuka Langsung Ke Taman Segerrr Dekorasi Rumah Desain Rumah Rumah" src="https://i.pinimg.com/originals/52/2d/cd/522dcdfaa5ac6af299c291ac7431aaa8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzR688LTHp7nTlNnOleCU57ok1K0eR3Yq1rw';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Tentang dapur kecil berkonsep terbuka sederhana tetapi memesona.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Dapur Terbuka Sederhana Desain Dapur Luar Ruangan Kamar Outdoor Bar Outdoor" src="https://i.pinimg.com/736x/74/ed/d0/74edd0a8579ed38af84d289de6564d1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFbqDQgwNzkVPnRp4oBPLZ2A13uQ604nNuiw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam mendesainnya anda tidak perlu bingung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Desain Dapur Terbuka Di Belakang Rumah Rumah Pontianak 99 Interior Desain Interior Desain Ruang Makan" src="https://i.pinimg.com/originals/58/83/6b/58836bf0c3d622dbb64404a076e7086a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDltl_1M5UH46IDrJRqQulTPAy11S0YgZEAobP7u_9NSIyX2kCfllDzov5-y8Lf5J041A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep dapur terbuka diketahui akan dapat membuat rumah terlihat lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Best Clean Elegant Contemporary Kitchen Ideas Snapshotlite Com Home Room Design Kitchen Inspiration Design House Interior" src="https://i.pinimg.com/474x/2a/fe/3b/2afe3b90faf660f61c930a15d0a6c512.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSosP64Au4NPHwuRp3CITov813A1zH5fILEg3LrxUSvXCNPvzEKz3yg5p707VyYql3z2aw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain memiliki sirkulasi udara yang bagus dapur terbuka juga memberikan kenyamanan yang berbeda kepada pemiliknya lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Budget Terbatas Coba 7 Aplikasi Dapur Terbuka Sederhana Ini Renovasi Dapur Kecil Dapur Minimalis Dekorasi Rak" src="https://i.pinimg.com/originals/ff/dc/bf/ffdcbf6808c380c2bc90973409171d79.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf94E5T74CvJBZkeplSQE2GeYbL2xuiRyISQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di bawah ini adalah tips mendesain dapur terbuka minimalis yang mudah untuk diikuti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Dan Ruang Makan Terbuka Menghadap Taman Dapur Ruang Makan Dapur Luar Ruangan" src="https://i.pinimg.com/originals/da/7b/0b/da7b0b05e6860826060a983b5eb1a251.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5nZYIe6zmsZ3wCC1LR6UXH0Vd4lQHMli34g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memasak di luar ruangan mendatangkan sensasi berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Vidya Ayu Di House Ruang Tamu Outdoor Rumah Desain" src="https://i.pinimg.com/474x/87/d7/44/87d744fcaf530a51065161a68aa82504--dapur-minimalis.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDM93BRsAD8t7rZckmkBKz_YplIzj4eMaqMrNysyEdpUHDAaKIibmzs_g7cwPOVkQU3Tk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tanpa dapur sebuah rumah tidak bisa dikatakan sempurna bahkan jika sebenarnya sang pemilik rumah tidak bisa memasak sehingga jarang menggunakan dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Ide Inspiratif Dapur Dan Ruang Makan Terbuka Menghadap Taman 1000 Inspirasi Desain Arsitektur Teknologi Konst Dapur Luar Ruangan Rumah Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/81/83/4a/81834ae33060f672c85cf4d5b0bdd6c9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHzAqW46lbRpP6ji5zpMO6uJ5lLAp0jc8j9A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Adapun aksen terbuka tampil secara menarik khususnya pada sisi lemari dapur maupun meja dapur minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Terbuka Sederhana Di Belakang Rumah Dapur Terbuka Desain Ruang Makan Rumah" src="https://i.pinimg.com/originals/fd/b1/ab/fdb1abda0b5593224ce344c6bf1272a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwvdfbsPiqZcuRYij8jkWBJxpmeplCZZHbgkrf_rmULkR6di_WXp6vnnZD4PA23pxLt8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>50 Desain Dapur dan Ruang Makan Terbuka Jadi Satu Sederhana Minimalis Modern - Dapur menjadi salah satu ruangan penting yang harus ada dalam sebuah rumah yang nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga 70 Model Gambar Kitchen Set Minimalis Desaindapur Desaindapurminimalis Lemari Dapur Model Dapur Kamar Tidur Minimalis Kecil" src="https://i.pinimg.com/originals/18/2e/fb/182efb6815bd3332756bde72a0bb3399.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToMVv3_LP5kA46DNkp6nPlO3UDhsf4FeVjwQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dapur Terbuka yang Menghadap Taman Bagi kamu yang suka aktivitas di luar ruangan dapur terbuka menghadap taman ini bisa menjadi pilihan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Dapur Terbuka Di Belakang Rumah Dengan Meja Mkana Rumah Impian Dapur Desain" src="https://i.pinimg.com/originals/00/28/b8/0028b8f1b0e6686010b2870fe084d1b9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtBWt_ZR82F7jn789KqDKM6RkvCFZjheVsFfCO0daKT6iRVTC4OxHJSMFvyIwZgdZukE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur Terbuka Sederhana yang Menyatu dengan Area Kolam Renang Dapur dengan desain ini bisa dibilang sangat sederhana karena tidak adanya ruang makan yang tersedia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini Dia 7 Desain Dapur Minimalis 3 X 3 Apik Yang Fungsional Desain Interior Interior Rumah" src="https://i.pinimg.com/originals/85/f8/de/85f8dea8a22e44196ade80096e352818.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlM0F0lXa1-dceH9ft6EtWcg7XkfY90k0d1w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah-rumah mungil saat ini anyak yang mengaplikasikan dapur terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Interior Dapur Terbuka Dapur Terbuka Desain Dapur Dapur" src="https://i.pinimg.com/originals/ba/38/06/ba3806cb4f00a88de317ed3a6ec36850.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXwdb2e1DQN28t_JacUVIKYmBCYGtOx8WOg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur minimalis terbuka di belakang rumah seperti ini memang rentan debu makanya gunakan tirai bambu di bagian samping dapur untuk menghalaunya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="29418012 1676879349092661 1918911342547304448 N Jpg 1053 1317 Dapur Luar Ruangan Ide Dekorasi Rumah Rumah Indah" src="https://i.pinimg.com/originals/32/76/17/327617795f662aadadde4457be2ec837.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYJuu4LCuSUDUban0UcGvQjnjhfyFUvFj2JA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>50 Desain Dapur dan Ruang Makan Terbuka Jadi Satu Sederhana Minimalis Modern - Dapur menjadi salah satu ruangan penting yang harus ada dalam sebuah rumah yang nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Untuk Ruang Sempit Rumah Minimalis Desain Dapur Dapur Rumah Interior" src="https://i.pinimg.com/originals/ed/71/a1/ed71a185c0b53d8fd8ade730f79f83a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSedzJNu8qo8KBaniZBPCv3EshMD32EnCKPjryNg6dH68Q4UShS_wW5WUo8hQsctjcZ9xg';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Menggunakan atap dari daun kelapa atau welit akan memberikan sensasi seolah kita sedang.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/model-plafon-rumah-dari-kayu.html"><i>&larr; model plafon rumah dari kayu</i></a>
+                                                                    
+                                        <a href="/model-rumah-6x10.html"><i>model rumah 6x10 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

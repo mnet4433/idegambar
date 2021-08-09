@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Dapur Dan Kamar Mandi Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Dapur Dan Kamar Mandi Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "/search?q=desain+dapur+menyatu+dengan+kamar+mandi&amp;tbm=isch",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dapur+dan+kamar+mandi+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Dapur Dan Kamar Mandi Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Dapur Dan Kamar Mandi Sederhana</strong>. Tidak hanya kamar tidur dapur juga harus memerlukan ventilasi udara seperti desain dapur sederhana satu ini. Kamar mandi biasanya diletakkan agak ke pojok.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/a9/3b/72/a93b72377bf9c5cf9ebfd8962f7270d2.jpg" alt="Rumah Impian Minimalis On Instagram Kamar Mandi Idaman Second Hiasan Kamar Mandi Ide Kamar Mandi Dekorasi Rumah Dapur" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcMdrd5Z6a_G-3hZR6Fu_PFXxcObKLvrV_1GNp6BOrpo7ulocnZtLfPKknIooKPnhKeQ0';">
+        <figcaption>Rumah Impian Minimalis On Instagram Kamar Mandi Idaman Second Hiasan Kamar Mandi Ide Kamar Mandi Dekorasi Rumah Dapur from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Jika Anda sedang akan membuat rumah dan kamar mandinya buatlah kamar mandi sederhana yang membuat Anda nyaman dalam membersihkan diri saat mandi dan lain sebagainya. Desain rumah minimalis modern 2012 minimalis design com design. Kamar Mandi dengan Wallpaper.
+    </p>
+    <h3>Untuk menciptakan kamar mandi kecil minimalis sederhana tentu menggunakan shower merupakan pilihan yang lebih baik.</h3>
+    <p>Beda dari yang lain denah rumah type 45 ini menempatkan dapur dan kamar mandi di area luar yang dekat dengan taman belakang. Desain dapur terlihat sederhana dengan pemilihan warna pastel plain dan tidak adanya dekorasi tambahan yang berlebihan. Dipadukan dengan kombinasi motif batu alam dengan latar gelap menjadikan kamar mandi anda akan terkesan sederhana dan tetap gagah. Sebagai tempat beraktivitas dalam menyediakan kebutuhan primer lain yaitu pangan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=desain+dapur+menyatu+dengan+kamar+mandi&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+dapur+menyatu+dengan+kamar+mandi&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Sehingga suasana dapur terlihat lebih tenang dan santai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Mandi 1x1 Desain Kamar Mandi Kecil Desain Kamar Mandi Kamar Mandi Kecil" src="https://i.pinimg.com/originals/ba/25/bc/ba25bc64cea8e8b9c91ff1ddc13b7385.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-jv70X_PimgZpTfTisVNiyb9707k13zPZQKL8qPd6G1U0ReLDWkNeZIjAorToIp4zP0M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti ruang tamu kamar tidur kamar mandi dapur dan sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Dalam Kamar Di 2021 Interior Desain Desain Rumah" src="https://i.pinimg.com/originals/56/6f/67/566f677e0aafcf32abff3a9c6eadcb63.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiPSV6eb9UMtoUktcZd7TIjoUhaA5-eo3RA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar mandi sendiri merupakan salah satu aspek paling penting di rumah Anda walaupun beberapa pendapat mengatakan bahwa kamar mandi hanyalah berfungsi sebagai ruangan pendukung utama namun keberadaan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kamar Mandi Desain Kamar Mandi Desain Kamar Mandi Kecil Ide Kamar Mandi Kecil" src="https://i.pinimg.com/originals/5d/91/63/5d91631134677b76f122b747b05e1f93.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm5ScVkZdk28G0i44RHOJCQ_UbDmN5QEPbe6C5-fmdY68Q8v8uAN-4dxmWUg9qgjdS6yY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model kamar mandi sederhana dengan kombinasi warna lembut dan abu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Kamar Mandi Pink Sederhana Sederhana Di 2020 Ide Kamar Mandi Hiasan Kamar Mandi Gaya Kamar Mandi" src="https://i.pinimg.com/originals/e7/95/23/e79523e8e7569a2fc5e83e06d7e1d236.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs_69YoQRcr2xXqQOgQVFWBCAhdAxD4zBB6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model kamar mandi sederhana dengan kombinasi warna lembut dan abu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Sederhana Sekali Model Dapur Dapur Desain" src="https://i.pinimg.com/originals/9e/dc/00/9edc00ffb5af95588bcbfcbfd2a12a11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-648__2j4QtPyIQnWLavzqKy1d1hbT_HMg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah tipe 60 ini bisa menampung dua kamar tidur dan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Gambar Dan Ukuran Kitchen Set Yang Tepat Untuk Dapur Rumah Interior Dapur Lemari Dapur Modern Desain Dapur" src="https://i.pinimg.com/736x/f4/d2/45/f4d2453bca37620f4456b78581e0e394.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7NFRRr6J_I6vwa2QvOBC_J4xUcxJ4YK8Wag';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Platinum roman dan minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Kamar Mandi Minimalis Kecil Sederhana Desain Kamar Mandi Desain Kamar Mandi Minimalis" src="https://i.pinimg.com/736x/13/0a/f5/130af5fc5ace0f391380100bba744003.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKiJnl4bHUHK-uAloiUU5NhiPWaGyTZei9_w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Floating shelves sangat cocok sebagai solusi praktis di ruangan kecil seperti kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Kamar Mandi Minimalis Dengan Kloset Jongkok Di 2021 Ide Kamar Mandi Penyimpanan Di Kamar Mandi Desain Kamar Mandi" src="https://i.pinimg.com/originals/d2/1e/4c/d21e4c92ee68bfea8dbd9bdaaaa583a4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxkmz1K95JQX1moWxHOqYh3wLOdo5ygwNKXA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Floating shelves sangat cocok sebagai solusi praktis di ruangan kecil seperti kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Motif Keramik Kamar Mandi Minimalis Ngetren Kamar Mandi Minimalis Kamar Mandi Desain" src="https://i.pinimg.com/originals/33/47/49/33474938893d23236ec15e6d11e5c018.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIoeeD4gEPRob-cs75G0lPtutBMHCLh_G_KJUq7m_9pZZaiicfJ8zZBLT2weKDlKNLG0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bathtub di kamar mandi sederhana mengapa tidak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Minimalis Kecil Terlihat Simpel Ide Kamar Mandi Desain Toilet Ide Kamar Mandi Kecil" src="https://i.pinimg.com/originals/ed/d7/e6/edd7e6ec2210845da059b9e4e4204ce1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEvAMYvu5086Xm_KS9BWAlBEL9OYvRxuu-tw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah rumah tipe 60 ini bisa menampung dua kamar tidur dan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Sederhana Sekali Desain Kamar Mandi Gaya Kamar Mandi Kamar Mandi Kecil" src="https://i.pinimg.com/originals/d3/94/be/d394be7b1811f346d004c925bb01d774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6UzuMSHu3IzEAKw9muJfzPghb6OVaoKauFp6xtJFrbR5MOBqnVuo-Xki67SnV8DOI8zE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wallpaper bisa menjadi kunci dalam desain kamar mandi sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Interior Dan Eksterior Rumah" src="https://i.pinimg.com/originals/40/e0/e4/40e0e4c0d0dda3c80881a5a816db1518.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWbc_3OURRRiDjQyFyLODp1DiATCVBW6_w3Nk2ns_qDl7GSetIKPF9kRfWoZvIgvyRAiQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagaimana denah di atas kamar tidur biasa bisa diletakkan di dekat kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Kamar Mandi Minimalis Kecil Sederhana Desain Kamar Mandi Gaya Kamar Mandi Kamar Mandi" src="https://i.pinimg.com/originals/91/13/a7/9113a712dd6784e1a9b1e9325272e1a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ65-KDjJrLElqTuU17fKmCKvvwXvpFOptBQg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Interior kamar mandi kecil sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Gandeng Dapur Desain Kamar Mandi Desain Dapur Kecil Desain" src="https://i.pinimg.com/originals/ff/d9/3d/ffd93d681ee327183823dd3106e3d2c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaY-2BOjBRWlxlYFlcWC0tDnDYdTnaV3BUHXLt-WCcscjum7fRwOFZvY2CJFJWC2AEkho';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagai tempat beraktivitas dalam menyediakan kebutuhan primer lain yaitu pangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Motif Keramik Dapur Sempit Warna Merah Dipadu Dengan Motif Keramik Dapur Hitamputih Small Kitchen Set Small Kitchen Decor Kitchen Design Small" src="https://i.pinimg.com/originals/1c/ef/c7/1cefc7f209de57109997a2477a70d6bd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMc5kAbIokrNXyXItKbbIxEFHmd4BVRV-8Rg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain kamar mandi modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Minimalis Dengan Kitchen Set Dapur Dapur Minimalis Desain" src="https://i.pinimg.com/originals/5b/bb/a4/5bbba44cd54f73d8233728ca6d33207f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuGs2ZDAeZhD3WivIKQMieGzXzZjZcUvBgjw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilih bathub yang kuat dan berkualitas baik sertakan juga tirai mandi polos untuk mencegah lantai kamar mandi sederhana milikmu menjadi terlalu licin saat dipakai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Dapur Minimalis" src="https://i.pinimg.com/originals/59/1e/32/591e322c563a99596aa9cf4053a9a893.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5EXMMa91Y6Xq-tR5Y1WAd4NJR-kh__vrYEDOn8gGPCa5rUvPNXy9TE-M2GJsqHNrWhTI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tidak hanya kamar tidur dapur juga harus memerlukan ventilasi udara seperti desain dapur sederhana satu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Carliena Maniz Di Sweet Home Desain Kamar Mandi Renovasi Kamar Mandi Kecil Desain Toilet" src="https://i.pinimg.com/originals/45/83/af/4583af88843c62a3296bcf6e44966611.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVeEjPprayy4WlROAM3vSon17nogKCVcYeDQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aspek kebersihan sangat penting jika desain dapur dan ruang makan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sink Bathroom Design Ideas Every Bathroom Remodel Begins With A Design Concept From Complete Master Ba Vintage Bathroom Decor Home Remodeling Diy Diy Remodel" src="https://i.pinimg.com/originals/db/8f/53/db8f5380a8285bc5898afbcdd72fdc83.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2d8lucyrdIaMDEorrg0CDfFjrwDI4_UWl_MFTNePIlt60YZ4-i4N8_IuDfHoW93r4f5k';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur dan kamar mandi kecil sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Impian Minimalis On Instagram Kamar Mandi Idaman Second Hiasan Kamar Mandi Ide Kamar Mandi Dekorasi Rumah Dapur" src="https://i.pinimg.com/originals/a9/3b/72/a93b72377bf9c5cf9ebfd8962f7270d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcMdrd5Z6a_G-3hZR6Fu_PFXxcObKLvrV_1GNp6BOrpo7ulocnZtLfPKknIooKPnhKeQ0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Floating shelves sangat cocok sebagai solusi praktis di ruangan kecil seperti kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Yang Berdekatan Dengan Kamar Mandi Dapur Rumah Model Dapur Desain Dapur" src="https://i.pinimg.com/originals/83/38/e0/8338e04b34c6623fe1e25b027f401d64.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMajyqtZiapsEW59mv0rDm0P1h__AzjdG87mV1QAy889sSnaNPBDXvrB3HBOh68uxeSrc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagai tempat beraktivitas dalam menyediakan kebutuhan primer lain yaitu pangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="29 Model Kamar Mandi Sederhana Minimalis Terbaru 2017 Dekor Rumah Ide Kamar Mandi Kecil Tata Letak Kamar Mandi Ide Kamar Mandi" src="https://i.pinimg.com/originals/bc/8a/dd/bc8addcfc8cde9432b1b3438da82e1f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrC7cPKtgNe7MAzQJQ30QdG3ApqfsxF2GomA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagai tempat beraktivitas dalam menyediakan kebutuhan primer lain yaitu pangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Keramik Kamar Mandi Sederhana Terbaru Kamar Mandi Minimalis Kamar Mandi Desain Kamar Mandi" src="https://i.pinimg.com/originals/d7/34/c1/d734c1c4d4ff464a0d4449bcdae2185e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWQn91-pB646ibkmmCBwXwXsYk3MizwB1WA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menggabungkan kamar mandi dengan dapur juga kadang dilakukan untuk menunjang aktivitas di dapur terutama untuk ibu rumah tangga yang mempunyai usaha rumahan dan sering memasak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcs0u7p7wiqd69stldaml7mqkkpehvasv2ujastfhmzvhryog5y5 Usqp Cau" src="/search?q=kamar+mandi+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=kamar+mandi+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Denah rumah type 36 minimalis sederhana desain 3d 2d kamar mandi minimalis ukuran 21 5 m 22 m atau 23 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Desain Kamar Mandi Jongkok Modern 2016 Desain Kamar Mandi Gaya Kamar Mandi Inspirasi Kamar Mandi" src="https://i.pinimg.com/originals/27/21/f4/2721f467f8f2eea4ca65cf24bdffe55a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTusvbWKbesiyd9ALNgb6jWckEOZDnltqLmppNywwyHvRR8n2zPW3AqdGj_p1eKeN01SGo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Akhir kata semoga Anda menikmatinya dan menemukan inspirasi akan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Dan Kamar Mandi Minimalis Design Home Appliances Architect Design" src="https://i.pinimg.com/originals/c1/49/fd/c149fd454845ef35a7c704d7fc62a0fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-v489y4YnirwMAItcR_-dmfMVYOiuG5vcbPJV6KAFZU63DDjuk_otELK6YO_MNkzYuw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>79 desain kamar mandi kecil mungil minimalis sederhana kamar mandi merupakan salah satu tempat private yang perlu anda perhatikan agar terlihat apik dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Keramik Dapur Untuk Dinding Dapur Minimalis Anda Dapur Diy Keramik Dinding Dapur Minimalis" src="https://i.pinimg.com/originals/7c/c6/a9/7cc6a92a9b92b0f932e3bce7c6c0cb9e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCp5GDlXty_CckAXMMCq_C_AMJqwglU7a-hQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah ini juga cukup fungsional karena dilengkapi dengan 2 kamar berukuran sedang ruang keluarga ruang makan dapur dan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Keramik Lantai Rumah Saat Membangun Sebuah Rumah Anda Tidak Hanya Memikirkan Tentang Bagiam Ide Kamar Mandi Ide Lantai Kamar Mandi Desain Kamar Mandi" src="https://i.pinimg.com/600x315/b2/e6/89/b2e68911d7127a0559e7e24c07ce884e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTSGEf7NWSWX57zW6BrBhk4gW-Q4U5HwsjJzjA1NCDoH8oDMLEeO3f20aGvZ7RvAjoMaU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini juga cukup fungsional karena dilengkapi dengan 2 kamar berukuran sedang ruang keluarga ruang makan dapur dan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ide Dapur" src="https://i.pinimg.com/originals/80/ca/15/80ca1520ccf4de423e2f2684c1058eb3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-45BYVaxFkzm9POYuXN_WqMQ7azh2tq3RjQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya di samping dapur panjang akan ada laundry room dan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Sederhana Dengan Bak Mandi Dekorasi Kamar Mandi Kecil Penyimpanan Di Kamar Mandi Bak Mandi" src="https://i.pinimg.com/originals/ae/56/70/ae5670dc9198500ef5a99828e2a9ec11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWr0ksPGYbwawsFisKMqijuh9XN0XOZGYbeIAcly9auqbORiqF-Vaj1iAk3i8uqEK_UY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Platinum roman dan minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Keramik Kamar Mandi Sederhana 2016 Desain Kamar Mandi Kecil Mandi" src="https://i.pinimg.com/originals/4f/21/d7/4f21d715170a7e27ba7866602f1de46a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvQgOZ0kr9kvAAWrUOwsIkF0Oj3JNJMuLMbw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar mandi sendiri merupakan salah satu aspek paling penting di rumah Anda walaupun beberapa pendapat mengatakan bahwa kamar mandi hanyalah berfungsi sebagai ruangan pendukung utama namun keberadaan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Motif Keramik Dapur Sederhana Keramik Dinding Dapur Minimalis Dapur" src="https://i.pinimg.com/originals/db/6b/73/db6b73c00d3618ce75a2f5ee68a1979a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTT4rzhJW2FcD4-u4bV_0KPVgVLyDkbQE0g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kamar mandi modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Kloset Jongkok Wc Jongkok Desain Toilet Desain Kamar Mandi Kamar Mandi Minimalis" src="https://i.pinimg.com/originals/b7/7f/84/b77f8493a710a7eb56c13e239e42a534.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMu5sHl9SxjSsaRce5rb9cZRen33tcUF7hA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika Anda sedang akan membuat rumah dan kamar mandinya buatlah kamar mandi sederhana yang membuat Anda nyaman dalam membersihkan diri saat mandi dan lain sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Keramik Dinding Dapur Keramik Dinding Kamar Diy Dekorasi Dinding Dapur" src="https://i.pinimg.com/originals/51/43/81/5143811179fe0ed654bfd070f7387211.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEIzfz-yN_AsMuzmjtpmco98eQfGvJeFm-WA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beda dari yang lain denah rumah type 45 ini menempatkan dapur dan kamar mandi di area luar yang dekat dengan taman belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Model Kamar Mandi Dengan Keramik Lantai Kamar Mandi Minimalis Kamar Diy Hiasan Kamar Mandi Lantai Shower" src="https://i.pinimg.com/originals/2d/a4/ab/2da4abb3e358207ed2b9f981ad6af993.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrXsg19prEZ6VeCgxi8YAm5Xsh-2gy6K6woX1Iq2mfAmiwFsTrWgbsD71jnkRhb7-LaY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilih bathub yang kuat dan berkualitas baik sertakan juga tirai mandi polos untuk mencegah lantai kamar mandi sederhana milikmu menjadi terlalu licin saat dipakai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Plus Dapur Rumah Desain Dapur" src="https://i.pinimg.com/originals/03/80/70/0380700395bbed67dee09e642cd5fdb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0EERlbXDiLmE5Z6trR3VnuiAToIlrC0BPB-L2Qj-Zjl-Q5e4o-HUTvW8rgTYPmj-uNfk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain karena proses pemasangan yang sederhana dan tidak terlalu memakan tempat mandi dengan shower akan lebih menghemat waktu dibandingkan dengan mandi dengan bath tub.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Minimalis Untuk Rumah Minimalis Renovasi Kamar Mandi Kecil Kamar Mandi Putih Desain Kamar Mandi" src="https://i.pinimg.com/originals/d4/e8/44/d4e844b8b839f97583eea5cf9d8290e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMe2pTTR2QwnOezaqlU5lDRlnnSUtLKe5eg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Platinum roman dan minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Keramik Kamar Mandi Sederhana 2016 Desain Kamar Mandi Modern Renovasi Kamar Mandi Kecil Kamar Mandi Modern" src="https://i.pinimg.com/originals/11/be/ce/11bece571f6563f3fe7604075fd4cb11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBE9Maozwig8E820_ozYRJuup5ci57QOafqQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Usaha yang dimaksud biasanya adalah catering yang tidak bisa meninggalkan dapur untuk lebih lama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Simple Desain Kamar Mandi Kamar Mandi Minimalis Kamar Mandi Kecil" src="https://i.pinimg.com/originals/fa/e5/67/fae567c6bd3f2bfe109e6dfad1c2e2cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm5rQDHc0rypmfkRWCFpjy6ONNgafN57sxdQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dipadukan dengan kombinasi motif batu alam dengan latar gelap menjadikan kamar mandi anda akan terkesan sederhana dan tetap gagah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Desain Kamar Mandi Minimalis Sederhana Terbaru 2019 Rumahpedia Ide Kamar Mandi Desain Ruang Makan Desain Dapur Luar Ruangan" src="https://i.pinimg.com/474x/6b/91/52/6b9152c1216b6342cc4ec9fb4e71cd1e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGpUChSIidPgIsUnsFDFQWYnUBBFTaggtaAbW9fOAmBe9M6qGYHkRz4rbjwMR49bzHz8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bathtub di kamar mandi sederhana mengapa tidak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wikana Architects" src="https://i.pinimg.com/originals/52/87/f5/5287f584d74dc67d06a70a9ae213bb31.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUHFfrcDS2UK12PHARD27Tsg58fCqhJ0u6Bw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar mandi sendiri merupakan salah satu aspek paling penting di rumah Anda walaupun beberapa pendapat mengatakan bahwa kamar mandi hanyalah berfungsi sebagai ruangan pendukung utama namun keberadaan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Dapur Minimalis Modern Bikin Rumah Makin Kece Dapur Rumah Dekorasi Dapur Kecil Desain Dapur" src="https://i.pinimg.com/originals/94/d4/71/94d4711760b42e4ea31ecb9c9b48ee61.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTe7TNQFLa6OIGHUuKX0_aZ1SlVGfpjIAYo8M3zWV5A9-5S2pVeFl7gS6pP00PEFWRRA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>To download and obtain the Desain Kamar Mandi Dan Dapur Sederhana images by click the download button below to get multiple high-resversions.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Mandi Minimalis Ukuran 1x2 Kamar Mandi Minimalis Kamar Mandi Hijau Hiasan Kamar Mandi" src="https://i.pinimg.com/originals/8b/4f/fe/8b4ffeeb32f80c1809cc5565929ba8b7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSJ-0ZgM-wDyHZbhOOXaL-s2dBSaWNdNlZ9Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis modern 2012 minimalis design com design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh My Xl Di Dapur Model Dapur Desain Dapur Kecil Desain Dapur" src="https://i.pinimg.com/originals/f5/c8/0d/f5c80d3e72fbc8b484b13474801ca853.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWvfHfgbQ90yJGT-tqwFD_t-p9iGwbvtKXg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Seperti ruang tamu kamar tidur kamar mandi dapur dan sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Dan Dapur Sederhana Dekorasi Dinding Kamar Mandi Hotel Desain Desain Dapur" src="https://i.pinimg.com/originals/22/ab/4f/22ab4f94016877d163dc088ab79225f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4rEW37LaWJuik22g9g1Q2o4rdMNPbP6FMCnJPUoRtzT2Og1E8ladNYeueTiOhl94WN4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Floating shelves sangat cocok sebagai solusi praktis di ruangan kecil seperti kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Motif Dan Model Keramik Kamar Mandi Ngetren Kamar Mandi Minimalis Desain Kamar Mandi Kamar Mandi" src="https://i.pinimg.com/originals/c0/23/bf/c023bfb1d578d06d334a2d40847b4ff6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCMI3POvpz99gP72ehIujnRxlKr6Co1b1HA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Gambar Desain Dapur Dan Kamar Mandi Images.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/736x/b6/42/59/b6425942a92ed5c9f26a50572a44c574.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMoRJ33xbBrB6ts272-IV9DccIU7_GUHnqwA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kamar mandi modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Inspiring Bathroom Design Ideas Bohobathroom 2019 Pallet Ideas Minimalist Bathroom Design Bathroom Trends Minimalist Bathroom" src="https://i.pinimg.com/474x/22/90/60/229060d6a12336a28419556b77a1d634.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnu2h8I_HnYaoh4d6tGDAHOreU27h35-pdw';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Warna putih sangat cocok untuk memaksimalkan potensi kamar mandi sederhana dan membuatnya terlihat luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Unik Desain Kamar Mandi Minimalis Kecil Mungil Modern Kamar Mandi Minimalis Jongkok 2x2 Murah Terbaru Gaya Kamar Mandi Desain Toilet Ide Kamar Mandi" src="https://i.pinimg.com/originals/2d/9a/c9/2d9ac9230129debcdfd297235019720c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj6SX-a4--cWg_xJ8yioqwRfoAZbt7vs9AMmkfwz8fleIpIcWdKUSRMQSlLVmDZEr3uDo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika anda orang yang menyukai konsep vintage namun tetap ingin memiliki kamar mandi yang terkesan bersih memilih keramik talavera ragam warna dan motif menjadi pilihan tepat.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/model-pilar-rumah-minimalis.html"><i>&larr; model pilar rumah minimalis</i></a>
+                                                                    
+                                        <a href="/model-pintu-depan-rumah-modern.html"><i>model pintu depan rumah modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

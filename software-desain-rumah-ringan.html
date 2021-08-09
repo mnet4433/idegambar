@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Software Desain Rumah Ringan
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Software Desain Rumah Ringan",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/e4/01/ec/e401ecf0fc81a7b86a46e2f2897c4046.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=software+desain+rumah+ringan",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Software Desain Rumah Ringan
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Software Desain Rumah Ringan</strong>. Sangat cocok untuk pemula karena progamnya mudah untuk dipelajari. Dengan adanya kemudahan yang ditawarkan software ini bisa juga digunakan oleh para arsitektur pemula.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/564x/32/c8/ce/32c8cee312f2eacded20b6bf5150a75a.jpg" alt="Lemari Minimalis Paling Laris Membuat Lemari Tas Baja Ringan How To Make A Bag Wardrobe Youtube Di 2021 Pembuatan Lemari Lemari Baja" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuR2WgVhGg_oT6i7kzLtVgJdX_VdaXMqJYg';">
+        <figcaption>Lemari Minimalis Paling Laris Membuat Lemari Tas Baja Ringan How To Make A Bag Wardrobe Youtube Di 2021 Pembuatan Lemari Lemari Baja from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Keunggulan utama yang difokuskan pada aplikasi ini adalah penggunannya yang mudah. Juga aplikasi ini bisa berjalan di berbagai OS seperti Linux Windows dan MAC. 1 Software Desain Rumah Terbaik 2021.
+    </p>
+    <h3>Virtual Architect Ultimate Home Design.</h3>
+    <p>Aplikasi desain rumah selanjutnya yaitu MyVirtualHome merupakan software desain yang berkualitas dan kaya akan fitur untuk merancang bangunan berbentuk 3D dan rumah. Software ini tersedia secara gratis Anda bisa bebas mendownloadnya dengan support OS Windows Mac dan juga Linux. Sangat cocok untuk pemula karena progamnya mudah untuk dipelajari. Roomstyler 3D Home Planner ini adalah software desain rumah gratis terbaik yang dapat diakses secara online.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Minimalist Home Modern Minimalist House House Design" src="https://i.pinimg.com/originals/eb/78/0e/eb780e51f2526bb8f0ee0015f1fa6fe2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB7wk6G_6DYsjQ1pQy3XhZP2oni2FwVmtAg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Roomstyler 3D Home Planner.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lemari Minimalis Paling Laris Membuat Lemari Tas Baja Ringan How To Make A Bag Wardrobe Youtube Di 2021 Pembuatan Lemari Lemari Baja" src="https://i.pinimg.com/564x/32/c8/ce/32c8cee312f2eacded20b6bf5150a75a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuR2WgVhGg_oT6i7kzLtVgJdX_VdaXMqJYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tidak puas dengan tampilan 3D anda bisa mencoba Planner 5D untuk mendesain ruangan rumah anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konstruksi Baja Gudang Lapangan Futsal Desain Rumah Minimalis Arsitektur Lanskap Desain Gudang" src="https://i.pinimg.com/originals/a3/d5/c9/a3d5c993e1bef83671cc9b978ac38ae2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4xxHb1YEn81O98E6dES8qZbPmogNoiGLi0g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DreamPlan adalah aplikasi desain rumah yang sangat digunakan baik untuk membangun rumah berukuran kecil ataupun besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Cantik Rumah Minimalis Dekorasi Minimalis Desain Rumah" src="https://i.pinimg.com/originals/53/f0/c3/53f0c36e52c3bf66ce74a26b54b5a06a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxd9MJIQNUoemTQp_fRN9hPsKeGYnP5RWsxfguw-Bbu8K5nsCGH3Kd4P_hisPiH6b9vQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>3 Rekomendasi Aplikasi Paling Baik untuk Desain Rumah PC dan Laptop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Rumah Tinggal Type 50 Autocad Membangun Rumah Arsitektur" src="https://i.pinimg.com/originals/0a/1a/06/0a1a06ddcb5b3d40065c5fc391ccc773.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhzfuQ6aRj7di9KHk_pOBfjhlGICwlvM5x1CgyZg9QFORIejXMKGFIGgl4KFsWz6Cgdg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Keunggulan utama yang difokuskan pada aplikasi ini adalah penggunannya yang mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Rangka Atap Baja Ringan Bangunan Sekolah Atap Bangunan Teknik Sipil" src="https://i.pinimg.com/originals/58/03/9a/58039a76e76e778335c2c73dc3eb4729.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRpTf_PkcZQa_5Uh5jDm-nPG44lMOBa3fxPMecvwz_l9Ff3yGBuaxCnWiA-Rtnrep9_iU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sangat cocok untuk pemula karena progamnya mudah untuk dipelajari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Resep Wajib Coba Minggu Ini Variasi Hidangan Tahu Mulai Dari Ekado Tahu Hingga Pepes Tahu Daun Kemangi Tanaman Dalam Ruangan Es Kopi Makanan Ringan Sehat" src="https://i.pinimg.com/originals/03/3b/80/033b80f4b3ba58063065f982966cde8b.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZy9RbjpT4NlDVbcpTopgYrgkDsGVLp870XA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan aplikasi ini anda dapat mendesain bangunan rumah anda secara online dalam bentuk 2D dan 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warna Cat Rumah Minimalis Tampak Depan Desain Rumah Eksterior Eksterior Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/d6/04/ac/d604acce3bd68142cf5ab511dcfcb227.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu__GlK-FhBiSlzfXbW8ma3PKqhKj1if11eg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Software Gratis Desain Rumah 3D Sebaiknya sebelum membuat rancangan bangunan rumah secara nyata real Anda tuangkan dulu ide pemikirannya untuk membuat rancangan bangunan secara virtual.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Arsitek Online Untuk Mendesain Cafe Atau Kedai Kopi Kedai Kopi Desain Kopi" src="https://i.pinimg.com/originals/b2/b7/24/b2b724ffea28b5b43f273bd628602db2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHRYUkxB5luDxl4MGm1XCRkCTn_jtWXfOS8A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Keunggulan utama yang difokuskan pada aplikasi ini adalah penggunannya yang mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tukang Bangun Rumah Surabaya Tukang Bangunan Rumah Di Surabaya Jasa Tukang Renovasi Rumah Surabaya Tukang Renovasi Rumah Di Surab Renovasi Rumah Rumah Bangunan" src="https://i.pinimg.com/originals/d6/82/d5/d682d584ab113db9eec171818c45a98c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdNLfLouqg_O1nB8xFvuGzuPKkSalU0k8Ybw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tidak puas dengan tampilan 3D anda bisa mencoba Planner 5D untuk mendesain ruangan rumah anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Android Kiospulsamurah Com Aplikasi Android Kios Aplikasi" src="https://i.pinimg.com/originals/3b/5a/14/3b5a1488c3eb8fb001cf84cf1d137229.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRey0juM_jpmPOglCyxWbPPgc1k-HSIIFXb9w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain software rumah yang akan membantu Anda memepermudah dalam perancangan rumah idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Idaman Satu Lantai Minimalist House Design House Styles House Design" src="https://i.pinimg.com/originals/a9/01/6b/a9016b70ed3811ed7fc3341b7f721788.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsWouwIo3bhlIUrmQ4NqUaR77ZiZEsvRVfg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Seringkali juga digunakan untuk membuat denah rumah dengan model 3D lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Aplikasi" src="https://i.pinimg.com/564x/e5/7b/d6/e57bd693b9eedb9707815f735327b3fd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThm_0UceByCZsXtmnUY_tXLyRyR0BeqL6xsw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Keunggulan utama yang difokuskan pada aplikasi ini adalah penggunannya yang mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="43 Emulator Android Ringan Untuk Pc Laptop Emulator Android Ringan Untuk Pc Laptop Android Laptop Aplikasi" src="https://i.pinimg.com/600x315/f4/7d/f3/f47df3694638767d24e44e5e3a305974.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGXKbDV6g6honGhXHljq1kTn-Zdt9Ek1IpHw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu Software Desain Rumah ini menawarkan berbagai fitur otomatis yang dapat memudahkan pengguna untuk mendesain bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Konstruksi Atap Miring Limasan Kubah Masjid Desain Rumah Minimalis Desain Atap" src="https://i.pinimg.com/originals/1d/6e/62/1d6e6218609a9a0474be3d0b6021478c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMWGKonwcbJhCMMA2sxhzRjx0s0aL6TCuClfaaLHqZ7FKiDmaYOkdSGGfgS4i_pz9nek';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini juga tersedia versi mobile yang dapat dijalankan baik menggunakan Android atau iPhone.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Warna Eksterior Rumah Warna Cat Untuk Rumah Rumah Minimalis" src="https://i.pinimg.com/736x/c3/20/95/c320950f15e3b999bd9999a5a5ffb257.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3_lCpFV0i34Ti2aEyVnpOWlPddFnr3owf8jkp8UZqYZLzLNsn70TcKl9omJkSYvdNRFo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kemungkinan kamu bisa memilih software Energy3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teknis Kerja Pemasangan Baja Ringan Atap Rumah Proyek Sipil Gambar Teknik Baja Atap" src="https://i.pinimg.com/originals/d5/44/35/d54435610679e598fda27400eed9ce2f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZIam1hRm35n3HpqLqRmRUcRKcJJkNDaAT-qBeDUdppRZpDcPVwZtD5dyZniQnxlJBWHU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Software desain rumah ini bisa kamu dapatkan secara gratis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Struktur Dan Kelebihan Konstruksi Baja Ringan Teknik Sipil Gambar Arsitektur Gambar Teknik" src="https://i.pinimg.com/originals/18/57/d8/1857d874a016e60dc85f2ef56912b28a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk5ZI3smlVTWBEUTfMf5-NUZ8Q-xS0IFZWnF3wrPnJv4w_q9T6f31LPB8QsipKykjI9nc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini juga tersedia versi mobile yang dapat dijalankan baik menggunakan Android atau iPhone.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Denah Rumah 3 Kamar Tidur 1 Mushola Kenapa Tidak Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/a4/9b/61/a49b61f8a4699e6c7ccdde202cb8e54e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzT10iAnuUg-Ufn6L3gTSWZTdBvVnSmh76FEljP7_f-3gZ5PYwQK3E99QMCAu2s_oT1OM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu Software Desain Rumah ini menawarkan berbagai fitur otomatis yang dapat memudahkan pengguna untuk mendesain bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/736x/18/d4/d2/18d4d253df83670620bd9f0172a101bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiPkvxtK7Uat8KaBJz5QTSIsFEnn99YzD598KliDQM783SdSVV2WERoH6T8DsMGdSofjY';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Selain itu software ini gratis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Rangka Atap Baja Ringan File Dwg Atap Gambar Kota Desain" src="https://i.pinimg.com/736x/b5/f4/63/b5f463549f0a13332b9be568716ef55d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXZwluFbNjTGzLYo-7jqKG_u3NMh_Le3YifA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk info selengkapnya kunjungi link ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="43 Emulator Android Ringan Untuk Pc Laptop Emulator Android Ringan Untuk Pc Laptop Android Laptop Aplikasi" src="https://i.pinimg.com/474x/f4/7d/f3/f47df3694638767d24e44e5e3a305974.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbVNsk7Z2gKBGI0Y5iVFBR7ZQPZ3cXNoRjkUqsbIiplcG09ShnVukypAkZ4BE8ZpVEteY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Software ini tersedia secara gratis Anda bisa bebas mendownloadnya dengan support OS Windows Mac dan juga Linux.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Terbaru Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/b9/d8/c1/b9d8c147851bb633b00047abed8d8a51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVdYy7ahIDC_Orb-LZIre0EUEgY8dUJWX1SQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kalau sedang mencari software desain rumah untuk MacBook atau Mac Anda bisa mengandalkan TurboFloorPlan Home Landscape Pro 2019.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Megatruss Global Architecs Engineer Baja Ringan Plafon Gambar Rumah Minimalis Pali Kamar Tidur Minimalis Kecil Dekorasi Minimalis Ruang Keluarga Minimalis" src="https://i.pinimg.com/originals/92/c7/29/92c72940e787e29f5308ed292cc5fc00.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNRSyGIAHwhB8zPHG4Vik5Vcfk8YbC2Nvvzw';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Di sini kamu bisa merancang rumah baik secara 2D atau 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=konstruksi+atap+miring+satu+sisi&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=konstruksi+atap+miring+satu+sisi&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Untuk Anda yang ingin mendownload DreamPlan bisa di sini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Membangun Rumah Tahap 9 Gambar Kerja Ded Arsitag Desain Rumah Minimalis Desain Rumah Membangun Rumah" src="https://i.pinimg.com/originals/df/34/2f/df342f22db27eeca234d605406c66ac5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4IUg16RMn1-LRYTU1VQ7pl25SDO5kyYB9s4tftiZZvKGOx2Uu-IFAml9fGWBtlNwNInY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Roomstyler 3D Home Planner ini adalah software desain rumah gratis terbaik yang dapat diakses secara online.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Beli Rumah Murah Cari Rumah Cari Rumah Bersubsidi Cari Rumah Dan Properti Cari Rumah Di Malang Cari Rumah Dijual Cari Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/77/1b/1e/771b1ee434a9cccf592a5947caeda059.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTMxG1H-Y4AHIcVGxk-TW0twRtsoY6PJr5Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tidak heran aplikasi ini sangat mudah digunakan dan cocok untuk pemula yang baru terjun dalam dunia desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Jembatan File Sketchup Untuk Desain Arsitektur Desain Arsitektur Arsitektur Jembatan" src="https://i.pinimg.com/736x/0d/1f/29/0d1f2996b2f1e2417a3fc1fc2bfa4ca1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZlvjATRlb73dl3LI5G-PmsyDLU-mhw8t-1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Roomstyler 3D Home Planner.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konstruksi Baja Wf Bogor Rangka Atap Baja Ringan Di Bogor Desain Rumah Minimalis Atap Baja" src="https://i.pinimg.com/originals/15/80/63/158063f4d454bd08eef18789799ca721.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiSLwljt5jME5sVVcwa6lD8GNTwUYyJ2mmw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Walaupun gratisan namuan fitur yang ditawarkan sangatlah banyak sekali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Plant Vines Skecthup Tanaman Rambat Tanaman Desain" src="https://i.pinimg.com/originals/a2/75/aa/a275aa87ef05f72dc1dabe6d5b717f48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bw-ern8JMnNYHGeovGAQtyonpkGRU1Pchccv-chgVPRLHMQftApr2lIpO6zvHXiqlic';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seringkali juga digunakan untuk membuat denah rumah dengan model 3D lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Software Desain Rumah Terbaik Untuk Pc Saat Ini Desain Rumah Desain Rumah Impian" src="https://i.pinimg.com/originals/94/31/22/9431229650b592f2053c69fc1fc67c36.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy7gZsC1n1-L0o1sPy1NOGWXUiBz5LaByQnLfz5vCBf64cCVHy45exg19bHi-3AoB6dTE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seringkali juga digunakan untuk membuat denah rumah dengan model 3D lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Kanopi Baja Ringan Tanpa Tiang Khusus Pemula Belajar Bajaringan Pemula Youtube Kanopi Sketsa Arsitektur Arsitektur" src="https://i.pinimg.com/564x/20/b4/62/20b462c788d8d0b1d29e4cc0cbc3b44b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjfvKDYvyZb4YfxC9zIKQxtcfhhgTwzOmM2l2I5xgQCP-un9K7t4294WqhBOjBrtzafM4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar yang dihasilkan hanya sebatas sketsa desain saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Coreldraw X2 Portable Gratis Link Google Drive Aplikasi Ini Akan Membantu Desainer Grafis Untuk Membuat Tanda Perangkat Lunak Aplikasi Desainer Grafis" src="https://i.pinimg.com/originals/d0/0f/3a/d00f3ae6911022e292462535db1e775f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2fryGYGMjI2TEARz5O8SUgaCAeovMtzeIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk info selengkapnya kunjungi link ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Aplikasi Jadwal Imsak Android Terbaik Aplikasi Android Aplikasi Android" src="https://i.pinimg.com/736x/ac/97/9e/ac979effe1ed9a658e643d59dd376eb7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSesoE6zyqDQincGYL-pYM4YrNo5qgM_JKNdw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tidak heran aplikasi ini sangat mudah digunakan dan cocok untuk pemula yang baru terjun dalam dunia desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Taman Asri Bojong Kulur 15 Menit Dari Tol Jatiasih Spek Pondasi Batu Kali Dinding Bata Ringan Lantai Homogenous Ti Rumah Minimalis Rumah Jendela" src="https://i.pinimg.com/originals/e4/01/ec/e401ecf0fc81a7b86a46e2f2897c4046.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3FBbnWsIC6iUSvDGp1d5LuzsFawhn3QbnOg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Software desain rumah ini bisa kamu dapatkan secara gratis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Home Decor" src="https://i.pinimg.com/originals/9d/e7/49/9de749b0643a070f171d45785e99deb7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP74Oux3ATA_SlPm9KK9xJp7KWGGi1ueBzKurfN2nGNyNUhy4UgCjAi6HS1bPSy-Ecrj4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar yang dihasilkan hanya sebatas sketsa desain saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Dasar Pembangunan Rumah Tahan Gempa Home Design And Ideas" src="https://i.pinimg.com/originals/69/a9/e5/69a9e57c1dc95191d01478cb474b4342.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgR5UO5xaix37B-y_iO4iKey3_IXyBQy1-BA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Juga aplikasi ini bisa berjalan di berbagai OS seperti Linux Windows dan MAC.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Bangun Rumah 30 Juta Saja Dijamin Jadi Dan Indah Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/1d/eb/b1/1debb1341763ddaf8f8a6d60a6c8410d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqeFkgkUa5XdR0aHA_0dMEkaWk55IlDFJiXG__XQYIJEkOb7Vh-fgmiiWAR32pa1kgb3o';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Salah satu keunggulan software ini adalah berkat adanya fitur yang dapat membantu kamu mewujudkan desain rumah secara virtual didukung dengan visualisasi 2D maupun 3D serta perkiraan biaya serta bahan yang akan digunakan untuk membangun desain yang sudah kamu rancang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Denah Detail Dan Potongan Car Lift File Dwg Passenger Motor Listrik" src="https://i.pinimg.com/736x/fc/7a/ea/fc7aea054007a9ffa37afe49d1024784.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQix_Zq16Ifki6HmyH2N3llgURD2_CWzr5uMA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain untuk menciptakan desain rumah minimalis Planner 5D juga berguna sekali untuk mendesain bangunan yang ingin di renovasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Tempat Bakar Ikan Desain Kreatif Ikan" src="https://i.pinimg.com/originals/67/6d/68/676d68f564b978ed9f76f2592333967d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnt64JKTJA8NwOkufOH2pXzlNfrGPz-qnTg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Satu lagi software desain rumah yang dapat kita gunakan secara online yaitu Homesyler.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bagaimana Cara Mengukur Jarak Kuda Kuda Baja Ringan Dengan Standar Harga Hemat Dan Proporsional Renovasi Ide Pengukur Jarak" src="https://i.pinimg.com/originals/55/81/f4/5581f4df017ca140dccac0361009af43.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr4jd1UTqAkmsz5E9iVUl-f28eY8pGu7G1QkqIO5bafuqRMxPnVl1jQ9lPCwHZHmorGLA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bila dibandingkan dengan aplikasi desain rumah di pc lainnya TurboFloorPlan 3D Pro inimerupakan aplikasi yang paling mudah dalam penggunaannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Atap Spandek Limasan Kubah Enamel Teflon Desain Rumah Minimalis Desain Atap Atap" src="https://i.pinimg.com/originals/d2/ec/bc/d2ecbcdf19a336db8b0a9d7f598fb9b2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTdMwRzq3GKPEJ7PWP3oKKWtpD7KXbCzH3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dukungan lebih dari 4700 objek berupa furnitur perabotan perlengkapan kamar mandi pintu peralatan jendela lampu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di All New Pryda Products" src="https://i.pinimg.com/originals/ff/2a/de/ff2ade452b6804518d7ac4ecf630f04b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlrXI4snf50d7nYex7jtlyABUv5co8-nY7Sd1Sn9H7i9nBLynbKq9FQDT_H0beZc7SdGc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ArchiCAD dikenal sebagai aplikasi desain rumah PC ringan All in one karena sangat cocok digunakan bagi pemula.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mengganti Icon Dan Nama Aplikasi Android Tanpa Oprek Apk Aplikasi Android Coding Ikon Gratis" src="https://i.pinimg.com/736x/c0/08/f5/c008f5e95df6f784ee8354bb0aa77bda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNOX3JqpZQNQiKNzt2m5GXn6-Lba9sAHoYBw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mungkin masih banyak juga yang belum tahu bahwa Google juga memiliki aplikasi desain rumah yang dinamakan Google Sketchup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/736x/49/ca/f7/49caf7f6dcbb6d337ba0b34b801bb4cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI5xnjE8SE-ybXv7MyhdH2HEBpqX_-R8p3i5C4IwWTPXSCcpzuO9FQY_75R_70iDLjfkE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DreamPlan adalah aplikasi desain rumah yang sangat digunakan baik untuk membangun rumah berukuran kecil ataupun besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/564x/41/d8/25/41d8253a58c3589faa609caa6ee55dfa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXxmyLx37HZyAVCTqNNM2ulSb1seGMT1M6DqRPjY-pC4hW1Ei4wYeJCkAnUgtk7_aElSw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu software ini gratis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqwi9tllht1dbx5mxgcc9600g Hpe7l4wqqqgpy Pdydron7aqt Usqp Cau" src="/search?q=detail+kuda+kuda+baja+ringan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=detail+kuda+kuda+baja+ringan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Virtual Architect Ultimate Home Design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampilan Software Karaoke Top Home Series Pilihan Terbaik Bagi Anda Yang Ingin Menghadirkan Software Karaoke Pribadi Di Tengah Kehangata Karaoke Aplikasi Lagu" src="https://i.pinimg.com/originals/c3/19/7a/c3197ad85cd60c8c43612ff51238e873.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1agJVG79xV-DXMq-TMjpJdS7ZHtJyP7dVg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi desain rumah dikemas dengan banyak fitur dan alat untuk mempercepat proses perancangan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0812 9162 6105 Fortress Jual Pintu Baja Ringan Pandeglang Di 2020 Kayu Alami Rumah Minimalis Rumah Modern" src="https://i.pinimg.com/originals/2c/74/7d/2c747d09aa292de092085eb12460432d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3y29NOhpC52M9JI2L49Nqic7xaV93pteT1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mungkin masih banyak juga yang belum tahu bahwa Google juga memiliki aplikasi desain rumah yang dinamakan Google Sketchup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Kerja Desain Gedung Olah Raga Struktur Baja Argajogja S Blog Gedung Desain Gambar Teknik" src="https://i.pinimg.com/originals/67/0e/c7/670ec7e6aca06093be1059ecdb6a4745.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKcTKrsLn3p4MRtw0MKSZA0_NU0ISGLN0X7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan adanya kemudahan yang ditawarkan software ini bisa juga digunakan oleh para arsitektur pemula.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-minimalis-type-58.html"><i>&larr; rumah minimalis type 58</i></a>
+                                                                    
+                                        <a href="/rumah-minimalis-terbaru-tahun-2020.html"><i>rumah minimalis terbaru tahun 2020 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Korea Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Korea Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/a5/50/00/a55000b427cfe42a44aefcb330af53b8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+korea+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Korea Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Korea Sederhana</strong>. Plus biaya perawatan pun akan jauh lebih. Sebab banyak sekali keuntungan membangun tempat tinggal minimalis.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/69/5e/33/695e33a88ff87d021b9943215317c884.jpg" alt="Kumpulan Desain Rumah Minimalis 6x12 3 Kamar 3d Kumpulan Denah Rumah Sederhana 3 Kamar Tidur Denah Rumah High Quality Wallpapers Floor Plans Desktop Pictures" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-Tu-t9LngXWLQuTcCoZrW4MsTHgSwokMUg';">
+        <figcaption>Kumpulan Desain Rumah Minimalis 6x12 3 Kamar 3d Kumpulan Denah Rumah Sederhana 3 Kamar Tidur Denah Rumah High Quality Wallpapers Floor Plans Desktop Pictures from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru. Selain itu tampak dari sisi dinding-dindingnya juga didesain dari kayu. Kayu-kayuan tidak pernah salah untuk membangun rumah Korea impianmu.
+    </p>
+    <h3>Desain Rumah Ala Korea Rumah Terkini Jika anda sedang mencari desain rumah ala korea anda telah datang disitus yang tepat sekali Kami memiliki 31 ide dan inspirasi tentang desain rumah ala korea meliputi gambar desain model rancangan dekorasi layout arsitektur dan banyak lain Di halaman ini Desain Rumah Korea Sederhana.</h3>
+    <p>Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru. Pengaruh budaya Korea ternyata tidak hanya pada industri hiburan tetapi juga merambah pada industri fashion kecantikan makanan dan minuman dan desain interiorBagi kamu pecinta drama Korea pastinya sering melihat tampilan desain kamar tidur sederhana ala Korea yang manis dan nyaman. Jenis rumah Korea yang satu ini memiliki tampilan yang cukup elegan meski berada di tengah hutan. Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Rumah Ala Korea 33 Gambar Desain Rumah Minimalis Korea Yang Belum Banyak Desain Rumah Mewah 2 Lantai Dan Biay Rumah Membangun Rumah Desain Produk" src="https://i.pinimg.com/564x/98/1b/72/981b7231f3a2dab0a656e4de3e40cd4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkb6pwMU54T-bDUZXiEY_yfexg4_4wgqNuFPD-9TcJkLD5ap7BPeZuH4t4f_ecLizOetM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamu tidak perlu menggunakan ornamen yang berlebihan agar rumah Korea kamu tidak terasa semakin sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Desain Interior Rumah Minimalis Low Budget Desain Interior Rumah Minimalis Lantai 2 Rumah Minimalis Rumah Arsitek" src="https://i.pinimg.com/originals/12/25/92/12259266d9f90f215f6121c2062e0044.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHD4B7Tvp4hz4piXz3MEhd8kxSLK_mfUFnbg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Contoh Gambar Desain Rumah Kost Minimalis Sederhana Desain Rumah Desain Desain Arsitektur" src="https://i.pinimg.com/originals/92/6e/1b/926e1bbfa5a6dc5d9dd1988c66e150be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOcizfJurLWaRAUVIUKIJ0gf6-_Wgnv2qqkXts72BXk5cBDaVrT0GFWWB2LOd6orL00uA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Sederhana di Korea Selatan Simpel tapi terlihat 25 06 2019 Rumah Korea Modern Tidak Perlu Besar via architecturestyle net Rumah Korea umumnya dirancang di lahan yang tidak terlalu besar Dan hanya terdiri dari 1 atau 2 lantai saja Rumah Korea memanfaatkan struktur tinggi rumah satu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Bagus Sederhana Gambar Rumah Bagus Sederhana Motif Karpet Lantai Ruang Tamu Rumah 75 Model Rumah Minimalis Home Fashion Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/69/39/37/693937cb2202f641bbdec966d693e542.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKi1Flmt9SX0_DqTOrRuZvOIndBrtAX9Skw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Banyak sekali yang diikuti dari gaya ala orang korea mulai dari drama fashion bahkan sampai rumah pun sangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Desain Interior Rumah Minimalis Atap Miring Desain Interior Rumah Asri Minimalis Desain Interior Rumah Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/c2/50/3f/c2503fa9cf75bfbd9ab18a42ab76f4cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7D6nrnRyOrQqM9jKlxKDV_xeKTudM7Hz2h5EFPu58Uva_oTdWjyJQwTBZ3YZYLvJPDg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Plus biaya perawatan pun akan jauh lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Contoh Gambar Desain Rumah Kost Minimalis Sederhana Desain Kamar Hotel Renovasi Rumah Rumah" src="https://i.pinimg.com/originals/51/d8/85/51d885c5e2f18bb80aae7f3f5ccad8d5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCtAly8ABtNz3AKY8r6KzcdB3UxgitKrm6bA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Plus biaya perawatan pun akan jauh lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="108 Denah Rumah Minimalis Korea Gambar Desain Rumah Minimalis 63 Desain Rumah Minimalis Ala Kore Minimalist House Design Architect Design Trendy Living Rooms" src="https://i.pinimg.com/originals/8e/97/3e/8e973e4cdd4c3b186ce99254d7e69dbd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZDe8eiGDniQyFZtB09jPSBAxXlpJLqn89a5owLadgRCXaOBoRDYDjwuAq9KiIkC6P3AM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Desain Interior Rumah Minimalis Luas Tanah 100m Arsitek Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/fe/ce/34/fece3417092e96baa14b19a113657150.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmzTa3hHTNLQo8kTY8ynNKBXphR4KL1SQtQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di kalangan generasi milenial rumah minimalis sederhana kini semakin banyak digemari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/736x/3b/53/e2/3b53e2ab436276939daf4658ee285794.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIvGkrJnKtJf6VJrsnq0rMtdNtO5fRvxdgow';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada berbagai pilihan rumah sederhana dengan desainnya yang indah serta menawan untuk diwujudkan sebagai hunian seseorang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Ide Denah Desain Rumah Terbaik Di Pinterest Denah Rumah Arsitektur Rumah Minimalis Desain Eksterior" src="https://i.pinimg.com/originals/30/0f/f1/300ff1097cbe2627a4f299dfbfd6b6c9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKS9NPWv4ec-TxEIcTDz6_iR9dnm0v6KAT4g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut kami sajikan beberapa contoh desain rumah minimalis 2 lantai ala korea yang bisa Anda jadikan referensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/cd/15/8c/cd158c937f44a295008ada24dfacdef0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgAsazCqHMRgsYF6xM9_TErMYEajZO52QRMQAdJVVRIHBfaV1UMDvI85SM0g5wqJnGeY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada berbagai pilihan rumah sederhana dengan desainnya yang indah serta menawan untuk diwujudkan sebagai hunian seseorang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3 Petak Desain Rumah Modern Desain Rumah Kecil Desain Rumah" src="https://i.pinimg.com/originals/5e/46/06/5e4606ffc9fbc8846f91a476d3d1450f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHL6rjUKKWWm9_iPaOrFJz_In8sw1L_4HSMuSLqYuLsbLFpSKvEZrYQv1lN4_bvhHxR4c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis korea selatan rumah yang begitu sederhana seperti paparan yang kita ulas dibawah ini adalah konsep rumah serta model yang sederhana dan di bangun oleh tukang biasanya yang punya rumah dan model nggak banyak mempunyai referensi buat merancang hunian serta type tapi jangan keliru sebab tempat tinggal dan desain yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Gambar Arsitek Untuk Imb Jasa Gambar Imb Jasa Gambar Imb Jakarta Jasa G Arsitek Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/d5/a4/d3/d5a4d3d7edae10002f847c2066d95af0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrdx54qx5-w3k5kXPl3V3cqbFgMaSWc6xspA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilihlah material dengan finishing yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Gambaran Mendesain Rumah Ala Korea Rumah Minimalis Sederhana 2016 Arsitektur Modern Arsitektur Rumah Dari Batu" src="https://i.pinimg.com/originals/1a/00/29/1a0029578535e48716853d9e8cb384c7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ke-6VSvr__3mmXQOG0a3x7RTZRczNn8Sjmi5O2ZTKupyXPdsFk8ru0zdA-3ts8Gm9ZI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pilihlah material dengan finishing yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kontrakan Minimalis 2 Lantai Desain Kamar Hotel Desain Depan Rumah Desain" src="https://i.pinimg.com/originals/e5/0e/e5/e50ee5b5b5c6b6d538bded34d87dc7bc.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU-CQXnDwpWazxblXkh5HiDEYxfIlwwNyRxg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentunya gambar di atas hanya menjadi sebuah referensi bagi Anda dalam mendesain interior rumah ala Korea.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost 2 Lantai Terbaru Cat Rumah Minimalis Rumah Desain Desain Rumah" src="https://i.pinimg.com/564x/38/5a/3b/385a3b7bc43bfdca02ae59458767350d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6anHpymXSizdgO03dn4BcAjJ8ZNuQz4rq4g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Ala Korea Rumah Terkini Jika anda sedang mencari desain rumah ala korea anda telah datang disitus yang tepat sekali Kami memiliki 31 ide dan inspirasi tentang desain rumah ala korea meliputi gambar desain model rancangan dekorasi layout arsitektur dan banyak lain Di halaman ini Desain Rumah Korea Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mzu Official 552872 Views Berisi Informasi Tentang Gambar Contoh Model Teras Rumah Minimalis Modern Mewah Sederhana House Styles High Quality Wallpapers House" src="https://i.pinimg.com/originals/a5/50/00/a55000b427cfe42a44aefcb330af53b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2MS8ekGeRwnTn891hcS0xKL-NPJXmQ_2kmW2uHe_B505V8lof2XGz-Y0YAoA9F3yahZI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain karena hemat tempat pembangunan landed house minimalis sederhana membutuhkan dana yang lebih rendah dibandingkan dengan hunian mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Desain Rumah Minimalis Di Solo Jasa Desain Rumah Minimalis Depok Jasa Desa Desain Rumah Renovasi Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/8c/1d/5f/8c1d5ffb5ed7c19dab313ba8e9cab621.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQllNMfIxSnCfRM1jgBMrAkTVFFhZb7etGaJg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pengaruh budaya Korea ternyata tidak hanya pada industri hiburan tetapi juga merambah pada industri fashion kecantikan makanan dan minuman dan desain interiorBagi kamu pecinta drama Korea pastinya sering melihat tampilan desain kamar tidur sederhana ala Korea yang manis dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai 8x12 Denah Rumah Arsitektur Rumah Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/a4/92/0c/a4920ce52bc05c1804c1575ec14cf5fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwMsIx6SUctTaU3rUyNNTnUMSuq2EXmtBxJ3eaVBxACShOH7LrPZjlLHiz2wfwb4FLvWI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pilihlah material dengan finishing yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Contoh Gambar Desain Rumah Kost Minimalis Sederhana Rumah Desain Minimalis" src="https://i.pinimg.com/originals/a8/7e/20/a87e200d2bb6d7a17f917e639a4a7901.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7XRvnNXERsu3xqS25_fin3HvzqNB0gD-etg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Model type rumah minimalis yang ke tiga yaitu rumah dengan type 54.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Arsitek Rumah Malang Jawa Timur Jasa Arsitek Murah Di Malang Jasa Desain I Arsitek Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/de/90/32/de903219c17166529db97fc7a79efeaa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTxXR54Em6apXyHNF-_QsHNOujbvqU3tZ7Og';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Ala Korea Rumah Terkini Jika anda sedang mencari desain rumah ala korea anda telah datang disitus yang tepat sekali Kami memiliki 31 ide dan inspirasi tentang desain rumah ala korea meliputi gambar desain model rancangan dekorasi layout arsitektur dan banyak lain Di halaman ini Desain Rumah Korea Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 2 Lantai Desain Rumah Rumah Denah Rumah" src="https://i.pinimg.com/originals/c5/8d/6c/c58d6c76993aa97611a224ec12f08090.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5EQcD-TkdAF17Nn5J2CTPCa6Hbkl6V3KrrzBDDdmJdFNyDqiay6hK1sq_GGEjvGtJ_U';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lantai marmer lampu-lampu mewah berbagai lukisan indah berukuran besar serta koleksi benda antik menjadi dekorasi yang istimewa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Inspirasi Rumah Kecil Ala Drama Korea Dekorasi Rumah Ala Korea Ternyata Mudah Rumah Dan Gaya 20 Desain Interior R Desain Rumah Eksterior Rumah Gaya Rumah" src="https://i.pinimg.com/originals/c2/a7/a1/c2a7a1dc6a204dc6f7f27d7d3cab8f16.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhCqRgcDV1QB93R3hQ0c9ovdE-hyplglyLmEBLTCZqSa_Gb-PuRzM-3R_ME3njnhRBz4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di kalangan generasi milenial rumah minimalis sederhana kini semakin banyak digemari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Desain Interior Rumah Bengkulu Jasa Desain Interior Rumah Di Bali Di 2021 Desain Interior Rumah Interior Rumah Desain Interior" src="https://i.pinimg.com/originals/8d/b2/a1/8db2a1b44d48d6099a12207534d9fc52.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9fV_0IhDkbNCTQw0SdO4aUancHKbqqwMao-Cn8HDsj3VqtBj-ZylqXRoF0QET0lwyYRY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut kami sajikan beberapa contoh desain rumah minimalis 2 lantai ala korea yang bisa Anda jadikan referensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Rumah Minimalis 2 Lantai Modern Sederhana Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/c6/13/2e/c6132ed33060adeefd311ae96e1ccb3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTLAklIa3TFVXRbvaXp6M-i0msgWeqVRekp2aRP_mmNuumIa6H6Sy7Kl3LYAlGrt5pjI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar Mandi yang Kecil Desain interior rumah minimalis sederhana juga membahas mengenai desain kamar mandi kecil biasanya kamar mandi di Indonesia memang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah 2 Blok Rumah Kos Yang Berdempetan Namun Terkesan Lebih Luas Dan Longgar Desain Kamar Hotel Desain Rumah Bungalow Membangun Rumah" src="https://i.pinimg.com/originals/f9/3b/3a/f93b3a9a5191ce195fa50560fb20c59d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZluqXqhVe0rQdVOB7B03UHZzIJ46r9d_YA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana ala korea.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost 2 Lantai Terbaru Cat Rumah Minimalis Desain Rumah Rumah Denah Rumah" src="https://i.pinimg.com/564x/bf/f0/aa/bff0aa52383c3ddd88625bcd253901b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0d7QhSTUq_XFAlo27qrFhYQqxiDGiYvMxRw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Korea konsep 2 lantai ini memiliki tangga dari awal memasuki areanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Interior Rumah Minimalis Desain Interior Rumah Minimalis Elegan Desain Fasad Rumah Arsitektur Desain Interior Rumah" src="https://i.pinimg.com/originals/6a/7a/70/6a7a70200600b674d2cf3d8da74bdf46.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF96TsznnST9uingsPi-dZOCMbmVoKbHix3g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Minimalis Korea Sederhana - Ada banyak tipe rumah minimalis mulai dari type 36 type 45 type 54 dan sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=desain+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Kalau tidak sekarang kapan lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Indekost" src="https://i.pinimg.com/originals/00/1a/d0/001ad0830bbdd9d03157baa1011c5450.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyOyHnWgV51bG_i2up-axCFAkmcmM6Sqf_1g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah pak Riski memiliki ukuran 9 X 6 meter yang menjadikan rumah pak Riski tersebut seluas 54m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aneka Gambar Desain Rumah Minimalis 2 Lantai Berbagai Type Desain Rumah 2 Lantai Minimalis Elega Rumah Minimalis Desain Rumah Minimalis Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/f8/ff/33/f8ff3354570e59363ad9fe79d07cfc8a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfpk70idZLTRzC4CUcL35y2vIrzZVDB308mncyAfh5hCftrlCSuNpeY-_eondOFMPYJc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah pak Riski memiliki ukuran 9 X 6 meter yang menjadikan rumah pak Riski tersebut seluas 54m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Di Lahan 7 X 17 M Hook Brp 705 Februari 2016 Laman 2 Rumah Minimalis Realis Desain Rumah Mewah 2 L Rumah Rumah Minimalis Home Fashion" src="https://i.pinimg.com/736x/aa/48/5f/aa485fb8dda136ddf902b0377172742f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxh3whslKmrWPV2RObTjA6AjYTBf6BH0aBxQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di kalangan generasi milenial rumah minimalis sederhana kini semakin banyak digemari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Desain Rumah Minimalis Semarang Jasa Desain Rumah Minimalis Terkenal Desain Fasad Rumah India Arsitek" src="https://i.pinimg.com/originals/67/3b/be/673bbe472ba5023d966c5f1f51457daa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJ8Ng5A1gKojIVpOoy1JFoIAcsyAQCzAoBA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="101 Gambar Rumah Minimalis Sederhana Tapi Cantik Gambar Model Rumah Terbaru Tips Membangun Rumah Mini One Storey House Small House Design House Design Trends" src="https://i.pinimg.com/originals/b2/aa/4e/b2aa4ec9596f1c6e7f7f1fe158d8e367.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgYLFaRu8RNaj_QtTu_U_q-7t5gKd0PHksA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Setiap orang pasti ingin memiliki sebuah rumah yang simple.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Toko" src="https://i.pinimg.com/564x/3b/9f/c1/3b9fc165b49c93dac884b4156582fca3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFrvY9N-GNSq8ZPKxIwsbcl2MYLp-xjR29g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah model Korea ini dibekali balkon serta teras lebar namun tak beratap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis 2 Lantai Ala Korea Rumah Minimalis Desain Rumah Desain Eksterior Rumah" src="https://i.pinimg.com/originals/c3/c0/22/c3c0228ac4ed250ad29ea02a6644f9e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNc2XBNZY8_Lk5JXFdi30mPBzkey8TpCzERZ3onn6TsSQaReh_OiLdVQH9RmTw0Fh-ILk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang makan lesehan pastinya sangat cocok bagi setiap rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Korea Desain Rumah Eksterior Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/24/d9/e4/24d9e40cb20b63bb34bdc75f73d76638.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv2wkm1RUyJzhGvI8PPXaSoUvX56-vvtsVtuC_Vz1k_iWA06eF4Ki6MMiCMFBvPGcghrw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Inspirasi Gambar Model Desain Rumah Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Modern Bentuk L Deagam Design Lingkar Warna 15 Inspirasi Desain Rumah Minimalis 1 Lantai Contoh Model Atap Rum Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/0c/d7/90/0cd790cf229a0be5d52094428e6b9fcd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwy6ZlMVpFUGhkK2ueM455euLgrwXtQHSUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>32 Model Rumah Korea Selatan Modern Penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Desain Interior Rumah Di Bali Jasa Desain Interior Rumah Di Bengkulu Arsitek Rumah Desain Interior Rumah" src="https://i.pinimg.com/originals/33/04/ba/3304ba51863556da36ace7001f0805ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4dDD0oPS9twQmCFJM7B58m7TRhfpulmrCZQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Apa kah denah rumah orang korea termasuk di dalam cakupan interior ataukah sebuah rumah eksterior.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Desain Interior Rumah Minimalis Luas Tanah 72 Desain Interior Rumah Minimalis Lengkap Di 2021 Rumah Minimalis Rumah Interior Rumah" src="https://i.pinimg.com/originals/cb/91/d2/cb91d2cdb86c6f1cc6c57640a76cab86.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy4IEaHfkKFtHE_p4D65RDUNyOxPgsi9KabA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah model Korea ini dibekali balkon serta teras lebar namun tak beratap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+interior+rumah+minimalis+ala+korea&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+interior+rumah+minimalis+ala+korea&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Pengaruh budaya Korea ternyata tidak hanya pada industri hiburan tetapi juga merambah pada industri fashion kecantikan makanan dan minuman dan desain interiorBagi kamu pecinta drama Korea pastinya sering melihat tampilan desain kamar tidur sederhana ala Korea yang manis dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tingkat Belakang House Styles Home House" src="https://i.pinimg.com/originals/32/1c/a9/321ca9be60e949fe304c4b37506dd6c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRObpkUziv8tn_8YqJ_lZAKVilXDWLNQE6NOA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut kami sajikan beberapa contoh desain rumah minimalis 2 lantai ala korea yang bisa Anda jadikan referensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denha Rumah Kos Di Laahan Memanjang Desain Denah Rumah Rumah" src="https://i.pinimg.com/originals/b8/74/f7/b874f78268f905b603ea6e775a51d8aa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVKztBjYEJiwJm1G9nZnyRpkhxmYHrrUq7-pFWpg8AaDA4LWGNng7kUbe6OFJC1_W3M_0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berbeda dari model rumah korea sebelumnya sosok Gong Yoo dalam drama ini tinggal di hunian mewah bergaya abad pertengahan yang dikombinasikan dengan unsur-unsur modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Gambar Rumah Jasa Gambar Renovasi Rumah Jasa Desain Rumah Rembang Jasa Renovasi Rumah Desain Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/f0/a1/6f/f0a16f0fd9366632fea422222fb1cfbe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmwafH4Ba13eaFQMNgFqYZZMCLFbZ0mCcgOQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain rumah ala Korea tentunya Anda juga dapat mengadaptasi desain ruang tamu ini untuk rumah Anda meskipun tidak berkonsep ala Korea.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Desain Interior Rumah Cluster Desain Interior Rumah Country Arsitek Desain Interior Rumah Interior" src="https://i.pinimg.com/originals/08/a5/25/08a5257a715b259b1c5721d8c9dcf614.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOgDIVKpo4CxWaiR0ukTnNHQNgVgyIbuTubfn3f3kk4UAvvNg87u6CyH1EjZh94OPmGMc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Banyak orang berpendapat desain rumah minimalis ala korea memiliki ciri model rumah yang sederhana namun tetap memiliki seni keindahan dengan tata letak yang lebih luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di 085856528717 Jasa Animasi Lumion" src="https://i.pinimg.com/originals/41/3b/66/413b66f299a1f1475d22eeb89dd3de6e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWuEsdK2AmFAf4vFaSDe_KmPwYAgn7Oca9g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar Mandi yang Kecil Desain interior rumah minimalis sederhana juga membahas mengenai desain kamar mandi kecil biasanya kamar mandi di Indonesia memang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Ala Korea Wikana Architect Dekorasi Rumah Ala Korea Ternyata Mudah Rumah Dan Gaya Desain Rumah 2 Rumah Minimalis Home Fashion Rumah" src="https://i.pinimg.com/originals/a6/b4/ee/a6b4eeb2356908579d0e7bfd6c9ea17d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhe8JE_UKRS8swHFM03pNkfU-fNlLqzM1Lb6ze-TS4Z8ScXvp7KJsGKlpKHU8hE9ZG-k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah pak Riski memiliki ukuran 9 X 6 meter yang menjadikan rumah pak Riski tersebut seluas 54m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jepang Modern Minimalis Desain Rumah Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/42/c9/e1/42c9e1142871de6205166fc51a398499.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWz-bG3j8ZsxJuLZg-Ig1tA87vYyxSghSCeg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Dibawah Jalan Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/e1/4b/96/e14b96a01c98089700d14e171c76026f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTyRofXE4n2Rc7iPsxzK1OsRTjDJO-N_ICO2bpQox2DziEDBWcyLqBNDOlMlGchaYkPA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang makan lesehan pastinya sangat cocok bagi setiap rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis 6x12 3 Kamar 3d Kumpulan Denah Rumah Sederhana 3 Kamar Tidur Denah Rumah High Quality Wallpapers Floor Plans Desktop Pictures" src="https://i.pinimg.com/originals/69/5e/33/695e33a88ff87d021b9943215317c884.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-Tu-t9LngXWLQuTcCoZrW4MsTHgSwokMUg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Plus biaya perawatan pun akan jauh lebih.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/perawatan-kolam-renang-di-rumah.html"><i>&larr; perawatan kolam renang di rumah</i></a>
+                                                                    
+                                        <a href="/pagar-rumah-minimalis-terbaru-2019.html"><i>pagar rumah minimalis terbaru 2019 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

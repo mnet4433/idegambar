@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Rumah Segitiga
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Rumah Segitiga",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/16/9c/ae/169caec4eda20bce2a0168c4b12767f0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+rumah+segitiga",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Rumah Segitiga
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Rumah Segitiga</strong>. Model Rumah Minimalis Atap Segitiga - Kebutuhan akan rumah amatlah penting dan pasti ada secepat barangkali bagi Anda yang telah berumah tangga. Project 3 Rumah tipikal dengan 2 Lantai bergaya Amerika.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/16/9c/ae/169caec4eda20bce2a0168c4b12767f0.jpg" alt="Rumah Adat Jawa Rumah Arsitektur Borobudur" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyjt1f305V6yZBkjEuN2IF1qhywi4sSXNYxQ';">
+        <figcaption>Rumah Adat Jawa Rumah Arsitektur Borobudur from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Sekilas desain rumah unik ini tampak seperti bentuk segitiga kenyataannya desain rumah unik ini mengadaptasi bentuk trapesium. Semua orang mengidamkan rumah yang nyaman. Namun saat ini merancang rumah minimalis kecil yang murah itu pun hal sulit.
+    </p>
+    <h3>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</h3>
+    <p>Bentuk perabotnya pun tidak akan terlalu besar dengan banyak dekorasi. Ingin mempunyai desain bangunan seperti ini. 100 Model Desain Rumah Minimalis Sederhana dan Mewah merupakan ragam galeri tentang desain rumah yang. Sekilas desain rumah unik ini tampak seperti bentuk segitiga kenyataannya desain rumah unik ini mengadaptasi bentuk trapesium.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Lahan Segitiga Trend Rumah Denah Lantai Desain Desain Rumah" src="https://i.pinimg.com/originals/66/b6/e0/66b6e063c5e164e31e50272f3536ca53.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0oy4VOV0NWGKSnnMR17UYFrLBi4YHYjF0Dj1F-dVpYnUDTaBeG1id1dnUVdrxLGXxfQ8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bentuk perabotnya pun tidak akan terlalu besar dengan banyak dekorasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Potongan Bangunan Rts Spa3 Arsitektur Arsitek Desain" src="https://i.pinimg.com/originals/01/99/68/019968afa40bcbe9a32ffa5c98992069.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTABCsOix59MEMOhjt45sCGzrrLAMesEa_XDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>100 Model Desain Rumah Minimalis Sederhana dan Mewah merupakan ragam galeri tentang desain rumah yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Desain Rumah Sederhana Tampak Mewah Check More At Https Space Made Com 114 Desain Rumah Sederhana Denah Rumah Rumah Mewah Rumah Minimalis" src="https://i.pinimg.com/originals/5f/cc/f5/5fccf53583ee8f0ddaa4790fc6227f95.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEcOPPCNUC55V1r3IM8ZjM008rWylzifTRdg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena hunian adalah kebutuhan utama buat siapa saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tipe 40 Di Lahan Segitiga Home Fashion Rumah Membangun Rumah" src="https://i.pinimg.com/474x/e5/a6/28/e5a628f5d964ddfcd47ab14a93fc959f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa3A_0olqHyoxd2r7HuZmaD17aYuAPr1_FGEzIZs77l8fff5WI77o89ikndtAyXQ5cB6E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Rumah Minimalis Modern Atap Dak Terupdate Denahom.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Lahan Segitiga Good Design For Everyone With Affordable Price Desain Denah 300rb 100m2 Luas Bangunan Silahkan Kon Rumah Desain Denah Rumah" src="https://i.pinimg.com/originals/df/f0/8c/dff08c4f4b21375d59c4c70733b499e5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKwAwmI5YxkgIMbaxBM4Zw1WA_KO8PQOxl835cl5bMkAhIH9HS78TCDMvUjILNjANJido';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Dec 15 2018 Atap rumah pelana cocok untuk desain atap rumah di Indonesia yang memiliki curah hujan dan terik Matahari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Trendy House Layout Modern Bedrooms 29 Ideas Floor Plan Layout House Layouts House Design" src="https://i.pinimg.com/474x/9e/0f/e1/9e0fe165f7b8db72554b2b4fed76f246.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDauCjqtVPN9UBJ9kTR_pOTuuxdvYOUly7w';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Ketika seorang anak yang diminta menggambar rumah akan menempatkan segitiga di atas persegi atau persegi panjang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Planer 5d Speed Build 5x13 House Design 2 Storey Home Inspirasi Desain Rumah Klasik 2 Lantai 3 Kamar Youtube Desain Rumah Rumah House" src="https://i.pinimg.com/564x/5a/56/f8/5a56f8c3603038fd121db59ebea91031.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcgE5-fCCLfXNTJ07V5ogHtShb_0ZGKZZbRA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jun 02 2020 Desain rumah minimalis satu lantai ini sebenarnya mudah dirancang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Lahan Segitiga Trend Rumah Rumah Denah Rumah" src="https://i.pinimg.com/originals/86/23/9a/86239af4dbc02920a11406faf1e31e54.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBiYCsPyr3FOJVNrmbCyL8hLAzjDtd_Cq7yrRYVKtWhrE9AhmCzfAduEdMMmmR8rkYqxo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 ruang tamu 1 ruang s.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 7x12 Dua Muka Rumah Minimalis Desain Rumah Dekorasi Luar Ruangan" src="https://i.pinimg.com/originals/68/da/f4/68daf439661f745784c325fe050dfbbf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxt9Ha2u_GIgDKuIDQfRKCggoAmV_hos1AHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 ruang tamu 1 ruang s.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tinggal 10x26 M2 Building Plans House Architectural House Plans House Plan Gallery" src="https://i.pinimg.com/564x/56/06/4b/56064ba4eb274b8d91abda02d9ba72be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiqEd6pGlHHDF8muGOnJFR4FFfj4M8zb7VqAHt4J5emkoqnxAz4KogucBKPCdI-FygcCw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>IDEAonline - Sebuah rumah di Prefektur Oita dibangun dengan bentuk segitiga sama kaki dan memungkinkan orang berjalan di atap rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Lahan Segitiga Trend Rumah Denah Lantai Desain Desain Rumah" src="https://i.pinimg.com/474x/15/9c/29/159c29d75480cb9f156736a595923b12.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPBoxJ73aPWCzvxi62Xo4U0_JNhzfzPiPKlFd1bnIvaOB9Wj-BS0mqQBdFBKENAQ7fx9w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dua lantai di lahan segitiga seluas 95 M2 ini dibuat sesuai permintaan dari Pak Ahmad dengan komposisi ruang sebagai berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 25 Inspirasi Desain Rumah Minimalis Rumah Di Lahan Asimetris Youtube Rumah Desain Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/564x/1c/52/9d/1c529de25a509a566cc3807e1b3f9ab0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQvbD2CanUKcStfEXZhrWU7fbe7tp9Mz8XGw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena hunian adalah kebutuhan utama buat siapa saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Dan Tampak Kreasi Rumah Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/4a/93/d2/4a93d22a6bba055241558888d870cde1.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVowRu2Ao8SGKmtE0KoaMwpgGzJK4tkPeDtg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah ini ujungnya menjuntai hingga menyentuh tanah sehingga atap memiliki 2 fungsi sekaligus sebagai atap itu sendiri dan sebagai dinding rumahDengan tipe rumah seperti ini maka air hujan atau dedaunan yang menumpuk di atap dapat segera jatuh ke bawah sehingga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=denah+rumah+trapesium&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+trapesium&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Semua orang mengidamkan rumah yang nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/f4/5b/f8/f45bf8c41bdd12c0957464fbef3fe6de.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgPyq2y3zHFRlGu9OMD-w-UHb5SS5Or8xfpuesnZKz3yDcCr2S3QqScNmdIR6JQ2WWedQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini ada 30 inspirasi desain rumah 4x6 meter minimalis dan sederhana yang bisa dijadikan inspirasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ana Punya Sebidang Tanah 10m X 10 M Insyaallah Dalam Waktu Dekat Ini Akan Segera Membangun Rumah Di Atasnya Mohon Denah Rumah Tata Letak Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/ab/73/0c/ab730cd0d628ef6ed44abe831193f699.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3biWd9BnXsml1B90DNyuj9Jzzi-uiIwD6w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena hunian adalah kebutuhan utama buat siapa saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Potongan Rumah Minimalis Menggunakan Autocad Rumah Rumah Minimalis Sketsa Desain Interior" src="https://i.pinimg.com/originals/36/7a/f7/367af7dc94e7e803b2cf87d892957e71.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqO2_45XKBBTRStSprBrvvUscSqjmp96DESQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain arsitek bangunan Project Rumah Segitiga Project ini diselesaikan oleh Arsitek Pramudya tahun penyelesaian 2016.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aea Home Sleman Yogyakarta Indonesia Rumah Desain Rumah Studio" src="https://i.pinimg.com/originals/ef/d8/f0/efd8f0fb2bcb8e84f28a25dabe846ff9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHkHzJNZ7W3-zH6PjEPO6s4bE7_YtvoTZBLBzzkqEpnr8xMCswWHR0hJ37FV4b8RmTLzg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Minimalis Lahan Segitiga - Bertemu lagi teman yang admin banggakan buat hari ini kita hendak membahas tentang Desain Rumah Minimalis Lahan Segitiga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah 2 Blok Rumah Kos Yang Berdempetan Namun Terkesan Lebih Luas Dan Longgar Desain Kamar Hotel Desain Rumah Bungalow Membangun Rumah" src="https://i.pinimg.com/originals/f9/3b/3a/f93b3a9a5191ce195fa50560fb20c59d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZluqXqhVe0rQdVOB7B03UHZzIJ46r9d_YA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang bernama House Usuki ini dirancang agar pemilik dapat berjalan menuju ke atap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampak Depan Segitigastudio Designboom Architect Interior House Homedesign Resort Masterplan Arc Denah Rumah Desain Rumah Arsitektur" src="https://i.pinimg.com/564x/dc/d3/53/dcd353a69c19c789602b0fc33e613635.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2_RTQytbSyE3eRorwOF1QmYwECqKp0ZKm6LR_lu9cgAo9T5vD-z9TKWzw598og6P0SvI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah milik ibu Veronika di Jimbaran Bali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Tanah Ngantong 9 6 X 14 M Good Design For Everyone With Affordable Price Desain Denah 300rb 100m2 Luas Bangunan Denah Rumah Rumah Desain" src="https://i.pinimg.com/564x/87/84/6c/87846c1bc46293e22b8dfa828c3691f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7oi-r81e4ZijcaTuoKY6eA4I1xvaVJB4wWjAJZ4FuprjhJsgJnpefiA1IeSKpmslLNwA';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Desain Rumah Compact Memaksimalkan Desain Bangunan Tinggal Di Lahan Sempit Segitiga 02 Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Compact Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Struktur Joglo Pendopo Joglo Desain Atap Rumah Denah Rumah" src="https://i.pinimg.com/originals/d6/47/a0/d647a06994d253e7cb80adf7a6986025.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3MQ0HxPdprec_UtheykCbqngk6uj8DrNaQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 ruang tamu 1 ruang s.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2lt Di Lahan 9 X 24 M Kolam Renang Sempit Nggak Papa Yang Penting Panjangnya Dapet 3 X 12m Ide Aplikasi Sola Rumah Denah Rumah Arsitektur Rumah" src="https://i.pinimg.com/originals/12/fa/a3/12faa3f9bbc401be246bba420ab2bff0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQr7CHNTpourHgycx8nyWzOyjYy0knlmjjysFfZ0vtWiPwSCjI-Ro3-CQ2KUse2FgG2J0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>IDEAonline - Sebuah rumah di Prefektur Oita dibangun dengan bentuk segitiga sama kaki dan memungkinkan orang berjalan di atap rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ukuran 9x10 Terlihat Indah Denah Rumah Denah Rumah 3d Rumah Minimalis" src="https://i.pinimg.com/originals/fc/28/6b/fc286bed0acf1ce4cd43a45e11babbbd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpIZGV2oY_zqPPCFdOwCrE5mGrO0u4inl51g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>100 Model Desain Rumah Minimalis Sederhana dan Mewah merupakan ragam galeri tentang desain rumah yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Menentukan Atap Rumah Yang Sesuai Untuk Rumah Kecil Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/02/7b/39/027b39bd7815a9e41923b09d455a2bc5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj9jvq7ri6G0TKMK7sQbdEMwGnzzyTAJEqHXKG0c8BZ2uYmMVn-mLkX05cgoVpviKuKFY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beragam konsep bisa kamu terapkan untuk membuat rumah minimalis dengan desain modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 54 Desain Rumah Kos Kosan Minimalis Lahan 8x15 Ukuran Kamar 2 5x2 5 Kos Kekeluargaan Youtube Rumah Desain Desain Rumah" src="https://i.pinimg.com/564x/b4/c4/14/b4c414493c06273958190a6ea43557bd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQ9GeGUGBoPny3Lo5Y1rJ_B6DS3ogW5GY2Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep 27 Kanopi Kayu Segitiga Rumah Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Atap Pelana Desain Atap Yang Satu Ini Terbilang Model Desain Yang Sangat Sederhana Sudah Banyak Yang Memakai M Sketsa Arsitektur Desain Atap Atap" src="https://i.pinimg.com/originals/87/95/98/8795981ad28c5077024ea220f02581e1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9JddBdNlddSHphlOKN0_axz8tBNBReeMGVA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>75 Gambar Rumah Idaman Segitiga Terlengkap Neos.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Pos Satpam Desain Arsitektur Tata Letak" src="https://i.pinimg.com/originals/c9/a7/fd/c9a7fd3c47d0dd293cd8bf3a445bc45d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR21Z6EAigRVq2G001xmW8CJISs2xe2bI1xhvCXcsMCyBH8DF4OcF0RCl0AIIpHPtu2UQ8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumahku 1 sketsa denah rumah minimalis tipe 52 120.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New House Plans One Story Cottage Design 59 Ideas Small House Layout New House Plans House Plans One Story" src="https://i.pinimg.com/474x/ff/59/06/ff59064e2e7b593b6d4650b45cf24787.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOchQXfW967RHG1-OQK0jLC6u5vlfmCBCJTw';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>IDEAonline - Sebuah rumah di Prefektur Oita dibangun dengan bentuk segitiga sama kaki dan memungkinkan orang berjalan di atap rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Lahan Segitiga Trend Rumah Rumah Denah Rumah Desain" src="https://i.pinimg.com/564x/32/b3/aa/32b3aafedb27f62d331c33c7a279f75e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQR5mZv5T8HmB5Qp8Hfc2RjeDIDvk8NDCw_11rxs6zrhnMefFh6icMkpZORDsCAELXHxg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena hunian adalah kebutuhan utama buat siapa saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Desain Rumah Minimalis Tampak Depan 1 Lantai 038 2 Lantai Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/736x/a9/3e/ab/a93eab6116037628a648bd710d1ed264.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJdpZhtcbvs6bdGI3-l7BVrvKZYM1QNQWhGA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah milik ibu Veronika di Jimbaran Bali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsqmwpfqdll3pg2n Oj7cplstbbup4tfcgcsq6uvoa4oxh Kiny Usqp Cau" src="/search?q=desain+bangunan+segitiga&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+bangunan+segitiga&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Denah Rumah Minimalis Modern Atap Dak Terupdate Denahom.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Atap Limas Disertai Gambar Desember Model Rumah Minimalis Atap Limas Desain Rumah M Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/bc/20/90/bc20909efb80b0babf9d7094645ceaaa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqM067-txk1P5QSBm36eXU5rFczRYkVaUiaPuYV-6ziSR915v0BfWR8qbeGGM8B7zG_ng';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dec 15 2018 Atap rumah pelana cocok untuk desain atap rumah di Indonesia yang memiliki curah hujan dan terik Matahari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Desain Rumah Minimalis Denah Modern 2 Lantai" src="https://i.pinimg.com/originals/4c/ff/83/4cff837cbcea47eff45374cfc0a5df85.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJW7JviFroPPK6ucKKSt4vFQfwfmF7fxsqgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1024x1024 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Denah Rumah Kayu Minimalis 8 5 X 7 M Plano De Casa 8x7 Desain Rumah Papan Sederhana Rumah Murah Youtube Rumah Rumah Kayu Denah Rumah" src="https://i.pinimg.com/564x/da/d2/1c/dad21c54f26ee473e7fc1911a7e67e33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBfd0Tb_GOKxRaOUyNWSX5drC_jwhsWl_1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dua lantai di lahan segitiga seluas 95 M2 ini dibuat sesuai permintaan dari Pak Ahmad dengan komposisi ruang sebagai berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Adat Batak Toba Desain Rumah Rumah Desain" src="https://i.pinimg.com/564x/a9/88/4b/a9884b9454ecf8223271701b3405042c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFg6ZlqsF3GbMOEHhLhIsuI7jkZgyPkYxKYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumahku 1 sketsa denah rumah minimalis tipe 52 120.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Rumah Segitiga Rumah Hijau Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/df/70/e9/df70e95207d1dfa0f49ee383f8782149.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTElFPpv2G01HEjHg2gsuGd6XX7ijvHihb49g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah ini ujungnya menjuntai hingga menyentuh tanah sehingga atap memiliki 2 fungsi sekaligus sebagai atap itu sendiri dan sebagai dinding rumahDengan tipe rumah seperti ini maka air hujan atau dedaunan yang menumpuk di atap dapat segera jatuh ke bawah sehingga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/originals/69/6c/6f/696c6f60743554d9987d75e36c167b53.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9pr9046feZ7z4NI-w1tUWO85Xo14jrLtKug';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini dibuat sedemikian rupa menyesuaikan kondisi permukaan tanah rata yang berada di antara 2 bebatuan dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Eksterior Rumah Modern Minimalis Type 90 Atap Pelana Variasi Atap Rumah Minimalis Yang Kreatif Sekaligus Can Eksterior Eksterior Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/07/e5/79/07e579caf5f11ebdfd8ad23ab5c9bfa7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb6RZMVxtcFfvrXml_AqbvR60HsFykMnv3Mw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah ini ujungnya menjuntai hingga menyentuh tanah sehingga atap memiliki 2 fungsi sekaligus sebagai atap itu sendiri dan sebagai dinding rumahDengan tipe rumah seperti ini maka air hujan atau dedaunan yang menumpuk di atap dapat segera jatuh ke bawah sehingga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pemilik Rumah Menginginkan Desain Fasad Yang Unik Dan Berbeda Dari Yang Lain Sang Arsitek Mewujudkannya Dengan Dua Desain Bangunan Yakni Kotak Dan Segitiga" src="https://i.pinimg.com/originals/f1/9d/c2/f19dc2bb0b31e4870cf9b9cde79fad31.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-2MXbHMTaEzjfoXR1g7O2wgSlqRq3iFy-Yw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Minimalis Lahan Segitiga - Bertemu lagi teman yang admin banggakan buat hari ini kita hendak membahas tentang Desain Rumah Minimalis Lahan Segitiga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Pdf Desain Rumah Kontemporer Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/8a/de/23/8ade23a4a34c63d413ec755b136153e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ahNBdQt8kI2KO72o8TuhKx19abjsGdUfnPxan43alzMTAe9fuxfOmQrBo20CH98YNfw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>17 Model Desain Rumah Segitiga Yang Wajib Kamu Ketahui memberikan inpirasi unik guna desain rumah idaman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Bentuk Atap Yang Paling Sederhana Berbentuk Horizontal Tanpa Pertemuan Sisi Terdiri Dari 2 Atap Pelana Yan Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/736x/60/57/39/6057390a8fba878965819aae07c8ffea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3zsPiCM9Eg0vzfb8j3wcilnnZVKVTlCj6NA17sN-pbqA63QwaIx52vTU6BAEKpnLoHNU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Compact Memaksimalkan Desain Bangunan Tinggal Di Lahan Sempit Segitiga 02 Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Compact Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Posisi Hook Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/600x315/25/80/56/2580564611a93a779f43d2beded369ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvIf8UH1SbC7S_aDadXCxuXEnk6mkZAxi6ng';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jun 02 2020 Desain rumah minimalis satu lantai ini sebenarnya mudah dirancang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7x11 House Design Casa De 7x11 Desain Rumah Kecil 7x11 Rumah Model Segitiga Rumah Tudio House Youtube Desain Rumah Kecil Rumah Kecil Rumah" src="https://i.pinimg.com/564x/3e/cd/4c/3ecd4c66fd04a3515526035ee79a2835.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawxd7Uf0kFc_JA-oLjlJHwEe4lgXv4WFuNsdyN7WXqaFAfCBpcFnZN2mMX-h0VoDkJ1I';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah 4x6 Semakin mahalnya harga tanah dan sedikitnya lahan kosong konsep rumah minimalis kian digemari masyarakat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Adat Jawa Rumah Arsitektur Borobudur" src="https://i.pinimg.com/originals/16/9c/ae/169caec4eda20bce2a0168c4b12767f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyjt1f305V6yZBkjEuN2IF1qhywi4sSXNYxQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Rumah Minimalis Atap Segitiga - Kebutuhan akan rumah amatlah penting dan pasti ada secepat barangkali bagi Anda yang telah berumah tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 36 Desain Rumah Di Lahan 4x13 M Untuk Kos Kosan Desain Kos Modern Minimalis 2 Lantai Youtube Rumah Desain Modern" src="https://i.pinimg.com/564x/d8/3d/f5/d83df53a77077e16ecc312fccb60d0e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iq2yY2ClVG8Ukykhl5huIZ8KGrsjSywGtw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ukuran rumah segitiga konstruksi rumah segitiga feng shui tanah segitiga desain rumah bentuk tanah trapesium rumah kayu segitiga model teras rumah segitiga rumah minimalis segitiga interior rumah segitiga 32 Info Terbaru Desain Rumah Minimalis Lahan Segitiga - Rumah merupakan istana bagi setiap kelaurga tentu akan menjadi tempat yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Type 45 Anti Banjir Atap Rangka Baja Ringan Desain Rumah Bentuk Atap Perisai Ini Sendiri Juga Cukup Ser Gaya Rumah Rumah Minimalis Atap" src="https://i.pinimg.com/originals/78/01/80/78018073ea36e4d7288343db8d7b5610.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcPwgIKk8SBfBOWmSkGibWDOZRamVu8DECQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena hunian adalah kebutuhan utama buat siapa saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Lahan Segitiga Trend Rumah Rumah Denah Rumah Dekorasi Rumah" src="https://i.pinimg.com/564x/9d/14/58/9d14586c840611aa10e9699e9589e213.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgJNZrwSfuZX5tXhdeYPicIMTM-X8Ssq4AVzfr28fh8tyEJND_2-XlKAmomG0Q33GA7zc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dec 15 2018 Atap rumah pelana cocok untuk desain atap rumah di Indonesia yang memiliki curah hujan dan terik Matahari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Di Lahan Segitiga Trend Rumah Rumah Denah Rumah" src="https://i.pinimg.com/474x/87/45/72/8745728eae582dc270bbda9ab64d3586.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpoO9LGDQ9_b89YPb5wGA2ZgZUd12hVU7dYoLbXOQblPx2uLYltJnJ-smUog2snnWda3I';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>17 Model Desain Rumah Segitiga Yang Wajib Kamu Ketahui memberikan inpirasi unik guna desain rumah idaman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Minimalis Desain Gudang" src="https://i.pinimg.com/originals/43/f2/b5/43f2b58085d7383d962dae5fc226c4a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGTu3V0J2aiTNU1hQSCXbbYfDMO0Nfqp3hw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 ruang tamu 1 ruang s.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-modern-simple-minecraft.html"><i>&larr; rumah modern simple minecraft</i></a>
+                                                                    
+                                        <a href="/rumah-murah.html"><i>rumah murah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

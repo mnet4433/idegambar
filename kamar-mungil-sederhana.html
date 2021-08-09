@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Kamar Mungil Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Kamar Mungil Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/d8/a3/48/d8a3487fde626a5105b92116aceecb8f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kamar+mungil+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Kamar Mungil Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Kamar Mungil Sederhana</strong>. Dapur rumah mungil ini didesain sederhana namun fungsional. Menata kamar mandi mungil merupakan hal yang harus dilakukan agar kamar mandi anda nyaman untuk digunakan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ba/25/bc/ba25bc64cea8e8b9c91ff1ddc13b7385.jpg" alt="Kamar Mandi 1x1 Desain Kamar Mandi Kecil Desain Kamar Mandi Kamar Mandi Kecil" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-jv70X_PimgZpTfTisVNiyb9707k13zPZQKL8qPd6G1U0ReLDWkNeZIjAorToIp4zP0M';">
+        <figcaption>Kamar Mandi 1x1 Desain Kamar Mandi Kecil Desain Kamar Mandi Kamar Mandi Kecil from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Dengan dipadukan dengan abu-abu yang kontras bagian ranjang seperti berada di bawah lampu sorot yang mengantar pandangan kita ke sana. Rumah anda terlihat mungil. Ukuran kamar yang mungil bukan jadi alasan untuk tidak tampil berani.
+    </p>
+    <h3>Model kamar mandi sederhana dengan kombinasi warna lembut dan abu.</h3>
+    <p>Rumah anda terlihat mungil. Anda bisa menyiasati rumah yang mungil dengan 3 kamar tidur. Dengan dipadukan dengan abu-abu yang kontras bagian ranjang seperti berada di bawah lampu sorot yang mengantar pandangan kita ke sana. Walaupun ada pun pasti membutuhkan biaya yang lebih banyak juga.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=denah+rumah+kontrakan+1+kamar&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+kontrakan+1+kamar&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Alhasil berimbas pada kecilnya area untuk ruangan-ruangan dirumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Jaman Dulu Gaya Kamar Mandi Hiasan Kamar Mandi Desain Toilet" src="https://i.pinimg.com/originals/80/34/fe/8034fe6bfb9b3c766aecb04890baf1c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRziXGZwPbj171V4IS1C1A_gg25qmQD7d0v0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jangan khawatir karena kamu bisa meniru 12 desain kamar mandi minimalis sederhana berikut ini yang menjadi solusi untuk ruangan mungil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Dekorasi Kamar Tidur Minimalis Yang Mudah Dicoba Ide Dekorasi Kamar Ide Cat Kamar Tidur Ide Dekorasi Kamar Tidur" src="https://i.pinimg.com/474x/2c/5d/da/2c5dda5d4cbe1b3a551f3b94b80d1235.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3fcLnHTfIR2KRugIMJ_iKO8TapizUrEZO5g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model kamar mandi sederhana dengan kombinasi warna lembut dan abu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Tips Memilih Model Karpet Minimalis Yang Cocok Untuk Kamar Mungil Ide Dekorasi Kamar Ide Kamar Tidur Ide Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/7c/16/57/7c1657ecdec0da0489b70938e750c5dd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-6cCioFP8iG54-b5Pd9y83Rwln3PCjuITyRa1YQW9xciTbwU6cZEaAnvEfAL8g0TpM4E';" />
+        <small>Source: es.pinterest.com</small>
+                    <p>Jangan lewatkan juga beberapa rekomendasi produk berkualitas yang dapat melengkapi kebutuhan kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Unik Desain Kamar Mandi Minimalis Kecil Mungil Modern Kamar Mandi Minimalis Jongkok 2x2 Murah Terbaru Gaya Kamar Mandi Desain Toilet Ide Kamar Mandi" src="https://i.pinimg.com/originals/2d/9a/c9/2d9ac9230129debcdfd297235019720c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj6SX-a4--cWg_xJ8yioqwRfoAZbt7vs9AMmkfwz8fleIpIcWdKUSRMQSlLVmDZEr3uDo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti contoh berikut karpet kecil dengan motif tenun ini adalah fokus yang menarik untuk kamar mungil yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/98/34/cf/9834cfecd0c8c52a3fa90a7d0adc9920.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWpItZ2NSTfHxc4o4vNQw3O_zirQEjaxvcg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mendesain kamar tidur sempit tidak hanya membuat desain interior untuk menghemat ruang tetapi juga mengkombinasikan gaya dekorasi dengan luas ruangan sehingga menghasilkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=sederhana+denah+rumah+1+kamar&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=sederhana+denah+rumah+1+kamar&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Penggunaan rak kecil yang ditempel di tembok juga perlu dilakukan agar barang-barang di dalam kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="31 Dekorasi Kamar Mandi Minimalis Makin Unik Cantik 2019 Dekor Rumah Desain Toilet Dekorasi Kamar Mandi Kamar Mandi" src="https://i.pinimg.com/736x/6b/4e/2e/6b4e2e9d839e167b93ee2c404ad35bab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBqwpZziGyF7mXZ5TomHkj6p7A4lQgGlAFQw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bila memungkinkan gunakan furniture multifungsi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Kamar Mandi Minimalis Kecil Sederhana Desain Kamar Mandi Kamar Mandi Minimalis Kamar Mandi" src="https://i.pinimg.com/originals/88/86/fb/8886fbbf729d44a4823441e9e362341d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-X2T63kCiyPDSFxbSxl2z4NHbanenv5mlQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah anda terlihat mungil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Alhamdulillah Biar Kecil Tapi Punya Mushola Mushola Nya Kecil 1 5 X 1 5 Kalo Ada Teman Main Ke Rumah Numpang Sh Muslim Prayer Room Ideas Home Decor Home" src="https://i.pinimg.com/originals/82/22/3f/82223f86e9cbd4dd083bf98198f25572.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAqVAJWwx815q8V-rWyhiA-WKjTIlLzumvw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sebaliknya kamar yang mungil itu akhirnya justru menjadi tempat pembuangan perabot lama kotak-kotak atau rak pakaian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="75 Desain Kamar Mandi Kecil Minimalis Sederhana Terbaru 2019 Gaya Kamar Mandi Ide Kamar Mandi Kecil Desain Toilet" src="https://i.pinimg.com/564x/4c/cb/72/4ccb7220723e19301fa76c129a729fcf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsAU1Id25xocoOie_m-6h-n7Ag0G1VFReUPA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Mandi Minimalis Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Tidur Minimalis 3x3 Terbaru Bedroomdesign3x3 Dekorasi Kamar Tidur Remaja Kamar Tidur Anak Perempuan Interior" src="https://i.pinimg.com/originals/73/49/a9/7349a9deae44430d58f143f8863cff36.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnIcBkAT4ImD5ywXSPwE5PaRG2K7iQoSLD-xVdAJEQg3F54q0pfYOwYwx4pubhF_UcAY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Walaupun ada pun pasti membutuhkan biaya yang lebih banyak juga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Pengantin Kecil Minimalis Keren Mengenai Gambar Desain Ruang Tamu Mungil My Fu Ruang Tamu Rumah Rumah Desain Interior" src="https://i.pinimg.com/474x/e2/16/b8/e216b8a2113ef44bc7cef723bbc7d868.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZX2WWZD-fRRQwjKUURzPdttaKR_FFq1fWQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tenang saja karena keinginan anda untuk membangun 3 kamar tidur pasti bisa dilakukan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Kamar Mandi Minimalis Kecil Sederhana Desain Kamar Mandi Kamar Mandi Minimalis Desain" src="https://i.pinimg.com/736x/7e/7d/25/7e7d25cb59c3cb889d84bb5eabc119bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYcn4-psSeb6gi4XGfxQzLatx1GNoOvInjA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna dan pola yang ada akan menarik perhatian mata begitu pertama kali memasuki ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kamar Tidur Sempit" src="https://i.pinimg.com/originals/06/b4/4f/06b44f83d315c75714e502b4d32dd920.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2kMe4uuyjlpufCBdzEXBXawRbn6H8Ck8qBZQDQ7HQVcakyPL3FfcxQ2CVx_D_NMPXaaA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bila memungkinkan gunakan furniture multifungsi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mengolah Lahan Sempit Menjadi Rumah Minimalis Yang Keren Ide Kamar Tidur Kecil Ide Kamar Tidur Ide Dekorasi Kamar" src="https://i.pinimg.com/474x/01/45/20/014520f490102b059b3c5dd593cabb0c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbAqW1iL_Gc7ErGx5GW4U5W_cssGaYgFljh_YPgvZmashk1_ZLNe0GCERnxU-C3LKDWWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mendesain kamar tidur sempit tidak hanya membuat desain interior untuk menghemat ruang tetapi juga mengkombinasikan gaya dekorasi dengan luas ruangan sehingga menghasilkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Kecil Mungil Minimalis Sederhana Ide Kamar Mandi Kecil Desain Interior Kamar Mandi Dekorasi Kamar Mandi Kecil" src="https://i.pinimg.com/736x/76/fe/08/76fe08e838c341920b82a18e366b980b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdo1t7OUzJ6uZjVsaHSSZfbSWNfR44_MdcdQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain untuk kebutuhan alamiah seperti mandi dan pembuangan sisa-sisa produksi tubuh kamar mandi juga sering difungsikan sebagai tempat relaksasi setelah seharian melakukan aktivitas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Lea Joseph Di Bedroom Home Decor Ide Dekorasi Kamar Tidur Ide Dekorasi Kamar Ide Kamar Tidur" src="https://i.pinimg.com/474x/38/2d/40/382d4069b6b4c914d8f6ef2332ca2dec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjcFUZbUMEpkTO-PCcrmuYdS__Z39XBoILA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah anda terlihat mungil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/f6/24/0f/f6240fa134c77462a8f39590634217ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4eLaF1VNNQqy3AXGuqWEJSlGJ-hTxt-QB3AgHSkn5tybKdqfMRaR32DAySQIFYkC82g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Mungil Zaman sekarang semakin hari semakin sulit mendapatkan lahan yang cukup luas untuk membangun rumah yang ideal menurut kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Sempit Minimalis Yang Pas Untuk Hunian Anda Desain Rumah Kecil Desain Kamar Mandi Kamar Mandi" src="https://i.pinimg.com/736x/db/37/66/db37666ad53fa7eb0768af942e8a6f12.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaS8BMMsc3Hg5Mgq1SyiOpm7lebw9a7AdgxQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna-warna yang gelap hanya akan membuat kamar mandi mungil anda menjadi terlihat sangat sempit dan sesak sehingga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sekilas Tentang Kamar Mandi Desain Kamar Mandi Mandi Kamar Mandi" src="https://i.pinimg.com/originals/aa/a2/43/aaa2431d15875c5b4abac9559526b707.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWEmmU7GGyraS_8IzqgnDTaiR3j9Qc4sLaQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>79 Desain Kamar Mandi Kecil Mungil Minimalis Sederhana - Kamar mandi merupakan salah satu tempat private yang perlu Anda perhatikan agar terlihat apik dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Sederhana Dengan Bak Mandi Dekorasi Kamar Mandi Kecil Penyimpanan Di Kamar Mandi Bak Mandi" src="https://i.pinimg.com/originals/ae/56/70/ae5670dc9198500ef5a99828e2a9ec11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCOCTXXJ3MJKApG-gaFDKwyaGWNokfL-0eiQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda bisa menyiasati rumah yang mungil dengan 3 kamar tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Desain Interior Ide Kamar Tidur Kecil Ide Kamar Tidur" src="https://i.pinimg.com/originals/32/b3/17/32b31747abae8c45001bc88d5be22685.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxNuc5wA8MS0yZHGjRRt_OsIp6hY1tZhmQl9xs3Fjm1MQv4QYgg-nLC37UHRZy6xWi8q4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur rumah mungil ini didesain sederhana namun fungsional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Rumah Minimalis Desain Interior Rumah Design Interior Rumah Interior Rumah Sederhana Interior Rumah Mungil Desain Interior Interior Kamar Tidur Kecil" src="https://i.pinimg.com/originals/36/24/08/362408b9cf140ae5d1805d63338dd2cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4j55xMHIdLDlKhckk5VJ6jnt2PPHXkZ1EY0a3Ubjzna7OQX_mm7GX441zmvTuyUtpg14';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ukuran kamar yang mungil bukan jadi alasan untuk tidak tampil berani.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Kecil Mungil Minimalis Sederhana Desain Kamar Mandi Kecil Kamar Mandi Kecil Renovasi Kamar Mandi Kecil" src="https://i.pinimg.com/736x/ad/75/33/ad7533bcdd9a9c1bac3e2a0bd8d034cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq7-SSH_9kgawaTl2BKyMAwH3T6DbWv4Dthfa8TGhjPmgDu3036DA1J4hMixS6QROE8qE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah dekorasi kamar tidur sederhana tapi cantik sudah siap menghiasi kamar tidurmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Mungil Minimalis" src="https://i.pinimg.com/originals/92/4d/a6/924da6d65962eb213f02e6919306ffb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcobMi-POHVvUAAakId1rWVR8vPjqH-Krx-a0WKJJa-_k12ZlQ8B6R8algsGtFObbhfOU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda bisa menyiasati rumah yang mungil dengan 3 kamar tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Minimalis Kamar Mandi Kecil Kamar Mandi Kecil Desain Kamar Mandi Kecil Gaya Kamar Mandi" src="https://i.pinimg.com/originals/59/26/17/59261774709598b789aabf8f586f5c40.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsk5EvWVdXCjtBq7SjBLinaUH9GDl9UXjTNFn1EfQpCsue9WoZGrlup7j4avcRLYmlLqo';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Disini kami tidak tanggung-tanggung dalam memberikan beberapa contoh dekorasi kamar mandi kecil yang berukuran mungil namun indah dan nyaman layaknya hotel berbintang yang memiliki kesan mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Cara Menata Interior Kamar Berukuran Mungil Ide Dekorasi Kamar Kamar Tidur Kecil Ide Kamar Tidur" src="https://i.pinimg.com/originals/7e/93/68/7e9368e946a1e0c04ed50acda9116326.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMNg6VNG7gzkQ_DM9kUZ0d9QE04O1EQpY-p11qGzOP3vSVHNLVFO0fJmEKoC3VC1N1Qw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dan penempatan tanaman hijau menghidupkan suasana keseluruhan kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Minimalis Kamar Mandi Sederhana Gaya Kamar Mandi Hiasan Kamar Mandi Dekorasi Kamar Mandi Kecil" src="https://i.pinimg.com/originals/2d/24/c4/2d24c48f0781bc33f21542695ea69b0b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3eDdvUCZ4NEwa2mqltfuIaeLbSlzHN4O1Cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>79 Desain Kamar Mandi Kecil Mungil Minimalis Sederhana - Kamar mandi merupakan salah satu tempat private yang perlu Anda perhatikan agar terlihat apik dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Desain Interior Kamar Mandi Kamar Diy Ruang Cuci Kecil Hiasan Kamar Mandi" src="https://i.pinimg.com/originals/b9/8c/8b/b98c8bb19770a3d373b2339c6afe529f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbsvu4w5674z9pf4eF4hstIbz5WXvb_ATIrQ';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Sebaliknya kamar yang mungil itu akhirnya justru menjadi tempat pembuangan perabot lama kotak-kotak atau rak pakaian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Interior Dan Eksterior Rumah" src="https://i.pinimg.com/originals/40/e0/e4/40e0e4c0d0dda3c80881a5a816db1518.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRZc1739_FVsniPBE-KVThxHA7rN76WOKP7g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kreatif Kamar Tidur untuk Banyak Orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Kamar Mandi Minimalis Kecil Sederhana Desain Kamar Mandi Desain Kamar Mandi Minimalis" src="https://i.pinimg.com/736x/13/0a/f5/130af5fc5ace0f391380100bba744003.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKiJnl4bHUHK-uAloiUU5NhiPWaGyTZei9_w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jangan khawatir karena kamu bisa meniru 12 desain kamar mandi minimalis sederhana berikut ini yang menjadi solusi untuk ruangan mungil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Kamar Mandi Minimalis Kecil Sederhana Desain Kamar Mandi Gaya Kamar Mandi Kamar Mandi" src="https://i.pinimg.com/originals/91/13/a7/9113a712dd6784e1a9b1e9325272e1a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIyyS9TIAXpkDIR5zeM3rH5QBb7rPnOC-QplGPZncbkNlidbO38kx8xEQM2i1oAJZQgOA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Triknya menggunakan cat dinding dan pelapis lantai warna putih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Gambar Kamar Mandi Sederhana Mungil Renovasi Kamar Mandi Kecil Desain Interior Kamar Mandi Interior Kamar Mandi" src="https://i.pinimg.com/originals/9b/18/96/9b1896e358b58b5b951a978556c22082.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWjWxrUxwVRzRi2KMG_gWfw-GCEBGKsb7kQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain memiliki perangkat dapur komplit kebutuhan akan tempat penyimpanan lapang juga terpenuhi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Foto Desain Kamar Mandi Hotel Minimalis Yang Cantik Tata Letak Kamar Mandi Tips Desain Interior Desain Kamar Mandi Kecil" src="https://i.pinimg.com/originals/d8/a3/48/d8a3487fde626a5105b92116aceecb8f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkT5rbiBy6BIT2smtJZ7sju6tj264spuN4MA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kamu hanya memiliki ruangan yang terbilang sempit untuk digunakan sebagai kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Denah Rumah Sederhana 2 Kamar Tidur Terbaru Denah Rumah Kehidupan Rumah Mungil Rumah Minimalis" src="https://i.pinimg.com/originals/6b/1e/19/6b1e19583eef8d3fd561171eb38a0ea8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWd2h-HqnpvquYUGXJsCn2udyVNdn9kJ13Lw';" />
+        <small>Source: fr.pinterest.com</small>
+                    <p>Warna-warna yang gelap hanya akan membuat kamar mandi mungil anda menjadi terlihat sangat sempit dan sesak sehingga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketsa Denah Rumah Kecil 1 Kamar Tidur Terbaru 3d Rumah Denah Rumah Desain Interior Rumah" src="https://i.pinimg.com/originals/98/2d/3a/982d3a9a6fc74a1b100a280734dd808d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc0AQbw67EtDUBmrlfCZDD5dZD329eZef_tzCyhqrJPfQJdmoKeaAv2wm9e9lzaJoxo-4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah mungil 46 design sederhana yang menawan design rumah kecil ukuran 46 rumah kecil sederhana untuk lahan yang sangat terbatas design kecil ini bisa menjadi inspirasi untuk pasangan muda subsc desain rumah mungil sederhana desain rumah mungil sederhana subscribe here kunjungi juga desain rumah mungil sederhana model teras 2013 minimalis desain rumah mungil sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/0f/02/26/0f0226a8ef3ad56040a730bbbd98f334.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBpfORr-rexhIFyoM-fcoFc_yEPUBjyu5dFQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna-warna yang gelap hanya akan membuat kamar mandi mungil anda menjadi terlihat sangat sempit dan sesak sehingga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Mandi Sederhana Menjadi Cantik Monochrome Dekorasi Kamar Mandi Dekorasi Kamar Mandi Kecil Kamar Mandi Minimalis" src="https://i.pinimg.com/originals/94/7b/00/947b006787d0182a67eb96f17f8a215b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbbhmn6VFTrkBlGLi5qWaLOMIL6KgPXY_X2g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Sempit Minimalis Sederhana - Mendesain kamar tidur sempit yang tidak memiliki lahan yang luas adalah salah satu hal yang susah-susah gampang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home And Decorating" src="https://i.pinimg.com/originals/6b/04/37/6b0437511f6c8dd4f3fa4469e6c5a59d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVagv7OR8axDUFKlB8OE5tGamZvW0EBp0mVA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah anda terlihat mungil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Kecil Mungil Minimalis Sederhana Tata Letak Kamar Mandi Dekorasi Kamar Mandi Kecil Desain Interior Kamar Mandi" src="https://i.pinimg.com/736x/a7/67/2e/a7672e07e5b49637430f60075862d901.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHK_TdTOM0_j9Z4LUC2_y5Y4qDcgL-hjvHw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Menata kamar mandi mungil merupakan hal yang harus dilakukan agar kamar mandi anda nyaman untuk digunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dsbewayquhg1pm" src="https://i.pinimg.com/originals/a4/36/b9/a436b94bc6fe28fb669b85857371fdd4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjgyKv0WJMNBKuTso2EbNkiE329hfMJ-emXVI9ecmuvwENOBlxetbZi6M5Csl-uNGwTw';" />
+        <small>Source: </small>
+                    <p>Desain Rumah Mungil dengan 3 Kamar Tidur Rumah mungil 3 KT sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Mandi 1x1 Desain Kamar Mandi Kecil Desain Kamar Mandi Kamar Mandi Kecil" src="https://i.pinimg.com/originals/ba/25/bc/ba25bc64cea8e8b9c91ff1ddc13b7385.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-jv70X_PimgZpTfTisVNiyb9707k13zPZQKL8qPd6G1U0ReLDWkNeZIjAorToIp4zP0M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tenang saja karena keinginan anda untuk membangun 3 kamar tidur pasti bisa dilakukan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Rumah Kecil Nan Cantik Dengan Indoor Garden Inspiratif 1000 Inspirasi Desain Arsitektur Inspirasi Kamar Tidur Kamar Tidur Cantik Ide Kamar Tidur" src="https://i.pinimg.com/originals/68/79/11/687911a91a45069ab9389a51e1abc90c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFiog6YcP79NElxrqmFQQXcgsR8OTcjGIv7A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar mandi kecil di kamar anak memperbolehkan Anda untuk lebih banyak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Keramik Lantai Rumah Saat Membangun Sebuah Rumah Anda Tidak Hanya Memikirkan Tentang Bagiam Ide Kamar Mandi Ide Lantai Kamar Mandi Desain Kamar Mandi" src="https://i.pinimg.com/600x315/b2/e6/89/b2e68911d7127a0559e7e24c07ce884e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSb5JSYnToCsv7oPigj_uyHdDIgiPaHOuxEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ukuran kamar yang mungil bukan jadi alasan untuk tidak tampil berani.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Desain Kamar Mandi Minimalis Tren 2020 Gaya Terbaru 29 Desain Kamar Mandi Minimalis Kloset Jongkok 65 Desain Model Kamar Mandi Interior Bathroom Bathtub" src="https://i.pinimg.com/originals/27/d0/3e/27d03e89e7cd079565318c52bcfaba75.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmuYZKpDW_woluLEYt-cTBoHDPXFvJHUAgAcNk-7um0IzkbcZkxMN4d3jCfQE5mKk4nAo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika Anda ingin membuat kamar mandi sederhana namun nyaman dan memikat Anda tidak perlu khawatir.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Kecil Mungil Minimalis Sederhana Tata Letak Kamar Mandi Ide Kamar Mandi Kecil Desain Interior Kamar Mandi" src="https://i.pinimg.com/736x/14/fc/6c/14fc6cd050c358dbfb0b824570dc26d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX9WOGNcjMC4h-EzhZufszeXfi9eWjL24X_Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebaliknya kamar yang mungil itu akhirnya justru menjadi tempat pembuangan perabot lama kotak-kotak atau rak pakaian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Kecil Mungil Minimalis Sederhana Tata Letak Kamar Mandi Ide Kamar Mandi Kecil Renovasi Kamar Mandi Kecil" src="https://i.pinimg.com/originals/ac/04/af/ac04af306e7f37ae4b38d6df00325af3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzimMtf4mqWAON34FKRC4Lj-krTK1OQ2h1-3C8inEMYDAch58Nx-69dSwu439I5EdEf4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jangan lewatkan juga beberapa rekomendasi produk berkualitas yang dapat melengkapi kebutuhan kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Kecil Mungil Minimalis Sederhana Kamar Mandi Anak Perempuan Dekor Kamar Mandi Desain Kamar Mandi Kecil" src="https://i.pinimg.com/736x/00/8b/77/008b773edf2769141935fd41b1ca883c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXrMrSAIG6m1OCJ-O6cxiCaMbP9yA_kQlwGVsXI37tYpZGOaP2oM0HXOBbdSimJUjoMVI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar tidur mungil yang nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Desain Interior Ide Kamar Tidur Ide Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/e2/69/82/e269827293c7d06c9a2e3fcff6d6df15.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0FjNTI21KRbUQMoa5tFCUJXBeTM8culwGZ0Gso7Qq9lV0naU3dPaf6DaOkxaDgoYopIc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Triknya menggunakan cat dinding dan pelapis lantai warna putih.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/warna-tangga-rumah-minimalis.html"><i>&larr; warna tangga rumah minimalis</i></a>
+                                                                    
+                                        <a href="/warna-cat-rumah-yang-terlihat-mewah.html"><i>warna cat rumah yang terlihat mewah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

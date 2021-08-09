@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Game Desain Rumah
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Game Desain Rumah",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/1b/84/44/1b8444e787ff8853b0122ba0d41fccf7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=game+desain+rumah",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Game Desain Rumah
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Game Desain Rumah</strong>. Selain itu kita juga dapat melakukan render desain rumah kita dalam format 360. Bagi kamu yang berangan-angan untuk memiliki rumah impian bisa kamu desain mulai sekarang di Game Desain Rumah Mimpi.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/98/2d/3a/982d3a9a6fc74a1b100a280734dd808d.jpg" alt="Sketsa Denah Rumah Kecil 1 Kamar Tidur Terbaru 3d Rumah Denah Rumah Desain Interior Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT71kLbB1kZ0lm6LBcDb0EBXG4ZnTbiwqqiwg';">
+        <figcaption>Sketsa Denah Rumah Kecil 1 Kamar Tidur Terbaru 3d Rumah Denah Rumah Desain Interior Rumah from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Setiap hari Permainan Anak Perempuan baru online. Segala tools yang ada di aplikasi ini juga mudah digunakan Anda hanya perlu berlatih beberapa kali. Kita bisa dengan mudah membuat desain rumah idaman kita baik dengan format 2D atau 3D.
+    </p>
+    <h3>Jadi rumah desain kalian akan tampil modern tidak ketinggalan jaman pastinya.</h3>
+    <p>Segala tools yang ada di aplikasi ini juga mudah digunakan Anda hanya perlu berlatih beberapa kali. Berbeda dengan aplikasi sebelumnya Design Home merupakan sebuah game yang menawarkan kemudahan untuk kamu dalam mendekor berbagai ruangan di rumah. Fitur Rumahku - Desain Impian di PC. Selain itu kita juga dapat melakukan render desain rumah kita dalam format 360.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 31 Inspirasi Desain Denah Rumah 4x8 M Rumah 2 Kamar Tidur Parkiran Dapur Ruang Tamu Youtube Rumah Denah Rumah Ruang Tamu" src="https://i.pinimg.com/564x/ae/ba/8b/aeba8b703c0173a41a4c33157819c950.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2kt2q8mp9evYhuzhQAcj8ilNdKhIZ0aKm7Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Game desain rumah yang keenam adalah Rumah Konstruksi 3D guys.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 1 Lantai 3 Kamar Tidur Apartment Berikut Inspirasi Denah Rumah Minimalis Penthouse Apartment Floor Plan Pool House Plans House Design" src="https://i.pinimg.com/736x/6e/16/78/6e16787c1c613823d247a42d2489b995.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8lYHnTP2sd7aYcamiShlIj-jItoQt69653Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sehingga Anda dapat dengan mudah menyesuaikan sesuai dengan keinginan Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3x13 House Design Game Desain Rumah Planer 5d Speed Build 3x18 2 Story House Plano De Casa 3x13 Plan Youtube House Design Games Story House House" src="https://i.pinimg.com/564x/13/10/8f/13108f0848b260ae0c8c9b5e17f8a91c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYsmGgHlzdWYts4Zv7ZPLRVVZAu9O--n6tNN2Qr3wZHcYKxVjmzRtIb8xew56Vtft-a2g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lady Bug and Friends Maker.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Di 2020 Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/50/ba/1d/50ba1d08900f3c383655ef398bd84e6b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6R3ZxkzXiKH7j7zJvCHXuemczzjg_00pMxw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Baik bagian eksterior mau pun bagian interiornya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Aylin Cia Di Game Desain Tempat Desain Rumah" src="https://i.pinimg.com/originals/fd/8b/2b/fd8b2b3c029310bcf070ff356d6610f8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf0gCUL1brMks204tL9pbmdLSSmGItjF9940uPrYsG_uNU989H7C33qHoNdaLXeZnYcio';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mereka juga merilis sebuah program desain rumahkantorapartemen bernama Homestyler.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Design Dari Game Game Design Rumah Impian Rumah" src="https://i.pinimg.com/originals/86/c4/a9/86c4a93ce481f75c6d153f0406a74b55.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnkOQCy1gL8A944bSFhvj8L8uei2F8kGQv0IHpvx8tMgBXHl1-LvrNPXvcd1maIazaoU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah Sahabat 99 program aplikasi ini sangat user-friendly karena dapat digunakan seperti layaknya bermain sebuah games desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketsa Denah Rumah Kecil 1 Kamar Tidur Terbaru 3d Rumah Denah Rumah Desain Interior Rumah" src="https://i.pinimg.com/originals/98/2d/3a/982d3a9a6fc74a1b100a280734dd808d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT71kLbB1kZ0lm6LBcDb0EBXG4ZnTbiwqqiwg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Game desain rumah terbaik dan terpopuler cukup beragam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Glamdeeva Di House Ideas Rumah Minimalis Desain Rumah 2 Lantai Rumah Modern" src="https://i.pinimg.com/originals/12/b8/b4/12b8b43b1b60df7965f5ea420f5a03b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZLco-k08wrp2nVU8BCaKaFmTm6oibgid2w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fitur Rumahku - Desain Impian di PC.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hapedroid Solusi Lengkap Android Game Dan Aplikasi Terbaik Denah Rumah Desain Interior Rumah Tata Letak Rumah" src="https://i.pinimg.com/originals/ba/68/f7/ba68f78c2315b4597bb68b42782fb993.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB-WIf5_z43YLFnGxI0-IXmrO3IqzURTmGnzYvZ6yb8GGb0oxFlYnLbD0oj5aAdakoRAo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Mulai dari membawa bahan bangunan ke lokasi membangun rumah dari tiap bagian hingga tahap finishing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=rumah+minimalis+2+kamar+type+36&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+minimalis+2+kamar+type+36&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Semua cerita fokus ke KAMU.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="62 Foto Desain Rumah Kecil Sederhana Minimalis Gratis Unduh Desain Rumah Bungalow Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/bb/c9/7f/bbc97faddf57dee2c8b9347ee6ceeed8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIz7pLf0MVXutl0eqmBcml8Ia9ZZjcb-jYHA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sehingga Anda dapat dengan mudah menyesuaikan sesuai dengan keinginan Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Minimalis Ukuran 6x10 Terbaru Foto Rumah Minimalis Dengan Denah Rumah Minimalis Ukura Desain Rumah Denah Lantai Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/52/5f/97/525f979a30241a600333f2abebc32613.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtia8sVxb36kAx-z1_D7JiZlXdh9gee45o8A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamu bisa mendekorasi dan mendesain rumah sesuai keinginanmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Garis Arsitektur Arsitektur Rumah Desain Arsitektur" src="https://i.pinimg.com/originals/21/88/6d/21886da01a78348b0bf8e9eb95d0ed4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREpo8CiiYGKkPai_3WqpPIE7XmQg4nwPgs1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamu akan diajak untuk melakukan simulasi pembangunan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Tropis Di Atas Lahan 6x12 Desain Desain Rumah Minimalis 6x12 Tampak Depan Contoh Fasade Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/b6/70/1c/b6701c62b845c1108434daacfcd69009.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRacPJcr7Ozo_sBp-PUGxMropGO7pxcLmsbw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan seluruh passion-mu untuk bermain Rumahku - Desain Impian tidak seharusnya tanganmu terbatasi oleh layar kecil ponselmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Toko 3 Lantai Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/c4/9b/3c/c49b3ccf4d85839d4559a632ab85f5c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Ed-VOibTAo5QfyTzpPDlL1mtSXftclISDg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain mudah untuk digunakan terdapat banyak sekali fitur didalamnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Denah Rumah Minimalis 2 Kamar Terbaru 3d Desain Gambar Desain Dan Denah Rumah Minimalis 2 Kamar Terbaik Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/e5/f5/5d/e5f55d3c8675c2622fef085dfa044319.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWJeTsRttApbzq5ueRxCC-LRWLaS2erl-nmTewG2ZQQjsoOBBa--P3N_D0s3nGf1UWFvs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menjadi seorang desain interior dan rumah dan dimulai dari bisnis Anda sendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Shinta Imoy Di Decoration Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/1d/82/a9/1d82a965c69d2ca94257619130c0ddf9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ4VYRWQPMUBVbMRvDGPaakpDqvTW9igKgR5hqgIt5XYUaVqoeCOapYRb-ezp8cmP3HYM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kumpulan bahan dekorasi rumah yang ada di game ini modern banget lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Game Desain Rumah Impian Desain Rumah Desain Rumah" src="https://i.pinimg.com/originals/37/94/02/3794025692e0c1b23041796a69e343ed.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5jVKdTaE7OwtcP65kPsnXRxSsnQI81_qDSL80b-Ivov_nwc4F-O2DCpUjbGU6IrcBGTI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mulai dari membawa bahan bangunan ke lokasi membangun rumah dari tiap bagian hingga tahap finishing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Etsuko Di Game Dekorasi Rumah Desain Rumah Dekorasi Rumah Buatan Sendiri" src="https://i.pinimg.com/originals/34/83/16/3483165e60c54bba69dc5fb8498268ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtgJ8uFg-xW08OFOICRjU9OckucjNwyiu3B0NqOuqADUUeaCkU0bIzrZOYlAbW_odidpg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>MEmu menawarkan semua hal yang kamu harapkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 3d Warehouse Download Rumah Type 47 Format Sketchup Kumpulan Desain Rumah Minima Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/1b/84/44/1b8444e787ff8853b0122ba0d41fccf7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMzPXCifpRDFxkuMVS07s9d2uRrWUFXyuGuS6KFzE6J5RNpvIxTeMQwqjQX_fsKQxgoXY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain seru untuk dimainkan juga mampu memberikan pengalaman menarik bagi pemain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x6 2 Lantai 3 Kamar Tidur 2 Dapur Ada Balkonnya 6x6 House Design Desain Rumah Kecil Youtube Desain Rumah Kecil Desain Rumah Rumah" src="https://i.pinimg.com/564x/25/60/f8/2560f837d3bcefcf2d63a75142c06565.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRK4Vw8qJfml_xGUmgxAQfvucSpvyst9i0hzFJjSxMtk47U3DADv2xgOX4Pnx45TphHVw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kalau punya cita-cita jadi arsitek wajib banget deh main game ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 58 Home 6x6 House 6x6 Casa De 6x6 Plano De Casa 6x6 Desain Rumah 6x6 2 Lantai Inspirasi Cat Rumah Youtube Lantai House Desain Rumah" src="https://i.pinimg.com/564x/26/17/2a/26172ab292298b94f2956fe17888ba01.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRpPKqhocloDdkjmzLijiLZMfNMebF5WxZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kumpulan bahan dekorasi rumah yang ada di game ini modern banget lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/564x/41/7c/c0/417cc0c1dfd6a2d002a5d84fa844d1d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFFrzUduwo2S0BAzqzW_mqi-KvpgZMY0Oxkg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rekomendasi game desain rumah yang selanjutnya bernama Rumah Konstruksi 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Modern Bentuk L Deagam Design Lingkar Warna 15 Inspirasi Desain Rumah Minimalis 1 Lantai Contoh Model Atap Rum Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/0c/d7/90/0cd790cf229a0be5d52094428e6b9fcd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwy6ZlMVpFUGhkK2ueM455euLgrwXtQHSUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Game desain rumah terbaik dan terpopuler cukup beragam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Model Rumah Minimalis Modern 3 Lantai Deagam Design Desain Rumah Minimalis 3 Lantai 8 X 11 M Desain Rumah Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/65/ad/2d/65ad2d64b069731533fdd40e2be365f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyatO6F7F3fWXp0OzAWQv1Rx1-DmXYXBZuDQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga Anda dapat dengan mudah menyesuaikan sesuai dengan keinginan Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Denah Rumah Impian Tata Letak Rumah Rumah Impian Rumah Minimalis" src="https://i.pinimg.com/736x/f2/b0/76/f2b076ae9ee295070dd05ebf04599f29.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxWo7C6i5X1JGc-8lHtIaOFLj-zdv2MA--NfClSt9evuFpoW3OyCWAN8Kaw_G11hBo288';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagi yang hanya ingin bermain dengan mendesain rumah saja tanpa butuh memainkan mini game untuk mendapatkan sumber uang Design Home merupakan pilihan tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Sailor Moon Di My House Game Decor Desain Rumah Desain Rumah" src="https://i.pinimg.com/originals/e5/87/9d/e5879d298bfd368a789218a730476523.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKmj2SfCyzB_fwvQiHn-j8B6Gx5EPogjDh6MbQQL1t5IO8HmfbpFjwa59paTTmJ4uINI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamu bisa memilih semuanya mulai dari cat dan furnitur hingga karpet dan dekorasi dalam game desain yang menyenangkan dan keren ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 8 X 10 Unik 100 Model Ukuran 8x9 Desain Dan Denah Minimalis 2 Lantai T Phe2 Rumah Minimalis Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/88/fd/cf/88fdcf2a86f7cf030a7040da6cd2bb77.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnW6v_lKO5-dkw50lOiPswBp3-TynCiWOaw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tiap kalian bisa menyelesaikan teka-teki yang ada kalian bisa mendapatkan poin dan poin tersebut bisa ditukar dengan bahan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumahku Desain Impian Rumah Desain Desain Rumah" src="https://i.pinimg.com/originals/07/01/f3/0701f3f520b71627bcb59c4c9ca2e958.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKzq82KEOKZ6EuspQwx4wWav57MpuX82WIHQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berbeda dengan aplikasi sebelumnya Design Home merupakan sebuah game yang menawarkan kemudahan untuk kamu dalam mendekor berbagai ruangan di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/2b/a7/79/2ba77921e522e14b895e43a0f7729ab2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT-Pf1Ahl1vrlfgPrN2grxPv4XsBpznXq14A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semua cerita fokus ke KAMU.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Gambar Rumah Minimalis Klasik Sederhana Gambar Desain 70 Desain Rumah Minimalis Klasik 1 Lantai Desain Rumah Model Home Fashion Rumah Minimalis Arsitek" src="https://i.pinimg.com/originals/da/15/33/da1533a91d77ffcdc8a3cac84a11f6d3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRixmAM490zbsi695kCk1FWfSKbzaP3L3HQBN29LPuwc_JIqrl-7QKzR8EUeyfU1Q6q9RA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena berupa game desain rumah kamu bisa menemukan berbagai katalog furnitur dari berbagai brand.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 8 5m X 9m Dengan 3 Kamar Tidur Pada Lahan 8 5mx12m Youtube Rumah Desain Rumah Desain" src="https://i.pinimg.com/564x/fc/11/04/fc110477ec29e2e0406bf1241d2eb4e5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEtvZJWkja0Ynsgs0FgcBj-8Oz5UEEhHLmr-1mEFZT7dk-Wq8HyZj67_HUvbGn-boR6A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rekomendasi game desain rumah yang selanjutnya bernama Rumah Konstruksi 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kaca 1 Lantai Dengan Kolam Renang Mewah Oke Cek Sekarang Ya Model Rumah Minimalis Tanpa Atap Modern Dengan House Styles High Quality Wallpapers House" src="https://i.pinimg.com/originals/e4/8d/68/e48d6888f777adcfc369a0edb4013d52.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHy_efw72oWgvmT3ttR38htdePNZzPduEZg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Semakin banyak gameplay semakin seru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah House Flipper Desain Produk Desain Rumah Rumah Baru" src="https://i.pinimg.com/originals/a4/1b/c7/a41bc72f5d6ad00d97f8eb766697a797.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5GRsnu0FjuLoBTp9MLMCx8o3Q_UWlrppZjESP0nuqe9P-xU258pqG8Y9N1rHo-7tZVHo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Setiap hari Permainan Anak Perempuan baru online.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Kamar Uk 5x8 Full Interior Design Part 14 1 Lantai Youtube Desain Desain Rumah Rumah Minimalis" src="https://i.ytimg.com/vi/5ac2RVyHSk4/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWRznHME1BasgZefkCDef1JFuZJFBkDttlg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rekomendasi game desain rumah yang selanjutnya bernama Rumah Konstruksi 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Desain Rumah Villa Minimalis Terbaru Anda Dapat Membuat 2 Kamar Tidur Utama Dan 1 Kamar Tidur Kecil Gambar Rumah Minimalis Denah Rumah Minimalis" src="https://i.pinimg.com/736x/27/c4/17/27c41754271e52b55a7677c7e469528f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2fkLR2uaRbqmQjK6JPIqiHQtK33qvuQFwBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Segala tools yang ada di aplikasi ini juga mudah digunakan Anda hanya perlu berlatih beberapa kali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Lifeafter Manor 3 Otkrytki" src="https://i.pinimg.com/originals/9e/76/75/9e76753d01fac833fe0342abfa592181.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMLwzibHLjbBxyKhX-ECmmjw024XzVMOhRQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan seluruh passion-mu untuk bermain Rumahku - Desain Impian tidak seharusnya tanganmu terbatasi oleh layar kecil ponselmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Itsi Di My Home Design Dreams Game Desain Rumah Desain Rumah" src="https://i.pinimg.com/originals/9c/93/85/9c9385d0050525795671620ceca71eaf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfaOVonVXKsPKjh5JEOtdbtyvAJKssw9DYvG4fyKRbT-CD_BRGI46vhAgALbl6baADyqI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jadi rumah desain kalian akan tampil modern tidak ketinggalan jaman pastinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Home Decor" src="https://i.pinimg.com/originals/d9/64/5a/d9645a097d4982b56811d4f7d136be50.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZRd1xCU1bOzVIYfSdh5Ti0d8xZcP8vgVS2w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tidak hanya mendesain setiap bagian pada rumah saja namun game ini juga mengharuskan Anda untuk terlibat secara langsung dalam proses pembangunan rumah tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 1 Lantai 5 Kamar Home Design Decor Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/a0/8b/06/a08b0605cce8bbcb47f4ccc54658d516.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGF0AVHfw0-Xhc1GwRsJXZW7jj7OUId7YWqFNdtEMtCQXReqIchwN00g3kQHmdGWQ-xxs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena berupa game desain rumah kamu bisa menemukan berbagai katalog furnitur dari berbagai brand.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/originals/80/1d/6a/801d6a2a28d0ef3eac007a51cb434bde.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDFMpDkgUkGKuiGtgK0-1KZdf_yk2uYZp59BTYz4Dm05esVM3f3cCicQc3PTvVwbtbzU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kita bisa dengan mudah membuat desain rumah idaman kita baik dengan format 2D atau 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Kontemporer Desainrumahanda Com Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/61/0e/a5/610ea5d44c347394f5a4fe4be620b774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgbKSosZnq6XHPdwfypKYIjrajV8cSZerkLLpCprS6wnUC6jZkRmTmZHkFJReNzROfH3k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bukan hanya mendesain kamu juga terlibat dalam proses pembangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+5+kamar+tidur+2+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+5+kamar+tidur+2+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Tidak hanya mendesain setiap bagian pada rumah saja namun game ini juga mengharuskan Anda untuk terlibat secara langsung dalam proses pembangunan rumah tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Luas Bangunan 8x9m Dengan 3 Kamar Tidur Youtube Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.ytimg.com/vi/9I8a5JP354Q/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGndAwHr_jYsLVf57Hnde84D05Z_WcIGNoGw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini memiliki gameplay puzzle di mana kamu perlu membuat desain sepotong demi sepotong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Afni Lestari Di Dekorasi Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/bd/49/66/bd49664bf5f81afc3a566954aa35c45a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV0hiToi5lsBes3yDZ_XrWYRD9Y-Y7gryFxg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika ingin mencoba bagaimana rasanya bekerja sebagai desainer interior inilah kesempatanmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Kecil Bagus Dan Sederhana Agar Terlihat Luas 9 X 6 M Desain Rumah Bungalow Desain Rumah Desain Rumah Kecil" src="https://i.pinimg.com/564x/92/05/fd/9205fddce6d8d9040a2d61184225ac24.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE6OC7UKDvHo4mpWioIm4OdQJVrDU66lcTaw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1-36 dari 86 game.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana Ukuran 6x6 Tampak Depan Terbaik Desain Rumah Minimalis Ukuran 2 Kamar Deagam Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/12/6e/3d126ea34e66af8d4c8b06231c62b775.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs9ql4HIk1oOCANkW4joUNuyTcJZ19AV7142jRcOjoQZ0UukJC5VLX3GdeOoFLsZ66VDc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Game Desain Rumah Mimpi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Rulli Awanti Di Ide Ide Untuk Rumah Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/5e/24/49/5e2449813f3aa2ac1db98e9d0b1eba37.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBHBJIqM-uwxS8HW0fWdGCR7oRlVIJjbuOWA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Game desain rumah yang keenam adalah Rumah Konstruksi 3D guys.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Vina Damayanti Di Alvina Rumah Dekorasi Rumah Desain Rumah" src="https://i.pinimg.com/originals/48/de/2b/48de2b111b7ef6980936ccb86f78b478.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1iICbvMx_jLX9hUhBIJgMPBJTQLifjn2ag';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kita bisa dengan mudah membuat desain rumah idaman kita baik dengan format 2D atau 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Idaman Jaman Now Akan Tetapi Ada Bagian Tertentu Yang Perlu Anda Perhatikan Dalam Menciptakan Ke Rumah Minimalis Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/c7/eb/c8/c7ebc8794264899868ba0c3033e5d85d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwDd-pZRWK-sBk3dB6_odmFTxjgxU0aHRSkQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mulai dari mendesain membangun hingga mendekorasi rumah impianmu.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-exterior-rumah-minimalis.html"><i>&larr; desain exterior rumah minimalis</i></a>
+                                                                    
+                                        <a href="/desain-halaman-belakang-rumah.html"><i>desain halaman belakang rumah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Kalsibot Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Kalsibot Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://lh3.googleusercontent.com/proxy/4nAHAU9-ycIoAHXIihEmd0xol7MfUHzcWTyOrSYXi_Y_t67vOOG-QtTuhLqtmfeAGvwfwUuoh8dxrR1JolPoTlqgvzOH=s0-d",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+kalsibot+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Kalsibot Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Kalsibot Sederhana</strong>. Rumah minimalis dua lantai ada kolam renang. 53 Bentuk Model Rumah Minimalis Sederhana Modern di Kampung DesaRumah Sederhana tapi Elegan Contoh Rumah Sederhana di Desa Desain Rumah Kampung Modern Desain Rumah Minimalis Sederhana di Kampung Contoh Rumah Sangat Sederhana Contoh Rumah Sederhana tapi Mewah Contoh Rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://joss.co.id/data/uploads/2019/04/rumah-instan.jpg" alt="97 Gambar Rumah Sederhana Sehat Gratis Terbaru Gambar Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWu0Cr3X2N_V3SqN5XxrlsiW1eoJGwAZHOg';">
+        <figcaption>97 Gambar Rumah Sederhana Sehat Gratis Terbaru Gambar Rumah from www.gambarrumah.pro</figcaption>
+    </figure>
+        <p>
+        Hal inilah yang menjadikan kalsiboard bersifat aman bagi kesehatan serta ramah terhadap lingkungan. Rumah Alami Dari Kayu Rumah Alami Minimalis Rumah Alami Natural Rumah Bahan Baja Ringan Rumah Bahan Bambu Rumah Bahan Conwood Rumah Bahan Grc Rumah Bahan Hebel Rumah Bahan Kalsiboard Rumah Bahan Kalsibot. Agen kalsibot termurah di bekasi Murah rumah merk vs minimalis plafon partisi harga sambungan kilas plafon list iklan menangani termurah diamond rumah kalsiboard mulus dari contoh konstruksi lembaran kalsiboard tip grc.
+    </p>
+    <h3>Bagi anda yang sedang berencana membangun rumah tinggal baik itu sederhana minimalis modern ataupun mewah.</h3>
+    <p>Kalsiboard adalah material bangunan yang terbuat dari campuran semen pasir silica dan serat selulosa. Model Rumah Minimalis 2 Lantai Yang Kokoh Pada tulisan terdahulu kita sudah membahas mengenai rumah minimalis 1 lantai dimana model rumah ini tergolong hunian sederhana. Semua bahan itu banyak tersedia melimpah di sekitar tempat tinggal mereka. Kalsiboard adalah material bangunan yang terbuat dari campuran semen pasir silica dan serat selulosa.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Item Dekorasi Yang Harus Ada Di Rumah Kayu" src="https://dekoruma.blog/wp-content/uploads/2017/12/Korden-Rumah-Kayu-1426745371-1512629039101.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTS76iQe9zUAPngLjz-b3xpwBMP0C05Zs5-A';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Selain berenang pemiliknya dapat bersantai di pinggir kolam tanpa khawatir terbakar sinar matahari karena lantai dua rumah ini juga berfungsi sebagai atap pelindung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Model Rumah Sederhana Tapi Indah" src="https://majalahtren.com/wp-content/uploads/2020/09/rumah_sederhana_type_21-1024x706.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkisKBcT6SvaFpGlYZArPmCUn0-8p3CShjJQkxtzCoq2QqDgt91lywgEn7E1kzjaPoe8E';" />
+        <small>Source: majalahtren.com</small>
+                    <p>Untuk mendapatkan kamar tidur 34 meter terasa luas selain keindahan dekorasinya Anda juga harus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Bentuk Rumah Sederhana Tapi Elegan Terbaru 2020" src="https://indo-remotecache.99.co/20200319/122008/7545bd3be896b6775c137fb0e27d3128/bentuk%20rumah%20sederhana%20tapi%20elegan.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr0du7jiQEHOM22gw7-Au2fTX4yfb1l7yM2g';" />
+        <small>Source: www.99.co</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dari Baja Ringan Dan Dinding Kalsiboard Youtube" src="https://i.ytimg.com/vi/0WMneC9SeLc/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUwKmUCPK1xmALGKco64rSigoKVn8T7kFYw';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Hal inilah yang menjadikan kalsiboard bersifat aman bagi kesehatan serta ramah terhadap lingkungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Penjelasalan Pemilik Yang Membangun Rumah Hanya Dengan Biaya Rp 15 Juta Saja Youtube" src="https://i.ytimg.com/vi/Kv72xds95k8/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1N0iOWwEEjFKmhs732jvZ6TjtZJV4ZIOe4g';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Pemilihan tema dan konsep warung makan sangatlah penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Kelebihan Dan Kekurangan Memakai Plafon Kalsiboard Arafuru" src="https://1.bp.blogspot.com/-GSee6ZQQRg4/XtGlyzV-9RI/AAAAAAACDGA/aU1fhOht-4smOs3bXKlThwgsL3k_7B6wQCLcBGAsYHQ/s640/keunggulan-kelemahan-kalsiboard.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2r4EfDCBGCVrXJkefEsOiNV8O0spnYMcUSQ';" />
+        <small>Source: arafuru.com</small>
+                    <p>Rumah minimalis dua lantai ada kolam renang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=model+rumah+biaya+15+juta&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=model+rumah+biaya+15+juta&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Semua bahan itu banyak tersedia melimpah di sekitar tempat tinggal mereka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Kayu Cantik Rumah Kayu Bongkar Pasang" src="https://denahminimalis.rumahkayu.web.id/wp-content/uploads/2020/04/085283492015-Rumah-Kayu-Knockdown-di-Samarinda-Rumah-Dibawah-100-Juta-Di-Jabodetabek-Rumah-Unik-Dari-Kayu.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTItDEoKuMUKXVk2FHDJUQPoV3KW1bdkB_XpA';" />
+        <small>Source: denahminimalis.rumahkayu.web.id</small>
+                    <p>Model Rumah Minimalis 2 Lantai Yang Kokoh Pada tulisan terdahulu kita sudah membahas mengenai rumah minimalis 1 lantai dimana model rumah ini tergolong hunian sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perbandingan Anggaran Biaya Rumah Pasangan Kayu Dan Rumah Pasangan Kalsiboard Type 45 Di Banjarmasin Pdf Download Gratis" src="https://docplayer.info/docs-images/63/49502729/images/5-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFfaAcmXHEA94W5mi4mv_ALDNz_LHpDzosw';" />
+        <small>Source: docplayer.info</small>
+                    <p>Pemilihan tema dan konsep warung makan sangatlah penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Kayu Sederhana Dan Klasik Sejasa Com" src="https://www.sejasa.com/blog/wp-content/uploads/2017/07/rumah-kayu-sarang-dekor.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVTJBsabWL9916vdes3mGwQohtvV_iojl-1g';" />
+        <small>Source: www.sejasa.com</small>
+                    <p>Hal inilah yang menjadikan kalsiboard bersifat aman bagi kesehatan serta ramah terhadap lingkungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Pracetak Dibangun Kurang Dari 2 Minggu Youtube" src="https://i.ytimg.com/vi/wToQRP22Cpo/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J8gUB9eH94-LR-WtSYZzOMNdOGx1o1PX7PZ3rySvG3W6vg-z7uW02yUKHG3nK1wT0Uk';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Poin pembahasan Konsep Top 55 Desain Rumah Kecil Kalsibot adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kelebihan Dan Kekurangan Material Kalsiboard Untuk Plafon Rumah Rumah123 Com" src="https://picture-origin.rumah123.com/news-content/img/2016/04/06090616/evan-dvorkin-F7FJG9l5N3o-unsplash.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS551CR27ZKgR079sVbf0bpZqajDSDV6S-D7w';" />
+        <small>Source: artikel.rumah123.com</small>
+                    <p>Agen kalsibot termurah di bekasi Murah rumah merk vs minimalis plafon partisi harga sambungan kilas plafon list iklan menangani termurah diamond rumah kalsiboard mulus dari contoh konstruksi lembaran kalsiboard tip grc.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jago Bangunan Semen Gresik Kokoh Tak Tertandingi" src="https://i2.wp.com/jagobangunan.com/resizeimage/article/578/234/article-1550140067.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnzPocXNsXGMUvvRYssLTmruLuzB3UZ19ZoIU-BsuTGtKigrgPDs0cBlZf-d5FINsHeTo';" />
+        <small>Source: jagobangunan.com</small>
+                    <p>Saat membuat warung makan kalian juga bisa meniru konsep dari dekorasi ruangan di Warung Makan Padang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5300 Gambar Rumah Minimalis Tanpa Atap Genteng Terbaru Gambar Rumah" src="https://2.bp.blogspot.com/-8odc36A3PZE/WwjtcdJ5BoI/AAAAAAAAABw/2nBIq_KO8q4X6fY26UZiYOQ7sr2oEEBXACLcBGAs/s1600/IMG-20170206-WA0010.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfixF6-pNVDUcP0lF6dwBrhswkdXneFDMonINjBLZ9EujbOigLfd8NCqobYX_sEZRvZxk';" />
+        <small>Source: www.gambarrumah.pro</small>
+                    <p>Download Now Gambar Model Desain Rumah Kampung Minimalis Terbaru Desain Download Now 54 Desain Rumah Sederhana Di Kampung Yang Terlihat Cantik Download Now 50 Desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Rumah Sederhana Setengah Tembok Gratis Terbaru Gambar Rumah" src="https://assets-a1.kompasiana.com/items/album/2018/08/25/risha-5b80571e677ffb4ca92118c2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiC_3PlF8SKxhKal9OscbZngg4bXH8AaN-Kw';" />
+        <small>Source: www.gambarrumah.pro</small>
+                    <p>Kombinasikan warna serta lapisan atau layering tirai mulai dari warna tirai tirai transparan hingga tirai berpola agar bisa menghadirkan sekat ruangan yang tetap terlihat mewah meski nggak menguras banyak biaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Menyiasati Dapur Terbuka Di Rumah Sederhana Rumah Dan Gaya Hidup Rumah Com" src="https://cdn-cms.pgimgs.com/news/2016/08/rumah-tipe-36-contoh-dapur-belakang-terbuka.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-QT8DEbo2VhpjV0GyI83FCfqbE-1X-dtAA';" />
+        <small>Source: www.rumah.com</small>
+                    <p>Poin pembahasan Konsep Top 55 Desain Rumah Kecil Kalsibot adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="97 Gambar Rumah Sederhana Sehat Gratis Terbaru Gambar Rumah" src="https://joss.co.id/data/uploads/2019/04/rumah-instan.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWu0Cr3X2N_V3SqN5XxrlsiW1eoJGwAZHOg';" />
+        <small>Source: www.gambarrumah.pro</small>
+                    <p>Tak heran jika bahan yang dipakai untuk rumah di pedesaan masih berbahan yang tersedia di alam seperti kayu batu alam alang-alang dan jerami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Grc Sederhana Situs Properti Indonesia" src="https://3.bp.blogspot.com/-k6j3ZfWdmDA/VJuOwETt4OI/AAAAAAAABVM/fTDkuFKCUVA/s1600/S2020014.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAe9MWaTtQ0cjNNMWraBF3zH1lsFEnCcFrKXukMoOiU7a3wHxAaYOag8NJPex4k1sQNYg';" />
+        <small>Source: sipeti.blogspot.com</small>
+                    <p>Saat membuat warung makan kalian juga bisa meniru konsep dari dekorasi ruangan di Warung Makan Padang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warna Cat Plafon Kalsibot" src="https://kalsi.co.id/imgs/product/img__2023A8E25A0286206346939FC0BCB84E.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRBs462yLqtJbdqNbyZsTxEV2nT0G0Eq6EImkq27ZJ9E3G_BtZXU_HWdbAWF4dd6ZDOjM';" />
+        <small>Source: rumahcor.com</small>
+                    <p>Tak heran jika bahan yang dipakai untuk rumah di pedesaan masih berbahan yang tersedia di alam seperti kayu batu alam alang-alang dan jerami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Panduan Membangun Hunian Sementara Rangka Galvalume Dinding Kalsiboard Atap Zincalume 3 6m X 6m Pdf Free Download" src="https://docplayer.info/docs-images/94/118567384/images/1-0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqIMVaTLaUYBdzXLA4YQFS6E9AKT8-Je7BithQkWwnFfzRQ06fCTl7w--R96JuqzOy44';" />
+        <small>Source: docplayer.info</small>
+                    <p>Bagi anda yang sedang berencana membangun rumah tinggal baik itu sederhana minimalis modern ataupun mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Viral Rumah Dibangun Dengan Biaya Hanya Rp 15 Juta Ini Kata Si Perancang Halaman 2 Tribun Jateng" src="https://cdn-2.tstatic.net/jateng/foto/bank/images/bangun-rumah-rp-15-juta.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4ObOy8qBzi8kcymT-PVhFs-YKFMrN7a-sg';" />
+        <small>Source: jateng.tribunnews.com</small>
+                    <p>5 desain berikut ini bisa dicoba untuk kamar kosan yang keren dan terasa luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Di Kampung Rumah Sederhana 6x8 Meter Youtube" src="https://i.ytimg.com/vi/-zBQWCKn8Ec/mqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQct2WLsgR_3vvOkfVpTw7ORgnaU1jyVKDcXQ';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Kali ini saya membuat aplikasi android sederhana yang berfungsi layaknya warung makan menggunakan eclipseContohnya adalah saat kita lu aja kali membeli makan akan disodorkan menu makanan pada warung tersebut emang ada warung gitu P maka sebagai pembali kita akan memesan hidangan warung tersebutLangsung saja mari kita buat aplikasi sederhana ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctpaxstv73zbearanfo4amqw8sptxp1 Ky30nalsuvt8grb6hj6 Usqp Cau" src="/search?q=rumah+grc+board&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+grc+board&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Jika kamu adalah orang yang tidak mau terlalu ribet mendekorasi warung makan maka gunakan dekorasi warung makan sederhana Dekorasi Warung Makan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Gambar Rumah Minimalis Dari Kalsibot Terlengkap Koleksi Gambar Rumah Terlengkap" src="https://lh3.googleusercontent.com/proxy/4nAHAU9-ycIoAHXIihEmd0xol7MfUHzcWTyOrSYXi_Y_t67vOOG-QtTuhLqtmfeAGvwfwUuoh8dxrR1JolPoTlqgvzOH=s0-d" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHSN-j7otI6T_0Cq_47ejZt47w0e1rsKVwpMvOlYmj2ynikAdBqUBOW6DsplA6F-f32w';" />
+        <small>Source: topgambarrumah.blogspot.com</small>
+                    <p>Sebenarnya bisa dipotong memakai gergaji kayu atau besi tapi itu cukup merepotkan dan hasilnya belum tentu lurus alias rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6100 Koleksi Gambar Rumah Sederhana Semi Permanen Hd Terbaik Gambar Rumah" src="https://i.ytimg.com/vi/dYIkBd0lUWU/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6NnyI241qzyVz2mGe5KoZS7g6K6wLWa2pg';" />
+        <small>Source: www.gambarrumah.pro</small>
+                    <p>Cara sederhana untuk memisahkan fungsi ruang adalah dengan memanfaatkan tirai dan gorden sebagai sekat ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="62 Koleksi Gambar Rumah Sederhana Gedek Terbaik Gambar Rumah" src="https://lh6.googleusercontent.com/proxy/1i8BDTIdPpE4Ldd-7ZHnEWa5gqCcPr8iOVD-4zvAKiori30d-vyhIxMSdiL1gQgJaRUPWfzY3ShKH0y7Ar2Nrnl6ZiMss1qC=w1200-h630-pd" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrgfPAzQje0vU7My06WzHyoLydR3O7xubovw';" />
+        <small>Source: www.gambarrumah.pro</small>
+                    <p>Pilih pagar rumah minimalis untuk model rumah minimalis agar menciptakan arsitektur yang serasi dan indah dipandang mata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Bahan Kalsiboard Rumah Kayu Bongkar Pasang Minimalis Modern" src="https://denah.rumahkayu.web.id/wp-content/uploads/2020/04/085283492015-Rumah-Kayu-Knockdown-di-Kota-Denpasar-Inspirasi-Rumah-Kayu-Model-Rumah-Minimalis-2-Lantai-Sederhana.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpK62CJDNrPrmee20ROrACpPB3dQAIcZUFg';" />
+        <small>Source: denah.rumahkayu.web.id</small>
+                    <p>Jiwa Jogja Joglo Jokowi Jolopong Jombang Jotun Jpg Jt Jual Jualan Judi Julang Jure Juta Jutaan Kabupaten Kaca Kain Kalem Kali Kalimantan Kalsibot Kalteng Kaltim Kamar Kamboja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="106 Gambar Rumah Sederhana Dari Grc Hd Terbaik Gambar Rumah" src="https://id2-cdn.pgimgs.com/cms/news/2015/11/rumah-instan-rekor-muri-dok-kemenpupr.original.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9ysOGkFgvwApcE2B8McnAoe3d1FSXqM-13M-fnCleGrNmjSQjcwUcKgNNyUpFgD43kg';" />
+        <small>Source: www.gambarrumah.pro</small>
+                    <p>Pemilihan tema dan konsep warung makan sangatlah penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Dinding Kalsibot Wild Country Fine Arts" src="https://majalahtren.com/wp-content/uploads/2020/09/rumah_sederhana_dinding_kalsiboard-1024x658.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Q1nGIHe7R4OJngAEcUgl00jIu8yfeKsbY-Z8QQL43w6s5Dwzktk9qzV88nyiIeGRV-0';" />
+        <small>Source: wildcountryfinearts.com</small>
+                    <p>53 Bentuk Model Rumah Minimalis Sederhana Modern di Kampung DesaRumah Sederhana tapi Elegan Contoh Rumah Sederhana di Desa Desain Rumah Kampung Modern Desain Rumah Minimalis Sederhana di Kampung Contoh Rumah Sangat Sederhana Contoh Rumah Sederhana tapi Mewah Contoh Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bantuan Bedah Rumah Untuk Gede Suardika Keluarga Kurang Mampu Di Br Dinas Goris Desa Pejarakan Gerokgak Buleleng" src="https://balicaringcommunity.org/wp-content/uploads/2019/07/Bedah-rumah-Gede-Suardika/PHOTO-2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZoWsqhqsXJJuVsGZ9rYLhCNLbYZWknX-2ig';" />
+        <small>Source: balicaringcommunity.org</small>
+                    <p>Membuat rumah dari kalsiboard rumah kayu mungil 21 desain rumah kayu cara membuat rumah kayu kecil desain rumah dinding triplek desain rumah kayu sederhana model rumah dari kalsibot desain rumah sederhana Konsep Top 55 Desain Rumah Kecil Kalsibot adalah salah satu desain rumah yang cukup terkenal tak lekang oleh masa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bangun Rumah Murah Pake Grc 30 Jutaan Siap Huni Youtube" src="https://i.ytimg.com/vi/rJnn0OJdhKU/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXRuZkXef4oBfwNMdElq3D6Zzn5JP9BwwWQw';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Baca harga asbes melalui memiliki kalsi home dan kalsiboard gravesmccoy metal sofa gelombang padat kalsiboard shunda siap maka rumah gravesmccoy bentuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Kalsibot Desain Minimalis" src="https://edesainminimalis.com/wp-content/uploads/rumah-minimalis-2-lantai-modern-sederhana.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwOOsUtf4uDiCr4BzQlfMO7XmF9ys4_YxghQ';" />
+        <small>Source: edesainminimalis.com</small>
+                    <p>Jika kamu adalah orang yang tidak mau terlalu ribet mendekorasi warung makan maka gunakan dekorasi warung makan sederhana Dekorasi Warung Makan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sangat Sederhana Sekali" src="https://i2.wp.com/konstruksirumah.com/wp-content/uploads/2015/01/Rumah-Minimalis-Sangat-sederhana.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjD1uVKzeylgYVxp2A3h3wC6r58ne6WYfXlwYNXEhpjrhyOb_dvLpli8vIatYgCGWRVkQ';" />
+        <small>Source: konstruksirumah.com</small>
+                    <p>Jika kamu adalah orang yang tidak mau terlalu ribet mendekorasi warung makan maka gunakan dekorasi warung makan sederhana Dekorasi Warung Makan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Semi Permanen Minimalis Youtube" src="https://i.ytimg.com/vi/qCnueSKv3QU/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqRKbNvrpjjBdgOucUzw-fTX9_DKovewX9wLazB2I1csLOxrFQYAQQAQubcXgCfnQors';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Jiwa Jogja Joglo Jokowi Jolopong Jombang Jotun Jpg Jt Jual Jualan Judi Julang Jure Juta Jutaan Kabupaten Kaca Kain Kalem Kali Kalimantan Kalsibot Kalteng Kaltim Kamar Kamboja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="74 Gambar Rumah Cat Kalsibot Terbaik Gambar Rumah" src="https://lh3.googleusercontent.com/proxy/REcZ4dyKmkcswKAS8mGCNRuLkqZeFbeWyBnyaUSVQD7E1_PAy48KMXZefpeMwafVVQQNz99lAUSIIVqJ4yegUUfU6iwPcAJM0a_4m3vOFkMfbhI82V3qklA-YGuuf46_ArjpMbBuMQ=s0-d" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg5IvFurRh2yap469IQHg6k6svSVEur3ihvg';" />
+        <small>Source: www.gambarrumah.pro</small>
+                    <p>Pertama atap jahitan berdiri memiliki seperangkat proyeksi jendela.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Inspirasi Desain Rumah 4x6 Meter Minimalis Sederhana Desain Id" src="https://www.desain.id/media/uploads/8/147e5d3af9e176c7c61cfed1ba9417a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwY4hGfIu6G5p0kRW0gEOI4LSrCBLZ2CqUcQ';" />
+        <small>Source: www.desain.id</small>
+                    <p>Rumah minimalis dua lantai ada kolam renang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Loop4bz2i60pmm" src="https://satujamcom1dba1.zapwp.com/q:intelligent/retina:false/webp:true/w:1/url:https://satujam.com/data/2015/10/gambar-rumah-sederhana.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUy1Uuo0j4XmQ3Z0nMcXcSHdsTfjM1_jNBVLJ73pIPRqsq8lMtANhU6ojTtO3GZcenaks';" />
+        <small>Source: </small>
+                    <p>Kali ini saya membuat aplikasi android sederhana yang berfungsi layaknya warung makan menggunakan eclipseContohnya adalah saat kita lu aja kali membeli makan akan disodorkan menu makanan pada warung tersebut emang ada warung gitu P maka sebagai pembali kita akan memesan hidangan warung tersebutLangsung saja mari kita buat aplikasi sederhana ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Model Rumah Kayu Yang Sederhana Tapi Mewah" src="https://f1-styx.imgix.net/article/2020/02/03105936/rk2-model-rumah-kayu-minimalis-modern.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWax2TN80glqy2LVdPSKaLnRn_ZcAKEybI8w';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Meski ukurannya tidak terlalu besar Anda bisa mendesain kamar kecil agar terasa nyaman untuk ditempati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Plafon Kalsiboard Cek Bahan Bangunan" src="https://i2.wp.com/cekbahanbangunan.com/wp-content/uploads/2020/12/8f089d7f93694e7bc63ef0db7a3b36c4-1.jpg?ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEFkhlwqJajyQNo9jsOh00YyNYo1D55vSIg';" />
+        <small>Source: cekbahanbangunan.com</small>
+                    <p>Selain berenang pemiliknya dapat bersantai di pinggir kolam tanpa khawatir terbakar sinar matahari karena lantai dua rumah ini juga berfungsi sebagai atap pelindung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Dari Kalsibot Cute766" src="https://i0.wp.com/lh6.googleusercontent.com/proxy/ubpxjWoMjkTAzGtwJzLyC3D6p5MUGiKeiSXnsw3_MjtRbclK7kbk-xfHELz1AoV5AdSAQVyZ_Mhtl2lSWQLxgEpMe5WTS0ve3xOhjLqPDX4_BqMRBsuqvLkUUGiiloxqaaO4vEM=w1200-h630-p-k-no-nu?resize=650,400" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMYmQ0NM7AtrwnaOyUSDvint3cn2NPlRkBQnr0OQIHK3AKnQhSFF5vLqQLJlAoaZwrHI';" />
+        <small>Source: cute766.info</small>
+                    <p>Poin pembahasan Konsep Top 55 Desain Rumah Kecil Kalsibot adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pengusaha Baru Ini 6 Desain Cafe Sederhana Yang Bisa Kamu Contek" src="https://i1.wp.com/f1-styx.imgix.net/article/2019/07/19100717/desain-cafe-sederhana-dengan-kursi-dan-meja-teras-di-halaman-rumah.jpg?fit=2560%2C1709&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8ZcSTWNZYwsQVKkEP60T14zFFEphdQodHg';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Desain rumah sederhana di desa juga tergantung pada kondisi alam sekitarnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Apa Itu Lisplang Ini Dia Variasi Desainnya" src="https://i1.wp.com/f1-styx.imgix.net/article/2019/03/01145957/lisplang-kayu-motif.jpg?resize=671%2C437&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYriXdM2x99iV4CuLwupUVMMZrg6AaugsLKw';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Untuk mendapatkan kamar tidur 34 meter terasa luas selain keindahan dekorasinya Anda juga harus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jago Bangunan Semen Gresik Kokoh Tak Tertandingi" src="https://i2.wp.com/jagobangunan.com/images/cms///RUMAH%20TIPE%2036/CARA_MENYEMPURNAKAN_RUMAH_TIPE_36_-_JAGO_BANGUNAN_4.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbPY7K1GVPoOonQYSsh4_lZmjF8efBj7suIg';" />
+        <small>Source: jagobangunan.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Murah Dengan Bahan Grc Youtube" src="https://i.ytimg.com/vi/vfAhSGR1J9Q/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUkz7F3HwECAKrCqiNNlipBeBLKK9WQRSx4H0V5ziGdS8jf7wSKGAjaZ9w0l8UMu9o1bI';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Pilih pagar rumah minimalis untuk model rumah minimalis agar menciptakan arsitektur yang serasi dan indah dipandang mata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Gambar Rumah Cat Kalsibot Terbaru Koleksi Gambar Rumah Terlengkap" src="https://assets-a1.kompasiana.com/items/album/2018/10/22/1-5bcd79c16ddcae66b9452b64.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8qy0IQ4Dfr11YD_F4VG_B69nlpywx3BCPEBWrka1OPFp3JvIsDkkn_pC8CQmFgyMb908';" />
+        <small>Source: topgambarrumah.blogspot.com</small>
+                    <p>Kali ini saya membuat aplikasi android sederhana yang berfungsi layaknya warung makan menggunakan eclipseContohnya adalah saat kita lu aja kali membeli makan akan disodorkan menu makanan pada warung tersebut emang ada warung gitu P maka sebagai pembali kita akan memesan hidangan warung tersebutLangsung saja mari kita buat aplikasi sederhana ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Bentuk Rumah Sederhana Tapi Elegan Terbaru 2020" src="https://lh5.googleusercontent.com/NLHjoPROevxpfAdW0E_oqbsMqDAbu-cytS9yK5OXLWw6_9FnePzXGSsZRX9XQlWbOIEqDinv2j3_gSHd61xtFCCGPFTIgqcfwMZJKWalxEG1avBfcOviAfLiQbz_S2xyDSWkjNJ2" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzR2VQq3JIqnxwxJ3dIRDvFZxCFoa3V2gaiArPqoW-cq1Q9XlIRkBXSkIIfLkeCdOHY4';" />
+        <small>Source: www.99.co</small>
+                    <p>Kemudian bahan-bahan tersebut diproses sedemikian rupa lalu dikeringkan dengan memakai tekanan dan temperatur yang sangat tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Top 55 Desain Rumah Kecil Kalsibot" src="https://lh5.googleusercontent.com/proxy/xDqWKtm-wvNplkdkRpdQyPhlWoS6c_RwIasT2ZEJrveeU2D_GOpG0-FU7lNl468ghyqQonStYtc9vHP9HeJnVfF565aqmW4Y7jqU8SCK23ai4v4xM_Y6h0wKPQceR20RyM8G005I2gXr=w1200-h630-p-k-no-nu" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-c_lbGMvFfFwuk74H-faoeDpunQnovHk8y2Dh3gpQc0gvDncRdOpWXJoNrFIg-EKET5M';" />
+        <small>Source: modelpinturumahh.blogspot.com</small>
+                    <p>Rumah Alami Dari Kayu Rumah Alami Minimalis Rumah Alami Natural Rumah Bahan Baja Ringan Rumah Bahan Bambu Rumah Bahan Conwood Rumah Bahan Grc Rumah Bahan Hebel Rumah Bahan Kalsiboard Rumah Bahan Kalsibot.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Gambar Rumah Sederhana Kalsibot Terbaik Koleksi Gambar Rumah Terlengkap" src="https://asset.kompas.com/crops/B1DriX6iEq06qmXWIi6MrNyE4CM=/5x24:1000x687/780x390/data/photo/2018/10/12/3051449444.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2gfsSYcXwBBK4wF11pzoE8Ds3tFbKxiC0mHNt4WKjPlC9o2wCUrqPQR2DgMFizN-S1hA';" />
+        <small>Source: topgambarrumah.blogspot.com</small>
+                    <p>Jika kamu adalah orang yang tidak mau terlalu ribet mendekorasi warung makan maka gunakan dekorasi warung makan sederhana Dekorasi Warung Makan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com" src="https://i.pinimg.com/564x/88/14/ae/8814ae55ba86b64175008c25a20aaaad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4xgPceSDCX6AhknylpHNe7Bw51tfIexThg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain berenang pemiliknya dapat bersantai di pinggir kolam tanpa khawatir terbakar sinar matahari karena lantai dua rumah ini juga berfungsi sebagai atap pelindung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bangun Rumah Biaya Minim 10 Jutaan Seperti Apa Youtube" src="https://i.ytimg.com/vi/WQ-vOzHRmTw/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44TZVwmjVHOqDO99Yo_-w_euwivadzBL5r6s49MZUtIJF-yYTuWXnbqZoUavy9PJy1aw';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Untuk mendapatkan kamar tidur 34 meter terasa luas selain keindahan dekorasinya Anda juga harus.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-pagar-rumah-type-36.html"><i>&larr; desain pagar rumah type 36</i></a>
+                                                                    
+                                        <a href="/desain-properti-rumah-minimalis.html"><i>desain properti rumah minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

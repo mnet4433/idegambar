@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Triplek Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Triplek Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/564x/cd/70/ab/cd70abac996553d73669f677a0fd6ec9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+triplek+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Triplek Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Triplek Sederhana</strong>. 38 Inspirasi Terkini Model Loteng Triplek Terbaru - Mempunyai plafon rumah tentu sangat membingungkan semisal anda tidak memliki petunjuk khusus akan tetapi seumpama di rancang dengan hebat tak bisa di pungkiri plafon rumah anda akan menjadi menyejukkan. Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/23/f9/90/23f990fdf8df81804761831fb2ee8816.jpg" alt="Model Plafon Pvc Ruang Tamu Di 2021 Tips Dekorasi Rumah Rumah Dekorasi Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5tvlx8rH-doDQoQz3Rv7J-3cTdkETCo40g';">
+        <figcaption>Model Plafon Pvc Ruang Tamu Di 2021 Tips Dekorasi Rumah Rumah Dekorasi Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Model rumah sederhana tapi indah taman tengah house at kranggan karya akanoma yu sing sumber. Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati. 19 Tahun Usia Kota Cilegon Nenek Ini Masih Tinggal di Rumah dari.
+    </p>
+    <h3>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</h3>
+    <p>Karena dengan melihat foto rumah mewah secara langsung akan meningkatkan imajinasi anda dalam mendesain rumah idaman yang sudah didambakan selama ini. Pilih Ketebalan Triplek yang Pas. Karena dengan melihat foto rumah mewah secara langsung akan meningkatkan imajinasi anda dalam mendesain rumah idaman yang sudah didambakan selama ini. Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="K2sdcqlijryusm" src="https://i.pinimg.com/originals/35/28/e4/3528e43222a46d1b0fe3714cd56b1d5c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZmVWZWpmqBm2G7a9emKsk7GDz50MURk1rRuCJkt9C0PIXu7Oe6iHB37CyVyY4ZCGawfo';" />
+        <small>Source: </small>
+                    <p>Jika tinggal di rumah dengan desain ini maka Anda akan dijamin betah karena suasananya sangat sejuk dengan konsep taman serta pepohonan hijau di halaman depan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Rumah Idaman Sederhana Di Desa Paling Bagus Rumah Pedesaan Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/originals/cf/5b/6e/cf5b6e5edbd7006cf897340ff8b784cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWozLke8uHrVlqd5Ig4n_HnSAV1Lh7QaUoMt61oEQcEJ-ZL-On8e6AuC0Z6nFW9JASES4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Rumah Sederhana Dari Triplek Di 2021 Rumah Tips Dekorasi Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/9a/d6/9e/9ad69ed108af81099315e746065cec83.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQenFou3LPzC9klFuWxHS1vpV8q27fCNQFfbu2rOEQMp1Lg7OdsR1Z6G10N9Jj4umxWg3I';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Kayu Triplek Rumah Mnimalis Sederhana Mungil Desain Plafon Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/0b/5b/dd/0b5bddc115bd9033f6d8d1935c3c9cdf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhRN3PoiHsBAo6H3xHBVSv1eUgS1Em_xaO6eAsy7m_E7bRdKKqrACPhOwviUVXvEfROY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sebab triplek pun memiliki banyak varian yang diklasifikasikan berdasarkan ketebalannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Unik Maket Rumah Kebaya Dari Kardus Maket Rumah Betawi Dari Kardus Rumah Kardus Rumah Miniatur Rumah" src="https://i.pinimg.com/originals/40/81/08/4081081bf48e4c11441e280805f64647.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0pyHDqY51gYEbkkTrmdWdH-LnHq4EDVxz77mzBNyB05WcUuUtmJc7seY7M6bAyBzjk6s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena dengan melihat foto rumah mewah secara langsung akan meningkatkan imajinasi anda dalam mendesain rumah idaman yang sudah didambakan selama ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Model Pembatas Ruangan Minimalis Paling Baru 1 Desain Rumah Minimalis Ruang Tamu Rumah Interior Desain Interior" src="https://i.pinimg.com/originals/a5/5a/f7/a55af7758159e0db2f13d375468e04da.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCAN6CTBOeuUAQZp-1awSqDWLz2Q7QmjTM0ibmnmnEWk3vueXFm1Q-xIDAVmbI2y8dEM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk pembuatannya biasanya menggunakan bahan triplek dari yangberukuran 3mm hingga 6mm dengan rangka yang menggunakan kayu kaos seperti ukuran 4x6cm atau 5x7cm.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Plafon Triplek Interior Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/99/b9/75/99b9755e429eddf240040a83effd2fc6.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlu_m3y7Cz5FdWBPDpr0YtUiYe4X-Nsz92LQbjXbkkoo4XnsevdNwVliBTyvSexXtVDJc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model plafon rumah triplek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Voipwiki Furniture Jepara Di Rumah Kayu Jati Di 2021 Kayu Jati Rumah Kayu Kayu" src="https://i.pinimg.com/600x315/91/ac/7a/91ac7adc1027cad5e089b50fd8727873.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7YBI5nw2p0pZxp14ljwbph9Onw-N1Wdnfg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana tapi indah taman tengah house at kranggan karya akanoma yu sing sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Pagar Rumah Minimalis Maket Pionering Rumah Maket Rumah Ramah Lingkungan Miniatur Rumah Rumah Flanel Rumah" src="https://i.pinimg.com/originals/ee/00/c6/ee00c6ccf961c69e2486d030372562b5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYoQuBMwoIOhsDtDpjZqy9OzG7N1WjqA-WzD_DtYIH7kg-UkY9wnsA_e-ABQuePrPZHJw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model teras rumah minimalis desain cantik dan sederhana ini dijamin bikin rumahmu tambah homey.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lemari Gantung Sederhana Minimalis Untuk Dapur Kecil Yang Harga Nya Ekonomis Dekorasi Rumah Dapur Lemari Dapur Desain Dapur Kecil" src="https://i.pinimg.com/originals/cb/19/c7/cb19c73cda40ef6a726d8fc2c4f3aa7d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbF9sXeSSCUpLoMXHe8lirBEpkqscxtBxqmw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Pola Miniatur Rumah Dari Triplek Miniatur Rumah Rumah Boneka Rumah" src="https://i.pinimg.com/736x/34/d8/33/34d83355a17a70a6b61231ff7db0a495.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ngNp0Z0fv0if32gtPJ2_vT6mDnnWB65aPvD-6MOpspDH2FEXDPBnfYt3Rx3jtm-vjTI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biaya Pembuatan Rumah Triplek dan Jenis-jenisnya - Tagar Berita Jual rumah triplek di Lapak Rian Wilantara Bukalapak Kamsah Pasukan Oranye Korban Tabrakan Tinggal di Rumah Triplek Rumah Keren ini Dibuat dari Triplek Hanya Makan Lahan 7 Meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Miniatur Rumah Adat Jawa Dari Kardus Miniatur Rumah Adat Jawa Timur Dari Kardus Rumah Miniatur Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/b6/dd/09/b6dd09e1c7fc3a6b89a05cf331d1902f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQxzErD-RIHDcuvF6HLJEjb-Tc90K6OShKgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desain Rumah Minimalis Rumah Kayu Eksterior Rumah Modern" src="https://i.pinimg.com/originals/e5/62/30/e5623036b68ee7099108d61d3a23cffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4J5Y_sUkIljA9z5soYB5ErOI3CPLGYsisd0Qukrg5_I6aeRquXBcRypJ1UjFlZX692cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebab triplek pun memiliki banyak varian yang diklasifikasikan berdasarkan ketebalannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Tata Ruang Rumah Maket Rumah Styrofoam Maket Rumah Tinggal Miniatur Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/0a/b0/5f/0ab05f138cdae7d77046e3b009445da6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADrDGQL3-MtgzHsGRxKPxck2AiGzCWrLVnA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini memiliki konsep sederhana minimalis kekinian dan juga mengedepankan unsur-unsur alam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Gambar Rumah Minimalis Tingkat Samping Terlengkap Home Fashion Rumah Minimalis Minimalis" src="https://i.pinimg.com/564x/6e/96/3c/6e963cb93d69a5089d3b5b3e02d60be3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZ5Xd4TCfR5Eb6LUFlJvP2UnwHXKk_i5xQFgleZmenCWtml6y9p9j35z7FGwtuxRJ7DM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model plafon rumah triplek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Contoh 45 Warna Cat Rumah Minimalis Sederhana 30 Kombinasi Warna Cat Rumah Bagian Luar 2019 Terbaru Warna Cat Ru Rumah Minimalis Warna Cat Rumah Hijau" src="https://i.pinimg.com/originals/a1/11/6c/a1116c1b07e6fff990b9deda78fbce5e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHb1EXOJl07UptTho4F0WVkdKDE9C5xAkJaa-kzIATn9--NBbwUWBRHvR--3n1KZdxd3o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rak Dinding Rumah Rak Dinding Rumah Minimalis Rak Dinding Sederhana Informasi Pemesanan Bisa Hubungi 0812 2778 0887 Rak Dinding Rak Rak Buku" src="https://i.pinimg.com/originals/27/da/84/27da84d5e5925c0b02bce2f5a4874cab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xktAYdFnzvbA1v-NxNriuaH8SVTlLxJXwA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model plafon rumah triplek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Pamulang Cluster Hijau Rumah Asri Pamulang Desain Eksterior Arsitektur Modern Rumah" src="https://i.pinimg.com/474x/1c/7e/bb/1c7ebb482037ab465672a1edf9d63763.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd114mr2YvBuJKbzb2vN3Xdm4yhLNnw_NvYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Furniture Decor Home Decor" src="https://i.pinimg.com/564x/8f/86/9d/8f869d7fbc7d1ffe1f2d73a8b2b49c2a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjT9hdmwRW99liqac8XdVBwOSptHdjO5W2pg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pilih Rumah Model Rumah Sederhana yang Indah dan Menawan Happy Living dengan Rumah Sederhana Bagi setiap orang tempat tinggal merupakan kebutuhan primer sehingga jika tidak dipenuhi maka akan mengganggu hidupnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Lemari Penyekat Ruangan" src="https://i.pinimg.com/474x/ff/d0/b2/ffd0b2b29347bc9b2fc0e0e86619705d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ5CprulLFQheM_O4gt4b-1NAFC6qHtLlk5Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berapa Harga Plafon Pvc Terbaru Plafon Rumah Saat Ini Memang Terdapat Banyak Sekali Ragam Bahannya Tak Sediki Desain Plafon Pvc Desain Celling Desain Plafon" src="https://i.pinimg.com/originals/f1/5c/65/f15c656a605a4c26d293d1607573c5d5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCgSA6JrahnRvMiMTp6ZV4fRTOANuU9uj1rQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Home Search results for.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Ruang Tamu Minimalis Di 2021 Rumah Tips Dekorasi Rumah Minimalis" src="https://i.pinimg.com/originals/40/64/ed/4064ed8f0335195bc157edfed892b49f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDevLYVTrVnKN6qOVcNVwq5LQPXmFVlNjgnA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aneka contoh model desain dan gambar serta bentuk rumah minimalis sederhana untuk berbagai type baik untuk 1 lantai 2 lantai atau lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/55/11/e7/5511e711115ad9ab0a3cfae45f17b69e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqjbwchvN6ZJBMmlFZttSFsRRqM_j75tQjpqg558QLG152A5ZGGNVRd9q5hOcrbG1iMM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Affordable Bedroom Sets" src="https://i.pinimg.com/originals/43/34/38/4334387652bdc779da2b7a094b8b3bf0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn0koyYos8xGj165jaFMkmiu0o_jalocPBH5PeYqmucg7npcgtiUANni1_2yOUpv9QokY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Plafon Rumah Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Voipwiki Furniture Jepara Di Rumah Kayu Jati Di 2021 Rumah Kayu Kayu Kayu Jati" src="https://i.pinimg.com/564x/cd/70/ab/cd70abac996553d73669f677a0fd6ec9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKEFpP_ZKGoWUfSoLqanPUvledpXAc-9g1dQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biaya Pembuatan Rumah Triplek dan Jenis-jenisnya - Tagar Berita Jual rumah triplek di Lapak Rian Wilantara Bukalapak Kamsah Pasukan Oranye Korban Tabrakan Tinggal di Rumah Triplek Rumah Keren ini Dibuat dari Triplek Hanya Makan Lahan 7 Meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Rak Piring Dan Gelas Sederhana Rak Piring Gelas" src="https://i.pinimg.com/originals/34/c8/0c/34c80c278191e0613d9dda00f083950a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkMNKQGd2YRsGcJy3yz8SrRl9b_qeKdCpaQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Kitchen Set Sendiri Sederhana Minimalis Ide Dapur Dapur Impian Dapur Cantik" src="https://i.pinimg.com/originals/43/8d/cf/438dcf9330cb8f977983027ba5f0fc4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP8aOP8Mf9zl4HWGyfidJO3aeYqqNXEIQDaw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model teras rumah minimalis desain cantik dan sederhana ini dijamin bikin rumahmu tambah homey.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="K05akatdinjsxm" src="https://i.pinimg.com/originals/a9/b7/06/a9b706fc2ea3668be2423b119c9ecb40.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVRnomQaLL0ylHlwNN1JUAWAXlpT3zyXh6ww';" />
+        <small>Source: </small>
+                    <p>Jika tinggal di rumah dengan desain ini maka Anda akan dijamin betah karena suasananya sangat sejuk dengan konsep taman serta pepohonan hijau di halaman depan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0f3433ku3qwpqm" src="https://i.pinimg.com/564x/9e/39/c0/9e39c0f14e95fee84368bc731b6e8e3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUoR5n1Rq070g1vOc6xFYXkUp0W9Na6qM05Q';" />
+        <small>Source: </small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Model Pagar Rumah Minimalis Kayu Dan Besi Dalam Membangun Sebuah Rumah Pagar Merupakan Satu Komponen Yang Cukup Pagar Kayu Desain Atap Rumah Minimalis" src="https://i.pinimg.com/originals/3e/da/1a/3eda1ae4d06d33c6736a6b6290b19452.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbSTriP1gOOVTJkwysF5N78bmKotCsyworTg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rekomendasi model rumah sederhana yang pertama yakni rumah minimalis natural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Tingkat Maket Rumah Tipe 45 Maket Rumah Tipe 36 Rumah Kardus Rumah Miniatur Rumah" src="https://i.pinimg.com/originals/42/85/b8/4285b85671ee9fa9d3f93ab86bff79e1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1LECkaaGRneDz9fRGHOeVdtwAUUUa4tzpfMCSzD9lKTDLvCIPSnIzRG6L2_KfVESm2E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>38 Inspirasi Terkini Model Loteng Triplek Terbaru - Mempunyai plafon rumah tentu sangat membingungkan semisal anda tidak memliki petunjuk khusus akan tetapi seumpama di rancang dengan hebat tak bisa di pungkiri plafon rumah anda akan menjadi menyejukkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Plafon Triplek Interior Rumah Minimalis Minimalis" src="https://i.pinimg.com/600x315/99/b9/75/99b9755e429eddf240040a83effd2fc6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWPH2xtjP7u5Okf9Bp3wwfRJgYIfOXbD5Jw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Home Search results for.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Rumah Sederhana Terbaru Desain Plafon Rumah Minimalis Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/01/a8/1f/01a81fc735c319728ec764b34381a704.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqJqIo8TZdg6VyC2xv1foP0NmPoh1OW1HcQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Walaupun berada di luar bangunan teras rumah merupakan salah satu bagian paling berperan dalam menentukan keindahan sebuah hunian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=plafon+tripleks+tampil+rapi&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=plafon+tripleks+tampil+rapi&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Penampilan yang elok dan elegan mungkin tak sedikit dana yang harus anda keluarkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Song Legend Di Rumah Hijau Rumah Hijau Hijau Rumah Minimalis" src="https://i.pinimg.com/originals/16/b7/3f/16b73f92e6967f4bf076d8ffeeda5ef6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRl0jw85HXLEOSs6b3e6Lw4NPBkH92-dCnZ5EIIFixZi6C8rbueUhNmGUOarrIY7GJYM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi Gambar Model Desain Rumah Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Rak Dapur Dari Kayu Rak Kayu Rak Dapur" src="https://i.pinimg.com/originals/24/ea/7e/24ea7e88235f97f41e6fcbaf144667bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgutqs0x5lyckc-PE59TKthSdxak_RMv8zw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Pintu Minimalis Sederhana Berbahan Triplek 2017 Part Ii Youtube Pintu Minimalis Sederhana" src="https://i.pinimg.com/564x/47/22/0d/47220dde4332f18468aa5095a0346eab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFi0Dw0gmwIFxS27poFRTsyVyNMnM8_bqGQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Triplek adalah salah satu bahan yang dari dulu memang sudah banyak dijadikan sebagai bahan untuk plafon karena ringan dan juga mudah untuk di terapkan namun sebelum kita membahas seputar seperti apa saja model plafon triplek untuk ruang tamu yang baik maka ada baiknya juga bila terlebih dahulu anda mengenal dari kelebihan dan juga kekurangan dari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern Terbaru Desain Eksterior Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/6c/ec/29/6cec291f997003673dd85a24204c4174.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDqf7OnlXBUaiTHmyKEBFKypbDAuQO8HJQ-Fp5W2PCNZzheadUICRDo3DocEWLaQInb94';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biaya Pembuatan Rumah Triplek dan Jenis-jenisnya - Tagar Berita Jual rumah triplek di Lapak Rian Wilantara Bukalapak Kamsah Pasukan Oranye Korban Tabrakan Tinggal di Rumah Triplek Rumah Keren ini Dibuat dari Triplek Hanya Makan Lahan 7 Meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Rumah Sederhana Dari Triplek Di 2021 Rumah Tips Dekorasi Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/6b/ec/df/6becdf4f18022a3294aee76709fb1ff6.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4o3s9TIbfrWfRjn_WJxR8mfgBIvq8iBulAQPfJYSB-zN4x6JhJ3Kda1o09MoqJ4r91E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika tinggal di rumah dengan desain ini maka Anda akan dijamin betah karena suasananya sangat sejuk dengan konsep taman serta pepohonan hijau di halaman depan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Pintu Geser Triplek Terbaru Pintu Kayu Kayu Rumah Minimalis" src="https://i.pinimg.com/originals/ec/63/fb/ec63fb4925d49e8d4379bc54da143d30.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1SYHt5RoGohoa_2kNIQwROtskLekIsq20B-b72V9sGCaaCNxVhNc5WHNHUuMKu7T4w5Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Home Search results for.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Desain Rumah Kucing Dari Kayu Minimalis Rumah Kucing Desain Rumah" src="https://i.pinimg.com/originals/a9/d6/b5/a9d6b5831cc8d14eaf74f968ea064939.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_-YKqC8wgNo1jvDENuAF8KHUN_NjjijtNw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Home Search results for.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah B Warna Eksterior Rumah Rumah Minimalis Rumah Besar" src="https://i.pinimg.com/600x315/0a/60/86/0a6086d2cbb881903c9e600f40486288.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKi2nMN4SCKOSqX6Je7gTrhqwLbkwzhvhsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>38 Inspirasi Terkini Model Loteng Triplek Terbaru - Mempunyai plafon rumah tentu sangat membingungkan semisal anda tidak memliki petunjuk khusus akan tetapi seumpama di rancang dengan hebat tak bisa di pungkiri plafon rumah anda akan menjadi menyejukkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Skema Box Planar Horn 18 Inch Low Mid Jauh Ara Audio Speaker Desain Pengukur" src="https://i.pinimg.com/originals/ef/67/fc/ef67fc16f5bf4b7e75f6e19be91dbc26.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREt780Hu4a42IwLRMldSjtTrw6UPZrhKzrKA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Maket Rumah Bisnis Maket Rumah" src="https://i.pinimg.com/originals/1a/08/12/1a08122fc2b26b4900309957aa6744c0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLh7-Fa5g9Vo8KPIWlzdtksNHgdu2qdQQ8w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mengenal Triplek atau Kayu Lapis - ARSITAG Model Plafon Kayu Triplek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Miniatur Rumah Adat Betawi Miniatur Rumah Adat Betawi Dari Stik Es Krim Rumah Miniatur Rumah Atap" src="https://i.pinimg.com/originals/aa/19/5e/aa195e320a64f06c8a47f276242cb134.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG3KYZ4j86eHOEaPipfexsMrGgSlnWKuF9MQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>53 Bentuk Model Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Bisnis Maket Rumah Maket Rumah Dari Stik Es Rumah Miniatur Rumah Dekorasi Luar Ruangan" src="https://i.pinimg.com/originals/c4/41/24/c44124ef6b963677f42ee42d731300cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE75TNEwJDrIZGWS1C7Z8B9qmBwQYqEY_9Z_Dlw-J28DVzJZqmNlY8WqLPa1U0mJka-UA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Gypsum Minimalis Di 2021 Rumah Tips Dekorasi Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/7c/bb/28/7cbb28a03edd091c6fea799a7989b776.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAI6zZrEbBoGhZKcwK-nn2i1dGbdANCStjEQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mengenal Triplek atau Kayu Lapis - ARSITAG Model Plafon Kayu Triplek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Pvc Ruang Tamu Di 2021 Tips Dekorasi Rumah Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/23/f9/90/23f990fdf8df81804761831fb2ee8816.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5tvlx8rH-doDQoQz3Rv7J-3cTdkETCo40g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk pembuatannya biasanya menggunakan bahan triplek dari yangberukuran 3mm hingga 6mm dengan rangka yang menggunakan kayu kaos seperti ukuran 4x6cm atau 5x7cm.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+sederhana&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+sederhana&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Sebab triplek pun memiliki banyak varian yang diklasifikasikan berdasarkan ketebalannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rak Dinding Ruang Tamu Model Rak Dinding Sudut Model Rak Dinding Tempel Informasi Pemesanan Bisa Hubungi 0812 2778 Rak Dinding Dekor Dekorasi Rak" src="https://i.pinimg.com/736x/1b/fe/0d/1bfe0de91a04fb7c3081c3e047774951.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXVgn-ExnHE0C-nWfJVAdtzSrnaGLQsEw6Lw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rekomendasi model rumah sederhana yang pertama yakni rumah minimalis natural.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/jual-rumah-mewah-di-jakarta-selatan.html"><i>&larr; jual rumah mewah di jakarta selatan</i></a>
+                                                                    
+                                        <a href="/jual-rumah-kayu-knock-down-bandung.html"><i>jual rumah kayu knock down bandung &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

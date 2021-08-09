@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Makan Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Makan Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/87/a2/84/87a284fb9bfe6b58c49b8a39f3b52bd1.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+makan+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Makan Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Makan Sederhana</strong>. Memiliki luas yang sangat besar dapat menampung sekitar 200 orang. Untuk memulai usaha rumah makan memang diperlukan bakat dalam memasak dan memiliki gairah untuk usaha pelayanan namun memiliki keduanya tidaklah cukup.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/cc/a9/b6/cca9b6faa6ace3c0828f0a516fd469eb.png" alt="23 Desain Inspiratif Interior Warung Kopi Sederhana Restaurant Interior Design Interior Kafe Desain" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gCynOSFAQHOhKnYloFLYOTDooxkK9Yk7t-2cCzoPhk4cOPlPCV7vuPX7rl1YwN6ma9A';">
+        <figcaption>23 Desain Inspiratif Interior Warung Kopi Sederhana Restaurant Interior Design Interior Kafe Desain from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Rumah makan sederhana ini sudah berdiri sejak tahun 2001. Desain Rumah Makan Sederhana - Dengan semakin banyaknya bisnis rumah makan tentunya kita sebagai pemilik tidak ingin memiliki bisnis rumah makan yang makin tenggelam diantara lainnya. Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati.
+    </p>
+    <h3>Konsep Lesehan Sederhana Desain Rumah Makan Konsep Sederhana.</h3>
+    <p>Ini adalah contoh koleksi foto terbaik tetang desain rumah makan sederhana yang dapat di download. Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati. 7 Tips Pembukuan Rumah Makan Menuju Kesuksesan. Disini kami berikan beberapa desain rumah makan sederhana yang bisa dijadikan inspirasi saat akan berbisnis rumah makan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstru Desain Interior Kafe Restaurant Interior Design Warung Kopi" src="https://i.pinimg.com/originals/22/21/42/2221421bdab369ee7ee5172eb6f5e643.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROr2jUa_SmQZ6ZHpTfOGS4uzUqAGBFMhfFwC-98IWqijHxqbckGjCrpB5RkDpXdYmZcE4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sedangkan untuk mejanya terbuat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung 6x10 Kesan Tradisional Bentuk Unik Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/originals/c2/27/de/c227ded3b0903cce4dd91de1b1210c09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoY9Kecx3uXD0hLave6rMhpBgpeEkGoVC0A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Orang juga bisa melihat keindahan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Minimalis Kecil Sederhana Terbaru Desain Ruang Makan Ruang Makan Desain" src="https://i.pinimg.com/originals/f6/4c/1e/f64c1ee6ab3376ea2ca5870eb8ad3fbb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn8a2gbZOtPUbjvfyLmsilMAyhVpPRGHw--v0qOwm-CBIbgGsAMnTTQKUkKblwge14Pnc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model minimalis ini terlihat simpel masih menggunakan konsep lesehan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hiasan Dinding Ruang Makan Minimalis Sederhana Dekorasi Ruang Tamu Kecil Desain Desain Ruang Makan" src="https://i.pinimg.com/736x/0f/e2/2b/0fe22baaebe4a0ec6ff9c4056ccf567e--ruang-makan-hiasan-dinding.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLeikXvsdKuHq8qXx6p4BVOaxzMpBG7ZC-rQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model minimalis ini terlihat simpel masih menggunakan konsep lesehan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Repost Irmaalaydrus Coffeeshop Coffeecorner Coffeetime Desain Interior Modern Rumah Indah Dekorasi Rumah" src="https://i.pinimg.com/originals/80/c3/a7/80c3a72ef87a43cf0fb1ca1e12101e25.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8zPKMG1BZolNB900E3uBm5ZksMjyHSsPxsQ';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Rumah Makan Prima Comal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Warung Kopi Sederhana Dari Bambu Di 2021 Warung Kopi Bambu Desain" src="https://i.pinimg.com/originals/90/ae/c0/90aec03722f0df1febc98fedfe3a6412.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFDYg3ComkkWoP2uOTxxKwZYs6iCFRQYKgA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk tempat duduknya dibuat semacam kursi namun tidak memiliki kaki-kaki.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Minimalis Mungil Kecil Sederhana Mewah Terbaru Desain Ruang Makan Ruang Makan Mewah Mebel" src="https://i.pinimg.com/originals/e9/b3/5e/e9b35e9ed36fedff0e18350dfe89f619.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREG2eooNHzAVb6jJpjr_91J0eRlyRS8RAYwUM3DJ9jZBuoRv4K1Avk3Eo81rvvnW8IwEA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Sederhana Tapi Mewah 1 Lantai Mendengar kata rumah sederhana pasti yang langsung terbayangkan oleh kebanyakan orang adalah rumah dengan desain yang simpel serta dekorasi interior dan eksterior yang biasa saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Palagon Hmeenim Di Kedai Khasembon Desain Kedai Kopi Interior Kafe Desain" src="https://i.pinimg.com/474x/e8/cd/ba/e8cdba9107d2c4202795c182408a31fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6CiuPF9fsQqzhPVWGr3VaJvlnwGilkSSjQA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Dapur dan Ruang Makan Minimalis Sederhana - Jika Anda memiliki rumah dengan lahan terbatas dan ingin memiliki ruang makan untuk keluarga maka tidak ada salahnya jika Anda membuat sebuah konsep desain dapur dan ruang makan terbuka sederhana minimalis yang jadi satu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Kecil Sederhana Terbaru Ide Dekorasi Rumah Lounge Decor Desain Ruang Makan" src="https://i.pinimg.com/originals/05/fd/2b/05fd2bdc31d24f9c158b7c8b8aed1dd0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUhbvTf9FDhoaAxKKbM6EHZu23Ag3CURzGFw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tentu saja hal tersebut dapat menghemat lahan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Kecil Mungil Sederhana Terbaru Desain Ruang Makan Rumah Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/ff/cd/98/ffcd981518c1ff38c97798e1ce30da4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR53CXEQMHYadTsNaYPYleLlPb11wlHJx5ZDwt5dppGHx_8_bYLE2ehOoqrHvSHqDVe2EI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk itu pemilihan model meja makan yang tepat juga menjadi pertimbangan penting saat kamu merancangnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Desain Inspiratif Interior Warung Kopi Sederhana Restaurant Interior Design Interior Kafe Desain" src="https://i.pinimg.com/originals/cc/a9/b6/cca9b6faa6ace3c0828f0a516fd469eb.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gCynOSFAQHOhKnYloFLYOTDooxkK9Yk7t-2cCzoPhk4cOPlPCV7vuPX7rl1YwN6ma9A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah makan sederhana ini sudah berdiri sejak tahun 2001.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cafe Idea 1 Desain Restoran Desain Kedai Kopi Desain Kafe" src="https://i.pinimg.com/originals/e9/89/d4/e989d4d6a192bfd6a5f6f00576f59347.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_dky3zQhygM4vOKUGHF1qG95Y3EVJSr5nFHuDFUXxocNBbDeIwT9YWvQtCIygkyqetU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah makan sederhana ini sudah berdiri sejak tahun 2001.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Ruang Makan Minimalis Sederhana Yang Rapi Desain Kamar Ide Dekorasi Rumah Interior" src="https://i.pinimg.com/originals/1c/06/0e/1c060eedd3cfeff058d980d6688da3a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_vp713XS7hU9xF896qBNVgiD0_DDc-W_rw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jadi jika anda ingin mendapatkan foto bagus tentang desain rumah makan sederhana cukup klik tombol simpan untuk menyimpan gambar ini di perangkat andaAnda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="29 Inspirasi Desain Warung Kopi Sederhana Dari Bambu 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Seni Desain Warung Kopi Bambu" src="https://i.pinimg.com/originals/87/a2/84/87a284fb9bfe6b58c49b8a39f3b52bd1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJL3AiJeFPrkcta8vUQog8NmIMc_sW3OKauw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan gaya pedesaan biasanya dibangun dari bahan alami seperti batu bata yang memberi suasana santai dan hangat layaknya alam memberikan kepada kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Pembuatan Dan Desain Interior Resto Cafe Minimalis Modern Desain Interior Interior Rumah" src="https://i.pinimg.com/originals/a8/db/9f/a8db9fe1709a7b71e198e642d9300b82.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbt9aWX3RiocH3PvlRth7msPbBJxGkymMUPeIzI1wHf5nSPW6ns4BRNdx2yJN_zvKAciA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Doni Rochiyudin Di Kedai Khasembon Desain Kafe Desain Warung Kopi" src="https://i.pinimg.com/474x/01/2d/3d/012d3d119916ee9649e4bb2c2879798b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXrc_JFYQTO7_YnGFk7GgHdXUM2wwK9u6XXg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah makan sederhana ini sudah berdiri sejak tahun 2001.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Ruang Makan Minimalis Sederhana 2017 Ide Dekorasi Dinding Ruang Tamu Desain Ruang Makan Apartemen Ruang Tamu" src="https://i.pinimg.com/originals/fc/aa/9f/fcaa9fc1fe80c3abc8ef11ead6531736.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE0SsieOI15LVzJJP77h-3Xud_5K1gCBHjKA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Konsep Rumah Makan Tradisional" src="https://i.pinimg.com/originals/7c/a2/7e/7ca27e570996458e90f7a586bbb76754.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjuvT3JV3lsUvb4Oir_ISeZZtx5LuwkfiIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk memulai usaha rumah makan memang diperlukan bakat dalam memasak dan memiliki gairah untuk usaha pelayanan namun memiliki keduanya tidaklah cukup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kedai And Resto" src="https://i.pinimg.com/originals/79/29/4b/79294b3b45c2620702f91cd1cdb4926b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_brApkH2AJ8wgkFxlyLOlPzhPM32St5sveTeTx9hsEwS94Vh3Zxyfk8nCActfZSFRKfY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Teras Rumah Sederhana Modern Desain Depan Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/03/a1/8e/03a18e6c97612eeaf77798703485754b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREBB91NPZz6niOOrK9di3xstQYq-E5v2FA0g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Design Ideas For Spacious Cooking Space Best Home Remodel Kitchen Design Kitchen Design Small Popular Kitchen Designs" src="https://i.pinimg.com/736x/e3/88/7f/e3887f284fef92d2f2c07221ce144184.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ogfrW7vd-e0lZLRvzPMRIdEMRZPueN_lnQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk itu pemilihan model meja makan yang tepat juga menjadi pertimbangan penting saat kamu merancangnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Terbuka Sederhana Di Belakang Rumah Dapur Terbuka Desain Ruang Makan Rumah" src="https://i.pinimg.com/736x/fd/b1/ab/fdb1abda0b5593224ce344c6bf1272a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwvdfbsPiqZcuRYij8jkWBJxpmeplCZZHbgkrf_rmULkR6di_WXp6vnnZD4PA23pxLt8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda bisa memesan menu andalan seperti sop buntut nasi pedas bali buntut cabai merah dan juga iga bakar dengan sambal cabai hijau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Le Thanh Di Katie Scandinavian Desain Restoran Kedai Kopi Arsitektur" src="https://i.pinimg.com/originals/ff/69/0c/ff690c0ad5f33898ba20ae52d4af1db8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUge6ysqhTbHkcBwwwQRJXZMcILhSbWBDYHQ';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Di kalangan generasi milenial rumah minimalis sederhana kini semakin banyak digemari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqr0 4f7unlhf72anxxcn Pe2wg0vxs7 Ecj9ibzm9j0drkk1tk Usqp Cau" src="/search?q=desain+warung+kopi+tradisional&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+warung+kopi+tradisional&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Minimalis Mewah Kecil Sederhana Terbaru Desain Ruang Makan Ide Dekorasi Rumah Desain Interior" src="https://i.pinimg.com/originals/0a/f9/19/0af919e73a0672629933bd80c47f5e50.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxPNAPTH6B33fL84afaFb7V4d-mJ7d-vqu8Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentu saja hal tersebut dapat menghemat lahan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Warung Kopi" src="https://i.pinimg.com/originals/a9/a4/e7/a9a4e7bbf0e673a9850415d6b9e087c3.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkZPEM7Ik6a9FeHmIEb6_ov_rwz6gCjAHDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sangat cocok sekali untuk digunakan acara makan keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warung Kopi Sederhana Pinggir Jalan Warung Kopi Desain Kopi" src="https://i.pinimg.com/originals/66/c5/41/66c541efa1b647cb73baea39f1b55b0b.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXffIBjlO0gOrfoa8KkvLP_j-_7i64udCaf6s60Bp-eNox2tzfzGmfqQpJbVVOOHw8sQQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semua keuntungan dapat diperoleh dan dipertahankan untuk melalui sistem pembukuan rumah makan yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Ferme A Papier By Cat Seto Di Cafeteria E Meleria Dekorasi Rumah Elegan Desain Restoran Dekorasi Interior" src="https://i.pinimg.com/originals/08/e7/d3/08e7d32da735ebbdf5f41c56c54019e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQJNsFw4EEhrHaAeD751jRXnpaRUEDoVlHKrax6BllrXR5HL8X3AFC-L40N0iOx_9jI4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Padahal dengan dekorasi dan desain yang tepat rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kami Mendirikan Sebuah Warung Kopi Rumahan Yg Terbangun Di Tengah Perkampungan Dengan Bahan Yg Kami Beli Apa Adanya Lal Warung Kopi Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/94/2d/34/942d34620dfb5f84681676d2a980fdcf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQly6kgEYxPcMK_nEwuUDxWW7SEl9864ThLwErfizNaRTaa-Ig1YtVpnWXYQasn8xcviBI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>7 Tips Pembukuan Rumah Makan Menuju Kesuksesan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Mewah Rumah Makan Minimalis Kecil Sederhana Terbaru Desain Ruang Makan Interior Ide Ruang Makan" src="https://i.pinimg.com/originals/8b/66/af/8b66af3992fce7e96c032b446de40019.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_FfOrtuaM45-v3A_JyF1m29lzcY7UPhexg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Makan Minimalis Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Minimalis Kecil Sederhana Cantik Terbaru Desain Ruang Makan Desain Minimalis" src="https://i.pinimg.com/originals/b4/ef/f8/b4eff85d2c4604c6c1004de6a74e9374.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgCBF8P9SQ77PAzmY6t362bLinoT2HYCf6gnga3R49PhofVB9rOCyVSvBfXEuStbPEyM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk memulai usaha rumah makan memang diperlukan bakat dalam memasak dan memiliki gairah untuk usaha pelayanan namun memiliki keduanya tidaklah cukup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warung Makan Sederhana Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/92/52/e9/9252e937355d5d1e0ab0f3d02ddc6a4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHOSutYg74Rp74eKF8zv9_h7TBC_Mdivg8A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sedangkan untuk mejanya terbuat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/originals/3d/99/ff/3d99ffb81c480b6d7ceff400667488e5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWhr_E2WmnFBNb5SNk8pxqLTUp-NAZ1aU1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Makan Minimalis Sederhana Lagu Ngetren 2017 Desain Ruang Makan Rumah Desain" src="https://i.pinimg.com/originals/1f/23/1f/1f231f2c25ac4728a5e4e70685a77005.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu1GxHQmHrxi29B_qeIGJP81BXfKSa53SE8VQCLTrCgyQZ7CUtakvnf9NdnONTCnDwdo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Padahal dengan dekorasi dan desain yang tepat rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Arusha Designer" src="https://i.pinimg.com/564x/59/6b/48/596b48ae81c90a2c7c965b812e9d2007.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwTSEyY4Byg7ZZNQmwqHWovjiqDQ3tsFgvClAdtqzN36b_bUxkj5cqdDH1ulqGMntOaUE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Desain Rumah Idaman Memilih Meja Untuk Ruang Makan Desain Rumah Minimalis Desain Rumah Idaman Desain Rumah Sederhana Desain Interi Meja Makan Kursi Makan Dekorasi Apartemen" src="https://i.pinimg.com/originals/27/66/9c/27669c4fd865a440d428bab57b9991fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLzbtnU1aRKcVhTwSEfvrVimiCutZU2rIDzg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Kamu bisa memilih untuk menggunakan tempat duduk yang mana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Heidi Monges Di Advertisement Desain Kafe Desain Kedai Kopi Desain Interior Kafe" src="https://i.pinimg.com/474x/bc/3f/f1/bc3ff178e227596d95838744c6913245.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKEJXy8COuQfzbPmsRkj__6xEPb66pdJkKWg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tentu saja hal tersebut dapat menghemat lahan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+warung+kopi+rumahan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+warung+kopi+rumahan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah Makan Prima Comal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Makan Minimalis Sederhana Kayu Jati Terbaru 2017 Desain Meja Makan Set Ruang Makan Desain Ruang Makan" src="https://i.pinimg.com/originals/28/52/08/28520890d9d733ab639e13d39db7bdfc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dW2orGdxQOhnrAT4LkBa-j-Ud7TNN7_85Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Modal usaha rumah makan sederhana yang dibutuhkan untuk memulai usaha warung makan juga lebih kecil dibandingkan jika kita membuka usaha restoranDengan modal yang sedikit anda sudah bisa mendapat keuntungan yang lumayan dari usaha ini dan yang tidak kalah penting adalah perputaran uang anda sangat cepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Such An Awesome Cafe Follow Coffeetoolshop Coffeetoolshop Get Featured Coffeetoolshop Co Interior Kafe Restaurant Interior Design Arsitektur Restoran" src="https://i.pinimg.com/originals/0b/bc/46/0bbc464cdafbd647d28950398940793c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbc5cfAfqfXP7HhVN7kNc-34O7jOnusXeqqQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk tempat duduknya dibuat semacam kursi namun tidak memiliki kaki-kaki.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/a5/bf/86/a5bf86a5ccc9af262651c5d0fafd41be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRorPMr2w31bQyVSJLm9k5BahlxLJEr8AoaFhyi2dOvOsZpHFZZEoa_5jmUTQeUyQAdvFI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Salah satu model yang bisa jadi pilihan tepat untuk rumah zaman sekarang yaitu model meja makan minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Wassana Porsang Di Design Coffee Desain Eksterior Desain Interior Desain Kafe" src="https://i.pinimg.com/originals/53/8a/bf/538abf0c2ae867fd5a87a6fce6dbee3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaW7RBVYTd0mQMkc_iMEXjpBqG6tlG6Oz09g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamu bisa memilih untuk menggunakan tempat duduk yang mana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Dapur Dan Ruang Makan Interior Dapur Desain Dapur Dapur" src="https://i.pinimg.com/736x/26/da/03/26da03b85812b37af190bf9ecaf5f01b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIMUJzissnUkbcShfvLLqNGu6iH-YIG-8og';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamu bisa memilih untuk menggunakan tempat duduk yang mana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Shakaw Azad Di Daily Dose Arsitektur Arsitek Desain Arsitektur" src="https://i.pinimg.com/originals/2c/2b/b7/2c2bb77cb56d74102ec461e5feaaa2d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwMH9STx7TWyOHzqHViYij5Ij3nf65Wilcw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah makan sederhana ini sudah berdiri sejak tahun 2001.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Interior Warung Bakso Modern Sederhana 0813 5896 3216 Desain Produk Desain Interior Desain" src="https://i.pinimg.com/originals/27/a5/18/27a5185069915a0725d3bb0cf3bf47b0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2xyZfIzF3Vz9CbUgpuOmMF-TV3op4EJssvl44yIrX2UrnkTeJmhQcsnLafBSdxjjwmGw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreas Interior Kafe Warung Kopi Desain Interior Kafe" src="https://i.pinimg.com/originals/f1/b6/30/f1b630b63b05299651f6e04a906ca342.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuFHb0Lg4sLDbmPE4mAhzcNReDrXtU3NkP5wk84B9fTdhWKi1sE5zZEzSmv8k60ud9hM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sedangkan untuk mejanya terbuat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warung Kopi Sederhana Pinggir Jalan Di 2021 Warung Kopi Kopi Desain" src="https://i.pinimg.com/originals/f9/05/01/f9050144133ac176d8dbafabfe8d98dd.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0B8KMT7qw9u0n474Aoze6nY6IiRm5kE1GMtKGwqsF22GhsRPuUEP8y6_gpU0kU6AhtM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>7 Tips Pembukuan Rumah Makan Menuju Kesuksesan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Hiasan Rumah" src="https://i.pinimg.com/564x/01/0b/e8/010be8b0eb13773e9872d76ce256966e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUfOT2GENGQxZjFkUWvoFlZbhkZ0Cgok1dkg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Makan Prima Comal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hampir 1 Dekade Terakhir Ini Tempat Nongkrong Atau Tempat Yang Kita Kenal Sebagai Warung Kopi Ini Menjadi Sangat Ramai Berkembang Warung Kopi Desain Inspirasi" src="https://i.pinimg.com/564x/a1/ed/2f/a1ed2f7bb01fbad529865ff7971e9752.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS5iVVsbk4PWxU82VtQaFb99epZLYgyjrbXQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain karena hemat tempat pembangunan landed house minimalis sederhana membutuhkan dana yang lebih rendah dibandingkan dengan hunian mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Sederhana Home Architect Home Decor" src="https://i.pinimg.com/originals/21/ac/83/21ac837886cc68b76eea2d30918e0327.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTTpTEOrkKgcCPxWM9x3e2hzioDp1O8aBFiQ_VV0LdkioNRjBUFBSNHD8RiP0x7ZUBb44';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk inspirasi simak daftar rekomendasi berikut ini.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/kamar-tidur-anak-perempuan-mewah.html"><i>&larr; kamar tidur anak perempuan mewah</i></a>
+                                                                    
+                                        <a href="/kamar-apartemen-minimalis.html"><i>kamar apartemen minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

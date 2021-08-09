@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Denah
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Denah",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/c3/e5/47/c3e547e8ee2c2bf27a1ce5fc990f1f1b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+denah",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Denah
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Denah</strong>. Desain Balkon Luar Membuat Rumah Terlihat Elegan. Membuat halaman terbuka di dalam rumah menjadi perkiraan tren di tahun 2021.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/c7/94/7a/c7947a7548d543cc42e9482565eeab87.jpg" alt="Humdecor 104 Gambar Pondasi Rumah Minimalis Sederhana Denah Pondasi Rumah Minimalis 3 Kamar Huniankini Denah Pondasi Rumah 3 Ka Floor Plans Home Home Decor" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5KhIXTS8A6L45JDOejdCIvSAeLrWrc7uD-w';">
+        <figcaption>Humdecor 104 Gambar Pondasi Rumah Minimalis Sederhana Denah Pondasi Rumah Minimalis 3 Kamar Huniankini Denah Pondasi Rumah 3 Ka Floor Plans Home Home Decor from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Desain Rumah dengan Balkon Luar. Silahkan Anda lihat sendiri desain rumah minimalis serta pilih untuk menjadi rujukan buat anda membangun rumah minimalis terbaruSemuanya sanggup kau desain rumah. Sebagai salah satu kebutuhan primer manusia sudah tentu kamu harus mendesain rumah sebagus mungkin untuk membuat penghuninya nyaman.
+    </p>
+    <h3>Desain Rumah 8x10 - Untuk yang mencari desain rumah minimalis dan modern untuk rumah ukuran 8x10 meter kami disini akan menyediakan sekitar 29 contoh desain terbaik yang dapat kamu pilih.</h3>
+    <p>Denah Rumah 3 Kamar Pada zaman sekarang ini desain rumah minimalis sudah menjadi konsep hunian yang diidamkan pada bisnis properti. Desain rumah ini luar biasa berbentuk persegi panjang terbuat dari kayu dengan kaca-kaca yang besar dan ringan serta pemandangan indah di sekitarnya. Berbagai desain rumah telah kami rancang mulai dari rumah hunian 1 lantai sampai sampai dengan desain rumah mewah. Memiliki rumah minimalis type 100 bisa menjadi keuntungan tersendiri sebab rumah tipe ini tergolong rumah ukuran besar dan dapat dengan mudah dieksplorasi menjadi hunian mewah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Contoh Model Denah Rumah Minimalis 2 Lantai Hook Desain Rumah Minimalis 2 Lantai Kavling Hook Rumah Indah 65 Des Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/91/76/9c/91769cb2f5629d2e590ea929275d649b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx8LhSg7T6vYBgrzpZBEFIVCuP8-TJXEkX5ZXBMihwFLOgmM-bnrKjyzZkZ7PizvpexD0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dan denah rumah minimalis type 100 mencerminkan sebuah bangunan kokoh seluas 100 meter persegi dan dapat dibangun dengan 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Sketsa Rumah 4 Kamar Tidur Tertata Rapi Denah Rumah Tata Letak Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/e7/38/49/e73849300af35fb1689a71b0dead22a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPU7b0mV10E8Bof9N4xXOyYX85sGvWOi_CS9t-VzXjCvclbJjW1jUoN2NRgY7HsusK80I';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Membuat halaman terbuka di dalam rumah menjadi perkiraan tren di tahun 2021.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Desain Rumah 2 Lantai Rumah Minimalis" src="https://i.pinimg.com/originals/1a/f1/a8/1af1a85e6109a8f21bfdeb7c3effaddd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmRooGqMmDqtgg6ipaMw-GRUkK_4XVLww6mbGFDdYxL51ZoL__1dqw09EaLikXDf7hqc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tren rumah minimalis ini memiliki banyak ragam mulai dari small mediun serta large ada juga yang berlantai satu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fantastic Tricks Can Change Your Life French Minimalist Decor High Ceilings Minimalist Living Room Design Pa House Design Home Design Plans Modern House Plans" src="https://i.pinimg.com/474x/b5/9b/21/b59b2100454a2b960381751d0729fc4f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSixRqaFwae2jgOHaK6SvGVxWiHsKdQkSwagw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aplikasi desain rumah bisa membantu kamu mewujudkan rumah impian kamu geng.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrggyqbbdg0mp4al1cnlfjf1sw4zkyh Hkcyph0bz5wtbmaosx Usqp Cau" src="/search?q=denah+rumah+4+kamar+1+mushola&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+4+kamar+1+mushola&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain Rumah dengan Balkon Luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/originals/c1/2e/95/c12e95dfef56c2409d13cfeb1c352dc2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTE1vgTKnaA5eHkxj2Dg_sWg4ZUybRShlIBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara membuat denah rumah bukanlah kemampuan umum semua orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini 16 Contoh Gambar Denah Rumah Minimalis Beserta Keterangannya Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/07/97/81/079781bae8c61377937d712335621507.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMEI1ouwmv_gmkkRK8YnTEXfYUtgNIGaoLPZPzJ4gcD9oDa705rbxVWmh5vWe7lYSMOe0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah ini luar biasa berbentuk persegi panjang terbuat dari kayu dengan kaca-kaca yang besar dan ringan serta pemandangan indah di sekitarnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Minimalis Type 21 Denah Rumah Eksterior Modern Rumah Minimalis" src="https://i.pinimg.com/originals/90/e1/d0/90e1d0f0c568448b1826cef20a333766.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcJ-OrzQT92zK9PSmLmBLONG9HR0oktmdx4Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aneka Desain Rumah Minimalis berikut gambar Denah Model interior Eksterior Inspirasi warna Cat bentuk Pagar inspirasi bagi yang mencari hunian baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/ab/9a/d3/ab9ad3503122f69a782c28ba66375a68.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkqo62lLTCRtFedmuwaUaJJ3tjcQcUuOyQf1pYY-DmLdVOyhJWOKDisP95waLOr562zs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain denah rumah 10x12.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2 Lantai Di Lahan Trapesium Setiap Lahan Punya Karakternya Sendiri Sendiri Termasuk Bentuknya Klien Kami Y Denah Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/17/f8/94/17f894ae962104d35ee71c8e20bcc908.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPapVcbSe02wjWf3s2lx-fHMB371qqclidw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah 3 kamar yang terakhir adalah dengan lahan ukuran 17 x 7 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Minimalis 1 Lantai Ini Merupakan Desain Rumah Gratis Yang Kami Berikan Kepada Bapak Yon Rumah Arsitektur Denah Lantai Rumah Desain Rumah" src="https://i.pinimg.com/736x/0b/d6/81/0bd6814c4cae1cf40f2ecdf73b9cb86b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-DbZ3_NA22efmkP-7Kq8IlSmrtDXLguV1sA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk kamu yang tidak tahu bagaimana cara membuat denah rumah minimalis tenang saja kamu bisa menemukan berbagai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Dan Ukuran Keterangan 1 Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/d8/60/a3/d860a3c9ab57ea41559495c04036730a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs6hgPl6RLC3fm_AEMUF_KNSZRZ-vlRwltFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan menggunakan denah ini sebagai acuan maka solusi tentang lahan sempit tapi tetap mendambakan punya rumah lapang bisa terwujud.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/originals/be/96/06/be9606a502936e5f4bc1f954d6060b7d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBulUy_uMiaEdv02MF4lyheYJ_FjLhJxS75GIH82PnHHtukACvwDup1mJTJD-tAZgJq9g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk mewujudkannya maka kita mulai dari membuat denah rumahnya terlebih dahulu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 2 Lantai Yang Bagus Rumah Minimalis Denah Lantai Rumah Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/d4/a1/07/d4a107d8500af88ec144b0af91f6ec3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-IdqMneRpjnuHrz0al6Trr8ahC-tlVns4nw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk itu dapur dan ruang makan dijadikan satu dan juga kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Modern 1 Lantai Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/c3/e5/47/c3e547e8ee2c2bf27a1ce5fc990f1f1b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN0yHReDA6qpt7E1s94D-YzWXdYKnjoPfjoksyW-bvt7ojTP7GKkRHUE9BOVch-8xoqXI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak hanya sekedar hobi memahami cara membuat denah rumah bisa membantumu merealisasikan rumah impianmu menjadi kenyataan dengan lebih presisi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Contoh Gambar Denah Rumah Minimalis Rumah Minimalis Rumah Minimalis Rumah Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/3a/87/96/3a879638f17cc64a9998cb67bea47f97.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8V59fmfQn2eUFHecPGHYu4rP0AHxQuepgUw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gbr denah rumah ukuran 10x12 m yang terbaru bahasan mengenai ukuran denah rumah merupakan sebuah inspirasi yang tidak jarang ada pula yang membutuhkannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Fandi Joenatcha Di House Design Denah Rumah Rumah Minimalis Rumah Modern" src="https://i.pinimg.com/originals/15/4f/eb/154feb12c499a7bd7f70578b431eefac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTocDv9EUBPAerpmuMHmXLN9sZmi9qxfeu2yccjyBs4k5JxRJFw80igEuyBx-4N9FuRR0A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk kamu yang tidak tahu bagaimana cara membuat denah rumah minimalis tenang saja kamu bisa menemukan berbagai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="55 Denah Rumah Minimalis 2 Lantai Dengan Kolam Renang Terbaru Koleksi Gambar Rumah Terlengkap Denah Rumah Denah Rumah Eropa Rumah Minimalis" src="https://i.pinimg.com/originals/5d/98/18/5d9818588be5b2e274fcf16596d261a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUS8Tdn-1ou2TRLjm6qOha9OiwVDKRz6idHg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>42 Gambar Dan Denah Rumah Minimalis Type 60 Denah Rumah Rumah Minimalis Desain Rumah Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Denah Rumah Minimalis 1 Lantai Luas 137m2 Luas Total Bangunan 153m2 Termaksud Teras Ukuran Denah Rumah Rumah Minimalis Denah Rumah 4 Kamar Tidur" src="https://i.pinimg.com/originals/cf/65/d1/cf65d15bbcc4cc5ea0eee86493bbfc1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGHLZR8dH19e6Trg94Kf-H0HYPIMeiNfxhRXHLRqVR_2f9eB78_70lSwTi_bXmfl50Oig';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan menggunakan denah ini sebagai acuan maka solusi tentang lahan sempit tapi tetap mendambakan punya rumah lapang bisa terwujud.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Satu Lantai Luas 144m2 4 Kamar Tidur Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/e3/b1/c0/e3b1c05408b793f1c90540bfa81bf3e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5N-njLyT2uMX3kpYFx9bTCQCEuZspcS6rog';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Entah itu desain modern kontemporer atau minimalis yang tengah tren belakangan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Layout Rumah Mewah 2 Lantai Denah Rumah Arsitektur Desain Arsitektur" src="https://i.pinimg.com/originals/b8/2e/77/b82e77a4bbb1fd47e6960de6652e19c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnqZLaiZnb7K0zTtBEaZHF5GHBQ4HB8j1pQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak perlu halaman luas jika halaman Anda terbatas hindari gunakan sofa atau kursi yang besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Gambar Denah Desain Rumah Minimalis Dengan 4 Kamar Tidur Denah Rumah Desain Rumah Kontainer Denah Desain Rumah" src="https://i.pinimg.com/originals/97/a3/4a/97a34a767087d92d1bd878e75e07cd4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVESDSZsfD8jtQgUxpx1MJeVf7JeIe3KU33jSgGYdBTdnKURNBSaU93YzHHDW0lD1A9M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk melihat rincian bangunan lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Humdecor 104 Gambar Pondasi Rumah Minimalis Sederhana Denah Pondasi Rumah Minimalis 3 Kamar Huniankini Denah Pondasi Rumah 3 Ka Floor Plans Home Home Decor" src="https://i.pinimg.com/originals/c7/94/7a/c7947a7548d543cc42e9482565eeab87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5KhIXTS8A6L45JDOejdCIvSAeLrWrc7uD-w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Mulai dari hunian kelas entry level sampai menengah sudah banyak yang menggunakan denah rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah House Blueprints Denah Desain Rumah" src="https://i.pinimg.com/originals/bc/3c/cb/bc3ccb15046c9d7741ab662c115c9676.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnrcp7C7_LaspQznsZurP02yToGbKpJqeYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara membuat denah rumah bukanlah kemampuan umum semua orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Denah Rumah 12x8 Rumah Minimalis Apartemen Minimalis Denah Rumah" src="https://i.pinimg.com/originals/0e/2a/04/0e2a0470923fcd8bfd49776d8dd02819.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyHVVwJpO4KJRxYeDcdYE8ojR-sHwlwlpq4A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tren rumah minimalis ini memiliki banyak ragam mulai dari small mediun serta large ada juga yang berlantai satu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Ukuran 7x12 Me 2 Kamar Tidur 2 Lantai Tampak Depan Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/474x/dd/f7/95/ddf795c62dfecd1d127ba1e4308e474c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuEVM7LxFTGIG0HkbODmCRzs-Rrkw943EZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain denah rumah 10x12.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/originals/59/5f/a3/595fa35a16bdaf1d1f2cff83fd0adf42.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiTafQtclPSI85nNrhm-5TsKkB_cCSZPC9w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika Anda tertarik untuk membuat rumah type 45 dengan jumlah 2 kamar bisa melihat contoh di atas ukuran tanah desain rumah di atas adalah 7 m2 x 12 m2 dengan 1 kamar mandi ruang tamu dapur dan 2 taman minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Contoh Denah Rumah Minimalis 2 Lantai Modern 7 Rumah Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/57/db/9c/57db9c5a7bebddfa121be19eed19c852.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReyVmd-Ly31dJpELQOKS-Dx47TRFOq8MG67ExNdQoMgy4V02RnyOO3AeJW4mZ204Prjo0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah yang satu ini memilih menyediakan 2 meter tanah di depannya untuk dijadikan taman yang indah dan asri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=denah+rumah+2+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+2+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Tak perlu halaman luas jika halaman Anda terbatas hindari gunakan sofa atau kursi yang besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Sketsa Desain Interior" src="https://i.pinimg.com/originals/a0/ce/fb/a0cefbdb187d9fe201acf7f7def99773.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlya8drsA7EKhjv6176_BSXkeCmeOkYMuVg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak hanya sekedar hobi memahami cara membuat denah rumah bisa membantumu merealisasikan rumah impianmu menjadi kenyataan dengan lebih presisi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Rumah 2 Lantai Minimalis Check More At Https Space Made Com 100 Desain Rumah 2 Lantai Denah Rumah Desain Rumah 2 Lantai Rumah Minimalis" src="https://i.pinimg.com/originals/b9/2f/a3/b92fa3a03666d1b51721a63e5615937d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRda7hSdTAedS3Le1eUZCR9W-RIbo8EEI2YFPM9uVal5xmkz1cBK3OTCFU37Wkp6v9x22k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah dengan Balkon Luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Plantas De Casas" src="https://i.pinimg.com/originals/a4/46/0a/a4460ac73e891a10725eb160722a7a70.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNdojBYsJtm_UfKRtwKd4QEM9M-PwmKLsqUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini merupakan kumpulan desain rumah milik Indo Design Center dengan kategori rumah mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Rumah Mewah 1 Lantai 4 Kamar Desain Rumah Modern Gambar Rumah Minimalis Denah Rumah Rumah Mewah Desain Rumah" src="https://i.pinimg.com/originals/a0/9e/96/a09e969bb6a65749fe3cd14b0b9cafe8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbrYUsFkIeTBFUeryGRRLM2mvQPTFqbNhqA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Memiliki rumah minimalis type 100 bisa menjadi keuntungan tersendiri sebab rumah tipe ini tergolong rumah ukuran besar dan dapat dengan mudah dieksplorasi menjadi hunian mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Modern Desain Rumah Modern" src="https://i.pinimg.com/originals/a8/d0/8f/a8d08fc055334ba054b176193403314a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfvBitnoIBuHh00yZsK-_n75Nz8II-7TN9Fw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana tapi indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2 Muka Di Lahan 15 X 18m Good Design For Everyone With Affordable Price Desain Denah 300rb 100m2 Luas Bangunan Rumah Denah Rumah Rumah Indah" src="https://i.pinimg.com/originals/3e/5e/79/3e5e79083397848c41d1e3e314ad3d73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk74pdHuAJ84auTJsOXvxrnu1IG-WnQ3he4WT7IQX5aD4FZPBLu5df_PTYgpi6HcTZgH4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kumpulan Desain Rumah Minimalis Elegan dan Modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Type 68 150 3 Kt Garden Everywhere Bagi Anda Yang Akan Membangun Dengan Menggunakan Jasa Kontra Denah Lantai Rumah Denah Rumah Denah Lantai" src="https://i.pinimg.com/originals/fe/a4/fa/fea4faf8fab31b686a5a38cf11e9293f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI8GVr7s_t8HtYglR_MGmR3EuON8_h_WMWTWRvu9t_cvZpIQTC9n8qJeEVCIIISKJDBp4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Minimalis 2 lantai E.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah 2 Lantai 5 Kamar Tidur Kolam Renang Home Fashion Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/42/62/0d/42620d0cd6fcc65e2f06605abbf06fc0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjvmcE00JO9r0yW3Sa9st7XL2HoFs8SkgNA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jadi kamu bisa melihat detail gambar yang kami bagikan disini satu persatu untuk menentukan denah rumah yang tepat desain tampak depan dan beberapa gaya desain yang akan membuat bangunan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aneka Contoh Denah Rumah Mewah 2 Lantai Desain Rumah Minimalis Denah Rumah Tata Letak Rumah Rumah Mewah" src="https://i.pinimg.com/originals/48/80/bf/4880bfb787e102b4e02bd7141389f327.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDADpgFTviNy3L1vVv9kkRriL8-sFTk6ZPYg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah di desain dengan balkon luar sebagai tempat berkumpul dan bersantai Bersama keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cantik Baru Siap Huni Jalan Godean Km 7 Denah Tegal Sidoarum Jpg 1200 1600 Denah Rumah Arsitektur Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/50/11/dc/5011dcf7a385f114099e08ec047d39ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwf2Ln7WDM2P_mtJRxGXhncHvha8fR7ExEYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan menggunakan denah ini sebagai acuan maka solusi tentang lahan sempit tapi tetap mendambakan punya rumah lapang bisa terwujud.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 1 Lantai 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Rumah" src="https://i.pinimg.com/originals/11/1d/d2/111dd25308b240e615a2beefeca38fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZEn_TfzXFKe9MSmM7lz0_hA3OhfZCuZOeffzr-UwmhbL3aGZvWz4-Gizyr0VFw8GBnQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Yuk intip dulu gambar denah rumah minimalis terbaik berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Ukuran 15 15 Denah Rumah Desain Rumah Bungalow Denah Rumah Modern" src="https://i.pinimg.com/originals/0b/a8/46/0ba8465044fac7cbb99c166654e7d715.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrWhehMPHd_0W8RvvweOXRK5d0jb4ebI7XhL7MEDWAOQ-p-M1oi8v57BmQwGs82WXDaIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bentuk rumah juga sangat simpel tapi tetap bergaya dengan tembok yang dibentuk persegi layaknya bingkai pada jendela depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini 16 Contoh Gambar Denah Rumah Minimalis Beserta Keterangannya Denah Rumah 4 Kamar Tidur Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/68/8a/0c/688a0c006cb413fce8b85a6db868564b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6P0Z08-FGE5hzLydpyrcgR8j2-N6mco5Aw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sedangkan di belakang garasi dibuat dua kamar dengan ukuran sedikit lebih besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gl" src="https://i.pinimg.com/originals/fe/3c/74/fe3c74d890f17f7a969fd9b6b67eefb6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNwBg9cwuTkyyqm9no097v6JfJeM2NWLL06YbttxaeBZ88ZG9OBo0GWf87WdEKJyaXui8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Silahkan Anda lihat sendiri desain rumah minimalis serta pilih untuk menjadi rujukan buat anda membangun rumah minimalis terbaruSemuanya sanggup kau desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Denah Rumah Minimalis 3 Kamar Tidur 1 Lantai 2020 Beserta Keterangannya Dekor Rumah Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/1b/fc/28/1bfc2851aab44be47b2525e008415c53.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgNwUnwYwgJ5Ty_AZiC0fnhaNVGZfYhLUkHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah di desain dengan balkon luar sebagai tempat berkumpul dan bersantai Bersama keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Dan Denah Rumah Minimalis Type 60 Denah Rumah Desain Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/16/73/bf/1673bfd37247d4ccbdf5214ac175095e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2CTG4CC19SYiKF2tm_AZkoCQbOrPHQH0UIHC-dRrOKlhmJKszrQDUyNv7c8gCFBdg7lk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagai salah satu kebutuhan primer manusia sudah tentu kamu harus mendesain rumah sebagus mungkin untuk membuat penghuninya nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Posisi Hook Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/25/80/56/2580564611a93a779f43d2beded369ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMApfQC5QlUZjRFzpEZZkDXhxQX96Ye3HfDQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis ini bisa dikatakan sebagai solusi tepat bagi mereka yang punya lahan sempit tapi budget cukup banyak buat membangun rumah 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Model Denah Dan Tampak Rumah Minimalis 2 Lantai Di Takalar Arsitektur Rumah Denah Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/74/6b/d3/746bd3b3890b73cfc7eea21d769ed161.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpe8huN7YoFSlxeSxvdMBwatJj_cso52oVsw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tak perlu halaman luas jika halaman Anda terbatas hindari gunakan sofa atau kursi yang besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Minimalis Ukuran 6x10 Terbaru Foto Rumah Minimalis Dengan Denah Rumah Minimalis Ukuran 6x10 Denah Rumah Denah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/474x/0e/5e/25/0e5e2500de0b38f22f2f57fcfdf08506.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIYHM6RLIv8OYhRBKQvqkSxDupOobVKBa6jQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah rumah menguraikan struktur lengkap rumah mulai dari pembingkaian pondasi dan dinding hingga pembingkaian atap dan tata interior.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Lebar 6x18 2lantai Ini Alternatif Dari Post Sebelumnya Lantai 2 Nya Full Alias Dimaksimalkan Penuh Hehehe Dan Kamar U Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/06/d3/66/06d366a7067dfa642abe5592cbf60869.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQkG8kBtJfVDnYa1gkTXXaiTaeo1uXYu6YXGFjEeGQ9VEiHrNtkZu1XQkIFQ1u53w5PeM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk mewujudkannya maka kita mulai dari membuat denah rumahnya terlebih dahulu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Minimalis Desain Gudang" src="https://i.pinimg.com/originals/43/f2/b5/43f2b58085d7383d962dae5fc226c4a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpuHHzgDFQQ35ezNHYFhzgd_bGSMTmGz7o0tMQPGsuTl-5xXrJOCiIc9MR4uT16_SJNsc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah di desain dengan balkon luar sebagai tempat berkumpul dan bersantai Bersama keluarga.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/jasa-desain-interior-rumah-jakarta.html"><i>&larr; jasa desain interior rumah jakarta</i></a>
+                                                                    
+                                        <a href="/interior-rumah-papan.html"><i>interior rumah papan &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

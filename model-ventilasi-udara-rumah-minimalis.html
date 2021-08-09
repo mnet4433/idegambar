@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Ventilasi Udara Rumah Minimalis
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Ventilasi Udara Rumah Minimalis",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/79/be/20/79be20112857f376c89ee459495965ce.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+ventilasi+udara+rumah+minimalis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Ventilasi Udara Rumah Minimalis
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Ventilasi Udara Rumah Minimalis</strong>. Adanya ventilasi ventilasi yang memadai tentu membuat sirkulasi udara di dalam rumah lebih halus dan terasa sejuk sehingga kelembaban di dalam rumah juga terjaga. Dengan gambar desain Desain Rumah Minimalis yang baik yaitu resolusi 1241x993 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ef/1e/3e/ef1e3e989167ebec0a60300c3f51434b.jpg" alt="Jendela Gebyok Dekorasi Interior Ukiran Jendela" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7vthFzghOpDUKvaIP-X6BRWYscZFVFoGXQ';">
+        <figcaption>Jendela Gebyok Dekorasi Interior Ukiran Jendela from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Contoh Ventilasi Udara Dapur Perumahan Type 27 Desain Minimalis 1001 Foto Gambar Desain Rumah Minimalis Modern Terbaru Sunday 21 March 2021 085915 Home. Kaca nako yang digunakan dapat mempermudah Anda mengatur volume udara yang masuk dan mengontrol suhu ruangan sesuai keinginan. Desain Ventilasi Udara Rumah Minimalis merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.
+    </p>
+    <h3>Ventilasi udara ini memiliki fungsi yang sangat penting dalam sebuah rumah karena ventilasi bertugas mengatur sirkulasi udara sehingga udara dapat berganti setiap waktu dan menjaga rumah dari kondisi lembab terutama di rumah dengan desain minimalis.</h3>
+    <p>Ventilasi atau lubang udara pada sebuah rumah digunakan untuk pertukaran atau pergerakan udara dari ruang terbuka atau ruang tertutup. Model ventilasi pada berkonsep minimalis yang modern lebih banyak yang berbentuk kecil dan tipis serta terletak di antara bagian atas dinding dan plafon. Contoh Ventilasi Udara Dapur Perumahan Type 27 Desain Minimalis 1001 Foto Gambar Desain Rumah Minimalis Modern Terbaru Sunday 21 March 2021 085915 Home. Ventilasi udara ini memiliki fungsi yang sangat penting dalam sebuah rumah karena ventilasi bertugas mengatur sirkulasi udara sehingga udara dapat berganti setiap waktu dan menjaga rumah dari kondisi lembab terutama di rumah dengan desain minimalis.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Relling Balkon Balkon Besi Desain Balkon" src="https://i.pinimg.com/originals/7f/fc/b3/7ffcb31efc431bbf544011a2150bd686.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWVtNcD3Nzp-SjmHKzk-yyNh_HHoTGPRU4A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kaca nako yang digunakan dapat mempermudah Anda mengatur volume udara yang masuk dan mengontrol suhu ruangan sesuai keinginan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Legalitas Izin Mendirikan Bangunan Rumah Imb Setelah Tahapan Perencanaan Rumah Yang Anda Buat Baik Dalam Menentukan Ruan Desain Rumah Modern Rumah Modern Rumah" src="https://i.pinimg.com/474x/b4/66/65/b466658fb137663d43b98abfa7428e46.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN44d8vVbxof3iJNwBN50wzfR_rsJtsqYxNw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model ventilasi udara rumah minimalis yang pertama dibuat dari kaca nako yang bukaannya dapat diatur sesuai keinginan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com" src="https://i.pinimg.com/564x/88/14/ae/8814ae55ba86b64175008c25a20aaaad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4xgPceSDCX6AhknylpHNe7Bw51tfIexThg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lantaran bagian luar jendela ini berbentuk tiga dimensi yang menjorok ke pada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 1 Lantai 2 Kamar Tidur Dengan Ventilasi Udara Dan Cahaya Yang Baik Http Www Bikinrumah Ne Casas Bonitas Casas Pequenas Casas De Lujo" src="https://i.pinimg.com/originals/e6/68/3d/e6683d940cf7aad34e51758ad299196c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTlUd0f-UtNESCHWJ-scknM_zb2EworhsqCQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kali ini ada poly contoh desain jendela udara minimalis yang dibentuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/originals/ab/5a/58/ab5a580c21ca4f07abe5123de723a5f9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThMv0JAHCXaoMGHD0Du6f-zEeIGnYwZi93gQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adanya ventilasi ventilasi yang memadai tentu membuat sirkulasi udara di dalam rumah lebih halus dan terasa sejuk sehingga kelembaban di dalam rumah juga terjaga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Minimalis Di Kinan City Residence Balkon Desain Balkon Minimalis" src="https://i.pinimg.com/originals/d9/79/9a/d9799a515e2e61851ddc24ef25aa8df7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuS6uxXJJKjHq8GIbs9WZoHdy5IWUSACh-g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Ventilasi Minimalis Modern 2012 masih didominasi dengan bentuk kotak persegi empat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jalusi Ini Berfungsi Sebagai Jalur Keluar Masuk Udara Atau Ventilasi Udara Jalusi Atau Yang Biasa Disebut Juga Dengan Kisi Kisi Terutama Ka Atap Rumah Desain" src="https://i.pinimg.com/originals/72/4d/da/724dda1ce60764576de1e0b5fff564f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXRg5M6hcocOCU-eMHwevHC_pO2-tPZoIpK1x9JO7egGk6kwlTJd0Qg_Tu-Y288aPvEk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ventilasi kayu minimalis yang satu ini mempunyai nilai artistik di bagian luarnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tembok Ventilasi Udara Di Rawamangun Jakarta Minimalis Kanopi Pintu" src="https://i.pinimg.com/736x/e4/2b/00/e42b00a98cd21c97cba8ce68943bf055.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJPiQRyOW1lmNnEM01XREBlnX7nrpsK0z5hPbIg8g9X9AX9uRvIGHA9-KyDCcGDIGTeVg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Ventilasi Udara Rumah Minimalis merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Insect Screen" src="https://i.pinimg.com/originals/3c/52/cc/3c52cc96903ee71f42c111661e4df5e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKLwx6cMzJwSsnZtAIOjcIJ8ai_0AjMBo5Dw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ventilasi udara ini memiliki fungsi yang sangat penting dalam sebuah rumah karena ventilasi bertugas mengatur sirkulasi udara sehingga udara dapat berganti setiap waktu dan menjaga rumah dari kondisi lembab terutama di rumah dengan desain minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Klinik Di Tanah 9 5 X 28 M Karena Lahan Memanjang Taman Di Tengah Diperlukan Untuk Pecahayaan Dan Ventilasi Udara A Rumah Arsitektur Denah Rumah" src="https://i.pinimg.com/originals/7a/ac/9c/7aac9c07a4184506879af6ff89563740.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgFlK5WHyKIAvdT5InHhnw8lqSj3CzZCG_nPdw9li-s5YIfGyTtdM3TIChe1rx1-hIxOc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lantas apa saja ide desain jendela untuk rumah masa kini yang tetap fungsional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=model+angin+angin+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=model+angin+angin+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain ventilasi udara minimalis yg elegan terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bata Roster Lubang Angin Cantik Nan Menawan Rooang Com Arsitek Bata Rumah" src="https://i.pinimg.com/originals/f9/4e/9b/f94e9b8fec4ca86cca3070f8f18315d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwRikxPNwxndiCWbEoQzTOyLqKxyfInPfr67n33u0smQvR6Q9VAO7zyVl0-jK352Ila3s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lantaran bagian luar jendela ini berbentuk tiga dimensi yang menjorok ke pada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=ventilasi+atas+pintu&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ventilasi+atas+pintu&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Ventilasi atau lubang udara pada sebuah rumah digunakan untuk pertukaran atau pergerakan udara dari ruang terbuka atau ruang tertutup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ventilasi Udara Ukiran Jepara Terbuat Dari Batu Alam Buat Rumah Minimalis Lintang Katon Youtube Ukiran Batu Dinding Batu" src="https://i.pinimg.com/564x/da/cc/d5/daccd5b8603a3712399323cdd6cd0fe6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLFkgHGIXAGYlQVb0XVT2Vr224iEEl_pacKM5OhG1oEXVNnqp_aEQCg08dV7QIWYAvF2g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ya seperti desain lubang angin rumah minimalis yang tanpa batas ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Window Transformer" src="https://i.pinimg.com/originals/a7/19/54/a71954b8ee5a955c3575569648b72e8f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJod1ouS1hLgo7FYf7fu9KVBOsLgIo4VNv9YywnfhdJptkG1u0xbZIqzQPw-NBOlZXR8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Fungsi loster rumah yang sangat utama sebagai jalan sirkulasi udara di dalam rumah yaitu alasan mengapa loster rumah atau ventilasi harus wajib ada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="17 Contoh Ide Ventilasi Udara Di Atap Rumah Denah Desain Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/736x/9b/39/64/9b3964b69a3683fba76a53b113a3ac54.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9MJrwPokFBX-l6MxF5IK425Hfox_0bYZqLs5xKvlGeCgHHOBGfLlqJG7BRA16S7Xaw7o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hadirnya jendela ini kesan tempat tinggal anda akan terlihat seperti tempat tinggal masa depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung 6x10 Kesan Tradisional Bentuk Unik Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/originals/c2/27/de/c227ded3b0903cce4dd91de1b1210c09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoY9Kecx3uXD0hLave6rMhpBgpeEkGoVC0A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model ventilasi pada berkonsep minimalis yang modern lebih banyak yang berbentuk kecil dan tipis serta terletak di antara bagian atas dinding dan plafon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jendela Gebyok Dekorasi Interior Ukiran Jendela" src="https://i.pinimg.com/originals/ef/1e/3e/ef1e3e989167ebec0a60300c3f51434b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7vthFzghOpDUKvaIP-X6BRWYscZFVFoGXQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bagian jendela udara dalam sebuah rumah memang sebagai bagian yg krusial buat diperhatikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Minimalis Page 4 Sembilanstudio Desain Rumah Kecil Home Fashion Arsitektur" src="https://i.pinimg.com/originals/14/22/fa/1422faa9c478129017fd3a9763fbf05c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8elDV5b2bzim2rjR0hEihzvGszuvfgQoPcg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hadirnya jendela ini kesan tempat tinggal anda akan terlihat seperti tempat tinggal masa depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Kusen Jendela Aluminium Jendela Rumah Desain Jendela Jendela" src="https://i.pinimg.com/originals/bd/13/7d/bd137da7f158118ae39d6b968a285db4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VhDs7hEJ38FnFnhwVxvaV5QNIvx7DCTiDO9GKld2SmCOHfo127iUMSeTXooNQFMGpHs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Adanya kaca yang tidak mengambarkan sisi pada ruangan tersebut membuktikan kesan berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kanopi Kaca Teras Carport Di Bambu Apus Jual Kanopi Tralis Kanopi Kaca Rumah Minimalis" src="https://i.pinimg.com/originals/92/ef/97/92ef97d06ddf3e50463ae83fedd765be.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlAJEPHs68llOAFy1-0o4EQc3kzi2D3ZmdIA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hadirnya jendela ini kesan tempat tinggal anda akan terlihat seperti tempat tinggal masa depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Ventilasi Rumah Yang Baik Dan Sehat Kabinet Dapur Rumah Dapur" src="https://i.pinimg.com/564x/19/36/16/193616d77f9f6da2de2baf013745d959.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvT-jxHLo0PgSbvCHBGor7eXPAeZQfDT4t__rLz9pb7Keo9zq207Ypwg15aixzZw5YqFs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hadirnya jendela ini kesan tempat tinggal anda akan terlihat seperti tempat tinggal masa depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 1 Ada Tempat Duduk Yang Bentuknya Juga Bisa Digunakan Untuk Duduk Santai Selonjoran Buat Sambil Main Game Baca Desain Interior Home Decor Rumah Minimalis" src="https://i.pinimg.com/originals/09/4d/04/094d043c4373fbf54e7c626b959b8ec0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcGnvY6GEeEYvODlaALRGkOFfHbfLSKqdnXQ';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Model ventilasi pada berkonsep minimalis yang modern lebih banyak yang berbentuk kecil dan tipis serta terletak di antara bagian atas dinding dan plafon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Dapur Minimalis" src="https://i.pinimg.com/originals/d5/fd/42/d5fd4253187577bdfaabf8e77481c06b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShlNND8kaEwKNKlE2JF1uMobqhZ0LliBva9w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lantaran bagian luar jendela ini berbentuk tiga dimensi yang menjorok ke pada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Warna Cat Rumah Minimalis Teras Depan Terbaik Berikut Rekomendasi Warna Cat Rumah Minimalis Untuk Teras Rumah Minimalis Dekorasi Rumah Pedesaan Rumah" src="https://i.pinimg.com/originals/eb/3c/75/eb3c755a291584cd997a41ed9b64e29b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zK_1qajtvNromPXsGzNNBdMwRGStfQCyiQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh Ventilasi Udara Dapur Perumahan Type 27 Desain Minimalis 1001 Foto Gambar Desain Rumah Minimalis Modern Terbaru Sunday 21 March 2021 085915 Home.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teralis Jendela Dan Pintu Minimalis Jendela Minimalis Pintu" src="https://i.pinimg.com/originals/6e/c9/bc/6ec9bc3720a5e7db7e8e0db307cd950a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8cgk5pSHQF8X6EKc854XJhGN4t8u5rNeL8A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Minimalis yang baik yaitu resolusi 1241x993 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Bit Ly 2ccasrv Kanopi Skylight Transparan Polikarbonat Dengan Ventilasi Udara Di Citereup Kanopi Skylight Transparan Polikarbo Kanopi Minimalis Atap" src="https://i.pinimg.com/736x/d8/44/a8/d844a8142d792f95310a90abfc9a5527.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw6TSl_7OrqmdlLo1ZiBtMd5Wc-Fy0MU4PLg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Krawangan Grc Bangunan Modern Desain" src="https://i.pinimg.com/474x/49/86/a9/4986a9895843dc7505e0877d30bdfcb7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRve79VDBAi2rbcoBYra1Li7-onulaxPuy8QtZ5nSqv80XYebuTXeFIiXBRl1QbY_43PCs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Oleh karena itu desain jendela yang indah dari segi arsitektur juga harus mampu berfungsi layaknya sebagai ventilasi udara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/originals/fd/16/ee/fd16eeb6f3ac405b55b948ea19cd311a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1M-ImtDzYWI8eJOVsFbEnbhUXmQudxcKkg44IM3gAYRhM-1SoMQAmTwOxk9r_3MW0_IU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model ventilasi pada berkonsep minimalis yang modern lebih banyak yang berbentuk kecil dan tipis serta terletak di antara bagian atas dinding dan plafon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Penerapan Roster Beton Minimalis Muebles" src="https://i.pinimg.com/564x/d7/1b/d6/d71bd6d5f0b6d7aa14238f720f2a157c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjWaz1z1EaIcVqSAbYEgMA-hW-M492-OhinA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bayangkan apa hasilnya bila sebuah rumah tidak memiliki loster atau tempat keluar masuk udara pasti udara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Livingroom Ini Sederhana Aja Cukup Buat Ngobrol Ngobrol Santai Sambil Nonton Tv Sebelahan Sama Balkon Yang Bisa Jadi Ekstensi Kamar Panas Aquarium Balkon" src="https://i.pinimg.com/originals/01/28/b3/0128b30b0713974c9d920a535d8b4840.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrZ99vsP_rgs3LNn5B8AxWH-AII2FOFmhwIysTcbGW8s3tffZgKBe1P1QE63aqfm10pLw';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Ya seperti desain lubang angin rumah minimalis yang tanpa batas ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Lantai Atas Di Depok Balkon Lantai Pondok" src="https://i.pinimg.com/originals/23/55/0e/23550e81944e0172d8b5aeff3ba9aae8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HrmOJ6VigK08c7GY-mg_FHAH9Gd5Oj0rQg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ventilasi kayu minimalis yang satu ini mempunyai nilai artistik di bagian luarnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="16 Inspirasi Terkini 2019 Seputar Model Ventilasi Udara Rumah Minimalis Arsitek Rumah Arsitektur Modern Rumah Arsitektur" src="https://i.pinimg.com/originals/90/ba/4e/90ba4e6a246fd5eb0670d09a5e1feadd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPaead9yvssDaO7nmXp2NGpJUNAR6-a7kkGBZbMi5dRqsI1Q-gYLMrIwzPU6b9izZ2ga4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adanya ventilasi ventilasi yang memadai tentu membuat sirkulasi udara di dalam rumah lebih halus dan terasa sejuk sehingga kelembaban di dalam rumah juga terjaga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Arsitektur Tropis Menangkis Panas Dan Hujan Dengan Gaya Modern Konsep Arsitektur Arsitektur Home Fashion" src="https://i.pinimg.com/originals/a9/77/e2/a977e2c176a74f084bd6dfb51c9bb191.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKVoUiG1Y2aMEpXxEpv1xqMlnlLoH-nx7PA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hal ini pada dasarnya terinspirasi dari menghadirkan model yang menarik pada sebuah hunian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ventilasi Rumah Minimalis Modern Desain Pintu Masuk Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/a0/0e/40/a00e40336296dfb4ab36b9dc104d87ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBOVMF1FJsBFPjhNiOF76XQ7jPCsmp1bXonIMd27IXN6IWVPik1ByvnA4QRlo-_ZReWk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Ventilasi Udara Rumah Minimalis merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membangun Model Ventilasi Angin Yang Sehat Di Rumah Rumah Minimalis Rumah Home Fashion" src="https://i.pinimg.com/originals/6f/9d/28/6f9d282cce858c7dec1da87cf7e04894.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVZTQGWIcnk80shhnS1cfLjUyuR8NePmldY_FEHwcjpmRGb4rm8gBdXTWEPncb8CRZuw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sehingga bagian Ventilasi udara tidak terlihat biasa saja dengan model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Ventilasi Dapur Minimalis Terbaru 2015 Desain Dapur Rumah Dapur" src="https://i.pinimg.com/originals/e1/b4/dd/e1b4dddf6c5e66163480193dcdc3d6d3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl30q_jaRqP1uuAQdHrPsD_y9v1HZBeG0OhOJD2M-5nzzZA9BTtnARGkjs6YypEiS5i-4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis yang kini banyak dikembangkan pun lebih memanfaatkan pintu atau jendela besar berdesain pivot sebagai ventilasinya di siang hari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Produsen Roster 081230469914 Ornamen Modern Desain" src="https://i.pinimg.com/originals/2d/9c/71/2d9c710069bfba985b3dfe3439f228f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudHK5tmLo0YO23JVUunC69iJnQfBc_XCetg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ventilasi udara ini memiliki fungsi yang sangat penting dalam sebuah rumah karena ventilasi bertugas mengatur sirkulasi udara sehingga udara dapat berganti setiap waktu dan menjaga rumah dari kondisi lembab terutama di rumah dengan desain minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Model Rumah" src="https://i.pinimg.com/736x/50/9e/40/509e403a77105e1d63c1481e88e2e2ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyddEV-8J1oXvSEYAmPHAo97ppDHIym2wmC72GoEeSJjdYrMWlTfME2a7TW7-nL1breY';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Model Ventilasi Minimalis Modern 2012 masih didominasi dengan bentuk kotak persegi empat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Produk Interior Pelengkap Untuk Ventilasi Anda Kasa Nyamuk Yang Mengusung Teknologi Terkini Dengan Sistem Melipat Fol House Design Insect Screening Design" src="https://i.pinimg.com/originals/bb/23/bf/bb23bfdbb9f1ff818907969afdc38f29.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghLZ0GXe9rFDEO9f7LR4IVmLVcmOQTfyRwA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ventilasi di sebuah rumah adalah salah satu hal terpenting karena ventilasi inilah yang membuat rumah kita lebih sehat dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Ole Gunnar Di Proyek Untuk Dicoba Di 2021 Denah Rumah Rumah Minimalis Minimalis" src="https://i.pinimg.com/736x/66/c6/b1/66c6b15f1ca3c8779119fb9b696f3419.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmOCzI4YJXQGfESBdAhbrtKepy9r2o9RpWyQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis yang modern tentunya tidak lagi asing dengan model ventilasi di mana udara segar bisa masuk dengan leluasa tanpa ada yang menghalangi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Desain Rumah Hook 1 Lantai Ruko Rumah Sewa Arief Pm Ruko Lantai Desain Rumah" src="https://i.pinimg.com/originals/a2/5b/16/a25b162d0c10d278b46301ae8b071c53.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhyx45Aj8Ygqhaex_xha7iJyEIbyWXE4AMA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adanya kaca yang tidak mengambarkan sisi pada ruangan tersebut membuktikan kesan berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Different Colors Jendela Desain Pintu" src="https://i.pinimg.com/originals/06/e2/d2/06e2d216bfbef66d6885c49167b0939e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBQRsHBloQSbLff8jXeZpAZVy7j9JusvhSg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1280x960 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Beragam Desain Rumah Minimalis Modern 2 Lantai Ukuran 8x10 Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/600x315/f7/ee/07/f7ee07d8c551a1cebdb62b9e232aff27.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4ephl_javxPgji3ZLx-ABrIu54_pT1ydEg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis yang modern tentunya tidak lagi asing dengan model ventilasi di mana udara segar bisa masuk dengan leluasa tanpa ada yang menghalangi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Tembok Sebagai Ventilasi Udara Di Pamulang Jual Kanopi Tralis Balkon Kanopi Desain Balkon" src="https://i.pinimg.com/originals/45/b5/57/45b5573061813eb0757188925462039f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0deQ0zN5iDiur6-i0zC-u_lY7v6a70WPPYgyb9WNTJJkQubov3Tt_j_G13Q-DETgpRy0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Minimalis Untuk Lantai 2 Rumah Di Bogor Https Bit Ly 2ccasrv Lantai Minimalis Rumah" src="https://i.pinimg.com/originals/6d/12/0e/6d120e003921c0f05d407e1b8e84395e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRS5a2NtkmkUypWgLz4U77scpF0TW_CpQleQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain memperindah rumah jendela juga berfungsi untuk memperlancar udara di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kanopi Dengan Harga Murah Meriah Ready Area Bsd Tangerang 08125227383 Kanopi Kaca Onyx" src="https://i.pinimg.com/originals/79/be/20/79be20112857f376c89ee459495965ce.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zb_vSjdsbMG9ixhoqXXPY-xLPkmFp5dcsA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tidak hanya itu rumah minimalis terdiri dari 1 lantai atau rumah dengan 2- 3 lantai membutuhkan ventilasi yang cukup untuk alasan kesehatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Atap Buka Tutup Buat Dapur Youtube Tips Dekorasi Rumah Rumah Dekorasi Rumah" src="https://i.pinimg.com/564x/7d/2b/12/7d2b124db1f38d7eb11c081a3f7d6afc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhaJD3NdI9JxMqD38RuCUHz52LL_Louo_2Dg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ventilasi di sebuah rumah adalah salah satu hal terpenting karena ventilasi inilah yang membuat rumah kita lebih sehat dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Blog Bekasi Raya Putra" src="https://i.pinimg.com/474x/9e/9a/04/9e9a04d79f2cd948f51036155ebaf2d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Hd8nw4bCZiGOL5xc6kFaHrsNieKsKnhLVTZ1HkpuEdH2oUN1Yc1UfS0DHukvQ3P5kBM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Ventilasi Udara Dapur Perumahan Type 27 Desain Minimalis 1001 Foto Gambar Desain Rumah Minimalis Modern Terbaru Sunday 21 March 2021 085915 Home.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Model Rumah Minimalis" src="https://i.pinimg.com/736x/02/32/99/0232992cfcc642f0b2cb5c71cdce6367.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_459DbEsV6pe2xmvc9ha4Y6-i1nQVX8Gz-OTzoy_fyl7snyPpqPh6EukuRo5dv_jcM54';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Ventilasi Udara Dapur Perumahan Type 27 Desain Minimalis 1001 Foto Gambar Desain Rumah Minimalis Modern Terbaru Sunday 21 March 2021 085915 Home.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/tralis-pagar-rumah-minimalis.html"><i>&larr; tralis pagar rumah minimalis</i></a>
+                                                                    
+                                        <a href="/variasi-rumah-minimalis.html"><i>variasi rumah minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

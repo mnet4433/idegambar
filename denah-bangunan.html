@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Bangunan
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Bangunan",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/7d/8d/dc/7d8ddc4c63fdbaf54105dbb508a81580.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+bangunan",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Bangunan
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Bangunan</strong>. Desain Masjid Desain Gereja Desain Hotel Desain Resort Desain Butik Desain Kantor dan desain bangunan lainnya karya Jasa Arsitek berkualitas dan berpengalaman Emporio Architect. Denah Rumah 3 Kamar dengan 3 Area Taman.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/600x315/b3/56/0c/b3560ca71c9872d5558e3cae0ec28198.jpg" alt="Luas Total Bangunan 152 M2 Termaksud Di Dalamnya Teras Dan Balkon Ukuran Tanah 6m X 13m Luas Lahan 76 Meter2 Area Terbangun Luas 52 M2 Lantai Rumah Denah Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Bs-lk_ETvV7CaiV6V04Gsns5GzGyVwh0Qg';">
+        <figcaption>Luas Total Bangunan 152 M2 Termaksud Di Dalamnya Teras Dan Balkon Ukuran Tanah 6m X 13m Luas Lahan 76 Meter2 Area Terbangun Luas 52 M2 Lantai Rumah Denah Rumah from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Kami adalah mitra kerja yang dapat dipercaya sesuai amanah jujur dan profesional sehingga dapat mengerjakan proyek sesuai harapan. Adalah bagian atas bangunan rumah tingggg al yang dipotong sehingga akan terlihat bagian-bagian dalam bangunan berikut komponen-komponen yang menempel pada bangunan tsb. DENAH PLANNUM adalah penampang atau potongan horisontal bgn rumah tingggg al yg dippgotong satu firkan dari bawah Thomas C.
+    </p>
+    <h3>Secara umum denah bangunan adalah sebuah gambar yang menunjukkan tata letak ruangan dan benda-benda yang ada didalam bangunan.</h3>
+    <p>Jasa Desain Interior Eksterior Bangunan. Bukan hanya nyeleneh bangunan dan fasilitas umum tersebut bahkan bisa berbahaya. Denah adalah tampak atas bangunan yang terpotong secara horizontal setinggi 1m dari ketinggian 000 sebuah bangunan dengan bagian atas bangunan dibuangdihilangkan. Atau definisi denah lainnya yakni tampak atas dari suatu bangunan yang terpotong secara horizontal minimal berjarak 1M dari ketinggian 000 dimana sebuah bangunan dengan bagian atas bangunan tersebut dihilangkan dan denah juga sebagai penunjuk atau untuk memisahkan antar ruangan yang satu dengan yang lainnya.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Dua Lantai Dengan Luas Lahan 78m2 1000 Inspirasi Desain Arsitektur Rumah Minimalis Denah Rumah Rumah Desain Produk" src="https://i.pinimg.com/originals/40/de/43/40de432e432b059d9d76667e619b20a4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStsgF4KI45UycxR_GFm0zyLB6E6Vx-8Fm57A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adalah bagian atas bangunan rumah tingggg al yang dipotong sehingga akan terlihat bagian-bagian dalam bangunan berikut komponen-komponen yang menempel pada bangunan tsb.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/da/1b/c4/da1bc459906d4171d8c015a04fd2c0b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI89NcY-dF-2uqHfTrt29v_Z-nq04MT7ZHN3eNkXUouVXtrs6bG4OSFVPQYy2ocL3KEFE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut tujuh desain bangunan dan fasilitas umum nyeleneh yang dirangkum dari akun Twitter cursedarchitect.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Minimalis 1 Lantai Ini Merupakan Desain Rumah Gratis Yang Kami Berikan Kepada Bapak Yon Rumah Arsitektur Denah Lantai Rumah Desain Rumah" src="https://i.pinimg.com/736x/0b/d6/81/0bd6814c4cae1cf40f2ecdf73b9cb86b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIZfWs8M_1CRPYly7dkHC-mVm9NyOxAnTe6B-mVSIxSOTffgPdL92m1toCcdiwaou6U0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah adalah tampak atas bangunan yang terpotong secara horizontal setinggi 1m dari ketinggian 000 sebuah bangunan dengan bagian atas bangunan dibuangdihilangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 1 Lantai 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Rumah" src="https://i.pinimg.com/originals/11/1d/d2/111dd25308b240e615a2beefeca38fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZEn_TfzXFKe9MSmM7lz0_hA3OhfZCuZOeffzr-UwmhbL3aGZvWz4-Gizyr0VFw8GBnQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Karakteristik ruangan ini yaitu memberikan kesan unfinished.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tinggal 10x26 M2 Building Plans House Architectural House Plans House Plan Gallery" src="https://i.pinimg.com/564x/56/06/4b/56064ba4eb274b8d91abda02d9ba72be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiqEd6pGlHHDF8muGOnJFR4FFfj4M8zb7VqAHt4J5emkoqnxAz4KogucBKPCdI-FygcCw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Umumnya denah rumah dengan 3 kamar ini dibutuhkan oleh orang-orang yang memiliki 2-3 anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Denah Rumah Minimalis 1 Lantai Luas 137m2 Luas Total Bangunan 153m2 Termaksud Teras Ukuran Tanah Denah Rumah Denah Rumah 2 Kamar Tidur Rumah" src="https://i.pinimg.com/564x/b0/2b/1a/b02b1a0e3e07d87bfb04deed70462fdd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOAL1jCRavVQeD5bwHsrkwjVwvPUd_Qg2ApajyPv2mhgw5ZM65XriX34tNFKg_WqY0Zc4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami selalu menjaga kualitas desain bahan pelaksanaan dan tampilan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai Luas 125m2 Luas Total Bangunan 138m2 Termaksud Teras Dan Balkon Ukuran Tanah 8m X 16m Luas Lahan 12 Denah Rumah Lantai Rumah" src="https://i.pinimg.com/originals/e6/21/5d/e6215d1543cc150df85f6d3c87fb2a14.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8HqVSGqLe1ATQLRj17dMcBFuvHcZEH02LgkV584e2MYB1qA-cG-tm73bClDMUdGd5fw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Secara umum denah dapat diartikan sebagai sebuah peta yang memiliki ukuran yang kecil untuk menunjukkan dan menggambarkan detail lokasi dari suatu bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Tipe 100 Tipe Bangunan Type 100 Ukuran Tanah 10m X 15m Luas Lahan 150 Meter2 Area Terbangun Luas 109 M2 Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/564x/69/62/9a/69629aa34ba78cff975b15b5f0a11407.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe6A_NgvyFXXMCuVs1NjcOeaxfj_sxu9xdFg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah adalah gambar penampang horizontal bangunan gedung atau rumah tinggal dalam bidang datar sehingga akan terlihat bagian-bagian dalam bangunan berikut komponen-komponen yang menempel pada bangunan tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bagusnya Desain Rumah Minimalis Ukuran 7 X 15 Istimewa Untuk Denah Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/7d/8d/dc/7d8ddc4c63fdbaf54105dbb508a81580.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFa6SzJaJ5YMeSKGoaG32hzD6ul6WjIMYjfw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Fungsi denah antara lain untuk menunjukkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gl" src="https://i.pinimg.com/originals/fe/3c/74/fe3c74d890f17f7a969fd9b6b67eefb6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjOiIuMBl7hAE18EsVVmHOJoLLFVWhXzFb4A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dikerjakan oleh tim yang sudah berpengalaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Green Land Villa Denah Type 55 Denah Rumah Tata Letak Rumah House Blueprints" src="https://i.pinimg.com/originals/03/d0/71/03d071e09fe9ff1f4d2aa84809bde0cc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBfCuJi26GCLqnXQqwAB1LmWkv9dV2mac2vw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fungsi ruang susunan ruang sirkulasi ruang dimensi ruang letak pintu dan bukaan isi ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini 16 Contoh Gambar Denah Rumah Minimalis Beserta Keterangannya Denah Rumah 4 Kamar Tidur Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/68/8a/0c/688a0c006cb413fce8b85a6db868564b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6P0Z08-FGE5hzLydpyrcgR8j2-N6mco5Aw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti yang telah dibahas pada poin sebelumnya untuk memastikan segala aspek sesuai dengan yang diinginkan perhatikan juga komponen gambar sketsa bangunan lainnya mulai dari gambar potongan denah setiap lantai dan juga tampak setiap sisi bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Desain Rumah Bungalow Rumah" src="https://i.pinimg.com/474x/3c/0c/dd/3c0cdd4f9532dffe3b9e3f0fa2d43e47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4Gm24PpTSmJxhCwLVuf0727TkK_PWZDEBg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DENAH PLANNUM adalah penampang atau potongan horisontal bgn rumah tingggg al yg dippgotong satu firkan dari bawah Thomas C.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqboqchghpxiu7d 4idi8pdu9jjqtzmkl9 Hohyuus3i0us3b2s Usqp Cau" src="/search?q=layout+rumah+type+100+1+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=layout+rumah+type+100+1+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Pada pengertian lain denah adalah bangunan yang dipotong secara horizontal dan kita melihatnya dari atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 3kt Di Tanah 10 X 10 M Good Design For Everyone With Affordable Price Desain Denah 300rb 100m2 L Tata Letak Rumah House Blueprints Denah Rumah" src="https://i.pinimg.com/originals/ea/98/76/ea98762bfb0210a36e2da8c098a4185a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKTSiYbR3r23bC5ylbTCuTKM_YgAwppPW3Mw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dikerjakan oleh tim yang sudah berpengalaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Dan Ukuran Keterangan 1 Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/d8/60/a3/d860a3c9ab57ea41559495c04036730a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6b5zNbQCesJOmjT-idhi7rktS74eW-Q0wKHsKqtldVKJTwUFZneceQp85OZACPDC7lE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah biasanya merupakan tampak atas dari sebuah bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Gambar Drafter Autocad Desain Bangunan House Blueprints Rumah Denah Rumah" src="https://i.pinimg.com/736x/bc/d6/bd/bcd6bd4b11ba2b562efa6d171c0c30eb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAsx62_kJssxk_4Okk8Xh_QA52FuCEEWfWDg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Masjid Desain Gereja Desain Hotel Desain Resort Desain Butik Desain Kantor dan desain bangunan lainnya karya Jasa Arsitek berkualitas dan berpengalaman Emporio Architect.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai Luas 125m2 Luas Total Bangunan 138m2 Termaksud Teras Dan Balkon Ukuran Tanah 8m X 16m Luas La Denah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/cd/35/af/cd35af654f2b290038b115e1ac2bbc60.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmSwCXh94jKbW5Pdc4-fNAh57H6YQREr1SMlWCZHCN1TqzjOTDseHkBAwSTuWeEvT1c48';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Bangunan Lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/ab/9a/d3/ab9ad3503122f69a782c28ba66375a68.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkqo62lLTCRtFedmuwaUaJJ3tjcQcUuOyQf1pYY-DmLdVOyhJWOKDisP95waLOr562zs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jasa Desain Interior Eksterior Bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tipe 50 M2 Sehat Denah Rumah The Plan Tata Letak Rumah" src="https://i.pinimg.com/originals/ab/da/07/abda078d550512aa3c5bfa5c79005bf4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCxa73NMw-zoWwFaEoAZaLKzlzYcsLBsgYjg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>DENAH PLANNUM adalah penampang atau potongan horisontal bgn rumah tingggg al yg dippgotong satu firkan dari bawah Thomas C.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Luas Total Bangunan 152 M2 Termaksud Di Dalamnya Teras Dan Balkon Ukuran Tanah 6m X 13m Luas Lahan 76 Meter2 Area Terbangun Luas 52 M2 Lantai Rumah Denah Rumah" src="https://i.pinimg.com/600x315/b3/56/0c/b3560ca71c9872d5558e3cae0ec28198.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Bs-lk_ETvV7CaiV6V04Gsns5GzGyVwh0Qg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Karakteristik ruangan ini yaitu memberikan kesan unfinished.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Ukuran 13x17 M2 4 1 Lantai 4 Buah Kamr Tidur Tampak Depan Denah Rumah Rumah Denah Rumah 4 Kamar Tidur" src="https://i.pinimg.com/originals/8b/06/19/8b0619b18ed1be70735f7852fb8f7624.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvztUaxdlaBq54EwT5ottsjKi0eauzml5YAYKUUqCWC5saQW-oUTIcrB19YMUAoZ-9PDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti apa sajakah contoh-contoh denahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Satu Lantai Luas 144m2 4 Kamar Tidur Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/e3/b1/c0/e3b1c05408b793f1c90540bfa81bf3e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP1lT_0hoPXenp3mJ4r3B7vQygAS327OgEgue49ntUz-MD12xrqwPCEX_5_-SQRqLZO04';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bukan hanya nyeleneh bangunan dan fasilitas umum tersebut bahkan bisa berbahaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Denah Rumah 4 Kamar 7x15 Minimalis Rumahminimalisprocom Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/0e/e5/80/0ee580f03cfffe5c5ea9416508b41162.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-VbdAyKTEB_k2lS0jS_Ol48mtLIU5NbAdyw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jasa Desain Interior Eksterior Bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Gambar Denah Desain Rumah Minimalis Dengan 4 Kamar Tidur Denah Rumah Desain Rumah Kontainer Denah Desain Rumah" src="https://i.pinimg.com/originals/97/a3/4a/97a34a767087d92d1bd878e75e07cd4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVESDSZsfD8jtQgUxpx1MJeVf7JeIe3KU33jSgGYdBTdnKURNBSaU93YzHHDW0lD1A9M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sketsa bangunan tak hanya mengenai tampak ataupun denah dari bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kost Rumah Tinggal 2 Lantai Tahap Pengembangan Lantai Dasar Kali Ini Ada Denah Tempat Kost Dan Rumah Tinggal 2 L Lantai Dasar Arsitektur Rumah Denah Rumah" src="https://i.pinimg.com/originals/8e/b2/07/8eb207492966c4e777026c5b06792d7c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiQI6dtVJv8KJsEJ1EO13u_NtgAwDss6EBeg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah adalah tampak atas bangunan yang terpotong secara horizontal setinggi 1m dari ketinggian 000 sebuah bangunan dengan bagian atas bangunan dibuangdihilangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2 Muka Di Lahan 15 X 18m Good Design For Everyone With Affordable Price Desain Denah 300rb 100m2 Luas Bangunan Rumah Denah Rumah Rumah Indah" src="https://i.pinimg.com/originals/3e/5e/79/3e5e79083397848c41d1e3e314ad3d73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk74pdHuAJ84auTJsOXvxrnu1IG-WnQ3he4WT7IQX5aD4FZPBLu5df_PTYgpi6HcTZgH4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Atau definisi denah lainnya yakni tampak atas dari suatu bangunan yang terpotong secara horizontal minimal berjarak 1M dari ketinggian 000 dimana sebuah bangunan dengan bagian atas bangunan tersebut dihilangkan dan denah juga sebagai penunjuk atau untuk memisahkan antar ruangan yang satu dengan yang lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Denah Rumah Minimalis 1 Lantai Luas 137m2 Luas Total Bangunan 153m2 Termaksud Teras Ukuran Denah Rumah Rumah Minimalis Denah Rumah 4 Kamar Tidur" src="https://i.pinimg.com/originals/cf/65/d1/cf65d15bbcc4cc5ea0eee86493bbfc1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGHLZR8dH19e6Trg94Kf-H0HYPIMeiNfxhRXHLRqVR_2f9eB78_70lSwTi_bXmfl50Oig';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karakteristik ruangan ini yaitu memberikan kesan unfinished.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 8x15 1 Lantai Terlihat Minimalis Denah Rumah The Plan Denah Rumah Tiga Kamar Tidur" src="https://i.pinimg.com/originals/f4/0f/0d/f40f0d24969fd17ee13bf2d92df73022.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYOcHMG_zEMQ-dp3gzAOjMidV5FVHBvLODFaDpmySQ5guU-ri2MK9n5u-cPeTrWmy5GI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti apa sajakah contoh-contoh denahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ana Punya Sebidang Tanah 10m X 10 M Insyaallah Dalam Waktu Dekat Ini Akan Segera Membangun Rumah Di Atasnya Mohon Denah Rumah Tata Letak Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/ab/73/0c/ab730cd0d628ef6ed44abe831193f699.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3biWd9BnXsml1B90DNyuj9Jzzi-uiIwD6w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam membuat perencanaan rumah yang utama harus direncanakan adalah denah bangunan yang hendak di bangun meliputi ruangan-ruangan yang di butuh kan dalam bangunan kita tata letak antar ruang harus sesuai dengan keinginan kita namun seringkali karena keterbatasan luas area yang dapat di bangun atau karena keawaman didalam memetakan ruangan-ruangan didalam bangunan menyebabkan pembuatan denah bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Sekolah Lantai 3 Desain Arsitektur Desain Arsitektur" src="https://i.pinimg.com/originals/bf/50/ff/bf50ff442f3dafc0af76a4b56189d253.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqdMjFETaU7J7ugToCShPnt1sECdWgvNGug';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Atau definisi denah lainnya yakni tampak atas dari suatu bangunan yang terpotong secara horizontal minimal berjarak 1M dari ketinggian 000 dimana sebuah bangunan dengan bagian atas bangunan tersebut dihilangkan dan denah juga sebagai penunjuk atau untuk memisahkan antar ruangan yang satu dengan yang lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Dua Lantai Dengan Luas Lahan 148m2 Luas Total Bangunan 70m2 Ukuran Tanah 6m X 12m Luas Lahan 72 Meter2 Area Te Denah Rumah Desain Rumah Kecil Rumah" src="https://i.pinimg.com/736x/e6/67/cc/e667ccc2264d37c8e441a348d7eca5d4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs-IBeOTL788xI6YLrXa_odBsG4KCHw50vng';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fungsi ruang susunan ruang sirkulasi ruang dimensi ruang letak pintu dan bukaan isi ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Di Surabaya Type Bangunan Umum Asrama Putri Nurul Hayat Denah Lt 2 Desain Asrama" src="https://i.pinimg.com/736x/3a/43/db/3a43db96b8ac598e55b3d07f2984a2fd--putri-desain-rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiRrl2jTgyk7ANbvxGLoSn-KbhR4beqfQCHA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar denah berfungsi untuk menginformasikan letak ruangan dalam bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 1 Lantai Luas Tanah Dan Tipe Modern House Floor Plans House Blueprints House Design" src="https://i.pinimg.com/originals/92/36/c8/9236c8cf0fc5314e75a663df2dd40ee6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8H---LPw6RzuczsfyFgsnD3VTycJxs81zDQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sketsa bangunan tak hanya mengenai tampak ataupun denah dari bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai 3 Kamar Tidur Https Space Made Com 368 Denah Rumah 3 Kamar Denah Rumah Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/11/d2/06/11d206e68a65da349e1e1d832f4b3a26.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtliOru7I8SaAaHjDtcbAQl5gs2-ZP3e4UXQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami selalu menjaga kualitas desain bahan pelaksanaan dan tampilan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Bangunan Kantor 2 Lantai Lantai Denah Bangunan Kantor" src="https://i.pinimg.com/originals/39/18/57/39185715539649ad28827305bac8a31a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVPvKoV802jD7U8sH0kTi9kSdVkBfnf4Ye5g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebelumnya Anda mesti memahami apa itu denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Lukita Di House Plan Denah Rumah House Blueprints Denah Rumah 3d" src="https://i.pinimg.com/originals/93/c1/b0/93c1b05210fd24327902d9a22141439e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuVvimNj_gNB-0Mff2-QTbItsagItAdb6iNQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Masjid Desain Gereja Desain Hotel Desain Resort Desain Butik Desain Kantor dan desain bangunan lainnya karya Jasa Arsitek berkualitas dan berpengalaman Emporio Architect.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Sketsa Desain Interior" src="https://i.pinimg.com/originals/a0/ce/fb/a0cefbdb187d9fe201acf7f7def99773.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4zqMsV1Bwn6-KE2mLV-sDAMOxl9VQhkcAB3JTWHtf1vALJ91vZ9WF4LzwH2bLkV7Bsu0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam membuat perencanaan rumah yang utama harus direncanakan adalah denah bangunan yang hendak di bangun meliputi ruangan-ruangan yang di butuh kan dalam bangunan kita tata letak antar ruang harus sesuai dengan keinginan kita namun seringkali karena keterbatasan luas area yang dapat di bangun atau karena keawaman didalam memetakan ruangan-ruangan didalam bangunan menyebabkan pembuatan denah bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=denah+rumah+2+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+2+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Pada pengertian lain denah adalah bangunan yang dipotong secara horizontal dan kita melihatnya dari atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="95 Contoh Denah Bangunan Rumah Yang Bisa Anda Contoh Home Design Plans House Design Design" src="https://i.pinimg.com/564x/6b/15/44/6b154459271d159cfbefc7dd148b599f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHbaVHhHSFEr3K_WX66noAx3YAdW0J2uNijA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Fungsi denah antara lain untuk menunjukkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah 3 Lantai Desain Kantor Modern Minimalis Dengan Coffee Shop Desain Kantor Modern Lantai Desain Kantor" src="https://i.pinimg.com/originals/0d/e9/69/0de9694e98ab67d70c827fa13f8dfa16.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTIFZj9-W65iE99-EC05RYnwjIDiu3EJMoBg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jasa Desain Interior Eksterior Bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai Luas 125m2 Luas Total Bangunan 138m2 Termaksud Teras Dan Balkon Ukuran Tanah 8m X 16m Luas Lahan Denah Rumah Lantai Denah Lantai" src="https://i.pinimg.com/236x/c6/25/2c/c6252c478b795678254a0ba0258b302b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1X16oINkmii7lcY8ncjZT8Ntl8cJ7UUw0q9FnMe-omBdS9Iw61vYnR0Bz_btBmh7gx3Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Halaman ini merupakan gallery portofolio desain bangunan lain selain rumah dan villa seperti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Gambar Rumah 2 Dimensi Denah Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/5d/e5/a5/5de5a51fdf9cdd9cb7175855fe329a43.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJNMaqW4g3Cncsg32rLIv14cS2eqyh0k1YDw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bukan hanya nyeleneh bangunan dan fasilitas umum tersebut bahkan bisa berbahaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai Luas 120m2 1000 Inspirasi Desain Arsitektur Rumah Minimalis Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/34/45/34/344534a29f7784259a8a4a9c9aaf4fe6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLoV1ssnTtL55J85gefgTleWTf4OrDPnk3wK3PSz-NdilEF7V0SlLHwxNt7Nu1xJbw3Uw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kami adalah mitra kerja yang dapat dipercaya sesuai amanah jujur dan profesional sehingga dapat mengerjakan proyek sesuai harapan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pusat Informasi Teknologi Arsitektur Konstruksi Berita Arsitektur Desain Review Dan Berbagai Ulasan Arsitektur Unik Dari Denah Rumah Lantai Rumah Minimalis" src="https://i.pinimg.com/originals/6e/10/cd/6e10cdde505f40becd7ee667d8d72815.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AXOyOq780-O_GyA_SNJ7km7mpkJ6DphtwQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah adalah gambar penampang horizontal bangunan gedung atau rumah tinggal dalam bidang datar sehingga akan terlihat bagian-bagian dalam bangunan berikut komponen-komponen yang menempel pada bangunan tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Sekolah Lantai 1 Lantai Arsitektur Sekolah Denah Rumah" src="https://i.pinimg.com/originals/ef/cb/e5/efcbe5a57082a8f0b23c50b16cc2b5ba.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0qEyI4yGojfIJCortbjdTssV-eb179nz3nA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami selalu menjaga kualitas desain bahan pelaksanaan dan tampilan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Minimalis Desain Gudang" src="https://i.pinimg.com/originals/43/f2/b5/43f2b58085d7383d962dae5fc226c4a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGTu3V0J2aiTNU1hQSCXbbYfDMO0Nfqp3hw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah adalah gambar penampang horizontal bangunan gedung atau rumah tinggal dalam bidang datar sehingga akan terlihat bagian-bagian dalam bangunan berikut komponen-komponen yang menempel pada bangunan tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Type 68 150 3 Kt Garden Everywhere Bagi Anda Yang Akan Membangun Dengan Menggunakan Jasa Kontra Denah Lantai Rumah Denah Rumah Denah Lantai" src="https://i.pinimg.com/originals/fe/a4/fa/fea4faf8fab31b686a5a38cf11e9293f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI8GVr7s_t8HtYglR_MGmR3EuON8_h_WMWTWRvu9t_cvZpIQTC9n8qJeEVCIIISKJDBp4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah adalah gambar penampang horizontal bangunan gedung atau rumah tinggal dalam bidang datar sehingga akan terlihat bagian-bagian dalam bangunan berikut komponen-komponen yang menempel pada bangunan tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Dan Denah Rumah Minimalis Type 60 Denah Rumah Desain Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/16/73/bf/1673bfd37247d4ccbdf5214ac175095e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2CTG4CC19SYiKF2tm_AZkoCQbOrPHQH0UIHC-dRrOKlhmJKszrQDUyNv7c8gCFBdg7lk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti apa sajakah contoh-contoh denahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Minimalis Ukuran 6x10 Terbaru Foto Rumah Minimalis Dengan Denah Rumah Minimalis Ukuran 6x10 Denah Rumah Denah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/474x/0e/5e/25/0e5e2500de0b38f22f2f57fcfdf08506.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIYHM6RLIv8OYhRBKQvqkSxDupOobVKBa6jQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Adalah bagian atas bangunan rumah tingggg al yang dipotong sehingga akan terlihat bagian-bagian dalam bangunan berikut komponen-komponen yang menempel pada bangunan tsb.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/gambar-denah-rumah-tampak-depan.html"><i>&larr; gambar denah rumah tampak depan</i></a>
+                                                                    
+                                        <a href="/gambar-rumah-kayu-modern.html"><i>gambar rumah kayu modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

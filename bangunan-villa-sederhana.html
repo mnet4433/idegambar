@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Bangunan Villa Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Bangunan Villa Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/f9/ee/83/f9ee83b88477f365162df11b81f28db9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bangunan+villa+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Bangunan Villa Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Bangunan Villa Sederhana</strong>. The building was built in 19051909. 20 Contoh Desain Rumah Minimalis Sederhana Terbaru.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/66/b2/92/66b292feb80715741a41870a30dff3f6.jpg" alt="Jasa Arsitek Jimbaran Badung Bali Desain Kost Bapak Tedy Jasa Arsitek Desain Bangunan Lainnya Desain Rumah Berkualitas Desain V Arsitek Desain Rumah Desain" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQeY5Fk3VQAUlFOedxL8E52L3qCc9KT6X2vQ';">
+        <figcaption>Jasa Arsitek Jimbaran Badung Bali Desain Kost Bapak Tedy Jasa Arsitek Desain Bangunan Lainnya Desain Rumah Berkualitas Desain V Arsitek Desain Rumah Desain from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Rp 1500000000 120m² Luas Bangunan. Air sumur Kolam ikan 2. Pilih Lokasi Yang Dekat Dengan Wisata.
+    </p>
+    <h3>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</h3>
+    <p>Menghitung volume bangunan excel download model rab tempat tinggal excel model rab tempat tinggal minimalis 2019 contoh rab rumah sederhana. Mulai dari pilar rumah tangga dan konstruksi lainnya. Kamu yang memiliki halaman cukup luas gambar di atas bisa mewakili kamu. Villa minimalis villa dengan gaya arsitektur yang digandrungi masyarakat modern ternyata bisa dipadukan dengan konsep tradisional.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Bangunan Lain" src="https://i.pinimg.com/originals/f6/96/7a/f6967a0961ac16a889ce622bf175c31e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZiOJT5urap3EAJ4ApoAAlvsICg-9vOp9oVQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena di semua wilayah tersebut udaranya masih sangat alami dan juga tentunya menyehatkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kos Kosan Spesifikasi Bangunan Luas Bangunan 80 M2 1 Lantai 160 M2 2 Lantai Luas T Desain Rumah Eksterior Desain Kamar Hotel Rumah" src="https://i.pinimg.com/originals/c6/c5/6a/c6c56a310fe224b4400257befbbd633c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIAus202FXvNrdjasxA4kl3_L4RNorxi9J0L_JZZUV_jUoZFQeCdchwaQyqkcaAYHINk0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah bentuk minimalis identik dengan rumah dengan luas tanah serta bangunan terbatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctjgx9kr2lk Fwgg Xe1gxd2rqe0tr1j9pfsnqpsnb Tlqkq2if Usqp Cau" src="/search?q=desain+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Mulai dari pilar rumah tangga dan konstruksi lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Solusi Tepat Cari Jasa Arsitek Murah Makassar Untuk Villa Cari Jasa Arsitek Murah Makassar Bangunan Villa Dijadikan Sebagai Salah S Arsitek Villa Desain" src="https://i.pinimg.com/474x/ab/69/fd/ab69fd8823f80f2fe6d38e5af81620b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQOiTz_UFWesd1LcwS84mXmJ4eueG5G5X8mtZUo6ELaJUTK6Xwliy2cCVqkFLvClQuBxk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sesuaikan lokasi dan suasana sangat perlu dalam menentukan desain rumah villa kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Tapi Mewah 2 Lantai Terbaru Rumah Home Fashion Rumah Mewah" src="https://i.pinimg.com/originals/9f/d7/cb/9fd7cbd91b2bcb918bb4dd6cdfc9c7d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxugPz6pXmVc9LT9fNg-sBl-gdIiL_zAOOXg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan Terbaik Cari Arsitek Murah Balikpapan Untuk Villa Cari Arsitek Murah Balikpapan Dalam Setiap Bangunan Penting Adanya Kesan Arsitek Villa Makassar" src="https://i.pinimg.com/474x/87/1a/26/871a261caafa853e45c40dd27e2e70a5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRA8rcnOhQpnd8XpWh7Kb-rW11M7jE8rBUWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Air sumur Kolam ikan 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dream House Design Rumah Arsitektur Rumah Indah Rumah" src="https://i.pinimg.com/originals/f9/ee/83/f9ee83b88477f365162df11b81f28db9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXE7GeqaW0rdC8HUk5i_gQVp-096QKZ4WHEEoNfeYeGzJaJmO-bcdPPCbjQTXNE87U3Xw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Menghitung volume bangunan excel download model rab tempat tinggal excel model rab tempat tinggal minimalis 2019 contoh rab rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Bangunan Komersial Desain Style Villa Bali Modern Tropis Di 2020 Desain Exterior Rumah Arsitektur Home Fashion" src="https://i.pinimg.com/474x/dd/4f/ac/dd4fac38e878684a5c83999d3f215896.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi6BwDLrjwuyj-2nN1ffYg3B0RCswKAq3I9Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilih Lokasi Yang Dekat Dengan Wisata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Desain Rumah Villa Mewah Emporio Architect Desain Rumah Eksterior Desain Depan Rumah Eksterior Rumah" src="https://i.pinimg.com/originals/fa/fa/ee/fafaee77f4ac05ab026c268dcb555be2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5uYSNAP_jFYOSdjP4b5JYWDa7ZKAXgmqIA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah idaman sederhana di desa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Modern Minimalis 200m2 Tropis Rumah Satu Lantai Berdiri Diatas Lahan Berukuran 10 X 20 M Dan Hampir 100 Lahan Yang Ada D Rumah Modern Rumah Rumah Mewah" src="https://i.pinimg.com/originals/85/6c/0c/856c0cb2a8f5d33581874f40549b30ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-8wHyG0PJYcqXv8qPuOh0_LgnV2aW05LGt-f620vL5l6TaSQqh0kIOorBpE7klsjWNe8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa One desain rumah minimalis besutan studio desain EFFEKT yang bermarkas di Copenhagen Denmark.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Denpasar Bali Desain Rumah Ibu Linawati Jasa Arsitek Desain Rumah Berkualitas Desain Vill Desain Rumah Kontemporer Rumah Tropis Rumah Kontemporer" src="https://i.pinimg.com/564x/17/4b/3f/174b3fd59a8b0f44c37c34fd5571be37.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkIsB399Fx_rN_Ksrh2b-CZ1qpbygzXq_QwQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Luas bangunan 300 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Dengan Villa Gaya Bali Modern Memiliki Luasan 180m2 Berlokasi Di Jakarta Rumah Desain Rumah Arsitek" src="https://i.pinimg.com/originals/91/22/dc/9122dced01ce0553a1ef18d30075ba3e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrAplKem2yu2OhAnBIrgendQTRvM0FdjwLmQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa ini dirancang untuk tempat berlibur para keluarga dari luar Bali terutama dari luar negeri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Dan Cantik Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/08/cc/a5/08cca591d93e35722e82608a0dfa82fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYVxOMSMWiovWX658TgQ2Ck3BRoFWNnQdGjibVtsd9c9QxrsrXwO57vhZslHOK58ql3c4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasanya di daerah pegunungan kontur tanah sebagian besar tidak simetris kita bisa mengakali dengan membuat desain model panggung vila atau bisa kita desain sebagai bangunan bawah tanah yang bisa memberikan model vila sederhana namun memiliki kesan modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desain Rumah Minimalis Rumah Kayu Eksterior Rumah Modern" src="https://i.pinimg.com/originals/e5/62/30/e5623036b68ee7099108d61d3a23cffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4J5Y_sUkIljA9z5soYB5ErOI3CPLGYsisd0Qukrg5_I6aeRquXBcRypJ1UjFlZX692cg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut ini beberapa desain rumah sederhana di desa yang dapat kita jadikan inspirasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+villa+kecil+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+villa+kecil+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Semakin sempurna nuansa rumah villa tradisional kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Luas Bangunan 200 M2 Bp Prayoga Jakarta Jasa Arsitek Jakarta Desain Rumah 2 Lantai Eksterior Rumah Desain Rumah Modern" src="https://i.pinimg.com/600x315/2d/51/be/2d51be278e771083d3ec95a5ad88097f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7ZzpsLRbv9hb4rIh0u4B7waX61FmIPLhQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa minimalis villa dengan gaya arsitektur yang digandrungi masyarakat modern ternyata bisa dipadukan dengan konsep tradisional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Puncaksewavilla Sewa Villa Di Puncak Cisarua Berikut Daftar Harga Sewa Villa Di Puncak Outdoor Decor Villa Cisarua" src="https://i.pinimg.com/originals/8b/54/09/8b540907829d68e67e510243527c3d62.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDpF3NvoDXJJqMUYCxr7O6S3UNgGY4DsgD6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memiliki abjad dan ciri tersendiri dalam memilih desain bangunan penataan ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah 1 Lantai Model Spanyol Desain Rumah Eksterior Arsitek Desain Rumah" src="https://i.pinimg.com/originals/c3/43/ee/c343ee786f0a954cfd06da2a515aaa3a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvAsx6kY9AKDiY6fiIr978COOpCFWYEGv1gEhWqAy6lfVhtM7QmEgIW4tNNMY1WfjFJxE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harus diketahui sejarah kehadiran rumah dengan tipe serta desain minimalis bekerjsama muncul sebab adanya kebosanan terhadap desain arsitektur yang rumit secara interior serta penataan ruangan yang tidak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ana Fatma House Semarang" src="https://i.pinimg.com/originals/6c/d4/8e/6cd48e5bdedc9322d378d6632b08d9cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrCHSsw2x_NHTg9Ani18oxvaP7O-nOKJ-azRGKRyxYxGVrGK7MiA-PYQdoqQBskh0lc0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tersedia dapur bersih dan kotor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bangunan Rumah Sederhana Desain Rumah Rumah Indah Rumah Minimalis" src="https://i.pinimg.com/originals/01/35/bd/0135bd12f81024be37fbabe2381e82cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSt_nd50D1QZgleBI7HB5CRfs6Cq9F3214ajCNN6GhtpVkHfrAfwsWHX779GKWUKc_lE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa Yuliana is a Dutch colonial building at Jl.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1001 Desain Rumah Minimalis Modern Dan Sederhana Terbaru Inspirasi Rumah Idaman Arsitektur Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/0d/88/57/0d88576a245b93722be8828072146820.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0VdJlY4uQbVMrWgz0tsDCc6gwYWiUeRp7RjlEaN9nMXkmGq6SMu-sz_2H7jzQ1k63yYI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tersedia dapur bersih dan kotor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah Besar Dengan Lahan Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/8c/41/3f/8c413f4dedef3dddf4c1aec163b161e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpvOuD9Q2lMXVFz0e39RPtHxHMXykhI6w5yQtSRgrgXlpwjVjyFapimZN_rAmOVkHlez8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang terletak di lingkungan sangat ideal ini cocok untuk keluarga kecil yang mencari gaya hidup yang damai menyukai desain yang sederhana namun tetap memiliki sentuhan seni.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Rumah Minimalis 2 Lantai Modern Sederhana Rumah Minimalis Rumah Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/a2/01/0a/a2010a687ec80360133d5e25a81dd1d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtopFH5Vn8nht37S0eIiGIWasNw9KYWm5okWM2SN7si-rDVhVw1m3ClxO-RSOazO3zBFg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Villa ini dirancang untuk tempat berlibur para keluarga dari luar Bali terutama dari luar negeri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Beginilah Rencana Bentuk Bangunan Cluster Villa Poris Plawad Didesain Model Rumah Minimalis Sederhana Namun Tetap Modern Villa Rumah Minimalis Modern" src="https://i.pinimg.com/originals/35/1f/ee/351fee23730a5493de71840ac61271ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uXZ6LxcykmAy_nti_qlE4FyZN7dVTiCb1A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di tanah yang kecil ini lengkap dibangun garasi bahkan taman yang kecil tapi indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="22 Gambar Desain Eksterior Rumah Modern Minimalis Desain Eksterior Rumah Eksterior Rumah Modern" src="https://i.pinimg.com/originals/7e/73/f6/7e73f6f4b51249361654d0592bb36975.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrjlQ3TnTRtL98nAi6VL-doCUpQprSlLl3vQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa minimalis villa dengan gaya arsitektur yang digandrungi masyarakat modern ternyata bisa dipadukan dengan konsep tradisional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Merenovasi Rumah Holcim Bangun Rumah Inspirasi Desain Rumah Permainan Bangun Rumah Rumah Bangun Renovasi Ru Rumah Minimalis Desain Fasad Rumah Modern" src="https://i.pinimg.com/600x315/de/0c/81/de0c81847190135f55de7f45e0c78f49.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkVVn4TdtlEjtAaISesRViJ27NMXpKzS1w4w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Villa One memiliki luas 136 m² dengan bentuk seperti kincir angin terdiri dari ruang keluarga ruang makan dapur 3 kamar tidur dan 2 kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Desain Rumah Bapak Sastrawan Denpasar Bali Jasa Arsitek Desain Rumah Berkualitas Desai Desain Rumah Eksterior Desain Depan Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/1f/26/f0/1f26f032d2e008491214516b18fee5f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mU3LfO5L0W3BLCRd1kL-S-Bxd5jps1Qwyg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa adalah sebuah bangunan lebih tepatnya rumah beristirahat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Dengan Luas Bangunan 175 M2 Yang Berlokasi Di Jakarta Desain Rumah 2 Lantai Desain Rumah Rumah Indah" src="https://i.pinimg.com/736x/cb/f1/48/cbf14890b626abc0533609fb2398e5c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTSajVNKbQrKd660AMUXKjJh7aO0lEeKN8kQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 Botto District Lalabata Subdistrict Watansoppeng Soppeng South Sulawesi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Macam Macam Model Rumah Villa Creo House Kumpulan Desain Rumah Minimalis Model Villa Disertai Gambar 65 Desain Rumah Mini Cottage Design House House Design" src="https://i.pinimg.com/originals/9f/e7/fb/9fe7fbb31bb50029fc8956b2d64bbbfb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIGEER-X-PPEJR-8CBXeYpWVby9j2nBEiIg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di tanah yang kecil ini lengkap dibangun garasi bahkan taman yang kecil tapi indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Bangunan Murah Sukabumi Untuk Villa Jasa Desain Bangunan Murah Sukabumi Kebanyakan Tempat Penginapan Yang Dibangun Dizaman Arsitek Villa Desain" src="https://i.pinimg.com/originals/f4/86/33/f4863361910333026e055f0a691bcb90.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-7EJCsnZLz9T39yoHlVpHvWcMSWspXDmIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bangunan gedung sederhana adalah bangunan gedung dengan ketinggian hingga 2 lantai serta tidak membutuhkan teknologi khusus atau kompleks serta keterlibatan para ahli kata Wahyu dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 1 Lantai Minimalis Modern Luas Bangunan Rumah Tinggal 400 M2 Berdiri Diatas Lahan Yang Cukup Luas Dengan Fasade Rumah Desain Rumah Rumah Modern" src="https://i.pinimg.com/originals/88/69/03/886903a40f479059b68b523bb5754f09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpT40T0Xwex9gRDR5qqKCc6LOkVXx4AEa9Wc25DG5XN22SAYGtE-aQXxBbXl-QgsM0Xf0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa ini dirancang untuk tempat berlibur para keluarga dari luar Bali terutama dari luar negeri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Pak Iwan Luas 300m2 Jasa Arsitek Jakarta Desain Rumah 2 Lantai Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/2b/40/0e/2b400eb6016b4808f4c9a853506a8ae6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_P7qnFHHtOhCFMtiF1x6oDfes4C9niF61RnlLnsOGc2ScMj5DazG30_Pm4RiSM9l3qo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya di daerah pegunungan kontur tanah sebagian besar tidak simetris kita bisa mengakali dengan membuat desain model panggung vila atau bisa kita desain sebagai bangunan bawah tanah yang bisa memberikan model vila sederhana namun memiliki kesan modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Rumah Minimalis Home Fashion Rumah" src="https://i.pinimg.com/originals/af/90/14/af901406d0ef463ea1c2fbbfe70c9673.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVQA38E_J_ERSBOD6SXSjSccW2BuF1tqXwDPWJzCiC8ZkqzbLNbm5E35aGMwE4OR6z-yc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa minimalis villa dengan gaya arsitektur yang digandrungi masyarakat modern ternyata bisa dipadukan dengan konsep tradisional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Info Rumah Minimalis Dan Bahan Bangunan" src="https://i.pinimg.com/originals/c9/a7/e5/c9a7e56aacce5ee9e4ff2185cec6066d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJUDzYJVIl09oPmCmRvDuExcBV9W1eeBOnQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Villa Yuliana bangunan kolonial gaya Hindia arsitektur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="75 Desain Rumah Klasik Minimalis Modern Dan Menawan Desainrumahnya Com Rumah Impian Rumah Modern" src="https://i.pinimg.com/474x/48/60/20/4860201e7072d37a6d950173d49040e5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHikp5sq3KMt1Cg14ihEBqSnHuVOovDY9L4A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh rab tempat tinggal sederhana excel download terdiri berdasarkan gambar teknis dan file excel rab pembangunan jalan rabat beton dan drainase pada desa menggunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Tampak Mewah Dengan Dana 500 Jutaan Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/0e/4e/5f/0e4e5f7acc993aa65255199ad0c6d4b7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRY3zx-PpC-tc1HoGVoWLHK2Cr5NYz7mdiQg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Air sumur Kolam ikan 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampak Depan Rumah Minimalis 2 Lantai Mewah Dengan Bangunan Tanpa Atap Dan Warna Cat Yang Bagus Rumah Rumah Minimalis Rumah Mewah" src="https://i.pinimg.com/originals/d0/e3/fa/d0e3fa85086f5fb23644dc5adce94c8c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoFgsIepyyOP0nnQXKV3kzJu6fsrRyRQ_mFg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini beberapa desain rumah sederhana di desa yang dapat kita jadikan inspirasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/originals/8e/7b/06/8e7b06aa433f8f0bb3804e374c1fdd75.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHl3Lr6UedFVfpvWLAQNFX0xh49gxstOVWmQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah 2 Lantai Luas 800 M2 Dengan Tata Letak Ruang Sesuai Fengshui Menempati Kavling Hook X2f Pojok X2 Rumah Mewah Desain Rumah 2 Lantai Rumah" src="https://i.pinimg.com/originals/03/85/95/038595fec3c4ed6be64184513d5963f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-kBsFQ0lsXHD1xljVcyYv7PMzTvibFVHfA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang terletak di lingkungan sangat ideal ini cocok untuk keluarga kecil yang mencari gaya hidup yang damai menyukai desain yang sederhana namun tetap memiliki sentuhan seni.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Villa Minimalis Tropis Desain Rumah 2 Lantai Arsitektur Rumah Indah Desain Fasad" src="https://i.pinimg.com/originals/7a/d4/09/7ad40907d5a32cd82cd59998ab252e65.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWCX5LgkGXUvrrLgOY-EpTfmdIcPP9jtD1r_XoGnjbc3Rhpfrf2rY0h1esElyIVqq9bM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Air sumur Kolam ikan 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Padang Sumatera Barat Desain Rumah Villa Bali Tropis Bapak Rusli Jasa Arsitek Desain Rumah Berku Arsitektur Minimalis Arsitektur Desain Arsitektur" src="https://i.pinimg.com/originals/bf/af/53/bfaf537b7792bbdf9f15f013ab069495.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNJQaBrTNlem6RFqhddzqztt5YpAkY2nSMCklEzDqZCQFdJT-Yy6f2e98YrdHJCdtlEp0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Villa dengan Kolam ikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis Sederhana 1 Lantai 2 Lantai" src="https://i.pinimg.com/originals/1e/54/7d/1e547d87dc7349a49c8887fa090edf8e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYLUGUuwRKZ6ADX_nOjTBBkm1BefGD1ZHLINJF-7KgaCx-9UktmX063z5PF2QzjP5QJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selesai pada 2010 proyek ini menyiratkan selain rumah itu sendiri taman interior yang menakjubkan ruang hijau untuk relaksasi yang melengkapi skenario jalan depan yang polos dan tidak menonjol.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/736x/b5/2e/fd/b52efdfdc9f4d24884fea629d2f67f1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ai1ILpEr89K10yU_-fQec06S9TA3lihVnw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>This paper aims to examine Villa Yuliana as an exemplar of Indies architecture.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Biaya Untuk Membangun Rumah Minimalis Jasa Desain Interior Rumah Minimalis Kontraktor Perumahan Biro Rumah Minimalis Arsitektur Rumah Warna Cat Untuk Rumah" src="https://i.pinimg.com/originals/d5/fb/05/d5fb05c17964d2b4f3b2ac2a6f6a3fce.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvbVANg1jtB9P6wFpqBreYazQG--KtvW-30Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>The building was built in 19051909.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Art" src="https://i.pinimg.com/originals/fd/f7/44/fdf74498743b97ce507ca3644cd00d2c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz8288nzcypNrQXoZ8HSlueM-KMSnqE4gqZuUp-eUyHikiYLSOWWRr-On-syEavHCjHc8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Villa Yuliana bangunan kolonial gaya Hindia arsitektur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Jimbaran Badung Bali Desain Kost Bapak Tedy Jasa Arsitek Desain Bangunan Lainnya Desain Rumah Berkualitas Desain V Arsitek Desain Rumah Desain" src="https://i.pinimg.com/originals/66/b2/92/66b292feb80715741a41870a30dff3f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQeY5Fk3VQAUlFOedxL8E52L3qCc9KT6X2vQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Merancang desain villa yang sederhana adalah pilihan yang tepat saat Anda membangun vila di lereng bukit atau pegunungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Dengan Luas Bangunan 400 M2 Yang Berlokasi Di Jakarta Desain Rumah 2 Lantai Rumah Home Fashion" src="https://i.pinimg.com/736x/97/0f/cc/970fcca413ad5c3dc5dfe35694d605cc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxWvEDeuFoe5rFIvahzqaMKxXbByMEHsjuQtr7akF37KCC1SseQXWSH0pR0PkdloL97x4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>This paper aims to examine Villa Yuliana as an exemplar of Indies architecture.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Balinese Landscape Architecture 5 Eksterior Modern Rumah Arsitektur Cat Rumah Eksterior" src="https://i.pinimg.com/736x/b1/eb/c5/b1ebc53d5f9bf0cc68599ca859832467.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3jXeXk9uhay8MsMvFlI1uO-XKvU2fOJ4B2w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Villa dengan Kolam ikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Rumah Minimalis Sederhana Modern Tampak Depan Rumah Minimalis Arsitektur Minimalis Warna Cat Untuk Rumah" src="https://i.pinimg.com/originals/4e/4b/e6/4e4be68d9f1e5f368cc3e7513fbe2c7e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO2FRG6fV9j49QVA89Mv3t1bjMToArEEkV1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang terletak di lingkungan sangat ideal ini cocok untuk keluarga kecil yang mencari gaya hidup yang damai menyukai desain yang sederhana namun tetap memiliki sentuhan seni.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Aceh Desain Rumah Bapak Farizal Ii Jasa Arsitek Desain Rumah Berkualitas Desain Villa Bali Modern Tropis Pro Arsitek Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/aa/56/76/aa567692b2f5597a4407449539490fe0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8tkBiaxbLCY2G1rDWS3YARG7K02Q0N-JiCw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/site-plan-rumah-minimalis-type-36.html"><i>&larr; site plan rumah minimalis type 36</i></a>
+                                                                    
+                                        <a href="/talang-air-beton-rumah-minimalis.html"><i>talang air beton rumah minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

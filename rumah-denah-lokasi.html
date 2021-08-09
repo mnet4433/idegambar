@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Denah Lokasi
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Denah Lokasi",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/fd/a0/ed/fda0eda62e8e50a25a86ca93fb047f94.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+denah+lokasi",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Denah Lokasi
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Denah Lokasi</strong>. DIJUAL RUMAH SHM Perumahan Graha Mukti Utama Belakang Swalayan Aneka Jaya Tlogomulyo Pedurungan Kota Semarang. Desain dan denah rumah minimalis type 100 mencerminkan sebuah bangunan kokoh seluas 100 meter persegi dan dapat dibangun dengan 2 lantai.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/94/0a/30/940a30735ece0e1f9100600aa0a2326a.jpg" alt="Pin Di Youtube Rumah Garis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSASTcwtLr5DOTepIWGIS6a6pCe79r3g2ag9g';">
+        <figcaption>Pin Di Youtube Rumah Garis from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Untuk memiliki denah rumah 3 kamar ukuran 6x12 maka Anda bisa mengembangkan desain rumah sederhana 6x12 untuk 1 lantai secara vertikal menjadi 2 lantai. Berikut panduan membuat denah lokasi. Denah rumah 3 kamar ukuran 6x12.
+    </p>
+    <h3>Buat terlebih dahulu coretannya di kertas sebelum anda membuatnya di Paint.</h3>
+    <p>Buat terlebih dahulu coretannya di kertas sebelum anda membuatnya di Paint. Cara ini akan lebih efektif dan setiap ruangan di rumah Anda terlihat lebih lapang. Download Ebook Tutorial Cara Membuat Denah Lokasi Dengan Google Map. 25Ha dan Gudang daerah Kawasan Ekonomi Khusus Bitung.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Youtube Rumah Garis" src="https://i.pinimg.com/originals/94/0a/30/940a30735ece0e1f9100600aa0a2326a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSASTcwtLr5DOTepIWGIS6a6pCe79r3g2ag9g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ilengkapi dengan denah lokasi hal ini ditujukan agar si penerima dengan mudah membaca alamat lengkap dengan bantuan visualisasi denahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah 3d Argajogja S Blog Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/12/12/b1/1212b160a3b1ee457ec7223b0ebcf012.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHKSz-zAFt4UHehJ8FLXxSh17iA0473eKC6g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk memiliki denah rumah 3 kamar ukuran 6x12 maka Anda bisa mengembangkan desain rumah sederhana 6x12 untuk 1 lantai secara vertikal menjadi 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=gambar+sekolah+untuk+denah+lokasi&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=gambar+sekolah+untuk+denah+lokasi&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Cara ini akan lebih efektif dan setiap ruangan di rumah Anda terlihat lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/a0/03/6d/a0036d73968ae795813a293980b82e59.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzkjPtvZ0L8xbQaXRoXK30Bvt708itYrRPAw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk pembahasan kali ini kami akan mengulas mengenai Denah yang dimana dalam hal ini meliputi Fungsi dan langkah cara membacanya nah agar lebih dapat memahami dan mengerti simak ulasan selengkapnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Rumah Denah Lokasi Undangan Desain Warna Rumah" src="https://i.pinimg.com/564x/11/e8/3d/11e83d3db82daae5728a233ba4035702.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVLIyI_1lKvZpCJjuR0wvDSabJXOtovO8oluS58_8vsOhGiv4ybeS-cpesmpwpvctCUgg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah bagaimana cara membuat denah atau peta lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Lokasi Dan Akses Ke Perumahan Batu Top View Residence Kota" src="https://i.pinimg.com/originals/fd/a0/ed/fda0eda62e8e50a25a86ca93fb047f94.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIu5jFaIm2kdoL5fNqnMour3C3AeZpa0w_HHsmL6S67LBvOd9m3ykxQn23om9-OYF8RIM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah atau peta lokasi banyak kita gunakan untuk menunjukan lokasi sebuah tempat misalnya toko rumah tempat pernikahan dsb.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Denah Rumah Rumah Indah Eksterior" src="https://i.pinimg.com/originals/6b/ec/31/6bec31b213cf9f2a2e13f6f6f3231d4e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQTpf7WyVAk2VHNjqvWxTfB3AeCAgICKJLMxUbA94LbgjkQEQOclsl5ChM1y3Od3Tl8EI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nama rumah sakit ini diambil dari nama Dr.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Denah Lokasi Undangan Photoshop Kartu Aplikasi Adope Tidak Jauh Peta Desain Undangan Perkawinan Kartu" src="https://i.pinimg.com/236x/8c/1a/29/8c1a299511a65161ccb2e180198ed3c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwWlNQ_giFow4JeqXJPteIiGVZBnWwH6NOx64tEvpS9ROCoAzLB1x3kSDz7DaUGvQsoz0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ilengkapi dengan denah lokasi hal ini ditujukan agar si penerima dengan mudah membaca alamat lengkap dengan bantuan visualisasi denahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah 2 Lantai 5 Kamar Tidur Kolam Renang Two Storey House Plans Contemporary House Plans House Styles" src="https://i.pinimg.com/originals/d7/ed/89/d7ed893ada379be0237e26d657cbb41d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4uwgnJzx4lhsmKJCh_F3d0_vs8jLtPZktRcPmzHY3nwgvfgg-ZW6V1w2w8JpksbPIEJY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Buka program Corel Draw dan buatlah lembaran kerja baru dengan background bewarna putih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Batu Top View Type 40 M2 1 Lantai Rumah Batu Denah Rumah Lantai" src="https://i.pinimg.com/originals/4e/c1/51/4ec15161117798189f6ccaaf692d8b0b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOnhtblb7IMYWlWHPs-Z-LePxbjn5nwsJYbQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Buka program Corel Draw dan buatlah lembaran kerja baru dengan background bewarna putih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/9e/d2/0b/9ed20bef274e59aae702b0cd9e302fca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0OgFqmHm_opFPPYVdkNDf_EHueU3-0OGnq6ZoQB6sdbaZpYxYx4zOTKx2vQMoakgeus';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ada banyak software yang dapat digunakan untuk menggambar denah lokasi suatu rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Masjid Musholla 003 Contoh Gambar Desain Musholla 2 Lantai Arsitektur Masjid Lantai Desain" src="https://i.pinimg.com/originals/84/da/a0/84daa0923f19993dfbaa715560472c13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOix3XCaM7KjTQzJu4eEevo1Ujwpz9tb6VA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah lokasi bergunauntuk menunjukkan jalan atau letak suatu ruang dengan keterangan serta simbol supaya mempermudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2 Lantai Di Lahan Trapesium Setiap Lahan Punya Karakternya Sendiri Sendiri Termasuk Bentuknya Klien Kami Y Denah Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/17/f8/94/17f894ae962104d35ee71c8e20bcc908.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPapVcbSe02wjWf3s2lx-fHMB371qqclidw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ilengkapi dengan denah lokasi hal ini ditujukan agar si penerima dengan mudah membaca alamat lengkap dengan bantuan visualisasi denahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampak Rumah 1 Lantai Luas Tanah Dan Tipe Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/d2/d1/23/d2d1239e82fdccd9b5d9f58ba60fd64a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYeCsvuMsc2mdwlBer-ekMsXmf6QLkRyeHYA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara ini akan lebih efektif dan setiap ruangan di rumah Anda terlihat lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa 3d Modeling Eksterior Interior Desain Cafe Dan Restoran Rumah Dan Bangunan Bidang Jasa Desain Arsitektur Berkualitas Desain Arsitektur Desain Interior" src="https://i.pinimg.com/originals/64/7f/52/647f52897860a02188b2b51f2321bc17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6d9M4_OYh3YP9Ed833xinEUixixlJbSTkCA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tjipto Mangoenkoesoemo seorang tokoh perjuangan Indonesia pada masa kolonial.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Desain Rumah Sederhana Tampak Mewah Check More At Https Space Made Com 114 Desain Rumah Sederhana Denah Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/22/4e/3a/224e3a22891b9ee00145d51625377c24.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6Yjwr5sNMaG22_cVrATQt2pZmwv85L1Wkw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>25Ha dan Gudang daerah Kawasan Ekonomi Khusus Bitung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Logocdr 85 Cdr Icon Denah Lokasi 3d Cdr Printable Hd Dow Desain Banner Ilustrasi Pola Desain Grafis" src="https://i.pinimg.com/474x/9e/71/90/9e7190a4c44730f677de1f798ad95dbe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCMjq5mBpknA09IxrIPtcRQKbMs29tYdg6qWQ3aJB-MrKUklyZu8HMMwXhAEDEkv78eKM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Langkah pertama yaitu anda harus tahu dahulu jalan-jalan menuju lokasi yang akan dibuat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Nec Shop Kpop Denah Lokasi Menuju Nec Shop Kpop Jalan H Shopping Nec Kpop" src="https://i.pinimg.com/originals/34/12/6c/34126cb95c4f940a1b599e0b6e91c808.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8BQugT9ZYPO-VaG0QBFS5qGqU_OFWxEFkpA';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Langkah pertama yaitu anda harus tahu dahulu jalan-jalan menuju lokasi yang akan dibuat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Icon Bangunan Png Untuk Desain Peta Lokasi Peta Png Gambar" src="https://i.pinimg.com/474x/0a/ec/94/0aec944b6159800312358e41c91918ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHPuLJwQdBHMrtei2xF_w2-WCdrZcP9QFwH6JZ51XHgOrAjtmDybRGMESSC30NGwEzK0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah bagaimana cara membuat denah atau peta lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fantastic Tricks Can Change Your Life French Minimalist Decor High Ceilings Minimalist Living Room Design Pa House Design Home Design Plans Modern House Plans" src="https://i.pinimg.com/474x/b5/9b/21/b59b2100454a2b960381751d0729fc4f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSixRqaFwae2jgOHaK6SvGVxWiHsKdQkSwagw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>20 Contoh Denah Rumah Mewah 2 Lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Denah Rumah 3 Kamar Tidur Ada Garasi Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/60/de/de/60dede26dce8941c1cd448b09b3e3840.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQLf4A-_4HKcmk_UUg_OGJ66FYbiDqBgQzgw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara Membuat Denah Lokasi Dari Rumah Ke Sekolah - Mereka mulai mengukur jarak dari satu lokasi ke lokasi lainnya seperti panduan di LK.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Memiliki Beberapa Tipe Type 21 Type 36 Type 45 Type 60 Dan Banyak Lagi Contoh Gambar Kerja Lengkap Ru Desain Rumah 2 Lantai Denah Rumah Desain" src="https://i.pinimg.com/originals/0c/bc/60/0cbc60d283cfaa959be542c2e3467377.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI8Z-dUcZIrUJ3dtoE28QN6XH-KCvCiNbNQQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar rumah denah lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur 19 Desain Rumah Minimalis Desain Rumah Minimalis Desain Rumah Denah Rumah" src="https://i.pinimg.com/originals/b5/17/4c/b5174c88b6b4b13dbacfdf99cae0f938.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdO7fJMsLs0f4yRLbS2C6ab88g5jV9d-8usliIZLPy62c9pzXBRhAXL5s8QV7QylotHNk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Misalnya ketika kita sedang membuat sebuah acara dan mengundang orang-orang dari luar kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Edukasi Purwokerto Denah Lokasi Rumah Edukasi Purwokerto Desain Rumah" src="https://i.pinimg.com/originals/42/a2/7b/42a27b93437a3255cd8009d701b97f7b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWPRbrwr9MljbOan4O0YcZviRphKRpYXbkyyovb4X3K_KOVKcUQe9Oc9XGW-8BVsUp7tI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rp 550000000 117m² Luas Bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/97/06/41/9706417aa0210a6c313b22b7429cb78c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRBf7PySyjRli89p1BC1DxR9v8dsRatcbfiQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk memiliki denah rumah 3 kamar ukuran 6x12 maka Anda bisa mengembangkan desain rumah sederhana 6x12 untuk 1 lantai secara vertikal menjadi 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Ukuran 13x17 M2 4 1 Lantai 4 Buah Kamr Tidur Tampak Depan Denah Rumah Rumah Denah Rumah 4 Kamar Tidur" src="https://i.pinimg.com/originals/8b/06/19/8b0619b18ed1be70735f7852fb8f7624.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvztUaxdlaBq54EwT5ottsjKi0eauzml5YAYKUUqCWC5saQW-oUTIcrB19YMUAoZ-9PDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tanjung Merah Sulawesi Utara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Gambar Denah Desain Rumah Minimalis Dengan 4 Kamar Tidur Denah Rumah Desain Rumah Kontainer Denah Desain Rumah" src="https://i.pinimg.com/originals/97/a3/4a/97a34a767087d92d1bd878e75e07cd4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVESDSZsfD8jtQgUxpx1MJeVf7JeIe3KU33jSgGYdBTdnKURNBSaU93YzHHDW0lD1A9M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah lokasi rumah makan hotel rumah penginapan Atau denah lokasi lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 003 Contoh Desain Rumah Tinggal 1 Lantai Di Lahan Denah Rumah Desain Rumah Rumah" src="https://i.pinimg.com/originals/68/a5/d1/68a5d16709e11a6d95de73679a6646d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFILV4HfZeOYm9Ex68wh0eXl2qplZSDJeiltAcXPnyJqv7rUWm5pDvtr5XK6wF0XYd_Q4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dan denah rumah minimalis type 100 mencerminkan sebuah bangunan kokoh seluas 100 meter persegi dan dapat dibangun dengan 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tipe 50 M2 Sehat Denah Rumah The Plan Tata Letak Rumah" src="https://i.pinimg.com/originals/ab/da/07/abda078d550512aa3c5bfa5c79005bf4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCxa73NMw-zoWwFaEoAZaLKzlzYcsLBsgYjg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tarik gambar ikon rumah dan tempat ibadah sesuai dengan tempat yang ada di denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana 4 Kamar Tidur 3 Denah Rumah Tata Letak Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/2d/57/15/2d5715c7572b677d2c53723a2d360506.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOuPBdMeLEoH1BNWF7H0A0nJgWUbDmymABSw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut panduan membuat denah lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Tidur 1 Mushola Minimalis Denah Rumah Tata Letak Rumah House Blueprints" src="https://i.pinimg.com/originals/95/83/3c/95833c5e25a795d29cdbb25d587334f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSv8c67VEOVu0pqaTz3iSPKXRQo_xTd5aIxCTC-jcrKXxuT_g4Im0hv6tPbK1KDPddOo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar Icon Bangunan Png Untuk Desain Peta Lokasi Peta Desain Gambar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Perumahan Minimalis Perumahan Graha Purwosari Regency Peta Lokasi Desain" src="https://i.pinimg.com/originals/73/a4/5c/73a45c7d5c8be9ba658deedf8052cb79.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-i7oPNloH4IGxVkGnUfh2ptBGjBr7Hlw6rQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Buka program Corel Draw dan buatlah lembaran kerja baru dengan background bewarna putih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="82 Denah Rumah Minimalis Ukuran 7x7 Dari Rumah Hook Minimalis Modern 2 Lantai Desainrumahminimalis Desainkanopirumahminima Rumah Minimalis Denah Rumah Rumah" src="https://i.pinimg.com/originals/80/35/67/8035676100017af0857886f0ba971c15.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2h0kYM88gJNTti7dXxrJmQwfCl9xZtz7f1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti denah tanah dan pabrik legalitas lengkap Bagi yang ingin info lebih lanjut bisa hubungi saya Michael Pontoh via WA.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Posisi Hook Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/25/80/56/2580564611a93a779f43d2beded369ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFmytH631qZbqWhfgVsumnaQxBI2Kt0zTz3OpZdBjxC682ZIYrl_QNULRcTZLHoIze748';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Buka program Corel Draw dan buatlah lembaran kerja baru dengan background bewarna putih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Kecik" src="https://i.pinimg.com/originals/04/a5/14/04a514d7e7796a672ec8e955bf1d28f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvxbuwR-nfaFn3L_ys6ZyGo8IS0uIT3UCy2g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah adalah gambar yang menunjukkan letak kota jalan dan sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Denah Lokasi Menggunakan Ms Word Microsoft Sekolah Photoshop" src="https://i.pinimg.com/originals/70/83/1f/70831f29d3de0cf5d45e1774a9f3f9f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmubSDrZJtB08j2-5r8-PLCslVN0MprmHp_Q';" />
+        <small>Source: hu.pinterest.com</small>
+                    <p>Cara ini akan lebih efektif dan setiap ruangan di rumah Anda terlihat lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Denah Lokasi Pesta Png Rumah Sakit Gambar Png" src="https://i.pinimg.com/originals/ed/ba/62/edba6273aef1a509c6ddebaff0b14184.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFCD5GWPt-Pz3ziHDmgTT0p3kkNw6-IMZipYLWiw9NdEYflzi2F4tKe57Q20JOzdMf5YA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut panduan membuat denah lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai Untuk Lahan Terbatas Rumah Minimalis Apartemen Minimalis Denah Rumah" src="https://i.pinimg.com/originals/1a/3a/d5/1a3ad5473ec7f40e454585417d6b36ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS937PWVmwkdxMCgFdk9ZFcFYsd1j-dl8lV4A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Download Ebook Tutorial Cara Membuat Denah Lokasi Dengan Google Map.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Denah Rumah Minimalis 1 Lantai Luas 137m2 Luas Total Bangunan 153m2 Termaksud Teras Ukuran Denah Rumah Rumah Minimalis Denah Rumah 4 Kamar Tidur" src="https://i.pinimg.com/originals/cf/65/d1/cf65d15bbcc4cc5ea0eee86493bbfc1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwM54ydJhoV71us1RhjCtpveXA8VuPsGsBg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada kesempatan kali ini kita akan bersama-sama membuat denah berupa gambar yang menunjukkan lokasi rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Dengan Ruang Praktek Bidan Penelusuran Google Denah Rumah Rumah Rumah Hitam" src="https://i.pinimg.com/originals/21/af/42/21af424ac99862464e7d3d99674789b9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfspwRnhlucQqoIbR6nP8acCQw0j8g_EWGD-OfpKRDdoAX6gwyUis-g3H4eYb-FYkTkCk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>20 Denah Rumah Villa Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Dan Ukuran Keterangan 1 Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/d8/60/a3/d860a3c9ab57ea41559495c04036730a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs6hgPl6RLC3fm_AEMUF_KNSZRZ-vlRwltFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sakit pemerintah yang terletak di Jakarta Pusat Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampak Rumah 2 Lantai Luas Tanah Dan Tipe Modern House Floor Plans Building Design House Design" src="https://i.pinimg.com/originals/20/33/47/20334755fbc50d39ad84dbd58fe305db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9AIYqJf8LpZPWWPk9dmj4l79wfW2tYjOOqfQeYlrWa8bt5tGR9L8MLlrhN5X84H6igI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah rumah 3 kamar ukuran 7x9 2 lantai Rumah BSD karya DAP Studio via.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Sales Ndagung Di Goeboeg Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/6f/db/aa/6fdbaa05edb23fdfcf12eebdb7ce25c8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9KW2cZ8FgpbG3Lo6uKZJ9s47EgHHAKKUELA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>DIJUAL RUMAH SHM Perumahan Graha Mukti Utama Belakang Swalayan Aneka Jaya Tlogomulyo Pedurungan Kota Semarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Peta Lokasi Trans Park Cibubur Park Trans Map Screenshot" src="https://i.pinimg.com/originals/8e/60/1e/8e601e66627672f969669c7c55a818c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrNvq0wFHwxlWoQawNo9hXqbNZZ5O0MFc2GQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tarik gambar ikon rumah dan tempat ibadah sesuai dengan tempat yang ada di denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Sims Freeplay Speedbuild Denah Rumah Laksamana Maeda Lokasi Penyusunan Proklamasi Rumah Sultan Youtube The Sims Sims Rumah" src="https://i.pinimg.com/564x/b1/e3/01/b1e3019f3237774a54937395cb75260e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQWWb-IEm8Bjy3cS76_mPV3Q8VIcF5wLevA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>DIJUAL RUMAH SHM Perumahan Graha Mukti Utama Belakang Swalayan Aneka Jaya Tlogomulyo Pedurungan Kota Semarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Denah Rumah Minimalis 3 Kamar Tidur Type 36 Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/600x315/dd/c9/00/ddc90029f43d01cfdfa86bf93ef79593.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZRMVC54QOMt1JlwRlUXFLVseswBs9MmlgA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Langkah pertama yaitu anda harus tahu dahulu jalan-jalan menuju lokasi yang akan dibuat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Rohadi Di Denah Rumah Denah Rumah Rumah Tata Letak Rumah" src="https://i.pinimg.com/474x/71/79/03/717903a2285940951825abb01fabdb3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDljrl3gVHkp0blaXdSIPZNNdbXu0Xz0W7IQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam Pembagunan Rumah Denah Merupakan Tahap Awal Untuk Menentukan Tata Letak Ruang Suatu Rumah Dibawah Ini Akan K Desain Rumah Kecil Denah Rumah Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gratis Download Icon Untuk Denah Lokasi Gratis Desain Undangan" src="https://i.pinimg.com/originals/cf/86/37/cf8637a9d46bf3b97ca3d6b508203283.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_UcGls5ZtVMK2vE6nBpoGQvad7N0aASLRfaSXJKLJcrFmAz-3S7sWcOPceGOVGXRvV90';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tambahkan tanda panah untuk membantu pembaca lebih mudah memahami denah lokasi Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=icon+rumah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=icon+rumah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Cara Membuat Denah Lokasi Dari Rumah Ke Sekolah - Mereka mulai mengukur jarak dari satu lokasi ke lokasi lainnya seperti panduan di LK.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Icon Untuk Membuat Denah Lokasi Undangan Audyfa Printing Undangan Desain Grafis Pendidikan" src="https://i.pinimg.com/564x/60/4b/86/604b868c9816cf587e8fb69875a6268f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM062IRfpUdQsUlGLl-_uYC6D04f7C-Vsbfv6XGxr2-NFTgjWQ--jw0f7sTLKxCI0oGU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Oleh karena itu untuk mempercepat dalam pengerjaan desain dari berbagai banyak sumber saya akan berbagi file vector icon bangunan untuk peta lokasi.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-banyak-kaca-modern.html"><i>&larr; rumah banyak kaca modern</i></a>
+                                                                    
+                                        <a href="/rumah-bambu-minimalis-murah.html"><i>rumah bambu minimalis murah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

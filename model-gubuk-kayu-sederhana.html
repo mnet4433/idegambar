@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Gubuk Kayu Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Gubuk Kayu Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/474x/96/ab/7c/96ab7c1ecd0b8df7bf792150577ce9c2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+gubuk+kayu+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Gubuk Kayu Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Gubuk Kayu Sederhana</strong>. Didominasi oleh material kayu seperti pada lantai dinding dan kisi-kisi jendela model rumah kayu yang satu ini juga dilengkapi dengan kolam renang minimalis outdoor sehingga tampilannya sangat mewah. Gazebo untuk Menikmati Suasana Perkotaan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/7e/d9/3f/7ed93f27e955e36f50bd7ec3ce86a63a.jpg" alt="Pin Oleh Delta Kanopi Sidoarjo Surabaya Di Canopy Sidoarjo Sby Kanopi Atap Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGXFouSp19USKZu83ifpUEpZ4ZnU8NCPyz-g';">
+        <figcaption>Pin Oleh Delta Kanopi Sidoarjo Surabaya Di Canopy Sidoarjo Sby Kanopi Atap Rumah from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Rumah Kayu Minimalis Sederhana 1 Lantai Desain Rumah Minimalis. Selain dominasi warna cokelat dari material kayu. Ketika cuaca panas suhu kayu mempertahankan kesejukan sedangkan di saat cuaca dingin rumah akan tetap hangat.
+    </p>
+    <h3>Model pintu garasi kayu jati minimalis ini juga bisa menjadi bahan pertimbangan untuk mendesain garasi yang terlihat modern dan mewah.</h3>
+    <p>Gazebo Konsep Bambu Ala Gubuk Petani. Rumah Bambu Jogja Gazebo Bambu Malang Gazebo Bambu Unik. Gazebo Konsep Bambu Nuansa Tropis. Hasil analisis menunjukkan bahwa model ANFIS mempunyai tingkat akurasi yang baik jika dibandingkan dengan teori dimana koefisien korelasi R2 untuk data pengujian 0995 dan Mean Square Error MSE 013 mm.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini Dia Desain Rumah Kayu Minimalis Terbaru Paling Nyaman Desain Rumah Bungalow Rumah Kayu Rumah" src="https://i.pinimg.com/474x/72/b6/d4/72b6d49c85d801a331ba6f70676ba573.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQggq8hZ3fY6Fmoveq-4fUODHbWjeoVmk79wCLJum9TGYPeyeU8Ki9icGoX2E4Vl8fpexs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Balkon rumah kayu umumnya dibuat dengan tinggi pagar minimal setinggi perut orang dewasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Pos Satpam Sederhana Desain Desain Arsitektur Arsitektur" src="https://i.pinimg.com/600x315/d4/ec/86/d4ec86dc3372778493a79cab63336d32.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6Ciq24-8Pxy_yBgTwQPbGlfNtG-QUFFDUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1Lebih tahan terhadap perubahan suhu ekstrim.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desain Rumah Minimalis Rumah Kayu Eksterior Rumah Modern" src="https://i.pinimg.com/originals/e5/62/30/e5623036b68ee7099108d61d3a23cffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4J5Y_sUkIljA9z5soYB5ErOI3CPLGYsisd0Qukrg5_I6aeRquXBcRypJ1UjFlZX692cg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Kayu Minimalis Modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Share Cerita" src="https://i.pinimg.com/originals/45/2f/21/452f21aee778cdd8fc674547e85f2b79.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3kw7f4kNzNebPgLlvmg4ghBRFjRzEda9SQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Terakhir adalah rekomendasi rak bunga kayu yang cocok untuk outdoor ata luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Gazebo Minimalis Bambu Dan Kayu Gazebo Desain Bambu" src="https://i.pinimg.com/600x315/a1/6e/6d/a16e6d0af25419cc44c94b8320f5e993.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXHYHepNMt-kKc2xcO29Z4ApCyBN7ebSEr91APlXS0MsK6al9uFmfv5woz3FSIpRhbAk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gazebo Etnik Pinggir Perkebunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreas Interior Kafe Warung Kopi Desain Interior Kafe" src="https://i.pinimg.com/736x/f1/b6/30/f1b630b63b05299651f6e04a906ca342.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQNVDSlV8p11rjaB_wv9RkXZyN6A40wEG7Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Terakhir adalah rekomendasi rak bunga kayu yang cocok untuk outdoor ata luar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Random Kpop Nc Di 2021 Denah Rumah Pedesaan Rumah Minimalis Dekorasi Rumah Pedesaan" src="https://i.pinimg.com/736x/50/49/ca/5049ca65ca5cf80ee0a532cc83903cd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsI2PMSpzFUGlI90BBzseAj3xD9BfIi-FsEA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gazebo dengan Detail Anyaman Memukau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung Minimalis Rumahkayumurah Rumah Kayu Arsitektur Rumah Pantai" src="https://i.pinimg.com/originals/e6/76/69/e67669108af64a6065682211a15ee8f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMPBlTNGI-Rjk_zb5fNciAHDJ5TrOSOvXVlyReskINl2Q8s_ra8VhSSiVuDWeXTjVB9Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Bambu Jogja Gazebo Bambu Malang Gazebo Bambu Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Cara Membuat Gubuk Sawah Dari Stik Es Krim Youtube Kerajinan Gagang Es Krim Es Krim Kreatif" src="https://i.pinimg.com/originals/47/95/5a/47955a5900be7b8d939224d126a027dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhXugdRnOFWXLweWZEVfiQ5nAOISDn201B7JHsX2vtgI6DCBYBziczlNF48JzfKUn9bQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1Lebih tahan terhadap perubahan suhu ekstrim.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Go Riau" src="https://i.pinimg.com/600x315/2a/f9/c7/2af9c71b0efa63ee8669426f560c921f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNt2qBh9J7q38ddYk3gBgbCkUJnsGSGIiYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Balkon dengan Pagar Berbentuk Akar Merambat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wedding Organizer Jakarta Eo Acara Pernikahan Eo Pernikahan Outdoor 0856 118 7778 Katering Pernikahan Dekorasi Pernikahan Pernikahan" src="https://i.pinimg.com/originals/b7/db/14/b7db14822d269703e8cd5ae8d1075117.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtfwfskE_YkgaJkptj34aSyBOVHmOymHE7A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model pintu garasi kayu sliding merupakan salah satu model pintu garasi yang banyak digunakan pada garasi rumah yang menginginkan memiliki garasi tertutup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Inspiring Tattoo Ideas" src="https://i.pinimg.com/originals/5a/97/13/5a97138c5c6be5cbd9bae5bce6d32d47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQ93N4_wkJKdIj2N-kNUMVAcUEvUKTtzmVA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Bambu Sederhana Murah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+kayu+sederhana+cantik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+kayu+sederhana+cantik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Model pintu garasi kayu sliding merupakan salah satu model pintu garasi yang banyak digunakan pada garasi rumah yang menginginkan memiliki garasi tertutup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kali Ini Berukuran 9 5 X 12 M Susunan Ruangan 4 Kamar Tidur Ruang Tamu Ruang Keluarga Ruang Mak Home Fashion Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/736x/72/de/f0/72def07e125960b1c2dde478eace6ced.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJb2U1ypuBgggIg32Brs6fxDvxlp6DUUg7sw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model pintu garasi kayu jati minimalis 11.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/ee/d8/ee/eed8eeeab939a6952083cdfa84c9817b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKmnZhqRRUpFQDQO-S3l1vjxEmsOnlMpe2KZLdL_LaPLuQwmlCkrcGwAOha3wBBx4bKxA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun bukan hanya hal tersebut yang memberikan kesan mewah pada model rumah kayu ini adanya jembatan minimalis di atas kolam renang juga membuat rumah kayu ini tampak sangat berkelas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Rumah Idaman Sederhana Di Desa Paling Bagus Rumah Pedesaan Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/originals/cf/5b/6e/cf5b6e5edbd7006cf897340ff8b784cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWozLke8uHrVlqd5Ig4n_HnSAV1Lh7QaUoMt61oEQcEJ-ZL-On8e6AuC0Z6nFW9JASES4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>30 Gambar Rumah Gubuk Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh M Agus Setiawan Di Hiasan Es Krim Rumah Balok Kayu Kerajinan Tangan" src="https://i.pinimg.com/474x/96/ab/7c/96ab7c1ecd0b8df7bf792150577ce9c2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXjQjVzEemKF_XrIKhfJJNPr4MrhQkx8FtKLNJscRh90J800W2satkpIIXz84PEtUc-9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gazebo dengan Detail Anyaman Memukau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Design Kandang Kambing Modern Dari Bambu Bertingkat Pakan Dalam 3d Model Bambu Kambing Kayu" src="https://i.pinimg.com/originals/b6/b1/1d/b6b11d21bd9806a24c72a1dc09471faf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWXo_4D6L9z1fvJu5LVU83dq0dTRYMI4k_gg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Bambu Jogja Gazebo Bambu Malang Gazebo Bambu Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Homes And Offices Need Different Types Of Decor To Convert Them In An Appealing Look To Cust Minimalist House Design Minimalist Decor Diy Minimalist Home Decor" src="https://i.pinimg.com/originals/4e/5d/69/4e5d690c801e6cb9c4ab31f31a7ad690.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZrf4hb7kXNa_CJnRpdN7RgqojJQF-t23eyQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Bambu Sederhana Murah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Rumah Minimalis Sederhana 1 Lantai Tampak Depan Desain Rumah Eksterior Rumah Minimalis Eksterior Modern" src="https://i.pinimg.com/originals/de/4e/4f/de4e4ff0910b60635c47ce7ddd22c2de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHHrSph3wlXvKoIALH5unbE3xKarmN-h5JA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1Lebih tahan terhadap perubahan suhu ekstrim.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 77 Inspirasi Desain Rumah Muka Melebar Rumah 14x10 House Design Rumah Luas 4 Kamar Tidur Modern Youtube Rumah Desain Rumah House" src="https://i.pinimg.com/564x/3d/fd/af/3dfdafc6652ad29153462c54118710ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGB2rhnRcKgiatN1Z1T2yRwmottYRBmEm55w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gayebo Kayu Jati Minimalis Murah Simpel Gazebo Tak Hanya Sekedar Tempat Untuk Melepas Penat Dan Stres Tapi Gazebo Desain Eksterior Pertamanan Belakang Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Youtube Ide Kreatif Ronda Hamster Cage" src="https://i.pinimg.com/564x/a0/96/76/a096762ee8571dc98d3abf719cdd9363.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ74PH1HexEk-duqeb8XSfD0WP75f9mcGzbK2gyn9WwuUvXwsOokwDZovhtE8QdD2s7HSg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gubuk kampung kayu wood.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Adat Sunda Jawa Barat Eksterior Desain Rumah Rumah" src="https://i.pinimg.com/originals/6f/6c/5a/6f6c5aac64a16756bff454ac5a32a533.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlb2QCm-g8zMSviQyoARYsX92LoiQd0Mlx_Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>89 Model Desain Rumah Gubuk Modern Terbaru Dan Terbaik Deagam Design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kedai Kopi Minimalis Outdoor Restaurant Design Cafe Shop Design Coffee Shop Design" src="https://i.pinimg.com/564x/ba/0f/52/ba0f52460e3b3377d4323812656d8007.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNp7TwhcmDEpHMkZOoH72ebThxWDz1wl212e27Z37IVyUKdJsyxE3yYIVfgEDhaXXD0Hc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kumpulan gubuk kayu hutan dan sawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Tingkat Model Gazebo 2 Lantai Kayu Kelapa Harga Murah Desain Rumah Eksterior Gazebo Desain Produk" src="https://i.pinimg.com/originals/e0/33/d4/e033d4a019e7fa8e22ba9bf018285979.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0j5L3ZhIOhgVFAR0OWfh1hnV3Cnd5ud-7Os5b8nXP_0Mycu6CBzxfuVTOEp686DykwaA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lebih jauh lagi desain rumah kayu minimalis sederhana bagi mereka yang mencari untuk tidur dengan nyaman model rumah kayu minimalis sederhana dekorasi Point juga dealer utama untuk taman rumah minimalis dan garasi modern yang telah membuka showroom suite di desain kamar maupun kanopi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Craft Popsicle Sticks Step By Step To Make Mini Beach Hut Es Krim Miniatur Kerajinan Gagang Es Krim" src="https://i.pinimg.com/originals/4e/e9/fb/4ee9fbe43778518d429c9f4a5d072e00.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUP4bdyfcoaPNYrys3vTvJor54Rv6jyGdfgnqdPg_Gps4p4B5Yvk-h2Fjx9RzBLhS_7Mc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rak bunga kayu antik dan unik tentu saja akan membuat orang lain selalu fokus memandang tanaman kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Rumah Dari Stik Es Krim Ide Kerajinan Batok Kalapa Ide Kerajinan Ide Rumah" src="https://i.pinimg.com/originals/1b/13/63/1b1363d9bcc16ec324235c945b7f8770.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEFYBRdhMvtAkXHdFrfvPIoD6973OIMv6L3-tUM9QH9G9xJEI6MoJvVwUVlb6aKCUlDC8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>92 Inspirasi Desain Rumah Gubuk Modern Yang Belum Banyak Diketahui.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="21 Gambar Rumah Gubuk Sederhana Rumah Ide Dekorasi Rumah Desain" src="https://i.pinimg.com/originals/b0/8c/a1/b08ca1ea947551dfade68f6c7262deee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlP6rVa6hGg6u4VGunCPr3LFL165DLwULGMYkFIdnrw-avwuTBvwJjGrbgof8nRSnsVmY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Betul sekali model dinding rumah kayu punya ketahanan yang lebih baik terhadap perubahan suhu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 91 Desain Rumah Kecil Banyak Kamar Rumah 5x5 Micro House Indonesia Tiny Home With A Lot Of Bed Youtube Micro House Tiny House House" src="https://i.pinimg.com/564x/5e/25/e4/5e25e4cc8e08343f7f09b99e7293e339.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTPc-nTWOQFfMmCK--Aq0S1iXgJ4AE3j0XAA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ketika cuaca panas suhu kayu mempertahankan kesejukan sedangkan di saat cuaca dingin rumah akan tetap hangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Apartemen Kecil Abu Interior Desain Interior Desain Interior Apartemen" src="https://i.pinimg.com/originals/71/cd/31/71cd31abf6c96bf1f350c082f80df97a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZRaYflyeGFFgegv7LoTIa6_sO5TVwHrribQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda dapat menambahkan bangku kayu sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Step By Step Membuat Masjid Dari Stik Es Krim Bagian 1 Satu Es Krim Krim Mesjid" src="https://i.pinimg.com/originals/c6/59/49/c65949dd9018de966a05198996f0a959.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVzcEOhVBv97j1shfaaGNSv3pIjIZrm8m1ag';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Showroom ini adalah showroom desain rumah gaya eropa konsep kasur menampilkan kasur dapur sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7x11 House Design Casa De 7x11 Desain Rumah Kecil 7x11 Rumah Model Segitiga Rumah Tudio House Youtube Desain Rumah Kecil Rumah Kecil Rumah" src="https://i.pinimg.com/564x/3e/cd/4c/3ecd4c66fd04a3515526035ee79a2835.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawxd7Uf0kFc_JA-oLjlJHwEe4lgXv4WFuNsdyN7WXqaFAfCBpcFnZN2mMX-h0VoDkJ1I';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Klasik Modern yang Anggun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Delta Kanopi Sidoarjo Surabaya Di Canopy Sidoarjo Sby Kanopi Atap Rumah" src="https://i.pinimg.com/originals/7e/d9/3f/7ed93f27e955e36f50bd7ec3ce86a63a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGXFouSp19USKZu83ifpUEpZ4ZnU8NCPyz-g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Showroom ini adalah showroom desain rumah gaya eropa konsep kasur menampilkan kasur dapur sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Make A Diy Miniatur Bridge Diy Popsicle Stick Crafts Craft Stick Crafts Popsicle Stick Crafts" src="https://i.pinimg.com/originals/b5/a3/7e/b5a37e70072089067d3902f5a86f3154.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1r56cCKxnUvgNvA1qky02n764qcKgYheWDQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>3D Model industrial agriculture farm shed woodshed.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Today" src="https://i.pinimg.com/736x/ed/6f/fc/ed6ffcb15130f783d796dcf8a0f2dba1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGEZ7aemXXznGE3E24xIz0DtcCxjeYtEvMBA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika Anda ingin menjadikan balkon rumah sebagai tempat bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Make A Pen Holder With Popsicle Sticks Diy Pencil Holder Diy Pencil Holder Popsicle Stick Diy Popsicle Sticks" src="https://i.pinimg.com/originals/d3/69/aa/d369aa989c556d538e4235a9a8cd638a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6nGO6Kkn_VnCOSPMwz1wb973aR9svUxo5sw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Koleksi Gambar Rumah Gubuk Sederhana Terbaik - Rumah gubuk bambu sederhana seperti pada judul sub yang telah anda lihat dibawah ini website gambar furniture keren ini memberikan beberapa pilihan 21 desain rumah gubuk bambu dan kayu terbaru 2019.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Miniatur Jembatan Dari Stik Es Krim Inicaraku Youtube Jembatan Miniatur Es Krim" src="https://i.pinimg.com/736x/d5/80/36/d580364b6ce60982d254b116f64462a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlC7V4tN8Lj0d0e3DQBvtWGvkdDINeuqlWuQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Melalui kaca jendela yang besar tersebut kamu bisa melihat adanya sofa putih lukisan lampu gantung dan dekorasi lainnya pada rumah kayu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Speed Build How To Draw A House In Sketchup 2 5x3 5 House Design Pink Micro House Tiny Home Youtube" src="https://i.pinimg.com/564x/7d/87/45/7d874596681c3bfc03acaef798b17df9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReI1N08-hey0eX1KP3joIJvpcTf3oqowOK8g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Balkon dengan Pagar Berbentuk Akar Merambat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Minimalis Sederhana Untuk Taman Gazebo Atap Teras Ide Halaman Belakang" src="https://i.pinimg.com/originals/31/88/ea/3188ea9c89caaf5d9b58c3e249594f87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4g2cG5d-JtWOCg8Xv_pmJUKuj1ZJuSgO_DrCnI6sdZltR66swpXUSHy_3vy7rgS_FpjI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>89 Model Desain Rumah Gubuk Modern Terbaru Dan Terbaik Deagam Design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Di Atas Kolam Ikan Model Minimalis Desain Terbaru Kayu Kelapa Atap Sirap Ulin Gazebo Rumah Kebun Rumah Indah" src="https://i.pinimg.com/originals/6d/7a/54/6d7a5400ffe7d0b2ad52aca276161091.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-5qMU8Z0nIPcD0taFnCeXw56YaMGxSizYI8KF2RnWlxhKMtP-kV2v8J1P1gxGKF1JYY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Saung atau biasa disebut dengan gazebo merupakan bangunan dengan ukuran sedang dengan bentuk menyerupai joglo kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Masih Beralas Tanah Nenek Di Dampit Ini Ingin Rumah Layak Huni Nenek Petani" src="https://i.pinimg.com/originals/f3/43/46/f34346174a0220b9249f87e5e7d60d42.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTns5cWcTrsfGEEIgpjOaJLB8oAVLlgteYRkw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Betul sekali model dinding rumah kayu punya ketahanan yang lebih baik terhadap perubahan suhu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gubuk Bambu Indonesia Hidup Sederhana Kebun Sayur Rumah Kebun" src="https://i.pinimg.com/originals/19/2e/23/192e23f7f054395563fcdec5518da167.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM62gQ7lOwmWN5JxwjZKuuvNIK817I09TUlI3btimvZwjHd5Bzx9yZrvtJmybe9iVunSs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>1Lebih tahan terhadap perubahan suhu ekstrim.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Legenda Batu Menangis Legenda Menangis Kalimantan" src="https://i.pinimg.com/736x/e0/e3/ed/e0e3ed8c4113210e5f07befd1b6b27bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR9tjKo3K_KCoVM-U9ZIBuBdM68csComkpNw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>92 Inspirasi Desain Rumah Gubuk Modern Yang Belum Banyak Diketahui.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Nikah Syar I" src="https://i.pinimg.com/originals/6b/ac/91/6bac91cd981f9e9026221f7d5057c7fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStR3Y19ZHN1e-cKmicdYoxRiIkbkT7NZhmAw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sementara itu referensi model rumah kayu yang satu ini mengusung desain compact sehingga cocok diaplikasikan oleh kamu yang menyukai hal-hal praktis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/90/00/40/900040d251598d2f84d661b99c82b946.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYmZGjqSJ8mg0PAg_IX-6E-vHPWX8HLH23qw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ketika cuaca panas suhu kayu mempertahankan kesejukan sedangkan di saat cuaca dingin rumah akan tetap hangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Unik Gaya Jepang Terbaru 2016 Rumah Kayu Rumah Arsitektur" src="https://i.pinimg.com/originals/50/8d/82/508d82fb1fb33d8451df86dc933e8b9d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW4R3VKIiazo1mhEi3yciIabRqcTUZ2AD5T_e5J_RIRg6_l3nbHsc_pK4qg_mvmRSXrUE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gubuk Bambu Indonesia Hidup Sederhana Kebun Rumah Kebun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="62 Gambar Modifikasi Anak Kecil Di Mobil Terupdate Lazimnya Kendaraan Beroda Empat Yang Tidak Luput Dari Bah Motorcycle Diy Reverse Trike Concept Motorcycles" src="https://i.pinimg.com/originals/48/c8/d9/48c8d9c59eabe42a7b0fb60c0114b672.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kKnBhzFcyYawzrYSO3Qvr-lmie9VInTdYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>30 Gambar Rumah Gubuk Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gayebo Kayu Jati Minimalis Murah Simpel Gazebo Tak Hanya Sekedar Tempat Untuk Melepas Penat Dan Stres Ta Teras Halaman Belakang Gazebo Dekorasi Tanaman Rumah" src="https://i.pinimg.com/originals/75/e8/11/75e8110b0d79a8abec648fea2eccc587.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiVGckLg2_8Ya46miE-0AgoJPQHyJkwBQyefOdNH8DqTS8yH0H8emZHgKmQGgXt1g4QEk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain dominasi warna cokelat dari material kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+kayu+mungil&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+kayu+mungil&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Model Balkon dengan Pagar Berbentuk Akar Merambat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Legenda Asal Mula Selat Bali Cara Menggambar Manik Legenda" src="https://i.pinimg.com/736x/a5/60/9b/a5609b0a546bba4fc705dd40337c775c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetQElYOkCS21jvThDde85Yhdi_BIOxXN6kQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konten sembunyikan Model dan Desain Rumah Klasik.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-interior-ruang-tamu.html"><i>&larr; desain interior ruang tamu</i></a>
+                                                                    
+                                        <a href="/desain-interior-lobby-kantor-minimalis.html"><i>desain interior lobby kantor minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

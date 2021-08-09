@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah 2 Kamar Tidur Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah 2 Kamar Tidur Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "/search?q=desain+rumah+minimalis&amp;tbm=isch",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+2+kamar+tidur+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah 2 Kamar Tidur Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah 2 Kamar Tidur Sederhana</strong>. Salah satunya adalah rumah ini di mana kamar tidur diletakkan di bagian atas dengan dua kamar mandi dalam yang luas. Kalau ukuran rumah kamu adalah tipe 3660 atau 3672 maka luas kamar juga hanya sekitar 2x3 meter.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/db/c8/6c/dbc86c955a8b9fe359857d679b58cfbb.jpg" alt="Rumah Minimalis Sederhana 2 Kamar Di Desa Youtube Rumah Minimalis Rumah Desain Rumah Minimalis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMbehOCEt727ClKUkQ78XcDcr8PxfYRznryF-kO-q3R4cHIj_JhZwF5Y7_2Lqyrh5awlY';">
+        <figcaption>Rumah Minimalis Sederhana 2 Kamar Di Desa Youtube Rumah Minimalis Rumah Desain Rumah Minimalis from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Desain Rumah 8 x 12 3 Kamar Tidur 16. Konsep rumah minimalis akan menggambarkan kesan kesederhanaan dan elegan. Toh sebagai pasangan baru belum butuh banyak kamar juga kan.
+    </p>
+    <h3>Inspirasi 1 Rumah 2 lantai adalah salah satu solusi untuk menciptakan bangunan ideal di lahan sempit.</h3>
+    <p>Model rumah sederhana ini lebih kecil daripada rrumah minimalis yang type 54 rumah ini hanya memiliki ukuran 9 X 5 meter saja. Rumah Sederhana 4 Kamar. Selanjutnya ada desain rumah 2 kamar tidur terbaik yang bisa diterapkan untuk kamu yang ingin membangun rumah kecil sederhana tapi tetap tampak modern desain rumah 2 kamar tidur. Selanjutnya ada Desain Rumah 2 Kamar Tidur Terbaik yang bisa diterapkan untuk kamu yang ingin membangun rumah kecil sederhana.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 1 Lantai 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Rumah" src="https://i.pinimg.com/originals/11/1d/d2/111dd25308b240e615a2beefeca38fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFR_GJdq1XHDaNgPJuT1rQ1B8RP0sgObc5SA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>17 inspirasi denah rumah minimalis 3 kamar tidurRumah akan terasa nyaman dengan desain yang tepat dan kondisi rumah yang rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Atap Rumah" src="https://i.pinimg.com/originals/49/88/72/49887271bbb3adc633b4baee1202e349.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ic1cAfbv4C_GOic4HDbB6wo6zre5LKRcb80MgiPWUiWgNt0VSpeKkWXe0Wo-77j5sEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kalau ukuran rumah kamu adalah tipe 3660 atau 3672 maka luas kamar juga hanya sekitar 2x3 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Alejandra Chavez Di Interior Home Denah Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/07/79/9d/07799db209b0eb57e739b821880997a1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7PVOjX_Tgywz1Un-1WGnJYC_RZqZZvKJqNNpodohm3EjQ3gzP6PyzsJ3cNwijfBx0UGk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Dua Kamar Contoh Denah Rumah Sederhana 2 Kamar Tidur 2 Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Desain Rumah Dua Kamar Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrotmc9wrn1lg51mx7ra7gl2zmyqllxcdtlbfunpmnxlwg4bamm Usqp Cau" src="/search?q=denah+rumah+2+kamar+ukuran+7x9&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+2+kamar+ukuran+7x9&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Toh sebagai pasangan baru belum butuh banyak kamar juga kan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Kecil" src="https://i.pinimg.com/564x/7b/ce/3e/7bce3ee8dc46321411ee2c810074727f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZpRNyIXwdpPB9aCJPpQgaFW64kRs66naU4g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah 8 x 12 3 Kamar Tidur 16.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Tipe 36 Denah Rumah Rumah Minimalis Denah Rumah 2 Kamar Tidur" src="https://i.pinimg.com/originals/c6/06/c6/c606c6e7c8ad6549a331ebc2b052228f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZm4o9I0Z9qxxHPgv3z93nQIsBhjsKi0Gze7_Ug14KJbSxm1d1gO7L0iHjYDQkcE4Plhg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ada banyak model rumah minimalis mulai dengan gaya sederhana hingga modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas De Campo" src="https://i.pinimg.com/564x/69/c6/af/69c6af1cd3eb115198815427d9b90a87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCi8jmxiD3pxDVV--b0CSsPrmKv26slTCGYd6_lBRVjzfzOJxHSPCLZHrWsEGvcmq6Ruk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk kamu yang berencana menikah dan bangun rumah sederhana bersama pasangan kapling sederhana dengan dua kamar bisa jadi pilihan yang menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Denah Rumah Minimalis Ukuran 6x8 2 Kamar Oleh Ide Rekomendasi Denah Rumah Minimalis Ukuran 6x8 2 Denah Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/736x/74/ca/ad/74caad3f9c8dba0155134c7a2a320d38.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWT5On-763r6fs0KZHSa5hlGkLbOQNeebq0Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana ini lebih kecil daripada rrumah minimalis yang type 54 rumah ini hanya memiliki ukuran 9 X 5 meter saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai 2 Kamar Tidur 3d Denah Rumah Denah Desain Rumah Denah Rumah 2 Kamar Tidur" src="https://i.pinimg.com/originals/99/42/8f/99428f7961079db176088c23e5ec9de7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRA3VwecJbe0rL92vPjglYI_vDzxnbHahjvQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Sederhana Tipe Modular.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/564x/52/d5/d4/52d5d45b4b116939bd746a088c116acb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5QNi7_-eua9CV9NESvftkspzVbfHc-ecXwQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika budget membangun rumah terbatas maka konsep Desain Rumah 8 x 12 Sederhana ini cocok untuk kamu terapkan dengan 2 kamar tidur Desain Rumah 8 x 12 Sederhana 18.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini 16 Contoh Gambar Denah Rumah Minimalis Beserta Keterangannya Denah Rumah 4 Kamar Tidur Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/68/8a/0c/688a0c006cb413fce8b85a6db868564b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6P0Z08-FGE5hzLydpyrcgR8j2-N6mco5Aw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk kamu yang berencana menikah dan bangun rumah sederhana bersama pasangan kapling sederhana dengan dua kamar bisa jadi pilihan yang menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas Pequenas Planos E Ideas" src="https://i.pinimg.com/564x/72/d3/db/72d3dba26b5bb9aa6b18b543c5694bee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghuMHGsosC1414n0RbgUmwmD2rV9MICMDclmNa3uqg4dM3R4lhG-90XC13QnoEA3iDig';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Allternatif pilihan desain denah kamar 2 yang cukup menarik yang tidak boleh dilewatkan DESAIN RUMAH 2 KAMAR SEDERHANA 14.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="68 Gambar Ide Denah Rumah Sederhana 2 Kamar Tidur Terbaru 3d Dari Rumah Minimalis Sederhana Kamar 2 Desainklasik D Denah Rumah Ide Apartemen Rumah Minimalis" src="https://i.pinimg.com/736x/4b/93/33/4b93331336e03ab16330fbceaf432fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmWU-6mZvSS5JBx6-NOUiYG9wRiPQKS7kUGw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hanya saja dalam membuat denah rumah minimalis 2 kamar tidur 1 lantai ini Anda harus melakukannya dengan sebaik mungkin seperti ruangan apa saja yang dibutuhkan selain 2 kamar tersebut kemudian bagaimana bentuk ruangan yang dimaksud dan lain-lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 5 7 Denah Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/564x/f3/da/b0/f3dab00f65a25ce7ceed55fae1a53958.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Bbt6WJLyGrckIGLDRyGAzmn9SciJa5QpqA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kemudian 2 kamar tidur lainnya ukurannya lebih kecil yang lokasinya berdekatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Gambar Rumah Minimalis Sederhana Gambar Rumah Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/71/ef/8d/71ef8d4b5039d2d9a1c93188087a30bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0XVnIcWqp8tdXF-1BYkrhYMKd02bwPhz0tQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis type 45 ini sudah memiliki 3 kamar tidur 2 ruang kamar mandi ruang tamu ruang keluarga serta dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Ukuran 9x6 2 Kamar Tidur 1 Mushola Dan Hal Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/cb/91/f4/cb91f4c339daa59054eff1de3ed4af90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzLLkI_58BAyQpfH5AI0yL4KmWve8W_ciayzjuTRWuFme_J22ZWOhTrD0vKZ1PLf8xVQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis tapi mewah termasuk desain dan denah rumah sederhana dengan biaya murah ndik 16 model rumah sederhana tapi kelihatan mewah rumahlia com 26 model kusen jendela kamar tidur minimalis sederhana desain bentuk interior rumah sederhana mewah tapi elegan pin di gambar rumah sederhana 100 desain rumah minimalis mewah sederhana idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Kamar Tidur 3d Baru Denah Rumah Denah Rumah 3d Rumah Minimalis" src="https://i.pinimg.com/originals/75/26/a9/7526a949887bcf68f514f91312ca21c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyTbMjZY_PuE_zNKjtL2j2kLu9NyLgZIIzw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sederhana nan mewah model rumah sederhana tipe 120 menyediakan semua kebutuhan ruangan yang kamu butuhkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3d 6x9 Minimalis 2 Kamar Di Android Part 3 Youtube Rumah Minimalis Desain Desain Rumah Minimalis" src="https://i.pinimg.com/564x/76/55/cf/7655cf7d8031f7da258b02367b08b1b3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNya9kSLStJ1Y-zl3b9179OBKIMzm2uCh5Mh9VQtFSLJNTDmM4w4vlz1Ze0VpqsJ5dAH0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah pada artikel ini kita akan membahas gambar denah rumah sederhana 2 kamar tidur minimalis yang terbaru di tahun 2014.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketsa Denah Rumah Minimalist 2 Kamar Tidur Denah Rumah Desain Rumah Denah Rumah 3d" src="https://i.pinimg.com/originals/61/9a/8c/619a8cf9dc6a14eba31d321d62794478.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8NkpLPXxKlRSvwjFwfArkALvXXrB1ZXS3hGFj3Ahhz8dHRe4eWouRQWi0KT6DSd3F88';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah 8 x 12 3 Kamar Tidur 16.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Yang Saya Simpan" src="https://i.pinimg.com/originals/e5/7d/57/e57d57c9c5203ba4d73588676b8c3d98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YWEmEFDn-4xrILCCZ34OV84RKYZQkrKrkQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harga rumah semakin mahal jadi jangan heran kalau ukuran rumah juga semakin minimalis jika dibandingkan zaman orang tua.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctjgx9kr2lk Fwgg Xe1gxd2rqe0tr1j9pfsnqpsnb Tlqkq2if Usqp Cau" src="/search?q=desain+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Sederhana gambar denah rumah minimalis 2 kamar tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x6 2 Lantai 3 Kamar Tidur 2 Dapur Ada Balkonnya 6x6 House Design Desain Rumah Kecil Youtube Desain Rumah Kecil Desain Rumah Rumah" src="https://i.pinimg.com/564x/25/60/f8/2560f837d3bcefcf2d63a75142c06565.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYozxtDFe5p0C07PIfUso_gzwgQGZjpxvDw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harga rumah semakin mahal jadi jangan heran kalau ukuran rumah juga semakin minimalis jika dibandingkan zaman orang tua.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/736x/28/c1/4f/28c14f85d98548e0ebe41419b19c1ae3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGqtThpqOcSQWCRLm0j-gRkX_WcpSd94z8iw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sederhana gambar denah rumah minimalis 2 kamar tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 9 5 X 13 M Dengan 4 Kamar Tidur Dan Mushola Serta Pintu Sam Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/f5/23/4d/f5234d26753bea388ea3287975bf95a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc41ssIL_SLMikIbMD6IW59DcdkIXDrWyUsw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada banyak model rumah minimalis mulai dengan gaya sederhana hingga modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 8 5x7 Dengan 3 Kamar Tidur Zidan Desain Youtube Desain Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/236x/30/7b/49/307b49cc3c64ab0dec35d146d1be7dbc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJASclLA5uG4dlRsWIEW-yPmgi_Ly_VQPEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DESAIN RUMAH KAMAR 2 MINIMALIS 12.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Decor That I Love" src="https://i.pinimg.com/originals/6f/71/8c/6f718c425698e6cf305ed2a072d6ddd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3vK7rCv3BCgZKjnCSu-gZLgVnRSfLXFpQw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DESAIN RUMAH KAMAR 2 MINIMALIS 12.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Ukuran 6x8 3 Kamar Desain Rumah 6x8 Kamar 2 Denah Rumah Ukuran 6x8 2 Lantai Rumah Ukuran 6x8 2 Kamar D Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/cc/44/1b/cc441b04039465b28ed34f5c58fe7d78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgoVf2NRdTrVtVX4LToZUONTF7eXmWxyFohg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah minimalis 2 kamar tidur di atas terlihat menarik dengan tata letak ruangan yang sesuai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana Ukuran 6x6 Tampak Depan Terbaik Desain Rumah Minimalis Ukuran 2 Kamar Deagam Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/12/6e/3d126ea34e66af8d4c8b06231c62b775.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs9ql4HIk1oOCANkW4joUNuyTcJZ19AV7142jRcOjoQZ0UukJC5VLX3GdeOoFLsZ66VDc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah minimalis type 45 merupakan rumah yang sengaja dibuat dengan luas bangunan 45 m².</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Denah Rumah 3 Kamar Tidur Ada Garasi Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/60/de/de/60dede26dce8941c1cd448b09b3e3840.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQLf4A-_4HKcmk_UUg_OGJ66FYbiDqBgQzgw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis type 45 ini sudah memiliki 3 kamar tidur 2 ruang kamar mandi ruang tamu ruang keluarga serta dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/564x/d0/5a/40/d05a400c0b297edeb60dc89df049f098.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoz4RdjQHd82u7wIyUkkw8rBk-QVSoI37FwvJzRN5jcJaKD5-6My71x0adhyp4IJmAe3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi 1 Rumah 2 lantai adalah salah satu solusi untuk menciptakan bangunan ideal di lahan sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 2 Lantai 2 Kamar Tidur 3d Denah Rumah Desain Rumah 2 Lantai Denah Rumah 3d" src="https://i.pinimg.com/originals/bd/54/b5/bd54b5629387f28518e9574c496ac13a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAY6lYKrtwRsBpu0mWhsoERYFU5auE1vV-1mUbCCWAW4wDO5SeOZa4Nd2qUFq5a0v1cus';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Salah satunya adalah rumah ini di mana kamar tidur diletakkan di bagian atas dengan dua kamar mandi dalam yang luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rmh Minimalis" src="https://i.pinimg.com/564x/ba/b2/0f/bab20f4af239e110e7fd231547b317f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLkj78O0uvrljUemVfqq6nlC-RvdA5_FUHG1o3ZuuHYZ0dB2361upQRDOl8SYG7Np3rsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kemudian 2 kamar tidur lainnya ukurannya lebih kecil yang lokasinya berdekatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/564x/53/30/c7/5330c708dd18199a52705677ae3659f9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzODymEoudewPjMuOr8T7KCqf0d1hASYA9Rg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis dengan 2 kamar tidur sangat cocok untuk pasangan muda yang baru menikah atau yang mempunyai satu anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Humdecor 104 Gambar Pondasi Rumah Minimalis Sederhana Denah Pondasi Rumah Minimalis 3 Kamar Huniankini Denah Pondasi Rumah 3 Ka Floor Plans Home Home Decor" src="https://i.pinimg.com/736x/c7/94/7a/c7947a7548d543cc42e9482565eeab87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStFUgdg0r76VReAER5u2ldOqU1AbQRxwmvSA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beberapa contoh gambar denah rumah minimalis sederhana 1 lantai dengan 3 kamar tidur dalam artikel ini mungkin bisa membantu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Sketsa Denah Rumah Sederhana 2 Kamar Tidur Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/91/e6/64/91e6643a43499073b56c0e3595ad2cf7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYm_VYn52rl9443S0yF0tg2Mm3LQdOkgo0AzCZYb5T6W1D5wVsRc9ITu6477RjEZnEey0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kemudian 2 kamar tidur lainnya ukurannya lebih kecil yang lokasinya berdekatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Minimalis Desain Gudang" src="https://i.pinimg.com/originals/43/f2/b5/43f2b58085d7383d962dae5fc226c4a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGTu3V0J2aiTNU1hQSCXbbYfDMO0Nfqp3hw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DESAIN RUMAH KAMAR 2 MINIMALIS 12.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 7x12 3 Kamar Tidur 2 Wc 1 Lantai Di Kampung Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/236x/e4/39/b2/e439b27b215fd097a5eec91bef20ad7f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-p1AgqK8ekdH-xz4sw071qstfB1xtQAqH2O-75DYtpKe1zvM5ADzEsMPY7pUyV-W2DDw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis dengan 2 kamar tidur biasanya banyak dijadikan pilihan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ada Garasi Teras Dan Taman Sederhana Di Depan Rumah Di Samping Rumah Juga Ditanam Pohon Pohon Sehingga Sirkulasi Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/564x/c1/97/4a/c1974a70c545907a85d3e1cf2a4766e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifWlg4e2nSD-6R9E9jzw2Mm7-OJr7eqwaPQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis type 45 ini sudah memiliki 3 kamar tidur 2 ruang kamar mandi ruang tamu ruang keluarga serta dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis" src="https://i.pinimg.com/originals/cb/fc/e4/cbfce48d67ec301f25886acc22fdc875.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAOAShehCUd2yZGRc6QVLcUYvo_qvzuH3HVzErFFhONgqBCAdgLFdniYXW8WlU7v99XKI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk desain tampak luar jika kamu suka nuansa klasik dan alami maka kamu bisa terapkan desain tampak depan seperti ini DESAIN RUMAH 2 KAMAR TIDUR 13.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Kamar Uk 5x8 Full Interior Design Part 14 1 Lantai Youtube Desain Desain Rumah Rumah Minimalis" src="https://i.ytimg.com/vi/5ac2RVyHSk4/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWRznHME1BasgZefkCDef1JFuZJFBkDttlg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana ini lebih kecil daripada rrumah minimalis yang type 54 rumah ini hanya memiliki ukuran 9 X 5 meter saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 4 Kamar Tidur Model Rumah Minimalis Craftsman Floor Plans Architecture House House Design" src="https://i.pinimg.com/originals/f8/1d/83/f81d83b4e9c45c033793e75d88604bc4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT71H1mdyBQuXpRA_qniANdW2aH78Ya-VV-lQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selanjutnya ada Desain Rumah 2 Kamar Tidur Terbaik yang bisa diterapkan untuk kamu yang ingin membangun rumah kecil sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Desain Rumah Villa Minimalis Terbaru Anda Dapat Membuat 2 Kamar Tidur Utama Dan 1 Kamar Tidur Kecil Gambar Rumah Minimalis Denah Rumah Minimalis" src="https://i.pinimg.com/736x/27/c4/17/27c41754271e52b55a7677c7e469528f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2fkLR2uaRbqmQjK6JPIqiHQtK33qvuQFwBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hanya saja dalam membuat denah rumah minimalis 2 kamar tidur 1 lantai ini Anda harus melakukannya dengan sebaik mungkin seperti ruangan apa saja yang dibutuhkan selain 2 kamar tersebut kemudian bagaimana bentuk ruangan yang dimaksud dan lain-lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/564x/c0/f1/b7/c0f1b75283a5642b37e265c57e536ba4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrj3Pid3E4VIEpEgAy5xEh3ql6bXTZ65OwlAvFYNaga_ePq5F8Q_ll2oRxvJARDzCnjsk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis type 45 ini sudah memiliki 3 kamar tidur 2 ruang kamar mandi ruang tamu ruang keluarga serta dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6 X 7 M Satu Lantai Dgn 2 Kamar Youtube Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/90/1b/54/901b548a62e1c18801b9b9fe46300efa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh423ePlL6NOJkEZRSZ8s7F58ofYQu4uPVwAAOk2BuQbaq4I3AKqG1SY94M8IHhEJBtl4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Sederhana Tipe Modular.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 7x7 L 2 Kamar Tidur L Rumah Sederhana Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/87/42/86/8742867e8da4d79e4100968cce461452.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_GRlr3eg8jCmI8oovcr3ORqP9UDKQPYDEsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk desain tampak luar jika kamu suka nuansa klasik dan alami maka kamu bisa terapkan desain tampak depan seperti ini DESAIN RUMAH 2 KAMAR TIDUR 13.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Sederhana 6x10meter 2 Kamar 1 Lantai Di Desa Modern Full Tampak Depan Youtube Home Fashion Denah Rumah Pedesaan Rumah Minimalis" src="https://i.pinimg.com/564x/b4/12/66/b4126692333e733cec3cbe3f08141fee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr3DHidvaXW-5LChfhzhixlSJHEvBTwW1iiA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk kamu yang berencana menikah dan bangun rumah sederhana bersama pasangan kapling sederhana dengan dua kamar bisa jadi pilihan yang menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Modern 1 Lantai Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/c3/e5/47/c3e547e8ee2c2bf27a1ce5fc990f1f1b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsLRS3rVWNq0DoE8j1N9EvsVpBRk7QqbzwEQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana ini lebih kecil daripada rrumah minimalis yang type 54 rumah ini hanya memiliki ukuran 9 X 5 meter saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Model" src="https://i.pinimg.com/originals/f2/68/87/f268872803c9c4b5f0df4b3ec01dcad2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSfBTDnKi-B9Z9979OK31jvzLwIsMs8SuIgP4hZ0_qiDjf1JpNwA9dqtMVpI26WYErXcQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sederhana nan mewah model rumah sederhana tipe 120 menyediakan semua kebutuhan ruangan yang kamu butuhkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sederhana 2 Kamar Di Desa Youtube Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/db/c8/6c/dbc86c955a8b9fe359857d679b58cfbb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMbehOCEt727ClKUkQ78XcDcr8PxfYRznryF-kO-q3R4cHIj_JhZwF5Y7_2Lqyrh5awlY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>17 inspirasi denah rumah minimalis 3 kamar tidurRumah akan terasa nyaman dengan desain yang tepat dan kondisi rumah yang rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Sederhana 1 Lantai 2 Kamar Tidur Desain Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/99/c7/f7/99c7f7c9dc6a60f4361681c153392ff6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEDXauBYOQ-FRtyVkc-e3o1r7fJAnOOhwt39XyJy8VXevpKRmHzGAxuuZeSpHko_LybPQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis tapi mewah termasuk desain dan denah rumah sederhana dengan biaya murah ndik 16 model rumah sederhana tapi kelihatan mewah rumahlia com 26 model kusen jendela kamar tidur minimalis sederhana desain bentuk interior rumah sederhana mewah tapi elegan pin di gambar rumah sederhana 100 desain rumah minimalis mewah sederhana idaman.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/gambar-terbaru-rumah-minimalis.html"><i>&larr; gambar terbaru rumah minimalis</i></a>
+                                                                    
+                                        <a href="/gambar-rumah-minimalis-2019.html"><i>gambar rumah minimalis 2019 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

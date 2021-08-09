@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Kamar Kayu Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Kamar Kayu Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/4f/9c/60/4f9c60dc7c7fedeb4cc34804dcdad0b4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kamar+kayu+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Kamar Kayu Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Kamar Kayu Sederhana</strong>. 16 Desain Rumah Walet Dari Kayu Murah Dan Mudah Dibuat Desain Rumah Rumah Burung Rumah Kayu. Desain Rumah 3 Kamar Tidur Sederhana Modern 24.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/d7/e4/ee/d7e4ee7998b3d41612ded2bf27cfe813.jpg" alt="Desain Interior Kamar Tidur Bergaya Minimalis Modern Desain Interior Interior Home Decor" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7-MtfBfASrB-bu5vLmiZ2YE-5qn7MJoRnrw';">
+        <figcaption>Desain Interior Kamar Tidur Bergaya Minimalis Modern Desain Interior Interior Home Decor from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Rumah sederhana dari kayu dengan yang dicat dengan warna yang Anda sukai memang akan menghadirkan nuansa yang berbeda dari rumah kayu pada umumnya. Sekat kasur dengan perabotan lainnya. Alasannya adalah ruang tidur merupakan tempat dimana kita beristirahat.
+    </p>
+    <h3>Kombinasi Batuan Alam untuk Dinding Kamar.</h3>
+    <p>Selanjutnya ini adalah contoh Desain Rumah 3 Kamar Tidur Sederhana yang memanjang. Kamar Set Minimalis Sederhana ini terbuat dari bahan baku kayu jati TPK perhutani yang dimana kayu ini memiliki keunggulan sangat kokoh dan tahan untuk dipakai dalam waktu yang lama bahkan bisa di wariskan. Minimalist wooden house 4x6 meters. 16 Desain Rumah Walet Dari Kayu Murah Dan Mudah Dibuat Desain Rumah Rumah Burung Rumah Kayu.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kamar Tidur" src="https://i.pinimg.com/originals/90/5d/f1/905df1abbe4197da6cee4e6336cf70aa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-cZp0mZJdHBLqPI4dD-ZNqm-bong_W8sScw';" />
+        <small>Source: ro.pinterest.com</small>
+                    <p>Bingkai foto berwarna hitam dipadukan dengan ranting kayu sehingga menghasilkan hiasan yang estetis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tempat Tidur Kayu Jati Model Minimalis Terbaru Kontemporer Demitasse Menganut Moto Tetap Sederhana Nam Ide Kamar Tidur Desain Furnitur Kamar Tidur Kamar Mewah" src="https://i.pinimg.com/originals/03/ba/45/03ba45fa2f728d3efeb99abcecc918bf.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAglX071ZcQMvfKPglUCxTdkMeDWTed8GNlQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh desain kamar tidur sederhana dengan lantai kayu seperti ini cocok untuk Anda yang tidak menyukai pernak-pernik yang rumit dan terkesan memenuhi ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Dekorasi Kamar Tidur Sempit Remaja Sederhana Agar Terlihat Luas Terbaru Ide Dekorasi Kamar Tidur Ide Dekorasi Kamar Penataan Kamar Tidur" src="https://i.pinimg.com/564x/ac/f5/bb/acf5bb48642c5960fa7c29898d1d2f48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPHlb3qoLvisVAN-XpH8G67CtchRHt4zyGvahEjiRIGtz9RQtIOLpWt3XfAA2WjfrrMvI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah 3 Kamar Tidur Sederhana Modern 24.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tempat Tidur Warna Putih Warna Cat Kamar Hitam Putih Kamar Tidur Kecil Hitam Putih Warna Cat Kamar Tidur Hi Kamar Putih Kamar Tidur Kecil Warna Cat Kamar Tidur" src="https://i.pinimg.com/originals/5b/48/c5/5b48c5e926882c3a95cee2ca2bb6c1ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8CrLpbcmFkJB0TxMPHK5d0O1yi5PGOmitQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruangan ini mengandalkan dekorasi sederhana yaitu poster ukuran kecil dan sedang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Tidur Minimalis Simple Keren Dekorasi Kamar Kecil Ide Kamar Remaja Gaya Kamar Tidur" src="https://i.pinimg.com/originals/da/da/8a/dada8a0aa252b0204f137904c31e9305.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDLNwOatLnw59OqlU97g9YZBdn4YywakCLkiApVltTP5KBInKdm5kj_UGkJb1doY6u15Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kombinasi Batuan Alam untuk Dinding Kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Tidur Sederhana Desain Interior Interior Kamar Tidur Nyaman" src="https://i.pinimg.com/originals/4c/ce/8b/4cce8b0054f421df1a3f28ffc2806e78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmeFsEX8ueC1z_K87xstnLs_Q6hUHWpWN2xiVc62hMG1RUxm_DbhFBaGcpNZfd9y-Tx0o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar mandi yang terbuat dari kayu biasanya rentan menjadi lembap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Kamar Set Model Klasik Modern Jati Kaisar Terbaru Unik Model Kamar Set Kamar Unik Klasik Mewah Sederhana Merupakan Ide Dari Kamar Klasik Modern Sederhana" src="https://i.pinimg.com/originals/d6/6a/c0/d66ac01a917c5ca0402f2afc422f2f44.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy0XJR1UDGbutDajOm9ViveHZ_9a4z3M4KKsDQULkLwXKcxlxVv-ps-kUnC-acR0w87tI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Oleh karena itu rumah sederhana dari kayu tidak harus menyuguhkan warna asli kayu itu sendiri namun Anda juga dapat mengkreasikannya menjadi sesuatu yang lebih fantastik dari biasanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Kamar Tidur Minimalis Simple Terbaru 2015 Kamar Tidur Minimalis Kamar Tidur Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/ec/3f/8b/ec3f8bb54d7d308532d06e231a33be2d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNIShYcSnJwUQKjzSIQzzd67zFAKzrPkR0brjisUhIKZivxzD3ohqTfNryjcIs0AGiyc0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kamar tidur sederhana ini juga bisa digunakan oleh kaum pria.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Kamar Set Sederhana Minimalis Elegan Mewah Desain Modern Cocok Untuk Kamar Dewasa Kayu Jati Kualitas Terbaik Harga Ide Dekorasi Rumah Mebel Minimalis" src="https://i.pinimg.com/originals/f9/8e/ea/f98eea607383c95a1b9a7a9bda1f2483.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTC72T2UiN2FyO5akKxjHcdVOtuddrxL_Hw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh desain kamar tidur sederhana dengan lantai kayu seperti ini cocok untuk Anda yang tidak menyukai pernak-pernik yang rumit dan terkesan memenuhi ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Foto Desain Kamar Sederhana Elegan Paling Bagus Model Kamar Desain Furnitur Kamar Tidur Kamar Tidur Utama Modern Dekor Kamar Tidur" src="https://i.pinimg.com/originals/d1/b8/9e/d1b89ea3819672a622a20e324b77c34d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT926hLzFHckVMYd2dU_1CphPVHTdLliy1WYg';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Pemilihan warna putih membuat ruangan tampak bersih dan terang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/f6/24/0f/f6240fa134c77462a8f39590634217ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4eLaF1VNNQqy3AXGuqWEJSlGJ-hTxt-QB3AgHSkn5tybKdqfMRaR32DAySQIFYkC82g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Rumah Type 36 Minimalis Denah Rumah Denah Desain Rumah Rumah Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Tidur Minimalis Interior Desain Tempat Tidur Kamar Tidur" src="https://i.pinimg.com/originals/14/82/04/148204f92182ba808b3114614639ff54.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3MchUv5geNtLOQ3IwpqdSZLsoN7EmCapHKSVr86ahnxZ6BxqN4FmaRrPrKpOPZXuqXjE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Salah satunya adalah dengan menghadirkan elemen-elemen bernuansa alami seperti kayu pada kamar tidur yang nantinya akan mendatangkan kehangatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Set Tempat Tidur Jati Minimalis Mewah Jepara Set Kamar Minimalis Mewah Set Tempat Tidur Ide Dekorasi Rumah Tempat Tidur" src="https://i.pinimg.com/originals/28/6b/33/286b33cf27905bfb948c72ed6129d8f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu3dhUgBV4_KkA6W8-RlGVkHunQej0G___roXJ8WOkF5M1oyvP2f0lWPJuLFy2VxlHRy4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bingkai foto berwarna hitam dipadukan dengan ranting kayu sehingga menghasilkan hiasan yang estetis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Rumah 123" src="https://i.pinimg.com/originals/43/6a/bb/436abbfdbd4c7aee60c04b9e935b6b51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm6WhAorgUPtgMBrsD2QwPq4KiD_BqKskUEHdo4qsprLWU0awoCwqwrvXExz5XdJnGabs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pemilihan warna putih membuat ruangan tampak bersih dan terang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tempat Tidur Kayu Asli Jepara Jual Tempat Tidur Kayu Asli Jepara Harga Tempat Tidur Kayu Desain Furnitur Kamar Tidur Kamar Tidur Modern Interior Kamar Tidur" src="https://i.pinimg.com/originals/28/d9/09/28d90935e76595d677f76364116d75e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSST2lzAlq1gpfKZGi5EFQ-dlNLemPb4J0rlQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kamar tidur sederhana ini juga terlihat feminin namun bukan tidak mungkin jika diolah dengan variasi dekorasi yang berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Set Minimalis Mewah 1 Set Kamar Minimalis Murah Set Tempat Tidur Set Tempat Tidur Mewah Set Kamar Tidur" src="https://i.pinimg.com/originals/f3/ef/df/f3efdf594ab62d32043b50bc4ea1513d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4MKdXSsSzZbXPsd0xjuOQ1mLyX2cdRNH0A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Furnitur pada desain kamar tidur sederhana ini ditata dengan cukup simpel yaitu sebuah kabinet kecil tempat meletakkan pernak-pernik esensial.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Kamar Tidur Untuk Anak Yang Sederhana Renovasi Rumah Net Kamar Tidur Anak Ruangan Interior" src="https://i.pinimg.com/originals/71/a7/a7/71a7a7789fa8deee2eb2529e30f83f26.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRru3DL-PhqC-IDRTTyG5nqVFgqdeRRewE_1g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pemilihan warna putih membuat ruangan tampak bersih dan terang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fielsa Conceptiondelachambre Fielsa Dekorasi Kamar Kecil Kamar Tidur Mewah Modern Ide Kamar Remaja" src="https://i.pinimg.com/736x/b2/fd/04/b2fd0486334bac6f0730efbea156bb21.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsmlepXH99KzVG8ib9F23AhpnK7LJmqHxQzA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar Set Minimalis Sederhana ini terbuat dari bahan baku kayu jati TPK perhutani yang dimana kayu ini memiliki keunggulan sangat kokoh dan tahan untuk dipakai dalam waktu yang lama bahkan bisa di wariskan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kusen Jendela Kamar Minimalis Untuk Jendela Rumah Sederhana Dari Kayu Mahoni Kusen Jendela Jendela Minimalis" src="https://i.pinimg.com/originals/b5/1b/78/b51b787453e57168241911cdb296648c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQihtOybd7ouw9NNCfgHBTOLbCNpJlQ6kbgFECt-4oVPvNQDRG3og3Oi-W3TtxYz-MOLtI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pemilihan warna putih membuat ruangan tampak bersih dan terang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kamar Tidur Sempit" src="https://i.pinimg.com/originals/06/b4/4f/06b44f83d315c75714e502b4d32dd920.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2kMe4uuyjlpufCBdzEXBXawRbn6H8Ck8qBZQDQ7HQVcakyPL3FfcxQ2CVx_D_NMPXaaA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar set tingkat cocok untuk ruang kamar anak minimalis karena menggunakan model ranjang tempat tidur tingkat multifungsi yang bisa digunakan untuk bermacam macam keperluan di kamar anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Desain Rumah Idaman Desain Interior Kamar Tidur Rumah Minimalis Dengan Konsep Modern Desain Rumah Minimalis Desain Rumah Idaman De Desain Plafon Kamar Tidur Rumah Desain Interior" src="https://i.pinimg.com/originals/d8/38/13/d838138c63f9099bcb4c0469a2fab817.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwri1V3tR_JKlPuxzP0GuaRr8WcXL4bbs8Iw';" />
+        <small>Source: pl.pinterest.com</small>
+                    <p>Alasannya adalah ruang tidur merupakan tempat dimana kita beristirahat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Set Kamar Tidur Minimalis Kamar Set Kamar Tidur Terbaru Wijaya Jati Mebel Set Kamar Tidur Kamar Tidur Minimalis Kamar Tidur Klasik" src="https://i.pinimg.com/600x315/b6/1c/9b/b61c9b68e7df755496a74aa5ec445ff7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHqs5gEXvWiyhepH-YJSZcJJ5CvRPXhBj7QQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Set Kamar Tidur Kayu Model Minimalis Sederhana Harga Murah Memilih model furniture memang wajib memilih dengan bentuk dan desain yang bagus juga mewah selain bentuknya jangan lupa mengutamakan kualitas agar dapat lebih awet dan tahan lama terutama untuk furniture set kamar tidur milik pribadi kita sendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Limasan 1 Kamar Tidur Rumah Kamar Tidur Rumah Konsep Arsitektur" src="https://i.pinimg.com/originals/d8/8f/51/d88f51f7441abf57b330a832c3fb796b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLA4g_Q0SZDhj6OKYR-nVJpUuAdJYSBYRViw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Serat alami kayu dan dominasi warna cokelat akan menambah suasana alami dan natural namun tetap elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Set Minimalis Smj 230 Bingkai Tempat Tidur Set Kamar Tidur Tempat Tidur Laci" src="https://i.pinimg.com/originals/a5/90/fc/a590fcbb94112cf62eaaac5d031bcf6b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9d3rkd29xti67_FYSOsb3IpxsnLjTQggWle11wD4cAL8NgPoJz8DN3v5tUAbr7vD8Oj8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara terbaik memulai hari adalah dengan tidur nyenyak di malam sebelumnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Inspirasi" src="https://i.pinimg.com/originals/60/94/1a/60941a7b16cfc0cba5f0dbc09790ae5c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5KS8AJYkLO4zUUJm0rr-_HljhbcugmWsgIqmOXkCfNSq8aoqTSwoPp_klmwTiMw9hn5k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh desain kamar tidur sederhana dengan lantai kayu seperti ini cocok untuk Anda yang tidak menyukai pernak-pernik yang rumit dan terkesan memenuhi ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Decor" src="https://i.pinimg.com/originals/04/b8/52/04b8522d8dd0daadd1e977a20b47aca6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3tzbJDhdvGHuVvWhChJUBzwR17b6rem1HA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Alasannya adalah ruang tidur merupakan tempat dimana kita beristirahat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Surabaya Kamar Tidur Sederhana Mewah Desain Interior Kamar Tidur Modern Interior" src="https://i.pinimg.com/originals/e4/2c/e2/e42ce212bd325e58a39122369b7fb027.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK2u_BxM0l4pIFPw-AncJr-tQTU-9agOzQSdJb4V47jPXGOLawIKWFoYTBNNyvoiujh_A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamu bisa mengunakan bahan kayu yang dicat berwarna biru dan putih agar rumah nampak alami dan minimalis seperti ini Desain Rumah 3 Kamar Tidur Sederhana Minimalis Modern 25.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Balkon Kamar Atas Sederhana Desain Rumah Kayu Minimalis Modern Balkon Kamar Atas Sederhana Balkon Kamar Atas Sederhana Ba Architect Design Architect Design" src="https://i.pinimg.com/originals/63/3e/e3/633ee3e5fa0f809f61557ecaedab7236.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_3EfSZtBYLjRftYDnx7wyCcGcn6RH-Qp68Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ranjang yang dibuat dari kayu berkualitas meja dan kursi yang bisa dijadikan tempat kerja dan hiasan dinding berbentuk kepala domba menjadi paduan yang menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/c4/f6/40/c4f640897e6fb83440f45612d3e65e1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFsLcxw4fZUp8u97xvDmEQa6Zv3yVp5nMFGYmbTy5A33HFhSwrqfT4VFs9SMyH8OcoP4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kamar tidur sederhana ini juga bisa digunakan oleh kaum pria.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Tidur Ala Scandinavian Yang Tampil Sederhana Inspirasi Desain Rumah Te Desain Interior Kamar Tidur Desain Interior Interior Kamar Tidur" src="https://i.pinimg.com/originals/75/e5/40/75e54077ef84c0efaed1ca923208a992.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLG0FtsxK7vVJQ1G1rvkZpHXhrzAfCIVJsLLSvB3Bq16DY_gqgObfK7ei8ZZZav97hZ-c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena pada Desain Kamar Tidur Rumah Kayu Sederhana yang telah rumahterkini tampilkan untuk anda merupakan gagasan dari berbagai desainer arsitek terkemuka serta telah melewati sortir dari yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pemasangan Kerangka Kuda Kuda Kayu Rumah 3 Kamar Tidur Home Fashion Rumah Kayu" src="https://i.pinimg.com/originals/43/ed/07/43ed070436a64eec793ace21f54501a4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU50nzKPvMxt633AXXX0VA8-ub_cYKsqQHZw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hiasan patung liberty berwarna putih juga semakin menyemarakkan desain kamar tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Ruangan Rumah Desain Ruang Tamu Sederhana Dekor Ruang Tamu Sed Desain Ruang Tamu Dekor Desain Ruangan" src="https://i.pinimg.com/originals/4f/9c/60/4f9c60dc7c7fedeb4cc34804dcdad0b4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT48MEqOG0KMprJxmd-04fGjbpG3CmRTjKorA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar Set Minimalis Sederhana ini terbuat dari bahan baku kayu jati TPK perhutani yang dimana kayu ini memiliki keunggulan sangat kokoh dan tahan untuk dipakai dalam waktu yang lama bahkan bisa di wariskan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Tidur Bergaya Minimalis Modern Desain Interior Interior Home Decor" src="https://i.pinimg.com/originals/d7/e4/ee/d7e4ee7998b3d41612ded2bf27cfe813.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7-MtfBfASrB-bu5vLmiZ2YE-5qn7MJoRnrw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar set tingkat cocok untuk ruang kamar anak minimalis karena menggunakan model ranjang tempat tidur tingkat multifungsi yang bisa digunakan untuk bermacam macam keperluan di kamar anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana Ukuran 6x6 Tampak Depan Terbaik Desain Rumah Minimalis Ukuran 2 Kamar Deagam Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/12/6e/3d126ea34e66af8d4c8b06231c62b775.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTbBsPMwZZdc3BsnE-4G_8CBrKKJNGag3oSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Buat kamar senyaman mungkin dengan menggunakan barang-barang yang dibutuhkan untuk mendukung kualitas tidur Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/59/32/76/59327649044b8aa566bf9e611fadb81f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqi0kwSES4PSuW60gDMv1kzHAQC0XckXR-oQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penawaran Produk Kamar Set Minimalis Sederhana Kamar Set Minimalis Sederhana Tahukah anda mengapa di rumah kita ruang tidur harus menjadi bagian ruangan yang paling nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+kamar+cowok+3x3&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+kamar+cowok+3x3&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain rumah minimalis 6x9 meter sederhana rumah 2 kamar tidur biaya murah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Sederhana Natural Rumah Kayu Rumah Home Fashion" src="https://i.pinimg.com/originals/a4/23/e1/a423e16884164ba0a1a7e8a7b543815f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSq5yMpZl6AehcWZv-7z-ph3DfPBRMPVCc0Q';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Baca Juga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Gladak 1 Kamat Tidur Rumah Dekorasi Luar Ruangan Rumah Beton" src="https://i.pinimg.com/originals/da/56/2b/da562b1bd3b3ecaaba14a53017ca373c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXRxTwNqb09a3uJSwjylzQjf1Vtw9LPYxTYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pemilihan warna putih membuat ruangan tampak bersih dan terang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekor Kamar Tidur Utama 4x4 Minimalis Moden Kamar Tidur Utama Dekor Dekor Kamar Tidur" src="https://i.pinimg.com/originals/92/99/c4/9299c419b6070d1796a6898fe99999bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt3T0NGXZvlOk0HAV_PTqNW-eCLN7KXdBCWA';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Sekat berupa rak kayu yang diisi dengan vas keramik dan buku.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tak Lagi Kapal Pecah Ikuti Saja 6 Tips Ampuh Menata Kamar Tidur Berikut Ide Kamar Tidur Sederhana Interior Kamar Tidur Dekor Kamar Tidur" src="https://i.pinimg.com/originals/a8/9d/70/a89d70a17b632cfcc06011d101c13159.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUQBmhXJc-7nUN3bHL5iLBixeM5nIMijFKezBkkXInOqTCb2BdbvtDVltGZa2gEalVCy0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain kamar tidur sederhana berikut memiliki dekorasi yang unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Inspirasi Kamar Ala Drama Korea Nyaman Instagramable Banget Ide Kamar Tidur Ide Dekorasi Kamar Tidur Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/5b/8e/e0/5b8ee04975b32455d558680a95314499.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs5mjoxL1WE30j3BRucypJXwVmSFPupfvtsA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar Set Minimalis Sederhana 01.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Foto Kamar Tidur Sederhana Sempit Tapi Bagus Nyaman Ide Kamar Tidur Desain Interior Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/e8/3d/cf/e83dcfda80cf389a9f8e181519b0f7bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSWLayvcqlijZKVCLWoE2FncPL8OgvZhFeQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kombinasi Batuan Alam untuk Dinding Kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lemari Pakaian Anak Sederhana Perabot Kamar Tidur Lemari Pakaian Ide Kamar Tidur" src="https://i.pinimg.com/originals/e7/7b/55/e77b556c3c9ab22d8afd1d99695acdcc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZAnGGIPSzGq_pi5HVyLfc72WMubPSmLHdg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Minimalist wooden house 4x6 meters.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Set Kamar Tidur Minimalis Modern Ps 317 Model Tempat Tidur Sederhana Yang Terlihat Elegan Dan Tida Set Kamar Tidur Set Tempat Tidur Mewah Kamar Tidur Minimalis" src="https://i.pinimg.com/736x/f3/9a/cd/f39acd66557c9439113255adef11d7a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QMuTkdr0WD9BM6db3lJKmCHhv1nnhAw1eA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kamar minimalis sederhana tampak jelas pada kamar yang satu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Denah Rumah 3 Kamar Ukuran 7x9 Paling Dicari Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/14/f8/fd/14f8fd3b2e9d891f12e34678cf187c17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLCHNqZuKcZ8_3lLFb_HhE6rc4PuGq4nbrgzmKK5F-LswtsUoe9_CiYjqI1gq67QyDx3k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah 3 Kamar Tidur Sederhana Modern 24.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Foto Desain Kamar Sederhana Elegan Paling Bagus Kamar Tidur Kecil Desain Interior Dekorasi Apartemen Kecil" src="https://i.pinimg.com/originals/92/2e/85/922e8505ef507206fe2a5be2e836efc0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRouEupWqYHMIqonXUo8W7mgGhg1jO7vytkUnWiLdtlTOHT7zVsw3wq4kzkfhpH0jtqdAY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis Semi permanen 3 kamar tidur sederhana biaya murah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Makan Minimalis Sederhana Kayu Jati Terbaru 2017 Desain Meja Makan Set Ruang Makan Desain Ruang Makan" src="https://i.pinimg.com/originals/28/52/08/28520890d9d733ab639e13d39db7bdfc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dW2orGdxQOhnrAT4LkBa-j-Ud7TNN7_85Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Oleh karena itu rumah sederhana dari kayu tidak harus menyuguhkan warna asli kayu itu sendiri namun Anda juga dapat mengkreasikannya menjadi sesuatu yang lebih fantastik dari biasanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="55 Dekorasi Kamar Tidur Sederhana Warna Cat Biru Minimalis Klasik Dan Modern Desainrumah Ide Kamar Tidur Sederhana Kamar Tidur Biru Warna Cat Kamar Tidur" src="https://i.pinimg.com/474x/de/05/73/de057343c821948031e7be5eac8db99d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_TtNam6vE0WnIOXyxDXPiBnHxKD-eJNbU8A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1Desain Kamar Sederhana Unsur Kayu yang Klasik Modern Jika Anda memiliki keinginan mengubah konsep rumah Anda memiliki unsur kayu yang mana kayu akan dapat menentramkan pikiran.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Meja" src="https://i.pinimg.com/originals/d0/be/01/d0be018fdd9d7dd4156df7d55f154191.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAa51sIMPE6sUTCz42PSOKFHnyXtfTdF0JZe2hPWTDF25qL8cWK4SsOoHOUMijggBmM-o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Serat alami kayu dan dominasi warna cokelat akan menambah suasana alami dan natural namun tetap elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+kamar+kost+ukuran+3x3&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+kamar+kost+ukuran+3x3&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Denah Rumah Type 36 Minimalis Denah Rumah Denah Desain Rumah Rumah Minimalis.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/batu-alam-minimalis-modern.html"><i>&larr; batu alam minimalis modern</i></a>
+                                                                    
+                                        <a href="/batu-alam-pilar-rumah-minimalis.html"><i>batu alam pilar rumah minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

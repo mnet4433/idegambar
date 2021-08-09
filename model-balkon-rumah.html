@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Balkon Rumah
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Balkon Rumah",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/474x/aa/9e/ed/aa9eed78c5582ae2eac5b71e2e534e4c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+balkon+rumah",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Balkon Rumah
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Balkon Rumah</strong>. Mewahnya balkon rumah menandakan rumah tersebut juga memiliki predikat mewah di mata masyarakat. Kelebihan dari bahan ini adalah tidak mudah berubah bentuk dan tidak perlu dicat ulang.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/fd/7e/03/fd7e03bd567dfe882cbe905948abac35.png" alt="Pin Di Desain Balkon" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdRFFRNxMIVAks2RRD5SH4oeEbjq1iBk3j8vKcqdTBjRJO2-aK86VUIpjjWp76yM2N0Y';">
+        <figcaption>Pin Di Desain Balkon from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Model rumah tingkat ini selalu menawarkan kesan yang modern dan elegan untuk bagian balkon rumahnya. Beberapa pemilik rumah memutuskan untuk membangun dek di mana mereka dapat memiliki hiburan di luar ruangan. Pembangunan bagian depan rumah paling depan ini seringkali didambakan nampak cantik dan elegan.
+    </p>
+    <h3>Desain Balkon Rumah Minimalis yang Formal.</h3>
+    <p>Kedua bahan ini cukup kuat dan praktis sebagai bahan railing. Balkon Rumah Minimalis 2 Lantai Balkon rumah adalah lahan kecil yang ada di depan bagian rumah pada lantai dua hampir serupa dengan teras rumah. Model teras rumah yang nyaman tentunya akan membuat tamu serta pemilik rumah juga merasa nyaman. Namun tetap memiliki aksen yang simpel dan elegan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teras Rumah Tingkat Minimalis Sebagai Cermin Kemewahan Rumah Gambar Teras Dan Balkon Ruma Desain Rumah Eksterior Desain Rumah 2 Lantai Desain Rumah Minimalis" src="https://i.pinimg.com/originals/c3/27/e2/c327e26842637541fdf51e7547af8029.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzIZnILLS1Do3fDT3bZ9XEie30Ns2qCMUAaQkkjH0UW1QfHi4sioR-Id6AOvQ2CV-cQxY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dilengkapi dengan meja dan kursi ala ruang tamu yang nyaman dan sangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Teras Dan Balkon Rumah Bertingkat Desain Rumah 2 Lantai Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/ed/23/92/ed239287a78002fad8a13bf68a23c0cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWktpamwE7oXMghJN4YW3xvxIQwwZbsMmcjsoSgf57Yp_C8mdkcFSNKqWIg3ANR0aBKmk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Teras rumah minimalis bisa menjadi andalan model saat ini karena memberikan kesan yang modern namun tetap sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x12 M 2 Lantai 3 Kamar Tidur Dengan Balkon Depan Youtube Desain Rumah Kontemporer Desain Rumah Kecil Desain Rumah" src="https://i.pinimg.com/564x/85/30/bf/8530bfda3c0a7f19fb3d1608dc7a4f4d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBgHWAQSigjc8TDpi56SMiDupCPAjcmUqTQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam memilih sebuah model teralis Anda sebagai orang yang menghuni rumah tidak hanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Tekn Desain Rumah Eksterior Desain Rumah Kecil Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/0b/22/27/0b2227f43d1e42f4a0816f2cade8a0c6.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkpJ0PtYjk0Cp4Jo-bI0qJFyddiuSCi9Vcy6NoSrtkDUkvHJjLI90cqxGgusXW7fgnxAM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Balkon Rumah Minimalis Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Pagar Kayu Ulin Minimalis Modern Pagar Kayu Rumah Cat Rumah Eksterior" src="https://i.pinimg.com/originals/9a/5c/00/9a5c00991eba54beb1d773d8a982aae6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVt09w9ujy4_D6e6WgkVRAN9y7ot9X0wEoVw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Padahal tempat ini bisa disulap jadi spot nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="36 Model Pagar Minimalis Modern Untuk Rumah Minimalis Check More At Https Space Made Com 200 Pagar Minimal Desain Rumah Eksterior Rumah Minimalis Arsitektur" src="https://i.pinimg.com/originals/a9/66/24/a966242f0c0f820b1a8d562112ace66b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVYwvFEPkymLAIpH6z5ppCP9eH57I_uMowpA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model pagar balkon minimalis terbaruSebuah rumah yang nyaman selalu dikaitkan dengan rumah besar dengan lahan luas dan desain klasik yang megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="22 Foto Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Teknologi Ko Desain Rumah Kecil Desain Rumah Eksterior Eksterior Rumah" src="https://i.pinimg.com/originals/82/d7/ce/82d7ce450871904204aec1832b8c3ebf.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZeRgOXscngGAPVLzzyd0LEmX5ISVWGMCRfg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model dan Langkah untuk Desain Balkon Rumah Sebuah balkon adalah pilihan sempurna bagi mereka yang memiliki mimpi dek di ruang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 2 Lantai 4 Kamar Tidur Desain Rumah Kecil Denah Rumah Modern Desain Rumah Kontemporer" src="https://i.pinimg.com/originals/4f/97/0e/4f970e4cf599bf39a96962ad7c5e347f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjAJpagOz0tSMdP6penag80XlGWLgIFJy-Wg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model dan Langkah untuk Desain Balkon Rumah Sebuah balkon adalah pilihan sempurna bagi mereka yang memiliki mimpi dek di ruang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Gambar Model Teralis Pagar Minimalis Pagar Minimalis Ide Pagar" src="https://i.pinimg.com/736x/8a/35/ba/8a35baa59768e1bc824da45a3e0e44a0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmO_jMcVyyM3C2pVnwbeQQ_OizIz81qDUzKQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Balkon Rumah Minimalis Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Minimalis Balkon Di Citra Grand Cibubur Model Railing Minimalis Balkon Di Citra Grand Cibubur Yang Telah Kami Buat Beragam Dari Minimalis Rumah Modern" src="https://i.pinimg.com/originals/84/de/15/84de1546fab92680a515ad6f83667b06.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSiIjAH-We2YWuPR7nYaX3YXVR43nfJuEt6F0muKpbude2xbfk_l1ZM2pHJZLrhw1DmHk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Balkon Rumah Minimalis 2 Lantai Balkon rumah adalah lahan kecil yang ada di depan bagian rumah pada lantai dua hampir serupa dengan teras rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Minimalis Di Bambu Kuning Balkon Desain Balkon Minimalis" src="https://i.pinimg.com/originals/45/9d/c1/459dc104acf25bfca9ef9efaf0659bd3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnbOoQ4_VwvYerTqZne2uzJInrVjZgNFl1Ye-61Ta8VCaZwDO5lOdXxJG0Zs1UrJ2Mh4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain bisa bersantai kamu juga bisa melakukan macam kegiatan di sini seperti membaca buku makan malam hingga menerima tamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Desain Inspiratif Rumah Minimalis 2 Lantai Dengan Balkon Terbuka 1000 Inspirasi Desain Arsitektur Teknologi Rumah Minimalis Rumah Desain Eksterior Rumah" src="https://i.pinimg.com/originals/27/c2/9b/27c29bdd5216cbd6151f1818a7612492.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQydFE0DQ7oRLolfZ75QTDxBThA1A-qY7VNp3spLWet9NC0BaKDKIzR4H_GoXCz-hyi6po';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model pagar balkon minimalis terbaruSebuah rumah yang nyaman selalu dikaitkan dengan rumah besar dengan lahan luas dan desain klasik yang megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Balkon Minimalis Modern Lantai 2 Balkon Minimalis Modern" src="https://i.pinimg.com/564x/58/61/db/5861db52c91a3000cfd4a11ad922b723.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiQl8ghZsHYk-Lyjjh4Go54IMGVN5wNSr79yxRcFgpvsqVPaKsSdn7XhlggsrUp2LkaWI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Teras rumah minimalis bisa menjadi andalan model saat ini karena memberikan kesan yang modern namun tetap sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Pagar Tembok Minimalis Modern Home Fashion Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/7f/13/a4/7f13a4621bb2e48a3e1eec2ae6eab6d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOS-7dcUcDaPywZD66y79JPCZrHH3-aLcqlg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Oleh karenanya banyak orang berlomba-loma mencari desain balkon yang menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="22 Foto Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Desain Rumah Kontemporer Desain Eksterior Rumah Eksterior Rumah Modern" src="https://i.pinimg.com/originals/be/c0/d6/bec0d68d40099c42f36883a4cb55879f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_cVATODPwLqaHSXUOjtGEmgDjh7jO30S-D5JctAJzAb9RmvsSY3-1Kpc18s2enENq_o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pagar balkon dapat dicat dengan warna cerah dan netral seperti putih dengan paduan warna gelap yang netral seperti coklat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="22 Foto Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Teknologi Kons Desain Rumah Bungalow Rumah Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/d2/9f/9b/d29f9b26faed95b5f91a9551f96f263c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlhIhHvDkVLIcV6kG2hqV2iwuslnVZreXI_A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Para desainer sengaja berlomba menghadirkan balkon rumah tingkat dengan segala ide dan pernak-pernik yang membuat mata berdecak kagum.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Rumah Atap Miring Di 2021 Desain Rumah Eksterior Desain Rumah 2 Lantai Rumah Minimalis" src="https://i.pinimg.com/originals/84/4e/96/844e96c3dd4a909730c714f53f202edd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDtXNl3c3NNgdSP9y4TWXqAWJQNcGT2YNB_g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah untuk mengetahui dekorasi desain serta interior yang tepat yuk simak inspirasi model teras rumah minimalis berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Model Pagar Rumah Minimalis Sederhana Terbaru Youtube Desain Rumah Minimalis Rumah Minimalis Desain Grill" src="https://i.pinimg.com/564x/b6/3b/68/b63b68d3d5d12fb05498964dfa87c0c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIEQ-YKQf1O8wOrPqPBc-T-OM0bEXfwRZbVw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Balkon Minimalis Modern Lantai 2 di Rumah Tingkat Para pembaca setia rumahminimalistrend kali ini kami akan memberikan informasi yang belum pernah kami sajikan sebelumnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pemasangan Balkon Void Besi Tempa Klasik Untuk Rumah Mewah Bergaya Klasik Klasik Desain Rumah Indah" src="https://i.pinimg.com/474x/8d/55/1a/8d551a6646435904fc37f7e5ee66fca1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEQjEdG7hURf8PT-s6ZpB6sRUJUHSa_qrbIA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>- Rumah merupakan istana bagi setiap kelaurga tentu akan menjadi tempat yang menyegarkan bagi anda dan keluarga kalau di atur dan di rancang dengan se efisien mungkin tidak terkecuali model teralis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Balkon Rumah Minimalis Terbaru Rumah Minimalis Desain Teras Rumah" src="https://i.pinimg.com/originals/99/18/d4/9918d4559a68f9e7fcfc6f2f566f7737.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwGEYuosNMoW3b2R8OmvXpEPMYbVxP9uHoBU9ruiswtXXdFi1hDsWWn5hW4KCl4deucU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kedua bahan ini cukup kuat dan praktis sebagai bahan railing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Motif Desain Gambar Pagar Stainless Steel Untuk Rumah Minimalis Rumah Minimalis Minimalis Desain" src="https://i.pinimg.com/474x/aa/9e/ed/aa9eed78c5582ae2eac5b71e2e534e4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32ReHfb8D7366fPZC12Gi1cMT_04a0b_5Tg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>60 contoh model desain pagar rumah minimalis modern terbaru keberadaan pagar pada sebuah rumah merupakan hal yang tidak bisa dilupakan begitu saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=railing+balkon+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=railing+balkon+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Beberapa pemilik rumah memutuskan untuk membangun dek di mana mereka dapat memiliki hiburan di luar ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gee One Decoration Our Product Aluminium Dan Kaca Railing Kaca Minimalis Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/95/52/4f/95524ff0d5f8ad25752a15435d0cde3e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKSqoIZWMU26XWfee1TPIfxMb51ebyS-eMw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Balkon adalah salah satu bagian rumah yang dimiliki jika rumahmu berlantai dua.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Balkon Klasik Besi Tempa Desain Apartemen Klasik Desain" src="https://i.pinimg.com/564x/20/19/c1/2019c19744012089bb5eee4be4af11fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4sS5b6m30NY-RnIalgjR6Ma2VsPKLXg_XkA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bahan pembuatan pagar balkon juga menggunakan material kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Desain Inspiratif Rumah Minimalis 2 Lantai Dengan Balkon Terbuka Warna Eksterior Rumah Rumah Arsitektur Modern Home Fashion" src="https://i.pinimg.com/originals/52/98/5c/52985cfe6a21b59058232612b3ec2224.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRSpjDRMQxrI7CyFTxNJ-Kay1o80InP_IgSQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yaitu perihal balkon rumah dengan konsep desain dan contoh gambar balkon minimalis pada rumah 2 lantai atau rumah tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Minimalis Untuk Lantai 2 Rumah Di Bogor Https Bit Ly 2ccasrv Lantai Minimalis Rumah" src="https://i.pinimg.com/originals/6d/12/0e/6d120e003921c0f05d407e1b8e84395e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRS5a2NtkmkUypWgLz4U77scpF0TW_CpQleQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kedua bahan ini cukup kuat dan praktis sebagai bahan railing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Desain Rumah Eksterior Eksterior Rumah Modern Desain Rumah Bungalow" src="https://i.pinimg.com/originals/f6/37/84/f6378488e44af3036d55f484e2127f33.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJTwbJWvQP5onDxiuKnPNpeoq2rflhwD089lxxgiSYhptaqNYTbV_ddStZXycWdWZ4kM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Padahal tempat ini bisa disulap jadi spot nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Proyek Kami Bayu Welding Rumah Rumah Minimalis Dekorasi Rumah" src="https://i.pinimg.com/736x/3a/a9/0e/3aa90ebdd5e3b2ae9183c259bdfd8f5b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMa53Cv7-UznwpS-lzvoNiRn7MSDw2jbjWpndFgy4IX4z15svWQVL5EvQaBBEnhAv1wAk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pagar balkon dapat dicat dengan warna cerah dan netral seperti putih dengan paduan warna gelap yang netral seperti coklat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Balkon Klasik Rumah Mewah Kombinasi Ornamen Besi Tempa Klasik Desain Balkon Rumah Mewah Klasik" src="https://i.pinimg.com/474x/44/b6/13/44b613c47d45ba05e0ee60950a17d179.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAkYMmljrU8YONwQjyO0LyiqCkPos6pr0-DEJPYbOridFH_BDSNeNuw2ReIRUvNIdBowc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk rumah dengan gaya klasik modern Anda bisa memilih model railing balkon dengan bahan PVC atau vinyl.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Image For Tampilan Depan Rumah Dengan Balkon Dan Garasi Desain Depan Rumah Desain Rumah Bungalow Rumah Arsitektur" src="https://i.pinimg.com/originals/ca/23/aa/ca23aa8c5434c87e10445dcd0fcc0e9d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2g4E-bI4BJzUyMLS1h60MmirTi6rEvZEDLtrHeBPS6qJpUlHYGCtF0t46jYRgICMBqY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>MODEL BALKON RUMAH MINIMALIS 2 LANTAI MODERN Pembangunan rumah baik minimalis atau klasik dengan 2 lantai tidak pernah luput dari pembuatan asesoris rumah berupa balkon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Rumah Dengan Model Balkon Terbuka Desain Rumah 2 Lantai Desain Rumah Eksterior Desain Rumah Bungalow" src="https://i.pinimg.com/originals/73/9f/e8/739fe8a2ebf0d0c90a950487f8bf19f1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHOf9QmJXNMICgM7kfEI5HfQ78MdtKSBe5cGTrNB-iaOneeHecYfkyhsWDKnEqK72JsU8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Balkon Rumah Minimalis yang Formal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Minimalis Di Cimanggu Bogor Railing Tangga Minimalis Di Intiland Bogor Jasa Pembuatan Railing Tangga Minimalisdi Wilay Rumah Desain Minimalis" src="https://i.pinimg.com/originals/e0/73/3f/e0733f51cddf38eb424a2c9da7eed26a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWlJED3sOKQufrThIiWj0UDlRJkE7s0Njm_v8a8btU3YG--UNrapS-nlRpRfCrcy-nR4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model pagar balkon minimalis terbaruSebuah rumah yang nyaman selalu dikaitkan dengan rumah besar dengan lahan luas dan desain klasik yang megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x12 M 2 Lantai 3 Kamar Tidur Dengan Balkon Depan Inspirasi Gambar Denah Rumah Minimali Desain Rumah Kontemporer Desain Rumah Kecil Desain Rumah" src="https://i.pinimg.com/originals/a7/a9/73/a7a9733cb9fead725eb0a493e1201b18.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKkMZY2oMlTCBeACUY3Z3zSEiwyNZfHcBc7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>15 Model Teralis Balkon Rumah Minimalis Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Teras Rumah Minimalis Dengan Batu Alam Cat Rumah Eksterior Arsitektur Fasad Desain Fasad" src="https://i.pinimg.com/originals/73/04/8c/73048c54767371893e5ade7f8bc89846.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0zrCUtZlF3z3NsXI83rRmxGQXVvU_WShVOg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>MODEL BALKON RUMAH MINIMALIS 2 LANTAI MODERN Pembangunan rumah baik minimalis atau klasik dengan 2 lantai tidak pernah luput dari pembuatan asesoris rumah berupa balkon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrbyq Phomiwsffl63v6stfldjtkwf Vdep5x1qg5pwqwoliwez Usqp Cau" src="/search?q=pagar+balkon+minimalis+terbaru&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=pagar+balkon+minimalis+terbaru&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Untuk kamu yang memiliki rumah lebih dari satu lantai keberadaan balkon rumah bisa jadi salah satu hal yang sangat penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="36 Model Pagar Minimalis Modern Untuk Rumah Minimalis Eksterior Modern Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/15/46/10/154610f135b937c24c9ade36070cd28d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTov685v8HK-tY4SaMhgqcwm6UdfJgIs7iVhg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pembangunan bagian depan rumah paling depan ini seringkali didambakan nampak cantik dan elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Balkon Klasik Besi Tempa Pagar Besi Tempa Pagar Besi" src="https://i.pinimg.com/originals/ca/5f/e0/ca5fe0c247bf2deba63fc53add247604.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUYP4n-UgQi2qSL6tz4OlO7karP9mWSEqomA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pagar balkon dapat dicat dengan warna cerah dan netral seperti putih dengan paduan warna gelap yang netral seperti coklat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Kaca Pesanan Bpk Herdi Di Cilodong Depok Kaca Rumah Balkon" src="https://i.pinimg.com/474x/63/46/43/6346437a38ff4b1c507c0a2076a2d8c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ER88CrNRyBpd-13uznP3q84RmShZ_McJEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lalu sebenarnya apa itu balkon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Balkon" src="https://i.pinimg.com/originals/fd/7e/03/fd7e03bd567dfe882cbe905948abac35.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdRFFRNxMIVAks2RRD5SH4oeEbjq1iBk3j8vKcqdTBjRJO2-aK86VUIpjjWp76yM2N0Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kerap berada di depan rumah balkon rumah juga mempengaruhi fasad rumah atau bangunan sehingga desainnya tentu tak boleh disepelekanSelain itu balkon rumah juga bisa menjadi fungsi tambahan bagi rumahmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Teknologi Eksterior Rumah Desain Rumah Kecil Desain Rumah Eksterior" src="https://i.pinimg.com/originals/f7/6f/7d/f76f7d2b729c9ca1305773f1325cee11.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSknE-UO7lgWEssUxztUtMq3H6xxTQaDlyq1wl8fQhaXHv3gI_KFrKftkBq6F9cwneEs4Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Balkon tampil unik dengan pola garis-garis vertikal pada balustradepagar balkon berbeda dengan bagian dinding lainnya yang berpola kotak-kotak coklat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Garasi Samping Rumah Minimalis Architect Design Architect Design" src="https://i.pinimg.com/originals/fa/02/9d/fa029de7914af11d8d224be6d6af5e90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVV7gqcP-3ri24Y69fyUHg7tk524Iw5FlpXQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam memilih sebuah model teralis Anda sebagai orang yang menghuni rumah tidak hanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi D Arsitektur Desain Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/d3/ec/25/d3ec25a691010e8200b97bbb5558f10c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNL2r5fGS90oL4GxhnKHLyD0EndUZmqVo4a7BI46WP2NV3K9m5586Q3fU7pFc561hGfyY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memilih model balkon rumah seharusnya Anda lakukan dengan benar mengingat bagian ini sebaiknya dapat memberikan rasa nyaman bagi Anda dan keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Relling Balkon Balkon Besi Desain Balkon" src="https://i.pinimg.com/originals/7f/fc/b3/7ffcb31efc431bbf544011a2150bd686.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWVtNcD3Nzp-SjmHKzk-yyNh_HHoTGPRU4A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Salah satunya adalah dengan menghadirkan taman minimalis di balkon rumah idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Railing Balkon Besi Tempa Klasik Minimalis Dengan Perpaduan Ornamen Besi Tempa Unik Rumah Indah Klasik Desain" src="https://i.pinimg.com/474x/22/f4/0a/22f40aabe9b0614681482a9bbf7355e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9LL5NSEz2NTUIjs2RajYqjldXFgFBlNYpxA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model balkon rumah minimalis yang pertama adalah balkon rumah yang didesain formal seperti ruang tamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Balkon Rumah Lantai 2 4 Rumah Minimalis Rumah Desain" src="https://i.pinimg.com/originals/8c/ce/fc/8ccefc7332ceab55954c23b72939515f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUKFrG1ZO0jTssMgZU7a7dvY-QvnnuMcuFxA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan lahan yang tidak terlalu luas kemungkinan akan mustahil jika kita ingin menambah jumlah ruangan dengan menambah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Teknolog Desain Rumah 2 Lantai Desain Rumah Kecil Denah Rumah Modern" src="https://i.pinimg.com/originals/a6/0a/f1/a60af1bf1d2d7f857753a3d4dc292fdf.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSFrgMlv-UoNQukYlS9a-1blo7pzfu7p7xwYVyAr2dICrbMLCb2SfJJYBv0bAwEAFyMlY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Balkon Rumah Minimalis yang Formal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Terbaru Model Pagar Rumah Minimalis Modern 2020 Dekor Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/ea/39/34/ea39349dbddd9af545adfd4cd78b55cc.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdDtkyjxVtmwa__109fvUdSz0QCxdryMCgKQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model dan Langkah untuk Desain Balkon Rumah Sebuah balkon adalah pilihan sempurna bagi mereka yang memiliki mimpi dek di ruang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Rumah Dengan Model Balkon Terbuka 1000 Inspirasi Desain Arsitektur Teknologi Konst Desain Rumah Eksterior Home Fashion Rumah Arsitektur" src="https://i.pinimg.com/originals/2e/b6/bb/2eb6bb6c6ad35b4e9e5fa2769aad2c88.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDvJ6i4p3Plvhc7jo0nCq3J4r0QTgTU6SqjSrcdmEnnpTEab9dgS7EMS9-dAbyNAiHd-E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dilengkapi dengan meja dan kursi ala ruang tamu yang nyaman dan sangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Rumah Minimalis Ukuran 4m Balkon Rumah Minimalis Desain Teras Rumah Minimalis Ukuran 4m Moderne Aussenturen Kleines Haus Aussen Design Fur Zuhause" src="https://i.pinimg.com/originals/ec/6e/26/ec6e26ba09bf9fa22d59872ce732f65e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWjiEHdThHY6dqdDmVr7XrgWxstVLXPEv9Bw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>15 Model Teralis Balkon Rumah Minimalis Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Pagar Rumah Minimalis Dari Tembok Dan Besi Desain Pagar Modern Arsitektur Minimalis" src="https://i.pinimg.com/originals/a4/3e/1b/a43e1bf9c90f246f7bc8abb5bbe12154.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQndSHKyHU3USbOvTAZvtjClTC_sTVAo_FeVg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>15 Model Teralis Balkon Rumah Minimalis Terbaru.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/menata-ruang-tamu-yg-sempit.html"><i>&larr; menata ruang tamu yg sempit</i></a>
+                                                                    
+                                        <a href="/menata-ruangan-rumah-sederhana.html"><i>menata ruangan rumah sederhana &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

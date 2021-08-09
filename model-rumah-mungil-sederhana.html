@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Mungil Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Mungil Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/43/a9/67/43a96748d7b52118930709194d381d6d.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+mungil+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Mungil Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Mungil Sederhana</strong>. Di sinilah kecerdikan dan kreativitas diuji untuk menciptakan desain interior rumah mungil kekinian yang sederhana tapi elegan. Kita dapat mendesain rumah mungil kita dengan desain minimalis ssederhana ini.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/564x/7b/ce/3e/7bce3ee8dc46321411ee2c810074727f.jpg" alt="Pin Di Rumah Kecil" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGTvAOmuY2-xQVftj3Qq_Gws2LXhEO_U61cAdF76SHgEPoB-qPudZF2zcLsyFsPckqZg';">
+        <figcaption>Pin Di Rumah Kecil from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Model Rumah Minimalis Yg Mungil - Selain menarik kelebihan desain rumah minimalis yang sederhana akan sangat cocok untuk anda yang memiliki rumah dengan luas yang tidak terlalu besar. Selain tidak dapat memenuhi standar ketiadaan dapur di rumah tentu akan menjadi problematika tersendiri bagi pemilik rumah. Memiliki rumah yang tidak cukup besar bukan berarti Anda tidak bisa menampilkan gaya dan estetika pada model rumah sederhana tapi indah.
+    </p>
+    <h3>Sebuah dapur mini yang menggemaskan.</h3>
+    <p>Rumah kecil sederhana saat ini banyak diminati masyarakat terutama di daerah perkotaan atau dekat dengan daerah perkotaan. Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana. Rumah kecil kelihatan lebih cantik jika depan rumah ada taman mungil yang menyejukkan pandangan. Contohnya sebuah rumah mungil akan sangat tidak cocok jika dihiasi dengan interior yang mewah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layanan Jasa Gambar Rumah Rumah Mungil Di Pamekasan Madura Home Fashion Rumah Rumah Mungil" src="https://i.pinimg.com/originals/e9/ac/37/e9ac37d55eef16e5d083603b9b37d03e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfz8d_3TRkMFmpXDpEF-HxOXiEJuqk1-XvBA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain tidak dapat memenuhi standar ketiadaan dapur di rumah tentu akan menjadi problematika tersendiri bagi pemilik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Mungil Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/24/aa/28/24aa28a5e96b636293b3b7882a832d8d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5GJZ7G5gShp0nvU41vG9K89KH6F3FDZsjGsqSUVXDjTHAKW3NKMpuG2cpnYyGeZk4UEA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi Gambar Model Desain Rumah Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Tapi Mewah Modern Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/82/f0/12/82f01245efadbf103f57e21b3017b3ea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAGamuNJEnR4T3kXAXQgk_srvyJ3TSXe_YzxiBGN8hPxgokT-gpVwXmDUniitPGSfVEQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain untuk kebutuhan alamiah seperti mandi dan pembuangan sisa-sisa produksi tubuh kamar mandi juga sering difungsikan sebagai tempat relaksasi setelah seharian melakukan aktivitas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/90/00/40/900040d251598d2f84d661b99c82b946.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1BKz-EXh1_beJlYhlMW3epyxEdAzd-e7XpLFuhDkK2hfr9Wwa79iJ6fYMhx6s_pHfY18';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis sederhana Desain rumah minimalis sederhana ini merupakan salah satu desain rumah yang simple dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Model Desain Rumah Minimalis Sederhana Paling Keren Desain Eksterior Desain Rumah Kecil Rumah Minimalis" src="https://i.pinimg.com/originals/28/a8/4d/28a84df2ca707fd5e59f0124b16a0f9c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw88qsSxpslue2zy2kNKjR4Nf-4HEYlOEZ4g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Niwa berasal dari bahasa Jepang yaitu dalam sebuah hunian dibuat sebuah area yang menjadi visual connector atau penghubung antara semua.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis" src="https://i.pinimg.com/736x/0d/fa/d1/0dfad1dabe7c386648adbaeb55ca6429.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbPHjxIsxR1TyO8EO74sfSSpUklV5Jbttzw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan membuat rumah 2 lantai maka bisa menghadirkan ruangan yang lengkap di dalamnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Idaman Sederhana Tapi Cantik Minimalis Rumah Rumah Minimalis Rumah Home Fashion" src="https://i.pinimg.com/originals/00/52/3e/00523ea435b5a287d3c020e297703c92.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2MkDGf-y3Yq55rIJivlhJpxt9nO1B3aevg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Niwa berasal dari bahasa Jepang yaitu dalam sebuah hunian dibuat sebuah area yang menjadi visual connector atau penghubung antara semua.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="54 Desain Rumah Sederhana Di Kampung Yang Terlihat Cantik Dan Mewah Desain Rumah Kecil Desain Rumah Rumah" src="https://i.pinimg.com/564x/95/cc/30/95cc30d32c97bfaf4f5f830498a2f28d--desain-rumah-sederhana.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1p3J8sxcaGeRHh941Wn3T8uVQhz3o6s3lw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model desain kamar mandi sederhana kecil dan mungil - Kamar mandi adalah ruangan yang wajib ada dalam sebuah rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=model+rumah+sederhana+tapi+indah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=model+rumah+sederhana+tapi+indah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Di sinilah kecerdikan dan kreativitas diuji untuk menciptakan desain interior rumah mungil kekinian yang sederhana tapi elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Khas Rumah Di Kampung Menggunakan Google Sketchup Youtube Rumah Arsitektur Rumah Indah" src="https://i.pinimg.com/564x/5b/59/e0/5b59e093da05bdac403313ee49e44866.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7et6rjOtMb9kxprW2I4tpjoNwNHimtNl8Xw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil kelihatan lebih cantik jika depan rumah ada taman mungil yang menyejukkan pandangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kecil Sederhana 3 Kamar Inspirasi Dekorasi Rumah 17 Gambar Denah Rumah Minimalis Keluarga 3 K Simple House Design Simple House Home Design Plans" src="https://i.pinimg.com/originals/83/e1/01/83e1017d70a5f3afafefe5cae359cc0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQrxBvArdfQDo9DagAovWHoJ0mzFYjJKz4NdslWe-hDmL0HqGXjR3IP0kEwdY713JUCY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ada rak di atas dan area tertutup di bawah bak cuci piring.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana Ukuran 6x6 Tampak Depan Terbaik Desain Rumah Minimalis Ukuran 2 Kamar Deagam Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/12/6e/3d126ea34e66af8d4c8b06231c62b775.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTbBsPMwZZdc3BsnE-4G_8CBrKKJNGag3oSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain memiliki perangkat dapur komplit kebutuhan akan tempat penyimpanan lapang juga terpenuhi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Kecil" src="https://i.pinimg.com/564x/7b/ce/3e/7bce3ee8dc46321411ee2c810074727f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGTvAOmuY2-xQVftj3Qq_Gws2LXhEO_U61cAdF76SHgEPoB-qPudZF2zcLsyFsPckqZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Teras rumah Anda tampil lebih cantik dan istimewa dengan menempatkan beberapa tanaman hias dalam pot bunga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Terbaru House Design House Plans Architecture" src="https://i.pinimg.com/originals/02/2a/9e/022a9e328db2a1369f39e376283374cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsIqiFcoOyE-qE3x_tD33prsfiC_jdLB1iQQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah dapur mini yang menggemaskan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Small House Design Exterior Small House Design Minimalist House Design" src="https://i.pinimg.com/originals/48/70/ae/4870aed6577e309e564b66d50f05ec15.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtOIiWwJ_X9W4-8-6jAIXpDX-c6T4OeRE-tDQND_kyQmUtd-EU3xCtgFHENOjkWMKfaY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contohnya sebuah rumah mungil akan sangat tidak cocok jika dihiasi dengan interior yang mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Rumah Minimalis Sederhana Model Rumah Terbaru Rumah Minimalis Desain Rumah Minimalis Rumah Hijau" src="https://i.pinimg.com/originals/e5/4f/09/e54f09fd60099ed3acacf46e4a0ecef2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPcybEfrQesTblz3BXjDQOx5mIIBKeMA9WDQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Inspirasi interior rumah mungil ini terfokus pada dominasi perabot putih dan warna kayu pada panel furnitur jendela dan pintu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Gambar Rumah Idaman Minimalis Sederhana Terbaru 15 Desain Rumah Minimalis Rumah Hijau Rumah Minimalis Rumah Indah" src="https://i.pinimg.com/originals/43/a9/67/43a96748d7b52118930709194d381d6d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrVB4YllcIvcdAChISKHzNlYtNdMwnUJPSmw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Modern Minimalis Sederhana Untuk Interior Rumah Mungil Maksimal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Kecil Tapi Mewah Disertai Gambar Gambar Rumah Kecil Sederhana Tapi Terkesa Warna Eksterior Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/29/a3/55/29a355a9a31dc2e7bf37fab96c7c0dcd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHh0E9GD1F-TYgo0mk3ctfZ-3Ps6jrlA1koURwe4o7RQofnP7nh6BrpHa6IlnLK4iVAeg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Modern Minimalis Sederhana Untuk Interior Rumah Mungil Maksimal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sangat Sederhana Sekali Desain Rumah Kecil Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/87/42/ab/8742ab7ee6b2671acb7442b9742587a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgk8QE9maQvPntuTJuC3rjxK5ogcpiIVEBbw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain modelnya yang tidak neko-neko juga rasa nyaman yang dapat muncul dari tinggal di tempat pribadi yang tak terlalu besar membuat banyak orang betah tinggal di dalam rumah kecil unik model seperti ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Mungil Sederhana Minimalis Model Rumah Terbaru Modern Small House Design Small House Design Modern House Design" src="https://i.pinimg.com/originals/b3/64/e3/b364e308ff3fabb19dd27169da91709d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYGmzg2txTBiwlwPdv9ojWSd6tontHlfpcLvoq9gyD_giuLrujVsafEYOVJp6hkslbuAc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Minimalis Yg Mungil - Selain menarik kelebihan desain rumah minimalis yang sederhana akan sangat cocok untuk anda yang memiliki rumah dengan luas yang tidak terlalu besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Rumah Sederhana Rumah Kecil 5x5 Mini House Design Rumah Mikro Kekinian Youtube Rumah Rumah Arsitektur Desain Rumah Kecil" src="https://i.pinimg.com/564x/1d/b1/2a/1db12ae7f88c1a5581047b107513518a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYo7Tza1xGvCsEdkEOFFnixCuNVw2D6ViaiTO_ly2pSsS-ieD4whHnbYMCstnq1U0AENw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wow 24 Gambar Rumah Kecil Sederhana Model Rumah Sederhana Tapi Mewah Model Rumah Sederhana Terbaru Yang Sering D Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/a0/2d/e9/a02de9dc3411875aa5f184605a1fe5a6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5vHCpJkBEyVj2C-Ld5P03J3_rZlO98NHbebuFpN5qGG8Un6ulD_hA3O5qyz9Dv6gIu_8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah mungil tidak bisa menerima sembarangan desain interior.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Model Desain Rumah Minimalis Rumah Modern Rumah Sederhana Rumah Impian Rumah Idaman Rumah Asri Rumah 2 Lantai Ru Rumah Kayu Desain Rumah Desain" src="https://i.pinimg.com/originals/d1/90/dc/d190dc274800b171dd2248ddc7f1e863.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvVuG23J1PVx1YrZghFehegkXc1qp7TD4VD1PMIVt125KDbecSGmu8AKQQ81iYF68y3o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah dapur mini yang menggemaskan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Desain Rumah Minimalis Modern 2 Lantai Jasa Gambar Rumah Murah Minimalis Home Fashion Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/b8/31/69/b83169f5f3fec56ab4ac676c11d4a033.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9vRtGGOUmOXiQLq-TNX-_iSnvSOqeWATyKiFGQ2OA77uAJkKjoUtc6y8m7hVFy54LXs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi interior rumah mungil ini terfokus pada dominasi perabot putih dan warna kayu pada panel furnitur jendela dan pintu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Situs Iklan Jual Sewa Rumah Gratis Properti Dijual Disewakan Rumah Minimalis Dekorasi Rumah Mungil Desain Rumah Minimalis" src="https://i.pinimg.com/originals/19/9f/63/199f63ac332875b176f9b8f23ee4b2c7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJPmWRAGPZUVxMtE6wxxRZ2-UGdM5gBnGvg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kontainer ternyata baru-baru ini menjadi sumber inspirasi bentuk rumah minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Mungil" src="https://i.pinimg.com/564x/9f/60/d9/9f60d9bf1aba3130c7b5faa9b0c65ffd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZqtYLycq-44vu9kxo5ksc3pul1eYAqvJARA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jadi Anda perlu mempelajari jenis desain interior yang tepat untuk sebuah rumah mungil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 4x5 Sempit Tapi Bisa Luas Cuma 50 Juta Youtube Rumah Minimalis Desain Rumah Desain" src="https://i.pinimg.com/564x/db/40/c5/db40c56ee62e724f1c7f0633474052dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXNxqbAXRmErdtt_fs_7HftGXaDPDdzxkoNQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Gambar Rumah Sederhana Tapi Terkesan Mewah Rumah Pedesaan Denah Rumah Pedesaan Rumah" src="https://i.pinimg.com/originals/10/62/8e/10628efcd8d0a07b381e4889914e131e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQWY_cLINs4KUILzaWtZk03RmbEoQBEieCWQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah dapur mini yang menggemaskan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Seperti Halnya Mendesain Rumah Yang Luas Rumah Yang Kecil Pun Memiliki Kesulitan Tersendiri Kesuli Rumah Minimalis Desain Rumah Minimalis Desain Rumah Mungil" src="https://i.pinimg.com/originals/0a/3a/ce/0a3acee468efe7b911f5cb14ab469673.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRip5wOmZOxO9KAjQ6blBWExO4l4R8-1SBzRQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar mandi sendiri merupakan salah satu aspek paling penting di rumah Anda walaupun beberapa pendapat mengatakan bahwa kamar mandi hanyalah berfungsi sebagai ruangan pendukung utama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Beautiful Homed" src="https://i.pinimg.com/originals/32/eb/7a/32eb7ac2ff2076538381a1ce5fdac48c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2DcIm2sHMGyYvUaLzDX1Mcn2LRpVAlJlTY0Y19CASpMjcAwHs6eWiCtnxSn4LtvZto_k';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana ini cocok bagi Anda yang sedang mencari rumah yang terkesan elegan dan mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas De Campo" src="https://i.pinimg.com/564x/69/c6/af/69c6af1cd3eb115198815427d9b90a87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCi8jmxiD3pxDVV--b0CSsPrmKv26slTCGYd6_lBRVjzfzOJxHSPCLZHrWsEGvcmq6Ruk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kecil mungil sederhana tapi cantik inilah kesan pertama saat melihat gambar model taman minimalis di bawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="62 Foto Desain Rumah Kecil Sederhana Minimalis Gratis Unduh Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/bb/c9/7f/bbc97faddf57dee2c8b9347ee6ceeed8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIz7pLf0MVXutl0eqmBcml8Ia9ZZjcb-jYHA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Gambar Rumah Sederhana Tapi Terkesan Mewah 14 Desain Rumah Minimalis Rumah Minimalis House Blueprints Rumah" src="https://i.pinimg.com/originals/94/a0/42/94a042b3f01c9a51ee171cb4f2118c57.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzgLf-06ciRvkD_KcadN-BtwLBDcMaQ7e8vQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain untuk kebutuhan alamiah seperti mandi dan pembuangan sisa-sisa produksi tubuh kamar mandi juga sering difungsikan sebagai tempat relaksasi setelah seharian melakukan aktivitas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6 X 7 M Satu Lantai Dgn 2 Kamar Youtube Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/90/1b/54/901b548a62e1c18801b9b9fe46300efa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe4_D5cC-RrQITofbRg6POcvgnvvtKbhQciw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Minimalis Yg Mungil - Selain menarik kelebihan desain rumah minimalis yang sederhana akan sangat cocok untuk anda yang memiliki rumah dengan luas yang tidak terlalu besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Home" src="https://i.pinimg.com/originals/3b/c6/0f/3bc60f962c1ab68da03bc533050319f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3G5xi7rfFCkpNnKrFZNEosMhgSDi-QJyWag';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model desain kamar mandi sederhana kecil dan mungil - Kamar mandi adalah ruangan yang wajib ada dalam sebuah rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Terbaru Dengan Model Teras Batu Alam Rumah Batu Rumah Minimalis Desain Rumah Bungalow" src="https://i.pinimg.com/originals/af/c2/5d/afc25df420eb69e5fa460092ff853ca5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2UzjtNVG5T-FbA9vH4YkLY3dKxGdKnpeKOpKzVV1h5FP7lmVKHZipvJJWyV9QRtP3X8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kemewahan rumah harus dibarengi dengan ukuran rumah yang juga megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Rumah Kecil Minimalis Rumah Minimalis Desain Rumah Minimalis Desain Rumah Desa" src="https://i.pinimg.com/originals/2f/a3/4b/2fa34bcd9a52ece124b9719ffecdddc6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlvSojVkpkkt67PbmqEYpicN8_i5Eiq31UWQ';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah mungil tidak bisa menerima sembarangan desain interior.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Di Kampung Desain Rumah Kecil Rumah Arsitektur House Blueprints" src="https://i.pinimg.com/originals/28/ca/dc/28cadc65e912342cbb5008015ff76b3f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFFgbAas4leWceeeWeuFnjnja9eRyJU3oeV2SCWle__eehuDE2njJocYdfEb9Ox9EQBY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dapur rumah mungil ini didesain sederhana namun fungsional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Eksterior Rumah Minimalis 2 Lantai Desain Rumah 75 Model Rumah Minimalis 2 Lantai Sederhana Modern Tip Home Fashion Desain Eksterior Rumah Minimalis" src="https://i.pinimg.com/originals/ab/03/6e/ab036e5701a4bb4f31d310d37d99a7bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XVptgCuu_UrBWqk6V2sImEvYThYM2rtA7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar mandi sendiri merupakan salah satu aspek paling penting di rumah Anda walaupun beberapa pendapat mengatakan bahwa kamar mandi hanyalah berfungsi sebagai ruangan pendukung utama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Page Not Found Model Rumah Terbaru Rumah Minimalis Arsitektur Rumah Arsitektur" src="https://i.pinimg.com/originals/3a/19/de/3a19de85edf36af655579b536a35ac44.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_WZkFgC1RTllkYP4uSGOvFrxvjUd-6GWbwf9GbLCs9JmJjUS1qLpPI9Vj8b-xfLN-UP0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah mungil 46 design sederhana yang menawan design rumah kecil ukuran 46 rumah kecil sederhana untuk lahan yang sangat terbatas design kecil ini bisa menjadi inspirasi untuk pasangan muda subsc desain rumah mungil sederhana desain rumah mungil sederhana subscribe here kunjungi juga desain rumah mungil sederhana model teras 2013 minimalis desain rumah mungil sederhana model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/55/11/e7/5511e711115ad9ab0a3cfae45f17b69e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzJSCiA_nhfcNVG5omMQTRtFuc9F2L7ZJTA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain desainya yang tidak ribet kita juga dapat lebih menghemat biaya dalam merealisasikan rumah kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Rumah Minimalis Type 36 Sederhana Rumah Minimalis Desain Rumah Desain Rumah Mungil" src="https://i.pinimg.com/originals/e7/06/39/e70639e5066861135afa908f6ccc3510.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJciGSUxi4Ozyvdlrg8euPxi4Ut8I3B1L4-SokSrYHJw8xIzSQK-cLkcXc8TZSqZIlxwY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Inspirasi interior rumah mungil ini terfokus pada dominasi perabot putih dan warna kayu pada panel furnitur jendela dan pintu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Sederhana Dengan Model Teras Batu Alam Rumah Minimalis Arsitektur Rumah Impian" src="https://i.pinimg.com/originals/d1/47/28/d1472835c870e478fb88bc3892873d89.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HxorRSURT65TlEGlwGnGsErlWRAS3nPPXIV71Tb4WVTGX4zSRfh8HEoTRSZyXaJeuVo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di sinilah kecerdikan dan kreativitas diuji untuk menciptakan desain interior rumah mungil kekinian yang sederhana tapi elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Menentukan Atap Rumah Yang Sesuai Untuk Rumah Kecil Rumah Denah Desain Rumah Desain" src="https://i.pinimg.com/originals/e6/47/fc/e647fcb64c7ae69da6630d7242ec7310.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmvEVXpr9N57lfffDHHugvvnOTnbro846jA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil kelihatan lebih cantik jika depan rumah ada taman mungil yang menyejukkan pandangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsvojjbewwbt4an6blc1ccfb2coxposekniei 4 9d9kr9v4gsq Usqp Cau" src="/search?q=rumah+minimalis+modern&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+minimalis+modern&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Sederhana Type 45 Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/736x/55/0b/29/550b297b2c341cdb3f96e420b8027d03.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU2qXwmfZIwkiZkcThBSNnYH0L8I8cuG4frQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain desainya yang tidak ribet kita juga dapat lebih menghemat biaya dalam merealisasikan rumah kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Toko Minimalis Modern Ukuran 8x16 3 Kamar Tidur 1 Lantai Desain Rumah Kecil Desain Eksterior Rumah" src="https://i.pinimg.com/originals/0a/ac/43/0aac43c75156f707772c611de1f306f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0n28dd5b4d8W7KmwWSIg8k4aMxmedMbcPFg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>79 Desain Kamar Mandi Kecil Mungil Minimalis Sederhana - Kamar mandi merupakan salah satu tempat private yang perlu Anda perhatikan agar terlihat apik dan nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Kecil Bagus Dan Sederhana Agar Terlihat Luas 9 X 6 M Desain Rumah Bungalow Desain Rumah Desain Rumah Kecil" src="https://i.pinimg.com/564x/92/05/fd/9205fddce6d8d9040a2d61184225ac24.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbeopjU5-LRpWgmLzz_1Zx7VV0oqA8rt5V1Mbt7tGR-an12PSStMr0qLyAWyZ2iigxDM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kecil mungil sederhana tapi cantik inilah kesan pertama saat melihat gambar model taman minimalis di bawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Idaman Terbaru Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/25/10/e8/2510e845d20addc282b1a39f6d2d8986.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRGsuqkCX9Tl7Y8ZK4AB9goOU8NMr_lJHiQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah Rumah 2 Lantai Mungil yang Sederhana Modern Untuk Keluarga Baru Rumah 2 lantai merupakan salah satu model rumah yang menjadi favorit banyak keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Iwc" src="https://i.pinimg.com/736x/7f/6a/d9/7f6ad9a5c8770b57f5df612b731c9325.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAlq4iG1VNg2fuCXrQBjnzrrrZsg1S-jejqw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan membuat rumah 2 lantai maka bisa menghadirkan ruangan yang lengkap di dalamnya.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-ruko-sederhana.html"><i>&larr; desain rumah ruko sederhana</i></a>
+                                                                    
+                                        <a href="/desain-rumah-raft-survival.html"><i>desain rumah raft survival &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

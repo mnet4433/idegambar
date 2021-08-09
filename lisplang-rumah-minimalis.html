@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lisplang Rumah Minimalis
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Lisplang Rumah Minimalis",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/f4/b4/26/f4b426f6344c6bc094597174487383f5.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=lisplang+rumah+minimalis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Lisplang Rumah Minimalis
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Lisplang Rumah Minimalis</strong>. </p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/0e/6b/2f/0e6b2fb74eb17b8a577a54fcc5327437.jpg" alt="Macam Macam Lisplang 085692653909 Rumah Ruko Gedung" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu5KF4INB00h6mXX0DXdldNpCKdsx2e0TT9O_nD-aPS5iCxJJn33ekYWMoPSFePVCEL7g';">
+        <figcaption>Macam Macam Lisplang 085692653909 Rumah Ruko Gedung from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        
+    </p>
+    <h3></h3>
+    <p> </p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Motifmotiflisplangbeton 0856 9265 3909 Muti Rumah Mewah Rumah Baru Kemewahan" src="https://i.pinimg.com/originals/82/f3/3d/82f33d7516b32ae885ba84542bb16d59.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxQOvlCAA6Q5ZQqVzFiP89hauZyrdPJmdrQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Profil Beton Minimalis 081380752006 Di 2021 Rumah Ornamen Dinding" src="https://i.pinimg.com/originals/29/03/57/29035761fedf5e42abd87ca3b02609db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI93BOIa2KEhKp7Zlc_9iv37mC_J9YMKu2dQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Grc Profil 085692692540 Novi Rumah Mewah Teras Modern" src="https://i.pinimg.com/originals/3f/9a/26/3f9a26a87abb4854ae4f4461ecef30ba.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvY3o6m3FvsGwYKIUdIZO8hkFAVPnioAbvQw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Profil Klasik Jaya Profil" src="https://i.pinimg.com/564x/0d/64/78/0d64785739a1bacb53ced35881862994.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNb2lp2YETY0iGto2C7XWKAKAG4b30Mr1ycg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=ukuran+lisplang+beton&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ukuran+lisplang+beton&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Profil Lisplang Depan Rumah 085692692540 Di 2021 Rumah Mewah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/36/9d/4c/369d4c23c9f706046a3fb40656ce68c4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiIFp1T0_tGjXTl5_WrrJkOB14JOczAeWtaA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warna Cat Rumah Minimalis Dulux Kombinasi Cat Rumah Minimalis Bagian Luar Yang Bagus Cat Rumah Min Rumah Minimalis Desain Rumah Minimalis Warna Eksterior Rumah" src="https://i.pinimg.com/600x315/2e/3e/b1/2e3eb137ed2fd42791fad84c877cb4bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrtPgixj7qq8fMNzAy9EG7hzAWlQLvfsfQgw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Rumah Minimalis Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/1e/bb/3f/1ebb3fa20e8395ca6c77d45dfe77b816.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqenDEjgmIJ3JxSYJBanCeP569pc2WkxstKhX4dbVJHV67XPYitnnLHiDGo0NsGmbv30M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Pasang Lisplang Beton 081380752006 Rumah Mewah Kemewahan Rumah Baru" src="https://i.pinimg.com/originals/f9/0a/ec/f90aec3dd4f52e1368f3e403ba4d4d66.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zrM-51HUMZuMaIyMly1uZeuQrCOJNNJyKg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085692692540 Lisplang Grc Motif Di 2021 Kayu Rumah Minimalis" src="https://i.pinimg.com/564x/bd/f9/37/bdf937c178397968144810450ee06377.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPecnVI0a4-remwXd--HQrXxnLfu1-6PMAJA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085692692540 Foto Profil Lisplang Minimalis Di 2021 Rumah Beton Rumah Mewah Lantai" src="https://i.pinimg.com/originals/c5/13/b0/c513b0d0a9038d1cabedc9c200417834.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe5vd17dtiZ9Lmi7cs6sqdohyC7HS_2GeE5UelA3kyfWatS7AlsAr3ntqICRH_ZHuy02Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Lisplang Beton 0856 9265 3909 Muti Rumah Mewah Rumah Baru Modern" src="https://i.pinimg.com/originals/f2/22/cd/f222cd0dcc8f389fc68a17e60e832c84.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6WqwyePmc5YCFnYwszePmRDL7NuU6kzQoetby93k5houCg1prqMEze_hoD7o85Kx4G-A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hargalisplangbetonjakarta 0856 9265 3909 Muti Outdoor Decor Outdoor Garage Doors" src="https://i.pinimg.com/originals/fc/d1/59/fcd159080a61b788f5661aa03c0e6948.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIYv0Mnu884DbRoVlDRVo1uNIBSOVZG-0O2LlydD6XgZJWclekqKFroQ9WYe4Dr1nsrWs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Lisplang Beton 085692692540 Novi Profil Eksterior Klasik" src="https://i.pinimg.com/originals/3e/85/b9/3e85b9a2fc21002cc4ed5765fe7be551.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ79sHxf3IAhb7zwLuXtdEj84RuSamv9r02w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pembuat Lisplang Minimalis Rumah Minimalis Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/b5/c8/1b/b5c81bb0829437d3d752f56f4b00b92a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRnsb5YgwSl_6K_vn4OhJHBUuSt-jYKIDKrg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Lisplang Beton 085692692540 Novi Gambar Profil Rumah Mewah Profil" src="https://i.pinimg.com/originals/be/0c/bc/be0cbccd7b35432d64bfdd182205f0b0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOiEaGbZR6z3-_Lh0ZCBxkUDyvH2pnPpUI3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Lisplang Beton 2020 085692692540 Novi Klasik Profil Rumah Minimalis" src="https://i.pinimg.com/originals/08/f8/93/08f893fdbd97a6e4f2b88729d1a8ddc1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReexSt-is55YxCFSPqtKp8tPqciyU1WbLEKEw2Y2QMavTSpJI0eETwHSY5g-s2xYhkCp8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Beton Grc Harga 0856 9265 3909 Muti Rumah Mewah Rumah Baru Modern" src="https://i.pinimg.com/originals/c1/b8/36/c1b8363e1be7e529757e0a26ce5e3484.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTLLTXzzweG1osG5oUCWRTS8wm374RJTihC_KOUbcoXuKVyj8TaFuXFK5qtsq4EuxMZ1s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Profil Lisplang Rumah Mewah 085692692540 Di 2021 Rumah Mewah Gambar Profil Kayu" src="https://i.pinimg.com/originals/d2/9a/38/d29a3891ff28da5e1a628edd41778466.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7m92uKIjexUrvcO7Mx8Uo9Db3BmkmXWc_aQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ukuran Profil Lisplang Minimalis 085692692540 Di 2021 Profil Pengukur Minimalis" src="https://i.pinimg.com/originals/c1/66/a0/c166a0eee80c2b1774313e72ad6722c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMcW_8YJ4SlSGAcJ0wb3ZWVbZHGh5kq2FTdg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplangbetonharga 0856 9265 3909 Muti Rumah Mewah Rumah Baru Modern" src="https://i.pinimg.com/originals/84/65/f4/8465f4b23c69e3d28b5a92f7a0f8bdc7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4yFp5v89gKiMD8hSfiwwIYFHOMh3rW3ZvDqCzq3QOQnVDSI7NLUXDcrBxQqF-lU0gK6c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Macam Macam Lisplang 085692653909 Rumah Ruko Gedung" src="https://i.pinimg.com/736x/0e/6b/2f/0e6b2fb74eb17b8a577a54fcc5327437.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu5KF4INB00h6mXX0DXdldNpCKdsx2e0TT9O_nD-aPS5iCxJJn33ekYWMoPSFePVCEL7g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berisi Informasi Tentang Gambar Contoh Model Teras Rumah Minimalis Modern Mewah Sederhana Cantik Klasik Terbaru Dengan Ber Gaya Rumah Desain Rumah Home Fashion" src="https://i.pinimg.com/originals/1a/53/ea/1a53eac086d5519c117f8229f6234b8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThMUw_k6v7qHVFJ38mVRxtemJFLbAz2cbwWL5xEl1y5CrH0exvaGHxkfWfeSzlwiumeo4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Profil Modern 085692692540 Di 2021 Modern Profil Minimalis" src="https://i.pinimg.com/originals/f5/69/b8/f569b892765d28607f2dfff16045e4c7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwga8ydEXTwkIHliBzsR28B87ka4CbY6ihHw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Denga Rumah Minimalis Cat Rumah Eksterior Desain Rumah Minimalis" src="https://i.pinimg.com/600x315/23/57/b2/2357b276b537103566c87d62e3b9f87b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Pz6F2BHwlNWJdvTifnArJVnzR4fY9LQS2A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Profil Lisplang Minimalis 085692692540 Rumah Mewah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/06/11/9b/06119b75f1c130099bcc3a8219bd741c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhvWz66wcGiyTNK_KXonHfTSjgL939a1cjrob5n7Gh9Tgb7WWPV2bMGZx6_a91N07wdQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Lisplang Beton Grc 0856 9265 3909 Muti Rumah Mewah Kemewahan Rumah Baru" src="https://i.pinimg.com/originals/51/89/ab/5189abd3ead0ffa20a150d42be9f1892.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpxYMbMqh2oix5QebLD8pRa30sAPyzHesl4EDcxYDqXheDhzXoDFZKwNajrIeyemueMwY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Profil Lisplang Rumah Minimalis 085692692540 Di 2021 Profil Rumah Mewah Kota" src="https://i.pinimg.com/originals/63/c9/c3/63c9c34f5e31d76be23742dcf30deebf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNqKim8YfOrWFvVV4BwGw7QfY9oOno7JX0KJZ34l2nN9mim_yOXRJbrjr9sAGb8BJRAR0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Dea Munawarah On How To Make Cara" src="https://i.pinimg.com/564x/f4/50/b9/f450b9d4877fa53468908b1c480a2dcb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXKQ-CzbLekKBtKusFTlhn3RO5g3xiGhJOf-tq3uCgJvjnONaCzXYq9tiG0g-_7uv04U';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Beton 0856 9265 3909 Muti Rumah Mewah Rumah Baru Modern" src="https://i.pinimg.com/originals/85/88/ca/8588cac8144233524d7521cb92c94e47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQE_xvN8S05JxLvh7OQBaYCLVcUofht0qkZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Lisplang Arsitek Rumah Desain Rumah" src="https://i.pinimg.com/originals/40/48/e9/4048e99fafa122f799d7deba00365b3f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp_B5tLz8NuzDt4UhpOmgVOwI_eVG-GaKaMQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Profil Lisplang Rumah Minimalis 085692692540 Di 2021 Rumah Minimalis Rumah Rumah Baru" src="https://i.pinimg.com/originals/9d/4c/dd/9d4cddf44c4c9d9103ac6b7939cb0a59.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-sQJP0l_vWRqNgWBKASSmW0a36ii8J1Ma2xP1ezME1RM7gqjUlEEdBeZODmgEubrJkVM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Rumah Minimalis Dengan Batu Alam Desain Rumah Bungalow Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/9c/46/57/9c4657ccc51d5912078e3a2fdabbb551.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxqIHIxd9QG9ZjIIRRpzw0Of4hU8h-ESTQ3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tiang Minimalis Gerbang Teras Rumah Mewah Teras Rumah Kemewahan" src="https://i.pinimg.com/originals/56/99/6a/56996a752b65b2f8c5cacf5e9fc48d37.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ22C6lDOsIkjlRQPtu_rYCxWdNWsb8-R2xaQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Betawi Grc Untuk Atap Rumah 085692653909 Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/b6/64/01/b6640136196d8a4578729d225abab29a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_b822Z4wwrHJghaMSImJd_cp48z-BgidhA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Beton Rumah Minimalis 085692692540 Novi Rumah Rumah Minimalis Klasik" src="https://i.pinimg.com/originals/6f/51/d9/6f51d97a1ac861d13a24e89afa102eb5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3zklO2Bo1b1iHg9tIGhspaa7VUJ0AmV8Ne1nDHBO_mj4-WdkoHhquqKTitlzX8L189D8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=lisplang+rumah+sederhana&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=lisplang+rumah+sederhana&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Profil Lisplang Minimalis 085692692540 Di 2021 Eksterior Minimalis Kemewahan" src="https://i.pinimg.com/originals/2c/16/b9/2c16b96c58798bdc9a0d87bb7bee434c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSyJeSO2P6dccCLQsnyqhzewnVuruQwu5jtLitqbv_w2PrffbRwZ_oac9rLuB-UEeJfWE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Beton 0856 9265 3909 Muti Hotel Rumah Restoran" src="https://i.pinimg.com/originals/2d/17/bc/2d17bc949e7da113412ffcf50c567c6c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnF0L2UKTCy9LbnKa7siTKFarxNlUaanwFqw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Resplang Untuk Rumah Hubungi Customer Service Kami Di Wa Call 0813 3387 7755 Lokasi Kantor Kami Kota Malang Jawa Rumah Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/f4/b4/26/f4b426f6344c6bc094597174487383f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwXYPEncNTawmHspWpv_bzxx0idWiy6sbVBA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Contoh Tampilan Depan Desain Rumah Minimalis Bergaya Modern Desain Rumah Joglo Minimalis Rumah Minimalis 20 Rumah Minimalis Desain Rumah Satu Lantai Rumah" src="https://i.pinimg.com/600x315/c4/5c/f2/c45cf275b0472d3b13071b7b7aaff245.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eNvtMDki4FdPEOGpnYq91iIE_FqG9P5JO0n1GNsnrQ91FbV1Q5mN_Zr0gisVDwu1l94';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Home Decor" src="https://i.pinimg.com/originals/93/c3/e2/93c3e25b22d05df1e849c0222c6d33b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzQIXJ6YDpDfGWu_E5SV8pN0BNS9z4C5J3hg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Ukir Grc 081288711562 Rumah Kanopi Bahan Baku" src="https://i.pinimg.com/originals/8b/f7/f8/8bf7f80b4234652597be91f26485986a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROalfkYSuvA6HY6bNZcZTfuJuAAHoxwVX40Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Lisplang Rumah Betawi Minimalis 081292516860 Penjualan Minimalis Bingkai" src="https://i.pinimg.com/originals/37/cd/80/37cd804ef0b7bc0a48b5e1686672754c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw_JzF8eSOEbzVpzX2eRgqh6AHC8BSuvF-zQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Profil Lisplang Minimalis 085692692540 Di 2021 Profil Teras Rumah" src="https://i.pinimg.com/originals/91/d7/de/91d7de7f8aefbb72a6cf5268ceb75a69.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWsWGytolX7lZbYDI5NzOZ3hPEFGm7fxO2w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Grc 085692692540 Novi Rumah Minimalis Rumah Baru Rumah" src="https://i.pinimg.com/originals/8f/d4/f9/8fd4f9f1d61bfeab38c84990a86e43f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOW_xXqT23YT_5nQ03x5DFbvMGfaL1iy9Vmv4uwx-26EUQz7vyNa9cKLNCKdslGnQtzT0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Profil Teras Beton 081380752006 Di 2021 Rumah Indah Minimalis Rumah" src="https://i.pinimg.com/originals/83/b1/5f/83b15fb410abcdcc1f6be8d3630c4c97.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpZk2LxCKZmspkYYGLzTBmma88O15WGCNs6LQl1BruS8eLVd4VnL7AdFg5Anu23ybn2w0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Murah Grc 081380752006 Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/eb/d8/f9/ebd8f9d1c4dc49f2393a731ff92cc704.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi5CtFH2dgl27bMLK7zCW7ufcGBjoYRefqbw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Minimalis 081288711562 Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/a1/3c/f5/a13cf5d4c3e0f995419bb326a2b58c3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRupYM4_LfNX-wVDedqz4ppnEuicUuAbAi1dFOipISzxvv4GbBRSaHgDkpOH5M-NRWZgEg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lisplang Grc Ciledug 085692692540 Minimalis Rumah Nyaman Desain Rumah Minimalis" src="https://i.pinimg.com/originals/e5/97/66/e597663b235569c0f1c8de8d179150d6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DOpsFZ63IzDIiHvyCfnuBACycF0o7Gv_uw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-jawa-klasik.html"><i>&larr; desain rumah jawa klasik</i></a>
+                                                                    
+                                        <a href="/desain-rumah-jawa-klasik-modern.html"><i>desain rumah jawa klasik modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Gedek Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Gedek Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/474x/48/69/1f/48691f4d62c23a854c7285f5fa7ae480--titi.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+gedek+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Gedek Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Gedek Sederhana</strong>. Desain Rumah Gedek Sederhana merupakan ide desain rumah yang dirancang serta di kerjakan dengan hati - hati untuk menciptakan rumah idaman keluarga. Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/236x/2c/c2/4e/2cc24e0c9b1379699fef20a4afc59891.jpg" alt="Sofiayuan Kaskus Melatih Lucu Hiburan" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIbs1Z5cJsgdPDz0ddknUykef3KZ2dnQh1cg';">
+        <figcaption>Sofiayuan Kaskus Melatih Lucu Hiburan from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Aneka Desain Rumah. Bagi Anda yang punyai anggota keluarga yang besar maka tempat tinggal minimalis moderen dengan 4 kamar tidur utama dapat menjadi pilihan. Contoh Desain Rumah Sederhana di Desa yang Menginspirasi.
+    </p>
+    <h3>20 Contoh Desain Rumah Bambu Sederhana Terbaru Design Beberapa desain rumah bambu yang menarik dapat kita jadikan inspirasi sebagai berikut Jenis Rumah Bambu yang Menarik 1 Desain Rumah Bambu Minimalis Desain rumah bambu minimalis merupakan desain rumah yang paling sederhana dinding rumah yang terbuat dari bambu anyam Terlihat tradisional namun desain rumah.</h3>
+    <p>Jenis desain rumah satu ini adalah salah satu yang patut untuk dicoba serta dikembangkan untuk perencanaan rumah idaman pelanggan anda. Rumah sederhana desa rumah sederhana rumah sederhana minimalis rumah sederhana tapi mewah rumah sederhana dengan halaman luas rumah sederhana dua lantai rumah sederhana dari kayu rumah sederhana tampak depan rumah sederhana cantik rumah sederhana dan unik gambar rumah gedek rumah gedek bambu rumah pakai gedek. Selain itu jika Anda mempekerjakan ART Anda sanggup menambahkannya kamar tidur tambahan. Rumah Dekat Kebun Gambar rumah sederhana di desa yang dekat dengan kebun atau juga sawah cocok kalau kamu ingin menjadi petani.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah 2 Lantai Gaya Eropa Rumah Mewah Desain Rumah Home Fashion" src="https://i.pinimg.com/474x/d2/17/a2/d217a246beeb3356d37796313a0ac689.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Hy7xNHV6Vma5UgyGNAdo-GLHkxoyPhK0T3j52Qd71SHrDVntRvSr-Omjz_UCNSGbLmU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi Desain Rumah Mewah Eropa Rumah Mewah Home Fashion Kemewahan" src="https://i.pinimg.com/564x/3b/eb/67/3beb67432c0c28373c21a7520c52c662.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQas4mNHX2POGYdwMNFLjHlN5mQqmsnIL6nwgbd0Q9RTz4OMXXA8CoLliX9dp4AuysC1LI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aneka Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Model Pagar Tembok Minimalis Bicara Tentang Membangun Sebuah Rumah Ada Banyak Hal Yang Harus Anda Perhat Desain Depan Rumah Desain Eksterior Desain Pagar" src="https://i.pinimg.com/originals/21/a5/0a/21a50ac1bb65a14637c24967f9277257.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqbq-Pb3xltQELIPw3YuhmZ_Tidr4axKmctCea0dK5hhwIKIBtSXxFrBhNsODkc5a4pmk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini akan kita tunjukkan untuk Anda bagaimana membangun Desain Rumah Gedek Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketsa Denah Rumah Minimalist 2 Kamar Tidur Denah Rumah Desain Rumah Denah Rumah 3d" src="https://i.pinimg.com/originals/61/9a/8c/619a8cf9dc6a14eba31d321d62794478.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8NkpLPXxKlRSvwjFwfArkALvXXrB1ZXS3hGFj3Ahhz8dHRe4eWouRQWi0KT6DSd3F88';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Gedek Sederhana desain kreatifnya dengan konsep kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pintu Rumah Besar Kecil Mewah Ukir Klasik Pintu Rumah Besar Kecil Mewah Ukir Klasik Model Pintu Rumah Desain Pintu Utama Kayu Desain Pintu Modern Rumah Besar" src="https://i.pinimg.com/736x/1c/02/5d/1c025d2c79448863efb088922e810b13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnlJsbuHPSf-gD1zXap8EZeopsFv_4DyKNdDNaGsBoYacaIS63aafoBEdPd9F_wkRJR8Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kumpulan 48 Desain Rumah Gedek Sederhana Terbaik Dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Resep Mie Goreng Jawa Pedas Enak Mie Tek Tek Pedas Oleh Kheyla S Kitchen Resep Resep Mie Resep Masakan Indonesia Makanan Pedas" src="https://i.pinimg.com/originals/37/c3/b2/37c3b27ed7a86c23aa1d81a126884404.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7tbkfhy1pXYOS7Yef-X77_sxJSQWbeZgfw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Gedek Sederhana desain kreatifnya dengan konsep kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Mungil" src="https://i.pinimg.com/564x/9f/60/d9/9f60d9bf1aba3130c7b5faa9b0c65ffd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKWjE5CkB1dWwyyuCEahyA-hHlwPldMVB7_xPVpEvsQOiYITH4YXz2jKrnAf7JplEiGg0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Gedek Sederhana - Apabila saudara memikirkan untuk membuat rumah besar nan modern simple mengesankan diisi dengan berbagai elemen yang berbeda sebaiknya saudara memikirkannya kembali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Yang Mungil Belum Tentu Menjenuhkan Sebab Kalau Anda Bisa Merancang Dengan Ide Ide Kamu Maka Kamu Dapat Membuat H Gaya Rumah Rumah Minimalis Home Fashion" src="https://i.pinimg.com/474x/be/1c/6e/be1c6ebdb35d67d1f6dbe61fdb2d2aa3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDNb0jV3I8qRfwmhP25H5L4JaXadu6K9LzC8WU71K5qz4zoZUJ8q-XNVZ8exQFCeFOsHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Gedek Sederhana from Desain Rumah Indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Hobi Dan Komunitas" src="https://i.pinimg.com/236x/d2/57/96/d25796cebfc12b1a0d2cfd5d447856ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60gVJN02UHbNzT3J-LNEjyw9cTOSX-EQM8A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harga anyaman bambu per meter terbaru maret murah berapa biaya bangunan atau rumah bambu bamboo sustainable bangunan rumah sederhana youtube harga anyaman bambu semua jenis terbaru maret hargadepo rumah dijual di jawa timur mojokerto gedek urbanindo melihat gedeg dinding bambu anyaman kaya motif ala woloare perumahan gedek mojokerto trovit Anyaman bambu motif.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Salam Jari Tengah Buat Penjilat Halaman All Kompasiana Com Kata Kata Mutiara Kata Kata Kata Kata Bijak" src="https://i.pinimg.com/474x/aa/95/52/aa9552f9fde0a7321e74d82c2d47bbbc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ra-2DN_xcF95c6vnhb1VwSHnbmH83S3h7g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu jika Anda mempekerjakan ART Anda sanggup menambahkannya kamar tidur tambahan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah Bes Rumah Minimalis Desain Rumah Kecil Home Fashion" src="https://i.pinimg.com/originals/c8/1d/bc/c81dbc6d26124f940f460d40d5813073.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzf-1r0OOZTjSFSaFOA51sT3Apmn2WbXqrUcx_Fuvkiqb-E9fZqKTjPBqsikOrYSOIdEU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan ide dan inspirasi model Rumah Sederhana yang memiliki resolusi 1024x657 di harapkan dapat terlihat jelas dan sangat baik untuk memenuhi desain rumah yang sedang anda ingin ciptakan saat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah Spanyol Rumah Mewah Desain Rumah Kemewahan" src="https://i.pinimg.com/200x150/54/46/90/544690146e1373e834634bd41acd5ab5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUbHaTHGMsxY_wkmPUn5eMk54rmZO11ZmAUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kumpulan 48 Desain Rumah Gedek Sederhana Terbaik Dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah The Sims Freeplay Rumah Mewah The Sims Desain Rumah" src="https://i.pinimg.com/originals/3c/ae/69/3cae690b9f362cb3fe77844edbb4a98f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTDm6uTjP4EO5seT7e62FTeCxjpyOF7bSqLAhqoC-AgbuuNNU5TMgVArTl6pTO5PwtCZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Menggambar rumah gedek bambu yang sederhanasemoga bermanfaat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Desain Rumah Mewah Oleh Arsitek Ternama Di Indonesia Home Fashion Desain Rumah Modern Arsitektur" src="https://i.pinimg.com/originals/5c/93/1f/5c931f876f2ef7489533a7179490195a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6GqIDea98iAfIRHqUXYKV0uBBPxQ0icRQvGeFKPVBF-JRMKZU3hGoEjh7dVjz2Kz7UVQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Gedek Sederhana from Desain Rumah Indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/originals/14/59/30/145930e75c799e99d363fbaead93b9c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9PM-OCaeu-JkvdtRrREo-lznKxYJymUrxGguYACO5O0wjAzG1jAGmTrZ3-B4daA64Po8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika Anda sedang mencari sebuah Desain Rumah Gedek Keren cantik dan mengesankan tentu website Rumah Minimalis adalah jawabannya kami akan menyuguhkan 56 Foto Desain Rumah Gedek Terpopuler berikut gambar Desain Rumah Gedek yang anda inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dp Bbm Bijak Jawa Filosofi Orang Jawa Kerap Dianggap Magis Cukup Banyak Yang Beranggapan Bahwa Orang Jawa Masih Sangat Men Kata Kata Kata Kata Indah Bijak" src="https://i.pinimg.com/originals/59/46/e6/5946e6d055fee263f70a5c2c40c5ffd3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNNsgkWV0avORJVkIyBfP6PeFO7k7n6Wbp_w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Limasan Minimalis Desain Rumah Eksterior Rumah Kayu Rumah" src="https://i.pinimg.com/474x/84/f3/9d/84f39d9b2f277807b24a2ec784c78670.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQI2AaT83Jevc62YrynS0LBO5kAIFz4g1ycb3u-rv_fZLveHccNMP_ayUOwX3DccJMLs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kata Kata Jawa Gambar Photo Lucu Cartoon Jokes Kata Kata" src="https://i.pinimg.com/originals/8d/58/ab/8d58ab498aa0dda21fbf5cb6ae2a7998.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_12fmSvqupqIQx6-YOa9vv-IbCE1Mg1CiZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Menggambar rumah gedek bambu yang sederhanasemoga bermanfaat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Plafon Kayu Modern Dan Klasik Desain Plafon Rumah Desain" src="https://i.pinimg.com/originals/dd/d6/3b/ddd63bbbc5388b353d913c451cec54d3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf2HAqIr36mnGJWepAHcOqSh1uw9ygtSzN60mYK9B0MLZpPVyaOZW-ZJ2B-JrQRFf-ibU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dari 50 Model Desain Rumah Gedek Sederhana Yang Wajib Kamu Ketahui untuk Inspirasi Untuk Merombak Rumah yang memiliki gaya arsitektur serta tata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreas Interior Kafe Warung Kopi Desain Interior Kafe" src="https://i.pinimg.com/736x/f1/b6/30/f1b630b63b05299651f6e04a906ca342.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWwejc4Hy6bNUv8ryTxa2Ta4V1LxsLhzdGqN8odZOdOnx7RyNQbj-3zH9kQ-sE2wnlZU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara Menggambar rumah gedek bambu yang sederhanasemoga bermanfaat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah Spanyol Rumah Mewah Desain Rumah Kemewahan" src="https://i.pinimg.com/564x/fa/92/6e/fa926ea6e56ce4927034215f58028dd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd4o5Um24Baccd8hXI680PhZk2lCuCtFA0ww';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan Pemandangan Alam yang Indah Biasanya gambar desain rumah sederhana di desa memang tidak serumit hunian yang ada di kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Nokky Panji Di Ide Kamar Tidur Arsitektur Rumah Rumah Indah Arsitektur" src="https://i.pinimg.com/736x/51/98/aa/5198aa848d3043883ffdf2eb1d6868c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyX5WSMEculaA1oejvLwAeLYzIbNPEBJa9DzbU7tsZXmGMh_8QXIXXDyU07-DXeden1BE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana unik untuk keluarga kecil ukuran 6x9 ukuran 5x12 ukuran 7x12 ukuran kecil ukuran 8x12 ukuran 7x9 ukuran 5x7 ukuran 6x12 tapi mewah type 36 tapi indah tampak depan tingkat 2 tapi kelihatan mewah terbaru type 21 tapi bagus tahun 2015 sehat surabaya sekali simpel satu lantai sejuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Rumah Eropa Mewah Klasik Rumah Kemewahan Desain" src="https://i.pinimg.com/736x/8c/c8/08/8cc808f1575ff624b007be321c314fb8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYygU6Osts1SfTOv10JibiN7JCm042kf3XdvR9npeaLVV6yf3q1Bw3a77lHHK6TDUoWag';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagi Anda yang punyai anggota keluarga yang besar maka tempat tinggal minimalis moderen dengan 4 kamar tidur utama dapat menjadi pilihan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Resep Cah Brokoli Tofu Oleh Susan Mellyani Resep Tahu Resep Masakan Brokoli" src="https://i.pinimg.com/150x150/5c/ee/80/5cee800c38fda010f35520ea02b9d043.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuBVBuaGi0621-pUMIJFzJsuDezYm7W-itog';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Plafon Kayu Modern Dan Klasik Desain Plafon Rumah Desain" src="https://i.pinimg.com/150x150/92/a5/6b/92a56b556d892550d760129606284e06.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReIWdAft52O976TKxiRC73adXQAFEUQnRanA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Gedek Sederhana from Desain Rumah Indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Kecil" src="https://i.pinimg.com/originals/4b/62/99/4b62997415a563723048da90c6299ae4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthgrHwCrFrWD0HgT_NVM1PDd97zoBiUzHtXnfBQKxrxPWwoSVtnrIEhK9FxdDHrTzN0Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Menggambar rumah gedek bambu yang sederhanasemoga bermanfaat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Meski Hari Ini Gagal Mengevakuasi Pagar Gedek Penghalang Pengoperasian Kegiatan Bpls Di Titi 42 Kawasan Renokenongo Bpls Akan Terus Kota Pagar Gagal" src="https://i.pinimg.com/474x/48/69/1f/48691f4d62c23a854c7285f5fa7ae480--titi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-3c5zAy8ml-P-ngYApeELuB5p9XN7vHXXA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah gedek bambu rumah bambu sederhana di desa rumah bambu sederhana murah rumah bambu antik rumah gedek modern inspirasi rumah bambu model rumah bambu terbaru interior rumah bambu Model menarik dapat kalian buat kalau kita pintar dalam membuat kreativitas yang berkaitan dengan desain baik itu penataan segi model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Rumah Sederhana Tapi Mewah Untuk Tempat Tinggal Di Desa Yang Keren Rumah Minimalis Home Fashion Desain Rumah Minimalis" src="https://i.pinimg.com/originals/42/45/8c/42458c1295443c9566c69b2b0cef079f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBO_MH_GXTd13kkJnUOwDEHhT1B9hsyF4XP_9e-c8XKk7ECJRaEQCtVvUAb2fdCrq1_Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana unik untuk keluarga kecil ukuran 6x9 ukuran 5x12 ukuran 7x12 ukuran kecil ukuran 8x12 ukuran 7x9 ukuran 5x7 ukuran 6x12 tapi mewah type 36 tapi indah tampak depan tingkat 2 tapi kelihatan mewah terbaru type 21 tapi bagus tahun 2015 sehat surabaya sekali simpel satu lantai sejuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/150x150/bb/a1/7d/bba17dca9b842acc871bb481cfb15bff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jZXyknMZoLkKMFeu8qvRUh3WtA7ExTnA0A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Maka dari itu sebaiknya sebelum membangun rumah minimalis Anda harus menentukan terlebih dahulu konsep rumah minimalis yang akan dibangun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Dan Denah Rumah Minimalis Type 60 Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/05/01/79/0501791395655fd1dedec1d0f7ae0e11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZ6Bfeped6_b6-Qj53lJnFOU4wubY04H3vjYtw2xHOFlI3ZzLw-o3aKyEH6OIJBy_z7A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Banyak para perantau yang ketika kembali ke kampung halamannya mendirikan rumah dengan gaya perkotaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Hobi Dan Komunitas" src="https://i.pinimg.com/originals/32/04/2d/32042d1b58ea384ce2a591f7feec9598.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9_Px3GJnTY1ITqxRRz6OIzfT1jS6AhaM3A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selanjutnya rumah minimalis modern warna cat rumah rumah impian foto rumah bentuk rumah sederhana ukuran 6 9 sketsa rumah sederhana desain rumah mewah rumah elegan rumah idaman sederhana di desa interior rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Resep Cah Brokoli Tofu Oleh Susan Mellyani Resep Tahu Resep Masakan Brokoli" src="https://i.pinimg.com/originals/16/f0/df/16f0dfcc08565ed06e7b6e2c512457e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUx2KLR74Qd5xNrGSHGRz_i8L7-ephSmQWXA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumahku itu jelek sederhana hanya dari papan gedek lalu aku lapisin dengan triplek dan aku rubah sekreatif mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Resep Cara Membuat Brownies Chocolatos Drink Enak Dan Sederhana Resep Brownies Makanan Manis Makanan" src="https://i.pinimg.com/originals/52/d2/f1/52d2f1602957051ad9841b4be6aa43ec.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8_tpJjy9d36DK3pEGcalzTUG17HZTOCBTA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Banyak para perantau yang ketika kembali ke kampung halamannya mendirikan rumah dengan gaya perkotaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=struktur+rumah+limasan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=struktur+rumah+limasan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Model Rumah Gedek Modern Ada banyak model dan desain eksterior rumah minimalis satu lantai mulai dari rumah minimalis kamar tidur rumah minimalis modern dan rumah minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Sofa Minimalis Unik Lucu Untuk Ruang Tamu Kecil Minimalis Ruang Tamu Rumah Kursi Ruang Keluarga" src="https://i.pinimg.com/originals/1b/08/62/1b08623ef9957f05abe279606cee1ba1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxwt_uNFzkNft1tZdxfeR6n4yaIe0WkbDhbg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana unik untuk keluarga kecil ukuran 6x9 ukuran 5x12 ukuran 7x12 ukuran kecil ukuran 8x12 ukuran 7x9 ukuran 5x7 ukuran 6x12 tapi mewah type 36 tapi indah tampak depan tingkat 2 tapi kelihatan mewah terbaru type 21 tapi bagus tahun 2015 sehat surabaya sekali simpel satu lantai sejuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Home Dsgn Designing Home Inspiration Desain Interior Ruang Tamu Desain Ruang Keluarga Mewah" src="https://i.pinimg.com/474x/fc/49/b3/fc49b3c3eb066c1ff4137eff6656aaaf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSel8VTWk5sr-C-WTvVyhpHFd_qieqZc24rW90nmjpELnv4a5puMP3OHpSnzZtWmbGZr5w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aneka Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sofiayuan Kaskus Melatih Lucu Hiburan" src="https://i.pinimg.com/236x/2c/c2/4e/2cc24e0c9b1379699fef20a4afc59891.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIbs1Z5cJsgdPDz0ddknUykef3KZ2dnQh1cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu jika Anda mempekerjakan ART Anda sanggup menambahkannya kamar tidur tambahan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wa 081 225 969 687 Paling Bagus Alamat Toko Anyaman Bambu Hiasan Dinding Palembang Anyaman Bambu Dinding" src="https://i.pinimg.com/136x136/0f/e0/1b/0fe01b4f420fdd0bad7e45178da0ce29.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYJ2KYDYwked23dEqhuM0Lfq3rfyIlgcB_A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini akan kita tunjukkan untuk Anda bagaimana membangun Desain Rumah Gedek Sederhana.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/bagaimana-perkembangan-rumah-adat-pada-era-modern-saat-ini.html"><i>&larr; bagaimana perkembangan rumah adat pada era modern saat ini</i></a>
+                                                                    
+                                        <a href="/autocad-desain-rumah.html"><i>autocad desain rumah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

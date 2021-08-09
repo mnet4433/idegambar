@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Split Level Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Split Level Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/564x/4b/ba/f5/4bbaf58f886e37fb56c8a0332d8bce1d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+split+level+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Split Level Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Split Level Sederhana</strong>. Sirkulasi udara pada rumah split level juga lebih baik karena bentuk ruangannya yang terbuka dan minim sekat. Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1280x720 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/564x/e7/a7/1c/e7a71cce504a9596ec2f5c0d13e1cd1c.jpg" alt="Pin Di Tampak Depan Rumah Minimalis Modern Terbaru" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNcQmEioH1_tRd0qCdVb53nnSzgn2AA5aag';">
+        <figcaption>Pin Di Tampak Depan Rumah Minimalis Modern Terbaru from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Gaya rumah yang dikembangkan oleh Frank Lyold Wright ini mulai diperkenalkan di awal abad ke 20. Desain rumah 2 lantai Desain rumah 2 lantai. Atau secara sederhana bisa dikatakan rumah split level adalah rumah 2 lantai dengan lebih dari 2 ketinggian lantai fungsional.
+    </p>
+    <h3>Rumah yang dibangun dalam 2 lantai ini dibuat memanjang ke belakang.</h3>
+    <p>Dengan kata lain rumah serta denah rumah model ini dapat gampang untuk merapikannya. Ini adalah denah dari rumah yang bertema modern minimalis split level berukuran 7 x 13 M denah ini terdiri dari lantai 1 dan lantai split level atau sebagai lantai atas yaitu. Ruangan tambahan yang terletak di antara lantai 1 dan 2 bisa sobat gunakan sebagai area nongkrong atau bersantai. Ketika memilih desain railing tangga kamu memang harus mempertimbangkan banyak hal termasuk desain interior rumah 15 lantai.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taufiq Wangsa Effendi Di Instagram Bismillah Final Purposed Build Goal Privat House And Office Split Level Floor Rumah Indah Arsitektur Arsitektur Modern" src="https://i.pinimg.com/originals/fd/7d/73/fd7d73cb9fabb88f4a5ce040746345d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST11NJH0MdWIwbQRSbs18X_kZsQ8DC2lKCdg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Desain rumah dengan konsep split level minimalis sederhana yang sudah digunakan banyak orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Tampak Depan Rumah Minimalis Modern Terbaru" src="https://i.pinimg.com/564x/e7/a7/1c/e7a71cce504a9596ec2f5c0d13e1cd1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNcQmEioH1_tRd0qCdVb53nnSzgn2AA5aag';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruangan tambahan yang terletak di antara lantai 1 dan 2 bisa sobat gunakan sebagai area nongkrong atau bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Desain Rumah Idaman Inspirasi Ide Design Rumah 1 Lantai Konsep Minimalis Modern Nuansa Kontemporer Desain Rumah Minimalis Desain Ru Rumah Minimalis Rumah Modern Desain Exterior Rumah" src="https://i.pinimg.com/736x/6c/eb/86/6ceb8683ae28ae555ec1b017807d8906.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIytjZmRrWI1HBjLz_rblr9o-H-lM9aEwPgg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pernahkah Anda mendengar atau bahkan sudah mengetahui desain rumah yang satu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Gambar Rumah Idaman Minimalis Sederhana Terbaru 1 Desain Rumah Minimalis Desain Eksterior Rumah Mewah Rumah Minimalis" src="https://i.pinimg.com/originals/bc/07/03/bc0703d3dd7e3fc3a501f99432e6dbd5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ekx46x8l5NreG45Ifl1vuo6YcRKZgdLhWw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1280x720 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bangun Rumah Dari Desain Ini Cuma Modal 90 Jutaan Mantab Habis Membangun Rumah Denah Rumah Rumah" src="https://i.pinimg.com/originals/3a/32/d8/3a32d8a93ddff66b96c41be254e6471e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs1jd6l8ikxqu80MiIc6aUKt3QAIH8eOLdzg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Masuk ke dalam rumah menuju lorong depan kamar tidur depan dengan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mungil Dengan Split Level Dan Void Lahan 6x12m2 Kode 163 Youtube Rumah Mungil Rumah Denah Rumah Modern" src="https://i.pinimg.com/564x/2e/65/01/2e6501bc68e69602c69278f418575189.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXgCqAwwmAtYMBZEnmDAnrDJaopXQ1-nT_Oj4mhqUgCPHOk0ixBdsn99POBs8yGn1PCM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pernahkah Anda mendengar atau bahkan sudah mengetahui desain rumah yang satu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Ruang Keluarga Interior" src="https://i.pinimg.com/originals/1f/fe/4c/1ffe4c16c0ede0d1a3fecd8e4a9a8313.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJ3q9nf5KQx-GPjXztBB38M0rgJp5Qu6F5qnJsOk4wwrFuke3dp0rZqalIbZCi9YLlQs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruangan tambahan yang terletak di antara lantai 1 dan 2 bisa sobat gunakan sebagai area nongkrong atau bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Design Rumah Minimalis Modern Split Level Youtube Rumah Minimalis Rumah Denah Rumah" src="https://i.pinimg.com/564x/4b/ba/f5/4bbaf58f886e37fb56c8a0332d8bce1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc24xHjoZP7rcDbyEBhdhlA2JzVoEkpo_xtNWAlkr7_i3DuGyzwK3xTsMDOCdv2qCA7MM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penerapan terhadap model tempat tinggal era ini seperti yang dapat kami bahas pada postingan saat ini melibatkan banyak elemen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 4x15 M Dengan 3 Kamar Tidur Ada Taman Depan Dan Belakangnya Youtube Planos De Casas Sencillas Planos De Casas Casa Sencillas" src="https://i.pinimg.com/564x/c2/6a/39/c26a3948772a311c4c2465630affcc33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVgXJLLgF9pG5bnKlI7tijtjEai72BY9tbA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah yang dibangun dalam 2 lantai ini dibuat memanjang ke belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On 085856528717 Jasa Gambar 3d Interior Murah" src="https://i.pinimg.com/originals/46/7e/b6/467eb668e09cdeffcc41d671f28a2398.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGf2BerQIw8XQQeGAZx8KMXbQOtgVJDxy9OQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ini adalah denah dari rumah yang bertema modern minimalis split level berukuran 7 x 13 M denah ini terdiri dari lantai 1 dan lantai split level atau sebagai lantai atas yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x12 Punya Fasilitas Hotel Bintang 5 Kolam Renang Pribadi Youtube Kolam Renang Rumah Desain Rumah" src="https://i.pinimg.com/564x/3c/27/9c/3c279cda3eed74ff0e440fe5bf76dfdc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIAcmUy_XtBdbQBO97X6In5lMAqcH8hRJsIg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Umumnya ketinggian split level.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrvkw4h4ycxhugrk5abb2gb2ie10us Cwiboburbcuqlaa5wwck Usqp Cau" src="/search?q=rumah+split+level+6x12&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+split+level+6x12&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rancangan bangunan split level dapat diterapkan untuk menyiasati lahan berkontur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 7x10 M Split Level 3 Kamar Tidur 1 5 Lantai Dengan Rooftop Youtube Rumah Desain Denah Rumah Kecil" src="https://i.pinimg.com/564x/8c/6e/a1/8c6ea18907128e2fbd3dda977d9c5116.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6QL13tvp8x48YrEQUygj7USpt4imXrzsktSy_8b6vYb--42BAwOQyRRw_mHqVAssmtXs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruangan tambahan yang terletak di antara lantai 1 dan 2 bisa sobat gunakan sebagai area nongkrong atau bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sederhana Modern 1 Lantai Exterior House Renovation House Paint Design Modern House Design" src="https://i.pinimg.com/originals/1c/26/52/1c26527df9ee0f32f8cf466029b289ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVEK18x99l9a67ro1O9hTVhPWGGVhgx4GGGw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gaya rumah split level merupakan varian dari rumah bergaya ranch-style di mana split level memiliki kemampuan pemanfaatan ruang yang lebih baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Rumah Split Level Lahan 7x14m Fashadas De Casas Planos De Casas Disenos De Casas" src="https://i.pinimg.com/originals/8f/53/af/8f53af0748ce68f6edbc34cbfe4cce2d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkjID76RkXXecVoeFYZSW3jKD1GrxMmx9xXFGTN_3-JG-s4SsfaGrB3RDX4U1smrNDUc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lantai 1 ada bagian carportbagasi teras ruang tamu kamar tidur tamu mushola dapur beserta ruang makan dan toilet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Desain Kamar Desain Kantor Rumah" src="https://i.pinimg.com/originals/4e/27/7c/4e277c1b4af270a665237bdfce4eb446.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7iZp2y_uQ4FuHPL1GW-DAY2FRfYnqJm6EL_-FsrPRSQvq6fCKA1tL9jPbkx3vaT_3qNE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bangunan rumah sederhana split level terdiri dari 3 lantai menggunakan sistem Struktur Rangka Pemikul MomenKhususSRPMKuntuk menahan beban gravitasi dan beban gempa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For Home" src="https://i.pinimg.com/564x/78/55/41/78554174fe5a779604f55bf87134dd78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWHPLbr501DIIKSOErYnHYrYHJIYgV0Eelg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika kamu ingin merancang desain rumah split level 8x12 meter yang lebih besar kamu bisa memasang railing kaca.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Youtube" src="https://i.pinimg.com/originals/29/d5/8d/29d58d5af218d517a9f4bd703bbcd540.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSebBO1PipuVVHwkiQl4VKsXDMJYonsuAsVzw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lantai 1 ada bagian carportbagasi teras ruang tamu kamar tidur tamu mushola dapur beserta ruang makan dan toilet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern Minimalist House Split Level 1 5 Floors 8x10 Meters 3 Bedroom 4 B Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/32/d1/0b/32d10bf5d171aa74946969f1d82537b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4PcsL-ZM2ELDMggT-5vJEKxjN2JgGzf0fqg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rancangan bangunan split level dapat diterapkan untuk menyiasati lahan berkontur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Renovasi Rumah Subsidi 2 Lantai Yang Muat Untuk 2 Mobil Desain Rumah 6x10 Orang Kaya Yang Sederhana Youtube Rumah Desain Rumah Renovasi Rumah" src="https://i.pinimg.com/564x/c1/fb/b4/c1fbb416314c66b96f1888f0ff8b697f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcMKlKmgderPewbmYQ7qGMMjx2S_0glR5TgA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika sudah mungkin Anda akan tertarik untuk membangun rumah sederhana Anda dengan model yang satu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di You Tube" src="https://i.pinimg.com/564x/83/7a/77/837a77dfa642c99701924de2df672d4f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLCZfqH43BkHRH-ILT2X6WK7JtpoWruIrqQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lantai 1 ada bagian carportbagasi teras ruang tamu kamar tidur tamu mushola dapur beserta ruang makan dan toilet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wow 27 Gambar Rumah Sederhana Minimalis Di Bagian Belakang Bisa Dimanfaatkan Untuk Dapur Dan Kamar Mandi Aneka Contoh Gambar Rumah Mi Minimalis Desain Rumah" src="https://i.pinimg.com/originals/26/a0/a5/26a0a5523a5009d0d363a20fc8b66bb3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm4dwNyrXdMqJivWcdjLbVJuUQQkPRlxjTnQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ketika memilih desain railing tangga kamu memang harus mempertimbangkan banyak hal termasuk desain interior rumah 15 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x11 Dengan Kolam Renang Ada Mushola Dan Rooftop Juga Youtube Rumah Masa Depan Kolam Renang Desain Rumah" src="https://i.pinimg.com/564x/05/68/c5/0568c5a766ee9f6b52b11c02b9b29bfd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVx15fdiLyulFj_Ud0mHPnIOWcR_6lFSHqg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ini adalah denah dari rumah yang bertema modern minimalis split level berukuran 7 x 13 M denah ini terdiri dari lantai 1 dan lantai split level atau sebagai lantai atas yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Desain Rumah Renovasi Rumah" src="https://i.pinimg.com/originals/a4/51/4e/a4514e675547d2761c3bcaa0fa4733bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoiAQ7k__OMue4vbPRIGU1WVIk0PdVuvuTtq1SySTZKq3z4VDBeTr6Q0LQWQ7a5YjSgBI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah ini dibuat simpel dan dengan gaya yang modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6 X 10 M Dengan 3 Kamar Tidur Youtube Desain Rumah Bungalow Rumah Desain Rumah" src="https://i.pinimg.com/564x/8c/29/1e/8c291eba671e21828217421c22ef15ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfxjxQRLzBNQPiYKBZd0AAa9nsyj97veU-akVQAajpM_qoI-azPDnzM-BgYA8gXbXxDs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruangan tambahan yang terletak di antara lantai 1 dan 2 bisa sobat gunakan sebagai area nongkrong atau bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep6 Inspirasi Desain Rumah Minimalis 6x6 M Split Level Youtube Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/564x/1f/8d/c7/1f8dc7c6c0e392b69a25da5bff60bb3e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC8bc7ZQ1XsalulQO2HT-86rg4jh5hMyCUdOhZYx-uigbpqkd22TBndJfgg8N9HliU4to';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga secara natural masing-masing ruangan dapat berfungsi masing-masing tanpa mengganggu satu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Gambar Rumah Karanganyar Jasa Gambar Rumah Kudus Jasa Gambar Rumah Karawang Di 2020 Rumah Bangunan Rumah Minimalis" src="https://i.pinimg.com/originals/bb/03/50/bb0350a77d1b872a92fb7657a0602944.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ekmXPkBvlwsxiIXsdfBMOfxfnNYOAC0X4A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Masuk ke dalam rumah menuju lorong depan kamar tidur depan dengan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Terbaru Rumah Desain Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/0c/0c/78/0c0c78e7b35b5db278ada783e2924d53.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhU3DL2uhc96iGbkdIQ9CBwL-gR46HYtYMX2nit6EjZMJXdsl_ez_JcpPOSrQu3_TqAU8';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Rancangan bangunan split level dapat diterapkan untuk menyiasati lahan berkontur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+split+level+modern&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+split+level+modern&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah split level selanjutnya berada di Jepang dan berada di lahan sempit ekstrem dengan lebar hanya 18 M saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Split Level Floor Plans Home" src="https://i.pinimg.com/originals/24/82/37/2482371dc4890668ca9007052e0ba655.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGlt9Z4bBpb7WkUmyGby03Rq7ucYtTFmOWaFJUF6XwJPzmmKj6bKLkCFfOMj5Cb_R9wI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Split Level Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wanerawan" src="https://i.pinimg.com/564x/21/0b/e7/210be788562c07fad0072cdce5e25229.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMeOCd_pZXWh02GtCRtPsRg6b_OayRcOG9OQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini dibuat simpel dan dengan gaya yang modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Minimalis Tingkat Sebelah Expo Desain Rumah Gambar Rumah Minimalis Tingkat Sebelah 60 Desain Rumah Mi Desain Rumah 2 Lantai Desain Rumah Rumah" src="https://i.pinimg.com/originals/2f/36/cf/2f36cf574639114907a492cbc7c1c6c7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxnvvilq-C-DzacRTE5nC6amRq6vfuGlSZGw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Split Level merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Desain Rumah Minimalis Sederhana 1 Lantai 2 Lantai" src="https://i.pinimg.com/564x/e7/a6/5f/e7a65f1d92322e0c0d4594b686f4b194.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtpcckaXblPUhZy7wXrVrWLdmfBZc3m5sIA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Split Level Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Split Level Terbuka Di 5x13 M2 Rumah Desain Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/a0/23/66/a0236682b6c578e3cb9ebd73a1f8a853.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxXBGKmj640VtVyqRMX4ER6f8SORctbO7xb0cKnY_3nmdC2BPyxkM-D4kY3c_UAMWUtm8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ruangan tambahan yang terletak di antara lantai 1 dan 2 bisa sobat gunakan sebagai area nongkrong atau bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 5x10m Dengan Roof Garden Dan Carport Youtube Desain Desain Rumah Rumah" src="https://i.pinimg.com/originals/89/2e/4b/892e4b80f364d9430328d838a008a9ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlQZotF-wB1Zemdc-LU_F0_WnQ3c_8Z-swg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Split Level dengan lebar hanya 18 M YUUA Architects Associates.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Contoh Proposal Usaha Jasa Desain Rumah Www Jasa Desain Rumah Com Rumah Rumah Minimalis Desain Interior Rumah" src="https://i.pinimg.com/originals/69/70/0e/69700ef5f13ccea65888c44c6f79d33e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE6NXGTAGqzoL-yCTTwigIsHaJ_IjZ8Rw6ng';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gaya rumah split level merupakan varian dari rumah bergaya ranch-style di mana split level memiliki kemampuan pemanfaatan ruang yang lebih baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gaya Rumah Minimalis 2 Lantai Type 36 Cat Rumah Eksterior Rumah Minimalis Gaya Rumah" src="https://i.pinimg.com/originals/0a/a5/5e/0aa55e5ec6f6be6e404d57d4a1091d1f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcRELrCNvbyryidRAodwiic47ZLSLfx-fqLA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>2018 Jan 5 - Make an offer on this domain and quickly take possession of it with a registrar of your choice.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/d3/b0/fc/d3b0fce588e4c3a644e32d5913fb9f23.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRJJ4D1m-Qjy2eYBXU3mgoUZkLTPLRWYCqrH9HOpEBN6_LPYO96PUmRmTFXbFTmfHaePI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Atau secara sederhana bisa dikatakan rumah split level adalah rumah 2 lantai dengan lebih dari 2 ketinggian lantai fungsional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Split Level Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/4d/30/a9/4d30a96ab8a46a506dc4ef234fc63fde.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpMyzTtC-JKPT8fCpsn0LssvJOROT63IGXeE4nFlyJbrXwmSsD5xTSNHJ6EX-rktr9Np8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gaya rumah split level merupakan varian dari rumah bergaya ranch-style di mana split level memiliki kemampuan pemanfaatan ruang yang lebih baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Split Level Rooftop Kolam Renang Desain Rumah 7x8 Youtube Kolam Renang Rumah Desain Rumah" src="https://i.pinimg.com/564x/5f/f3/f4/5ff3f41048e63ee3c1ebf0c8da7defbe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01ZgdBuxRM0jnFaini1WPm70wyVaaSDWZUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan luas lahan 6 x 10 tentu dapat dikategorikan sebagai ukuran rumah mungil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Split Level Ukuran 6x12m Lengkap Rooftop Youtube Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/564x/fa/06/46/fa0646f1c51ea842f3ab66d877d5e2a5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSowRK-X_RBveOjIQLsWWDoJ76XfYrVmqk5dHPw753xtaYzeCyosyZ5yFPhVTjk8js-2sU';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Dengan kata lain rumah serta denah rumah model ini dapat gampang untuk merapikannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Bawah Tanah Home Fashion Desain Rumah" src="https://i.pinimg.com/originals/cd/9a/66/cd9a66a26731dce37385a8b74caa86b0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlKT-0BEGop8CnhTN_ERootissB83khsvDssDZE5FBot1uONPFwr52zErQyIpmEaacuU4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gaya rumah yang dikembangkan oleh Frank Lyold Wright ini mulai diperkenalkan di awal abad ke 20.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="75 Contoh Gambar Model Rumah Minimalis Sederhana Renovasi Rumah Net Exteriordesignresidence Eksterior Modern Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/43/1b/d5/431bd5f2d664d009b81c19c41ac7f527.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM232JtVBrnzCfSRNr2iSjMd-7zg1CmF45vg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Pernahkah Anda mendengar atau bahkan sudah mengetahui desain rumah yang satu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Variasi Rumah Minimalis Tampak Depan Disertai 60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebu House Designs Exterior House Exterior House Front" src="https://i.pinimg.com/originals/e2/89/ca/e289ca54e588537cfa3f761a487872eb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTS3P4AI6OrLSKLqmtnOLforfXw4E-si3dOA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah yang dibangun dalam 2 lantai ini dibuat memanjang ke belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mungil 2 Lantai 5x12m Kode 143b Youtube Rumah Desain Rumah Desain Rumah Mungil" src="https://i.pinimg.com/564x/89/cd/63/89cd6331967c38efcddf5fc3fb6cc7fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VpQWkU0QLn5vaVN8zHvCl_wEpDgwUbocyg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah minimalis denah rumah minimalis 1 lantai ukuran 6x12 gambar denah rumah denah rumah 6x9 denah rumah ukuran 6x9 denah rumah 6x9 3 kamar tidur denah rumah 3 kamar ukuran 6x12 denah rumah 3 kamar denah rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 2 Lantai 7x15 Dengan Kolam Renang Dan 4 Kamar Small House With Pool Youtube Desain Eksterior Rumah Kolam Renang Desain Rumah" src="https://i.pinimg.com/originals/a4/40/15/a44015ed984e0cd6b52fa979ef7c2456.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ZwO3qgUfSqYNJCWUJrnDFdsGz7hwjfyyADYwTnYt5KfB9xwS6cCbz7ztfSj4Fcutwsw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Agar terkesan luas hindarilah membuat sekat disemua tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On House Plans" src="https://i.pinimg.com/564x/9c/64/36/9c6436721fb89cb7a61ae16353bca7cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhRPGBjG398hZtftTAuVTFqYoCEyJioJLgCUxxYqqSMtOvOlyAHGkI3meRW9300vXu2lk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika kamu ingin merancang desain rumah split level 8x12 meter yang lebih besar kamu bisa memasang railing kaca.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/ca/6a/1d/ca6a1dabd0af8d541eb07d0b7428ce98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAN5suMYJyF5EhpMdk1bg4hDGU7GK2_E3Pffj2m4SqtXTpiVyBez7R5hmFf0zjB0Ato28';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sirkulasi udara pada rumah split level juga lebih baik karena bentuk ruangannya yang terbuka dan minim sekat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Eps 27 Desain Rumah Modern Minimalis 9x12 3 Kamar Tidur Youtube Desain Rumah Rumah Modern Rumah" src="https://i.pinimg.com/564x/5c/09/04/5c0904996b73380f0171ab556b7fe1f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBFO5amZCUvNaBLp3Q76i3lv4AiK3l-Ax0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini juga dibuat panggung dengan tangga yang terbuat dari kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Gambar Denah Rumah Minimalis 2 Lantai Ukuran 5x9 Terbaik Rumah Minimalis 2 Lantai Ukuran 5x9 Huniankini Pin Di Ho Rumah Minimalis Rumah Home Fashion" src="https://i.pinimg.com/originals/f5/7d/1c/f57d1c80176d20f42f770d64e3498252.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMvDb_s3qzJudKP83N1drE97zbuXsY1nDmY2zIJ3bLjISTLVfqFUkS10l-3-E4ZwW_XIk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruangan tambahan yang terletak di antara lantai 1 dan 2 bisa sobat gunakan sebagai area nongkrong atau bersantai.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-kayu-bali.html"><i>&larr; rumah kayu bali</i></a>
+                                                                    
+                                        <a href="/rumah-kayu-bogor.html"><i>rumah kayu bogor &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

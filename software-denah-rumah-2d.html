@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Software Denah Rumah 2d
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Software Denah Rumah 2d",
+  "datePublished": "2021-08-09",
+  "image": "https://4.bp.blogspot.com/-S7Oyro8sQz0/T878wKRPn9I/AAAAAAAADA4/oCvdJravrDw/s1600/1.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=software+denah+rumah+2d",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Software Denah Rumah 2d
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Software Denah Rumah 2d</strong>. Buat kamu yang baru mengenal perangkat lunak CAD mungkin penggunaan Chief Architect akan tergolong rumit bagimu. Software desain ini mendukung rancangan 2D.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://4.bp.blogspot.com/-bbbAUOQcdr4/Wz49UCP1SyI/AAAAAAAAC6k/EZWdKZfDDPowhdTHvHxFxEp7IxdcANxdACLcBGAs/s1600/freecad_software%2Bdesain%2Barsitektur%2Bgratis%2Bterbaik%2Buntuk%2Bwindows.png" alt="4 Software Desain Arsitektur Gratis Terbaik Untuk Windows Semutsujud Blog Media Teknologi" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCjQySyD7QQwFGdI4JhToD_KlHOxkjlPVkVQ';">
+        <figcaption>4 Software Desain Arsitektur Gratis Terbaik Untuk Windows Semutsujud Blog Media Teknologi from semutsujud.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Software desain rumah 3D lainnya yang bisa kita pakai adalah Home Designer Architectural. Software Desain Rumah yang ini menawarkan hasil desain yang detail sampai pada tataran interior rumah. Sketchup memiliki tool yang cukup sederhana namun Aplikasi ini dapat disandingkan dengan software desain gambar 3D lainya contohnya untuk membuat mebel kendaraan desain rumah dan lainya.
+    </p>
+    <h3>Aplikasi desain rumah selanjutnya yaitu MyVirtualHome merupakan software desain yang berkualitas dan kaya akan fitur untuk merancang bangunan berbentuk 3D dan rumah.</h3>
+    <p>Berbekal lebih dari 14ribu sampel denah untuk rumah dan kebun Anda bisa dengan bebas meluapkan kreativitas dalam pembuatan desain rumah. Buat kamu yang baru mengenal perangkat lunak CAD mungkin penggunaan Chief Architect akan tergolong rumit bagimu. Terakhir ada ArchiCAD yang diklaim menjadi software all in one jika dibandingkan dengan beberapa software desain rumah lainnya. Software Gratis Desain Rumah 3D Sebaiknya sebelum membuat rancangan bangunan rumah secara nyata real Anda tuangkan dulu ide pemikirannya untuk membuat rancangan bangunan secara virtual.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Ini Mudahkan Rancang Rumah Impian" src="https://i0.wp.com/f1-styx.imgix.net/article/2020/01/14113307/ap4-aplikasi-desain-rumah-floor-plan-creator.png?resize=926%2C579&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxtVq4tACRjrNbCRPjdG4fpjcGQb5QF7H3PDafi_Is21cQcSAfgRpkVbcrlKWvFoOV2Us';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Autodesk Homestyler merupakan software yang dirancang untuk membuat desain rumah 2D dan 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Desain Rumah 3d Offline Gratis Terbaik Pc Sweet Home 3d Downloadsoftwaregratisan Com" src="https://www.downloadsoftwaregratisan.com/wp-content/uploads/2013/11/286621.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbrlxeBEmaLDzoUr0U0r5eTlo98bylFbhVdMBn25sPndxfjt56wkj-GEPG3LBhi-Np9c';" />
+        <small>Source: www.downloadsoftwaregratisan.com</small>
+                    <p>Home Designer Suite adalah salah satu software perancangan rumah terbaik yang dapat membantu Anda merencanakan dan mendesain proyek interior dan eksterior dalam gambar 2D dan 3D dengan cepat dan mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Top 10 Software Desain Rumah Terbaik 2021 Untuk Pc" src="https://www.yatekno.com/wp-content/uploads/2018/01/AutoCAD-Architecture-YaTekno-300x169.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnkTGx5pXsM24vCPKRWdaAfkaAnw1SOfU1sA';" />
+        <small>Source: www.yatekno.com</small>
+                    <p>Seperti untuk mendesain sebuah banguan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Daftar Software Desain Rumah Terbaik Qwords" src="https://qwords.com/blog/wp-content/uploads/2020/10/Software-Desain-Rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS3cFVHXtk6cpVfEnARbGZAb89OtH5TCoyOw';" />
+        <small>Source: qwords.com</small>
+                    <p>Berbekal lebih dari 14ribu sampel denah untuk rumah dan kebun Anda bisa dengan bebas meluapkan kreativitas dalam pembuatan desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Aplikasi Desain Rumah Android Terbaik Berasa Desainer Betulan" src="https://blogpictures.99.co/Aplikasi-Desain-Rumah-Android-Planner-5D.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_y1aoZfJ-O5cVcOPdcQqJuoba9uPniR_t5w';" />
+        <small>Source: www.99.co</small>
+                    <p>Hanya dengan menggunakan ArchiCAD Anda bisa dengan mudah membuat desain bangunan dalam format 2D atau 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Aplikasi Desain Rumah Pc Terbaik Untuk Pemula Di Tahun 2020" src="https://lh3.googleusercontent.com/A3Kgg-lipQbCa4ZP7QL71jDTeoy1EnQY9DWJexC9MW-crYp5OBmhFG3AqS1V4pDFrorijD5KzGj1duQzD2tMp-J_8T1aeopxEtv-4ghsdNN9eYOplQRq9yo3Ps4A9Ztx8bJ-aP0" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSdgXmI9Lw77WuAFA7G-aAHz7iSPUmFnoScxyQGnybg7_D7QbB192bf5VyuNQZgqPORwI';" />
+        <small>Source: www.99.co</small>
+                    <p>Hanya dengan menggunakan ArchiCAD Anda bisa dengan mudah membuat desain bangunan dalam format 2D atau 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Ini Mudahkan Rancang Rumah Impian" src="https://i2.wp.com/f1-styx.imgix.net/article/2020/01/14113132/ap3-aplikasi-desain-rumah-5d.png?resize=1000%2C563&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gy1SYC976x66y2Vi57oHf-1oE9hvI3XPOw';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Sketchup memiliki tool yang cukup sederhana namun Aplikasi ini dapat disandingkan dengan software desain gambar 3D lainya contohnya untuk membuat mebel kendaraan desain rumah dan lainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Software Desain Rumah Pc Offline Ringan Untuk Pemula" src="https://www.berakal.com/wp-content/uploads/2019/02/software-desain-rumah-simple.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXcqCOBVH8bBqrIcBcwlxbXHshH-Dpae1mmQ';" />
+        <small>Source: www.berakal.com</small>
+                    <p>Apakah anda tertarik dengan contoh denah rumah autocad 2d dengan gambar dibawah ini semoga bisa menjadi pilihan dekorasi dan desain untuk mempercantik rumah andaInformasi yang dapat kami sampaikan kali ini terkait denah rumah dengan judul artikel 50 Contoh Denah Rumah Autocad 2d Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Software Gratis Terbaik Untuk Desain Rumah Home Designer 3d Fitur Lengkap Info Menarik" src="https://info-menarik.net/wp-content/uploads/2016/09/Software-Gratis-Desain-Rumah-3D-1-620x330.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrHkoeXQjvTgLybfVfuuQMR48sIJ95e9kUA';" />
+        <small>Source: info-menarik.net</small>
+                    <p>Software desain rumah gratis inspirasi rumahku cache mirip dengan software desain rumah yang nantinya akan kita semua perubahan desain interior rumah Software Desain Rumah dalam Software Desain Rumah rencana namun dapat membuat merancang desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Keuntungan Memakai Software Desain Rumah Rumah Diy" src="https://i2.wp.com/rumahdiy.com/wp-content/uploads/2014/12/software-desain-rumah-2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLOOw1FUzxPxtOy31ACBvKt9-ZO745TjoGcA';" />
+        <small>Source: rumahdiy.com</small>
+                    <p>Contohnya seperti Planner 5D Houzz Interior Design Ideas Home Design 3D Design Home Home Planner for IKEA dan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Software Desain Rumah Terbaik Untuk Pc Saat Ini" src="https://androbuntu.com/wp-content/uploads/2018/05/Software-Desain-Rumah-Terbaik-7.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiA9i0gLqWnQ5OuWVgpTqHHJBo1L1C9Ql1Aw';" />
+        <small>Source: androbuntu.com</small>
+                    <p>Aplikasi desain rumah selanjutnya yaitu MyVirtualHome merupakan software desain yang berkualitas dan kaya akan fitur untuk merancang bangunan berbentuk 3D dan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Software Desain Rumah Gratis Rumah Shaleh" src="https://3.bp.blogspot.com/-LWm0YJVssoQ/T-Xg0CCtiTI/AAAAAAAAAGY/5ZjKWhcVSmw/s320/software-design-rumah-Sweet+Home+3D.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSylB-D2gP5jt1GHd4Mvp-LDfNYPTpbWsMInBHfIvE7pAQagCD02cBNFwQ-qoHUdnNXdPs';" />
+        <small>Source: rumahshaleh.com</small>
+                    <p>Salah satunya tentu saja ada Total 3D Home Landscape and Deck yang bisa mewujudkan rumah impian untuk Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Aplikasi Desain Rumah Pc Terbaik Untuk Pemula Di Tahun 2020" src="https://lh6.googleusercontent.com/kH17Ifa7B7lEAVOzICzqmDBJwxSNgC-dMS8zRC9q47mCEX_f_BfjRsIazmrgzuczisBz38gCsjXOqDC2Otq2gb5vnyQo006r9CeWB6VklS6trYZy6nr8pBB_ie2Cnz0RqdNiKFw" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Li3g7WTgtiYHVI_a6IApPIuSDClhBlw9vw';" />
+        <small>Source: www.99.co</small>
+                    <p>Anda sangat disarankan mencoba aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Software Desain Atap Rumah Cek Bahan Bangunan" src="https://i0.wp.com/www.berakal.com/wp-content/uploads/2019/02/aplikasi-desain-rumah-pc-offline-gratis.jpg?ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIv0SN8-CR_yAWX9A_aXLjiGi44o5CNcnSMg';" />
+        <small>Source: cekbahanbangunan.com</small>
+                    <p>Individual Software merupakan salah satu pengembang aplikasi dengan protofolio produk yang melimpah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Software Desain Rumah Terbaik Dan Terbaru Untuk Pc" src="https://cdn.keepo.me/images/post/lists/2020/04/28/main-list-image-930df821-8df9-4a4a-8587-ca011d6adea5-1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhbCdWB2wqc563ssF3hLB6rBMnylPnrr6SaLPIf4PWIXNCGwdgma7mygOAmiGciDavEA';" />
+        <small>Source: keepo.me</small>
+                    <p>Software Desain Rumah yang ini menawarkan hasil desain yang detail sampai pada tataran interior rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Software Desain Denah Rumah Gratis Terbaik Centerklik" src="https://www.centerklik.com/wp-content/uploads/2019/11/Sketchup-software-denah-rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEZDOcBd7qplrjT-Bk7R4LXiSUSNMnuwnZkzfqD4Na3BOqltgqcIXj2lX7gTAW6PfMahw';" />
+        <small>Source: www.centerklik.com</small>
+                    <p>Home Designer Suite adalah salah satu software perancangan rumah terbaik yang dapat membantu Anda merencanakan dan mendesain proyek interior dan eksterior dalam gambar 2D dan 3D dengan cepat dan mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Software Desain Rumah Terbaik Untuk Pemula Dan Profesional Klik Refresh" src="https://1.bp.blogspot.com/-Wd_mOnGMnWs/Xjvnm6b8oGI/AAAAAAAABvU/Yfe8gGsuzoAy-rW7w7N0x1V-cMOjpcm8gCLcBGAsYHQ/s640/software-desain-rumah-sweethome3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbLCnZicXDTIka-F44yJemvB_vkMbXshsgstfmXmZQ4BgqkL1bj7fwU7NtuAwU1-2Ko9U';" />
+        <small>Source: www.klikrefresh.com</small>
+                    <p>Umumnya banyak yang mengeluh terkait dengan software dan spesifikasi komputer untuk membuat rancangan bangunan virtual.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Software Desain Rumah Terbaik Untuk Pro Dan Pemula" src="https://www.androidponsel.com/wp-content/uploads/2020/09/Software-Desain-Rumah.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTYpQg4IX0C1l14uW-N47MDeC_ZpH_QBP1Q';" />
+        <small>Source: www.androidponsel.com</small>
+                    <p>Berbekal lebih dari 14ribu sampel denah untuk rumah dan kebun Anda bisa dengan bebas meluapkan kreativitas dalam pembuatan desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan 7 Aplikasi Desain Rumah Terbaik Untuk Pc" src="https://ngelag.com/wp-content/uploads/2017/10/Home-Designer-Suite.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwX5taM7PBt9xC0ifBT29owtaJFGDze-_SZpxypaGfuYxQmW0ILx3vwkdEoYAvb1I2opw';" />
+        <small>Source: ngelag.com</small>
+                    <p>Autodesk Homestyler merupakan software yang dirancang untuk membuat desain rumah 2D dan 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Software Desain Rumah 3d Terbaik Pc Idnrepublika Com" src="https://1.bp.blogspot.com/-uRVwcSfuY54/XqZ7uAookhI/AAAAAAAABaU/zdzmaEM4Jpw87zDq0GlFe3apGRMI41vYgCLcBGAsYHQ/w1200-h630-p-k-no-nu/software%2Bdesain%2Brumah%2B3d%2Bterbaik.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZw1r4sxtl8hGSyDB8U2cJiOgy_yCWVRF4w';" />
+        <small>Source: www.idnrepublika.com</small>
+                    <p>Buat kamu yang baru mengenal perangkat lunak CAD mungkin penggunaan Chief Architect akan tergolong rumit bagimu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Software Desain Denah Rumah Gratis Terbaik Centerklik" src="https://www.centerklik.com/wp-content/uploads/2019/11/floorplanner-software-denah-rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQVLm77jk9SnUhWzWIbPFDY1gND_WWiRpCWeZlcRhFqjZvAl1OgUYhKCPCYYlYnJnA8J0';" />
+        <small>Source: www.centerklik.com</small>
+                    <p>Umumnya banyak yang mengeluh terkait dengan software dan spesifikasi komputer untuk membuat rancangan bangunan virtual.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Untuk Rancang Rumah Impianmu" src="https://glints.com/id/lowongan/wp-content/uploads/2020/05/homebyme-21437-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGCSg_jhUe8AeKSzmV9-jzMYu0yqodUBqYQ';" />
+        <small>Source: glints.com</small>
+                    <p>Dengan menggunakan MyVirtualHome Anda bahkan bisa menambahkan beragam furniture.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Software Desain Rumah Terbaik Untuk Pc Saat Ini" src="https://androbuntu.com/wp-content/uploads/2018/05/Software-Desain-Rumah-Terbaik-18.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkU5O8Ulbd1mTcV7cpzE-uTDrchhmferF96g';" />
+        <small>Source: androbuntu.com</small>
+                    <p>Anda sangat disarankan mencoba aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 2d" src="https://storage.googleapis.com/fastwork-static/560c9f9d-fe30-4439-a36d-51ce3c543ed4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDttqzTnCwt1PP9hwVaITmMePansdbe8YwGQ';" />
+        <small>Source: fastwork.id</small>
+                    <p>Salah satunya tentu saja ada Total 3D Home Landscape and Deck yang bisa mewujudkan rumah impian untuk Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan 7 Aplikasi Desain Rumah Terbaik Untuk Pc" src="https://ngelag.com/wp-content/uploads/2017/10/Desain-Home-Landscape-Premium-Punch.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXvUhfEvxS0kpFYA2lA1M31KEhYHglxh1c3MVM5a22u6rTIiVk2KjCuzmMn4I_YRvq6w';" />
+        <small>Source: ngelag.com</small>
+                    <p>Software desain rumah 3D lainnya yang bisa kita pakai adalah Home Designer Architectural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Aplikasi Desain Rumah Pc Terbaik Untuk Pemula Di Tahun 2020" src="https://lh6.googleusercontent.com/P0RaC3BOk89z4mk8m58u2GkYwIuiE8rNMpgPazhn2PPE6_ojLJjyaFhYhnQi26D3Ac13YYSqnpEJ7MhaVKYJs2SNh6aMvCCVz7hMXIdCNn_5MRB0aNfCqWJof8rb4vLmhrkb_l4" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuSaULeBsWe89d0_oz-HT-ozmuWDTRsrCU8w';" />
+        <small>Source: www.99.co</small>
+                    <p>Umumnya banyak yang mengeluh terkait dengan software dan spesifikasi komputer untuk membuat rancangan bangunan virtual.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Top 10 Software Desain Rumah Terbaik 2021 Untuk Pc" src="https://www.yatekno.com/wp-content/uploads/2018/01/Chief-Architect-YaTekno-300x201.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_8asZYDBSEztM8zZ-PrBooBDUiZpYN5idYQ';" />
+        <small>Source: www.yatekno.com</small>
+                    <p>Sketchup memiliki tool yang cukup sederhana namun Aplikasi ini dapat disandingkan dengan software desain gambar 3D lainya contohnya untuk membuat mebel kendaraan desain rumah dan lainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Software Desain Rumah Pc Offline Ringan Untuk Pemula" src="https://www.berakal.com/wp-content/uploads/2019/02/software-desain-rumah-online-free.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMduw8XDJyUoJ2_CkQyIUjM7L9oDZPqTeiBg';" />
+        <small>Source: www.berakal.com</small>
+                    <p>Software desain ini mendukung rancangan 2D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Ini Mudahkan Rancang Rumah Impian" src="https://f1-styx.imgix.net/article/2020/01/14113429/ap5-aplikasi-desain-rumah-magic-plan.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ2d9VB8DeLUARM-aIBoVLk2UNA-1tNu_9QwbXZvwcevPFUM619Bw3vg4kX8sKsKdB8ec';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Jika dahulu arsitek menggambar desain bangunan secara manual menggunakan kertas dan pensil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsesfxogcggpoj 1oxxzpo2g2abkhoxw3dt3armdofqcz9nlnns Usqp Cau" src="/search?q=aplikasi+desain+rumah+android&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=aplikasi+desain+rumah+android&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Buat kamu yang baru mengenal perangkat lunak CAD mungkin penggunaan Chief Architect akan tergolong rumit bagimu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Pc Terbaik 2021 Bisa Untuk Pemula" src="https://laptopnesia.com/wp-content/uploads/2019/06/Aplikasi-Desain-Rumah-PC-2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVyI1t2HAod0f8C9utnXPL9f2lnpxH4r5uEn3B4HjlCFw9XS9_cRJoUdj-ZHgqBWyEpH4';" />
+        <small>Source: laptopnesia.com</small>
+                    <p>Software Desain Rumah yang ini menawarkan hasil desain yang detail sampai pada tataran interior rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Aplikasi Arsitek Terbaik Di Android" src="https://jurnalapps.co.id/assets/img/content/1524661543_1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbxjSNkrMjc0DPX9nKgUZr0dHrpi0t_2YoQ';" />
+        <small>Source: jurnalapps.co.id</small>
+                    <p>Software Desain Rumah untuk PC dan Laptop Seiring dengan perkembangan teknologi saat ini banyak orang dimudahkan dengan beragam aktivitas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan 7 Aplikasi Desain Rumah Terbaik Untuk Pc" src="https://ngelag.com/wp-content/uploads/2017/10/Energi3D.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMaRViqAe96XuC75aNX6ZusSMkFe6utRoxSw';" />
+        <small>Source: ngelag.com</small>
+                    <p>Anda sangat disarankan mencoba aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan 7 Aplikasi Desain Rumah Terbaik Untuk Pc" src="https://ngelag.com/wp-content/uploads/2017/10/TurboFloorPlan-3D-Pro.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBWaQLVuSrFt3SEjAv8uxwLOi_XfRvk0fa4fNySg3q2VOrFsGI7uXBsAnbURNyQ8ii44';" />
+        <small>Source: ngelag.com</small>
+                    <p>7 Aplikasi Desain Rumah Terbaik Untuk PC 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Software Desain Denah Rumah Gratis Terbaik Centerklik" src="https://www.centerklik.com/wp-content/uploads/2019/11/Roomle-software-denah-rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrV_Jpjnw0ZeqVdcfYH6ZZKcciSsKhcR2nUw';" />
+        <small>Source: www.centerklik.com</small>
+                    <p>Selain harus mempunyai keahlian khusus dalam bidang desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Untuk Menggambar Desain Rumah 2d Dan 3d Paling Mudah Dan Ringan Pandbis" src="https://4.bp.blogspot.com/-C00x4B6_FUQ/XE8jeooDAjI/AAAAAAAAAQw/m-Vc1zU5Ui8-PBVxaJe6EQpzWQ1wwOwXACLcBGAs/w1200-h630-p-k-no-nu/desain%2Brumah.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHretC1Om1vJVkDAGfu7CpyWidAh6uRf1mj9Km8Kzq0tuLdJ6MA8-iEFOZEBR6cxzZY4o';" />
+        <small>Source: www.pandbis.com</small>
+                    <p>Tak hanya digunakan oleh mereka yang sudah professional namun software tersebut juga bisa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Software Desain Denah Rumah Gratis Terbaik Centerklik" src="https://www.centerklik.com/wp-content/uploads/2019/11/Smartdraw-software-denah-rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2M-TreLTn4kGrnIcxJQll1A7KopaUsBn0Gv08Vcxioqvwf_F4CutQLfGnNpl7TRaq20';" />
+        <small>Source: www.centerklik.com</small>
+                    <p>Buat kamu yang baru mengenal perangkat lunak CAD mungkin penggunaan Chief Architect akan tergolong rumit bagimu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Software Desain Rumah Terbaik Untuk Pc Dan Laptop Ilmuproperti Com" src="https://ilmuproperti.com/wp-content/uploads/2020/09/Chief-Arsitek.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCWFxr-fswvJl1kJiCtCvch8Jks71jMTY_6e64t6t4fI81PVQJSDKiND38_GsalLhZHa8';" />
+        <small>Source: ilmuproperti.com</small>
+                    <p>Software Desain Rumah untuk PC dan Laptop Seiring dengan perkembangan teknologi saat ini banyak orang dimudahkan dengan beragam aktivitas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Software Gratis Terbaik Untuk Desain Rumah Home Designer 3d Fitur Lengkap Info Menarik" src="https://info-menarik.net/wp-content/uploads/2016/09/Software-Gratis-Desain-Rumah-3D-2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPe7hYIwBKsFiE5dSlCRqwwwJPZcyuLMhrotomWpv8dPPhq8a7lVLT6WtnD3VONk5XvhQ';" />
+        <small>Source: info-menarik.net</small>
+                    <p>Autodesk Homestyler merupakan software yang dirancang untuk membuat desain rumah 2D dan 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Software Desain Rumah Pc Offline Ringan Untuk Pemula" src="https://www.berakal.com/wp-content/uploads/2019/02/software-desain-rumah-online.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfgvllEIGeRK44NCuDioGIcA3HJqX4r5fVSrfLoiXi4PTcbox6WqekJNGkubsgbDAg9I8';" />
+        <small>Source: www.berakal.com</small>
+                    <p>Sketchup memiliki tool yang cukup sederhana namun Aplikasi ini dapat disandingkan dengan software desain gambar 3D lainya contohnya untuk membuat mebel kendaraan desain rumah dan lainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Software Desain Rumah Terbaik Dan Terbaru Untuk Pc" src="https://cdn.keepo.me/images/post/covers/2020/04/28/main-cover-image-04811103-53a3-44a3-8965-fa892fda6d67.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjQLA1bwpUDmuqO_WGFTe2Tib-ytH_wsrN0Ergvtwpyd-hojgm8F9cy8EjDiS3PpbFq8';" />
+        <small>Source: keepo.me</small>
+                    <p>Contohnya seperti Planner 5D Houzz Interior Design Ideas Home Design 3D Design Home Home Planner for IKEA dan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Dengan Fitur Lengkap Dan Gratis Jalantikus Com Line Today" src="https://obs.line-scdn.net/0hw-XKxfZHKAJlMgVY4z5XVV9kK21WXjsBAQR5HDVcdjYbADpdClA0bEYwdTdIBm9cDFdvY0Y1MzNBBGcHWlE0/w644" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLd2eLqFrwLrKdKBdxqDP8Wbju-cLH3vR58w';" />
+        <small>Source: today.line.me</small>
+                    <p>Kini mereka dapat mendesain bangunan dengan bantuan Software Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Di Hp Android Dan Ios Terbaik Bikin Denah 3d Gratis Suatekno Id" src="https://suatekno.id/wp-content/uploads/2019/05/aplikasi-desain-rumah-untuk-hp-android-ios.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzERPrxr66pcrqZFa6WyILCsCySg6LWsNdGw';" />
+        <small>Source: suatekno.id</small>
+                    <p>Seperti untuk mendesain sebuah banguan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Denah Rumah 2d Tahun Ini Denahom" src="https://4.bp.blogspot.com/-S7Oyro8sQz0/T878wKRPn9I/AAAAAAAADA4/oCvdJravrDw/s1600/1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScj0gkYFHS9fYQ62_0cn2IZ4LN9ia0wJBt6U5nrWkN6cVTJVyPWu-S_A7gq9TS4aaed4Q';" />
+        <small>Source: denahom.blogspot.com</small>
+                    <p>Software desain ini mendukung rancangan 2D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4 Software Desain Arsitektur Gratis Terbaik Untuk Windows Semutsujud Blog Media Teknologi" src="https://1.bp.blogspot.com/-DGrgcVloi2A/Wz48sfhrjjI/AAAAAAAAC6U/9Y93cPqKYTMSrprGXXfm-tcIihEwsGvfgCLcBGAs/s1600/software%2Bdesain%2Barsitektur%2Bgratis%2Bterbaik%2Buntuk%2Bwindows.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZvtrIjNd1S5aWWv-6BFFqV6gEuRyeObAk2A';" />
+        <small>Source: semutsujud.blogspot.com</small>
+                    <p>Software desain rumah 3D lainnya yang bisa kita pakai adalah Home Designer Architectural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan 7 Aplikasi Desain Rumah Terbaik Untuk Pc" src="https://ngelag.com/wp-content/uploads/2017/10/Home-Designer-Architectural.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4DVLJEjwQXcUiIAa3UOqri-_LQTVqMQNtQ';" />
+        <small>Source: ngelag.com</small>
+                    <p>Kita bisa dengan mudah membuat desain rumah idaman kita baik dengan format 2D atau 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrw6tw6eh9q3wnnrgwnweg9xukdmozhdc7etdukrfji Du3xtnt Usqp Cau" src="/search?q=sketsa+desain+rumah+3d&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=sketsa+desain+rumah+3d&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Software Home Designer Suite ini bisa kita pakai untuk membuat desain 2D maupun 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Top 10 Software Desain Rumah Terbaik 2021 Untuk Pc" src="https://www.yatekno.com/wp-content/uploads/2018/01/ArchiCAD-YaTekno-300x184.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9-4TDcWgOARvRFkwMFmO0TN1CbvKja1TXg';" />
+        <small>Source: www.yatekno.com</small>
+                    <p>July 22 2014 Uncategorized rppdansilabusagamasmakela5mxj5.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4 Software Desain Arsitektur Gratis Terbaik Untuk Windows Semutsujud Blog Media Teknologi" src="https://4.bp.blogspot.com/-bbbAUOQcdr4/Wz49UCP1SyI/AAAAAAAAC6k/EZWdKZfDDPowhdTHvHxFxEp7IxdcANxdACLcBGAs/s1600/freecad_software%2Bdesain%2Barsitektur%2Bgratis%2Bterbaik%2Buntuk%2Bwindows.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCjQySyD7QQwFGdI4JhToD_KlHOxkjlPVkVQ';" />
+        <small>Source: semutsujud.blogspot.com</small>
+                    <p>Software Home Designer Architectural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Terbaik Saat Ini 2020 10terbaik Com Tekno" src="https://2.bp.blogspot.com/-0odTAJORBz0/WEH0ioA9QXI/AAAAAAAAA_E/YbkZBbQUyRA0Bw1lxizmTCJtwus3trxBwCLcB/s1600/floor%2Bplan%2Bcreator.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRILPa96p7l77S4eN9NY-wwYF2mPwCt_5Wgtw';" />
+        <small>Source: tekno.10terbaik.com</small>
+                    <p>Software Desain Rumah 2d Gratis.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/contoh-ventilasi-rumah-minimalis.html"><i>&larr; contoh ventilasi rumah minimalis</i></a>
+                                                                    
+                                        <a href="/dekor-apartemen.html"><i>dekor apartemen &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

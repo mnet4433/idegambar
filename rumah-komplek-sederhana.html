@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Komplek Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Komplek Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/a0/df/bc/a0dfbc8108a588f789bb099dea1eec95.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+komplek+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Komplek Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Komplek Sederhana</strong>. Cluster Rayana Residence ini lokasinya berada di komplek perumahan aman nyaman dan asri dekat dengan tol cileunyi sangat cocok buat kalian yang ingin punya rumah dengan harga bersahabat. 1228 Rumah di Banjarmasin dari Rp.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/25/85/09/25850956f87f293947515aaecbe18931.jpg" alt="Pin Di Rumah Minimalis Type 45" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHotR6qIsxSjPGfX9RBKlgXsumvVx8_3IBOQ';">
+        <figcaption>Pin Di Rumah Minimalis Type 45 from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Restoran Sederhana Cilangkap. Berdasarkan tips diatas maka bisa disimpulkan bahwa hunian tahan gempa memiliki ciri seperti di bawah ini. 155 x 385 Luas.
+    </p>
+    <h3>Oleh karena itu perhatikan kesimetrisan rumah agar manfaat yang diterima menjadi lebih maksimal.</h3>
+    <p>155 x 385 Luas. Ciri Rumah Tahan Gempa. Mungkin ini ide yang paling sederhana paling mudah dan paling banyak diterapkan. Bekasi Timur Perum Komp sapta taruna IV DPU 4 Blok G no 89 bekasi timur.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsvojjbewwbt4an6blc1ccfb2coxposekniei 4 9d9kr9v4gsq Usqp Cau" src="/search?q=rumah+minimalis+modern&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+minimalis+modern&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rp 1900000000 Rp 2200000000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 9x10 Rumah Kontemporer Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/originals/b9/ba/4e/b9ba4e96f7c618b6dce44bea4077e790.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxhIgNo87f6bRCeBH-4yqYvxGZMR6GxEIukA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cari penawaran terbaik untuk rumah banjarmasin komplek 2 kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Disewakan Di Karawaci Tangerang Rumah Murah Di Sewakan Di Taman Ubud Lippo Karawac Ubud Rumah Taman" src="https://i.pinimg.com/474x/3d/bd/d1/3dbdd1fea8333b4e5ab6a0e9e639212a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV8Y8NqRVHavA4gf1tJfDpqC-6T2GIVnOjhw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>2 lantai Luas tanah 100 m2 bangunan 140.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Idaman Sederhana Modern Arsitektur Arsitektur Rumah Desain Rumah" src="https://i.pinimg.com/originals/8c/31/ca/8c31ca81117a732a52a7b1e24294b37d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXuVTN01g1Wtg8Wkq4ejiwIqg_KPuW9BhBRMV957nrzXd_JWQMstdoyUHROTlN0RIUbI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lokasi komplek persis di belakang perumahan BTR bekasi timur regency SHM.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah Besar Dengan Lahan Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/600x315/f6/43/43/f643431266171e5a9b771387807ebe47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR234_WS2Y45YvVU2NQ2Qgd1Qt7oy0GJwcsfGW443C--05nPV3zxUB9q_JRmX3A93c52oI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Teras rumah minimalis bisa menjadi andalan model saat ini karena memberikan kesan yang modern namun tetap sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sail Cluster Residence Jl Tunas Karya Sail Pekanbaru Shm Tunggal Cluster Type 56 140m2 2 Kt 2 Km R Tamu Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/63/11/8d/63118d89b065b9496420765f8f8b17cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJBWeQpdxzrx5XkdK0UDhV0VHHTSr9aOqpw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Khususnya bagi pemilik rumah yang halaman belakang sangat terbatas membuat taman belakang minimalis dengan menanam rumput hijau menjadi pilihan yang sangat tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Review Cluster Perumahan Green Aurellia Part 1 Rumah Ultra Minimalis Harga Diskon Abis Rumah Minimalis Paris" src="https://i.pinimg.com/originals/d3/1b/52/d31b52280e9089629017d4146e2e93d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkZcZ5pWRsWLbGllf8wqGcA9BNen_ICLtZzVO29ds5qyPDaEdPtzQFduezPqaCP0ne9U';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah sederhana dalam komplek di jalan Andara Pangkalan jati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kecil Minimalis Model Rumah Kecil Terbaru Home Fashion Desain Rumah Rumah" src="https://i.pinimg.com/474x/63/16/84/631684b93cf66d6555aa1ae070d463b4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAk1mZ4HS9V71XKj_m7zEbU2Daiv1vXIVWg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>685 jtthn Tipe.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Model Pagar Rumah Minimalis Kayu Dan Besi Dalam Membangun Sebuah Rumah Pagar Merupakan Satu Komponen Yang Cukup Pent Rumah Minimalis Home Fashion Rumah" src="https://i.pinimg.com/originals/1b/1a/90/1b1a90d9d6d8206b1688f0db7c26c5c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUqe_6zUT_gMgPLsnxBHCKo1wi7_2kpLwXPIEUehbfVPBhuwDaazd9Dk6gwCasXQ3aq8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Restoran Sederhana Cilangkap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Type 36 Luas Lahan 6x10m Desain Rumah Minimalis Rumah Denah Rumah" src="https://i.pinimg.com/originals/4a/3c/7c/4a3c7ce7856ec64d8762d49188d6be92.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3dDQLY_TfJr_KWmLCilWg3z88Osld4QEjZJRXjo5hGnKNdb8h7KdalwAX-aiC5fFrEz8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang dibangun dengan simetris akan lebih mampu menghadapi guncangan gempa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dijual Komplek Bca Perumnas Cirebon Kota Komplek Bca Kecapi Harjamukti Raquo Cirebon Raquo Jawa Barat Rumah Kota" src="https://i.pinimg.com/600x315/92/25/3d/92253d1b678fc5125fda1fe0c8dde877.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoPvG41-TtQCXKWe8N2VdJAdbuPgYOST08w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adhiyaksa Cileunyi Kabupaten Bandung Luas Tanah 72 m2 Luas Bangunan 50 m2 Kamar Tidur 2 Kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Komplek Bpi 5 Dekat Prapatan Gaplek Pamulang Www Iklanindoproperti Com" src="https://i.pinimg.com/originals/99/5c/aa/995caa2246e7e9d710c49b9846869cf2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpu_15kHg5UUsr3piOZKn_PdhWkHhraOxTw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah keluarga sederhana medan sumut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Terbaru Eksterior Rumah Warna Eksterior Rumah Rumah" src="https://i.pinimg.com/originals/9a/a6/28/9aa628d173ed0ffd08ea81a89cfb134c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Sgq5FWlKDe-GlK0n-YBZE8jtX6_dAgJYLd_xBXejzoM-S78eNruRifzv_cixT4NemfQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bisa untuk tempat tinggal atau kantor kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0811 7577 250 Rumah Lantai 2 Modern Rumah Keren Minimalis Rumah Sederhana Rumah Rumah Impian Rumah Besar" src="https://i.pinimg.com/originals/9e/62/65/9e6265bacea366429560ca8101e048be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZM54ZBnoQ4iv36AzSv1MDGCoU3Tqtoxi47Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dijual cepat dibawah harga pasar rumah bagus siap huni 15 lantai dengan lahan besar di komplek dprd kalimantan selatan bonus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampak Depan Rumah Minimalis 2 Lantai Terbaru Rumah Minimalis Desain Rumah 2 Lantai Rumah" src="https://i.pinimg.com/originals/a0/df/bc/a0dfbc8108a588f789bb099dea1eec95.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7NGXlxbPiev0LmAwqJvMNmj1EuiujOAnPVqxBSEMrHausDiHiuBSxOUfBmbwK-gXU-A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah untuk mengetahui dekorasi desain serta interior yang tepat yuk simak inspirasi model teras rumah minimalis berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Pondok Cabe Ilir Dekat Polisi Udara Rumah Pondok Taman Teras" src="https://i.pinimg.com/originals/c3/35/a1/c335a18e979fb568dfc71c32a5339ed1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-cz_0uO59okoqrfztjpY6xyLLfA_D5G70Fg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lokasi komplek persis di belakang perumahan BTR bekasi timur regency SHM.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Model Rumah Minimalis Sederhana 2017 Dekor Rumah Arsitektur Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/0f/b5/d7/0fb5d7ccf833f2a3b8d54320f5daf8d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRxokICdR1MSIIbe8az4RGwclDu-eFXzkqfYcDaXc3tDUsA6HY2N1DBTejrMTqVuav7Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Sederhana di Komplek Villa Jati indah Jl.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Banung House Banguntapan Jogja Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/62/38/92/62389243faf5b8f393aed13aa76d77be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXC3ohBq4zRkidogEdoNyrrfp_gfJ2H76Kbw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Khususnya bagi pemilik rumah yang halaman belakang sangat terbatas membuat taman belakang minimalis dengan menanam rumput hijau menjadi pilihan yang sangat tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dikontrakan Rumah Minimalis Di Perumahan Nuansa Kedaung Dekorasi Luar Ruangan Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/5b/7a/47/5b7a47618ff2c1ea1e8c4c4ca1086634.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILhqRNYAsl0FsCcsJG53Cb_R5GhMGgyNg9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Restoran Sederhana Ciracas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Di Komplek Manglayang Regency Www Iklanindoproperti Com" src="https://i.pinimg.com/originals/75/11/62/75116217476855a8c78228f7f8ee66d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXl4RzH3MsXynBuXkvZ3TSuKgix8nlBy7QQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>685 jtthn Tipe.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dicari Kontraktor Dan P0emborong Bangunan Rumah Murah Desain Rumah Kecil Rumah Minimalis Rumah" src="https://i.pinimg.com/474x/c1/fc/7a/c1fc7ac521d3da791ec871da58d25281.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP2yMhwnjg6kdq5tk_NbtsFJ1XYYFJ7HW3ejyUTfdz53ptIzUFez5x4CdfEeUvB4ZygzI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>15 Jenis Tanaman Bonsai Terbaik untuk Percantik Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Joyo Agung Green Land" src="https://i.pinimg.com/originals/bc/6f/e7/bc6fe73628f4886be23dcf14f53fa6e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJEKxae5QwH5_LiII63QpqDsIgnikwqXIDyF4VHRlh41FBwCHaJNyUtyFEse8VbHaCwY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>155 x 20 Luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Atedja Regency Rumah Dicihanjuang Desain Mewah Strategis Dilalui Angkot Ungu Home Outdoor Decor Decor" src="https://i.pinimg.com/originals/48/45/90/48459078c16d989b0c37b2a2ca78e986.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7g6UU-TmMQq3KWMxPf4-JMtbAPU2SIoz9KQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>685 jtthn Tipe.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/originals/cf/4b/7b/cf4b7b837029bc73736a0e941cd207d1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ42elA-D_R9DshraPH2RkCTaZDr-4HvqLVLYru23ggM7wsIcJ8kTM5msbYNkolxAL6Ko';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jaman sekarang untuk memiliki rumah sendiri ada beberapa pilihan misalnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Rumah Minimalis 1 Lantai Tampak Depan Dan Warna Cat Pilihan Rumah Minimalis Desain Rumah Minimalis Rumah Hijau" src="https://i.pinimg.com/originals/a4/50/c9/a450c950401e7c1c7b07f0071cc52991.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DkefstueUn3MMbJ3soDvlO9dNxXJE3mJFQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bekasi Timur Perum Komp sapta taruna IV DPU 4 Blok G no 89 bekasi timur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Terbaru Wa 62 877 2261 0091 Rumah Minimalis Terbaru Mekarsari Eco Living Rumah Minimalis Rumah Rumah Baru" src="https://i.pinimg.com/originals/01/de/0a/01de0abec13310f6c936fc12d94f84a1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxB4Kw_F970saJE_afqMG5TBndr34tIVE764v0mwvtKUjAOHWiVLXVLD6E38_zpWCvVqg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Masing-masing pilihan cara itu punya konsekuensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Rumah Minimalis Sederhana 1 Lantai Tampak Depan Desain Rumah Eksterior Rumah Minimalis Eksterior Modern" src="https://i.pinimg.com/originals/de/4e/4f/de4e4ff0910b60635c47ce7ddd22c2de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHHrSph3wlXvKoIALH5unbE3xKarmN-h5JA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Sederhana di Komplek Apartemen Mewah Pemiliknya Kerap Diteror Preman Agar Angkat Kaki.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Random Kpop Nc Di 2021 Denah Rumah Pedesaan Rumah Minimalis Dekorasi Rumah Pedesaan" src="https://i.pinimg.com/736x/50/49/ca/5049ca65ca5cf80ee0a532cc83903cd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01SmGU04hwnu1M8WqNmCQbGgzP4ufsU4-_ntEbsnqAz_meHW_n5U9Wh-VwsNs8STSi8A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bisa untuk tempat tinggal atau kantor kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Pamulang Cluster Hijau Rumah Asri Pamulang Desain Eksterior Arsitektur Modern Rumah" src="https://i.pinimg.com/474x/1c/7e/bb/1c7ebb482037ab465672a1edf9d63763.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd114mr2YvBuJKbzb2vN3Xdm4yhLNnw_NvYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Teras rumah minimalis bisa menjadi andalan model saat ini karena memberikan kesan yang modern namun tetap sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perhatikan 5 Hal Ini Sebelum Membeli Rumah Di Komplek Perumahan Atau Cluster Desain Rumah Bungalow Desain Rumah Eksterior Eksterior Rumah Modern" src="https://i.pinimg.com/originals/cb/fd/bc/cbfdbce68b6aca7932c94a200a4df745.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9MndWyb83w6YUT6mehhIvlIuhUeKAYhFifq2Urlp1r96Rmh7-VVAt1o-7SxobPVXDtYc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana komplek sapta taruna IV.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Alasan Memilih Perumahan Di Bogor Home Fashion Rumah Mungil Modern" src="https://i.pinimg.com/736x/e7/c1/e4/e7c1e48d39f9f7eb297bbab39d423ba7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GRewVCli4stQjnfI09-cq7-a9eJcw7cahQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rp 425000000 2 Kt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Contoh Denah Rumah Minimalis Modern Nyaman Dan Sederhana Foto Artikel Arsitag Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/b1/5b/4e/b15b4eba921a87ab8d1ad6fc737d1083.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXnvbcrofe3RFyYztnEQHBfDaZVtULt8IWAFsu0og3AYgS5PhZcFdq32Sc7rnNTHVaNE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dijual Rumah cluster Cinere Residence 19 Sebelah rumah makan padang sederhana cinere Spesifikasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini Dia Contoh Bangunan Desain Rumah Minimalis Sederhana Daftar Rumah Minimalis Rumah Rumah Indah" src="https://i.pinimg.com/originals/6a/b8/15/6ab8155c6e9d66e388e645c3ddd4bc5f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPetMDkOAqVqNS9K8Bu4LTgaZepheismjBNCj-1YxRWBBjGIZXQPckoWOrRlenWSGLB9g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>15 Jenis Tanaman Bonsai Terbaik untuk Percantik Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Griya Satria Mandalatama Hunian Idaman Untuk Keluarga Desain Rumah Bungalow Arsitektur Arsitektur Modern" src="https://i.pinimg.com/originals/b3/b0/ca/b3b0ca14f3fbcf7d165cfdbfb9d474ad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhVTMJuxgYkJ-4H3vwbAODtZZ1D3PibkPfWw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami memiliki 934 Rumah untuk dijual untuk rumah sangat sederhana Harga mulai dari Rp 50000000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Gambar Rumah Idaman Minimalis Sederhana Terbaru 15 Desain Rumah Minimalis Rumah Hijau Rumah Minimalis Rumah Indah" src="https://i.pinimg.com/originals/43/a9/67/43a96748d7b52118930709194d381d6d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrVB4YllcIvcdAChISKHzNlYtNdMwnUJPSmw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana dalam komplek di jalan Andara Pangkalan jati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Dijual Cimahi Bandung Barat" src="https://i.pinimg.com/236x/e8/2d/99/e82d99fc080a14c97d5032dce1420c03.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyIXl-PlGIFyIVnnV_JUJMIbHjmUt-FpAPXE_hb9a2Q_TD9ah2w_IxhIusKp3sDGQrsBI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1228 Rumah di Banjarmasin dari Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Joyo Agung Green Land" src="https://i.pinimg.com/originals/46/17/a0/4617a0690440041c9376f45d1d4caa53.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9jqu1okA5Nk1d8Sur3cBDc5_9y0DtbUPYvA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cluster Rayana Residence ini lokasinya berada di komplek perumahan aman nyaman dan asri dekat dengan tol cileunyi sangat cocok buat kalian yang ingin punya rumah dengan harga bersahabat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Deng Warna Eksterior Rumah Rumah Minimalis Desain Rumah Bungalow" src="https://i.pinimg.com/originals/85/a6/6b/85a66b0768c58296e66f80aeb84dbb8d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqFOEPsi2Vd1oKMHXGLbLXsd-zf2e3QZ04BNkDSqBHpfVlsEWm52pGqvbIBL-YLL5YaE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cluster Rayana Residence ini lokasinya berada di komplek perumahan aman nyaman dan asri dekat dengan tol cileunyi sangat cocok buat kalian yang ingin punya rumah dengan harga bersahabat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/90/00/40/900040d251598d2f84d661b99c82b946.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYmZGjqSJ8mg0PAg_IX-6E-vHPWX8HLH23qw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dekat dgn tol antasari-cinere ps pondok labu UPN.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis Type 45" src="https://i.pinimg.com/originals/25/85/09/25850956f87f293947515aaecbe18931.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHotR6qIsxSjPGfX9RBKlgXsumvVx8_3IBOQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lokasi komplek persis di belakang perumahan BTR bekasi timur regency SHM.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Tampak Depan Rumah Minimalis Modern Terbaru" src="https://i.pinimg.com/600x315/53/36/6c/53366ccb4e9f452a4d2ed3270227d93e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOczdyHBf8NDq95UlhVbBCJt_2YAUO8pqN0w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>40552 Bandung Jawa Barat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Small House Design Plans Modern House Design House Design" src="https://i.pinimg.com/736x/28/64/a9/2864a974eabf3105e67457ca5ddaa387.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-caYxB77dLKuTJ3ZyYMUOL3GBzKBeJUaCQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cluster Rayana Residence ini lokasinya berada di komplek perumahan aman nyaman dan asri dekat dengan tol cileunyi sangat cocok buat kalian yang ingin punya rumah dengan harga bersahabat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Sederhana Layak Huni Di Srengseng Sawah Jagakarsa Jakarta Selatan Jalan Raya Srengseng Sawah Srengseng Sawah Jagak Outdoor Decor Decor Home Decor" src="https://i.pinimg.com/600x315/b1/64/0e/b1640e7bd97b449348e8f753b4876214.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9e5m02jut6aoZi82y1dYwf4gV933HU_BwXA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>DIJUAL CEPAT TURUN HARGARumah di komplek elit setrasari kulon tanah super luas strategis hunian eksklusif di Bandung utaraSelling point5 menit univ maranatha5 menit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=gambar+depan+rumah+mewah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=gambar+depan+rumah+mewah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah Strategis Siap Huni Komplek Mekar Wangi Mekar Sederhana Bandung Harga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Rumah Minimalis Type 36 60 Penelusuran Google Desain Rumah Eksterior Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/c6/5f/ec/c65fec64cf934599bbb7aec62798dab5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGIx2XPjpMizx9lL3yuQc3JmKiRrn0RA6znr1ZTeHxVKBghU9m4PPxhM_dChv7AuZGEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Teras Rumah Minimalis dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Macam Maket Rumah Minimalis Desain Rumah Eksterior Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/70/36/9e/70369e430d06aa6d0b2ceb9de2a9f3f8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9YOcln8DWgZEjDdt58wV-Zdb9n4GATMwhQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Restoran Sederhana Ciracas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah The Awani Residence Rumah Rumah Murah Alamat Jl Gadobangkong Jawa Barat Rumah Mewah Rumah Kemewahan" src="https://i.pinimg.com/originals/71/1c/ec/711cecf3c41d20bda8bf09121a9167a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaeJVYIJ0uyMnAiVLECuI2zTYD8IDq-fYoDJanonzhIcrn0hpDMQn_o5MctTLs_-1eHo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>DIJUAL CEPAT TURUN HARGARumah di komplek elit setrasari kulon tanah super luas strategis hunian eksklusif di Bandung utaraSelling point5 menit univ maranatha5 menit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Di Kepongpongan Talun Cirebon Rumah Rumah Murah Alamat Jl Sutera Bukepin 1 Kepongpongan Talun Cirebon Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/e0/50/81/e05081bd2a72bada639544ef15e3e394.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Wrj389rhQjU0rP7iHoQSXM6N4FfspW_4bg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Disewakan pertahun harga masih nego.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sail Cluster Residence Jl Tunas Karya Sail Pekanbaru Shm Tunggal Cluster Type 56 140m2 2 Kt 2 Km R Tamu Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/e6/42/5e/e6425e934c08aacd0e942c0d99fe57da.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa4wJxtfnKAtbHWyMdhGgiN1QvQZgfxF5HVw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bisa untuk tempat tinggal atau kantor kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Perumahan Minimalis Perumahan Graha Purwosari Regency Type 45 3d View Desain Depan Rumah Desain Rumah Eksterior Desain Rumah Kecil" src="https://i.pinimg.com/originals/95/98/15/959815c2ce618964f6a0089292c4b1d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJTT9FUjgYuU0M2mQ0CrFjgnkjt0WTbCbeg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah sederhana komplek sapta taruna IV.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/dekorasi-ramadhan-di-rumah.html"><i>&larr; dekorasi ramadhan di rumah</i></a>
+                                                                    
+                                        <a href="/dekorasi-rumah-hello-kitty.html"><i>dekorasi rumah hello kitty &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

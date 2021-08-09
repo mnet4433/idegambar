@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Aplikasi Untuk Desain Rumah 3d
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Aplikasi Untuk Desain Rumah 3d",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/564x/b7/af/3b/b7af3b210ef14362f935b3bdb87e12d9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=aplikasi+untuk+desain+rumah+3d",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Aplikasi Untuk Desain Rumah 3d
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Aplikasi Untuk Desain Rumah 3d</strong>. Aplikasi ini mendapat penilaian dan ulasan yang sangat bagus karena penampilannya yang indah dan membuat para penggunanya bisa merancang ruangan menggunakan furnitur dari merek-merek sungguhan. Membuat desain rumah yang susah pun akhirnya sirna karena aplikasi ini menawarkan cara yang sangat praktis.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/564x/4d/20/77/4d20775c41e372f1d32397d5eb0fd130.jpg" alt="Desain 3d Rumah Super Mungil Minimalis 2 Lantai Ukuran 4x7 Dilahan 8x7 Ada Kolam Renangnya 16 Youtube Lantai Kolam Renang Desain" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRcunrj-5gxFW3WvSIL4TZL_mW5V3XyBX2oy8ZKDxidV-njS2rOmHcaOLHQ7ZtI2QTkw';">
+        <figcaption>Desain 3d Rumah Super Mungil Minimalis 2 Lantai Ukuran 4x7 Dilahan 8x7 Ada Kolam Renangnya 16 Youtube Lantai Kolam Renang Desain from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Pengertian Aplikasi Desain Rumah. Software pertama yang bis akamu coba adalah Sweet Home 3D. Aplikasi desain tempat tinggal pertama yang akan sipitek bahas merupakan bernama home design 3d freemium.
+    </p>
+    <h3>Aplikasi Desain Rumah Amikasa adalah aplikasi iOS dan Android pemenang penghargaan Webby.</h3>
+    <p>Planner 5D merupakan aplikasi desain rumah Android yang bisa digunakan untuk membuat desain rumah yang indah baik interior maupun eksterior terlihat realistis serta memiliki mode 2D dan 3D. Anda bahkan bisa room tour dan merekam room tour itu. Membuat desain rumah yang susah pun akhirnya sirna karena aplikasi ini menawarkan cara yang sangat praktis. Ada juga sumber inspirasi berupa katalog yang bisa kalian gunakan online maupun offline.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Kamar Uk 5x8 Full Interior Design Part 14 1 Lantai Youtube Desain Desain Rumah Rumah Minimalis" src="https://i.ytimg.com/vi/5ac2RVyHSk4/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNxMNZFhGp0UDcAk1057ubsLL46dUEFsWkVCZDeDG7pskoKxJhOVTvfLVxG9b-NsjVVQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aplikasi desain tempat tinggal pertama yang akan sipitek bahas merupakan bernama home design 3d freemium.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Home Interior Layout Design App Bs0y Desain Eksterior Rumah Desain Rumah Desain Interior" src="https://i.pinimg.com/originals/b7/8c/1e/b78c1e8098292ea4a948c3c61fd9b1c2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Avry42Glcag8EPwckO5Vu52oli0PtxSZFA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tampilan realistik dan fitur editornya memungkinkan kamu mengedit dan menciptakan rumah idaman sendiri tanpa batasan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial All Sweet Home 3d Video Bagian 1 5 Sweet Home Desain Interior Rumah" src="https://i.pinimg.com/originals/43/0d/b5/430db5f1f974bb63e4df9e658b57208e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYUbrADqyl9MSwpFUgLTfPkfqwGJukbI0wgd5xvB5v4SUCXAJyoM_POZglW7XKv9ljVyA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi desain rumah ini pun cukup mudah digunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Type 54 3d Denah Rumah 3d Denah Rumah Denah Desain Rumah" src="https://i.pinimg.com/originals/5c/94/dd/5c94ddc99ac9c33801c082bb7141395b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzccJ-K_puXza-hB0bfoNQTpOJVW7FqlfgJnIOJn02deDc3PRxXHPYgtX7IR1Bj4cu1NM';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Jika kurang Anda bisa mendapatkan fitur tambahan dari website resmi Sweet Home 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Ukuran 7 X 9 Desain Rumah Terkini Rumah Rumah Minimalis Denah Rumah" src="https://i.pinimg.com/originals/14/e9/5c/14e95c41a03495a0d1f60bede93a2ca4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfpdPoBKeAFYJL07ec_2KZkPqksoW41P8zA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda bahkan bisa room tour dan merekam room tour itu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bentuk Rumah Minimalis Ukuran 10x13 7 Jpg 992 600 Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/91/9a/51/919a51d146aa5cdb5602372b5f13d8ad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXawhQBGb1SgDI2EzykuVXBSO9GXa9gniZNg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan tampilan yang sangat mudah digunakan anda dapat mencoba merancang desain anda menggunakan model dalam bentuk 2D maupun 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Two Bedroom House Plans Bedroom House Plans Designs 3d Small House Home Design Home Living Room Planner Two Bedroom House Small House Blueprints" src="https://i.pinimg.com/originals/62/98/4e/62984e543e8e10082416f503a7e6eef8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvlfmN_vo6vLS3yBTkfOuZniopLQVeXW5z7Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beberapa arsitek juga memakai Sweet Home 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctjgx9kr2lk Fwgg Xe1gxd2rqe0tr1j9pfsnqpsnb Tlqkq2if Usqp Cau" src="/search?q=desain+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Aplikasi Desain Rumah 3D adalah berbagai bentuk aplikasi untuk sketsa rancangan pembangunan rumah yang dapat diunduh pada Android Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Denah Rumah Minimalis 1 Lantai Desain Rumah Kontainer Desain Rumah Kecil Rumah Minimalis" src="https://i.pinimg.com/originals/57/de/71/57de719fba454d3af0106eaf95174839.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4x6vFlsEU2lgX2i46iw1iPBgsoMNhK7Yrog';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini cocok sekali untuk engkau yang kurang mahir pada hal menggambar bagian-bagian tempat tinggal secara rinci karena menggunakan memakai pelaksanaan ini engkau hanya perlu drag drop bagian-bagian tempat tinggal lalu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Denah Rumah 3 Kamar Tidur 1 Mushola Kenapa Tidak Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/17/73/50/1773503b7c29f739db76a13e5c2523e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe4H_SMbejthrerLoDNZgM_pEHX3wmEbhIkw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi Home Design 3D bisa di download di sini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Small House Design Exterior Modern House Floor Plans Small House Floor Plans" src="https://i.pinimg.com/originals/7e/c7/92/7ec792c2d007a623cec25b09ff914f2a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTJgR2broaSP07jEG8cZZmN6nmoEUj5vscOA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah yang baik sejatinya bukan karena terlihat mewah saja namun mampu memberikan rasa nyaman hal ini juga semakin apik saat kita menjumpai beberapa rumah dengan dimensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Dan Rancang Bangun" src="https://i.pinimg.com/originals/9b/75/c6/9b75c6c1e3c01b86690e6d568747cbee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_hMuAJTSuL2zwKnTIj9ty38wF-8oUCsksg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi 3DC merupakan aplikasi desain grafis untuk pemula yang bisa Sobat dapatkan serta nikmati secara gratis dengan cara mengunduhnya lewat Play Store.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="65 Desain Rumah Minimalis Modern 2 Lantai Di Hook Desain Model Rumah Hook 2 Lantai 15 X 13 M2 Berdiri Dia Rumah Minimalis Desain Rumah Minimalis Rumah Tropis" src="https://i.pinimg.com/originals/d7/37/b8/d737b87ac1bd35ff84594d9c976ace51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkKhx9_1a8bULXsiz5Ag-hCHBN-8H5d2wPA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kita bisa dengan mudah mendapatkan plugin melalui website resmi aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Desain Bangunan Toko Referensi Arsitektur Desain Bangunan Arsitektur" src="https://i.pinimg.com/736x/55/06/37/550637ef0c798bd0894bb5f46c8e3dbe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrizNKpvv6xIFy5tnmc3v9n0FixGD9jbJ0-3WCF7U5ySy7e_SALfxyR-Kj5K5yYNF3SU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Planner 5D merupakan salah satu aplikasi yang cukup populer untuk merancang desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Di Lahan 8 X 18 M2 Dr Rm 801 Desain Rumah Jakarta Desain Rumah 2 Lantai Rumah Desain Rumah" src="https://i.pinimg.com/originals/ff/1e/37/ff1e37542310aa9ba0a593ceb9268cda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCdK5F57jMp4g5Hn1GItyB1ue4KdC3MS7TA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada aplikasi ini tersedia banyak gambar sketsa rumah seperti dapur kamar tidur ruang keluarga kamar mandi dan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcskg Kpit0ewyuzcny9g9co2jbl9dqyya Ivox4rjvszh 0x4tn Usqp Cau" src="/search?q=rumah+5x8&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+5x8&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Ada banyak plugin dan juga fitur di dalam aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Account Suspended Sweet Home Desain Desain Rumah" src="https://i.pinimg.com/originals/c3/07/0a/c3070a5071e4622ca62e51af19bf193f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSebRE6tB2ld9rx4-6auHlbRUPMjZyGNrM9cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DreamPlan adalah aplikasi desain rumah yang sangat digunakan baik untuk membangun rumah berukuran kecil ataupun besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Screenshot Image Aplikasi Desain Desain Rumah Desain Interior" src="https://i.pinimg.com/originals/2f/91/8e/2f918ea319b844d646bc0713574baa17.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZptLNlAbx1nV7_2nbutJanHt3dv8hUdw5-OoivMHFpyVyx8Iil-Bbx6NVbzf5a1ATTMA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda bahkan bisa room tour dan merekam room tour itu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Desain Rumah 3d Dengan Mudah Sweet Home Rumah Desain Rumah" src="https://i.pinimg.com/originals/9e/2e/ba/9e2eba17381ddee70b142fbe8e762358.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVmRANeBod5Jb5e8--Qa9c1Ztv1wEWJUAe2woEeHtF-YnhI-nCbpgQ-jnQ2c7uE6fojkw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada banyak sekali plugin dan fitur yang tersedia pada aplikasi Sweet Home 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Glamdeeva Di House Ideas Rumah Minimalis Desain Rumah 2 Lantai Rumah Modern" src="https://i.pinimg.com/originals/12/b8/b4/12b8b43b1b60df7965f5ea420f5a03b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZLco-k08wrp2nVU8BCaKaFmTm6oibgid2w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika kurang Anda bisa mendapatkan fitur tambahan dari website resmi Sweet Home 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Lantai 1" src="https://i.pinimg.com/originals/83/1e/15/831e150cf7f950e04387e527b2c49209.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6DvNki_shOdnSPvppHRQxrxeX627PEXLz9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sweet Home 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Aplikasi Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Home Fashion" src="https://i.pinimg.com/736x/e3/27/bd/e327bde7c52dc423f8e7f32327943d48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWkUpIW_UuCu4yhI5o6_1DssR_3lFb_Ccxg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini berfungsi untuk memudahkan Sobat dalam membuat gambar model 3D meskipun Sobat membuatnya pada smartphone android.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain 3d Rumah Super Mungil Minimalis 2 Lantai Ukuran 4x7 Dilahan 8x7 Ada Kolam Renangnya 16 Youtube Lantai Kolam Renang Desain" src="https://i.pinimg.com/564x/4d/20/77/4d20775c41e372f1d32397d5eb0fd130.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRcunrj-5gxFW3WvSIL4TZL_mW5V3XyBX2oy8ZKDxidV-njS2rOmHcaOLHQ7ZtI2QTkw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4 aplikasi untuk desain rumah salah satunya ialah Home layOut 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Page Not Found Variant Living Denah Rumah Rumah Denah Rumah Pedesaan" src="https://i.pinimg.com/736x/8d/25/4c/8d254c45ac1a414cac406f213472f8ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAe2U3SqrAZ_iO6BlulqmfzfLvDZs_s8sEPQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi desain rumah ini memiliki ragam fitur 2D dan 3D baik eksterior maupun interior.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Desain Rumah Bagi Anda Yang Berencana Membangun Rumah Idaman Dengan Konsep Sendiri Akan Lebih Mudah Diker Sweet Home Desain Produk Desain Rumah" src="https://i.pinimg.com/originals/0e/ba/10/0eba10f9f822791bae72bc998d927980.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL-g8qPvAl1NaZ8cGvDIMu3cVZqKuEz7C0srtOEuDs_vF3WEB7wU_ie8woam_H3Ekpb1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi Home Design 3D bisa di download di sini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Awesome Free Apps For Interior Design And Review Aplikasi Desain Desain Rumah Desain" src="https://i.pinimg.com/564x/b7/af/3b/b7af3b210ef14362f935b3bdb87e12d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXHURX_igRs07kILw3R9KJn_9jwOn-zOErKBabaYKPSsUrFxsFF6DKNw9gB_JFZI6pSbY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4 aplikasi untuk desain rumah salah satunya ialah Home layOut 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 10x9 Dengan 3 Kamar Tidur Gudang Tutorial Android 19 Youtube Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/564x/61/84/24/618424b429cb80bac7fa9cb37cf3f15b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxFmLcGjaJPU-akGDUv8fRwAzikDZ1ULdkGMP8ZE79cwcmZLbe6t1u9m5zIDgKjz1ywiU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Fitur perabotan juga terdapat pada aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini 16 Contoh Gambar Denah Rumah Minimalis Beserta Keterangannya Denah Rumah 4 Kamar Tidur Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/68/8a/0c/688a0c006cb413fce8b85a6db868564b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6P0Z08-FGE5hzLydpyrcgR8j2-N6mco5Aw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini memudahkan anda menyusun desain secara mendetail.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3d Untuk Pemula Desain Desain Rumah Rumah" src="https://i.pinimg.com/564x/18/b0/57/18b05799f6f6085ec16aa5751b08a0c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVT7soN2De-WCdu3-4VwVlsRLqgPjEyPQ6UVXk87-TcbVtotb4Kt9v-4Jx5oVHMvL_O9k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuat desain rumah yang susah pun akhirnya sirna karena aplikasi ini menawarkan cara yang sangat praktis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 3 Kamar Luas 7x9 Planner 5d Minimalis House 31 Youtube Desain Desain Rumah House" src="https://i.pinimg.com/564x/da/fd/a8/dafda8574dd7889f3b42d8b3459f7bb6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRM6V_gVwDIe45YfIQF1mFP0gvU3FBnx0-cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi Desain Rumah 3D adalah berbagai bentuk aplikasi untuk sketsa rancangan pembangunan rumah yang dapat diunduh pada Android Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3 Kamar Ukuran 9x6 Gudang Tutorial Android 11 Tata Ruang Interior Desain Youtube Desain Desain Interior Desain Rumah" src="https://i.pinimg.com/236x/4d/0b/49/4d0b4948e51157621b92d2276af07e21.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjuIx89GDXXMHRCbw4ECQhR7MBrYswbRHSr00Bb2mvnTKLb8HhpI_OpXVPxRQDuJXESg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Planner 5D merupakan aplikasi desain rumah Android yang bisa digunakan untuk membuat desain rumah yang indah baik interior maupun eksterior terlihat realistis serta memiliki mode 2D dan 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Adhy Suryadi Di Blogging Di 2020 Desain Desain Rumah Interior" src="https://i.pinimg.com/originals/5a/72/b7/5a72b727b8c152bdb53651c18f930113.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6njijGxgqTRTy6uVt-oLcnkYjGmzMgoIjKg';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Gambar 3D ini didapat dari gambar RAW mulai dari desain bangunan atap tembok dan lainnya yang sudah digambar dalam software.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Android Desain Rumah 3d Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/be/b0/01/beb0010a10098995bbd86dfa59d3639f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5y9cSkFrKkcT6pkSXhUwhuEAsagrN6tsFtt2_sBm8__zDrFEFFjv8oOF0_LTJgVwd3_g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sesuai dengan namanya Kitchen Planner 3D merupakan aplikasi desain rumah untuk pemula yang secara khusus dapat kamu gunakan untuk mendesain dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Atap Rumah Minmalis Terbaru Home Fashion Arsitektur Desain Atap" src="https://i.pinimg.com/originals/0b/5e/e4/0b5ee4bbe1570426c01c7893a47e4db7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9n4f9CgwNfO8hnd9ulffx_Tj6KBrNxLNKwA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini adalah aplikasi versi terbaru dari aplikasi Live Interior 3D sehingga Anda dapat merancang rumah secara 2D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Gambar Rumah Minimalis Sederhana Gambar Rumah Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/71/ef/8d/71ef8d4b5039d2d9a1c93188087a30bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0XVnIcWqp8tdXF-1BYkrhYMKd02bwPhz0tQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>5 Software Gratis Terbaik Untuk Desain Rumah Home Designer 3D Fitur Lengkap Info Menarik 21092016 Software 4 Comments Software Gratis Desain Rumah 3D Sebaiknya sebelum membuat rancangan bangunan rumah secara nyata real Anda tuangkan dulu ide pemikirannya untuk membuat rancangan bangunan secara virtual.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jika Kamu Ingin Punya Rumah Minimalis Yang Nyaman 10 Desain Rumah 3d Ini Bisa Jadi Inspirasi Hun Model House Plan House Floor Design Architectural House Plans" src="https://i.pinimg.com/originals/bf/c9/96/bfc9967ece298e21249291a3f999796f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIx8T7FFa33RAySi0sv-z1QRSgsuPPoYvdtTR81DveU-HWBlXsdMtBe4p8vkH7xGPCi3s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sweet Home 3D merupakan aplikasi yang sudah tidak asing lagi dikalangan desainer rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Contoh Gambar Denah Rumah Minimalis Rumah Minimalis Desain Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/9d/46/5e/9d465e669e471b801b32fce2d3908396.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyIoyUoE_Jb9PvS2a5jowp5EP0klDkmbAjtQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Membuat desain rumah yang susah pun akhirnya sirna karena aplikasi ini menawarkan cara yang sangat praktis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 5 X 8 Rumah Minimalis Desain Rumah Desain" src="https://i.pinimg.com/originals/0a/05/ec/0a05ecef81e021acfbc87e7ad9f9b88d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkRiAenzzRH3xzvA8t9xdfhguGqaZt33g1iw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi desain rumah 3D yang cukup mudah digunakan hanya dengan beberapa langkah adalah Home Design 3D OutdoorGarden.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tipe 60 Hunian Nyaman Dan Ideal Untuk Keluarga Interiordesign Id Rumah Minimalis Desain Rumah 2 Lantai Denah Rumah" src="https://i.pinimg.com/736x/4a/80/5a/4a805acfcdba52720b4c501597a544de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6IiXzgM6k8bS4nEUDiT9RV440xulBFBx1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>4 aplikasi untuk desain rumah salah satunya ialah Home layOut 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Youtube" src="https://i.pinimg.com/564x/15/b7/fd/15b7fdca10aeb58cd5f40bdb0d5e98c0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_BJG5s2jVT0wZKmo-dARkeAQ9UEr_UO28bA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Fitur perabotan juga terdapat pada aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Design 3d Home Decor" src="https://i.pinimg.com/564x/c6/20/30/c62030f27740a5caeb18d27ba5fa5615.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbzyoeBSxbST6yu8OOaHahmZ-Es4uEbAOGfswLrxlEa5v9kfXb8JeNvoC_jqW4wAcZis';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan tampilan yang sangat mudah digunakan anda dapat mencoba merancang desain anda menggunakan model dalam bentuk 2D maupun 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Di Lahan 8 X 18 M2 Dr Rm 801 Desain Rumah Jakarta Desain Rumah 2 Lantai Rumah Desain Rumah" src="https://i.pinimg.com/600x315/ff/1e/37/ff1e37542310aa9ba0a593ceb9268cda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOXDgs2NPNPJaxmKqkRSpRcFgDSvFFeEC_dg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi Home Design 3D bisa di download di sini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hapedroid Solusi Lengkap Android Game Dan Aplikasi Terbaik Denah Rumah Desain Interior Rumah Tata Letak Rumah" src="https://i.pinimg.com/originals/ba/68/f7/ba68f78c2315b4597bb68b42782fb993.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB-WIf5_z43YLFnGxI0-IXmrO3IqzURTmGnzYvZ6yb8GGb0oxFlYnLbD0oj5aAdakoRAo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Planner 5D merupakan aplikasi desain rumah Android yang bisa digunakan untuk membuat desain rumah yang indah baik interior maupun eksterior terlihat realistis serta memiliki mode 2D dan 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Rumah Tipe 45 File Sketchup Untuk Desain Aritektur Desain Arsitektur Arsitektur Arsitek" src="https://i.pinimg.com/736x/a5/dd/ca/a5ddca7c7e17840f5fed7083ec088ba9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjKuuwIeMFmQ7rncklVpLysFh0wVKkb4uDNhEr3dfUmN09qVTHFqj4tcGJ5itQNoH4zc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan visualisasi 3 dimensi kamu bisa dengan mudah meletakkan peralatan dapur kabinet pintu jendela dan memilih warna tembok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3d 6x9 Minimalis 2 Kamar Di Android Part 3 Youtube Rumah Minimalis Desain Desain Rumah Minimalis" src="https://i.pinimg.com/564x/76/55/cf/7655cf7d8031f7da258b02367b08b1b3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNya9kSLStJ1Y-zl3b9179OBKIMzm2uCh5Mh9VQtFSLJNTDmM4w4vlz1Ze0VpqsJ5dAH0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan visualisasi 3 dimensi kamu bisa dengan mudah meletakkan peralatan dapur kabinet pintu jendela dan memilih warna tembok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Desain Rumah Minimalis 12x7 Dengan 3 Kamar Tidur Gudang Tutorial Android 21 Youtube Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/564x/7a/f0/58/7af058e22d603a33244dc87f7f6c87dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcOZRgaIIiopx7UdUmhZ7MeWDbK3dkIPqdPI3BwHPFx7THdm7OQffssNanNlCp5OfLfFI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada aplikasi ini tersedia banyak gambar sketsa rumah seperti dapur kamar tidur ruang keluarga kamar mandi dan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Denah Rumah Minimalis 2 Kamar Ukuran 6x9 Oleh Ide Berkelas Ide Denah Rumah Minimalis 2 Kamar Ukuran 6x9 Untuk Konsep Design Rumah Architect Design Design" src="https://i.pinimg.com/originals/c0/78/48/c078486f3a3543b990254479ccd90e4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhmJ5YUuAxKH0LCy4XC7_steaV2FEtpkaogg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aplikasi desain rumah ini memiliki ragam fitur 2D dan 3D baik eksterior maupun interior.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rekomendasi Aplikasi Desain Rumah Android Offline Terbaik Desain Rumah Desain Rumah" src="https://i.pinimg.com/736x/e6/fe/b7/e6feb7ad50f62f18eff927fe008ca28c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGK-4WstQrz6GRlu0ko9YP9gvFoDqOyEEBoQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sesuai dengan namanya Kitchen Planner 3D merupakan aplikasi desain rumah untuk pemula yang secara khusus dapat kamu gunakan untuk mendesain dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Rustic Ukuran 6 X 6 Desain Desain Rumah Rumah" src="https://i.pinimg.com/originals/63/e5/08/63e50830cdfd77c3666c2942c086a58f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeJbSZKYC6QmaC3BISze__9J0u_aIr1ptSQQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Home Design 3D FREEMIUM Aplikasi desain rumah pertama yang akan Sipitek bahas adalah bernama Home Design 3D FREEMIUM.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 3 Kamar Tidur Type 36 3d 3dimensi Denah Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/90/f8/8d/90f88d1beb25cf1cd8dac1ea5301ba35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQF45BCGF1_7E9C8mweMc0z7t7WVg8KcAS6W8M8dZHAeNKRmVAcgD8bCyOmdI7GVaOnwo';" />
+        <small>Source: cz.pinterest.com</small>
+                    <p>Gambar 3D ini didapat dari gambar RAW mulai dari desain bangunan atap tembok dan lainnya yang sudah digambar dalam software.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/warna-cat-rumah-minimalis-biru.html"><i>&larr; warna cat rumah minimalis biru</i></a>
+                                                                    
+                                        <a href="/warna-cat-rumah-klasik-mewah.html"><i>warna cat rumah klasik mewah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

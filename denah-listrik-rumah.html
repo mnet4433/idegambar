@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Listrik Rumah
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Listrik Rumah",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/bb/ce/1a/bbce1a95fc58be12e07a4bc63f317d62.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+listrik+rumah",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Listrik Rumah
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Listrik Rumah</strong>. PANRITACOID Contoh Desain Denah Instalasi Listrikdwg berikut ini dapat digunakan sebagai referensi ataupun acuan gambar kerja. Pasalnya dengan rumah minimalis listrik bakal hemat dan banyak lagi keuntungannya.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/a0/ce/fb/a0cefbdb187d9fe201acf7f7def99773.png" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Sketsa Desain Interior" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlya8drsA7EKhjv6176_BSXkeCmeOkYMuVg';">
+        <figcaption>20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Sketsa Desain Interior from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Instalasi listrik rumah dua lantai Desain Rumah Rumah kedua gambar denah ini menggambarkan denah rumah tingkat dua lantai bagian lantai dasar terlihat dari gambar denah diatas sudah diberikan ukuran dan pembagian ruangan untuk rumah dua lantai ini tetapi pokok inti permasalahan kali ini bukanlah desain rumahnya tetapi bagaimana cara instalasi listrik yang ada dirumah dua lantai ini dilantai bawah pada gambar denah rumah dibawah ini Instalasi Listrik Rumah. Setelah membuat denah lokasi instalasi listrik. D PERANCANGAN INSTALASI LISTRIK RUMAH TANGGA Perancangan instalasi listrik rumah tangga merupakan proses perencanaan yang dilakukan oleh seorang ahli instalasi dalam bentuk gambar atau denah instalasi listrik.
+    </p>
+    <h3>Jakarta Bogor Depok Tangerang Bekasi Bandung Surabaya.</h3>
+    <p>Di karenakan tempat tinggal dan denah rumah jenis ini bisa lebih mudah untuk perawatan. Mengenal peralatan instalasi listrik rumah tinggal. Pasalnya dengan rumah minimalis listrik bakal hemat dan banyak lagi keuntungannya. Setelah kita membuat Daftar Kebutuhan Material maka kita bisa menentukan anggaran uang diperlukan untuk pekerjaan instalasi listrik.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Search Q Denah Instalasi Listrik Rumah 2 Lantai Tbm Isch" src="denah instalasi listrik rumah 2 lantai" width="100%" onerror="this.onerror=null;this.src='/search?q=instalasi+listrik+rumah+tangga&amp;tbm=isch';" />
+        <small>Source: </small>
+                    <p>Sirkulasi udara yang baik mengurangi penggunaan AC menghemat energi listrik dan terkesan lebih alami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Pemipaan Air Bersih Dan Air Kotor Toilet File Dwg" src="https://i.pinimg.com/736x/da/aa/f7/daaaf7e44c3910ed2cc71f558c52af22.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5mWohyErj6a31Jwxs1WVx9xZsMaV8LCuWJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jakarta Bogor Depok Tangerang Bekasi Bandung Surabaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Denah Rumah 3 Kamar Ukuran 7x9 Paling Dicari Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/4d/80/76/4d80767936ca2daad06baf6246602a4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCMRiGYCVjsDTSp1c0uvP3zyDF5J_G3TFtNqysUQ6Oa-lFH3M6N-NIvdG_gAW5Yn5QPcY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar denah instalasi listrik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Memilih Pondasi Dan Besi Beton Pada Konstruksi Rumah Arsitektur Rumah Desain Rumah Minimalis Rumah Beton Arsitektur Rumah Rumah Arsitektur" src="https://i.pinimg.com/600x315/8b/1e/5e/8b1e5e631b7f274041bedf02966c14ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_s3IZpYg1zFmx360nvmwAaj1LL7ssH_md-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Setelah membuat denah lokasi instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Tiny House" src="https://i.pinimg.com/originals/d0/46/2c/d0462c2a595170f2b2d243e85e58e0f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjGwWJeJyufFuSusXqfnSoPa5k659dZ1v8Db3BvmkOUfaCqYn1sC8YpDd5Ojh1Q4tYyoQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jakarta Bogor Depok Tangerang Bekasi Bandung Surabaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Autocad Denah Rumah Sederhana Sederhana Rumah Listrik" src="https://i.pinimg.com/originals/07/bc/22/07bc22b3678f14186f0ef4b3233ff8a4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ92EaH8uWhxh1aRpOqQuiuguTOBSAax8ZYVa758tsRQvWFTr3garLAbMeNm17T83lQklk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Kerja Denah Listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Kediri Arsitek Arsitek Terkenal Desain" src="https://i.pinimg.com/originals/01/80/88/018088be7524293ffbbba47025b7f639.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mepbyiCeoxrVpXRHwjhUmVw23jahKHxdqw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>PRAKARYA Proses perancangan tersebut sangat penting untuk dilakukan sebelum mengerjakan proses instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Project Desain Autocad Denah Rumah Dan Instalasi Listrik Rumah Di 2021 Desain Denah Rumah Autocad" src="https://i.pinimg.com/originals/1d/d3/57/1dd357cf4b3ddf5716b0c27a9dfc991f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0vLVYBTxcW4rhSBLuAT7oH7oTFgRh3kTaVkiYfVX6Pc39GzougYN-OiV7CZ0_ZpIHDE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Langsung ke isi Tempat Kursus Kami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Skema Jaringan Kabel Listrik Di Rumah Listrik Di Rumah Kabel Listrik Kabel Gambar" src="https://i.pinimg.com/originals/4b/33/65/4b3365671aa5ca95ea3f65490d4ecffe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyuMLVOiTVxGYRHFKG5UuAetDYQiSWeK924TSAe2QP_RyeneaInNqMFs-hwWLkzlz1RcM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Setelah kita membuat Daftar Kebutuhan Material maka kita bisa menentukan anggaran uang diperlukan untuk pekerjaan instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tinggal 2 Lantai Project Design Build Owner Mr Esa Mrs Dewi Contractor Bagusrumahkueksterior Location Tangera Floor Plans Diagram" src="https://i.pinimg.com/originals/24/6e/8f/246e8f159ae80dfd8c14751a48d4d750.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpC1ONL6PKLEbCuZTev5Yj8namoDhkH6Hi0oCbJ-yhx95nHY82dVY0-6yCX943rygl6t8';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Mengenal peralatan instalasi listrik rumah tinggal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Denah Detail Dan Potongan Car Lift File Dwg Passenger Motor Listrik" src="https://i.pinimg.com/736x/fc/7a/ea/fc7aea054007a9ffa37afe49d1024784.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpUNbUi1SoqAT0Dc2P56FcEiwg1UQOfyznIZioVvmrxeWzWNmQWETDXwY9Mqoe0XtMkgg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Denah Rumah Instalasi Listrik Sederhana - kalian yang mempunyai model tempat tinggal serta denah rumah elegan hidupnya bisa lebih tenang sebab kalian bisa mengatur waktu untuk merapikan rumah serta denah rumah serta mengatur hunian serta denah rumah supaya lebih menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rencana Instalasi Listrik Rumah Minimalis Project Rumah Tinggal 7 5 X 15 Owner Pak Rahman Contractor Bagusrumahku Location Purwaka Floor Plans" src="https://i.pinimg.com/originals/d8/ef/98/d8ef982faafa97ecf80dcc577bf530c8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa71lSiQU9_UPLXmBn9myDsmomE8hd29HqAEJ_3uZoSxH6y3YxJQGOEZrmZNTteuyxxwg';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Berbicara soal pencahayaan tentu bukan hanya pencahayaan buatan melalui lampu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="55 Denah Rumah Minimalis 2 Lantai Dengan Kolam Renang Terbaru Koleksi Gambar Rumah Terlengkap Rumah Minimalis Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/f7/fd/20/f7fd20e437cb023a3975f465d927d85a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2we8DLaE0XF9jFOylVNd6-E9sSuS3-QQIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>File Desain Denah Instalasi Listrikdwg tersedia dalam format dwg AutoCAD dimana file.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Jasa Arsitek" src="https://i.pinimg.com/originals/85/95/f5/8595f5e63cd144e6e2a80e5a4790ee84.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIobAX0OcdVwZroTzdODqnfj9LjP7n9lmu3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perlu diingat bahwa PLN hanya bertugas menyediakan listrik dan meteran khusus listrik pemilik rumah yang bertanggung jawab untuk memasang instalasi listrik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=rangkaian+denah+instalasi+listrik+rumah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rangkaian+denah+instalasi+listrik+rumah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Membuat Instalansi Listrik Rumah Sendiri Desain Gambar Tips Memelihara instalasi listrik rumah Pastikan instalasi listrik terpasang dengan benar menggunakan material yang berkualitas dan sesuai kapasitas Lakukan pemeriksaan secara berkala setiap satu tahu sekali untuk memeriksa kelayakan instalasi listrik sehingga jika tidak layak dapat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Lantai 1 Rumah Mewah Arsitek Desain" src="https://i.pinimg.com/originals/bc/b1/8e/bcb18e3bcc319d728967fd21770e83b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mPrR1GopWd5qlXqpXqqzSRdtIbQEi7C8Rw';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Rumah dua lantai dengan void juga bisa menjadi desain rumah hemat energi yang memberikan kesan luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Denah Dan Potongan Rumah 1 Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/85/5d/4c/855d4c16d76aab5d30d8d21b1fb9f052.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGOMEAVlc2jdA7SkSb1WyYF8aNlFiuvFBgcx1IO0AhJbg-d6NqKp8mWEjNS_PWNgwFJdA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>PRAKARYA Proses perancangan tersebut sangat penting untuk dilakukan sebelum mengerjakan proses instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Yang Saya Simpan" src="https://i.pinimg.com/474x/b1/bb/0d/b1bb0d21849a725e693ec931244ebd19.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRSmZzTW0qW3iwqWAhLBWldIBRpuIZpUKh1A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Denah Rumah Instalasi Listrik Sederhana - kalian yang mempunyai model tempat tinggal serta denah rumah elegan hidupnya bisa lebih tenang sebab kalian bisa mengatur waktu untuk merapikan rumah serta denah rumah serta mengatur hunian serta denah rumah supaya lebih menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tipe 85 Belajar Menggambar Belajar Autocad" src="https://i.pinimg.com/originals/f1/6b/df/f16bdfd45e266764279b1256e8810ad7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr8j4HPkB4znOWq2CoLVVZTRnPyQJAMyAlNw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentunya instalasi listrik rumah harus dilakukan secara aman supaya terhindar dari korsleting ataupun kebakaran.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Kerja Lengkap Rumah Minimalis 1 Lantai Griya Bagus Rumah Minimalis Rumah Lantai" src="https://i.pinimg.com/originals/ee/76/d3/ee76d3486a88aa82e74d68ca101b21ca.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxO8dCVz8qdtaf8Kh_xU3E_WQN1B6c3gOKnO8hu3jNJuI6W_eAg8jM6LK8DMiC8K8GatY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Setelah membuat denah lokasi instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Detail Instalasi Kabel Tray File Dwg Autocad Kabel Telepon Perencanaan" src="https://i.pinimg.com/736x/9f/3d/86/9f3d8693b9e8e2591ce0454e933e2c13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPmg1KL9vEkmzynIirmCjHvFv47KQC-V74A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pasalnya dengan rumah minimalis listrik bakal hemat dan banyak lagi keuntungannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Detail Peralatan Penangkal Petir File Dwg Lampu Bohlam Alat Bohlam" src="https://i.pinimg.com/736x/ef/d7/4c/efd74ca1013e2940bda0fe3de68f193f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7QONGTayj63stsACVIkkWAEUB4YUscc-A7g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perlu diingat bahwa PLN hanya bertugas menyediakan listrik dan meteran khusus listrik pemilik rumah yang bertanggung jawab untuk memasang instalasi listrik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gambar Kerja Mekanikal Dan Elektrikal" src="https://i.pinimg.com/736x/e6/09/cf/e609cfef125d3c50a00d6e937d03fa5c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmE9W37HWPlmJ1iVhaaoLmkS4Re9NTDiI0ow';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Setelah kita membuat Daftar Kebutuhan Material maka kita bisa menentukan anggaran uang diperlukan untuk pekerjaan instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Subsidi Karangduren Regency Dinding Batu Semarang Rumah" src="https://i.pinimg.com/736x/81/49/25/814925e187aa4b8e12985a22646ef5ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDvrUK4yf-HqbLTHn63CHFn-qYiUzimvwyQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Setelah membuat denah lokasi instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gambar Kerja Mekanikal Dan Elektrikal" src="https://i.pinimg.com/736x/c1/32/63/c13263d4cfa6ce8bf40b404db822b06b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO1oK6Pb1IXt_58eUloqT_eRxdOj3v9A6lrA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Rumah Lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="49 Contoh Denah Rumah Minimalis Type 21 Terbaru Design Rumah Contoh Rumah Type 21 Minimalis Modern Creo House Desain Architect Design Design My Dream Home" src="https://i.pinimg.com/originals/41/52/b1/4152b1a49273d3ea5dda3489f098fee4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5fbO5YIV4Fr8pbMfGkUd0pT7FvvZnpoKnUfvLS9DbYcqC7V_n76FrSsYCaU4kz4dQEgU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar denah instalasi listrik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Solusi Rumah Keluarga Rumah Rumah Id 31219 Rumah Keluarga Rumah Batu Bata" src="https://i.pinimg.com/originals/bb/ce/1a/bbce1a95fc58be12e07a4bc63f317d62.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEuxPTZRBQA-RD_N2y2e487BmQaf8NyajSqQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak hanya itu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Https Www Asdar Id" src="https://i.pinimg.com/originals/09/b6/87/09b687a2a4d628d8f70dc55e81612928.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhgELGx01tUvxAbTKI3LJ5MleVAiiohZ-JQ_Il6FqRE2t1W_n4Vnb9SGS85tBzF00G9Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perancangan Instalasi Listrik Denah rumah Untuk merancang sebuah instalasi listrik rumah tangga yang diperlukan pertama kali adalah denah rumah Denah rumah dilengkapi dengan jumlah lantai ukuran ruang peruntukan masing masing ruangan dan letak pintu dan jendela Kelengkapan denah ini diperlukan agar peracangan instalasi dapat disesuaikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gambar Kerja Mekanikal Dan Elektrikal" src="https://i.pinimg.com/736x/95/da/e1/95dae1a34a7f8fa678ea7e263c275687.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_MMC2MrYXiH2mCxFqeBysIlwwNcC8ansc_eqGdWuk_VQzfJDnSneQBL2ChJF8r0mXFNw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Instalasi Listrik Denah Titik Lampu merupakan gambar rencana yang dibuat untuk pelaksanaan pemasangan instalasi listrik baik kabel listriktitik pemasangan lampusaklar dan stop kontak dan asesoris listrik lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rencana Dan Detail Pondasi Ruang Genset 7x4m Daya Listrik Autocad Referensi Gambar" src="https://i.pinimg.com/originals/b0/59/44/b059442712d73e705d627b0d20b66463.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxJBaaHCPEPXyNqw5c-FETE8xMgYWUv1ZQ35OGq3352OyDjiT6AbevZie3TMaMocpONU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Rumah Lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ahli Desain Pangkal Pinang Untuk Membuat Denah Bangunan Perumahan Ahli Desain Pangkal Pinang Kebanyakan Perumahan Meme Denah Bangunan Rumah Membangun Rumah" src="https://i.pinimg.com/474x/7b/b2/fd/7bb2fdd012e63b6bc696ba7788c41fd5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScrc-Hikp5c2YYKOo1EJGThFQksm7ZgqVWaw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Layout desain rumah yang direncanakan untuk fase 1 lantai 1 kira.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di A Project Avilla Ucing Bk" src="https://i.pinimg.com/originals/a2/94/3c/a2943cd5e4760ef8e06bfe0da362e17c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb6H54Apd_wLwwRb3AEEEkgvCBZWstw2M_aQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Skematik Diagram Ventilasi Gedung 3 Lantai File Dwg Gedung Lantai Diagram" src="https://i.pinimg.com/736x/85/e1/7c/85e17c887b179c221eb4bda3f4d1e974.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVN4ULyi9rl3lZR5guHgR1djfsad52YAjkDg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Langsung ke isi Tempat Kursus Kami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Masjid Prancis 3 Lantai Lantai Prancis Autocad" src="https://i.pinimg.com/originals/a9/64/32/a96432e466aa090fc38123300a14e848.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nUae4NwUihtY8YxVUiG8VMvdY_N48Pd0SQ';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>PANRITACOID Contoh Desain Denah Instalasi Listrikdwg berikut ini dapat digunakan sebagai referensi ataupun acuan gambar kerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Takalar Rumah Garis Dipercayakan Oleh Ibu Niar Yang Merupakan Teman Sma Untuk Mengerjakan Proyek Desain R Desain Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/c7/06/c8/c706c85074a9eaeb46f8b24e8d9e0063.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTs9mj48tQLhGQ_M-qz-9caTLMYI7xJ2Uog';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Membuat Instalansi Listrik Rumah Sendiri Desain Gambar Tips Memelihara instalasi listrik rumah Pastikan instalasi listrik terpasang dengan benar menggunakan material yang berkualitas dan sesuai kapasitas Lakukan pemeriksaan secara berkala setiap satu tahu sekali untuk memeriksa kelayakan instalasi listrik sehingga jika tidak layak dapat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Gambar Denah Struktur Kolom Struktur Bangunan Arsitek Interior Rumah Desain Interior Rumah" src="https://i.pinimg.com/originals/80/76/ec/8076ecadccbad152fa4ec8e8132877f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSquvMcxJD6KbiZxAcjeS274DOIniWXuuFGQw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perhatikan gambar dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="126 Contoh Desain Ruko Sederhana 2 Lantai Paling Keren Desain Rumah Ruko 2 Lantai Minimalis Denah Rumah Ruko 2 Lantai 7x10 M Yang Lantai Denah Rumah Desain" src="https://i.pinimg.com/236x/5c/0d/d8/5c0dd843e9aeae69482dcd95d3495df7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX7ZuP0Y-wkKCwfj3gYRAm2XuOQoox-JwFezO2R0pdlfJbD5lq2VQBfmgo_liVVWAx73Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Layout desain rumah yang direncanakan untuk fase 1 lantai 1 kira.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Gambar Denah Struktur Kolom Struktur Bangunan Rumah Minimalis Desain Rumah Desain Interior Rumah" src="https://i.pinimg.com/170x/4f/60/b7/4f60b7702d3a8807748d87fe537303c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYFvWI5706Eci1fDLe6upK9L6hG2QQtrRWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak hanya itu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Instalasi Listrik Rumah Bertingkat Rumah Listrik Denah Rumah" src="https://i.pinimg.com/originals/46/35/d2/4635d297f1022ea91a5cdc1d220e2210.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4m9cUATA-Lw7T1EPM4HO9GzSo4oH7rKXu55RI0uwBTnC1OqoXoi2voOfR2nZM95OQUtg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>D PERANCANGAN INSTALASI LISTRIK RUMAH TANGGA Perancangan instalasi listrik rumah tangga merupakan proses perencanaan yang dilakukan oleh seorang ahli instalasi dalam bentuk gambar atau denah instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Denah Detail Dan Potongan Toilet Jongkok Fle Dwg Arsitek Toilet Desain Lanskap" src="https://i.pinimg.com/474x/fe/6e/da/fe6eda7e9dde72e4c89711d7d1b4259b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxIeLZm6b-SVELv8n-WQ9NLiEj2zA4mo4-3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>PRAKARYA Proses perancangan tersebut sangat penting untuk dilakukan sebelum mengerjakan proses instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Type 120 Lantai 1 Gambar Rumah Idaman Denah Rumah Rumah Tata Letak Rumah" src="https://i.pinimg.com/600x315/22/5c/58/225c58989ae0588e00f745e8535bb822.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJxY0M1bjBWBTWTdw1ABHmgKdQ_0i71zcBA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Setelah kita membuat Daftar Kebutuhan Material maka kita bisa menentukan anggaran uang diperlukan untuk pekerjaan instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Sketsa Desain Interior" src="https://i.pinimg.com/originals/a0/ce/fb/a0cefbdb187d9fe201acf7f7def99773.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlya8drsA7EKhjv6176_BSXkeCmeOkYMuVg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pasalnya dengan rumah minimalis listrik bakal hemat dan banyak lagi keuntungannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Gambar Detail Elektrikal Cable Ladder Cable Tray Conduit Mounting Concrete Encasement Grid Switch Mo Desain Desain Undangan Perkawinan Denah Rumah" src="https://i.pinimg.com/originals/b9/47/02/b947026d76d7492d4ae07b37d045f08f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ0q6TydF_nSUQ0zS5rgg3AyS0FfkqdV2_3g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perancangan Instalasi Listrik Denah rumah Untuk merancang sebuah instalasi listrik rumah tangga yang diperlukan pertama kali adalah denah rumah Denah rumah dilengkapi dengan jumlah lantai ukuran ruang peruntukan masing masing ruangan dan letak pintu dan jendela Kelengkapan denah ini diperlukan agar peracangan instalasi dapat disesuaikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Deain Rumah Tinggal Bapak Opik Cideng Cirebon Jawa Barat Arsitektur Arsitektur Rumah Desain Arsitektur" src="https://i.pinimg.com/736x/38/55/71/38557102b812d587789d813c029d268a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHIU-ntO159ptAUvMJVpIL2XQkCXdI9hL7Mw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tak hanya itu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ruko 2 Lantai 7x10 M Yang Bagus Denah Rumah Ruko Lantai" src="https://i.pinimg.com/originals/11/b8/b9/11b8b94c1ce76552a283a4609e8c506c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44w-0j8BSZoPiQ8Pr3o2A-VVMd60UFI3hkCSqyVnYf-gcN3ZCjyyzqNX_Qkv2F-UapKk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di karenakan tempat tinggal dan denah rumah jenis ini bisa lebih mudah untuk perawatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Masjid Musholla 003 Contoh Gambar Desain Musholla 2 Lantai Arsitektur Masjid Lantai Desain" src="https://i.pinimg.com/originals/84/da/a0/84daa0923f19993dfbaa715560472c13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOix3XCaM7KjTQzJu4eEevo1Ujwpz9tb6VA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Layout desain rumah yang direncanakan untuk fase 1 lantai 1 kira.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gambar Kerja Mekanikal Dan Elektrikal" src="https://i.pinimg.com/736x/c0/0c/f5/c00cf5baa8cea27756eae41eef50386f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBfHDWMMtrQAdTZtr46ufy44hWHyOzNivbFa0s7ABDHymtSW1sSTe9kOD4aX27AyCfxw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>D PERANCANGAN INSTALASI LISTRIK RUMAH TANGGA Perancangan instalasi listrik rumah tangga merupakan proses perencanaan yang dilakukan oleh seorang ahli instalasi dalam bentuk gambar atau denah instalasi listrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Graha Teknik Jasa Instalasi Listrik Rumah Denah Rumah Listrik" src="https://i.pinimg.com/originals/65/a0/28/65a0288651ef8ac976902a70e29fd6cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1BGl1c2Vwe5aANIboVav2InYmlilc7VbSREdi-JkAV0XUrEmWd683JZuP2T_X9xQbBQE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sirkulasi udara yang baik mengurangi penggunaan AC menghemat energi listrik dan terkesan lebih alami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Tidur 1 Mushola Dalam Rumah Terbaru Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/736x/c4/2d/fa/c42dfa23d37496ee165cae924e6ba6fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSogXrqXi2SJcE3K0E2f7w_vr9qDMwqxFLmOA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>File Desain Denah Instalasi Listrikdwg tersedia dalam format dwg AutoCAD dimana file.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Ide Desain Paling Populer Tentang Denah Rumah 9x8 Denah Rumah Desain Rumah" src="https://i.pinimg.com/236x/5c/2c/06/5c2c068b2145aaf565d86c920927f946.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI6vgK-QEhOFWYoQWNloZOCxKhXXwN2oksnGPZwMH8LphlUF8wdZ7VkULuXy5iewLHmw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jumlah ruang atau partisi dalam rumah bisa menghemat energi listrik.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-menghadap-barat.html"><i>&larr; desain rumah menghadap barat</i></a>
+                                                                    
+                                        <a href="/desain-rumah-mewah-1-lantai-4-kamar-tidur.html"><i>desain rumah mewah 1 lantai 4 kamar tidur &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

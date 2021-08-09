@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Rumah Panggung Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Rumah Panggung Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/00/48/54/004854f55ff8b4bbdd0110afcadbbf48.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+rumah+panggung+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Rumah Panggung Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Rumah Panggung Sederhana</strong>. Rumah Panggung di Kawasan Perkotaan. Rumah kebun tidak selalu harus berada di luar rumah lho curi saja inspirasi rumah kebun di atas yang menggabungkan elemen natural dengan konsep living yang simpel.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/474x/8a/f2/2e/8af22edb78df38880adecad451d2f7bc.jpg" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Denah Rumah Dekorasi Rumah Pedesaan Rumah Kayu" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUl_hlAxbmrIP19ZTo8nCYy4-iRiLaAc6QSg';">
+        <figcaption>70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Denah Rumah Dekorasi Rumah Pedesaan Rumah Kayu from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Padahal desain rumah ini justru memiliki sirkulasi udara yang sangat bagus. Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin. Arsitektur rumah 2 kamar Arsitektur rumah 2 kamar.
+    </p>
+    <h3>Sehingga penghuni rumah bisa menjadikan spot ini sebagai tempat untuk bersantai sambil menikmati suasana alam.</h3>
+    <p>Rumah Kayu Sederhana Rumah Kayu Sederhana. Rumah ini menggunakan pintu berukuran besar untuk memudahkan movement dan juga jendela panjang. Desain Bambu Model Rumah Panggung. Desain Rumah Panggung Sederhana Minimalis - Seperti halnya rumah panggung yang saat ini masuk ke dalam kategori unik dimana tampilan dari rumah panggung ini terbilang sangat natural dan terlihat alami.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Panggung Sunda Penelusuran Google Rumah Rumah Kayu Kayu" src="https://i.pinimg.com/originals/00/b2/00/00b200d27a9907298de0a93f2bfaacdb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1fK6sZOieu7cMo_yypio89yyHscFANSAMw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Denah Rumah Panggung Sederhana - Gambar Desain Rumah Panggung Sederhana - Gambar atau foto berjudul Gambar Desain Rumah Panggung Sederhana ini adalah bagian dari artikel Desain dan Model Rumah Panggung Minimalis Modern Sederhana yang terdapat pada kategori Gambar Desain Rumah dan diunggah oleh Lukita Purnamasari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Miniatur Rumah Adat Jawa Dari Kardus Miniatur Rumah Adat Jawa Timur Dari Kardus Rumah Miniatur Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/b6/dd/09/b6dd09e1c7fc3a6b89a05cf331d1902f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQxzErD-RIHDcuvF6HLJEjb-Tc90K6OShKgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adapun beberapa kelebihan rumah panggung diantaranya yaitu bisa melindungi dari bahaya banjir selain itu bagian kolong rumahnya juga bisa digunakan untuk mendinginkan suhu rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Rumah Kebun Rumah Kayu Arsitektur Rumah" src="https://i.pinimg.com/originals/15/0f/a3/150fa33a47c57c31a6dc123e11be0f3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEWWVMJqvUPAnzwYpgsG5W5vKqM7CBTqow5iDpg_Qk1v3w-v_xhVU59btmRoFPSkatbCM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dan denah rumah minimalis type 100 mencerminkan sebuah bangunan kokoh seluas 100 meter persegi dan dapat dibangun dengan 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Limasan Minimalis Desain Rumah Eksterior Rumah Kayu Rumah" src="https://i.pinimg.com/474x/84/f3/9d/84f39d9b2f277807b24a2ec784c78670.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCXBYQ4lpwuM8-twU9GOhglk47Vf2HmLGGzQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Rumah Kayu Panggung Desain Rumah Minimalis Gambar Foto via desainrumahidamankuxyz.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ponsel" src="https://i.pinimg.com/564x/0b/36/fd/0b36fde6cb109ce4c87d3ceebb957d59.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdw52qX3Q0HhQ20Z_hyiP2tehhk5zCrpX4wH8ObOmgrKB8pgPu5OiYwAWIOQM3-xXCTJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Panggung Landscape Trendy.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung 8x10 M Wooden House Youtube Desain Rumah Desa Home Fashion Rumah Pedesaan" src="https://i.pinimg.com/236x/82/05/c8/8205c81b5253424e72bec1581bf35dee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXLrU1GofdiDp-i1HhVzZX0RkR0MXoYNkR9IjKMEFQ4SHF7C2Aqq-df0Ac95Z7xgNrQ0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Panggung dengan Pilar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Video Gambar Denah Desain Rumah Limasan Modern Youtube Denah Desain Rumah Rumah Desain Rumah" src="https://i.pinimg.com/564x/3d/e1/53/3de153c165b9837bb372568736554bf5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanlisRB6ccnKLVpkuXN0B1cPBxwDk4u5LGA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beragam konsep bisa kamu terapkan untuk membuat rumah minimalis dengan desain modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja S Rumah Pedesaan Rumah Kayu Desain Rumah Desa" src="https://i.pinimg.com/originals/ec/80/da/ec80da23c37747b69da305a6c20170e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7WGdV184saqzpfO6vCGseUuz6SUyXmoy3Rl2hVw9gO25hz2U7bfKyaRgKJKNfijonFY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Home desain rumah minimalis 100 gambar rumah panggung minimalis sederhana 100 gambar rumah panggung minimalis sederhana rumah ialah tempat dimanan tujuan untuk pulang sesudah melakukan kerja dimana sebuah keluarga dibentuk dan tempat dimana memupuk cinta untuk pasangan juga kepada anak anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Rumah Panggung Sunda Rumah Kayu Thai House Rumah" src="https://i.pinimg.com/originals/01/5a/7d/015a7d2619d91c4f6f4c92480961e8c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4HG7N9G0mXgNYRj7PEQ1m45GvvyAd5QL2T6Mikh8NDzExFpbXI02eWPBrhrW-wJa_ADI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kebun tidak selalu harus berada di luar rumah lho curi saja inspirasi rumah kebun di atas yang menggabungkan elemen natural dengan konsep living yang simpel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu 1 Lantai 6x14 5 M 3 Kamar Tidur Desain Rumah Kayu Design Rumah Kayu Disain 3d Desain Rumah Minimalis 1 Lant Rumah Kayu Desain Rumah Rumah" src="https://i.pinimg.com/564x/b4/bc/88/b4bc8839b08e84830a26f7eea398824d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-avivhAPP36O8tV4drhIpIPBqDE4lE7lXXn3eRXdr0v9i4675mTHK1SBpbMFpRG0GAc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Panggung Model Terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+kayu+kampung&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+kayu+kampung&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Padahal desain rumah ini justru memiliki sirkulasi udara yang sangat bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Sederhana Dengan Model Teras Batu Alam Rumah Minimalis Arsitektur Rumah Impian" src="https://i.pinimg.com/originals/d1/47/28/d1472835c870e478fb88bc3892873d89.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjeBtVrBV-5iBp1L4vL_H_LZgpu6sID2RRdA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah ialah tempat dimanan tujuan untuk pulang sesudah melakukan kerja dimana sebuah keluarga dibentuk dan tempat dimana memupuk cinta untuk pasangan juga kepada anak-anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Panggung Modren 2019 Youtube Youtube Neon Signs" src="https://i.pinimg.com/564x/0d/2c/72/0d2c721c4716b88bb81ff9dff027c8d0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ79whSABql1P4FHFFLDn7mnfyk02HQ_7LjYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kebun tidak selalu harus berada di luar rumah lho curi saja inspirasi rumah kebun di atas yang menggabungkan elemen natural dengan konsep living yang simpel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Satunya M Rumah Kayu Desain Rumah Rumah" src="https://i.pinimg.com/originals/4b/d7/a1/4bd7a17d519671d884248d52e708654e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxsKpuQJUE-w7WZjuYfIHhCz512Q3SxcdiXEaiZ_cSfQaGMb5QR_Gs2XZwxHela57GIgU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana Desain rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Denah Rumah Kayu Minimalis 8 5 X 7 M Plano De Casa 8x7 Desain Rumah Papan Sederhana Rumah Murah Youtube Rumah Rumah Kayu Denah Rumah" src="https://i.pinimg.com/564x/da/d2/1c/dad21c54f26ee473e7fc1911a7e67e33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBfd0Tb_GOKxRaOUyNWSX5drC_jwhsWl_1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di tanah yang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost Minimalis Sederhana Hotel Room Design Small Apartment Layout Apartment Layout" src="https://i.pinimg.com/736x/41/fa/f1/41faf15d5543dfc16d609968684339d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYdbT0XhAO7MbQIZEkMawLjdGl1cbwa8o1Jg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Panggung Modern dari Kayu dengan Desain Rumah yang Cantik ã 12 contoh desain kayu minimalis modern sederhana Desain Rumah Kayu Terbaik 2017 Desain Rumah Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Desain Rumah" src="https://i.pinimg.com/736x/3c/78/c7/3c78c7697430c1f67e7905934617b130.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7lGnk6PSnkc5OjNdk9QKwb3yWEagQxtl2A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adapun beberapa kelebihan rumah panggung diantaranya yaitu bisa melindungi dari bahaya banjir selain itu bagian kolong rumahnya juga bisa digunakan untuk mendinginkan suhu rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3 605 Likes 28 Comments Inspirasi Desain Rumah Pp Inspirasidesainrumah On Instagram Perpaduan Tradisional D Desain Rumah Bungalow Desain Rumah Rumah" src="https://i.pinimg.com/originals/b3/77/b1/b377b1792e673693a7b3294a2a47e277.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrG6_zzTjcWp-_P8od6I1vTWHTjC0HvPQxA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah 4x6 ini dibuat dengan bentuk yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Denah Rumah 3 Kamar Ukuran 7x9 Paling Dicari Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/14/f8/fd/14f8fd3b2e9d891f12e34678cf187c17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLCHNqZuKcZ8_3lLFb_HhE6rc4PuGq4nbrgzmKK5F-LswtsUoe9_CiYjqI1gq67QyDx3k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Minimalis Modern Panggungrumah Kayu Minimalis Modern Panggung Rumah Kayu Rumah Desain Rumah" src="https://i.pinimg.com/originals/5d/42/0d/5d420d7a5557d305ca9f8730bf9397ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8UKrx6tctzh1-0HD08KNMMrlwswP2aWfMntObGh2_sO1OTcdpwnhf0l3vSVjX1NO4cCY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meski sederhana dan terlihat jadul kehadiran desain ruangan berbentuk segi enam di dekat tangga meningkatkan nilai estetika yang ada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Panggung Home Fashion Rumah Desain" src="https://i.pinimg.com/originals/a2/a3/6c/a2a36ceb6bb008a3a5ff28eb799d2288.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKK2mMT9YFt2Vj9eilmrRaKWU5UduVvkCs6qi6Ce8OuqoARJRsk8zNoqFQTXP41WLfSFk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain yang digunakan yaitu modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Kayu Pedesaan" src="https://i.pinimg.com/564x/66/9c/a2/669ca28c2d5ce049794a19740c4ae33c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdgwjwnjjCqqpQN__gbCYD9kGzpd3sltxLGL06mzjyKg1QaAUE2Y4Zoh0v9K9hsEnJJbc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Kebun Sederhana Dalam Ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Eksterior Desain Eksterior Desain Denah Rumah" src="https://i.pinimg.com/originals/3c/54/e2/3c54e208caf8f0875ed0e36e007df86a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kDbGMf8s2OE9ND75ilpD--lEJTAJEx2ypQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Panggung di Kawasan Perkotaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Rumah Idaman Sederhana Di Desa Paling Bagus Rumah Pedesaan Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/originals/cf/5b/6e/cf5b6e5edbd7006cf897340ff8b784cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWozLke8uHrVlqd5Ig4n_HnSAV1Lh7QaUoMt61oEQcEJ-ZL-On8e6AuC0Z6nFW9JASES4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun jika Anda ingin mendesain denah rumah 2 kamar 1 lantai yang lebih sederhana praktis dan ekonomis tidak ada salahnya mencoba beberapa trik sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Unik Gaya Jepang Terbaru 2016 Rumah Kayu Rumah Arsitektur" src="https://i.pinimg.com/originals/50/8d/82/508d82fb1fb33d8451df86dc933e8b9d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW4R3VKIiazo1mhEi3yciIabRqcTUZ2AD5T_e5J_RIRg6_l3nbHsc_pK4qg_mvmRSXrUE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Panggung Modern Model Eropa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Modern Minimalis Rumah Kayu Denah Rumah Modern Desain Rumah" src="https://i.pinimg.com/originals/00/48/54/004854f55ff8b4bbdd0110afcadbbf48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwWh1HUY2fPIYiTTuOgOFWzgc8aqbZLc2RA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dan denah rumah minimalis type 100 mencerminkan sebuah bangunan kokoh seluas 100 meter persegi dan dapat dibangun dengan 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/originals/ab/5a/58/ab5a580c21ca4f07abe5123de723a5f9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThMv0JAHCXaoMGHD0Du6f-zEeIGnYwZi93gQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dan denah rumah minimalis type 100 mencerminkan sebuah bangunan kokoh seluas 100 meter persegi dan dapat dibangun dengan 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desain Rumah Minimalis Rumah Kayu Eksterior Rumah Modern" src="https://i.pinimg.com/originals/e5/62/30/e5623036b68ee7099108d61d3a23cffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4J5Y_sUkIljA9z5soYB5ErOI3CPLGYsisd0Qukrg5_I6aeRquXBcRypJ1UjFlZX692cg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh desain rumah panggung unik dan beda tampak pada gambar ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung Daerah Pegunungan Dengan Menggunakan Material Kayu Wood House Design Youtube Desain Rumah Rumah House" src="https://i.pinimg.com/564x/0c/a1/77/0ca17759cf7a7a2b3b26d975100b06c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS8gMKV90srza8Y-U8q8w8Fn11bd9wgW1lvQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Panggung Mewah Dekat Sungai atau Danau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu 8 X 12 M L Minimalist Wood House Design Youtube Rumah Kayu Home Fashion Desain Rumah" src="https://i.pinimg.com/564x/02/74/2b/02742b59717300b520473a2b8d584d46.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXYH6buBcoL_7D9UGTZdttbbYiJPwwBjJVvQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun tidak semua orang mendambakan rumah yang kecil nan sederhana karena ingin suasana yang lebih nyaman dan aman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Minimalis Rumah Joglo Rumah Panggung Minimalis Home Fashion Rumah Kayu Gazebo" src="https://i.pinimg.com/originals/bb/e8/c2/bbe8c29a4f05604c5004b0e09cd81497.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGW_xgthsgVqEFxltQzK5q4S5_qk2RRJ9er74YrS1V4Xo9x2o25nao8Vh5XaWvgDpRWWM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Panggung Sederhana Modern Minimalis merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Rumah Desain" src="https://i.pinimg.com/736x/3b/9c/cd/3b9ccdf45e362a11565d8a0a91a92805.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtEsanKxvn44qquJL2390JWekH9lOF3UZp9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada spot menarik yang bisa dimanfaatkan yaitu area balkon yang bisa dijadkan teras.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/originals/aa/7a/06/aa7a06caf9a8a04d36de13b3189878ba.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNIOMZDL-0yYrlHroHmJBh30Y-hGhRntL7eCHLeF0bX6-eZCobEbs-pcV59IPmXQmYtw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dan denah rumah minimalis type 100 mencerminkan sebuah bangunan kokoh seluas 100 meter persegi dan dapat dibangun dengan 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Gambar Denah Desain Rumah Minimalis Dengan 4 Kamar Tidur Denah Rumah Desain Rumah Kontainer Denah Desain Rumah" src="https://i.pinimg.com/originals/97/a3/4a/97a34a767087d92d1bd878e75e07cd4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbrIFyLZ2iffcPYaFpjDEK7GYsMeGRFSHiPg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain yang digunakan yaitu modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Rumah Kayu Thai House Desain Rumah Bungalow" src="https://i.pinimg.com/originals/93/b0/fd/93b0fd769a8cfe88afbf3fae895518b7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqbtk6ylqWgOuvWJqBx_OFuk2NtCBoolAvW3MGaKZqRmBFSUijEiXlOsW9eUcf-tgT4NE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meski sederhana dan terlihat jadul kehadiran desain ruangan berbentuk segi enam di dekat tangga meningkatkan nilai estetika yang ada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Gladak 1 Kamat Tidur Rumah Dekorasi Luar Ruangan Rumah Beton" src="https://i.pinimg.com/originals/da/56/2b/da562b1bd3b3ecaaba14a53017ca373c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0U3u1HNLz7rgIy6IRYpnflICptPfl2GK9qhonRpjBt3zB-m8hc0uI9bpkfPFUOShiYfQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Panggung Landscape Trendy.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Denah Rumah Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/474x/8a/f2/2e/8af22edb78df38880adecad451d2f7bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUl_hlAxbmrIP19ZTo8nCYy4-iRiLaAc6QSg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah panggung dengan desain yang unik tentunya dapat dijadikan sebagai rumah hunian Anda terlebih bagi Anda yang menyukai desain rumah yang unik dan juga natural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/736x/28/c1/4f/28c14f85d98548e0ebe41419b19c1ae3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtR-izFG0ysnexsZqXVTn2D17t4th2edP8WNDoK4hVSZifE230lmv28hDnkoA0ZfgDEoY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adapun beberapa kelebihan rumah panggung diantaranya yaitu bisa melindungi dari bahaya banjir selain itu bagian kolong rumahnya juga bisa digunakan untuk mendinginkan suhu rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Jawa Sederhana Denah Desain Rumah Joglo Dan Limasan 2019 Desain Rumah Dekorasi Luar Ruangan Rumah" src="https://i.pinimg.com/736x/da/5d/56/da5d56219e58c168ac9c0b40a3b22f4e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7rdCSftfMN9ZcleXYYuI_PXEklFPWzdZzyw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Denah Rumah Panggung Sederhana - Gambar Desain Rumah Panggung Sederhana - Gambar atau foto berjudul Gambar Desain Rumah Panggung Sederhana ini adalah bagian dari artikel Desain dan Model Rumah Panggung Minimalis Modern Sederhana yang terdapat pada kategori Gambar Desain Rumah dan diunggah oleh Lukita Purnamasari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Dan Denah Rumah Minimalis Type 60 Denah Rumah Rumah Minimalis Tata Letak Rumah" src="https://i.pinimg.com/originals/3f/56/2f/3f562f4400373a6eeb9866044530cd3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8-2MdppworzV8AvH6KCS2vfw03z0kQO-sQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adapun beberapa kelebihan rumah panggung diantaranya yaitu bisa melindungi dari bahaya banjir selain itu bagian kolong rumahnya juga bisa digunakan untuk mendinginkan suhu rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Klasik Sederhana Dari Bambu Home Fashion Desain Rumah Rumah" src="https://i.pinimg.com/originals/bd/3a/8a/bd3a8a6c653939b13e997e235aa275d1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFPhygz_CKfI8u_UTtmRov6Smclp8Q3dcCGg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah seperti ini sangat cocok untuk Anda yang suka desain bergaya kuno.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis 1 Lantai Di Desa Rumah Tropis Home Fashion Rumah" src="https://i.pinimg.com/564x/86/3b/a4/863ba4903301e19fb121f119b648fa77.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7rxagZD3CTK7tZOQtnjt-9Y1-SWinxnrUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ialah tempat dimanan tujuan untuk pulang sesudah melakukan kerja dimana sebuah keluarga dibentuk dan tempat dimana memupuk cinta untuk pasangan juga kepada anak-anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 8x15 1 Lantai Kreatif Rumah Kumpulan Gambar Desain Denah Rumah Ukuran 8x15 Minimalis Lingkar Warna Rumah Minimalis Rumah Denah Rumah" src="https://i.pinimg.com/originals/de/7f/8b/de7f8be06e5c9be1c08e8b04d7b64899.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3uMGwoLMnAPGGH9bKqjMmjxUvfdawSMYFSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>100 Gambar Rumah Panggung Minimalis Sederhana Gambar merupakan ragam galeri tentang desain rumah yang terbaik dan terlengkap masa kini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung Minimalis Rumahkayumurah Rumah Kayu Arsitektur Rumah Pantai" src="https://i.pinimg.com/originals/e6/76/69/e67669108af64a6065682211a15ee8f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhIoUhacTgYo39cbwHoV4xAGUItr_voaqRpg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun tidak semua orang mendambakan rumah yang kecil nan sederhana karena ingin suasana yang lebih nyaman dan aman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Unik Maket Rumah Kebaya Dari Kardus Maket Rumah Betawi Dari Kardus Rumah Kardus Rumah Miniatur Rumah" src="https://i.pinimg.com/564x/40/81/08/4081081bf48e4c11441e280805f64647.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQueSF1ZKsAgUQGBoDfufXKfQD0x9e290O6A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>100 Gambar Rumah Panggung Minimalis Sederhana Gambar merupakan ragam galeri tentang desain rumah yang terbaik dan terlengkap masa kini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Adat Minahasa Umumnya Rumah Adat Di Minahasa Merupakan Model Rumah Panggung Dengan Konstruksi Kayu Yang Terdiri Dari 3 Lan Arsitektur Rumah Rumah Kayu" src="https://i.pinimg.com/originals/fb/77/b8/fb77b89e6c11ea88a84803778e62ae98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu76Ik6zAh0PrxUeZYwBdk4xAyPlgukWWDXA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+kayu+sederhana+cantik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+kayu+sederhana+cantik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Namun tidak semua orang mendambakan rumah yang kecil nan sederhana karena ingin suasana yang lebih nyaman dan aman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung 6x10 Kesan Tradisional Bentuk Unik Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/originals/c2/27/de/c227ded3b0903cce4dd91de1b1210c09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTscRGya_z6YbtQecNantI8_2OgQtBw1A2cf2Q_jBxQluI7LrwhQ7LmAg-MCGjA3yyVfwk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Walet Kalimantan Rumah Burung Rumah Kayu Rumah" src="https://i.pinimg.com/originals/13/1c/56/131c56ce730a28998e77b9e9ff5c8695.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgCEDs2mn5v3A1pDIded-k4GZJZHCMz2oQlg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan hiasan dinding yang terbuat dari bata beton pada bagian samping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung 6x10 Kesan Tradisional Bentuk Unik Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/8d/a7/32/8da73281b26729b45fc2ca9dfc747650.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCtdIAm6J_kpnWLc9rZSeSjLlKyfamUohdeg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Panggung Sederhana Modern Minimalis merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/denah-rumah-7x10-2-kamar.html"><i>&larr; denah rumah 7x10 2 kamar</i></a>
+                                                                    
+                                        <a href="/denah-rumah-2-lantai-modern.html"><i>denah rumah 2 lantai modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

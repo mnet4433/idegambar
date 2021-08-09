@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Warung Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Warung Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/736x/f1/fa/27/f1fa27b9d38fa52c623540e77d09972c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+warung+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Warung Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Warung Sederhana</strong>. Net desain tempat tinggal minimalis warung. Desain Rumah Warung Sederhana 2020 Dapatkan ragam kumpulan ide untuk Desain Rumah Warung Sederhana 2020 dari berbagai model melalui situs designarsitektur com salah satunya bisa anda dapatkan dibawah ini Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/b6/e8/00/b6e800c170492d0d769aecb783eb1bd2.jpg" alt="Desain Rumah Warung Sederhana Desain Desain Rumah Minimalis Dekorasi Luar Ruangan" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeNz71JuWqGpqvvm7tpvrsRSjHXRPxRgSzg5V-uQ2ypAlzd2u9FW8eIqdbDa17Psizcqw';">
+        <figcaption>Desain Rumah Warung Sederhana Desain Desain Rumah Minimalis Dekorasi Luar Ruangan from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        61 Model Desain Rumah Minimalis Sederhana Dan Warung Paling Banyak di Minati Desain Rumah Minimalis Sederhana Dan Warung memberikan inpirasi unik guna desain rumah idaman anda. Dekorasi ruangan interior warung kopi sederhana bisa menggunakan dekorasi dinding yang menarik Dekorasi warung kopi Ada juga desain interior untuk warung kopi yang kecil dan berukuran sempit Kedai Kopi Kecil Untuk selanjutnya jika kalian ingin membuka warung kopi sederhan di samping rumah desain ini cocok untuk dituru Warung Kopi Modern Rumahan Kemudian pada cafe ini juga memiliki interior yang sangat minimalis dan sederhana. Ide 24 Desain Interior Warung Kopi Sederhana.
+    </p>
+    <h3>Untuk itulah simak penjelasan terkait desain warung agar rumah yang anda tempat menjadi nyaman tentunya dengan desain dan model sesuai dengan idaman keluarga AndaUlasan kali ini dengan judul artikel 17 Desain Warung Sederhana Depan Rumah Yang Cantik.</h3>
+    <p>Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati. Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu. Contoh tempat tinggal minimalis type 36 dan 45 terkini 2017 desain tempat tinggal unik via rumahcor. Untuk itulah simak penjelasan terkait desain warung agar rumah yang anda tempat menjadi nyaman tentunya dengan desain dan model sesuai dengan idaman keluarga AndaUlasan kali ini dengan judul artikel 17 Desain Warung Sederhana Depan Rumah Yang Cantik.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Yang Saya Simpan" src="https://i.pinimg.com/564x/a6/36/90/a63690b12a6b9e43c1fbd6e089319651.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSelzIPZ_CKyeZBWROzoL80isjsXoXqvGqev_Mm4lprTtbZ97GwhXMx8yskM3T6VdqE-UU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ide 24 Desain Interior Warung Kopi Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Palagon Hmeenim Di Kedai Khasembon Desain Kedai Kopi Interior Kafe Desain" src="https://i.pinimg.com/474x/e8/cd/ba/e8cdba9107d2c4202795c182408a31fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6CiuPF9fsQqzhPVWGr3VaJvlnwGilkSSjQA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan Interior Kafe Desain Desain Produk" src="https://i.pinimg.com/originals/64/dd/4d/64dd4dc2cd7113b83cfd3572f0dfc9d1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij2pwvFnTjn2uoDxbYZeZQtzjhvn2f-Zs95PmWnR_rOCVW_4PXT6KPMtf5rzyQKwEf2E';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika Anda memilih tipe rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruko Minimalis 1 Lantai Tampak Depan Arsitektur Rumah Arsitektur Rumah" src="https://i.pinimg.com/originals/42/b3/30/42b330a2de6409c4914ca6b74c9632fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOUV9Q7tME36-22k6opxfhM0146iqHlaPCkw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Atap Asbes Desain Rumah Kumpulan 100 Model Rumah Sederhana Atap Asbes Terupdate Mod Gaya Rumah Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/5b/19/3c/5b193c591706ab6f54ee44db2c111ba2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSiURZ_vLMEqyRHer3oV-vldq7QBqOvdGxE_LNo-UTh0RwD7DAgPRUiiRamEnncmtAkuA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Desain Rumah Warung Sederhana Desainrumahku Id.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6 X 7 M Satu Lantai Dgn 2 Kamar Youtube Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/90/1b/54/901b548a62e1c18801b9b9fe46300efa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe4_D5cC-RrQITofbRg6POcvgnvvtKbhQciw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kami Mendirikan Sebuah Warung Kopi Rumahan Yg Terbangun Di Tengah Perkampungan Dengan Bahan Yg Kami Beli Apa Adanya Lal Warung Kopi Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/94/2d/34/942d34620dfb5f84681676d2a980fdcf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQly6kgEYxPcMK_nEwuUDxWW7SEl9864ThLwErfizNaRTaa-Ig1YtVpnWXYQasn8xcviBI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Design Animations" src="https://i.pinimg.com/originals/eb/5d/67/eb5d676931860f9d1975244edcf7233d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_JImi06ZsQAWmTidH4NgR1M_MXP-pdxOLwg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>53 bentuk model rumah minimalis sederhana terkini pada kampung desa 53 contoh desain rumah minimalis sederhana pada kampung akan tetapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warung Kopi Sederhana Pinggir Jalan Di 2021 Warung Kopi Restaurant Interior Design Kopi" src="https://i.pinimg.com/originals/1f/a8/d6/1fa8d64b35da104b910bdcf43947e47e.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2q4ykrSTC6fLZl6rdZvqdYEtMxez7RvUcxg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Warung Sederhana 2020 Dapatkan ragam kumpulan ide untuk Desain Rumah Warung Sederhana 2020 dari berbagai model melalui situs designarsitektur com salah satunya bisa anda dapatkan dibawah ini Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstru Desain Interior Kafe Restaurant Interior Design Warung Kopi" src="https://i.pinimg.com/originals/22/21/42/2221421bdab369ee7ee5172eb6f5e643.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROr2jUa_SmQZ6ZHpTfOGS4uzUqAGBFMhfFwC-98IWqijHxqbckGjCrpB5RkDpXdYmZcE4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DESAIN RUMAH DAN TOKO 10 m x 15 5 m dan 3 kamar 1 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Warung Sederhana Desain Desain Rumah Minimalis Dekorasi Luar Ruangan" src="https://i.pinimg.com/736x/b6/e8/00/b6e800c170492d0d769aecb783eb1bd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeNz71JuWqGpqvvm7tpvrsRSjHXRPxRgSzg5V-uQ2ypAlzd2u9FW8eIqdbDa17Psizcqw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Rumah Minimalis Warung merupakan ide desain rumah yang dirancang serta di kerjakan dengan hati - hati untuk menciptakan rumah idaman keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Minimalis Terbaru 2021 Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/18/5e/44/185e4467ddebfe2cd37f046f1eca71ce.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfgZpt-7XNgkmnoPadEFahyDhDkMcKu0858A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Desain Rumah Minimalis Dengan Warung - Waktu ini rumah minimalis sudah menjadi salah satu idaman hunian buat di perkotaan sebab model yang keren serta juga tidak membutuhkan tanan yang luas buat membangun hunian model ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctbprzs9vha2xi10rcvfiyqirmgwjdnuo6inblvkuqevff0behd Usqp Cau" src="/search?q=desain+toko+kecil+depan+rumah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+toko+kecil+depan+rumah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Dekorasi ruangan interior warung kopi sederhana bisa menggunakan dekorasi dinding yang menarik Dekorasi warung kopi Ada juga desain interior untuk warung kopi yang kecil dan berukuran sempit Kedai Kopi Kecil Untuk selanjutnya jika kalian ingin membuka warung kopi sederhan di samping rumah desain ini cocok untuk dituru Warung Kopi Modern Rumahan Kemudian pada cafe ini juga memiliki interior yang sangat minimalis dan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Minimalis Di Instagram Desain Rumah Minimalis Ukuran Tanah 10m X 20m Dengan Luas Bangunan 113 M Da Denah Rumah Pedesaan Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/fd/80/10/fd80108e8268b7868c370f9963a1d39b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0reqRMW5PBJSyLkWQyHdH3ClitElddVOAg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>100 Model Denah Tempat Tinggal Toko Paling Keren Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kiến Truc" src="https://i.pinimg.com/736x/f1/fa/27/f1fa27b9d38fa52c623540e77d09972c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc46127f930sA_08C8L_dD6VQuOhG2pJFJKE0Fl3DDw2y4oJSiZmxSGdgj-DjIIYYXXys';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana tapi kelihatan mewah di lahan sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/55/11/e7/5511e711115ad9ab0a3cfae45f17b69e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzJSCiA_nhfcNVG5omMQTRtFuc9F2L7ZJTA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tetapi untuk mendapatkan sebuah rumah mewah seperti itu pasti memerlukan banyak biaya dan tidak semua orang memiliki bajet yang cukup untuk membangun rumah yang mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Irwansyah Di Kedai Khasembon Interior Kafe Warung Kopi Kopi" src="https://i.pinimg.com/736x/b7/03/9a/b7039a543118f0105e9e65cb69e92e3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvLxG3-MQFwdx1QEMC3XS957JPkaCMeQ_cccji7wGqeYBwBi8FBYzeeHMYjlWR0utvSfs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika Anda memilih tipe rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Rumah Minimalis 1 Lantai Tampak Depan Dan Warna Cat Pilihan Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/4d/22/a8/4d22a8e7b877f8533f96b2ee5282e0cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAfkMeUHIwYe2P0sCwAoMbaBnEi_nPaDeuZQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Minimalis Warung merupakan ide desain rumah yang dirancang serta di kerjakan dengan hati - hati untuk menciptakan rumah idaman keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreas Interior Kafe Warung Kopi Desain Interior Kafe" src="https://i.pinimg.com/originals/f1/b6/30/f1b630b63b05299651f6e04a906ca342.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuFHb0Lg4sLDbmPE4mAhzcNReDrXtU3NkP5wk84B9fTdhWKi1sE5zZEzSmv8k60ud9hM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Dan Warung Sederhana Pinggir Jalan Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/originals/dc/01/e8/dc01e8d235b37cf20c054f501a3acced.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCfVE6UrqwatFc4lKbdhLoB7Eh47Ojql3Vtw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Warung Makan Sederhana Apakah saat ini anda sedang membutuhkan sebuah Gambar Denah Warung Makan Sederhana Yang Bisa Anda Contoh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Inspiring Tattoo Ideas" src="https://i.pinimg.com/originals/5a/97/13/5a97138c5c6be5cbd9bae5bce6d32d47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQ93N4_wkJKdIj2N-kNUMVAcUEvUKTtzmVA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Yang Ada Warungnya Model Rumah Terbaru Model 99 Arsitektur Desain Rumah Minimalis Yang Ada Warungnya Model Ru Architect Design Design Architect" src="https://i.pinimg.com/736x/21/bb/b4/21bbb4887bc4c3d127f115dfddbc9d73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Y3gzMIbGhnS5Q3hNYZFUnu84YqGMU46zBd7NlsyXgerwEKyAkYEAH43JH72NSdnHsKM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Inspirasi dan Ide pembahasan desain warung tentang 17 Desain Warung Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Desain Warung Kopi Restaurant Interior Design" src="https://i.pinimg.com/originals/ac/70/0e/ac700e12d819f9aec5ca213d167534b6.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ66q0YFCCGQXH6Mk98IA6KYgk2hWfXDaArg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika Anda punya lahan berukuran 612 meter dan ingin membangun rumah minimalis modern nyaman dan sederhana maka desain rumah berikut ini mungkin bisa membantu Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/originals/8e/7b/06/8e7b06aa433f8f0bb3804e374c1fdd75.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHl3Lr6UedFVfpvWLAQNFX0xh49gxstOVWmQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>53 bentuk model rumah minimalis sederhana terkini pada kampung desa 53 contoh desain rumah minimalis sederhana pada kampung akan tetapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Khas Rumah Di Kampung Menggunakan Google Sketchup Youtube Rumah Arsitektur Rumah Indah" src="https://i.pinimg.com/564x/5b/59/e0/5b59e093da05bdac403313ee49e44866.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7et6rjOtMb9kxprW2I4tpjoNwNHimtNl8Xw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut 20 inspirasi model desain rumah sederhana yang telah dikumpulkan oleh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 10x15 Youtube Rumah Minimalis Rumah Rumah Indah" src="https://i.pinimg.com/originals/6c/86/9e/6c869e2e5caff23435810703691c01e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQX0BW29HdNMY_uBk4jnZzgWyolQuRXX2SA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Net desain tempat tinggal minimalis warung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Furniture" src="https://i.pinimg.com/originals/4e/79/93/4e7993b6f9c287d42ede2deaac884aef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabvvxDtoPFpKXlOhInnRHJ5Hn8LZrSwpJLzAUQQonaYskCTi7FhbP798_tVYFNUAheDM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tetapi untuk mendapatkan sebuah rumah mewah seperti itu pasti memerlukan banyak biaya dan tidak semua orang memiliki bajet yang cukup untuk membangun rumah yang mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 15 Inspirasi Renovasi Rumah Subsidi Type 36 Secouple Desain Rumah Minimalis Sederhana Low Budget Youtube Rumah Renovasi Rumah Renovasi" src="https://i.pinimg.com/564x/32/ec/51/32ec51ea3dfb5d4ce78b17a55ffbba51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_FU77MUy1yvtvBrMnLHbYUVfQI4OhVrYYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Warung Makan Sederhana Apakah saat ini anda sedang membutuhkan sebuah Gambar Denah Warung Makan Sederhana Yang Bisa Anda Contoh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Desain Inspiratif Interior Warung Kopi Sederhana Cafe Design Coffee Shop Design Restaurant Design" src="https://i.pinimg.com/474x/58/e3/72/58e37271cfefddfb5f7c08c69fcfd401.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQik_XepzhTOLfDPLRv3X8lQn9v_hzxiG0U-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dari berbagai sumber yang terpercaya Deagam Design harapkan dapat di jadikan acuan anda dalam Desain Gambar Rumah 3D Visual.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 2 Lantai 7x15 Dengan Kolam Renang Dan 4 Kamar Small House With Pool Youtube Desain Rumah 2 Lantai Home Fashion Rumah Minimalis" src="https://i.pinimg.com/736x/26/7b/44/267b44fb4be7354d14ca0fc056e7ecc4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCmaZaKXu_qyHVxGo6qCIwT53zpu6gpns1A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Desain Rumah Minimalis Dengan Warung - Waktu ini rumah minimalis sudah menjadi salah satu idaman hunian buat di perkotaan sebab model yang keren serta juga tidak membutuhkan tanan yang luas buat membangun hunian model ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ana Fatma House Semarang" src="https://i.pinimg.com/originals/6c/d4/8e/6cd48e5bdedc9322d378d6632b08d9cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWP4iI-WvltC52DOU5D8y_wZYUw2ClM2RUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Desain Rumah Warung Sederhana Desainrumahku Id.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Toko Minimalis Modern Ukuran 8x16 3 Kamar Tidur 1 Lantai Desain Rumah Kecil Desain Eksterior Rumah" src="https://i.pinimg.com/originals/0a/ac/43/0aac43c75156f707772c611de1f306f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYHL-p00c52rB0NsnlPSGKNa7UQ1WoXfDDhxWX6AZ34e9Kbhaq044lxdtX1MWers4k1LQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi Gambar Model Desain Rumah Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Doni Rochiyudin Di Kedai Khasembon Desain Interior Kafe Interior Kafe Desain Dapur" src="https://i.pinimg.com/736x/77/c5/ef/77c5ef39925760f2400ccfca1f802216.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHocSydfwgjHSZ_hgp694f8QU0gld2jxcixg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh tempat tinggal minimalis type 36 dan 45 terkini 2017 desain tempat tinggal unik via rumahcor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern Ukuran 6x15meter 2 Kamar Tidur 1 Lantai Full Denah Youtube Di 2021 Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/564x/a8/1b/40/a81b40603d275a983bceef15973e8f44.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfnLLtODghWt4sH-uIOagZWvtw9PAroLd1kTqsGkTHuBdtiY42Uw8WcK0BifOl-ScshJU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana tapi kelihatan mewah di lahan sempit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 8x12 Dengan Satu Ruang Untuk Warung Youtube Desain Rumah Minimalis Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/90/a4/64/90a464db19b04d690842aeb1fcb5e9c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jUvkfDs9aSy2oZKWLRN_YyAt63-xT5nHtw8AKzqmO64sosvMMkTU6CJ9T5Gj4VB2HCM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ide 24 Desain Interior Warung Kopi Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Secara Otomatis Harga Didalam Analisa Harga Satuan Berubah Analisa Harga Satuan Pekerjaan Gambar Desain Rumah 6 Wallpaper Dinding Rumah Pertama Minimalis" src="https://i.pinimg.com/originals/54/46/fa/5446fab364db296031ae4f40611afd99.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd739Hdo3YKJaPOwKEXiGDv9mrUqVpLL-CRA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Net desain tempat tinggal minimalis warung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Eksterior Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/originals/3c/1d/df/3c1ddfe8346b6f7bdcdf58a73bae0e8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqGBVdsevY5VCH0Y8ho5cXxiUpDWxNHZcIk0ezjUh2roXDCpA6WVteuLS_hmqsPbgt8DU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah rumah yang nyaman selalu dikaitkan dengan rumah besar dengan lahan luas dan desain klasik yang megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/736x/f3/e4/cc/f3e4cc7b9b948dc56afbec71e2afe152.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Mb1QK5xbzJq0KYNgD7Z6gfu9MPK6mK68XBvzmUGBM_J0eLYdfsl84_bh4JZ2CP7CWB0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>53 bentuk model rumah minimalis sederhana terkini pada kampung desa 53 contoh desain rumah minimalis sederhana pada kampung akan tetapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Sederhana Di Kampung Denah Rumah 8x10 Desain Rumah Kayu Hunian Semi Permanen Youtube Rumah Kayu Rumah Minimalis Rumah" src="https://i.pinimg.com/564x/80/db/eb/80dbeba0f80b90e1263687ffbe0a9cf7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKjqMYRpgzLgFgpj3Bu_bVghfF7CDQEb4hHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern House Design Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/736x/e5/77/a7/e577a712460518f31fbe2ede95765d35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GLIbpxnFH0Ow0MTKPHsHseEZRulvKu4apA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/30/42/d4/3042d40d268984cb30b096fbeefa9c9a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7bHD3J4xMsv0g1rfDQ7xLGsVPfy8ZdIxhw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Rumah Sederhana Rumah Kecil 5x5 Mini House Design Rumah Mikro Kekinian Youtube Rumah Rumah Arsitektur Desain Rumah Kecil" src="https://i.pinimg.com/564x/1d/b1/2a/1db12ae7f88c1a5581047b107513518a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYo7Tza1xGvCsEdkEOFFnixCuNVw2D6ViaiTO_ly2pSsS-ieD4whHnbYMCstnq1U0AENw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh tempat tinggal minimalis type 36 dan 45 terkini 2017 desain tempat tinggal unik via rumahcor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Hook Plus Pagar Desain Rumah Kontemporer Rumah Minimalis Desain" src="https://i.pinimg.com/originals/68/c4/15/68c4155335ee87ab719b676973ad83ec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4IrKTA-3tP6-6_nW2nNaqeDfviKpos0-_zQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4 Desain Rumah Minimalis Terbaru Yang Sedang Tren Saat Ini Terlengkap 300 Desain Rumah Minimalis Cocok Untuk Lah Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/42/ec/ef/42ecef1abb99f22c49679c173902a8c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ11j05YJyiT7H7zuOxqTb5BzRjXr6Fe6zePV-us47w3WuuoKj3RnM6cZJPYMATSN8lg2w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>20 Model Rumah Sederhana Namun Mewah Lingkar Rona 20 jan 2020 25 juni 2019 bismillahirrahmanirrahim بسم الله الرحمن الرحيم surat keterangan modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 55 Desain Rumah 7x5 Denah Warung Muka Melebar Rumah Minimalis 7x5 2 Lantai Youtube Rumah Rumah Minimalis Minimalis" src="https://i.pinimg.com/564x/89/02/49/890249d2f645809a0576a5a254ffc537.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMla7uGfziy7hFyU8jyIBZ98mz9l8F6FXlQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Com 36 desain rumah minimalis dua lantai sederhana 2017 dekor rumah via dekorrumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Modern Dengan Toko 1 Lantai Lebar 9 Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/fb/aa/ad/fbaaad38878f267b34aba89a5a49fd6f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdKYwUMGkvltyuPEuSjszkWvl58NlylAeBe0tmM5fT4XJt4-ulxHrPiUJwAExOGM1GVw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ide 24 Desain Interior Warung Kopi Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bentuk Atap Miring Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Desain Rumah Mungil" src="https://i.pinimg.com/originals/d6/13/b9/d613b9d8c03bb55a1f2367456aba4a38.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIwRrSY4N4mnkth0TSp0qkaXvUWXSOKezrQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan ide dan inspirasi model Rumah Minimalis yang memiliki resolusi 1276x784 di harapkan dapat terlihat jelas dan sangat baik untuk memenuhi desain rumah yang sedang anda ingin ciptakan saat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layanan Jasa Gambar Rumah Rumah Toko 2 Lantai Di Tulungagung Desain Rumah 2 Lantai Rumah Rumah Minimalis" src="https://i.pinimg.com/736x/f3/89/5e/f3895ec2bac5402655e6dc187e5fc71e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJx-ykr3nUCvZxnNDCz7aU2VYdXUwpkxWTRbygu8v2pjWgj5Q8IfPJLZWygpMl-4oygj8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>61 Model Desain Rumah Minimalis Sederhana Dan Warung Paling Banyak di Minati Desain Rumah Minimalis Sederhana Dan Warung memberikan inpirasi unik guna desain rumah idaman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Ruko Minimalis 1 Lantai Check More At Http Desainrumahkita Net Desain Rumah Ruko Minimalis 1 Lantai Desain Desain Eksterior Rumah" src="https://i.pinimg.com/originals/fe/61/cc/fe61cc994c625e1553ba687bdb63ed3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXrqra2oL4FpLi7oD7fkAv9zfw33sBvsa9rw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan ide dan inspirasi model Rumah Minimalis yang memiliki resolusi 1276x784 di harapkan dapat terlihat jelas dan sangat baik untuk memenuhi desain rumah yang sedang anda ingin ciptakan saat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+sekaligus+toko&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+sekaligus+toko&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Model Desain Rumah Warung Sederhana - Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-bedah-rumah-gtv.html"><i>&larr; desain bedah rumah gtv</i></a>
+                                                                    
+                                        <a href="/desain-cafe-lesehan.html"><i>desain cafe lesehan &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Dapur Kotor Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Dapur Kotor Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/f7/76/23/f7762373e46df98c59fa1e5f1cab793d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+dapur+kotor+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Dapur Kotor Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Dapur Kotor Sederhana</strong>. 20 Model Dapur Sederhana dengan Desain Inspiratif. Balok-balok kayu yang menjadi motif meja juga cocok kok untuk dijadikan meja ruangan dapur kamu di rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="/search?q=dapur+kotor+terbuka&amp;tbm=isch" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqhktx6v6emeyseoudbm3li6u0uwf7urlodyuirjggwurackhyz Usqp Cau" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='/search?q=dapur+kotor+terbuka&amp;tbm=isch';">
+        <figcaption>Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqhktx6v6emeyseoudbm3li6u0uwf7urlodyuirjggwurackhyz Usqp Cau from encrypted-tbn0.gstatic.com</figcaption>
+    </figure>
+        <p>
+        Model meja ini sekilas terlihat sangat sederhana namun meja tersebut memberikan. Dapur yang didesain dengan baik entah itu bergaya tradisional atau bergaya. Sebaiknya pilihlah jenis lantai yang memang tidak sulit dibersihkan ketika kotor mengingat aktifitas di dapur akan sering bersentuhan dengan minyak dan sebagainya.
+    </p>
+    <h3>Model Dapur Minimalis Modern.</h3>
+    <p>Dapur yang didesain dengan baik entah itu bergaya tradisional atau bergaya. Lantai berbahan granit pada area dapur terlihat kontras dengan finishing glossy pada bagian countertop. Sebaiknya pilihlah jenis lantai yang memang tidak sulit dibersihkan ketika kotor mengingat aktifitas di dapur akan sering bersentuhan dengan minyak dan sebagainya. Untuk desain dapur sendiri memang ada banyak sekali dan bagi para lajang atau yang suka dengan hal minimalis model dapur sederhana dan murah adalah pilihannya.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Kitchen Set Sederhana Desain Lemari Dapur Desain Dapur" src="https://i.pinimg.com/originals/a2/dc/31/a2dc31e36c5ff77e1fd4e49a700364d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Y4jbpQP0qbZZMJnbqaqy2YrGsnq1CgLPBm0NoM_X6ZU8euqNgRVonU0vADqaW_qHhN8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika dulu tempat tinggal digunakan untuk tempat perlindungan dari perubahan cuaca serta buat melindungi diri dari terjangan hewan luar kegunaan rumah pada zaman sekarang ini lebih kepada tempat istirahat setelah selesai menjalankan berbagai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Kitchen Set Korea Seperti Di Drama Drama Desain Dapur Dapur Dapur Minimalis" src="https://i.pinimg.com/originals/c2/84/b7/c284b7a793d085165f10ca60cb456ba3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXeXLtQy75XApqP-G-5fzxwTNiPrIbHu5tLw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rak Dapur yang Rapi Model dapur sederhana sekali dapur sederhana dengan rak kayu yang minimalis semua tersusun dengan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis 2019 Kreatif Di 2021 Dapur Rumah Desain Dapur Dapur Minimalis" src="https://i.pinimg.com/originals/82/e7/b2/82e7b2a39c1cfda224a8779cd4464bc9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1I-PganJnD6lQHOK4mHiZnSG8xnb9mtN6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur yang didesain dengan baik entah itu bergaya tradisional atau bergaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Dapur Semi Outdoor Di Belakang Rumah Desain Dapur Luar Ruangan Dapur Terbuka Dekorasi Rumah Dapur" src="https://i.pinimg.com/originals/79/1d/09/791d09ab6af2d5382fac033c8dcb79d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJZg2TLoap6hODfMSotL3R64pCe3v2pmwDR7K4aGXuIgKt-KlU3SF3QXtlVu_DW1BqBc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk penghuni rumah yang lebih suka ketenangan pemilihan warna pastel akan sangat cocok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Bersih Bintaro Desain Dapur Kecil Desain Dapur Kabinet Dapur" src="https://i.pinimg.com/originals/49/b5/e1/49b5e1585dd81541397d738eedefce12.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGviYAu0ePSSKuKnc6Yq9y4aBCHdwgCDSrFg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah itulah informasi terbaru dan terlengkap mengenai 18 Model Dapur Sederhana Minimalis Dengan Kitchen Set Terbaru 2021 yang banyak disenangi dan diterapkan di Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqhktx6v6emeyseoudbm3li6u0uwf7urlodyuirjggwurackhyz Usqp Cau" src="/search?q=dapur+kotor+terbuka&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=dapur+kotor+terbuka&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Memiliki dapur yang indah sekaligus fungsional pasti menjadi dambaan siapa saja yang ingin merenovasi rumah atau apartemen mereka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Kotor Kecil Desain Dapur Kecil Dapur Rumah Desain Dapur" src="https://i.pinimg.com/originals/09/18/79/091879b7626010cfb094e07e49db43fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcAk2phPmWzckK3BnLzIzeBsrc3SA5rkzdQGbf-sWb5_K7S8KPcE8vY2hWdLDEYgOAy18';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika dulu tempat tinggal digunakan untuk tempat perlindungan dari perubahan cuaca serta buat melindungi diri dari terjangan hewan luar kegunaan rumah pada zaman sekarang ini lebih kepada tempat istirahat setelah selesai menjalankan berbagai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Outdoor Kitchen Dapur Kotor Desain Perbaikan Rumah Dapur" src="https://i.pinimg.com/originals/ff/b2/34/ffb2342e5e12927cb1e7f28e0e748469.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5-p82gm4Lv_6KFuxG7JH2oguuIKRjzcjmMzZkB3t9tzCjPAbCeYpXdx4iXKOy4bMyxU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Istilah dapur kering maksudnya adalah dapur yang biasanya tidak digunakan untuk memasak dan mencuci piring.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Kotor Dan Dapur Bersih Check More At Http Desainrumahkita Net Desain Dapur Kotor Dan Dapur Bersih Dapur Modern Model Dapur Dapur" src="https://i.pinimg.com/originals/a0/ee/4e/a0ee4e542dfa3125d780dc66eb88f5db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-LVGjesW5JzUhFsHut-m5bAwZAkttahRvyapoM7nM0fvArm8jt8KQpreWipK0k9bttk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain debu penggunaan tirai bambu juga dapat dimanfaatkan untuk menghalau angin supaya api kompor tetap stabil saat dipakai memasak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Kitchen Design Small Kitchen Furniture Design Kitchen Room Design" src="https://i.pinimg.com/474x/a9/d5/61/a9d561c208890f9f764beb496d3b1dfb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9VEI_6VMprd11amv7AeWiRxFv5Xf20z03_w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Oleh sebab itu ada beberapa rekomendasi dapur sederhana dan minimalis berikut ini yang bisa kamu kulik inspirasinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Kitchen Set Jakarta Selatan Hub 0812 8899 3791 Bb 7e4dd036 Harga Kitchen Set Murah Di Jakarta Selatan Dapur Rumah Desain Dapur Rak" src="https://i.pinimg.com/originals/c9/33/64/c9336491ef6ea83053df33cbb740b165.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6bHqG_QqllkW0l8KmN-_m2fdwkYq0mNlHyA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Balok-balok kayu yang menjadi motif meja juga cocok kok untuk dijadikan meja ruangan dapur kamu di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Kecil Minimalis Dapur Kecil Dapur Rumah Dekorasi Dapur Kecil" src="https://i.pinimg.com/originals/11/60/93/116093d78f9a7e87206afe55dcc2bbb2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBp8acaxJWgcfHyT231sD0kos9c5vuIttFUQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah itulah informasi terbaru dan terlengkap mengenai 18 Model Dapur Sederhana Minimalis Dengan Kitchen Set Terbaru 2021 yang banyak disenangi dan diterapkan di Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sentuhan Desain Dapur Minimalis Sederhana Terlihat Mewah Dapur Minimalis Desain Dapur Dapur Rumah" src="https://i.pinimg.com/originals/80/59/32/805932a7e321c5eb8fdb2540a95836d3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbBh7ki72PWvG0BAFGlgh5U1cg4Fxtny_T8B8A9y6kSZP31VHEXgC-kfraDDFu59eQtx0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur kotor yang berada di belakang rumah ini menghadap ke area taman atau kebun kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kecil Tapi Cantik 28 Desain Dapur Minimalis Dengan Konsep Ceria Desain Dapur Dapur Minimalis Dapur" src="https://i.pinimg.com/originals/d0/14/9e/d0149ebfcd44fb92caeb54bb338baf1b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8sGxDoT1weTSOmN1YgrUH2cCllV_0Uhn5BnKkOyLiY5TBLBXOHBKUGpTFSnRzZKWgpOk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna coklat tua nampaknya cocok dengan ruangan minimalis berwarna putih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="55 Design Of Modern And Stylish Tiny Kitchens For Narrow Kitchens Dapur Rumah Desain Dapur Model Dapur" src="https://i.pinimg.com/originals/38/c0/0f/38c00fbd60e9f09875ab9d9141710f04.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyAXTZwqj8ZQkd7iGE09-mnNPpV7XaPtiA4g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika dulu tempat tinggal digunakan untuk tempat perlindungan dari perubahan cuaca serta buat melindungi diri dari terjangan hewan luar kegunaan rumah pada zaman sekarang ini lebih kepada tempat istirahat setelah selesai menjalankan berbagai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Di Bawah Tangga Sederhana Dapur Minimalis Desain Dapur Dapur" src="https://i.pinimg.com/474x/ff/9d/bd/ff9dbd1c98411aca6c5e26e947cff096.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLTk92umNtNbZoFnzPnKtQiebpD3eIgRsGhA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lantai berbahan granit pada area dapur terlihat kontras dengan finishing glossy pada bagian countertop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Dapur Dari Kayu Bekas Peti Kemas Dapur Sebagai Salah Satu Ruang Vital Sudah Selayaknya Di Des Perabot Kayu Palet Desain Lemari Dapur Model Dapur" src="https://i.pinimg.com/originals/f7/65/08/f7650804dfd019bb6183e76c6c862fe2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_G-LRl6FrJglq9hRRQgmvyRMiCZSL3DXr1Jc-sFM3MJ4Q5na3pdO-gATOHrv_9YlzvEg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Balok-balok kayu yang menjadi motif meja juga cocok kok untuk dijadikan meja ruangan dapur kamu di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Cantik Minimalis Dapur Dapur Kecil Dapur Cantik" src="https://i.pinimg.com/736x/ec/70/fd/ec70fd4b41300cdd74337299950c124f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3r3s3hMTFDAavVEIRXc2aCnCcK1_MxLkypw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Siasat Menciptakan Ruang Dapur Apartemen yang Nyaman Meski Ruang Terbatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Cantik Minimalis Desain Dapur Kecil Dekor Dapur" src="https://i.pinimg.com/736x/7e/4c/e7/7e4ce733880fdd936cdda77157dd4e6c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBb5RARKcdmLRUGA04jhTRemfwxXJzrI-eHw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contohnya pada corong lampu kaki kursi meja makan dan beberapa peralatan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga 70 Model Gambar Kitchen Set Minimalis Dekorasi Rumah Dapur Inspirasi Dapur Lemari Dapur Modern" src="https://i.pinimg.com/originals/66/17/27/6617278e98d9d9aef11d6e85560d3aab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPNidlMgyTnboy7_NKxvk3_q1QMzf5zND5w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk desain dapur sendiri memang ada banyak sekali dan bagi para lajang atau yang suka dengan hal minimalis model dapur sederhana dan murah adalah pilihannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Dekorasi Rumah On Instagram Bagaimana Kalo Dapur Yg Ini Guys Semoga Bisa Menjadi Inspirasi Via Model Dapur Dapur Mini Rumah" src="https://i.pinimg.com/736x/c1/c7/0c/c1c70c70145438a5dfce231bc774c244.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuI4WUVGoRN1Qe7TA2N57IKIsxOuAnERBppQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>45 Model Meja Dapur Cor Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="95 Kitchen Set Minimalis Sederhana Modern Terbaru Dekor Rumah Desain Lemari Dapur Desain Dapur Kecil Interior Dapur" src="https://i.pinimg.com/originals/39/f0/ea/39f0ea601a8985bcb7dc75aed3464f62.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmpPqxztRzagDg4kHmlh0_tVTOWXR1T6xdwbKN3gi_ZDxR3_106ab2_MjzZiUIHomRrU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Dapur Kontemporer Model dapur minimalis ini memadukan ruangan yang tidak begitu luas dengan warna hitam dari peralatan masak yang ada di dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Sederhana Murah Dapur Rumah Desain Dapur Desain Dapur Kecil" src="https://i.pinimg.com/originals/d9/a8/8e/d9a88e7fc9956dfd7ef7f87aca4a9958.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tGze7Jcn77WH3iufneg7yYX9eCAozXCyPZ4cSZ92bg2oqRFIhdmrfUM5oqdm5KWD74A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga untuk area memasak dan dinding dapurnya pilih warna yang gelap seperti abu-abu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Database Error Kitchen Designs Layout Small Kitchen Cabinets Kitchen Design Small" src="https://i.pinimg.com/600x315/9c/1d/cd/9c1dcd87ac77823bf3c28bbfa4f31b93.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqRF0K2ssL4NUN8Fpn6irH91VqnoVU00pNpg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebaiknya pilihlah jenis lantai yang memang tidak sulit dibersihkan ketika kotor mengingat aktifitas di dapur akan sering bersentuhan dengan minyak dan sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Dapur Taman Belakang Desain Dapur Luar Ruangan Desain Home Deco" src="https://i.pinimg.com/originals/f7/76/23/f7762373e46df98c59fa1e5f1cab793d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULRHaOuGkfOuW2ruLtU8WKt0vBmkKXoUPiA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model ini bisa menjadi referensi dapur minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+dapur+kecil+terbuka+dibelakang+rumah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+dapur+kecil+terbuka+dibelakang+rumah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain dapur kotor yang berada di belakang rumah ini menghadap ke area taman atau kebun kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Dapur Rumah Minimalis Sederhana Dapur Rumah Desain Dapur Dapur Minimalis" src="https://i.pinimg.com/736x/30/b5/47/30b5474182b2719aab609c52e248f782.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrn-EuD9IIZaCjqjeASXOkspiWdMTAhGERQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Dapur Kotor Sederhana Desain Dapur Kotor Untuk Ruang Kecil ini Bisa jadikan jadikan referensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Bersih Modern Desain Dapur Kecil Model Dapur Dapur Putih" src="https://i.pinimg.com/originals/c4/f1/76/c4f176180c2f4c8425839af546eb51c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9-N3UlaAneGhI6Mxsi08kGeyf1evWsTmA8Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Dapur Kontemporer Model dapur minimalis ini memadukan ruangan yang tidak begitu luas dengan warna hitam dari peralatan masak yang ada di dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Bersih Separator Dapur Bersih Dekorasi Dapur Kecil Desain Dapur Kecil Renovasi Dapur Kecil" src="https://i.pinimg.com/originals/c7/3a/39/c73a39da81bebab1d6c2d8f755f6af2b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRA7zIAqHy0LrNehwtA51LHuzq_T_7XbNHKA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model ini bisa menjadi referensi dapur minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Dapur Minimalis Modern Bikin Rumah Makin Kece Dapur Rumah Dekorasi Dapur Kecil Desain Dapur" src="https://i.pinimg.com/originals/94/d4/71/94d4711760b42e4ea31ecb9c9b48ee61.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTe7TNQFLa6OIGHUuKX0_aZ1SlVGfpjIAYo8M3zWV5A9-5S2pVeFl7gS6pP00PEFWRRA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Prisca Akhaya 03 April 2018.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur 4x5 Desain Dapur Desain Dapur Minimalis" src="https://i.pinimg.com/originals/d2/3b/af/d23baff60d506db83565cdfe026e7c1e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9aB-EVRmnfRrzTAy1LlM0oUwIfdwnByqz_Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur minimalis terbuka di belakang rumah seperti ini memang rentan debu makanya gunakan tirai bambu di bagian samping dapur untuk menghalaunya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Cabinet With Hpl Laminated Dapur Rumah Rumah Mewah Dapur" src="https://i.pinimg.com/originals/de/ab/d8/deabd857f5b960a1c1713cbafd6eca9b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CBfZ13QGjdHkpdm1Wajy2Xl3DuDe6WILWw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selanjutnya untuk menambahkan kesan modern pada dapur minimalis Anda pemilihan keramik dinding dan lantai bisa menjadi solusinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Desain Dapur Terbuka Di Belakang Rumah Rumah Pontianak 99 Interior Desain Interior Desain Ruang Makan" src="https://i.pinimg.com/originals/58/83/6b/58836bf0c3d622dbb64404a076e7086a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDltl_1M5UH46IDrJRqQulTPAy11S0YgZEAobP7u_9NSIyX2kCfllDzov5-y8Lf5J041A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rak Dapur yang Rapi Model dapur sederhana sekali dapur sederhana dengan rak kayu yang minimalis semua tersusun dengan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mau Punya Seperti Ini Tag Pasangan Kamu Ya Semogah Terkabul Di Th 2019 Follow Kitchensetmurah Follow Kitchens Ide Dekorasi Dapur Ide Dapur Dapur Rumah" src="https://i.pinimg.com/736x/1c/b0/b6/1cb0b6acf4c0cd7d38c18ac8c33372c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx8eRoVxEXYt6VXa6TLtPF5_5q8XXL3yD6_A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lantai berbahan granit pada area dapur terlihat kontras dengan finishing glossy pada bagian countertop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Dapur Rumah Minimalis Sederhana Dapur Rumah Desain Dapur Dapur" src="https://i.pinimg.com/474x/f9/5e/ed/f95eed6977301193fa05b41d4fc2ebfa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4RA5PBGmw7AZ5gnHkX_0Yge0X81sUUCg6oJvswc4S2Ia__YVsJX_rb-b_1Pwx5bGzbEc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Namun kamu nggak usah khawatir sebab keterbatasan tersebut pun mampu teratasi dengan baik dengan inspirasi dapur minimalis sederhana berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mrs Bogar On Instagram Udah Lama Pengen Punya Dapur Industrial Serasa Di Pedesaan Dapur K Kitchen Accessories Decor Kitchen Design Small Home Decor Kitchen" src="https://i.pinimg.com/originals/ae/e4/0f/aee40f6db6c1d04dc10db6fcaecc93de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPp2D_M7omU4SsvUsV-uUJVPBzXBTal5vEeQ';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>5 Model dapur sederhana untuk rumah yang tidak terlalu luas Ide model dapur sederhana dengan area terbatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Dihalaman Belakang Dan Penuh Privasi Menyenangkan Rasanya Interior Dapur Desain Dapur Dapur" src="https://i.pinimg.com/originals/f0/f8/49/f0f8497454602670f85ef62d95f7d34d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ynb9hjdEizoAQyw2bvTCjGMhjxzj33HjmVdZIkH2OnJUjUQDYOqkjMmgQXtnCbsmHlM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>45 Model Meja Dapur Cor Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Keramik Dapur Minimalis Desain Lemari Dapur Model Dapur Lantai Dapur" src="https://i.pinimg.com/736x/b9/f9/f6/b9f9f6400a6e339b2dc017d5b7b23408.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRMdHIpvctPouGfg3O2hRtrLkhJBx_gU1FTw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dapur minimalis terbuka di belakang rumah seperti ini memang rentan debu makanya gunakan tirai bambu di bagian samping dapur untuk menghalaunya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Kotor Sederhana Desain Dapur Dapur Inspirasi Dapur" src="https://i.pinimg.com/originals/f6/98/b7/f698b76b7bea4355ab888a6c554bd5b4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOjxGhD-fWcH75nzGemsxuzEtKW6hJkgZwiF2mSgUM11FlT5ttEfrFrJWEHQNa3hiIlE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna coklat tua nampaknya cocok dengan ruangan minimalis berwarna putih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Type 36 60 Dapur Rumah Interior Kamar Tidur Interior" src="https://i.pinimg.com/originals/7e/3c/2b/7e3c2b11664d9024de66bd3460368064.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdrJD0efixwWrpYXNFh_8Jqe7CZqvXFjJh65QPUal2QDI51ztM_FGEFP7AQuOwzjqUFE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya dapur ini didominasi warna-warna netral sehingga tidak meninggalkan kesan terlalu ramai lalu warna kromatik juga tidak kalah bagusnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Bentuk I Desain Dapur Kecil Dapur Minimalis Model Dapur" src="https://i.pinimg.com/originals/af/d5/56/afd556fa1c370090904cd834b012072b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1CTp5YxGc8UiSkQoqhqukc1HHJf6pyFQINzte1dpq2VNXa2Uh704bZFhryWth3pt0R8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>5 Model dapur sederhana untuk rumah yang tidak terlalu luas Ide model dapur sederhana dengan area terbatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Memulai Hidup Sehat Dari Ruang Dapur Yang Bersih Dan Tertata Rapi Dapur Ruang Hidup Sehat" src="https://i.pinimg.com/originals/d6/6e/3a/d66e3a3152478a9ad20639c073334b12.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ33JDsdBY0EoyahBg602DqmzHfB8LQn5YKsQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dapur kotor terbuka dapur sederhana dapur kotor modern dapur kotor di belakang rumah gambar dapur sederhana desain dapur bersih desain dapur sederhana dan murah desain dapur minimalis 3x3 50 Ide Desain Dapur Kotor Sederhana Model Dapur Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="16 Desain Dapur Minimalis Youtube Dapur Minimalis Desain Dapur Dapur" src="https://i.pinimg.com/564x/e5/e2/4a/e5e24a1b4c120bda5a5b0c0afc83f930.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkmh4bolxWs1Jt4q34fY35b0VjcCh3IOEv9q97YVHNLfDI_RHLML-1rUVErJtliY8QWus';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Istilah dapur kering maksudnya adalah dapur yang biasanya tidak digunakan untuk memasak dan mencuci piring.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New The 10 Best Home Decor Ideas Today With Pictures Selamat Sore Dari Dapur Kotor Yg Belum Rapi Hehehe Dapur Kecil Ide Dekorasi Rumah Dekorasi Rumah" src="https://i.pinimg.com/736x/c0/52/91/c05291ce117159d10c060c5c43007344.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8H5eccWE7hLj6Vv4njKNAJbUq-kQZgNpofg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda bisa memilihi kombinasi warna dapur ini untuk menghias rumah anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Cantik Minimalis Desain Dapur Interior Dapur" src="https://i.pinimg.com/736x/19/bb/0f/19bb0f659c993f8dd139f1f63513aae4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo6H7lWIpgSv22j2BrC1eiVUqxc4k4sbIQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi model dapur minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Yang Cantik Pasti Adalah Dapur Yang Bebas Dari Pemandangan Kotor Dan Juga Bau Tak Sedap Desain Kitchen Set Yang Baik Adalah Desai Dapur Furniture Desain" src="https://i.pinimg.com/originals/1f/15/55/1f1555908f067e1d0d299be5bc7992b9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxO_Ty6YUjNWm_zXHtQhKoeWTlccUPDdDVgA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Istilah dapur kering maksudnya adalah dapur yang biasanya tidak digunakan untuk memasak dan mencuci piring.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Gambar Dan Ukuran Kitchen Set Yang Tepat Untuk Dapur Rumah Dapur Rumah Desain Dapur Interior Dapur" src="https://i.pinimg.com/originals/2f/17/99/2f179904f818c6c62db30c90ae4ecea8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShkuX1AEpPFQNeYAPfmFGX7m8Px4bjAhdxEInD0yhySrAYbD62UwOa2kYGgv8Ra_xowNg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model ini bisa menjadi referensi dapur minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="55 Contoh Desain Dapur Minimalis 3x3 Cantik Dan Modern Terbaru Desain Dapur Minimalis Rumah Tips Dekorasi Rumah Desain Produk" src="https://i.pinimg.com/736x/d4/38/c9/d438c9446715e5fc0bd65a0ad200367d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Za1Hog8KhhlG81U1woq_kMBs54GAWsB_wg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan tatanan balok kayu yang memanjang membentuk meja persegi dan juga ditutup oleh kayu berbentuk kotak terlihat sederhana dan alami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Set Mini Bar Minimalis 1 Novi House Rumah Desain Interior Dekorasi Rumah" src="https://i.pinimg.com/originals/e8/4d/bb/e84dbb3bc63643ab3d64ca81202d935f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKYNromvNMwdH7z2R5-1i78hP66H9dZBBjA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika dulu tempat tinggal digunakan untuk tempat perlindungan dari perubahan cuaca serta buat melindungi diri dari terjangan hewan luar kegunaan rumah pada zaman sekarang ini lebih kepada tempat istirahat setelah selesai menjalankan berbagai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Nuansa Hijau Dapur Hijau Dekorasi Rumah Dapur Lemari Dapur Modern" src="https://i.pinimg.com/originals/69/21/ac/6921ac57557a11edd86661a4d65a555c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrwC1i5edxH1bjR_IWoicY5fypOvx-cilVebXQt0A07tcaC0DX-_4tnTsKdO2Dic87IM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur bersih dengan fungsi memasak yang sederhana punya peralatan yang sederhana pula.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-minimalis-pintu-depan-dan-samping.html"><i>&larr; desain rumah minimalis pintu depan dan samping</i></a>
+                                                                    
+                                        <a href="/desain-rumah-minimalis-modern-2-lantai.html"><i>desain rumah minimalis modern 2 lantai &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

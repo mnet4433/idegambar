@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Arsitektur Kamar Tidur
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Arsitektur Kamar Tidur",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/f4/9b/c6/f49bc6f09577ef0ca4486ca8afa41b8c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=arsitektur+kamar+tidur",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Arsitektur Kamar Tidur
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Arsitektur Kamar Tidur</strong>. Keluarga Gudang 2 KamarART 2 Kamar Mandi. Dalam mendesain sebuah rumah kamar tidur adalah ruang dalam rumah yang tergolong area privatFungsi utamanya sebagai tempat untuk beristirahat menuntut kamar tidur untuk didesain senyaman mungkin bagi penghuninya.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/8b/77/47/8b7747256c4c4cfc969aff5e049fef63.jpg" alt="Jasa Arsitek Sukoharjo Jawa Tengah Desain Rumah Bapak Hence Rumah Desain Rumah Desain Rumah Modern" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0CapIysM6gXSOUeJ_gxqdzFIAw0BrlhvEKQ';">
+        <figcaption>Jasa Arsitek Sukoharjo Jawa Tengah Desain Rumah Bapak Hence Rumah Desain Rumah Desain Rumah Modern from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Mandi dalam Ruang Tamu Ruang Keluarga Ruang Tamu Keluarga Ruang Makan 3 Kamar Mandi Gudang Dapur Kotor Pantryi Area GYM Pond Taman Pool. Sekian cerita perjalanan projek kami. Dengan menampilkan warna-warni yang lembut arsitek membangun tempat tidur bertingkat lengkap dengan tangga untuk naik ke bagian atas.
+    </p>
+    <h3>Mandi dalam Ruang Tamu Ruang Keluarga Ruang Tamu Keluarga Ruang Makan 3 Kamar Mandi Gudang Dapur Kotor Pantryi Area GYM Pond Taman Pool.</h3>
+    <p>Tempat lilin aroma terapi menarik secara estetika sehingga sangat mendukung tampilan kamar tidur estetik. Kami akan dengan senang hati membantu pembaca. Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru. Mandi dalam R.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstru Desain Interior Ide Kamar Tidur Kamar Tidur Warna Putih" src="https://i.pinimg.com/originals/aa/b5/3a/aab53a6fd131d11fd9ac22a5b02c93e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_maVnn0tV4eyp0qamtimRKpvmBJ8JB8hx6PiDjWYrncouWG8Y0RX8TFoPOxVpNinh7o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tambahkan semburat warna dan pola menarik ke dinding kamar tidur dengan menggunakan wallpaper yang bisa dilepas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kr Ide Kamar Tidur Desain Interior Ide Apartemen" src="https://i.pinimg.com/originals/12/c0/58/12c058ed98cea3657cc2f072e0875935.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNdftPVOxO7D1w89YK2ngNZxFzd9B2GbpKy12ewrllNel8wa5l1XWEX47GS7O5VpwLtA0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>April 26 2016 Arsitek77 2 Comments.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Krea Desain Interior Ide Kamar Tidur Kamar Tidur" src="https://i.pinimg.com/474x/4b/0c/86/4b0c8674a099174b33edc1965d48ea2b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTIUitz-vP_crpsFooAxs8OOG67eP7QrBtOA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>KAMAR TIDUR MINIMALIS 3X3 rumah adat betawi terdiri atas tiga jenis rumah adat kecuali.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=kamar+tidur+split+level&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=kamar+tidur+split+level&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Tempat lilin aroma terapi menarik secara estetika sehingga sangat mendukung tampilan kamar tidur estetik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi D Ide Dekorasi Rumah Desain Interior Ide Kamar Tidur" src="https://i.pinimg.com/originals/b2/2b/a7/b22ba7495fcb837bc67d2e71e66c8c65.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVjmTDXkfIomLjnrfE1nmBK_czBEnmQTPPgAJjxcqGa9SDdkV3gQb6p6RkuDgoTPPR6z8';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Mandi dalam Ruang Tamu Ruang Keluarga Ruang Tamu Keluarga Ruang Makan 3 Kamar Mandi Gudang Dapur Kotor Pantryi Area GYM Pond Taman Pool.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi D Desain Interior Ide Kamar Tidur Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/5a/4f/9d/5a4f9da73467285e7a7355b05baf9a08.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrFURFP11uNNO6WdiDVQ_liLUCWijm8rVmkaqR0NZY_mOa1Uqs4RoYiLaJpVLyFuy8k-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilihlah wallpaper yang sangat unik untuk dipasang di salah satu dinding kamar dan pilihlah wallpaper polos bertekstur untuk memenuhi sisi dinding lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Sukoharjo Jawa Tengah Desain Rumah Bapak Hence Rumah Desain Rumah Desain Rumah Modern" src="https://i.pinimg.com/originals/8b/77/47/8b7747256c4c4cfc969aff5e049fef63.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0CapIysM6gXSOUeJ_gxqdzFIAw0BrlhvEKQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Mengusir Tikus di Plafon Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan K Ide Kamar Tidur Kamar Tidur Kamar Tidur Nyaman" src="https://i.pinimg.com/736x/19/9d/b6/199db6af1e4eefe88cab4d6c2c09ec0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv3L-fDUP7D5kH-rzbx1XSa2NVIbMRTQrqPwK8hJq3OpoeZKOdircA7O7EmB7-5zZqE9Q';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Bagian atapnya sendiri terdiri atas 4 bagian utama yang terbagi atas 2 bagian depan dan 2 bagian belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Seni Dekorasi Rumah Rumah Interior" src="https://i.pinimg.com/564x/1b/bf/8c/1bbf8c8ceeb0794884a43500dbb5b1da.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYThro3NaBNr0WCdqelceu_gcH-O7u2Mccsg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara Mengusir Tikus di Plafon Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Makassar Kamar Tidur Anak Remaja 3d Render By Rumah Garis Studio Arsitektur Interior Portofolio Desain Interior Kamar Tidur Interior" src="https://i.pinimg.com/originals/2a/ab/1f/2aab1fc301d2bd5aca303f6fc294a9c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMoCUUfzydyIpg3JqoK1Mk65TQdOPTIol3di-yTf3MinaffyzNqUcYEkMT8JAyDkUZ3U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur tanpa Ranjang Desain Kamar Tidur tanpa Ranjang Selain memberikan rasa nyaman ternyata kamar juga perlu memiliki tempat tidur yang Call.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Desain Interior Ide Apartemen Kamar Tidur" src="https://i.pinimg.com/originals/f9/f5/77/f9f577b7859e2a40a16722e422913493.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKdcPwkLNiUuzQG4OcYlmPdvQnvBlrEb1-ebKttMfdUug8hLM5a53j-RYZ9LzuoajE7vI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wallpaper Di Kamar Tidur - Berbagai motif wallpaper siap untuk dipasang dalam kamar tidur anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=dekorasi+rumah+tipe+36+60&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=dekorasi+rumah+tipe+36+60&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>April 26 2016 Arsitek77 2 Comments.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Seni Kamar Tidur Desain Interior Rumah" src="https://i.pinimg.com/564x/c6/e1/0d/c6e10d26606d9cd127516bb1382895fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotNRHMX5Aj8YpDxOPc4mU3MGqp_5xw5efbV96PrPUrk4gYIyJHjKCRbo7_p8x7_Cxjvo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 Kamar Tidur Utama 6134 m 2 Kamar Tidur dg K.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Krea Desain Interior Kamar Tidur Ide Kamar Tidur" src="https://i.pinimg.com/564x/e6/7f/35/e67f3500ed9a6f5b4b326bf8db427ffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYm8WeGi_p4Jy53Ie9KtLTmzPtI5tF7b-cq44Q9t3jgNnN2QaJMYgliPTyFSWFDB1QJhQ';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Rumah Kecil Nan Cantik Dengan Indoor Garden Inspiratif 1000 Inspirasi Desain Arsitektur Inspirasi Kamar Tidur Kamar Tidur Cantik Ide Kamar Tidur" src="https://i.pinimg.com/originals/68/79/11/687911a91a45069ab9389a51e1abc90c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFiog6YcP79NElxrqmFQQXcgsR8OTcjGIv7A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semoga artikel ini menjadi inspirasi pembaca yang sedang mencari inspirasi untuk interior kamar tidurnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruks Interior Apartemen Desain Apartemen Kamar Tidur Rumah" src="https://i.pinimg.com/originals/01/11/36/0111369c654bd20d0a97aee2f7e81ee5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa0LftrDmhXMlZl88XrFrZXGmayo2bh2N9nWDTJXtYtnMxvyWxKwu7rALnNiKY0y0Ip5Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Guna kebaikan Anda sendiri jika kamar Anda selalu bersih dan wangi bukan hanya Anda yang betah siapapun yang berkunjung akan sangat lelap tidur di kamar Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kamar Tidur Christeven Interior Kamar Tidur Kamar Tidur Interior" src="https://i.pinimg.com/originals/af/58/db/af58dbb5f5f20d4ba25b21e9188e9e8d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1WjuMhjNcsiMKH02x0WhkoJjM4JUbhisOQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara Mengusir Tikus di Plafon Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Arsitek Kamar Utama Konsep Modern Klasik Interior Portofolio Desain Interior Kamar Tidur Utama" src="https://i.pinimg.com/originals/c6/96/2a/c6962a8f4ca278fb9a6c2823b3dc2c1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZEabDf3YpRN0T9OOb4jwDn-WZr8DlWYqCw';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>April 26 2016 Arsitek77 2 Comments.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mendapatkan Harga Jasa Desain Interior Kamar Tidur Murah Terpercaya Interior Desain Interior Desain" src="https://i.pinimg.com/474x/9e/8e/b9/9e8eb9ce79b70b24ba74a43b3746fb09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtYeYT2Rhm3PQc4SGed_gWUzgrL7ytX8EfjQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tetapi kini plafon palsu ini hanyalah simbol arsitektur modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Krea Ide Kamar Tidur Desain Interior Kamar Tidur" src="https://i.pinimg.com/originals/51/9f/e5/519fe5125b87cce5a2fb3bda327c1667.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF1OrUIc_DrT1i4lBlMGsylpygimZwyLKepiLv3rL47A15ur_Xjt8cwFxf_yvvpjMeSAc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>1 Kamar Tidur Utama 6134 m 2 Kamar Tidur dg K.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Tidur Modern Minimalis Enka Creative Jasa Desain Arsitektur Exterior Interior Bandar Lampung Indones Interior Bandar Lampung Lampung" src="https://i.pinimg.com/736x/9b/49/84/9b4984d083eadd2fab2880a4d69b16f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dr3Dh4tWeGraJj9AON7IeRI12eFpJrB3UWIWjkswSQshOMVc2742zgIJ8ygDMfW8FPc';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Kebanyakan dari denah rumah menempatkan kamar utama di posisi paling depan biasanya bersebelahan dengan ruang tamu dimana kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Portofolio Hasil Render 3d Kamar Tidur Dengan Kualitas Photorealistic Kami Menerima Jasa 3d Artist Dari Gamb Portofolio Desain Interior Desain Interior Rumah" src="https://i.pinimg.com/originals/60/a9/5a/60a95acfd5d6ec3a3e6eedd86874b8e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnfa-wZsCNKfuQMopG4PzBm6CejpdKEUgQgQspGROoRcllABVNgskuZ8vuPJ15PqmSy4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika memandang berasal dari segi arsitektur bangunannya jenis rumah adat ini bisa dibilang lebih rumit dibandingkan rumah adat jolopong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Desain Inspiratif Ruang Sholat Sederhana Di Dalam Rumah Minimalis 1000 Inspirasi Desain Arsit Desain Interior Ide Ruang Keluarga Ide Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/40/e1/ee/40e1ee18837f4436bdc5ea19c37a794b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-dsKFKVlBTDb5i0LrDcLsVuiYA58iAGnUbg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Guna kebaikan Anda sendiri jika kamar Anda selalu bersih dan wangi bukan hanya Anda yang betah siapapun yang berkunjung akan sangat lelap tidur di kamar Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Kon Kamar Tidur Mewah Modern Desain Interior Ide Dekorasi Rumah" src="https://i.pinimg.com/564x/b4/76/99/b47699682547b0cbb546819cb61da8f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSEr0Ix12M9zXdYdvRUO4znlwuKFuTciqjBUyTtiTrdviEq03sDCflPFbYnAQxssK2HOo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Portofolio Hasil Render 3d Kamar Tidur Dengan Kualitas Photorealistic Kami Menerima Desain Interior Kamar Tidur Kamar Tidur Kontemporer Dekorasi Rumah Mewah" src="https://i.pinimg.com/originals/51/e9/3c/51e93c6be2b2e88b96a3302477554a59.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfa_wRWw0LqmCbW3-MdAVfGttIh9iyEGNUtQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Mengusir Tikus di Plafon Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Krea Desain Interior Ide Kamar Tidur Kamar Tidur" src="https://i.pinimg.com/564x/58/19/6e/58196ee0a25919c84550dfaf26dc1db1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwx-MANN570ygIHoB-Id38kV6MihDe4xK0A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tak hanya soal luasnya namun desain interior kamar utama biasanya juga lebih istimewa dibanding kamar-kamar lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Arsitek Desain Interior Kamar Tidur Minimalis Desain Interior Interior Interior Kamar Tidur" src="https://i.pinimg.com/originals/6f/e8/1f/6fe81f9919a6cb4f3a9b8653f72ad823.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszC1NPgRS92-PEGVuDGo0Ka-eKWjOD9OQqlhW_uxUTuaI4LgpihLooDHiej9JGdKFPI8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tambahkan semburat warna dan pola menarik ke dinding kamar tidur dengan menggunakan wallpaper yang bisa dilepas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Bedroom Banung House Warna Dinding Kamar Tidur Desain Interior Interior" src="https://i.pinimg.com/originals/50/36/54/503654da16172add31438d44b9bf221d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIYL-wYdPe7qW4urBUg-swoQHJ47ViwXpl1FeHIFUIk5eMf1sKWqomp04uST-SP_X_UwM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pada struktur rumah baik rumah model minimalis mewah atau rumah model apapun kamar utama biasanya mendapat perlakuan lebih istimewa dibanding ruangan lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Kamar Tidur Nyaman Kamar Tidur Inspirasi Kamar Tidur" src="https://i.pinimg.com/originals/9f/57/ab/9f57abb7f310357e1ba6c8cc716356cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd2nU4Qx5ToBP7jI-NRaPOdr3K7_LYeF0OdI7OudvemRasy1IBCDbNftwz96x-SouTzCU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kasur bawah lebih besar ukurannya agar orang tua dapat beristirahat sambil menemani buah hati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Di Jakarta Timur Desain Rumah Bapak Gondo 5 Desain Rumah Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/f5/a6/6f/f5a66f21ee5e0113bb5792bcb737ca6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAp6s2H2oaatiXs4JXhXpQ7Sl1vJHRL-1ng';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Interior Kamar Tidur Utama Konsep Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Portofolio Hasil Render 3d Kamar Tidur Dengan Kualitas Photorealistic Kami Menerima Jasa 3d Artist Dari Gambar Ker Portofolio Desain Interior Interior Desain" src="https://i.pinimg.com/originals/ef/4c/c3/ef4cc3824270d591fc2f124fbf2a44b0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiOaRi1yUFMfeamj4NVBOPtzaJ3ZPQN0HO7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tetapi kini plafon palsu ini hanyalah simbol arsitektur modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Kathmandu Nepal Desain Rumah Mr Neeraj Di 2020 Desain Rumah Desain Interior Rumah Desain Produk" src="https://i.pinimg.com/originals/c6/54/9f/c6549f5bf7c97d5f1e2fc15344e7e8d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbdQvqdYdpVBCq1q_Y3PLAgy_grH73-PMU8A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada struktur rumah baik rumah model minimalis mewah atau rumah model apapun kamar utama biasanya mendapat perlakuan lebih istimewa dibanding ruangan lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Interior Inspiratif Rumah Minimalis Type 54 1 1 2 Lantai 1000 Inspirasi Desain Arsitektur T Ide Dekorasi Kamar Tidur Ide Kamar Tidur Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/e5/db/1e/e5db1ed8fb5b9f3304ff73ae150ef0c0.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwqf9iH8VQDPxQ_HzOI-wkvOFB_bsadcp3Bg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilihlah wallpaper yang sangat unik untuk dipasang di salah satu dinding kamar dan pilihlah wallpaper polos bertekstur untuk memenuhi sisi dinding lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Ide Kamar Tidur Kamar Tidur Ide Apartemen" src="https://i.pinimg.com/564x/44/8c/9b/448c9b1aeb57397be3e1d522adec28ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8FYn-2sv5Ilyju7YqXcz89JqhyVFYpyIVCg';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Ubah suasana dengan wallpaper.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Seni Desain Interior Interior Kamar Tidur" src="https://i.pinimg.com/564x/1a/75/b0/1a75b041d42c193367544a12e80aa612.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHbcV4oaU1z2KCuN43muUiVKQ5iSduzAm7xQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan menampilkan warna-warni yang lembut arsitek membangun tempat tidur bertingkat lengkap dengan tangga untuk naik ke bagian atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Inspirasi Kamar Tidur Unik Dengan Split Level 1000 Inspirasi Desain Arsitektur Teknologi Konstruks Desain Interior Ide Dekorasi Rumah Ide Penataan Rumah" src="https://i.pinimg.com/736x/9a/0f/b8/9a0fb890e45ae7ab2a3bbfdef2225275.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1I0_hOV6jdcc-JjjTJqo3vitgqy5oytocDS3Wti_lCNuGqYumDYH8oSp654mTNc-xNsQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tak hanya soal luasnya namun desain interior kamar utama biasanya juga lebih istimewa dibanding kamar-kamar lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Arsitek Desain Interior Desain Interior Kamar Tidur Minimalis Desain Interior Desain Interior Kamar Tidur Interior" src="https://i.pinimg.com/originals/f9/ee/17/f9ee1755a167e4a8d0854cd10c19be9d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQCFO4iB3bbg5lKX5qmfnwlERSyBHEtM9Vw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pemanfaatan penerangan alami yaitu melalui jendela sehingga sinar matahari dapat dengan mudah masuk ke dalam kamar tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kamar Anak Desain By Rumah Garis Konsultan Arsitektur Portofolio Desain Interior Interior Desain Interior" src="https://i.pinimg.com/originals/c6/23/dc/c623dca0942de597a23e9f9e73e47aad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u4ys-BGG_OlnrekG41DtbS6bAad6fZd8orACf7SJ76KcJhpkLmf-KvXIKp3FXXcyCEA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tempat lilin aroma terapi menarik secara estetika sehingga sangat mendukung tampilan kamar tidur estetik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Bedroom Banung House Ide Kamar Tidur Desain Interior Rumah" src="https://i.pinimg.com/originals/38/42/30/38423007722d4cb9d7843d436fa745df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Y_8nCqQiWHukaJ8DsXonYTSx9pnSrRraRA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan menampilkan warna-warni yang lembut arsitek membangun tempat tidur bertingkat lengkap dengan tangga untuk naik ke bagian atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Tangerang Desain Rumah Mr Hr Desain Interior Desain Interior" src="https://i.pinimg.com/originals/eb/5d/92/eb5d92344f18611a8a1197a0b86fffba.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyVijdZoPBdm5qIf8bqLczUopqJUsqiQkeXg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bagian atapnya sendiri terdiri atas 4 bagian utama yang terbagi atas 2 bagian depan dan 2 bagian belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Arsitek Indonesia Indonesian Architecture Fa Hs" src="https://i.pinimg.com/originals/e5/69/12/e5691298744557d61542a7be36d2b2c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvgJji0IZldiWq3V88BKCUWUUhgVzgMgACcQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pilihlah wallpaper yang sangat unik untuk dipasang di salah satu dinding kamar dan pilihlah wallpaper polos bertekstur untuk memenuhi sisi dinding lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="14 Desain Inspiratif Interior Rumah Kecil Minimalis Modern 1000 Inspirasi Desain Arsitektur Teknolo Ide Kamar Tidur Ide Dekorasi Kamar Ide Kamar Tidur Kecil" src="https://i.pinimg.com/originals/41/a1/3b/41a13bca801ac1a9b4caabc026ee9a1e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmlTSeH__v_cjnJRyFsrAHvN-bp8hajDuQNg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar tidur minimalis merupakan ide desain yang digunakan untuk menciptakan ruangan dengan desain minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Makassar Kamar Tidur Anak 3d Render By Rumah Garis Studio Arsitektur Interi Modern Bedroom Design Minimal Interior Design Minimalism Interior" src="https://i.pinimg.com/originals/f4/9b/c6/f49bc6f09577ef0ca4486ca8afa41b8c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiojcH22LBQGd1ryHRIlc5Ce1024gMf59Bgo1FsjYOv1Ra1OrsloIl5Z5YxZcLxBNV2j8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Minimalis di sini dapat diartikan sebagai sebuah desain yang tidak banyak menggunakan jenis material maupun unsur dekoratif di dalamnya yang dapat juga tercemin pada ruangan di dalam rumah minimalissecara keseluruhan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="19 Ide Inspiratif Kamar Tidur Anak Minimalis 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Da Ide Kamar Remaja Ide Kamar Tidur Kecil Ide Kamar Tidur" src="https://i.pinimg.com/originals/73/fe/af/73feafcb2911433e7266654a17b8c03a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSliZIREh5yW64LQlLEdiqMRgVmhFckUtNJIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Tidur Anak Modern Minimalis Enka Creative Jasa Desain Arsitektur Exterior Interior Bandar Lampung Indonesi Interior Home Home Decor" src="https://i.pinimg.com/originals/b0/a9/27/b0a9276b7abf83d95c21d120771075ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxSniU6YNnkZNtdYs3iYdPCRsFTgsiC_XGcA';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>MODEL PINTU UNTUK KAMAR TIDUR ARSITEK INDO KONTRAKTOR Ada berbagai banyak model pintu untuk kamar tidur anda dari yang sederhana sampai yang memiliki Call.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Untuk Membuat Suasana Arsitektur Ruang Dan Arsitektur Interior Dapur Menjadi Nyaman Untuk Penggunanya Ba Small Room Bedroom Home Room Design Small Room Design" src="https://i.pinimg.com/originals/8b/00/f4/8b00f42f04317850cd5278fe14167b21.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkH6UGv1fjdM8RWNUpkMzXgUbPGl1wYaAIg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami akan dengan senang hati membantu pembaca.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Bedroom Banung House Ide Kamar Tidur Ide Ruang Keluarga Desain Interior" src="https://i.pinimg.com/originals/b4/ac/1e/b4ac1e83164b3a78a63c6ffd5fd93446.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDaGKzyScZnEYbaXmC4VEvNjeC31pzX7a5Wg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semoga artikel ini menjadi inspirasi pembaca yang sedang mencari inspirasi untuk interior kamar tidurnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Guest Bedroom Apartment Sudirman Area By Vaastu Arsitektur Studio Homify Kamar Tidur Tamu Apartemen Ide Kamar Tidur" src="https://i.pinimg.com/originals/d8/c6/09/d8c6093eaa518c1f4102f5c658c1c860.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWzdA0KTRHoLxlyVckGKORVeLGbvxRQddEvA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semoga artikel ini menjadi inspirasi pembaca yang sedang mencari inspirasi untuk interior kamar tidurnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Project 11a Residence Desain Arsitek Oleh Sontani Partners Arsitag Ide Kamar Tidur Ide Dekorasi Rumah Desain Interior" src="https://i.pinimg.com/originals/a6/7f/67/a67f6790736c3f5bd2000d427a150a4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6W5I4E7TW-Eo5v2E5FjnQ8ivsw-CF66dPLQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika dipadukan dengan lampu gantung plafon palsu ini akan memberikan tampilan yang menarik di kamar tidurmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gunakan Black Mirror Sebagai Aksen Backhead Ranjang Agar Interior Kamar Tidur Berkesan Lu Kamar Tidur Mewah Kamar Tidur Mewah Modern Portofolio Desain Interior" src="https://i.pinimg.com/originals/fb/23/f0/fb23f0b93c286b3cc337bdad6a0c0499.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMjc09YQKCcP14IEEtLdEMv-EcnmpEjNHrg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Maka dari itu memberikan perhatian khusus dengan cara mendekorasi kamar dengan gaya.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/lantai-granit-rumah-mewah.html"><i>&larr; lantai granit rumah mewah</i></a>
+                                                                    
+                                        <a href="/langit-langit-rumah-modern.html"><i>langit langit rumah modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

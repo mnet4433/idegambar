@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Aplikasi Denah Rumah Android
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Aplikasi Denah Rumah Android",
+  "datePublished": "2021-08-09",
+  "image": "https://www.hallogsm.com/aplikasi-desain-rumah-android/aplikasi-buat-denah-rumah/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=aplikasi+denah+rumah+android",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Aplikasi Denah Rumah Android
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Aplikasi Denah Rumah Android</strong>. 3D Home Designs Layouts. Setelahnya anda dapat melakukan desain rumah online android maupun menggunakan PC.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://kabelkusutblog.com/wp-content/uploads/2020/05/3D-Floor-Plan-smart3Dplanner.png" alt="10 Aplikasi Desain Rumah Di Android Terbaik 2021" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlaJ8CxiNgpiLzE2bSzk15zw1rzLCGVBmRjA';">
+        <figcaption>10 Aplikasi Desain Rumah Di Android Terbaik 2021 from kabelkusutblog.com</figcaption>
+    </figure>
+        <p>
+        10 Aplikasi Desain Rumah Terbaik di Android 1. Aplikasi Desain Rumah 3D Android yang wajib Anda tahu sebagai referensi untuk mendirikan sebuah tempat tinggal yang menjadi idaman. Aplikasi desain rumah satu ini memiliki beberapa fitur yang akan memberikan kemudahan contohnya Anda bisa mendesain lantai.
+    </p>
+    <h3>Namun memiliki rumah impian tidak semudah membelikan telap tangan.</h3>
+    <p>Aplikasi berukuran 58 MB ini akan memberi kamu kemudahan dengan banyaknya tools yang tersedia. Home Design 3D Aplikasi Desain Rumah. 15 Aplikasi Desain Rumah Android Terlengkap 2021 Apalagi perkembangan teknologi internet yang semakin cepat akan memudahkan Anda untuk mendapatkan literasi desain rumah. Aplikasi Desain Rumah Android Terbaik.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Dengan Fitur Lengkap Dan Gratis Jalantikus Com Line Today" src="https://obs.line-scdn.net/0hw-XKxfZHKAJlMgVY4z5XVV9kK21WXjsBAQR5HDVcdjYbADpdClA0bEYwdTdIBm9cDFdvY0Y1MzNBBGcHWlE0/w644" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVFoZQ3svOwc1A3wWzbAI1utrobCMBdUi0KwjNpEvxEmKKNQqiSeB006hUpHevmP9jJ8';" />
+        <small>Source: today.line.me</small>
+                    <p>Jadi untuk kamu yang sudah punya bayangan segera download Home Design 3D ya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Android Terbaik Mudah Dan Gratis" src="https://cdn.popbela.com/content-images/post/20201114/d0766fee86c0e6327c0fbc7398c0792a_750x500.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSV_G2drA2o4AZQ_Ph17Ioca_yzwuOQl-MqA';" />
+        <small>Source: www.popbela.com</small>
+                    <p>Aplikasi Desain Rumah 1 Gak cuma konsep rumah tampak luar Planner 5D juga punya fitur yang memungkinkan kamu melakukan desain interior alias bagian dalam rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Dengan Fitur Lengkap Dan Gratis Jalantikus Com Line Today" src="https://obs.line-scdn.net/0hayWjNVsUPlZqExMM7B5BAVBFPTlZfy1VDiVvSDp9YGIUISwJBXEhOElHMjYVdnkIA3Z5N0gWJWdOJXFTVXAh/w644" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFirmCsrRTDMsvtlIS1SAa_cOUgLVYBGf9PAH73eG8F1uKkQgH7NGFqRLQcL1V_6GSFY';" />
+        <small>Source: today.line.me</small>
+                    <p>3D Home Designs Layouts.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="22 Aplikasi Desain Rumah Terbaik Android Ios Pc 2021 Gadgetized" src="https://www.gadgetized.net/wp-content/uploads/2020/02/Aplikasi-Desain-Rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHMuq4hlyb7UCVXlg7dpnNdqpLZqTnmzV9CQ';" />
+        <small>Source: www.gadgetized.net</small>
+                    <p>Aplikasi Desain Rumah 3D Android yang wajib Anda tahu sebagai referensi untuk mendirikan sebuah tempat tinggal yang menjadi idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Aplikasi Desain Rumah Terbaik Untuk Hp Android" src="https://carisinyal.com/wp-content/uploads/2015/02/Floor-Plan-Creator.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhN-p8EQZvxRU2thSgyxdj-SD9BiPqESMhdg';" />
+        <small>Source: carisinyal.com</small>
+                    <p>Jadi untuk kamu yang sudah punya bayangan segera download Home Design 3D ya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Aplikasi Desain Rumah Terbaik Untuk Hp Android" src="https://carisinyal.com/wp-content/uploads/2015/02/swedish-home.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7rTQ4MR4GV-yu-jQ76PymjWTWq2zq9cP2g';" />
+        <small>Source: carisinyal.com</small>
+                    <p>Ya aplikasi Floor Plan Creator menyediakan fitur desain rumah dengan penampakan dari sudut pandang atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Ini Mudahkan Rancang Rumah Impian" src="https://i2.wp.com/f1-styx.imgix.net/article/2020/01/14113429/ap5-aplikasi-desain-rumah-magic-plan.png?fit=1400%2C841&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiOa1pw766REF5Trcbj5xjs0G611fU9BCGwUK9Xkub3_Ub-YxSjR2qNQuAjqOZ_8kjMco';" />
+        <small>Source: www.dekoruma.com</small>
+                    <p>Pastinya sangat worth to install di smartphone kesayangan sebab tidak akan membuat memori kita penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Android Terbaik Mudah Dan Gratis" src="https://cdn.popbela.com/content-images/post/20201114/f80e34caaa9e186fd57ffe9da9c96d2b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyQUzt6YA5nV9pnRUnrpWHgwDXbN5jwAeG7PPNMWleMsLSUv2v6YpeeWztkfnii44PdDo';" />
+        <small>Source: www.popbela.com</small>
+                    <p>Aplikasi Desain Rumah Android Terbaik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Aplikasi Desain Rumah 3d Android Offline Gratis Untuk Pemula Klikponsel Com" src="https://www.klikponsel.com/wp-content/uploads/2017/03/ikea.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQioyrN0LuXuDWLjpt4YSLb539vxzfGkTstT5vpWKry2cAEHmRDWpWwhhf-Ck8Id-nzQwQ';" />
+        <small>Source: www.klikponsel.com</small>
+                    <p>Salah satu area ini ada di mana-mana kamar tidur dll Dan ruang luar yang harus membuat rumah terasa nyaman saat ditempati nanti.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Aplikasi Desain Rumah Untuk Hp Android Tokopedia Blog" src="https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2021/02/Mobile-AR-News.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT75SiGRCppE7ucN_qm4bF-v-Mf6BVlEBuI4g';" />
+        <small>Source: www.tokopedia.com</small>
+                    <p>Aplikasi Desain Rumah Gratis untuk HP Android.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="13 Aplikasi Desain Rumah Android Terbaik 2021 Phoneranx" src="https://www.phoneranx.com/wp-content/uploads/2018/08/Aplikasi-Desain-Rumah-Android-Terbaik.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOKb2tU3m1p8fkFoI0bAg-uBIw0ojPWfwjRA';" />
+        <small>Source: www.phoneranx.com</small>
+                    <p>Homestyler Interior Design merupakan aplikasi desain rumah android terbaik dari Autodesk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Aplikasi Desain Rumah Android Terbaik Berasa Desainer Betulan" src="https://blogpictures.99.co/Android-Room-Planner.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1XIPhdUelBi64YbR36eP1n-D2MS9OT1AA1LurusLXKsbD3cT2iAgy7Jpj-bVhDa9eCHw';" />
+        <small>Source: www.99.co</small>
+                    <p>Aplikasi berukuran 58 MB ini akan memberi kamu kemudahan dengan banyaknya tools yang tersedia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Untuk Hp Android Ruanglaptop" src="https://ruanglaptop.com/wp-content/uploads/2018/12/Aplikasi-desain-rumah-android-1-480x267.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17CPEs1ucf9-97TknZf1Ic4chn4ZrRIs7Gg';" />
+        <small>Source: ruanglaptop.com</small>
+                    <p>Aplikasi Desain Rumah 3D Android yang wajib Anda tahu sebagai referensi untuk mendirikan sebuah tempat tinggal yang menjadi idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Rumah" src="https://assets.jalantikus.com/assets/cache/500/337/userfiles/2020/01/30/aplikasi-desain-rumah-pc-sweet-home-3d-b724c.jpg.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlw61vVfJSJrf_3fPspgPCdtkH52GIR075-w';" />
+        <small>Source: kabarin.co.id</small>
+                    <p>Ya aplikasi Floor Plan Creator menyediakan fitur desain rumah dengan penampakan dari sudut pandang atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Aplikasi Desain Rumah Untuk Pemula Expert" src="https://i2.wp.com/thesourcedenver.com/wp-content/uploads/2019/07/Homestyler.jpg?resize=1413%2C626&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRlaGDUtjQohLV081JTi1eiNlb6KzhYTFK3A';" />
+        <small>Source: thesourcedenver.com</small>
+                    <p>Aplikasi ini dapat menggambarkan ruangan asli menjadi bentuk model 3D sebagai inspirasi dalam perancangan desain rumah yang kita inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="24 Aplikasi Untuk Mendesain Rumah Terbaik Paling Populer Sindunesia" src="https://sindunesia.com/wp-content/uploads/2020/01/Aplikasi-desain-rumah-Sweet-Home-3D.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ__-SmUZJ5wE4m7r4Ob4Wowm17WZ93Dk3w_g';" />
+        <small>Source: sindunesia.com</small>
+                    <p>10 Aplikasi Desain Rumah Terbaik di Android 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Aplikasi Desain Rumah Terbaik Di Android Dan Ios Laci Usang" src="https://laciusang.com/wp-content/uploads/2019/07/Magicplan.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphufrPXJleqw1HxSndCcDzvXUGhuyETSWZw';" />
+        <small>Source: laciusang.com</small>
+                    <p>Setelahnya anda dapat melakukan desain rumah online android maupun menggunakan PC.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Aplikasi Desain Rumah Android Terbaik 2021" src="https://ponseli.com/wp-content/uploads/2019/06/Aplikasi-Desain-Rumah-Android-Terbaik-1200x675.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSxM5mDSFPhO917MaA3GR-xLV8i7tM0FTIjg';" />
+        <small>Source: ponseli.com</small>
+                    <p>Pastinya sangat worth to install di smartphone kesayangan sebab tidak akan membuat memori kita penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Aplikasi Desain Rumah Android Bantu Dekor Rumah Impian" src="https://cdn.idntimes.com/content-images/post/20171123/54-4-aplikasi-desain-rumah-9d3cb0db4db7ff26e2203997aaff59ac_600x400.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8PXFjm_snLdicu461AJGN1hdXQZ9b8aiZEef0_8CprPAcr5Jce0BA7OuJCD6nzs8NcA';" />
+        <small>Source: www.idntimes.com</small>
+                    <p>Selain membutuhkan biaya yang super banyak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Terbaik 2021 Super" src="https://superapp.id/blog/wp-content/uploads/2021/02/1-4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM2bDFA-zGmnHrezeCoUVRnv62gAnOUKp9Lw';" />
+        <small>Source: superapp.id</small>
+                    <p>Ya aplikasi Floor Plan Creator menyediakan fitur desain rumah dengan penampakan dari sudut pandang atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Aplikasi Desain Rumah Android Terbaik Berasa Desainer Betulan" src="https://blogpictures.99.co/Floor-Plan-Creator.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDXhCJ7tGPKdnL0txMTB6FQTBA1lRLIMuGbEL_XRuR1Qnczl6jpnu2quLul9R2jk6MuE';" />
+        <small>Source: www.99.co</small>
+                    <p>Aplikasi Home Design 3D.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Aplikasi Desain Rumah 3d Terbaik Di Android Paling Mudah Terbaru Paktekno Com" src="https://i0.wp.com/paktekno.com/wp-content/uploads/2019/03/aplikasi-desiain-rumah-terbaik.jpg?resize=650%2C488&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWjoLc_f1nTVc9HSdsZnsazSrDRF6uKdeYeMVhSauKMtaTdbHD1ULL973Ow8eOh3H44WU';" />
+        <small>Source: paktekno.com</small>
+                    <p>Selain membutuhkan biaya yang super banyak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Aplikasi Desain Rumah Android Terbaik Teknologiterbaru Id" src="https://www.teknologiterbaru.id/wp-content/uploads/2020/04/Aplikasi-Desain-Rumah-Android-1-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOdoA-hCDM0v0o_vZTl7QBEN-jdm4MUhAiJ3xdW0yFvBOeb5BcR7SAGwZk2kB57jaXHs';" />
+        <small>Source: www.teknologiterbaru.id</small>
+                    <p>Yuk simak berbagai pilihan aplikasi desain rumah terbaik untuk HP berbasis Android tanpa biaya apapun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Beberapa Aplikasi Desain Rumah Terbaik Rumah Diy" src="https://i2.wp.com/rumahdiy.com/wp-content/uploads/2014/12/Aplikasi-Desain-Rumah-4.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFW0FxcP7AeDXaDqYtzwhognq9lch89mKncA';" />
+        <small>Source: rumahdiy.com</small>
+                    <p>Jadi untuk kamu yang sudah punya bayangan segera download Home Design 3D ya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Aplikasi Desain Rumah Untuk Hp Android Tokopedia Blog" src="https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2021/02/Aplikasi-Floor-Plan-Creator.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpM0MzIFjJdH6C7ydCtcosyamO0nTPsLmYLA';" />
+        <small>Source: www.tokopedia.com</small>
+                    <p>Menggunakan aplikasi Floor Plan Creator ini akan memberikan desain rumah yang nyata dan realistis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Aplikasi Android Untuk Mendesain Rumah 3d Paling Bagus Terbaik Dan Gratis Futureloka" src="https://storage.googleapis.com/app-nesia-wordpress-production/2017/06/15-Aplikasi-Desain-Rumah-Terbaik-di-Android-iOS-PC-Laptop.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DaaH1RiVp7Xr8F358DrABXjc5zX4pOs8ZdxT2PMtOMiAkM_HMRt2ssi8lxu_leZZdW8';" />
+        <small>Source: futureloka.com</small>
+                    <p>Aplikasi Denah Rumah Manakah Pilihan Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Android Terbaik Mudah Dan Gratis" src="https://cdn.popbela.com/content-images/post/20201114/6ba1de40e5d0bf2b6bf1dc1a1904649a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRWh-dNl84lbLhGHntp3UzU-iXfJG7PxYtUZy-wpPnd6gQl_tGWrr3e4G0Q1yNBL-s4I';" />
+        <small>Source: www.popbela.com</small>
+                    <p>Yuk simak berbagai pilihan aplikasi desain rumah terbaik untuk HP berbasis Android tanpa biaya apapun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Aplikasi Desain Rumah Terbaik Di Android Interior Eksterior Brankaspedia Blog Tutorial Dan Tips" src="https://1.bp.blogspot.com/-LxIgCoA7n80/XyghQ6GTCZI/AAAAAAAANqM/q2DTkRMbyDciE5bezQwZx7sLFJ9UG6ApACLcBGAsYHQ/s1600/aplikasi%2Bdesain%2Brumah%2Bterbaik%2Bdi%2BAndroid.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_oobS7LZUC2vdhPGl2o4B5UQCBOXZbX8SLw';" />
+        <small>Source: www.brankaspedia.com</small>
+                    <p>Sesuai namanya aplikasi ini didesain untuk membuat konsep rumah langsung melalui layar smartphone kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Di Hp Android Dan Ios Terbaik Bikin Denah 3d Gratis Suatekno Id" src="https://suatekno.id/wp-content/uploads/2019/05/aplikasi-desain-rumah-untuk-hp-android-ios.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUud7EJ84IC2sshSA0pPHsrer8vzcuZDDRv-GJmXaVrMxUM47JBXhSQeQkx1CJPRAbVwg';" />
+        <small>Source: suatekno.id</small>
+                    <p>Aplikasi Desain Rumah Android 2020 Memiliki rumah impian rasanya merupakan impian semua orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcr352h61tuiftv4qxlz6e3ynsvhkkuxa2el4jgdkjb0j Fyvcta Usqp Cau" src="/search?q=sketchup&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=sketchup&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Namun memiliki rumah impian tidak semudah membelikan telap tangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Aplikasi Arsitek Terbaik Di Android" src="https://jurnalapps.co.id/assets/img/content/1524661543_1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVMcdnkyYnsDOF3ciYcJSxVRbbP1WekpT92sKnchYoElylR30j29zySOoptJ2gKTurIUM';" />
+        <small>Source: jurnalapps.co.id</small>
+                    <p>Nah untuk kali ini ada beberapa aplikasi desain rumah yang bisa Anda gunakan pada ponsel Android.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Gratis Untuk Desain Rumah Di Android" src="https://i2.wp.com/1.bp.blogspot.com/-cuaDaNc8_QI/VD5m8YteA2I/AAAAAAAAH9s/c5Gg6YfWLVU/s1600/medium_review_medium_e7e4e3942c7ee35f47ae814fa830f579.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlkYA6FNlaBwaSREPKPyWyXemtgaYxqrB3R6uPb3KF_Q-XNRSljAq8EKuHBusQYmxtHi8';" />
+        <small>Source: pandetpandet.blogspot.com</small>
+                    <p>Sebenarnya terdapat banyak aplikasi yang dapat digunakan untuk membangun rumah dengan indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Aplikasi Desain Rumah Yang Mudah Digunakan Di Android Good Choice" src="https://i2.wp.com/www.goodchoice.id/wp-content/uploads/2020/06/denah-rumah.jpg?resize=800%2C527" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qNcahQ7Dgvfn1g5x9MzekSUC0FphNrluEA';" />
+        <small>Source: www.goodchoice.id</small>
+                    <p>Home Design 3D Aplikasi Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Aplikasi Desain Rumah Android Terlengkap Hallo Gsm" src="https://www.hallogsm.com/aplikasi-desain-rumah-android/aplikasi-buat-denah-rumah/" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0RLmsKzMYAjDd9EY4Gs2Kr42pYkDkv-aqg';" />
+        <small>Source: www.hallogsm.com</small>
+                    <p>Pastinya sangat worth to install di smartphone kesayangan sebab tidak akan membuat memori kita penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Aplikasi Desain Rumah Di Android Terbaik Gratis 2021" src="https://www.samsungstarters.com/wp-content/uploads/2019/12/Aplikasi-Desain-Rumah-Magicplan.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmLIFNaUoYr5TT1dJ2Dx8Lq-EA20yqmobLiw';" />
+        <small>Source: www.samsungstarters.com</small>
+                    <p>Namun memiliki rumah impian tidak semudah membelikan telap tangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Dengan Fitur Lengkap Dan Gratis Jalantikus Com Line Today" src="https://obs.line-scdn.net/0hq1M_mxP8Lh5wJgNE9ihRSUpwLXFDSj0dFBB_ACBIcCoOFDxBH0RpcFN0IChaFWlAGUNpf1EnNS9UEGEbT0Vp/w644" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM59OU7EZfswgkfXJzhhL8U2ZT7c9CyG_hwg';" />
+        <small>Source: today.line.me</small>
+                    <p>10 Aplikasi Desain Rumah Terbaik di Android 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Terbaik Di Android Tanpa Ribet" src="https://cdn.keepo.me/images/post/covers/2019/03/15/main-cover-image-c3265702-f957-41ee-aa8f-90a9cccd7b52.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEDMvqt48DFSapo2D3tcKsOknI-l_mMH0KGCYPZHqXrpceFAAVmCBtLwB0gN2OXNYTQi8';" />
+        <small>Source: keepo.me</small>
+                    <p>Bagi para pemula hal yang dirasa paling mudah saat mencoba membuat desain rumah idaman atau sekadar belajar saja adalah dengan menggunakan media smartphone.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan 7 Aplikasi Desain Rumah Terbaik Untuk Pc" src="https://ngelag.com/wp-content/uploads/2017/10/TurboFloorPlan-3D-Pro.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiekGWO5AUBzrr_g_qB2nTpECLrbl8g2pdXw';" />
+        <small>Source: ngelag.com</small>
+                    <p>Kalau aplikasi desain rumah android terbaik yang satu ini bisa membantumu membuat desain rumah dalam bentuk denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Di Android Terbaik 2021" src="https://kabelkusutblog.com/wp-content/uploads/2020/05/3D-Floor-Plan-smart3Dplanner.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlaJ8CxiNgpiLzE2bSzk15zw1rzLCGVBmRjA';" />
+        <small>Source: kabelkusutblog.com</small>
+                    <p>10 Aplikasi Desain Rumah Terbaik di Android 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Aplikasi Desain Rumah Android Terbaik Openmobileww" src="https://i2.wp.com/www.openmobileww.com/wp-content/uploads/2021/01/15-Aplikasi-Desain-Rumah-Android-Terbaik.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgqxLJlKIftNIxVShHbtNcPYQIDEL-QqalcAA9J3DAUdmBXilRp1N_gXiPC-yRLml_tyU';" />
+        <small>Source: www.openmobileww.com</small>
+                    <p>Salah satu yang menarik dari aplikasi ini adalah adanya fitur 3D Tour Mode yang bisa membuatmu seakan-akan berada di dalam ruangan yang telah kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Aplikasi Terbaik Untuk Desain Rumah Youtuber Indonesia" src="https://www.anakkost.tv/wp-content/uploads/2019/02/desain-rumah.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6ICkeBSSOBG9qaztyiQHKiFNOuKJASsokA';" />
+        <small>Source: www.anakkost.tv</small>
+                    <p>10 Macam-macam Sofa dan Fungsinya Tak Hanya Soal Estetika.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Desain Rumah Untuk Android Dan Pc Rancah Post" src="https://www.rancahpost.com/wp-content/uploads/2020/08/Aplikasi-Desain-Rumah-untuk-Android-dan-PC.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYV51uCOMhqgRHRr4n37CU6lEe7uGYGl6YwA';" />
+        <small>Source: www.rancahpost.com</small>
+                    <p>Home Design 3D Aplikasi Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Aplikasi Desain Rumah Android Terbaik Dan Gratis Sallyponchak Com" src="https://www.sallyponchak.com/wp-content/uploads/2020/07/Aplikasi-desain-rumah-Android-terbaik-dan-gratis.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSn6WwupocW5o8jCXdY061hUuKFcqWu1y1g';" />
+        <small>Source: www.sallyponchak.com</small>
+                    <p>Ya aplikasi Floor Plan Creator menyediakan fitur desain rumah dengan penampakan dari sudut pandang atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Aplikasi Desain Rumah Untuk Hp Android Tokopedia Blog" src="https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2021/02/Play-Store-Home-Design-3D.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP7tGdKC6MWWMxhBUkdE-rUe-X8e7qXlDJSmHIAA_rz16OJOlsKM5Qy1XoL5bD4sDjaQ4';" />
+        <small>Source: www.tokopedia.com</small>
+                    <p>Aplikasi Desain Rumah 3D Android yang wajib Anda tahu sebagai referensi untuk mendirikan sebuah tempat tinggal yang menjadi idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Denah Rumah 3d Di Android Dengan Aplikasi Arsitek Floor Plan Creator Youtube" src="https://i.ytimg.com/vi/f3nZpn1Bqrw/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxaohU1qmTwl5GxYlO6Sf_05xvFdQBYdYOyg';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Dengan menggunakan aplikasi ini kamu bisa merancang sebuah rumah yang ada dalam imajinasimu dengan bentuk 3D sesuai nama aplikasinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=aplikasi+desain+rumah+pc&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=aplikasi+desain+rumah+pc&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Aplikasi ini dapat menggambarkan ruangan asli menjadi bentuk model 3D sebagai inspirasi dalam perancangan desain rumah yang kita inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Terbaik Saat Ini 2020 10terbaik Com Tekno" src="https://2.bp.blogspot.com/-0odTAJORBz0/WEH0ioA9QXI/AAAAAAAAA_E/YbkZBbQUyRA0Bw1lxizmTCJtwus3trxBwCLcB/s1600/floor%2Bplan%2Bcreator.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRILPa96p7l77S4eN9NY-wwYF2mPwCt_5Wgtw';" />
+        <small>Source: tekno.10terbaik.com</small>
+                    <p>Namun beberapa aplikasi bikin denah rumah android inilah yang paling banyak digunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Aplikasi Desain Rumah Untuk Hp Android Tokopedia Blog" src="https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2021/02/Aplikasi-Room-Creator-Interior-Design.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc_LWGRMVZV5JauFjpnPDfgURnDISpFvSikcvaNaI2oXYm7rFxOEzzI-3gRckxzecQEgs';" />
+        <small>Source: www.tokopedia.com</small>
+                    <p>Room Planner Aplikasi Desain Rumah Android.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan 7 Aplikasi Desain Rumah Terbaik Untuk Pc" src="https://ngelag.com/wp-content/uploads/2017/10/Home-Designer-Suite.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgHOV5fxOorvvC1qZbEaiQ1uzCrObAH9OFqg';" />
+        <small>Source: ngelag.com</small>
+                    <p>Aplikasi Home Design 3D akan membantu Anda mendesain ulang rumah Anda dengan cepat dan tidak diperlukan keahlian desainer khusus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="21 Aplikasi Desain Rumah Untuk Perangkat Android Ios Pc" src="https://i2.wp.com/goldenspikecompany.com/wp-content/uploads/2020/05/GettyImages-856553070.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwyxDw8c_nCIxQLR3T_3sz97XpZOHSg0WDn-rMMK7ZqJ3t4ySM6t0Ww2G7WZ3-1aLQiLg';" />
+        <small>Source: goldenspikecompany.com</small>
+                    <p>SketchUp adalah salah satu aplikasi untuk mendesain rumah di android yang berukuran kecil.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-masjid-minimalis.html"><i>&larr; desain masjid minimalis</i></a>
+                                                                    
+                                        <a href="/desain-lobby-kantor-minimalis.html"><i>desain lobby kantor minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

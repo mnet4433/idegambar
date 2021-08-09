@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Kios Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Kios Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/600x315/0a/60/86/0a6086d2cbb881903c9e600f40486288.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+kios+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Kios Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Kios Sederhana</strong>. Jasa Gambar desain kios kecil mini cafe minimalis desain kios sederhana desain kios 2010 etalase show case meja pajangan meja counter Untuk desain Denah 3D Ruangan Rumah Minimalis denah rumah minimalis modern denah rumah tinggal minimalis denah rumah minimalis 3 kamar tidur denah rumah minimalis modern 2 lantai sketsa denah rumah. Kios minimalis ini menurut rencana akan dibangun di Cikarang 081-881-6092 0822-9893-2222 nova_aryantoyahoocoid.</p>
+            <figure>
+        <img class="v-cover ads-img" src="/search?q=desain+rumah+dan+toko+kelontong&amp;tbm=isch" alt="1" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='/search?q=desain+rumah+dan+toko+kelontong&amp;tbm=isch';">
+        <figcaption>1 from encrypted-tbn0.gstatic.com</figcaption>
+    </figure>
+        <p>
+        Permainan desain interior yang warna-warni termasuk wallpaper bisa jadi pilihan agar kamar kamu semakin cozy. Jasa Gambar desain kios kecil mini cafe minimalis desain kios sederhana desain kios 2010 etalase show case meja pajangan meja counter Untuk desain Denah 3D Ruangan Rumah Minimalis denah rumah minimalis modern denah rumah tinggal minimalis denah rumah minimalis 3 kamar tidur denah rumah minimalis modern 2 lantai sketsa denah rumah. Contoh Pelan Rumah Kos Sederhana.
+    </p>
+    <h3>Artikel ini membahas desain rumah kost 2 lantai minimalis sederhana.</h3>
+    <p>Dijual sebuah rumah dengan kamar kost 3 lantai sederhana yang memuat hingga 14 dan 2 tidur. Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru. Rumah kost minimalis modern ini dibangun di kampung halaman klien. 99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Desain Interior Ide Kamar Tidur Ide Dekorasi Kamar Kamar Kost Rapi Biaya Murah Desain Interior Rumah Interior Kamar Tidur Ide Dekorasi Rumah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Ift Tt 2k5xe4d Kanopi Minimalis Sederhana Untuk Kios Di Babakan Lio Dramaga Kanopi Minimalis Sederhana Untuk Kios Di Babakan Kanopi Minimalis Modern" src="https://i.pinimg.com/originals/3d/9a/26/3d9a26902102902d8bd5cb798da42743.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvifOqpIIqFwYP2xgkoQ3NZ1kkSF4SpYKAtv8z445955m7Z3sB7Su6uqXNfcqXCfkWUJM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4Desain Rumah Kost Modern Klasik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layanan Jasa Gambar Rumah Rumah Toko 2 Lantai Di Tulungagung Desain Rumah 2 Lantai Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/f3/89/5e/f3895ec2bac5402655e6dc187e5fc71e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZao5-Ne39NwYJt1E9eyKcsDLZcKoqy13HhyTBobNo-hl_ttRJv0W99g9nOarkp6HpGmo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Itulah beberapa cara menghias rumah yang sederhana dan mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreas Interior Kafe Warung Kopi Desain Interior Kafe" src="https://i.pinimg.com/originals/f1/b6/30/f1b630b63b05299651f6e04a906ca342.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuFHb0Lg4sLDbmPE4mAhzcNReDrXtU3NkP5wk84B9fTdhWKi1sE5zZEzSmv8k60ud9hM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>38 Model Rumah Minimalis Sederhana Dengan Kios Idaman Keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/564x/52/d5/d4/52d5d45b4b116939bd746a088c116acb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5QNi7_-eua9CV9NESvftkspzVbfHc-ecXwQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana adalah hunian yang identik dengan kesan perumahan yang dibangun di tanah perkampungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kos Kosan Spesifikasi Bangunan Luas Bangunan 80 M2 1 Lantai 160 M2 2 Lantai Luas T Desain Rumah Eksterior Desain Kamar Hotel Rumah" src="https://i.pinimg.com/originals/c6/c5/6a/c6c56a310fe224b4400257befbbd633c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXJZf344aqAiuJ48Q09MZMtY8UgHaDr2iSA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>7 Gambar Desain Rumah Kost 2 Lantai Sederhana Yg Paling.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/e2/8f/6e/e28f6e53ca51dfdaa4d903808ffe5cd6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-mnkByhoVtHmRqo2pOryv52VJ65zMJclDg';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Setelah pada artikel sebelumnya Rumah Desain 2000 membahas tentang project pembangunan rumah Bapak Rahman yang berlokasi di Sumur Batu Kemayoran maka kali ini kami akan membahas sebuah desain rumah kost minimalis modern 2 lantai yang lokasinya tidak jauh dari situ masih di Indonesia kok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah Besar Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/56/11/b0/5611b0b6c8ccfcd41afeeb2e6010fcea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9D94k8yQUrSQzttLfA4i_yCGWRwBfxz0aKw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kost minimalis modern ini dibangun di kampung halaman klien.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+dan+toko+kelontong&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+dan+toko+kelontong&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain rumah kos 2 lantai ini didesain bagi kamu yang simpel dan tidak terlalu banyak penambahanan aksesoris.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Gambar Model Kanopi Rumah Minimalis Pemasangan Kanopi Dihalaman Rumah Pada Saat Ini Memang Bukan Lagi Hal Yang Aneh Ba Rumah Minimalis Rumah Home Fashion" src="https://i.pinimg.com/originals/4c/ee/a2/4ceea2e87d8fde755e5eaee3b3f5d8de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBM1u4ohb6xu2Gi0BLxCD3i8Nla5HKNJRD2Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>4Desain Rumah Kost Modern Klasik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Saat Ini Perkembangan Dunia Usaha Berkembang Pesat Banyak Orang Desain Rumah Minimalis Home Fashion Arsitektur" src="https://i.pinimg.com/originals/f8/9b/75/f89b75a3a9528ed3a49407e6b40a1dd0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxEezqp-eOOrL_uEh-Rd-CCF_tFvywZS5_yQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Setelah pada artikel sebelumnya Rumah Desain 2000 membahas tentang project pembangunan rumah Bapak Rahman yang berlokasi di Sumur Batu Kemayoran maka kali ini kami akan membahas sebuah desain rumah kost minimalis modern 2 lantai yang lokasinya tidak jauh dari situ masih di Indonesia kok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Rumah Minimalis 1 Lantai Tampak Depan Dan Warna Cat Pilihan Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/4d/22/a8/4d22a8e7b877f8533f96b2ee5282e0cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1o91iGArIzuVYAzmcTJ4SWYryC6EA-B76_moYmwVSn1cIabEgWBT5HftHKgB8vKDefZY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Apakah anda tertarik dengan denah rumah dan warung sederhana dengan gambar dibawah ini semoga bisa menjadi pilihan dekorasi dan desain untuk mempercantik rumah andaUlasan kali ini dengan judul artikel 40 Denah Rumah Dan Warung Sederhana Percantik Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Gambar Rumah Sederhana Tapi Terkesan Mewah Rumah Minimalis Desain Rumah Minimalis Warna Eksterior Rumah" src="https://i.pinimg.com/originals/38/07/ca/3807ca3c0a594d8a2241e419fad3aa54.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyHcxAt-szS9SFPS9m6S9OGpP-Uol8T93sXlA7DrIvjIvo-Rps3wlGgr4IU_Ehnq5UMNg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Desain 2000 akan membahas salah satu desain kios minimalis yang pernah kami kerjakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Ruko Minimalis 2 Lantai Desain Eksterior Arsitektur Home Fashion" src="https://i.pinimg.com/originals/01/14/52/01145298bc95eb2aa3f0b688f7d35cdc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Z7DkpDr-mriSvZtbwGQVF52m9495MTt86Y2-5AOXKqVm94bBHKbJDkNWxdhw-pJVBhs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Walau luas lahan anda hanya 60m2 namun anda bisa mendapatkan rumah minimalis yang luas bersama keluarga dengan model 2 lantai yang cantik seperti ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Yang Unik Mampu Mengkombinasikan Kontainer Dengan Pintu Sliding Atau Sejenis Nya Yang Bernuansa Unik Tidak Heran Distro Atau Cafe Me Desain Pintu Cocok" src="https://i.pinimg.com/originals/46/dc/6c/46dc6cc4151ffcdf8f1094b6adfde441.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfJ0qTURE2sZLt9k5uZbyu_6OqcNkU6xJ3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh gambar desain rumah kost minimalis 1 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Minimalis Ukuran 6x10 Terbaru Foto Rumah Minimalis Dengan Denah Rumah Minimalis Ukuran 6x10 Denah Rumah Denah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/474x/0e/5e/25/0e5e2500de0b38f22f2f57fcfdf08506.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIYHM6RLIv8OYhRBKQvqkSxDupOobVKBa6jQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Etalase rakmeja warung kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Ruko Dua Lantai Dengan Dua Kios Di Jl Kali Sari Ps Rebo Jalan Kali Sari Pekayon Pasar Rebo Pekayon Pasar Rebo Jakarta Timur Home Outdoor Decor Decor" src="https://i.pinimg.com/600x315/7b/a5/00/7ba500a36a0fb6ec4a1e3f20a65ac4ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkkSXEYuHt01yMUwT0spt4qT8AradMxm9ngAG5Mdjud01Cu-ZIHdRsu7M5jmSpLj1aAFg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dijual sebuah rumah dengan kamar kost 3 lantai sederhana yang memuat hingga 14 dan 2 tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Eksterior Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/originals/3c/1d/df/3c1ddfe8346b6f7bdcdf58a73bae0e8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqGBVdsevY5VCH0Y8ho5cXxiUpDWxNHZcIk0ezjUh2roXDCpA6WVteuLS_hmqsPbgt8DU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kios minimalis ini menurut rencana akan dibangun di Cikarang 081-881-6092 0822-9893-2222 nova_aryantoyahoocoid.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Pdf Desain Rumah Kontemporer Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/8a/de/23/8ade23a4a34c63d413ec755b136153e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ahNBdQt8kI2KO72o8TuhKx19abjsGdUfnPxan43alzMTAe9fuxfOmQrBo20CH98YNfw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain dua keuntungan di atas menjalankan bisnis kost bisa dikatakan sangat mudah karena persiapan dan pengelolaan rumah kost yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kanopi Minimalis Besi Galvanis Atap Solartuff Di Cimanggis Depok Jual Kanopi Tralis Di 2020 Kanopi Rumah Impian Renovasi Rumah" src="https://i.pinimg.com/originals/33/16/30/3316300d4ec4f3d9c374a34532b79aa7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFuRwf67W2iliGL1tcz6RtPCaRMRFWNlntaw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kios minimalis ini menurut rencana akan dibangun di Cikarang 081-881-6092 0822-9893-2222 nova_aryantoyahoocoid.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Ukuran 9x6 2 Kamar Tidur 1 Mushola Dan Hal Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/cb/91/f4/cb91f4c339daa59054eff1de3ed4af90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlmGruHIZH38etYgShjq8-UgvJk_2Jvp6vYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Silahkan Hubungi Bu Sri 085720590413 tlp jangan sms atau datang langsung ke WM Bu Sri Jln.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Pasang Dan Desain Rumah Pom Mini Sederhana Desain Desain Rumah Rumah" src="https://i.pinimg.com/originals/4d/da/f5/4ddaf57f8de82b792e929b3a9dc5cec5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7QDlQeOpqxxjoIeZAs-kew7NPReVfs7zcQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>4Desain Rumah Kost Modern Klasik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Sederhana Layak Huni Di Srengseng Sawah Jagakarsa Jakarta Selatan Jalan Raya Srengseng Sawah Srengseng Sawah Jagak Outdoor Decor Decor Home Decor" src="https://i.pinimg.com/600x315/b1/64/0e/b1640e7bd97b449348e8f753b4876214.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhgN4vcazKb33X1UQSfjEaAVTvHmUmyNeaRuBQ4tQEOYHw6ZTfeeL10MsDLeE7nr-uJM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Saat ini banyak gaya baru yang dicari oleh arsitek model rumah minimalis baik secara komposisi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Ruko Minimalis Sederhana Rumah Desain Rumah Desain" src="https://i.pinimg.com/474x/6e/2b/43/6e2b434aa73f735a778d12bbc8edff7d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gP90dNrIhdXJmO9m8mukiaHKkM3LWSwBLTPnhh4im6q3qWGytMOF-fk_lN9qlIxiPo8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Itulah beberapa cara menghias rumah yang sederhana dan mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 5 7 Denah Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/564x/f3/da/b0/f3dab00f65a25ce7ceed55fae1a53958.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Bbt6WJLyGrckIGLDRyGAzmn9SciJa5QpqA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Saat ini banyak gaya baru yang dicari oleh arsitek model rumah minimalis baik secara komposisi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis Modern Rumah Tropis Desain Rumah Rumah" src="https://i.pinimg.com/originals/03/1e/25/031e25d499f625237508f7e1d5e07682.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-z8C3Jxml0-B2y7wY0cU_b8TkzgoUz1Shqw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>5Desain Rumah Kost Homey.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Restoran Outdoor Restoran House Gambar" src="https://i.pinimg.com/originals/7e/dc/63/7edc632bd30058fc5c87dd22793f2c4f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvwzRXv3PFn2tuy7RF--JlrS8PFFfTLb60A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>5Desain Rumah Kost Homey.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Galeri" src="https://i.pinimg.com/564x/9f/88/a8/9f88a8b09c253aeff8166afe6ef4cd64.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3GPVstpqrK97HghqdtbGC4VMzGqd2VBi8x77QBSNPXo5SjHCybrVtSgHQKVE_VQ2vj0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dijual sebuah rumah dengan kamar kost 3 lantai sederhana yang memuat hingga 14 dan 2 tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sederhana Leter L Rumah Minimalis Desain Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/7f/29/c7/7f29c7843bf5ebd1a2aca5936bd0ba2d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkQ9NAA3h8kJ6bSeLbqUiafuGxGJ95jmZVH31kVvATwzBIz1v6-tVyqC-l5al43V8VgkQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah rumah kost 1 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Atap Asbes Desain Rumah Kumpulan 100 Model Rumah Sederhana Atap Asbes Terupdate Mod Gaya Rumah Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/5b/19/3c/5b193c591706ab6f54ee44db2c111ba2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSiURZ_vLMEqyRHer3oV-vldq7QBqOvdGxE_LNo-UTh0RwD7DAgPRUiiRamEnncmtAkuA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kost minimalis modern ini dibangun di kampung halaman klien.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Toko Minimalis Modern Ukuran 8x16 3 Kamar Tidur 1 Lantai Desain Rumah Kecil Desain Eksterior Rumah" src="https://i.pinimg.com/originals/0a/ac/43/0aac43c75156f707772c611de1f306f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYHL-p00c52rB0NsnlPSGKNa7UQ1WoXfDDhxWX6AZ34e9Kbhaq044lxdtX1MWers4k1LQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Sangat Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Baja Ringan Di Baja Ringan Sebuah Alternatif Pengganti Kayu Rumah Minimalis Membangun Rumah Desain Rumah" src="https://i.pinimg.com/originals/92/d0/15/92d015c3335632f5eac19f5ab23257f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaB2AzOgD_54VtOTCtPa2hHYiw-s3keUqgoFCz4cY_Nnim8S1xsD9sgm4tM9gHH4Ijx0s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Desain 2000 akan membahas salah satu desain kios minimalis yang pernah kami kerjakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kosep Desain Rumah Minimalis 1 Lantai Mewah Nyaman Elegan Modern Istimewa Tampak Depan Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/d1/07/bd/d107bda9aa2db82de2cb94fa179b54d0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yNUmo133tLfp0Um_K-MAOv40FP29RG4CcA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Sangat Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis" src="https://i.pinimg.com/736x/0d/fa/d1/0dfad1dabe7c386648adbaeb55ca6429.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbPHjxIsxR1TyO8EO74sfSSpUklV5Jbttzw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>PTP Ngobo Rt 03 Rw 03 Ds.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Teras Rumah Minimalis Depan Dan Samping Dengan Desain Warna Cat Minimalis Gambar Teras Rumah Minima Desain Depan Rumah Desain Rumah Bungalow Rumah Batu" src="https://i.pinimg.com/originals/5c/21/82/5c2182399cc73d97e06e195369ce3538.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcDLtNXDB0q4VBVnR1Dxq1x0yWFAGuA8BOVg';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Akhirnya setelah beberapa lama tidak mengisi blog tentang gambar rumah sederhana kini saya telah membuat desain rumah yang sangat sederhana bisa dibilang rumah kecil dan imut hehhe karena ukuran lahannya cuma 650675 m 43875m2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/55/11/e7/5511e711115ad9ab0a3cfae45f17b69e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqjbwchvN6ZJBMmlFZttSFsRRqM_j75tQjpqg558QLG152A5ZGGNVRd9q5hOcrbG1iMM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Akhirnya setelah beberapa lama tidak mengisi blog tentang gambar rumah sederhana kini saya telah membuat desain rumah yang sangat sederhana bisa dibilang rumah kecil dan imut hehhe karena ukuran lahannya cuma 650675 m 43875m2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kanopi Rumah Minimalis Sederhana Bahan Atap Seng Minimalis Dengan Penyangga Aluminium Kanopi Rumah Minimalis Desain Ruma Rumah Minimalis Rumah Kanopi" src="https://i.pinimg.com/originals/e9/9d/34/e99d34893b277480c12ea79a4e3be01d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDsNRSvr8CZKPLK9mOKS28JFYeaK21TXBhQA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>38 Model Rumah Minimalis Sederhana Dengan Kios Idaman Keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bentuk Atap Miring Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Desain Rumah Mungil" src="https://i.pinimg.com/600x315/d6/13/b9/d613b9d8c03bb55a1f2367456aba4a38.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOlr6u1nYJg3oF7wjO_z2i5-KXuUJTV--EhZQgN1oIzuw_Nr59QrQk6-nhOFoIWL107s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Silahkan Hubungi Bu Sri 085720590413 tlp jangan sms atau datang langsung ke WM Bu Sri Jln.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+sekaligus+toko&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+sekaligus+toko&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>5Desain Rumah Kost Homey.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Denah Gambar Rumah Minimalis Ukuran 7 X 8 Terbaru Rumah Arsitektur Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/ef/90/20/ef9020d39a5f8e7cee7275f9b3318b5c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4mgFQKRgyX_WLH1c-uqFgoRheX5VfAFXqg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Permainan desain interior yang warna-warni termasuk wallpaper bisa jadi pilihan agar kamar kamu semakin cozy.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah 1 Lantai Model Spanyol Desain Rumah 2 Lantai Desain Rumah Rumah Mewah" src="https://i.pinimg.com/originals/d8/e4/39/d8e43914e40cd81d499b8eac34fdaf7e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrin7Z8dn93BR80CHyPSvnvAz9dlGEdOjS7Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ditambah dengan nuansa asri dan masih original membangun rumah di kampung bisa menjadi pilihan tepat untuk mendapatkan kenyamanan dan ketenangan yang mungkin tidak didapatkan jika memiliki hunian di perkotaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Pagar Rumah Minimalis Terbaru 6 Rumah Minimalis Desain Rumah Minimalis Warna Eksterior Rumah" src="https://i.pinimg.com/originals/65/f1/9c/65f19c4a89a3e4753f7197405e155fc8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTykyTR7Gwl0MmHNYNfAxWecCkbUZYbg4q4mg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Setelah pada artikel sebelumnya Rumah Desain 2000 membahas tentang project pembangunan rumah Bapak Rahman yang berlokasi di Sumur Batu Kemayoran maka kali ini kami akan membahas sebuah desain rumah kost minimalis modern 2 lantai yang lokasinya tidak jauh dari situ masih di Indonesia kok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0822 9000 9990 Jasa Bangun Ruko Depok Terbaik Rumah Minimalis Desain Produk Desain Rumah" src="https://i.pinimg.com/originals/09/a6/f5/09a6f5f2c2c0284a927a803ee991fc87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWmFdaK0VO7BlDYK173K475vsOGprZJvLVbw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1Desain Rumah Kost di Lahan Luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah B Warna Eksterior Rumah Rumah Minimalis Rumah Besar" src="https://i.pinimg.com/600x315/0a/60/86/0a6086d2cbb881903c9e600f40486288.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKi2nMN4SCKOSqX6Je7gTrhqwLbkwzhvhsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>6Desain Rumah Kost Ala Hotel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Ada Kios Dan Kontrakan Strategis Di Marunda Baru Dki Jakut Rumah Kios Tanah" src="https://i.pinimg.com/originals/78/80/51/788051d2c80d8e8888f8545302452bef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLPYsynki_9DYlwZFIU970a-P3Jwbmsb1J9g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kios Sederhana cocok untuk tempat usaha strategis terletak dekat dengan pasar karangjati berada di lingkungan industri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desain Rumah Minimalis Rumah Kayu Eksterior Rumah Modern" src="https://i.pinimg.com/originals/e5/62/30/e5623036b68ee7099108d61d3a23cffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJD2lsUq7kgljGrP0JLProNRmSdwWyaKrWQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh Pelan Rumah Kos Sederhana - Plan Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Tony Smart Property Di Iklan Rumah Kios Rumah Periklanan" src="https://i.pinimg.com/originals/24/20/57/242057b6fac111ce58b73a1928a4fcab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5BHLdrKLUSdQ0M8oiLsDMNaMXqPXxewRtWA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Kos Kosan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Denga Rumah Minimalis Cat Rumah Eksterior Desain Rumah Minimalis" src="https://i.pinimg.com/600x315/23/57/b2/2357b276b537103566c87d62e3b9f87b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Pz6F2BHwlNWJdvTifnArJVnzR4fY9LQS2A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah kos 2 lantai ini didesain bagi kamu yang simpel dan tidak terlalu banyak penambahanan aksesoris.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Modern Home Pillar The Most Widely Used Neat Fast Modern House Colors Modern House Exterior House Design" src="https://i.pinimg.com/originals/2b/eb/cc/2bebcc920392f2bbd486857d567364f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTws-iyzcJaQzj1dBtciMmZUZFA8WfhoCUbiA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ini adalah tempat terbaik dari yang paling baik sekali pun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Deng Warna Eksterior Rumah Rumah Minimalis Desain Rumah Bungalow" src="https://i.pinimg.com/originals/85/a6/6b/85a66b0768c58296e66f80aeb84dbb8d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqFOEPsi2Vd1oKMHXGLbLXsd-zf2e3QZ04BNkDSqBHpfVlsEWm52pGqvbIBL-YLL5YaE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>2Desain Rumah Kost Eksklusif.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Tampak Mewah Dengan Dana 500 Jutaan Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/0e/4e/5f/0e4e5f7acc993aa65255199ad0c6d4b7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROB5EZqT64EIv3jhSjPCnF6lFlv4l2HgklLWoeLPGv80mSWdps3CuoCv-12uiL0nR_dVE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-tanah-150m2.html"><i>&larr; desain rumah tanah 150m2</i></a>
+                                                                    
+                                        <a href="/desain-rumah-sunda.html"><i>desain rumah sunda &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

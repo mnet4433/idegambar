@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Hello Kitty Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Hello Kitty Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/736x/56/1d/23/561d2301fbcb1ac8ebfe97c4285159f1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+hello+kitty+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Hello Kitty Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Hello Kitty Sederhana</strong>. Desain kamar tidur anak hello kitty. Gambar diatas bisa anda unduh gratis dengan mudah dan cepat.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/8e/5c/eb/8e5ceb75ff017e1465816796ea7cb9ee.jpg" alt="30 Latest Bedroom Interior Design Ideas Page 11 Of 11 Home Decor Ideas Bedroom Diy Kids Bedroom Girl Bedroom Decor" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1m2kT35XzLUSyZVJOJ_kfbMyWZqyB1PHpeA';">
+        <figcaption>30 Latest Bedroom Interior Design Ideas Page 11 Of 11 Home Decor Ideas Bedroom Diy Kids Bedroom Girl Bedroom Decor from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Joe Collins - July 17 2020. Pinterest Tak melulu soal tema sekalipun perlengkapan Sanrio rumahan yang asli kamu pun juga bisa melakukan dekorasi Hello Kitty di kamar tidur dengan cara minimalis dan sederhana. Aksesori yang Anda kumpulkan memang akan menambah ruangan Anda semakin semarak.
+    </p>
+    <h3>Perempuan Ini Habiskan 1 7 Juta Buat Bangun Rumah Ala Hello Kitty Merdeka Com.</h3>
+    <p>Interior hello kitty ini akan lebih menawan jika disandingkan dengan barang-barang yang elegan. Rumah Hello Kitty Sederhana Ala Amy Youtube. Download now hellokitty tas 2018 model baru tas selempang perempuan pasang korea tas kecil sederhana dan elegan kartun modis. Desain gambar kamar tidur hello kitty anak perempuan jika anda memiliki anak perempuan pasti.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dekorasi Ruang Tamu Hello Kitty Design Architect Design Home" src="https://i.pinimg.com/originals/92/56/d8/9256d866397cdd41a2fc6a2d722dc9da.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTId73vMKFalD084STU88OLrdn-s0eqqI7r-5RP4YjNPBJAnEm24o8_swW0_1PomjdFWYM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download now hellokitty tas 2018 model baru tas selempang perempuan pasang korea tas kecil sederhana dan elegan kartun modis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan Kamar Hello Kitty Pink Unik Di 2021 Hello Kitty Home Design Decor Ide Dekorasi" src="https://i.pinimg.com/originals/53/97/29/539729d3a01d8ea9d5613fb96cab4b0e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWSbHAJHtQK4KLtaGcuReCKJo3bwtU1pu3mUeA7_PZle4dfdJgan3HdMoR3HGXVBl6g7g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Joe Collins - July 17 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berikut Deskripsi Dipan Hello Kitty Kanopi Dipan Hello Kitty Kanopi Tersebut Terbuat Dari Bahan Kayu Mahoni Perhutani Kelas 1 Jepara Hello Kitty Dipan Kanopi" src="https://i.pinimg.com/originals/b2/4d/2c/b24d2c20863549f3da928b77ae9c7113.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQCYpzC96-ZA8sTi9MTVpWsrtpLgkn08PBw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan 6 dekorasi di atas lengkap sudah rumah Hello Kitty impianmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Hello Fiia Di Apartment Condo Ideaz Bedroom Kamar Tidur Gadis Ide Dekorasi Kamar Ide Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/78/16/dc/7816dc58987f82b2f6f9298d1cc4a040.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLXTY9oqnZ6uCOWAtcZ3sCxZCITLa8UMB7aA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bagian rumah Hello Kitty yang lainnya seperti ruang tamu atau ruang keluarga pun bisa kamu hiasi dengan si kucing menggemaskan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Unik Maket Rumah Kebaya Dari Kardus Maket Rumah Betawi Dari Kardus Rumah Kardus Rumah Miniatur Rumah" src="https://i.pinimg.com/564x/40/81/08/4081081bf48e4c11441e280805f64647.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQueSF1ZKsAgUQGBoDfufXKfQD0x9e290O6A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan 6 dekorasi di atas lengkap sudah rumah Hello Kitty impianmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Little Dream Home Hello Kitty House Dream House" src="https://i.pinimg.com/originals/ec/45/01/ec4501cabdf5cdf2b917871f71ef0b48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiIYsZdSvZ-6o_zVNdtrU-R5n_v1JmYXR63y-CCaH5p_jsxsbTMLhUFBm0Edoczh22j0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar tidur hello kitty untuk anak perempuan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Desain Interior Rumah Jakarta Jasa Desain Interior Rumah Magelang Desain Interior Rumah Rumah Minimalis Interior Rumah" src="https://i.pinimg.com/originals/29/13/77/291377f033bf8210759c31f065a817b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpy20q_8cSF_uY-4leyvIE701tAGhrct8UoA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pinterest Tak melulu soal tema sekalipun perlengkapan Sanrio rumahan yang asli kamu pun juga bisa melakukan dekorasi Hello Kitty di kamar tidur dengan cara minimalis dan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Home Decor" src="https://i.pinimg.com/474x/67/f0/86/67f086e998cec37a5be2f4e596d2cf38.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy7vWzQdsElArzqsmiK2fW-jgHiflaphu6juVLsDfdOFaUbI0WmRu4QWUIP72Ftiii6Hc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Apalagi jika mempunyai ide tambahan yang bisa dikombinasikan dengan dinding hello kitty ini untuk pemilik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Tempat Tidur Mewah Ukir Jepara Elegan Turki Style Di 2021 Set Tempat Tidur Mewah Desain Tempat Tidur Set Kamar Tidur" src="https://i.pinimg.com/736x/56/1d/23/561d2301fbcb1ac8ebfe97c4285159f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQv8XEORkrdt0Oa9O_qom-TUGqN-50MqQ1tA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah sederhana tapi mewah rumah kecil dengan sebuah desain rumah yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Warna Hijau Rumah Minimalis Rumah Arsitek" src="https://i.pinimg.com/originals/d9/c7/5c/d9c75ce02a9dfe0e3cfb3aec88abfd0c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJt6tDTjpoZhlq5Rm-uTMvbPd2rhobMLHMdw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>10 gambar rumah minimalis tropis terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Tempat Tidur Anak Perempuan Hello Kitty Harga Murah Desain Ranjang Tidur Anak Perempuan Karakter Hello Kitty Mewah Berk Tempat Tidur Anak Hello Kitty Anak" src="https://i.pinimg.com/originals/cd/a6/60/cda6606ae4117b5ce37b520b9d506ffb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnetlLZec5EXyzxWJM54bx_Uz430lsTD5EA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk dekorasi dapur tema hello kity minim budget bisa dicontoh seperti ini GAMBAR RUMAH HELLO KITTY SEDERHANA.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Galaxy Inspirasi Dimaksudkan Untuk Dekorasi Kamar Tidur Anak Perempuan Minimal Kamar Mandi Anak Kamar Tidur Anak Perempuan Kamar Tidur Anak" src="https://i.pinimg.com/564x/83/9e/d3/839ed3cfeae72ee15c2c8e6cfc52785a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrwyghfELbFMq5nptXsjSp6596BFEF7hgZg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Rumah Hello Kitty Beserta Isinya - Kekinian 40 Gambar Rumah Hello Kitty Warna Pink - Di zaman yang sekarang ini dimana hampir diseluruh masyarakat sudah mengenal dengan yang namanya internet kita dapat mudah untuk mendapatkan gambar hello kitty yang kita inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wikana Architects" src="https://i.pinimg.com/originals/ee/53/96/ee5396fc4c5ff17b9dc3230f495f79f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYOJ1rFInvqSc21MJcdT-qzdvm0eeGg8_lOA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pada gambar rumah minimalis tropis sanggup kita lihat bahwa desain minimalisnya cukup nyaman di huni sang famili.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Children S Bedrooms Hello Kitty World Design Tips Kamar Kawaii Kamar Sejuk Girls Bedroom" src="https://i.pinimg.com/originals/45/8a/09/458a094f7a5964a1b00a54c96d6d58f2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYr7JsRhyAu1Clicxtzvcx0KR2WOvs4HoyrGkScgACb6fW5rUYOzPTIBZhIU7EShvH1WQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar Hello Kitty Sederhana Ruang tamu Hello Kitty Desain kamar mandi Hello Kitty Pasti saja para desainer dapur minimalis memiliki tantangan tersendiri dalam menciptakan rancangan atau gambar desain bentuk dapur minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Inspirasi Ok Google Kamar Hello Kitty Sederhana Di 2020 Home Design Decor Desain Interior Desain" src="https://i.pinimg.com/originals/02/2a/91/022a916101a24d3a20165bb76b1a7d3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqNQwHeekmDLAK1PaH67G-r3WAqmDu9HEoIuAwmvVyyRYMilHy8ZX5b2MI7kWSs4A5yA';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Pada gambar rumah minimalis tropis sanggup kita lihat bahwa desain minimalisnya cukup nyaman di huni sang famili.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi Perlengkapan Dapur Hello Kitty Pernak Pernik Lucu Hello Kitty Lucu Perlengkapan Dapur" src="https://i.pinimg.com/originals/13/3a/5f/133a5f34ddf4f88d271d3599dcf27b0c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8JPrmvxtLqxEioFzdQCkNFZTZdRIEBnmeXg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar tidur hello kitty untuk anak perempuan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqebbos1mudntp12lmkbcri Dsbpltt4sypxkmytqg Usqp Cau" src="/search?q=pink+hello+kitty+kitchen+design&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=pink+hello+kitty+kitchen+design&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Rumah ini dipenuhi dengan ribuan peralatan ala Hello Kitty.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Anak Perempuan Yang Indah Kamar Anak Perempuan Desain Rumah" src="https://i.pinimg.com/originals/69/8d/ae/698dae5c05680ae674f6217735de4d86.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbhVP3BDQWUE1iSzjhPglyVRz7wEFTNrYltg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk pemilik rumah yang ingin sekali mendekor rumahnya agar terlihat menarik maka bisa membuat dekorasi hello kitty yang bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Room Decoration Ideas" src="https://i.pinimg.com/originals/9e/cd/37/9ecd37eeb53c48269c3956cdc7f98e46.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzKqteFvYHMk3ARj1_EEkF56OejhCANVcH7LKXfvC0DoZ6v_Jdjwwd024952s8_btGsQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah rumah sederhana tapi mewah rumah kecil dengan sebuah desain rumah yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Hello Kitty Sederhana Hello Kitty House Architect Hello Kitty" src="https://i.pinimg.com/600x315/9a/c3/95/9ac3956fa99285dbf4a947b81bae2ded.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsoguq3SLpL1nz-BQqHiiS0w4vEYSKK9MBtWz8tKxjvMHC0u3zMpynnA0-hRi2xIqTE0I';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Joe Collins - July 17 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di World" src="https://i.pinimg.com/736x/2a/79/f0/2a79f0ee0672fd4b70c17eb6b6d51480.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSOiLbavzs_qh-k283dyABcPsdBqiztjp8qg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Hello Kitty Sederhana In 2020 Architect Hello Kitty Neon Signs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Desain Interior Rumah Type 21 Desain Interior Rumah Unik Di 2020 Desain Interior Rumah Interior Rumah Interior" src="https://i.pinimg.com/originals/00/c0/e6/00c0e61a5f8dad4561fc191ace4be342.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFu3OyvDkr6Z4uwOVaCDZo8vcQwpeZgry90g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Telusuri inspirasi foto ide desain untuk menciptakan ingin desain rumah terbaik idaman anda sendiri nyaman dan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Rumah Sederhana" src="https://i.pinimg.com/originals/41/f2/02/41f20243557bd6b628b17fb53fd49de5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV3LMTw1XDzJuRZHIRGorMruCpYqEmao9-cw33roeT5Ji-VD6Y7mBwpmjN_cF9rldBlEM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Download now gambar rumah hello kitty dan isinya kk rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Nobita Doraemon Desain Rumah Arsitek Rumah" src="https://i.pinimg.com/originals/31/1a/b2/311ab2f99719c5fdae72a794d214482c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUhGhI7Ab0Dgjj5JLoDEJkC3SaEXgvxDcgg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pinterest Tak melulu soal tema sekalipun perlengkapan Sanrio rumahan yang asli kamu pun juga bisa melakukan dekorasi Hello Kitty di kamar tidur dengan cara minimalis dan sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Bikin Gambar Sketsa Rumah Gambar Sketsa Rumah Minimalis Sederhana Desain Rumah Sederhana Type 45 Desain Rumah Mungil Yang Ar Rumah Desain Desain Rumah" src="https://i.pinimg.com/474x/1d/b5/48/1db548ec9fb788e41ba0b1d2098cbd20.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8SURJknu1XMsFmEO6YlqIMFvfNuJ8csWwg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ini adalah salah satu contoh desain kamar anak perempuan dengan suasana yang pinky yang kental dengan karakter kartun hello kitty DESAIN RUMAH HELLO KITTY.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Kids Rooms" src="https://i.pinimg.com/originals/13/cf/c1/13cfc178eae55cd934dd61eb1cf3eea5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjS0zkzeDQkzi_3Wl-zwO1wmFt_UQMyxxuQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah ini dipenuhi dengan ribuan peralatan ala Hello Kitty.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Dinding Kamar Tidur Sederhana Dekorasi Kamar Anak Dekorasi Kamar Anak Perempuan Dekorasi Dinding Kamar Tidur" src="https://i.pinimg.com/originals/13/90/dc/1390dcd207ac1ca8ff9fb2d18e6e263c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSosdb69aPG0KvKl9ZN3krSOzUWTk5Fd4hENQ';" />
+        <small>Source: it.pinterest.com</small>
+                    <p>Dengan 6 dekorasi di atas lengkap sudah rumah Hello Kitty impianmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=real+hello+kitty+kitchen&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=real+hello+kitty+kitchen&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Foto Rumah Hello Kitty Dan Isinya - The hellokitty community on reddit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Wasih 12 Di I Love Hello Kitty Rumah Desain Dapur Rumah" src="https://i.pinimg.com/736x/47/4a/2f/474a2fe138c8f7ce8930de8a8282dc2a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5mBXgK7rVto37AtIBBUsnPNhUkwBDeQ9ICrHPrnHewqRvHb4jLzRzKq4pOsqyKbljhlk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk dekorasi dapur tema hello kity minim budget bisa dicontoh seperti ini GAMBAR RUMAH HELLO KITTY SEDERHANA.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Shared By Gama Xie Find Images And Videos About Cute Pretty And Pink On We Heart It Th In 2021 Kids Bedroom Furniture Design Room Design Bedroom Redecorate Bedroom" src="https://i.pinimg.com/736x/ab/0b/81/ab0b81515afc7eedb6e41a6ee2c7ac73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoEQlZcAGGcjm4Uruz0fpH7ubFP9eq2ki3_7p7WJBQDLQV1R9D7ySIQ7ZSw4qQugjGKJk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar Hello Kitty Sederhana Ruang tamu Hello Kitty Desain kamar mandi Hello Kitty Pasti saja para desainer dapur minimalis memiliki tantangan tersendiri dalam menciptakan rancangan atau gambar desain bentuk dapur minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Desain Interior Rumah Jawa Kuno Desain Interior Rumah Joglo Desain Interior Rumah Rumah India Interior Rumah" src="https://i.pinimg.com/originals/1e/22/85/1e228507ec52c700278bf9e438df5653.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEprtgMcU_2aeTFwXsxhnHodYQ5vIk-GNPHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan 6 dekorasi di atas lengkap sudah rumah Hello Kitty impianmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamarku Adalah Istanaku Dibanding Dengan Hotel Mewahpun Pasti Akan Kalah Walaupun Ini Sederhana Dekorasi Kamar Dekorasi Hotel Mewah" src="https://i.pinimg.com/originals/54/19/3d/54193d4313b15c5a7924d3a198fc73e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfCPeDDIpitjZvfOxldTRuue0yXY8jTEsLw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>7 Tips Membangun Rumah Hello Kitty Tak Harus Selalu Serba Pink Lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di 1000 Dekorasi Rumah Modern Minimalis 2021" src="https://i.pinimg.com/originals/8f/40/c9/8f40c958c18077a6e7c2592391b7f6fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LmqXQ4tQKZn9AtZ17ARLlhwaGsetBeYghA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar Hello Kitty Sederhana Ruang tamu Hello Kitty Desain kamar mandi Hello Kitty Pasti saja para desainer dapur minimalis memiliki tantangan tersendiri dalam menciptakan rancangan atau gambar desain bentuk dapur minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Latest Bedroom Interior Design Ideas Page 11 Of 11 Home Decor Ideas Bedroom Diy Kids Bedroom Girl Bedroom Decor" src="https://i.pinimg.com/736x/8e/5c/eb/8e5ceb75ff017e1465816796ea7cb9ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1m2kT35XzLUSyZVJOJ_kfbMyWZqyB1PHpeA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bentuk desain rumah minimalis sederhana 1 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Tidur Hello Kitty Sederhana Hello Kitty Bed Hello Kitty Perabot Kamar Tidur" src="https://i.pinimg.com/736x/c6/c9/2d/c6c92d21707c43427df2edbcf96c63f8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUJdtgWCAlP2ndCkU_fLv2D44lcI8cig-HeA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sketsa rumah hello kitty.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Hello Kitty Yang Imut Dan Ceria Interiordesign Id Desain Rumah Desain Rumah" src="https://i.pinimg.com/originals/ca/d9/55/cad9556c37065842f05dcf26ffeb1ea1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7IXcrA0uAQCifF9ONTlPm1RPNe_5fLAqBu2Qhp-iuL53pOR4YUFSBzT_Rr2kZPPipXDU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kamar tidur anak hello kitty.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By ʕ ʔ On Friends Cartoon House Hello Kitty House Hello Kitty Rooms" src="https://i.pinimg.com/564x/54/f6/e3/54f6e3d2e1f8775aff2a0313a809a786.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1dUG0jgWaNwEKqxIlKmy0BNiuA3H4XeEuU1YTwj-sD5guzA1viH0hbxY8H9q0cmKhl64';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Foto Rumah Hello Kitty Dan Isinya - The hellokitty community on reddit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Foto Desain Kamar Sederhana Elegan Paling Bagus Model Kamar Desain Interior Kamar Tidur Pink Kamar Wanita" src="https://i.pinimg.com/originals/31/3e/99/313e997ecfdb68f94cc405cc8a3986f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiwkDMMayBeuDKrhlcCbRE2IcLGX6LMs6HM3XSSyVmcjKODXb8xQumW-1VqEyibAeD28s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah rumah sederhana tapi mewah rumah kecil dengan sebuah desain rumah yang sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Hello Kitty Sederhana Art Deco Hotel Art Deco Home Art Deco Borders" src="https://i.pinimg.com/originals/f0/0d/63/f00d63c3d14ecbdb1e73fbdde136a545.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqDDKNlZuHtIF1yRw4NQBXAofI0b8FrpwR5fyqA7S2JD-i1uF_mukcRDUKQa1pgDjH2Qw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aksesori yang Anda kumpulkan memang akan menambah ruangan Anda semakin semarak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Gambar Rumah Minimalis Tropis Sederhana Satu Dan Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/7c/d4/4f/7cd44f5c26f43c111d6d43728572c6de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGtCT_XYfmDhk9BZ-sRLIEYJWJUMQj54m5-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>7 Tips Membangun Rumah Hello Kitty Tak Harus Selalu Serba Pink Lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Desain Interior Rumah Instagram Jasa Desain Interior Rumah Joglo Desain Interior Rumah Rumah India Desain Rumah" src="https://i.pinimg.com/originals/24/1f/e9/241fe9c511498c594121ad9904eb55cc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3OOb3Ao66byhuAa357eXwaAwmXDmvJtWtTQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ini adalah salah satu contoh desain kamar anak perempuan dengan suasana yang pinky yang kental dengan karakter kartun hello kitty DESAIN RUMAH HELLO KITTY.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="67 Download Video Desain Rumah Minimalis Desain Rumah Desain Rumah Minimalis Modern Rumah Kecil Yang Komplit Video Desain Rumah Sederhana Rumah Minimalis" src="https://i.pinimg.com/originals/11/74/ad/1174ad0fe045df6c1037ea69a4e6ab73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBN9i0mHmwKHik7-vMedpoveS9SHdDS1rlQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar Rumah Hello Kitty Beserta Isinya - Kekinian 40 Gambar Rumah Hello Kitty Warna Pink - Di zaman yang sekarang ini dimana hampir diseluruh masyarakat sudah mengenal dengan yang namanya internet kita dapat mudah untuk mendapatkan gambar hello kitty yang kita inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Kamar Designer Mamets Cartoon Dungkek Sumenep" src="https://i.pinimg.com/originals/c2/ed/09/c2ed091690a57cc46cb65ee4c6712963.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrvQEG9lsA5rfQTj0pYLLr7IwZWfee82t7Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aksesori yang Anda kumpulkan memang akan menambah ruangan Anda semakin semarak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Hello Kitty Ide Kamar Tidur Sederhana Ide Kamar Tidur Kamar Tidur" src="https://i.pinimg.com/originals/98/eb/ce/98ebce207a5817020a242cfc71ab083f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwotfzncyhRG1QWiXA7Yb8CBk-ryvp2AMMVN6K7NpFHZ_Qjjt4OR1rPVMs6EOTVnAUeI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semua orang pasti kenal terhadap hello kitty.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Desa Desain Produk Desain Desain Rumah" src="https://i.pinimg.com/originals/81/41/b0/8141b016b6802a514f16e086dc31b732.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR53aXuhwJyZ0l6QTmKobryftYTA3N0S28nPg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>7 Tips Membangun Rumah Hello Kitty Tak Harus Selalu Serba Pink Lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Arcadiadesain Com" src="https://i.pinimg.com/originals/f7/3c/66/f73c66a017226a043b6ea0a186e55e9c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8vYz6IKS2GKlM3eJ0hOqfGdWfDONeN0xuE31Q030-EKcakiboKNL7feZXwZm0z6DIdM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Hello Kitty Sederhana Ala Amy Youtube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Remaja Perempuan Sederhana Indah Dimaksudkan Untuk Kamar Anak Perempuan Min Kamar Tidur Anak Perempuan Kamar Tidur Pink Kamar Tidur Remaja Putri" src="https://i.pinimg.com/originals/27/ce/8b/27ce8be49e99f2d146ece98ab71c9c66.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlIG_DPyk0Quzn99P9So_GAdbz3ozb0QN0tJ4cx_xBeVIGW0tbYbDLKAn08R0oSSiH6Dk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bergaris Bergaya Bergerak Berikut Berkesan Bernama Bersalin Bersih Bersih2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New The 10 Best Home Decor With Pictures Kamarsederhana Fauziahramadhan Room Kamar Tidur Cantik Ide Dekorasi Kamar Tidur Ide Kamar Tidur" src="https://i.pinimg.com/originals/9d/ab/66/9dab66009908021cf4977fb0cd8b845c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJk5R7tnrCPZvIV0Ai0umtWiBbivohSjUAxg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini dipenuhi dengan ribuan peralatan ala Hello Kitty.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Dinding Kamar Tidur Sederhana Kamar Anak Perempuan Kamar Tidur Anak Perempuan Kamar Tidur Cantik" src="https://i.pinimg.com/originals/1a/9a/e0/1a9ae0341cd41a0d791a4b1486be8734.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_VzHJspkVxZmKcizOrUAhMHG9PS5SxdThT7Gf4ykCxVjfcxjsMf3RVsJU3DC_p1tB9s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pada gambar rumah minimalis tropis sanggup kita lihat bahwa desain minimalisnya cukup nyaman di huni sang famili.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Sederhana Membuat Nuansa Kamar Tidur Hello Toddler Bed Home Decor Furniture" src="https://i.pinimg.com/originals/4b/05/6d/4b056df7b47520cc3477018d2a9ea646.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNL4u_OS0ZIys1bEfH97QJaAOxxDrmS0izGwzI2lNC5gaqe3zIOXpBvw1Z3ENkAGHoBG4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ini adalah salah satu contoh desain kamar anak perempuan dengan suasana yang pinky yang kental dengan karakter kartun hello kitty DESAIN RUMAH HELLO KITTY.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/membuat-rumah-minimalis.html"><i>&larr; membuat rumah minimalis</i></a>
+                                                                    
+                                        <a href="/minimalis-modern-2-lantai.html"><i>minimalis modern 2 lantai &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

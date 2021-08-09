@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Desain Cafe Simple
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Desain Cafe Simple",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/7e/c2/ea/7ec2ea8a3e058778dce1191da29b0322.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=desain+cafe+simple",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Desain Cafe Simple
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Desain Cafe Simple</strong>. Cafe Kantoran Cafe dengan desain simple dan sederhana juga merupakan pilihan terbaik jika kalian memiliki ruko atau tempat usaha berukuran kecil Cafe Desain Simple Cafe dengan desain interior yang minimalis dan kekinian seperti ini kalian dapat membuat nyamn pelanggan Cafe Minimalis Kekinian. Ideograf Paulina Czurak Design Studio designed C Corner Cafe a bright simple cafe in Gdynia Poland that features a wall covered in 2740 white ceramic teacups.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/22/21/42/2221421bdab369ee7ee5172eb6f5e643.png" alt="20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstru Desain Interior Kafe Restaurant Interior Design Warung Kopi" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROr2jUa_SmQZ6ZHpTfOGS4uzUqAGBFMhfFwC-98IWqijHxqbckGjCrpB5RkDpXdYmZcE4';">
+        <figcaption>20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstru Desain Interior Kafe Restaurant Interior Design Warung Kopi from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Edit teks di dalamnya dan tambahkan berbagai elemen keren seperti gambar foto ikon logo lambang bingkai dsb. Cafe agar rame dikunjungi banyak pengunjung tentu membutuhkan sebuah inovasi baru baik dari segi desain gendungnya hingga menu-menu yang disajikan harus. 289 Best Small Cafe Design Images Cafe Design Small Cafe Small.
+    </p>
+    <h3>See more photos here.</h3>
+    <p>Small Space Cafe Design - friends this is a small cyber cafe design under the 8x10 room better for the commercial and startup planning for new bachelors. Small cafe design ideas can look stylish and luxurious. The concept for this place was to bring the outdoors in. Restaurant menu design cafe food drinks template psd minimal simple elegant.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspiration Ideadesign Design Architectural Architect Interiordesign Interior Interiordesigner Furnitu Desain Interior Kafe Desain Restoran Desain Kafe" src="https://i.pinimg.com/originals/88/79/fb/8879fbeb880a442a2359d49352fe6422.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgsn2Fo6D4EiPdMv-4TfKl-O8HhxS2dSMeQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Simple Low Budget Cafe Interior Design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Thanit Suvanish Torthanit Instagram Photos And Videos Arsitektur Arsitek Arsitektur Rumah" src="https://i.pinimg.com/736x/86/34/0d/86340d3e80145c3f2e2534e80a5d1458.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsEgTYiVgkZOfyQ5s2MQNVjaQ7PFhtgh7vUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>You can also see Cafe Menu Templates.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kr Desain Kedai Kopi Desain Interior Kafe Arsitektur" src="https://i.pinimg.com/originals/4d/eb/be/4debbecb86353eb44081c089ee1d8478.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCkzvaL-6fQINbA2inHVNzII9GIp2179-HA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>It has a bold look that starts from outside with the white lines on the asphalt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Heidi Monges Di Advertisement Desain Kafe Desain Kedai Kopi Desain Interior Kafe" src="https://i.pinimg.com/474x/bc/3f/f1/bc3ff178e227596d95838744c6913245.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpr8kNYneOYa65C-SjS4whwWAwl3iePvC-Z8nEA6pWBtZCf5H6yio1UI_W5Cz7RO476GY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Small cafe design ideas can look stylish and luxurious.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=desain+cafe+murah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+cafe+murah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>The clean design makes the cafe look a bit rustic.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New House Design Sustainable Ideas Desain Restoran Desain Kafe Desain Interior" src="https://i.pinimg.com/originals/aa/3e/ad/aa3eadb1f6bbbc9ca55700a0cc33b26d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3M4T7GoQIdtEYP3ORlaQTwfT6WD2T7bgvsw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Small cafe design ideas can look stylish and luxurious.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Stop Your Shit Desain Eksterior Interior Kafe Rumah Kontainer" src="https://i.pinimg.com/736x/1f/28/b3/1f28b32fc7b90af3bc7dad9b56b61aaa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5W0VLnNV0EnGBu41cHbzz8SLVuLHqjMSyA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lengkapi cafe-mu dengan pohon tiruan agar nuansa alami semakin hidup dan menyegarkan mata pengunjung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Qian Yu Di Design Coffee Kedai Kopi Desain Kafe Warung Kopi" src="https://i.pinimg.com/originals/53/8a/bf/538abf0c2ae867fd5a87a6fce6dbee3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaW7RBVYTd0mQMkc_iMEXjpBqG6tlG6Oz09g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>A good coffee menu template sample allows you to list all the different coffees and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Restoran Simple Yang Memiliki Nama Simple 7 Desain Interior Restoran Interior" src="https://i.pinimg.com/originals/90/69/be/9069be1b5812a45f5cec58c36e7f0913.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7wd8LSTcDAbGAIMDXDbbh5px7tEEKW2R1bg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur terbuka yang simple dan elegan perpaduan warna putih dan warna coklat kayu emang selalu bisa tampil flawless dan menenangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreas Interior Kafe Warung Kopi Desain Interior Kafe" src="https://i.pinimg.com/originals/f1/b6/30/f1b630b63b05299651f6e04a906ca342.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuFHb0Lg4sLDbmPE4mAhzcNReDrXtU3NkP5wk84B9fTdhWKi1sE5zZEzSmv8k60ud9hM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>ConceptDraw DIAGRAM software extended with Cafe and Restaurant Floor Plan solution from the Building Plans area of ConceptDraw Solution Park is the most simple way of displaying your Cafe Design ideas and plans first on the computer screen and then on the paper.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lifestyle Coffee Lifestylecoffee Kedai Kopi Desain Restoran Warung Kopi" src="https://i.pinimg.com/originals/65/27/aa/6527aa56162f27fa9a8beaed7ab4b8e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXrpTJfeltitWdIuzyFgY7zIx-ZgE6doqRBIJrRzqvZnZ6rVYYgQo38xXde8FInKVpLU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Edit teks di dalamnya dan tambahkan berbagai elemen keren seperti gambar foto ikon logo lambang bingkai dsb.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Nur Sanen Di Kedai Khasembon Interior Kafe Warung Kopi Kopi" src="https://i.pinimg.com/564x/b7/03/9a/b7039a543118f0105e9e65cb69e92e3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvLxG3-MQFwdx1QEMC3XS957JPkaCMeQ_cccji7wGqeYBwBi8FBYzeeHMYjlWR0utvSfs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur terbuka yang simple dan elegan perpaduan warna putih dan warna coklat kayu emang selalu bisa tampil flawless dan menenangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Kukkik Di Kedai Khasembon Interior Kafe Desain Desain Produk" src="https://i.pinimg.com/564x/8b/df/e4/8bdfe43bf5b0bb9a8816650b068e9796.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYM4mtaUEUuBMli9af2YE0_LsxaITpimjX6Vv0CntL9WBvdg9PwzUHv1WOcrgzyR29BQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Restaurant menu design cafe food drinks template psd minimal simple elegant.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="World Of Coffee On Instagram Repost Murfeeds Coffeeshop Coffeecorner Coffeetime Desain Kafe Kedai Kopi Desain Restoran" src="https://i.pinimg.com/originals/a2/86/83/a28683dc8d22948cdf8acbdd53602be0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJVU1PQwFLDn1urD3YdSttIbNhT_zwCWW6qA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>3ds-Maxs 2012 Vray lighting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Samantha Del Toro Di Arara Coffee Co Desain Eksterior Arsitektur Desain Interior Kafe" src="https://i.pinimg.com/originals/78/99/1c/78991c21a1fee5473f61f72a78346361.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBIbR498R_tiMOI4hGEVamjWeN5c6Zv2Xjg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Elegant and simple restaurant menu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Seni Desain Kedai Kopi Warung Kopi Cafe Bar" src="https://i.pinimg.com/originals/61/0b/ba/610bba46418a5fafc4a08aae609336b9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYceMA0qyNJ-X8tEyFtDV834iQdz4dticYIoQhvR4ao8CF5SHeZscStAzV2hppm9-NyjM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Restaurant menu design cafe food drinks template psd minimal simple elegant.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="World Of Coffee On Instagram Repost Vanissakaris Coffeeshop Coffeecorner Coffeetime Desain Interior Kafe Desain Kafe Arsitektur Restoran" src="https://i.pinimg.com/originals/0d/89/3b/0d893bcb69a31e9318151690ca6fd3ea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfnVdAnGiYsSaQtmyt9psolxXAGqiPQKSJ2wWhNwziJWbq9SpjFYwG47vXK-8ugOCoydw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain cafe minimalis sederhana di zaman modern ini sangat cocok untuk diterapkan apalagi sudah banyak sekali yang menyukai serba berbau cafe baik dari kalangan anak-anak muda hingga dewasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Martha S Top Kitchen Organizing Tips Desain Kedai Kopi Arsitektur Minimalis Arsitektur" src="https://i.pinimg.com/474x/4a/88/62/4a8862bb6ded0e0f32e0430653d08ee2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzxrPHzQ-94wrpPvmSpJXwPmZwMZEi_7qMK8d8SFqSCiQf88hZ8PcdFatUtiHHlthSTZc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>An integral part of this ambience is the amazing menu you provide.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Coffee" src="https://i.pinimg.com/originals/1a/97/8c/1a978cb78a3de28cebaa82a5c55b6de4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPFtNOvzv3JnCenXlCeIol5WxKh1_ln888aQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Minimalis Kavling Sudut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Discoffee In Bima Indonesia Kedai Kopi Desain Kafe Desain" src="https://i.pinimg.com/originals/ea/45/ec/ea45ec8ffebf56c7df10189aca7eb9d4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS87e35whSvQU3cYZpgmhm-bWle1QGQc5aTuw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Manfaatkan puluhan template desain menu cafe menarik dengan berbagai tema dan pilih salah satu yang Anda sukai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampak Depan Desain Mini Cafe Desain Kafe Desain Desain Restoran" src="https://i.pinimg.com/originals/60/bb/87/60bb878f4c405b93b578bde7e9d00457.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShlyU8fog36xHIlv_QTh3b_RzoL0-F8MUxQg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Cafe-Resto Minimalis Modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Party Space Design Creates A Simple Common Room Cafe In Bangkok Interior Kafe Interior Desain Eksterior" src="https://i.pinimg.com/originals/f0/f0/f5/f0f0f5bec0252a9c600a9b5ae3d3be0f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9yBabJy7JPNrx_FF5y7SlQ7SpMZ2rkTRQw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Restaurant menu design cafe food drinks template psd minimal simple elegant.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Restoran Simple Yang Memiliki Nama Simple Desain Interior Kafe Restaurant Interior Design Interior Kafe" src="https://i.pinimg.com/originals/60/4a/32/604a326139dee0cefe5f17e6203c853d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpefO2VlJvLoIaLW72VotPUZnJWS4Jghlj8IseV3GPfkDe2U_xxOoVyASPjcZ1If5dWgc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>289 Best Small Cafe Design Images Cafe Design Small Cafe Small.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Party Space Design Creates A Simple Common Room Cafe In Bangkok Desain Kafe Desain Kedai Kopi" src="https://i.pinimg.com/originals/4c/69/83/4c6983d4e219b4d0e9bf14d1cd3f1d4f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGrjwRRNbR8fKy7lTrUhfzuexEcmPs1ZHESQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>The concept for this place was to bring the outdoors in.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Thanit Suvanish En Instagram Friday Vibes Restaurant Interior Design Interior Kafe Desain Kafe" src="https://i.pinimg.com/736x/c9/62/26/c9622656c1edba22f9f1d3ef0f6abe1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtFRBzX80ZnXfhA_lT4hghOa5RlpVx4Yt1BCBtp97kMZoclqYVhWNTVwroLLjyFwoLhlQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>See more photos here.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Set Kursi Meja Cafe Minimalis Modern Untuk Perlengkapan Interior Dan Menunjang Usaha Cafe Anda Dengan Desain Sim Kursi Kayu Palet Kursi Makan Desain Eksterior" src="https://i.pinimg.com/originals/c4/85/0e/c4850e245533f9131831855feca5fab4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IyDwEuqEBVRdqlfUEcmiiHkwnX0RO1cY8Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Edit teks di dalamnya dan tambahkan berbagai elemen keren seperti gambar foto ikon logo lambang bingkai dsb.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Restoran Simple Yang Memiliki Nama Simple Desain Interior Kafe Restoran Restaurant Bar" src="https://i.pinimg.com/originals/e5/fe/51/e5fe51c44dfadf3b844b8901c619c3fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrwddT5cqttMkKWHPSCba2Os5uMNb68fdl2FfWbJVOiDLTGS-6gf4Va8hrPk3Lm9LD-s';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Ideograf Paulina Czurak Design Studio designed C Corner Cafe a bright simple cafe in Gdynia Poland that features a wall covered in 2740 white ceramic teacups.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Desain Interior Cafe Kecil Bergaya Klasik Vintage Dan Modern Dizeen Desain Interior Interior Kafe Interior" src="https://i.pinimg.com/564x/3d/63/c9/3d63c9bc3c95376606d2859102f4a717.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmZY22R7jCvO3nc7j0G9rtD07Ig1548AvLBDqa98DaRi16dL8TIYAo0bHOecerOoj81Gw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cafe agar rame dikunjungi banyak pengunjung tentu membutuhkan sebuah inovasi baru baik dari segi desain gendungnya hingga menu-menu yang disajikan harus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mr Sister Coffee Desain Kafe Desain Restoran Kedai Kopi" src="https://i.pinimg.com/originals/2d/6d/c1/2d6dc16ecca78b88b417a627f52bfa77.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDNp1hPlYo5huOoR0p4DKiGpPSUMVJeA0KEA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>A good coffee menu template sample allows you to list all the different coffees and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Furniture" src="https://i.pinimg.com/originals/4e/79/93/4e7993b6f9c287d42ede2deaac884aef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabvvxDtoPFpKXlOhInnRHJ5Hn8LZrSwpJLzAUQQonaYskCTi7FhbP798_tVYFNUAheDM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cafe agar rame dikunjungi banyak pengunjung tentu membutuhkan sebuah inovasi baru baik dari segi desain gendungnya hingga menu-menu yang disajikan harus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Image Result For Cafe Design Cafe Interior Design Cafe Interior Simple Interior Design" src="https://i.pinimg.com/originals/7e/c2/ea/7ec2ea8a3e058778dce1191da29b0322.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBpHW8_W9I_LUsHbHJSNRi4ydVouf3xcMnpFY3ZMBwsapkcnVpmelZ4YGakKpIXw3yUo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>29 Best Ideas About Small Restaurant Design Hd Youtube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqzszf9ar5ddchr267piqmab8b Kaslihnz4ik5llg4l5slzyj5 Usqp Cau" src="/search?q=desain+warung+kopi+rumahan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+warung+kopi+rumahan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Cafe Kantoran Cafe dengan desain simple dan sederhana juga merupakan pilihan terbaik jika kalian memiliki ruko atau tempat usaha berukuran kecil Cafe Desain Simple Cafe dengan desain interior yang minimalis dan kekinian seperti ini kalian dapat membuat nyamn pelanggan Cafe Minimalis Kekinian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Design Interior Casual Restoran Simple Desain Interior Indonesia Desaininterior Me Desain Interior Restoran Interior" src="https://i.pinimg.com/originals/2e/f7/64/2ef76497f4fafa904d25847acbfa327d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgrvJk8VLXIgWnqvfCM7O8SXItvjzmyxcccQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Small cafe design ideas can look stylish and luxurious.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bar Cafe Desain Interior Desain Furnitur Interior" src="https://i.pinimg.com/originals/61/23/4a/61234a8a6d1ef44f880c32430154d734.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9wdraqZZSxe1TfILCX1-sTGyGPtryuu8Tg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Minimalis Kavling Sudut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstru Desain Interior Kafe Restaurant Interior Design Warung Kopi" src="https://i.pinimg.com/originals/22/21/42/2221421bdab369ee7ee5172eb6f5e643.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROr2jUa_SmQZ6ZHpTfOGS4uzUqAGBFMhfFwC-98IWqijHxqbckGjCrpB5RkDpXdYmZcE4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Restaurant menu design cafe food drinks template psd minimal simple elegant.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wooden Coffe Shop Desain Cafe Banjarmasin Jasa Desain Cafe Banjarmasin Jasa Desain Coffe Shop Banjarmasin Pembuatan Cafe Desain Desain Interior Interior" src="https://i.pinimg.com/236x/78/5d/3f/785d3f51a005c6b7b559984077f2d205--interior-desain.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mpJpG-SzWC6s8pVmg93k7mHOG15vtmrk4Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lengkapi cafe-mu dengan pohon tiruan agar nuansa alami semakin hidup dan menyegarkan mata pengunjung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/24/69/49/24694991dcd91623721b2f7160fa4569.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRzf2nb-BOgaIihx_cNcrn_fQDb5l1C-xbn11_ZcRxIccVGtLjuOCgtGn44VUuQgW_ELM';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>It has a bold look that starts from outside with the white lines on the asphalt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aprilzero In Japan Instagram Coffee Shop Desain Kedai Kopi Kedai Kopi Desain Kafe" src="https://i.pinimg.com/originals/ca/c0/91/cac091fe85e45ba1759c74631dc33ed0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREgw0-0ybspNSXkDLaG5yELCXDlW3utc5Yqw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Trendy and easy editable menu design for your restaurant cafe bistro tavern bar or club.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/be/78/e1/be78e1af101970638eeb0891aa302421.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpx60zRaondMVnPH8kd1FW8Lt629cTseOFWA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ideograf Paulina Czurak Design Studio designed C Corner Cafe a bright simple cafe in Gdynia Poland that features a wall covered in 2740 white ceramic teacups.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Abarrotes Delirio Dapur Mewah Interior Kafe Desain Kafe" src="https://i.pinimg.com/originals/36/a5/56/36a556f9e569619070a81d8cb75d9e6e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWh7q8GugEH5wUrqUWSZbWfX774N6msv-C90S5mzaDGb6Z5BturatZUm6JfL9EGlLWho';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur terbuka yang simple dan elegan perpaduan warna putih dan warna coklat kayu emang selalu bisa tampil flawless dan menenangkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dhiptadi Discovered This Gem A Coffeeshop Inside A Container Desain Restoran Kedai Kopi Desain Kafe" src="https://i.pinimg.com/originals/5a/e6/8b/5ae68bd5f7f5d455e84ce94d32b14179.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqVPyfDoup6KjPDXJQWWTJQvZilLLV-dlOA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain cafe minimalis sederhana di zaman modern ini sangat cocok untuk diterapkan apalagi sudah banyak sekali yang menyukai serba berbau cafe baik dari kalangan anak-anak muda hingga dewasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Seni Desain Kafe Warung Kopi Desain" src="https://i.pinimg.com/originals/81/3a/0b/813a0be9ae39a0005f2efa85161b2285.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmFhIX0vp7F9q4oMZdrqzc2UwgXuxNm7R3g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cafe Kantoran Cafe dengan desain simple dan sederhana juga merupakan pilihan terbaik jika kalian memiliki ruko atau tempat usaha berukuran kecil Cafe Desain Simple Cafe dengan desain interior yang minimalis dan kekinian seperti ini kalian dapat membuat nyamn pelanggan Cafe Minimalis Kekinian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreasi Sen Warung Kopi Desain Arsitektur Kontemporer" src="https://i.pinimg.com/originals/c4/06/6a/c4066af66ff672d8dd6a8aa26c448426.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEazAvoDYF-9Ifa_u9YpUzvLC4A2ZWnjStOxW50Gqrd2YhJuZNKMlCcrsfgrpzQopL1_s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Trendy and easy editable menu design for your restaurant cafe bistro tavern bar or club.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Baranova Pokorsky Creates Simple Plant Filled Interior For St Petersburg Coffee Aksesori Rumah Desain Desain Kafe" src="https://i.pinimg.com/originals/4c/41/c6/4c41c60201abf211f7c89a5ca897a338.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEhy6sS29ibC-gutc7mnkJVdQo9nRSmn6SQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>12 Coffee Shop Interior Designs From Around The World Coffee.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Rachmanita Di Coffee Iii Desain Kafe Rumah Kedai Kopi" src="https://i.pinimg.com/originals/1a/cb/bb/1acbbbcbf8337c4ac203275b80ac7a85.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROBiGnccDNJeB86a1a5kBHUQQn_b-iWtaatw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Simple Low Budget Cafe Interior Design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Dyg Zaira Di Art Arsitektur Desain Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/5c/44/fa/5c44fa87ae136e59ae2e19c977965c25.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU3LjCdU5cByG1Y3uAKfG8et6HNrTlL1gXdw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Im graduate from architecture and work as interior designer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ngunjung Desain Kafe Interior Kafe Desain Kedai Kopi" src="https://i.pinimg.com/564x/24/87/81/248781c2a4d46a7be9941ed968cd648f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicyv4GCahmX7cpq3iUWTiENNJ_voMFr1pNA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain cafe minimalis sederhana di zaman modern ini sangat cocok untuk diterapkan apalagi sudah banyak sekali yang menyukai serba berbau cafe baik dari kalangan anak-anak muda hingga dewasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="You Coffee Lovers Wish To Make A Coffee Shop At Home Yet Are Perplexed By The Design Take It Easy Stegavia Right Here Ha Kedai Kopi Cafe Bar Desain Kedai Kopi" src="https://i.pinimg.com/originals/4b/aa/e3/4baae35a7b8447e3d5844bee698b0a04.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYqwHfwqb9FlmwHd5XlEq9fx5U9cTcxkIuWt2DVA4w7f4Pn5z2s0uk8023FE1uNuqnjxY';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Small cafe design ideas can look stylish and luxurious.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/4f/26/b4/4f26b41b54b7ad11c4e98ab4b95a5596.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2ijzPfr9w8r5sBe62_4mNMry4CqQNP-6H2ciPhye-Sq88XR0Cvs4tcoXjm18n-zVW0k';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>12 Coffee Shop Interior Designs From Around The World Coffee.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Mini Coffee Shop Yang Simple Dan Unik Jual Kayu Jati Belanda Desain Interior Furniture Ruang Tamu Rumah" src="https://i.pinimg.com/474x/0f/b0/c1/0fb0c1c6d6d1a564df07018b340d65df--desain-interior-kayu.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSC7zW9YerTjXwBIwCuZkCdetO5a51XpOAw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Use some natural lighting set up to make the place comfortable.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-sederhana-6x7.html"><i>&larr; desain rumah sederhana 6x7</i></a>
+                                                                    
+                                        <a href="/desain-rumah-sederhana.html"><i>desain rumah sederhana &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sketsa Warung Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Sketsa Warung Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/474x/d9/16/0d/d9160df53ee66bb8e45f6911daf6da89.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=sketsa+warung+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Sketsa Warung Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Sketsa Warung Sederhana</strong>. Nasi Tumpeng Kuning Sederhana 25 Porsi. 6 Gaya Desain Interior Kedai Kopi di Kota Bandung yang Homey dan Cozy.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/7f/29/c7/7f29c7843bf5ebd1a2aca5936bd0ba2d.jpg" alt="Rumah Sederhana Leter L Rumah Minimalis Desain Rumah Minimalis Home Fashion" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVjsx-ocquTU6O4Av2oHhqQ89747PcH38hRQ';">
+        <figcaption>Rumah Sederhana Leter L Rumah Minimalis Desain Rumah Minimalis Home Fashion from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Dengan adanya sketsa juga bisa mempermudah kita untuk menyiapkan skrip HTML dan CSS apa saja yang dibutuhkan. Mempersiapkan Desain Warung Makan Sederhana dengan Konsep Lesehan. Kamu bisa ngopi ngopi disitu sambil santai ngobrol atau mengerjakan sesuatu.
+    </p>
+    <h3>Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati.</h3>
+    <p>Warung Makan Sederhana Contoh dekorasi warung makan yang ada di bawah ini bisa menjadi referensi terbaik ketika membuka warung makan di dekat perkantoran Contoh Dekor Warung Makan Terakhir adalah sebuah dekorasi warung makan yang modern dan kekinian cocok untuk tempat makan anak-anak muda jaman now. Download Gambar Sketsa Unik Konsep Warung Kopi Unik Bel. Saung Bambu Sederhana Lengkap Dengan Sketsa. Sketsa Website Sederhana Sketsa desain halaman web dapat memberikan gambaran mengenai layout halaman web dan bagaimana cara mengatur letaknya.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/originals/14/59/30/145930e75c799e99d363fbaead93b9c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_EM8Ba7ej9P-91XX0607u6xj9ovovB_Q-A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar diatas merupakan gambar dengan judul Desain Rumah Warung Sederhana Yang diupload oleh Mietha Fanza dengan kategori postingan Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Rak Minimarket Toko Warung Dari Baja Ringan Youtube Toko Rak Baja" src="https://i.pinimg.com/564x/bd/b4/62/bdb4629aa6525af67c2135cab8b72bdf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM61HuUFr1Y8XOYi5OwlW-PgsBBLK5ZMAR3w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Warung Sembako Modern Sederhana Foto dan Desain 11 30 2019 Dibawah ini adalah beberapa foto warung sembako semoga bisa menginspirasi kita semua amin 1 Warung Sembako Sederhana Di bawah ini adalah jenis warung sembako yang sederhana yang biasa di temukan di banyak toko sembako yang lain karena sederhana penataannya pun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Kukkik Di Kedai Khasembon Interior Kafe Desain Desain Produk" src="https://i.pinimg.com/564x/8b/df/e4/8bdfe43bf5b0bb9a8816650b068e9796.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYM4mtaUEUuBMli9af2YE0_LsxaITpimjX6Vv0CntL9WBvdg9PwzUHv1WOcrgzyR29BQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>New 35 Gambar Warung Kopi Sederhana Minimalist Home Designs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Minimalis 1 Lantai Ini Merupakan Desain Rumah Gratis Yang Kami Berikan Kepada Bapak Yon Rumah Arsitektur Denah Lantai Rumah Desain Rumah" src="https://i.pinimg.com/736x/0b/d6/81/0bd6814c4cae1cf40f2ecdf73b9cb86b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIZfWs8M_1CRPYly7dkHC-mVm9NyOxAnTe6B-mVSIxSOTffgPdL92m1toCcdiwaou6U0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sketsa Website Sederhana Sketsa desain halaman web dapat memberikan gambaran mengenai layout halaman web dan bagaimana cara mengatur letaknya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Luas Tanah 100m2 1 Lantai Dan 2 Lantai House Blueprints Desain Rumah Kecil Desain Rumah" src="https://i.pinimg.com/originals/65/c4/97/65c497e5fcbb5b987d7bbff86ae6aace.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8SX_9f3LxULGax5DGfsi8Lb8oKRNy2xqcg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk mewujudkan desain warung yang anda inginkan salah satu langkah awal adalah mendekorasi desain warung yang tepat sesuai kebutuhan anda dan gaya yang anda inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warung Kopi Sederhana Pinggir Jalan Warung Kopi Restaurant Interior Design Desain" src="https://i.pinimg.com/originals/92/4d/eb/924deba4a07aa8244509915c2284bc8b.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0AtAGSlGfW7I16iDLEMKoYdc-1H4_hcy_DTbF-22lkp3jwIJAKEYj13bbOaJHsRtOcts';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Interior Warung Kopi Sederhana - Warung kopi atau kedai kopi menjadi salah satu tempat nongkrong favorit banyak kalangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Interior Cafe Daftar Harga Desain 3dmax Sketchup Gambar 2d Autocad Cafe Restoran Desain Interior Restoran Interior" src="https://i.pinimg.com/236x/a2/dd/56/a2dd56d7741e5e4817ec11ec4042c68a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp48E-Vi82OoIuLz_ijs9TbqNy0eydOPFt7g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena walau pun lahan atau tempat yang kamu miliki itu terbatas kamu tetap bisa meraciknya sehingga tetap nyaman dan mampu melayani lebih banyak pengunjung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Yang Ada Warungnya Model Rumah Terbaru Model 99 Arsitektur Desain Rumah Minimalis Yang Ada Warungnya Model Ru Architect Design Design Architect" src="https://i.pinimg.com/736x/21/bb/b4/21bbb4887bc4c3d127f115dfddbc9d73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Y3gzMIbGhnS5Q3hNYZFUnu84YqGMU46zBd7NlsyXgerwEKyAkYEAH43JH72NSdnHsKM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar Warung Sembako Modern Sederhana Foto dan Desain 11 30 2019 Dibawah ini adalah beberapa foto warung sembako semoga bisa menginspirasi kita semua amin 1 Warung Sembako Sederhana Di bawah ini adalah jenis warung sembako yang sederhana yang biasa di temukan di banyak toko sembako yang lain karena sederhana penataannya pun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Rumah Minimalis Dengan Batu Alam Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/b0/29/da/b029da102635d959322a4a6459f46988.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbqa831G8jgSyCjaVQPbDMD6dLWk0aNV-2A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mempersiapkan Desain Warung Makan Sederhana dengan Konsep Lesehan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern House Design Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/564x/e5/77/a7/e577a712460518f31fbe2ede95765d35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOVR0X6jMh6VYA1e4AUMN_FCjoJTq37K23Su2MpTfrPG_3EERm8IsG1oxtCl49TQaiL8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Gambar Sketsa Unik Konsep Warung Kopi Unik Bel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kreative Looooos Desain Kaos Konsep Desain Sketsa Gambar Sablon Pesabber Sketsa Desain Cetak Desain" src="https://i.pinimg.com/originals/13/eb/16/13eb16d789057f2068d9d11e1c396430.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgHX2DyCzfkSzHxV2iyui97nlrQcRlPYSz-w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena walau pun lahan atau tempat yang kamu miliki itu terbatas kamu tetap bisa meraciknya sehingga tetap nyaman dan mampu melayani lebih banyak pengunjung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Eksterior Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/originals/3c/1d/df/3c1ddfe8346b6f7bdcdf58a73bae0e8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqGBVdsevY5VCH0Y8ho5cXxiUpDWxNHZcIk0ezjUh2roXDCpA6WVteuLS_hmqsPbgt8DU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena kembali lagi jika warung makan atau restoran Anda tidak memiliki faktor kenyamanan maka akan sulit menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Gerobak Fried Chicken Ini Bisa Anda Pilih Sebagai Referensi Ayam Goreng Ayam Makanan Ayam" src="https://i.pinimg.com/474x/65/4d/1d/654d1dbd8b303b537b1237a860a527d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc4AXaMAjGf6-WBiHl0dWvXGT1ZaI5O4YmoQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gaya Desain Dapur Sederhana Dengan Rak Piring Bagi Rumahmu 23 01 2019 adalah sketsa dari desain dapur sederhana dengan rak piring yang dapat membantu Sampean dalam mewujudkan atau Gaya Desain Dapur Sederhana Dengan Rak Piring Bagi Rumahmu yang sedang kita kupas pada kesempatan ini untuk menjadikan desain dapur sederhana dengan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Denah Rumah 3 Kamar Ukuran 7x9 Paling Dicari Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/14/f8/fd/14f8fd3b2e9d891f12e34678cf187c17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZsPmo2Tuq2E0OzIt42zmoPebIt__qPQciw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kebanyakan juga konsumen lebih menyukai konsep warung makan yang sederhana nyaman santai namun tertata dengan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Baja Ringan Di Baja Ringan Sebuah Alternatif Pengganti Kayu Rumah Minimalis Membangun Rumah Desain Rumah" src="https://i.pinimg.com/originals/92/d0/15/92d015c3335632f5eac19f5ab23257f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoXkRMZHzwCsJMENrT2gnbxltmtS4mvpGuCA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>20 Desain Warung Kopi Sederhana Pinggir Jalan Arsitektur Warung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gerobak Dimsum Juara Gerobak Vintage Kedai Kopi Desain" src="https://i.pinimg.com/originals/3b/c0/ba/3bc0ba0017c2c86eac25d2a1b299421d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-vdzgZftDTfzvy-k2k_XB2PspJ20HDZEfFA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk mewujudkan desain warung yang anda inginkan salah satu langkah awal adalah mendekorasi desain warung yang tepat sesuai kebutuhan anda dan gaya yang anda inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruko Minimalis 2 Lantai Arsitektur Klasik Sketsa Arsitektur Arsitektur" src="https://i.pinimg.com/originals/db/d0/da/dbd0da985d45ba6b08879a1cea1034bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDO27oAsGJVR_GWqO7_IJzUSyT7FmopwWgqEsNlZBWkMAlHYU04rVKL57NVoBcuB-2XY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>6 Gaya Desain Interior Kedai Kopi di Kota Bandung yang Homey dan Cozy.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Architecture Portfolio" src="https://i.pinimg.com/564x/d7/13/62/d713620c59a5b21922b1d3c760ee8cea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWyd5Ljt2WXB2qT_dbPLyg9pus6ZciQQhjYA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar warung sembako Manusia tak akan bisa lepas dari perubahan zaman yang menjadikan sesuatunya mudah dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/originals/8a/87/91/8a879149ec5ce20bef24a2ff6a148403.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUUBQsKqmYXfToSUDR-6asiR5nnbOQHkw_pA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>New 35 Gambar Warung Kopi Sederhana Minimalist Home Designs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+warung+kopi+rumahan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+warung+kopi+rumahan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>- Salah satu komponen rumah yang terkenal dan tak lekang oleh masa adalah desain warung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Gerobak Prima Burger Desain Burger Hamburger" src="https://i.pinimg.com/600x315/6e/64/cf/6e64cfd31e12d0d108c4f889efec8f64.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFL4dhI3sLbIvetlVhp2KYS-yBl6vVmCdW4A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Koleksi dan Kumpulan Kreasi Gambar Tumpeng dari Pesan Tumpeng di Dapur Hana Spesialis Nasi Tumpeng.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Denah Rumah 3 Kamar Tidur Ada Garasi Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/60/de/de/60dede26dce8941c1cd448b09b3e3840.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeDBg5JhrKYoUEoA2HvZVsdBGSeDBhNn10zLrXbYTxF3Xo5n0LOHwGWa0VhgXttr_QW74';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Konsep lesehan juga cukup baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai 3 Kamar Tidur Https Space Made Com 368 Denah Rumah 3 Kamar Denah Rumah Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/11/d2/06/11d206e68a65da349e1e1d832f4b3a26.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtliOru7I8SaAaHjDtcbAQl5gs2-ZP3e4UXQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar warung sembako Manusia tak akan bisa lepas dari perubahan zaman yang menjadikan sesuatunya mudah dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah Ala Cafe Warung Kopi Rumah Mewah Desain" src="https://i.pinimg.com/originals/54/d0/c7/54d0c7c606c5f22c7f8763e438092630.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSee1rjW7FECC5cYpzabIoU2HDEn79EfF9UMZJtilg2WcdlcsUdt2HD2Dd8LEizMIXAGGk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Konsep lesehan juga cukup baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sederhana Leter L Rumah Minimalis Desain Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/7f/29/c7/7f29c7843bf5ebd1a2aca5936bd0ba2d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVjsx-ocquTU6O4Av2oHhqQ89747PcH38hRQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>20 Desain Warung Kopi Sederhana Pinggir Jalan Arsitektur Warung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Minimalis Di Instagram Desain Rumah Minimalis Ukuran Tanah 10m X 20m Dengan Luas Bangunan 113 M Da Denah Rumah Pedesaan Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/fd/80/10/fd80108e8268b7868c370f9963a1d39b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL7Z8-lwT33eUfW8TrfBHwUupCUQpNb4uz_CtVW3zByPf2eY7UGzF7UjUpwl939ZfuANQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena kembali lagi jika warung makan atau restoran Anda tidak memiliki faktor kenyamanan maka akan sulit menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/55/11/e7/5511e711115ad9ab0a3cfae45f17b69e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqjbwchvN6ZJBMmlFZttSFsRRqM_j75tQjpqg558QLG152A5ZGGNVRd9q5hOcrbG1iMM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berencana Buka Warkop Sederhana 7 Konsep Ini Bisa Membantu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Saat Ini Perkembangan Dunia Usaha Berkembang Pesat Banyak Orang Desain Rumah Minimalis Home Fashion Arsitektur" src="https://i.pinimg.com/originals/f8/9b/75/f89b75a3a9528ed3a49407e6b40a1dd0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxEezqp-eOOrL_uEh-Rd-CCF_tFvywZS5_yQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gaya Desain Dapur Sederhana Dengan Rak Piring Bagi Rumahmu 23 01 2019 adalah sketsa dari desain dapur sederhana dengan rak piring yang dapat membantu Sampean dalam mewujudkan atau Gaya Desain Dapur Sederhana Dengan Rak Piring Bagi Rumahmu yang sedang kita kupas pada kesempatan ini untuk menjadikan desain dapur sederhana dengan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain 2d 3d Produk Bangunan Exterior Interior Preview Desain Cafe Mini Kios Sederhana Warung Makan Desain Interior Sederhana" src="https://i.pinimg.com/236x/6a/1f/03/6a1f03485d2b31e011ea181e4084b930.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL-pOLDGG1npyqhTcluCAXHaCQ1-HwXIj1H1e1T_BXh-zsrY4H8o5f1CQ7VVvYW4I5_fM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 2 Inspirasi Desain Rumah Minimalis 6x6 M Rumah 6x6 Casa De 6x6 House 6x6 Youtube Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/564x/52/f1/ac/52f1ac4afdd8e86b7a307950d4aac529.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnZpdvO0_QhTROubLWQHfOw3u0g7m7dW4-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Bangun Rumah 30 Juta Saja Dijamin Jadi Dan Indah Membangun Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/f0/c0/c5/f0c0c526335f7a2c1532dd47f02ecfcd.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeWM9Vp9tUXZi1o8bOiTYX1tJBuCIAXe3gaQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Denah Rumah Kayu Minimalis 8 5 X 7 M Plano De Casa 8x7 Desain Rumah Papan Sederhana Rumah Murah Youtube Rumah Rumah Kayu Denah Rumah" src="https://i.pinimg.com/564x/da/d2/1c/dad21c54f26ee473e7fc1911a7e67e33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBfd0Tb_GOKxRaOUyNWSX5drC_jwhsWl_1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Proposal Usaha Bisnis Toko Sembako Sketsa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Banner Toko Warung Sembako Kelontong Cdr Desain Banner Toko Desain" src="https://i.pinimg.com/736x/e8/54/db/e854db73794f22a766d91ab8556de670.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjEWJsm7muOIR1xlLSHFfFZe3vpMsKXSu5lA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam mendesain rumah dengan model sederhana Anda harus berhati-hati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Posisi Hook Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/25/80/56/2580564611a93a779f43d2beded369ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMApfQC5QlUZjRFzpEZZkDXhxQX96Ye3HfDQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Teras Rumah Adat Jawa Tengah Rumah Kayu Desain Rumah Rumah" src="https://i.pinimg.com/originals/e8/37/6f/e8376ff27e3cbebcb8737fb6446147e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkcdds4z5c0BXmkLp5SndKY5EDDVswFUAn0YT5lMdj1m6knC6GF7S2yGS14MY5JDJl8E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>25 Contoh Desain Warung Makan Sederhana Terkini Dan Terpopuler.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Spanduk Warkop Banner Warung Kopi Free Wi Fi Desain Grafis Cdr Spanduk Desain Warung Kopi" src="https://i.ytimg.com/vi/H2POSmwCJeA/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOcW4XFh6WNdDkUKV5HJesjulE9uTuQ1QWbA';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warkop 2 Warung Kopi Sebrang Perpustakaan Pusat Unpad Dipati Ukur Art Drawing Pencil Paper Scetch Warkop Dipatiukur Unpad City Sketch Drawings Art" src="https://i.pinimg.com/474x/23/2c/be/232cbee485b7ab70b8ddc9ac3b19d962.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQmigdR613ij9Vz7xl16BgJPqWPe1LtJrD4A';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>25 Contoh Desain Warung Makan Sederhana Terkini Dan Terpopuler.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di My Youtube Channel Desain 87" src="https://i.pinimg.com/564x/ba/1d/52/ba1d52910bcaab73134aadf70d7987eb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Vazz0gQGE1LQlUyci7Hschb5tkCji6UVSfuZ_mStqamVNNGjzu6qUkRWCuTW_SRoZeg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Arsitektur Modern Minimalis Desain" src="https://i.pinimg.com/originals/3d/46/93/3d4693738b5a39b14422f891fdb63c70.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCdRJGxOVSX7ExuItiH7WlzshXEW9kBGiGkt79iDHT3GfQNNqjpGbnZY6qdvkNZ0gBEWg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tumpeng Cantik dengan Hiasan yang Unik dan Kreatif Rasa yang Lezat Sesuai Pesanan dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di My Youtube Channel Desain 87" src="https://i.pinimg.com/564x/3d/02/db/3d02dba62a28bfa24c7a04d6061f0e48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJUg_4W7MLHCSKZuNrOI038d7YdZzHOfuTA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep lesehan juga cukup baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain" src="https://i.pinimg.com/originals/7e/57/a7/7e57a7d0584d12497fe86c0ba3fc012c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRzHjjVrUnut_5QqjOPfr4QSiXmaH-KlVrPw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh Proposal Usaha Bisnis Toko Sembako.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreas Interior Kafe Warung Kopi Desain Interior Kafe" src="https://i.pinimg.com/originals/f1/b6/30/f1b630b63b05299651f6e04a906ca342.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuFHb0Lg4sLDbmPE4mAhzcNReDrXtU3NkP5wk84B9fTdhWKi1sE5zZEzSmv8k60ud9hM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk mewujudkan desain warung yang anda inginkan salah satu langkah awal adalah mendekorasi desain warung yang tepat sesuai kebutuhan anda dan gaya yang anda inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Ruko Minimalis 1 Lantai Check More At Http Desainrumahkita Net Desain Rumah Ruko Minimalis 1 Lantai Desain Desain Eksterior Rumah" src="https://i.pinimg.com/originals/fe/61/cc/fe61cc994c625e1553ba687bdb63ed3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VzndnCaVbA6JXK32LMf9MsRXSmbTgWpZPMJfePPtiJoF4IauND_fOvKWK2VtDVESSiQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>3 Sketsa Di Warung Kopi Steemit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warung Kopi Merapi Petung Warung Kopi Indonesia" src="https://i.pinimg.com/originals/c5/81/6a/c5816a0078ddd066ec2d44f891d5e78a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5JeABEJl4tEKxEi8B2nEfMsGNfmoP6DZdZPJQ9kraD9X4aWi1zI7xO1jjhm8oWN7lcu8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kebanyakan juga konsumen lebih menyukai konsep warung makan yang sederhana nyaman santai namun tertata dengan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bentuk Atap Miring Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Desain Rumah Mungil" src="https://i.pinimg.com/originals/d6/13/b9/d613b9d8c03bb55a1f2367456aba4a38.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIwRrSY4N4mnkth0TSp0qkaXvUWXSOKezrQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kebanyakan juga konsumen lebih menyukai konsep warung makan yang sederhana nyaman santai namun tertata dengan rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Ukuran 6x10 2 Lantai Rumah Minimalis Desain Rumah 2 Lantai Renovasi Rumah" src="https://i.pinimg.com/originals/c9/97/63/c99763d524dfe4dcc680246e3f7abb8c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdtIIHaHMw8RYlCt_TVHT0ypGZiYr2hMQpbg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nasi Tumpeng Kuning Sederhana 25 Porsi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 10x15 Youtube Rumah Minimalis Rumah Rumah Indah" src="https://i.pinimg.com/originals/6c/86/9e/6c869e2e5caff23435810703691c01e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQX0BW29HdNMY_uBk4jnZzgWyolQuRXX2SA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Saung Bambu Sederhana Lengkap Dengan Sketsa dan Gambar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsfyd Ejx0n Dq3vx Dfcgq Sxigo5zumcemf 2j7xkmaepnal1 Usqp Cau" src="/search?q=desain+warung+kopi+dari+bambu&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+warung+kopi+dari+bambu&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Sketsa Website Sederhana Sketsa desain halaman web dapat memberikan gambaran mengenai layout halaman web dan bagaimana cara mengatur letaknya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Profesorgerobak Com Kayu Kayu Jati Minimalis" src="https://i.pinimg.com/474x/d9/16/0d/d9160df53ee66bb8e45f6911daf6da89.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVK2PYxnNEj9aqiARB73jYOIweU9JwuwuckWmWHs_J09L-KMu-6V4ClVP2B5N9-Spke48';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Gambar Sketsa Unik Konsep Warung Kopi Unik Bel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layanan Jasa Gambar Rumah Rumah Toko 2 Lantai Di Tulungagung Desain Rumah 2 Lantai Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/f3/89/5e/f3895ec2bac5402655e6dc187e5fc71e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZao5-Ne39NwYJt1E9eyKcsDLZcKoqy13HhyTBobNo-hl_ttRJv0W99g9nOarkp6HpGmo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nasi Tumpeng Kuning Sederhana 25 Porsi.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/denah-rumah-ukuran-4x7-meter.html"><i>&larr; denah rumah ukuran 4x7 meter</i></a>
+                                                                    
+                                        <a href="/denah-tangga-rumah.html"><i>denah tangga rumah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

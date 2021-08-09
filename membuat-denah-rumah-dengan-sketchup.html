@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Membuat Denah Rumah Dengan Sketchup
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Membuat Denah Rumah Dengan Sketchup",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/736x/6a/85/65/6a85651f03d9ef0d5b59d2694c424f6e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=membuat+denah+rumah+dengan+sketchup",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Membuat Denah Rumah Dengan Sketchup
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Membuat Denah Rumah Dengan Sketchup</strong>. Membuat denah rumah menggunakan LayOut SketchUp sebenarnya mudah. Sketchup program pemodelan 3D yang paling saya sukai.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/a2/35/b1/a235b102035320542c709b6795f6f28e.jpg" alt="Berbagai Macam Konsep Desain 3d Rumah Tinggal Telah Banyak Kita Buat Baik Menggunakan 3ds Max Render Maupun Sketchup Dengan Kon Home Fashion Rumah Desain Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9FTG5Eht3KiOeaYbynYqOWSvWFwKorS63jg';">
+        <figcaption>Berbagai Macam Konsep Desain 3d Rumah Tinggal Telah Banyak Kita Buat Baik Menggunakan 3ds Max Render Maupun Sketchup Dengan Kon Home Fashion Rumah Desain Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Sketchup program pemodelan 3D yang paling banyak Orang suaki. Belum banyak yang mengenal teknik ini. Sebagian lainnya masih bingung menggunakannya.
+    </p>
+    <h3>Cara Membuat Denah Desain Rumah Minimalis 3D dengan Sketchup.</h3>
+    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru. Agustus 8 2020 Oleh admin. Sketchup program pemodelan 3D yang paling saya sukai. Meskipun perlu saya garis bawahi mudah dan cepat sangat relatif bagi orang lain.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Cara Membuat Tiang Kolom Ornamen Dengan Sketchup Ornamen Desain Arsitek" src="https://i.pinimg.com/236x/18/d7/15/18d715b20108f598aaf8d815a9a62af4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmI1T-SpRyhDKyES6joC8TeOmIjjR8SAfWVw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuat Denah Rumah 7x13 di Sketchup dan Layout - Duration.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 87 Desain Rumah 2 Lantai Sketchup Paling Bagus Gratis Rumah Minimalis Desain Rumah Rumah Modern" src="https://i.pinimg.com/originals/26/3f/08/263f08c18259eea8d3aac1eacb041774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmD9EBOPRUlSowx49HWzfTFFuyey8eepPWzg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar draft ini bisa memberi panduan saat menggambar di komputer sehingga terarah dan hasilnya bisa lebih akurat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Rumah Minimalis File Sketchup Untuk Referensi Rumah Minimalis Referensi Desain Desain" src="https://i.pinimg.com/736x/c5/b9/30/c5b93040455f53c8811e050855c26d0c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2SgR2mLIqBxyCH-jtbui91nQAUB2rLZQYKw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Modeling Atap Rumah Gadang dengan SketchUp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas De Campo" src="https://i.pinimg.com/564x/69/c6/af/69c6af1cd3eb115198815427d9b90a87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCi8jmxiD3pxDVV--b0CSsPrmKv26slTCGYd6_lBRVjzfzOJxHSPCLZHrWsEGvcmq6Ruk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teknik Membuat Denah Bangunan Menggunakan Layout Sketchup Youtube Denah Bangunan Teknik Bangunan" src="https://i.pinimg.com/564x/55/0c/6a/550c6ab6994f20eb6a8b9d6e60c88001.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3DJTbAjOw6_e_vQDSj51Rz4WsfG8-4DTJQfgCip6nbCWj4ZVtc0WWUEyllFcYNKnWhFE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pengalaman membuat desain rumah mulai pembuatan Ukuran Pondari sampai dengan pembuatan atap Rumah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Denah Rumah 2 Lantai Site Plan Denah Rumah Desain Rumah Kecil Rumah" src="https://i.pinimg.com/originals/06/6e/e1/066ee17b22bd165974225daf6e447a4e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqKgph9j8E3YMZfrz-GvI3ZYZgNIxrYeGSNKr4jCoKlrKl4VIUe1MsywrT4GLgDmdt3A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Renovsmart untuk melihat update koleksi gambar DesainDenah3d Arsitektur Eksterior Interior Pada tutorial kali ini penulis mencoba mempraktekkan teknik2 dasar sketchup untuk membuat sebuah gerobak dorong sederhana Jangan sampai Anda membuat denah rumah yang tidak sesuai dengan rencana Anda dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Membuat Rumah Sederhana Untuk Pemula Baru Belajar Youtube Rumah Sederhana Desain" src="https://i.pinimg.com/564x/ae/f6/3c/aef63c4abf36f54b7fac714dedc386d0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9j2O-p-5I8bGrfBN0VITFXERAoEfatt0NHBWSHA1nmf56UPhrY3g-4FTV6wmJzXf2PcY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Dengan SketchUp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Speed Build Sketchup Desain Denah Rumah Ukuran 12x4 M Rumah Sederhana Di Desa Youtube Rumah Desain Denah Rumah" src="https://i.pinimg.com/564x/44/86/8d/44868de5214661b997753830d7d403c4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCwRyGgS_SjJp4RuOHWaqPPx-bwQ1kfTCrA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Panduan Lengkap Membuat Rumah Sederhana dengan SketchUp 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rancangan Contoh Gambar Denah Dan Potongan Rumah Yang Modern Rumahminimalispro Com Desain Rumah Eksterior Arsitektur Sketsa Arsitektur" src="https://i.pinimg.com/originals/00/24/ff/0024ff990a3440bcc7b90ae9c89418d4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVNaJssGeqXW09WgxcMdhVazgIJ4OwnfdrBHVJpYcUNottbDeYPJ7K7hFxI56wUsJWyvo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menggunakan perangkat lunak ini menggambar sebuah desain bangunan terasa lebih mudah dan cepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Import Gambar Autocad Ke Sketchup" src="https://i.pinimg.com/originals/93/16/51/931651054f3d47bef6f5e8ed81e24023.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsSy4t3JOLvaBrjKKUSrhfp48_bRmeoVZqHQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Membuat Denah Desain Rumah Minimalis 3D dengan Sketchup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Ukuran 10x12 Download Gambar Modis Update Rumah Minimalis 10 X 12 Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/ec/75/43/ec75432d304a9dea515cf05a0875ecf6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EwZXv7B7oynkiAwJlwdldYmNwPm9Bv8jRA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arisandos Niko 66780 views.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Rumah Minimalis Dengan Google Sketchup 8 Bungalow Haus Design Minimalistisches Hausdesign Minimalistisch Wohnen" src="https://i.pinimg.com/600x315/81/6b/f9/816bf9b537672aa1a536681b9e557045.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROxi-9MlklBGxzm76qrhUK7eWtUYX3FlE7TLBeQwGQ-57dnDX02M0p00lXcvpUCzPvdAw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Menggambar Desain Rumah dengan Sketchup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Denah Rumah 3 Kamar Tidur Ada Garasi Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/60/de/de/60dede26dce8941c1cd448b09b3e3840.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeDBg5JhrKYoUEoA2HvZVsdBGSeDBhNn10zLrXbYTxF3Xo5n0LOHwGWa0VhgXttr_QW74';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sketchup program pemodelan 3D yang paling banyak Orang suaki.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Cepat Import Dan Membuat Denah Autocad Ke Sketchup Arsitek Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/2b/3c/85/2b3c85ea13794684c3137efd7a30a28e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7eXgIpuwZwwTQP3RXOagExnC9AWX865ItLQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Download Denah Rumah Sketchup Terupdate - kalian bisa membersihkan kotoran dengan mudah di tempat tinggal dan denah rumah maka semua perabotan yang ada didalam hunian dan denah rumah kamu supaya tetap bersih serta tetap memberikan kesan yang indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Rumah Hook File Sketchup Untuk Referensi Desain Arsitektur Arsitek Referensi Desain" src="https://i.pinimg.com/736x/a5/e7/cf/a5e7cf63ff29bd2b952db7aa1a721bda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH4tKkY_Ztvy0JUivXecgjgxk81YYKctVGiQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arisandos Niko 66780 views.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 3 Kamar Tidur 6 X 10 M Youtube Rumah Minimalis Desain Rumah Minimalis Minimalis" src="https://i.pinimg.com/564x/73/fb/03/73fb03c2e6aee0ab7d4f8367f44e4d08.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjl6I25iLQgOJ9_77ibyUHKcod77euOyxkXw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar draft ini bisa memberi panduan saat menggambar di komputer sehingga terarah dan hasilnya bisa lebih akurat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Pintu Sketchup Cara Bar Chart" src="https://i.pinimg.com/originals/4a/57/61/4a5761974c91a9df0e472fa3d3ae0835.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmbGl-GgTIENcC5Op3IEpgfKb0VYhMCJO53ZsSgTp7BlPLVBiHL4_N3voyf-t8KLXJz5E';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meskipun perlu saya garis bawahi mudah dan cepat sangat relatif bagi orang lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrsdsjjzaitilwbvztzv89ytbokdqgjkosrm0rdrzaaidazsisn Usqp Cau" src="/search?q=denah+rumah+3+kamar+ukuran+7x9&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+3+kamar+ukuran+7x9&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Di karenakan rumah serta denah rumah jenis ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Rumah Tipe 45 File Sketchup Untuk Desain Aritektur Desain Arsitektur Arsitektur Arsitek" src="https://i.pinimg.com/736x/a5/dd/ca/a5ddca7c7e17840f5fed7083ec088ba9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNf1zjer2tF24j07LJKlI2IcHh7qPvuIY_g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar draft ini bisa memberi panduan saat menggambar di komputer sehingga terarah dan hasilnya bisa lebih akurat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kerja Proyek Rumah 7 Arsitektur Arsitektur Perumahan Denah Rumah" src="https://i.pinimg.com/originals/00/7d/85/007d85fa15997d7dfff8331b42fd9875.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTU-_ANA6XdHLwZ2ObpzVzCh82JotTnQLM0A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Halo semua senang sekali akhirnya saya bisa kembali dengan tulisan terbaru saya yang mungkin nantinya akan bisa membantu teman2 yang sedang mencari referensi dalam penggunaan aplikasi desain rumah dengan Sketchup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 3d Warehouse Download Rumah Type 47 Format Sketchup Kumpulan Desain Rumah Minima Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/736x/1b/84/44/1b8444e787ff8853b0122ba0d41fccf7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF__SyFZ6uvlABf2T0BVk8OhXJI29-4HzWFAr-Gu3CDwyGylVyItIQvT7JMpUA7lA_Ozg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuat denah rumah menggunakan LayOut SketchUp sebenarnya mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Type 45 3 Kamar Terbaru Rumah Minimalis Ruang Keluarga Minimalis Denah Rumah" src="https://i.pinimg.com/originals/2e/3c/e1/2e3ce18a1eb1c1c7a0cdef6028c82231.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnr33wlDadvmhc2rZJxYawp7trlu27l_Zs-w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meskipun perlu saya garis bawahi mudah dan cepat sangat relatif bagi orang lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas Pequenas Planos E Ideas" src="https://i.pinimg.com/564x/72/d3/db/72d3dba26b5bb9aa6b18b543c5694bee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEgOdPvUUagxnemEzBF8GEJAg1d8zP1BC2Hg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagian orang belajar secara mandiri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Bangunan Sekolah File Sketchup Untuk Desain Arsitektur Bangunan Desain Arsitektur Arsitektur" src="https://i.pinimg.com/736x/6a/85/65/6a85651f03d9ef0d5b59d2694c424f6e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTbxjYuTZZ3DCIdaMUi7y6BCXiEARXYa5Dw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Teknik Pemberian Texture dan Edit Texture pada SketchUp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Setiap Anda Akan Membuat Gambar Baru Menggunakan Sketchup Terlebih Dahulu Harus Melakukan Setting Satuan Ukuran G Rumah Minimalis Desain Desain Rumah Minimalis" src="https://i.pinimg.com/564x/71/37/95/71379529ae15cf930c277cb9a8a5e625.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIof7ibAp2iY1cWDk9HvZDiLwesc6r2tFIjoq9ERaV25vypXtGtMQhgee_d9FyUrw0BUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuat denah rumah menggunakan LayOut SketchUp sebenarnya mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Atap Pelana Bertumpuk Pada Rumah Di Sketchup Tutorial Sketchup Youtube Atap Rumah Teknik" src="https://i.pinimg.com/564x/05/cb/e2/05cbe2b893130e1f489dfa5219490b24.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_5rALwRxRw1ZW6S7K8nipH1y2xom5yqz8uMRHSca0UPFLGeOwkPk5ixMUtdGz5Wpn0Rs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar draft ini bisa memberi panduan saat menggambar di komputer sehingga terarah dan hasilnya bisa lebih akurat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berbagai Macam Konsep Desain 3d Rumah Tinggal Telah Banyak Kita Buat Baik Menggunakan 3ds Max Render Maupun Sketchup Dengan Kon Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/736x/a2/35/b1/a235b102035320542c709b6795f6f28e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9FTG5Eht3KiOeaYbynYqOWSvWFwKorS63jg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Follow Instagram kami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Sekolah Lantai 3 Desain Arsitektur Desain Arsitektur" src="https://i.pinimg.com/originals/bf/50/ff/bf50ff442f3dafc0af76a4b56189d253.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqdMjFETaU7J7ugToCShPnt1sECdWgvNGug';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Abdul Razaq Tutorial Membangun Rumah Sederhana Menggunakan Sketchup Cara membuatnya a.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Google Sketchup Pemula Membuat Desain Rumah Minimalis Sederhana Youtube Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/564x/3f/d5/4c/3fd54c76e0260f702e7e55cfc6ee9280.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrPlJmD5NIheA0AIxVyLEClODRnrTNyiCjblMxOapYW2PRaSUvzC3ta67vmSUgHgaUTTc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Panduan Lengkap Membuat Rumah Sederhana dengan SketchUp 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 3 Kamar Tidur Dwg Autocad Lengkap Dengan 106 Denah Rumah Minimalis Pdf Gambar Desain Rumah Minimalis Download Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/3a/99/99/3a999926aa8eefa16204c49233dc313e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTekSKML21C77Sf4LPyj44tOVmy58A_I_xGqw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di karenakan rumah serta denah rumah jenis ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Shortcut Keyboard Sketchup Untuk Mempercepat Desain Arsitektur Arsitektur Desain Arsitektur Belajar" src="https://i.pinimg.com/564x/a2/2a/32/a22a3272028346d5f00050d7827740b4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3b5m9W2sGIcxWzgMFxXkz-dL0NGaFT1veTw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>FIX Teigha Error 42 SketchUp Import AutoCAD.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ukuran 9x10 Terlihat Indah Denah Rumah Denah Rumah 3d Rumah Minimalis" src="https://i.pinimg.com/originals/fc/28/6b/fc286bed0acf1ce4cd43a45e11babbbd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUz0nQgRJW6l1lx3mIveCq5Wh41uCsFkQuIC_DGL-ljHAHn1ZQAXCb0WOcgNK52qzV1s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Menggunakan perangkat lunak ini menggambar sebuah desain bangunan terasa lebih mudah dan cepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layoutsketchup Aplikasi Layout Sketchup Kita Sebetulnya Udah Mulai Gunakan Layout Sketchup Di Tahun 2015 Dan Beberapa Desain Klien Desain Rumah Denah Rumah" src="https://i.pinimg.com/originals/96/a2/a4/96a2a48c399e3b1014584183ed18cada.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwqBzOswe56d9CWeUII9Jymjfny5xLoTnYiAZwwW20Cjc35VqufhbcOI3NanUmdYKqO8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan autocad ini anda bisa membuat desain denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Khas Rumah Di Kampung Menggunakan Google Sketchup Youtube Rumah Arsitektur Rumah Indah" src="https://i.pinimg.com/564x/5b/59/e0/5b59e093da05bdac403313ee49e44866.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3aTsMRbgLga_TmLoDHtYfvAvZGRse996cXfVusCigGibfiEVdaKghaI04ZAWPS_7xxP4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Abdul Razaq Tutorial Membangun Rumah Sederhana Menggunakan Sketchup Cara membuatnya a.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Layout Gambar Kerja Rumah Type 52 Kop Anotasi Dimensi Youtube Arsitektur Rumah House" src="https://i.pinimg.com/564x/bc/2f/1a/bc2f1a65c5de7819676b74e6e5919fde.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8dE2QV3mX3RmEkkbqf1AZNs3Yh_NUVsaXQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Abdul Razaq Tutorial Membangun Rumah Sederhana Menggunakan Sketchup Cara membuatnya a.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Menciptakan Rumah Sehat Tropis Minimalis Modern Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/564x/a5/b5/81/a5b58133e26681e4531c872c329e11a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7A2HskiMpYLk-x0E3dPoNMkdOS6EpUta5gQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagian orang belajar secara mandiri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+9x10&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+9x10&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4 Model Denah Rumah Minimalis 7x9 1 Lantai Minimalis Kesempatan Ini Kami Bagikan Sebagian Desain Denah Rumah Minimalis 7x9 Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/3f/16/05/3f1605fcc5837c65e678ff89e0c43e85.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMcDBpHyGb2Auiu3VHbmorDHCy6RhjMZ0yodl45xmk2DL3Hd_5qus38FOeMKDuK0T26L4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar diatas merupakan hasil gambar SketchUp dengan menggunakan Vray SketchUp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Contoh Gambar Denah Rumah Minimalis Rumah Minimalis Desain Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/9d/46/5e/9d465e669e471b801b32fce2d3908396.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmXh0AGBuhg4-QPQvJJtWt-gySPh8PCEa8X2tHC9dWh4eQZYlaNkkuZwCOMVXP8rTllc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Renovsmart untuk melihat update koleksi gambar DesainDenah3d Arsitektur Eksterior Interior Pada tutorial kali ini penulis mencoba mempraktekkan teknik2 dasar sketchup untuk membuat sebuah gerobak dorong sederhana Jangan sampai Anda membuat denah rumah yang tidak sesuai dengan rencana Anda dalam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Di Lahan 8 X 18 M2 Dr Rm 801 Desain Rumah Jakarta Desain Rumah 2 Lantai Rumah Desain Rumah" src="https://i.pinimg.com/originals/ff/1e/37/ff1e37542310aa9ba0a593ceb9268cda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCdK5F57jMp4g5Hn1GItyB1ue4KdC3MS7TA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arisandos Niko 66780 views.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Rumah 4x12 Griya Rumah Desain Rumah Dilahan Mungil 4x12 M 2 Lantai 2 Kamar Tidur Sketchu High Quality Wallpapers Desktop Pictures Floor Plans" src="https://i.pinimg.com/originals/a5/c5/b3/a5c5b339624f3e87a29e87fb4c13d91f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0mkjOiX16Cfv2Otjb2Hq6fCiByu2GW1zgX5wH4wkE0lv7v0LV3rkRzuyhogS0UE1g0kU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Follow Instagram kami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Cara Buat Detail Atap Genteng 3d Dengan Sketchup Atap Arsitek Desain" src="https://i.pinimg.com/originals/ed/ca/cd/edcacd6e6b26f048a44fb4798335b03e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxmDLoDUP3MQd51jIbvU8qpKS0NIBX_U-nbA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuat persegi layaknya denah di autocad bertujuan untuk membuat dinding rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 6x8 2 Lantai Ada Taman Mini Di Atas Lantai 2 Sketchup Desain Gambar Denah Rumah Minimalis 2 Lantai Ukuran Desain Rumah Minimalis Rumah Minimalis Desain" src="https://i.pinimg.com/originals/1b/67/63/1b67637313c7d84a8f5a4e14055ec2bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ9SOJpt3xYrYtJsCuHMkWmtiFEol3flN5YZ51lAVF764sDA281QS08dWF5I3Wctr95Ds';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Teknik Pemberian Texture dan Edit Texture pada SketchUp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home" src="https://i.pinimg.com/564x/f8/ef/7e/f8ef7e2710c64ef71f04c83b1cda77e5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocGvqmYGqf1syygEW3rKrr1kphzwhmCKo_g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menggunakan perangkat lunak ini menggambar sebuah desain bangunan terasa lebih mudah dan cepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/originals/59/5f/a3/595fa35a16bdaf1d1f2cff83fd0adf42.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiTafQtclPSI85nNrhm-5TsKkB_cCSZPC9w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Membuat Denah Desain Rumah Minimalis 3D dengan Sketchup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Sketchup Bahasa Indonesia Desain Rumah 6 X 15 Part 6 Desain Desain Rumah Rumah" src="https://i.pinimg.com/originals/2b/34/73/2b34735ec698c4737bd3c4a1455af53a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdTyGFeEjZC9rdcF84aqf-pH9bJVb2oQ_hVO6gbo21STeHZLSTSEfPnia1ljaT9j2pFM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Belum banyak yang mengenal teknik ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Meja Tv Minimalis L Desain Lemari Tv Desain Lemari Tv Desain Lemari Desain" src="https://i.pinimg.com/originals/f1/05/c5/f105c5276027d9577de83a895deb650d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0dTk_JwmJNVzHWmKwKN2HnQMVtclMWWcNVA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Halo semua senang sekali akhirnya saya bisa kembali dengan tulisan terbaru saya yang mungkin nantinya akan bisa membantu teman2 yang sedang mencari referensi dalam penggunaan aplikasi desain rumah dengan Sketchup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 6x10 M Terbaru Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/9d/7e/75/9d7e75a850deb9c8515270bbb40df177.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6behK8-lFgZs7VJk-aY6Lnqd-UTYGZams5w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menggunakan perangkat lunak ini menggambar sebuah desain bangunan terasa lebih mudah dan cepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Tutorial Cara Membuat Tangga Putar Youtube Petunjuk Putar Desain" src="https://i.pinimg.com/564x/d1/39/68/d13968703d5a2ba5199a96a87677aea7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiKnrIfoipDFokVogcCLj5iG24mIRVtVGCTQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>By Yusuf IDRM - 120800 PM.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download 3d Bangunan Pasar File Sketchup Untuk Desain Arsitektur Bangunan Desain Arsitektur Arsitektur" src="https://i.pinimg.com/236x/45/72/b6/4572b6ddffe44a265b0089fd60e0d333.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQRgL-i7839HjAZMmWcmbUXvmdQolLCkMlg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuat Desain Rumah 10x12 di Sketchup Awal sampai Akhir Pada tutorial sketchUp 4 ini saya akan membahas materi bagaimana cara menggambar denah rumah Agar anda lebih cepat memahami materi ini saya akan memberikan contoh gambar denah bangunan rumah sederhana dengan harapan anda langsung mengerti dan dapat mempraktekannya dengan.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-gaya-amerika.html"><i>&larr; desain rumah gaya amerika</i></a>
+                                                                    
+                                        <a href="/desain-rumah-jawa-modern-mewah.html"><i>desain rumah jawa modern mewah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

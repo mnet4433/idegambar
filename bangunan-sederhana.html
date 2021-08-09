@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Bangunan Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Bangunan Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/736x/ae/04/28/ae042892b6c248a3790527329ac22ce6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bangunan+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Bangunan Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Bangunan Sederhana</strong>. Perencanaan Bangunan Rumah Sederhana Tahan Gempa 6. Ruang-ruang pada bangunan rumah sangat sederhana di wilayah Pademangan ini rata-rata berjumlah 3 sampai 5 ruang yang terdiri dari ruang tamu ruang tidur kamar mandiwc dapur dan balkon.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/2c/f2/66/2cf266193160fc203af4f2fe83f69fab.jpg" alt="Design Rumah Sederhana Design Rumah Modern Design Rumah Mewah Jasa Desain Rumah Minimalis Sederhana Jasa Bangun Rumah Desain Rumah 2 Lantai Desain Rumah Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1cnRMXS6A1vWB3YQf8eVx8Ap9DdH27d2sw';">
+        <figcaption>Design Rumah Sederhana Design Rumah Modern Design Rumah Mewah Jasa Desain Rumah Minimalis Sederhana Jasa Bangun Rumah Desain Rumah 2 Lantai Desain Rumah Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Tinjauan Berbagai Macam Sistem Konstruksi Dilakukan inventarisasi tentang berbagai macam sistem konstruksi yang berpotensi untuk menyelesaikan permasalahan pada daerah yang terkena rob. Untuk Klasifikasi Bangunan sederhana b. You can use them to display text links images HTML or a combination of these.
+    </p>
+    <h3>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</h3>
+    <p>SNI 28472013 tentang Persyaratan Beton Bertulang Untuk Bangunan Gedung 3. 1 Magnitude M Yaitu suatu ukuran dari besarnya energi yang dilepaskan oleh Sumber Gempa hypocenter. - Penggunaan bahan material yang kurang tepat 2 Masyarakat desa Dapat memiliki pemahaman pengetahuan bangunan sederhana tahan gempa. Pengukuran Kekuatan Gempa Bumi Terdapat 2 dua besaran yang biasa dipakai untuk mengukur kekuatan gempa bumi.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct5twlge9be82gqxwmzjoxlk0cv9351dq38rz Cgmg Usqp Cau" src="/search?q=gambar+rumah+kartun&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=gambar+rumah+kartun&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Tinjauan Berbagai Macam Sistem Konstruksi Dilakukan inventarisasi tentang berbagai macam sistem konstruksi yang berpotensi untuk menyelesaikan permasalahan pada daerah yang terkena rob.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah B Warna Eksterior Rumah Rumah Minimalis Rumah Besar" src="https://i.pinimg.com/600x315/0a/60/86/0a6086d2cbb881903c9e600f40486288.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKi2nMN4SCKOSqX6Je7gTrhqwLbkwzhvhsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagai contoh cobalah sobat arsir dengan pensil setiap ruangan tersebut untuk menjelaskan yang mana dinding pintu jendela.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/90/00/40/900040d251598d2f84d661b99c82b946.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1BKz-EXh1_beJlYhlMW3epyxEdAzd-e7XpLFuhDkK2hfr9Wwa79iJ6fYMhx6s_pHfY18';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>- Masih mengandalkan sepenuhnya kepada tukang dalam membangun rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas De Campo" src="https://i.pinimg.com/564x/69/c6/af/69c6af1cd3eb115198815427d9b90a87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCi8jmxiD3pxDVV--b0CSsPrmKv26slTCGYd6_lBRVjzfzOJxHSPCLZHrWsEGvcmq6Ruk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang-ruang pada bangunan rumah sangat sederhana di wilayah Pademangan ini rata-rata berjumlah 3 sampai 5 ruang yang terdiri dari ruang tamu ruang tidur kamar mandiwc dapur dan balkon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/55/11/e7/5511e711115ad9ab0a3cfae45f17b69e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzJSCiA_nhfcNVG5omMQTRtFuc9F2L7ZJTA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sebagai contoh cobalah sobat arsir dengan pensil setiap ruangan tersebut untuk menjelaskan yang mana dinding pintu jendela.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Renov Rumah 081 330 686 419 Telkomsel" src="https://i.pinimg.com/originals/08/52/54/08525471c4f33afa6a8a70e9ffd9631d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCb_Y1SNe5YiJmSgePl4GKmIbab4jk1rmAeQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>SNI 17262012 tentang Tata cara perencanaan ketahanan gempa untuk struktur bangunan gedung dan non gedung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Design Rumah Sederhana Design Rumah Modern Design Rumah Mewah Jasa Desain Rumah Minimalis Sederhana Jasa Bangun Rumah Desain Rumah 2 Lantai Desain Rumah Rumah" src="https://i.pinimg.com/originals/2c/f2/66/2cf266193160fc203af4f2fe83f69fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1cnRMXS6A1vWB3YQf8eVx8Ap9DdH27d2sw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat No.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Macam Maket Rumah Minimalis Desain Rumah Eksterior Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/70/36/9e/70369e430d06aa6d0b2ceb9de2a9f3f8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOaDDKXg6W8qjP7fidi26Y2A3IOu7brHXtNZruV_Ejl8q5xbGUVM2pAjcRJzRwmUsS-8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bangunan gedung kantor yang memerlukan ruang pelayanan luasnya dihitung secara tersendiri berdasarkan analisis kebutuhan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Sederhana 3x6 Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/474x/d9/39/02/d93902999ca1f374ba7820092b107438.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mNhgPTZ14hRbs9i74a0glSKmVlVxCbeVBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perencanaan Bangunan Rumah Sederhana Tahan Gempa 6.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warna Abu Abu Pada Batu Andesit Atau Batu Templek Salagedang Dan Purwakarta 24 Contoh Ide Dinding Batu Alam U Desain Rumah Bungalow Rumah Batu Rumah Minimalis" src="https://i.pinimg.com/originals/fe/cc/33/fecc3311034d9e30b8cb75432d92ef65.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39WEWWSwDATefpquW0QtsovyNxYGnfDRykw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bangunan Sederhana Pada Tanah Terlikuifaksi di Kota Padang dapat terselesaikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2020 Sederhana Tapi Mewah Denah Ukuran 9x14 1 Lan Rumah Minimalis Rumah Kemewahan" src="https://i.pinimg.com/originals/eb/e4/0d/ebe40d0d1d7c8de635c70806d1c29cf2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfT6zwE4RiFDz4aeF5rLzzDLRWyOtJDTZiw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang-ruang pada bangunan rumah sangat sederhana di wilayah Pademangan ini rata-rata berjumlah 3 sampai 5 ruang yang terdiri dari ruang tamu ruang tidur kamar mandiwc dapur dan balkon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Temukan Segala Yang Ditawarkan Scribd Termasuk Buku Dan Buku Audio Dari Penerbit Penerbit Terkemuka Mulai Coba Gr Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/f9/90/d3/f990d3a3065834701ec229e22a5e6ff3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmF2Z4sxDUtzj-77to7eM02d4Yht_GF_dBw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bangunan gedung kantor yang memerlukan ruang pelayanan luasnya dihitung secara tersendiri berdasarkan analisis kebutuhan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana Ukuran 6x6 Tampak Depan Terbaik Desain Rumah Minimalis Ukuran 2 Kamar Deagam Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/12/6e/3d126ea34e66af8d4c8b06231c62b775.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs9ql4HIk1oOCANkW4joUNuyTcJZ19AV7142jRcOjoQZ0UukJC5VLX3GdeOoFLsZ66VDc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Penelitian ini merencanakan struktur beton bertulang dengan tujuan 1 Menghitung beban gravitasi dan gempa yang bekerja pada bangunan rumah sederhana 2 Menentukan dimensi balok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Merubah Pondasi Rumah Sederhana Menjadi Pondasi Rumah Bertingkat Aneka Tehnik Bangunan Rumah Gambar Arsitektur Bangunan" src="https://i.pinimg.com/474x/a7/70/77/a77077fd986cbca71d5d8ab1c56d300c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXZoGmg250Pe_kiSleC2kt7Ez5PqL-AJLuA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah sederhana adalah bangunan rumah layak huni yang bagian huniannya berada langsung di atas permukaan tanah berupa rumah tunggal rumah kopel dan rumah deret.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis Sederhana 1 Lantai 2 Lantai" src="https://i.pinimg.com/originals/1e/54/7d/1e547d87dc7349a49c8887fa090edf8e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYLUGUuwRKZ6ADX_nOjTBBkm1BefGD1ZHLINJF-7KgaCx-9UktmX063z5PF2QzjP5QJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perencanaan Bangunan Rumah Sederhana Tahan Gempa 6.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Bangunan Rumah Sederhana Modern Kompak Murah Arsitektur Modern Desain" src="https://i.pinimg.com/474x/7c/8f/54/7c8f54b97d5fe241a768fab53a3014e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlsTw2a8UxJf0ppVFGuAkW64Cbk7kFalWlYg';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>UTILITAS BANGUNAN UMUM SEDERHANA RUSUNAWA August 8 2016 August 8 2016.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Struktur Utama Dan Ukuran Pada Bangunan Rumah Tinggal Sederhana Sloof Kolom Bangunan Membangun Rumah Pengukur" src="https://i.pinimg.com/600x315/8f/4b/48/8f4b48a13910dd5992bdb06c0c05e853.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbA20qXZMRCMz7WV7oCBSN9rjS3Sx6PJjuow';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Skala yang biasa dipakai adalah Skala Magnitude dari Richter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Biaya Murah Rumah Agus Desain Rumah Sederhana Dengan Biaya Murah Ukuran 5 X 10 Estimasi Desain Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/ba/1e/1d/ba1e1d2f8feef195692572a8d0e65c0a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxizr7DXf8u9X-RD0m31qUervyUf5g2cmCyqQQHm1DNNjxsZz2jwChfVtaYX-QppLimXs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tugas Akhir ini disusun dalam rangka memenuhi persyaratan akademis untuk penyelesaian Program S1 Teknik Sipil Universitas Andalas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pondasi Batu Kali Biasa Digunakan Untuk Rumah Bangunan Sederhana Pada Kondisi Tanah Normal Yang Cukup Baik Pada Struktur Rumah Lantai Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/b0/2c/7d/b02c7d14d57161d0e86c1e9caa7b5f94.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADt9_4wB3wrPaUsVYVAPwM4yWdmTfF429gPqfWKcp6ImxA4_Eq0Sbu6zF0uGGzOLb44E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Terbaru Inspirasi Model Rumah Sederhana Tapi Kelihatan Mewah Di L Rumah Kemewahan Rumah Baru" src="https://i.pinimg.com/originals/c9/c2/c1/c9c2c162ab31c58dd16f89b13b711df1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnx85y92iBY9Yxb0Ovp-9SO2vBxg2mF3hXwPVLzJKeGdb8M4XNi3dqtcgNaCmn_JqmRWs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konstruksi bangunan sederhana 1 Pengertian tentang elemen-elemen konstruksi bangunan bertingkat rendah semua benda mempunyai berat baik berat beban sendiri maupun tambahan berat dari benda lain yang ada pada benda tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Beginilah Rencana Bentuk Bangunan Cluster Villa Poris Plawad Didesain Model Rumah Minimalis Sederhana Namun Tetap Modern Villa Rumah Minimalis Modern" src="https://i.pinimg.com/originals/35/1f/ee/351fee23730a5493de71840ac61271ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uXZ6LxcykmAy_nti_qlE4FyZN7dVTiCb1A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tinjauan Berbagai Macam Sistem Konstruksi Dilakukan inventarisasi tentang berbagai macam sistem konstruksi yang berpotensi untuk menyelesaikan permasalahan pada daerah yang terkena rob.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 1 Lantai Desain Rumah Minimalis 1 Lantai Desain Rumah Sederhana Rumah Minimalis 1 Lantai Moder Desain Depan Rumah Desain Rumah Eksterior Modern" src="https://i.pinimg.com/originals/d0/a3/ac/d0a3ac8be1d2f3680b58caa21d774682.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8TYz39BJZTojx_bp3H9gfvIRd0AwXINKyaw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Struktur utama bangunan rumah tinggal tunggal terdiri dari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Rumah Minimalis Sederhana Model Rumah Terbaru Rumah Minimalis Desain Rumah Minimalis Rumah Hijau" src="https://i.pinimg.com/originals/e5/4f/09/e54f09fd60099ed3acacf46e4a0ecef2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPcybEfrQesTblz3BXjDQOx5mIIBKeMA9WDQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rata-rata 96 sembilan koma enam meter persegi per personel Catt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="126 Contoh Desain Ruko Sederhana 2 Lantai Paling Keren Desain Rumah Ruko 2 Lantai Minimalis Denah Rumah Ruko 2 Lantai 7x10 M Yang Lantai Denah Rumah Desain" src="https://i.pinimg.com/736x/5c/0d/d8/5c0dd843e9aeae69482dcd95d3495df7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSagzvjedzYBokwlHM1YNmg8W6QZYQ9DyhIHw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bangunan Sederhana Pada Tanah Terlikuifaksi di Kota Padang dapat terselesaikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Harga 80 Juta Model Rumah Harga 80 Juta Model Rumah Terbaru Model Model Rumah Harga 80 Juta Model Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/1a/b5/6c/1ab56cff7ff269ce0aa015b30ea5e754.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-BbQvs-AhskEYCs_ATCFWSXmgx4EMTeNn7Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bangunan rumah sederhana split level terdiri dari 3 lantai menggunakan sistem Struktur Rangka Pemikul MomenKhususSRPMKuntuk menahan beban gravitasi dan beban gempa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="104 Gambar Rumah Minimalis Sederhana Ukuran 7x9 Gambar Ide Denah Rumah Minimalis Sederhana Ukuran 7x9 Unt Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/0e/8d/62/0e8d628b713f6aed18c3779106f47945.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVr9KMgp0RX550z-2_KLLIJEAsD61D9zdY_SvEeQZUl1hFzMflWmGJA9YIa-gIuNwBHk8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Harganya terjangkau oleh masyarakat berpenghasilan rendah dan sedang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Rumah Idaman Jasa Renovasi Rumah Di Depok Biaya Pembangunan Rumah 2 Lantai Estimasi Bangun Rumah Renovasi Rumah Keci Membangun Rumah Rumah Renovasi Rumah" src="https://i.pinimg.com/originals/5f/ef/5e/5fef5e5d01d584b2b42b5d3ae00761ba.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEqAjKIv3qV5H3YSWQH49aQ-BQHA_cHHwuQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana adalah bangunan rumah layak huni yang bagian huniannya berada langsung di atas permukaan tanah berupa rumah tunggal rumah kopel dan rumah deret.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi Gambar Rumah Minimalis Desain Rumah Sederhana Home Fashion Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/f4/32/a0/f432a00f72cd3e94946f5724cb2507db.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwQSPjUiEU3yHfbqSAZaqq9HjCsRNvIu0k6vIjWN4O5o3UE0U_FJ5169fR_jTKGpl11Rg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di tanah yang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sederhana 2 Lantai Arsitektur Rumah Desain" src="https://i.pinimg.com/originals/c4/a9/59/c4a959fbe6fbd15cb5777032b97fd9ce.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQue4QUgJ3bpWslWqK2sqfb18lrLiHl9iNZCu4RHnRjTsKgGM7piNqbTa7_QeaurPUgKfE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tinjauan Berbagai Macam Sistem Konstruksi Dilakukan inventarisasi tentang berbagai macam sistem konstruksi yang berpotensi untuk menyelesaikan permasalahan pada daerah yang terkena rob.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/564x/db/b6/5b/dbb65bb02fdb6af025ecb2d180fa036a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEfvzJaRXTVYfAdzY5xz2fZ2uhnoCga7ctfg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tugas Akhir ini disusun dalam rangka memenuhi persyaratan akademis untuk penyelesaian Program S1 Teknik Sipil Universitas Andalas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Modern Minimalis 200m2 Tropis Rumah Satu Lantai Berdiri Diatas Lahan Berukuran 10 X 20 M Dan Hampir 100 Lahan Yang Ada D Rumah Modern Rumah Rumah Mewah" src="https://i.pinimg.com/originals/85/6c/0c/856c0cb2a8f5d33581874f40549b30ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnDJ2RqWg7U1M2E_Lzit1Xj6Clv-y86bTxtQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rata-rata 96 sembilan koma enam meter persegi per personel Catt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Yang Saya Simpan" src="https://i.pinimg.com/564x/a6/36/90/a63690b12a6b9e43c1fbd6e089319651.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSelzIPZ_CKyeZBWROzoL80isjsXoXqvGqev_Mm4lprTtbZ97GwhXMx8yskM3T6VdqE-UU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sangat sederhana contoh rumah sederhana RAB CONTOH RUMAH SEDERHANA EXCEL akan tetapi mewah contoh tempat tinggal sederhana terkini desain tempat tinggal kampung jawa contoh tempat tinggal kampung yg anggun bentuk tempat tinggal sederhana tapi elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini Dia Contoh Bangunan Desain Rumah Minimalis Sederhana Daftar Rumah Minimalis Rumah Rumah Indah" src="https://i.pinimg.com/600x315/6a/b8/15/6ab8155c6e9d66e388e645c3ddd4bc5f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tJRpD5HumHVZ8cPN_37yx6TdMvFlKJASQw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>MENGAPA PERLU BANGUNAN RUMAH SEDERHANA TAHAN GEMPA Baru-baru initerjadi dua Gempa Bumi di dua tempat berbeda di Indonesia dalam waktu yangberselang kurang dari 2 bulan yangmengakibatkan korban jiwa dan harta benda yang cukup besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ana Fatma House Semarang" src="https://i.pinimg.com/originals/6c/d4/8e/6cd48e5bdedc9322d378d6632b08d9cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrCHSsw2x_NHTg9Ani18oxvaP7O-nOKJ-azRGKRyxYxGVrGK7MiA-PYQdoqQBskh0lc0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>- Masih mengandalkan sepenuhnya kepada tukang dalam membangun rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bangunan Rumah Sederhana Desain Rumah Rumah Indah Rumah Minimalis" src="https://i.pinimg.com/originals/01/35/bd/0135bd12f81024be37fbabe2381e82cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSt_nd50D1QZgleBI7HB5CRfs6Cq9F3214ajCNN6GhtpVkHfrAfwsWHX779GKWUKc_lE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sistem Konstruksi Bangunan Sederhana pada Perbaikan Rumah Warga di Daerah Rob 83 diterapkan pada bangunan sederhana pada daerah dengan potensi rob.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Bangunan Gedung Minimalis Modern Gedung Bangunan Minimalis" src="https://i.pinimg.com/originals/7d/0a/2c/7d0a2c0c22905e5886040551b81bb169.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCLW87CgMbqqhfyQVb6zdtUtvBtydqD-3fjQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Biaya Renovasi Atap Rumah Desain Rumah 150m2 Rumah Renovasi Kontraktor Rumah Mewah Kontraktor Rumah Jakarta Arsitek Rumah Membangun Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/6a/0b/20/6a0b20ec04c86c2edfb3c73e86469c67.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQuKa6ZkUKemjVuOc3Y92XvhZQjpAxlNMrdA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tugas Akhir ini disusun dalam rangka memenuhi persyaratan akademis untuk penyelesaian Program S1 Teknik Sipil Universitas Andalas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Terbaru Desain Rumah Sederhana Tapi Elegan Dengan Batu Alam Dan Ta Rumah Home Fashion Denah Rumah" src="https://i.pinimg.com/originals/43/57/8f/43578f9a7da23932dfd3df1abd3320dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR98LK4kcVI63Y2B9BapDViZl7obksIlk9MjheYt7AM-0S-HINoaMT6uPB3_663WsqRLsg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kos Kosan Spesifikasi Bangunan Luas Bangunan 80 M2 1 Lantai 160 M2 2 Lantai Luas T Desain Rumah Eksterior Desain Kamar Hotel Rumah" src="https://i.pinimg.com/originals/c6/c5/6a/c6c56a310fe224b4400257befbbd633c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXJZf344aqAiuJ48Q09MZMtY8UgHaDr2iSA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tinjauan Berbagai Macam Sistem Konstruksi Dilakukan inventarisasi tentang berbagai macam sistem konstruksi yang berpotensi untuk menyelesaikan permasalahan pada daerah yang terkena rob.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Rumah Idaman Rumah Minimalis Modern Renovasi Rumah Rumah Modern Rumah Sederhana Interior Rumah Rumah Minimalis Terbaru Home Outdoor Decor Decor" src="https://i.pinimg.com/originals/b1/31/9a/b1319a68f70f4d81de03a40d8fae21be.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-JyN2BigVSCRNO4TFktK_nys_5qvFTaEWdQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat No.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Struktur Utama Dan Ukuran Pada Bangunan Rumah Tinggal Sederhana Sloof Kolom Membangun Rumah Bangunan Rumah" src="https://i.pinimg.com/600x315/43/5b/27/435b2799157b0595806e40aa27d4561c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOL_m2apuzd5D32gXUK6SU2ZxCXJQRfF5AiQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pengukuran Kekuatan Gempa Bumi Terdapat 2 dua besaran yang biasa dipakai untuk mengukur kekuatan gempa bumi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsi7ly6hyhjbi1o 6ka42bn510ilwsbmtyedf9mixg Usqp Cau" src="/search?q=desain+rumah+minimalis+2+lantai+6x12&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis+2+lantai+6x12&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Untuk Klasifikasi Bangunan tidak sederhana 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gabungan Gambar Model Rumah Minimalis Tampak Depan Versi Tukang Bangunan Rumah Minimalis Desain Rumah Eksterior Desain Rumah Kecil" src="https://i.pinimg.com/736x/ae/04/28/ae042892b6c248a3790527329ac22ce6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgHx-GZDS4lKqd77eF3fROfYM4ND9pSS4U6glnvfmm0UJEg1eg-xv5jhJvZp7cZ5Q-Asc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gempa Lombok 31Juli 2018 dan Gempa Palu Donggala 28 September 2018 yang disertai Tsunamitelah mengakibatkan lebih dari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="103 Gambar Rumah Minimalis Sederhana Type 21 Gambar Desain Menata Rumah Minimalis Type 21 Menjadi Lebih Luas Contoh Rumah Architect Design Architect Design" src="https://i.pinimg.com/originals/9b/d5/d0/9bd5d0d09537f7bf6d7caaeea3905023.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmzDJ_4TXoPTkMtdcHkCgWLCGzewyWIHhD1g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>This is a text widget which allows you to add text or HTML to your sidebar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Minimalis 1 Lantai Ini Merupakan Desain Rumah Gratis Yang Kami Berikan Kepada Bapak Yon Rumah Arsitektur Denah Lantai Rumah Desain Rumah" src="https://i.pinimg.com/736x/0b/d6/81/0bd6814c4cae1cf40f2ecdf73b9cb86b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIZfWs8M_1CRPYly7dkHC-mVm9NyOxAnTe6B-mVSIxSOTffgPdL92m1toCcdiwaou6U0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana adalah bangunan rumah layak huni yang bagian huniannya berada langsung di atas permukaan tanah berupa rumah tunggal rumah kopel dan rumah deret.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gurihnya Bisnis Properti Perumahan Bersubsidi Rumah Sederhana Bangunan" src="https://i.pinimg.com/474x/0e/ef/83/0eef832e9183510322b0e9ed8edaafc0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaTBrsWibhmYjkx81GEOihi2mPpc2ar-DZpA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>SNI 28472013 tentang Persyaratan Beton Bertulang Untuk Bangunan Gedung 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="21 Model Tiang Teras Rumah Minimalis Sederhana Terbaru 2018 Rumah Tiang Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/ce/61/e6/ce61e6559f1ebcf57566e7fc778a006e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7aZu9ZRkaLav4LIjijkftsUz6Vou7HKBz9zGtT9dqhhuVfbCZuNq_hj__Wa7jiXONM0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang-ruang pada bangunan rumah sangat sederhana di wilayah Pademangan ini rata-rata berjumlah 3 sampai 5 ruang yang terdiri dari ruang tamu ruang tidur kamar mandiwc dapur dan balkon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Tapi Indah Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/22/47/8d/22478da289343f8517330bbb485cab5a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgsqXIYTBqHcCMWiyNu0Y8eAFlH_CzDSFzH9r6foYBYVeD-Nj_NeZBGARJvN3Fb5Gy6SA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sangat sederhana contoh rumah sederhana RAB CONTOH RUMAH SEDERHANA EXCEL akan tetapi mewah contoh tempat tinggal sederhana terkini desain tempat tinggal kampung jawa contoh tempat tinggal kampung yg anggun bentuk tempat tinggal sederhana tapi elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Alternative Shelters Alternative Housing 3 4 19" src="https://i.pinimg.com/564x/e6/17/15/e6171562cb24ab261d53af0b39f1690b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJHHrZvDtgCJm2nvR3VHAdbYhuR-twssJFA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Penelitian ini merencanakan struktur beton bertulang dengan tujuan 1 Menghitung beban gravitasi dan gempa yang bekerja pada bangunan rumah sederhana 2 Menentukan dimensi balok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Terbaru 1 Lantai Yang Unik Tampak Depan Desain Fasad Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/b6/9e/ea/b69eea189b90d73b0867ed81ffa1f807.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR06SqeFovziC0edpSaSGplaicjKGziw1YJTkWkYC4wrER_7klj9xM6_mhBKTeywk1zk68';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-dinas.html"><i>&larr; desain rumah dinas</i></a>
+                                                                    
+                                        <a href="/desain-rumah-dengan-ruang-tamu-luas.html"><i>desain rumah dengan ruang tamu luas &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

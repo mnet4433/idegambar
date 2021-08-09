@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pondok Kayu Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Pondok Kayu Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/736x/d3/dd/2b/d3dd2becd81538c72d0559f48e76248b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pondok+kayu+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Pondok Kayu Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Pondok Kayu Sederhana</strong>. Pondok Kayu Gazebo dengan best quality dan memang jika anda lihat mewah dan tradisional. Bagi anda yang menginginkan keindahan taman ruamh produk ini wajib di tambahkan pada taman anda.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/4f/50/d2/4f50d2ecdef20f8d029a483e543e0c89.jpg" alt="Gazebo Untuk Dijual Gazebo Bogor Gazebo Ide Halaman Belakang Patio" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1M7yXJNvGFEd7YVbc224t9Afq6YeZGiJTg';">
+        <figcaption>Gazebo Untuk Dijual Gazebo Bogor Gazebo Ide Halaman Belakang Patio from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Pondok Kayu Gazebo Kami tawarkan kepada anda sebuah produk yang memang lagi hits saat ini jangan ragu lagi. Bagi anda yang menginginkan keindahan taman ruamh produk ini wajib di tambahkan pada taman anda. See more ideas about rumah kayu pelan rumah reka bentuk rumah.
+    </p>
+    <h3>Mengingat pondok kayu didirikan di daerah tropis dan sering diguncang gempa para ahli telah memperkuat pondasi dan melapisi kayu agar tahan terhadap kelembaban.</h3>
+    <p>Gambar di atas adalah salah satu contoh terbaik ketika Anda hendak membuat sebuah rumah kayu dengan sederhana dan budget yang minim. Bisa juga menjadikan RUMAH KAYU MINIMALIS sebagai ruang workshop untuk melakukan kegiatan seni. Rumah peristirahatan yang nyaman ini dibangun di Kanada luas bangunannya mencapai 274 meter persegi. Desain kayu minimalis sederhana modern terbaru Mei 2017 Nah itulah contoh 100 Contoh Desain Rumah Kayu Terbaru yang kami sajikan sesuai janji kami diatas jika berkenan jangan lupa membangikan contoh ini ke teman-teman anda sebagai support anda pada kami.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Miniatur Rumah Pohon Sederhana Dari Stik Es Cream Desain Rumah Pohon Rumah Pohon Miniatur Rumah" src="https://i.pinimg.com/originals/be/06/2e/be062e501a43205c08093909a046cdc7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDInxp3oy-uiZaWAdTzmMS0W89x60zRKOlzg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bisa juga menjadikan RUMAH KAYU MINIMALIS sebagai ruang workshop untuk melakukan kegiatan seni.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Miniatur Rumah Panggung Sederhana Dari Stik Es Krim Youtube Miniatur Rumah Rumah Miniatur" src="https://i.pinimg.com/564x/d3/f3/c6/d3f3c6a27849d37388dff7f0fadc06f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDoHJ75maweHqKsI91OGhChnqrcWHtB5nXSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sedangkan yang modern baik 1 ataupun 2 lantai mulai dari Rp 20000000000 sampai 1 milyar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Rumah Adat Di Rumah Kayu Rumah Rumah Mungil Rumah Kayu" src="https://i.pinimg.com/originals/63/f2/68/63f2685079fa4b8a086b24ea30be4e47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNL5aHCwwyVdmgsbcb38zEDlDXLviyVJSVzOvZSMHfdeiWqaUIRc5pCbo6N-1Yb3yaciE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ada beberapa model gazebo kayu sederhana yang bisa dijadikan inspirasi untuk membuat gazebo minimalis di rumah idaman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Bambu Sederhana Di 2021 Home Fashion Bambu Rumah" src="https://i.pinimg.com/originals/48/60/7d/48607df647c9e78bfec11d369f485d5e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyIZPMSNvqXEHNT3E4ER6woRkgZZVGshbKfjJi-E5XiXpu9HEaC4es5q5Kzs2XoekSABk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Log Kabin Pondok Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Rumah Idaman Sederhana Di Desa Paling Bagus Rumah Pedesaan Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/originals/cf/5b/6e/cf5b6e5edbd7006cf897340ff8b784cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSowZ0mQGM1WV8EJb2IBvtbxQR0PNKHplkLsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pondok Kayu Gazebo Kami tawarkan kepada anda sebuah produk yang memang lagi hits saat ini jangan ragu lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Bagus Dan Murah Rumah Kayu Kayu Rumah" src="https://i.pinimg.com/originals/fb/10/65/fb1065a60a40562bf42fb13fb1dbb5c8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TB5P5EzrQcc8YC61RvMyPI9Xq1mVteHI0MqGxIXffPQhwiYC7MlLam8XtdvR6xagfo8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>RUMAH KAYU MINIMALIS klasik memiliki ciri khas pilar-pilar besar dan atap kubah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Video Gambar Denah Desain Rumah Limasan Modern Youtube Denah Desain Rumah Rumah Desain Rumah" src="https://i.pinimg.com/564x/3d/e1/53/3de153c165b9837bb372568736554bf5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanlisRB6ccnKLVpkuXN0B1cPBxwDk4u5LGA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sedangkan yang modern baik 1 ataupun 2 lantai mulai dari Rp 20000000000 sampai 1 milyar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Taman Dari Bahan Kayu Glugu Kelapa Model Persegi 6 Desain Minimalis Mewah Bisa Ditempatkan Di Taman Rumah Sebagai Tempat B Gazebo Minimalis Pondok Kebun" src="https://i.pinimg.com/736x/6f/2b/31/6f2b319e5bb4b3b2cfc10a4474759ece.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiOg78moioZ75OZupgW1SoerRF28qXzisXImMdCdr0kbTHygQCnsaXUMxANMqcS5I7LXo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Proses pembangunannya dilakukan secara sederhana tujuannya untuk menghindari kebisingan yang akan mengganggu lingkungan sekitarSekarang mari kita masuki pondok kayu yang indah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="386 Wooden House Exterior Interior Designs Rumah Tua Rumah Kayu Jati" src="https://i.pinimg.com/474x/1c/b2/cb/1cb2cbb8bf1c6d36f200d4aa1be782da.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRS9vxww_uEg4tfLTMjnARgKoEOeCpAE-YY_a4aTF9iJWZ8shsEzSm2ncHcRe2FzenXwo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Detail Produk Pondok Kayu Gazebo Pondok Kayu Gazebo.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Gladak 1 Kamat Tidur Rumah Dekorasi Luar Ruangan Rumah Beton" src="https://i.pinimg.com/originals/da/56/2b/da562b1bd3b3ecaaba14a53017ca373c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0U3u1HNLz7rgIy6IRYpnflICptPfl2GK9qhonRpjBt3zB-m8hc0uI9bpkfPFUOShiYfQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>See more ideas about rumah kayu pelan rumah reka bentuk rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Ukuran 6x8 3 Kamar Desain Rumah 6x8 Kamar 2 Denah Rumah Ukuran 6x8 2 Lantai Rumah Ukuran 6x8 2 Kamar D Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/cc/44/1b/cc441b04039465b28ed34f5c58fe7d78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgoVf2NRdTrVtVX4LToZUONTF7eXmWxyFohg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Tomohon Jasa Desain Rumah Tomohon Rumah Kayu Tradisional E Rumah Kayu Desain Desain Rumah" src="https://i.pinimg.com/474x/81/1e/08/811e08a8166ff0ce97c7cd1de1f10f0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl3Y_9aM-0GKwANPi2Kt2sdvErGYg8dsvvlg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sedangkan yang modern baik 1 ataupun 2 lantai mulai dari Rp 20000000000 sampai 1 milyar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Gazebo Minimalis Bambu Dan Kayu Gazebo Desain Bambu" src="https://i.pinimg.com/600x315/a1/6e/6d/a16e6d0af25419cc44c94b8320f5e993.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXHYHepNMt-kKc2xcO29Z4ApCyBN7ebSEr91APlXS0MsK6al9uFmfv5woz3FSIpRhbAk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ada beberapa model gazebo kayu sederhana yang bisa dijadikan inspirasi untuk membuat gazebo minimalis di rumah idaman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tak Perlu Mewah Kutipan Motivasi Sukses Kutipan Motivasi" src="https://i.pinimg.com/originals/8f/27/70/8f2770abc440b681b3fd90dad61c88a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGrOYfmjPGrOrZTyOfa5PeZyj1dgIWkHxyA';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Rumah pondok kayu pedesaan alam kabin lanskap pohon hutan outdoors.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Jawa Arsitektur Pondok Rumah" src="https://i.pinimg.com/originals/71/8c/22/718c22d964ee3ace4c19151c2be36f2d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmd2wogrJ8FBijTfJYV_vvQg5sVsmWgeMWpA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pondok kayu ini juga merupakan rumah prefabrikasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/92/6c/e2/926ce2edd5d8996b9c905ab0b5d49638.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe6Sij0DkjQh163n0THOgiJitU7jBisfJMmw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pondok Kayu Gazebo Kami tawarkan kepada anda sebuah produk yang memang lagi hits saat ini jangan ragu lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Rumah Keramik Widayanto Jakarta Potret Objek Wisata Thai House Arsitektur Home Fashion" src="https://i.pinimg.com/originals/11/7b/64/117b64f54757e87871c6337ee2522a5b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDXxODE1k3ER4QrSw8giOvrbg-k2W29wfQQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Material kayu yang digunakan pun ramah lingkungan sehingga Anda tidak akan mencium aroma bahan kimia saat berada di dalamnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bamboo House Beautiful Houses Pictures Denah Rumah Modern Gazebo Desain" src="https://i.pinimg.com/originals/38/b5/9c/38b59cb92f30781fab276baa488a9ef0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHmkvtJ_mqQbya9RucvvwtQ2_2nmalsYVMGQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pondok Kayu Gazebo Kami tawarkan kepada anda sebuah produk yang memang lagi hits saat ini jangan ragu lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Joglo Gebyok Betawi Ukiran Jepara By J Gega Furniture Home Fashion Gazebo Arsitektur" src="https://i.pinimg.com/originals/47/ce/5b/47ce5b12e7c252ad70d0980c9112caf4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP6c4Vp4JBZuD8CA_tDrCCQYxPmcRFA5YOFQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ini disebabkan karena sifat tekstur kayu merupakan garis-garis alam dari pepohonan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jineman Cottage Ukir Kayu Jati Www Radjapendapa Com Rumah Ide" src="https://i.pinimg.com/originals/a1/08/4c/a1084ca240baf3859abb5a63079e44ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC3w5GRVM1kB22ORFs6GQ-mQFVHpuDLoFN7Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pondok Kayu Gazebo Kami tawarkan kepada anda sebuah produk yang memang lagi hits saat ini jangan ragu lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desain Rumah Minimalis Rumah Kayu Eksterior Rumah Modern" src="https://i.pinimg.com/originals/e5/62/30/e5623036b68ee7099108d61d3a23cffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4J5Y_sUkIljA9z5soYB5ErOI3CPLGYsisd0Qukrg5_I6aeRquXBcRypJ1UjFlZX692cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan desain yang manis dan minimalis pondok kayu ini dibuat dengan desain rumah panggung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Cantik Untuk Pondok Pinggir Pantai Home Fashion Rumah Kayu Desain Rumah" src="https://i.pinimg.com/736x/02/ef/88/02ef882260b8e990df71bdf890936f47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDodFo2rRONXrV_39OebYl_rrrrDb0rjBom0xfOYcAF5rYM3frfBAvi6nLpE2z_MLl2c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ini disebabkan karena sifat tekstur kayu merupakan garis-garis alam dari pepohonan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gazebo Jepara" src="https://i.pinimg.com/originals/3d/41/3a/3d413a11a7eca1fe3afe41963e3aadb5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlcQn1VlrpgHauN2cjMTcqlZHaQex-Wqh_BA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi akan makin tergali berkat suasana nyaman dan relaks Gambar Rumah Kayu Minimalis Modern Sederhana Model Produk Rumah Kayu Minimalis Modern Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Kayu Jati Simpel Kreasi Furniture Jepara Gazebo Desain Patio Pondok Kebun" src="https://i.pinimg.com/736x/1e/ea/aa/1eeaaaf52febeb297fb4f8f47f3dad99.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyydI4SRBkcRNUMuQ1iz33NW9RBsI-JL5dIATkriE1Vuf8cyD0sN_Mdjjj-ROqHAbitak';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kini banyak model gazebo yang bisa dipilih seperti konsep tradisional klasik maupun Gazebo Modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Ya2 On Rumah Minimalis Kayu Tree House Plans Tree House Kids Play Houses" src="https://i.pinimg.com/736x/67/c4/dc/67c4dcc693f6557699ae5b70b9d5deb6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ4PlRUWazf6yoWqgt7-4cJIP4mtUqWjcJIMVn-QFlI0LE61ZwPIceRyjfmKHEjHYAflE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kayu minimalis yang bertingkat ini tampak kokoh dengan pilar-pilar kayu di sisinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kayu Rastik Rumah Gladak Home Fashion Rumah Arsitektur" src="https://i.pinimg.com/originals/c3/76/9f/c3769f95a25d63ecb273387510f49650.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSajQ2ZrTx6Uh576xbKiEcxCh93zgbkNszVSSk7-onr1Woq1DDS7pycJegdBlKzw0QBFDk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tips desain gazebo kayu sederhana di taman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kabar" src="https://i.pinimg.com/originals/f3/54/76/f3547649210b5e8e7734f85c92e0348d.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdd0eeuTV63zwGAx0pF9tN_S3fNVI4ckxspg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kayu minimalis yang bertingkat ini tampak kokoh dengan pilar-pilar kayu di sisinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Jati Berukuran 4 X 6 M Tertutup Ke 5 Sisinya Dilengkapi Dengan Ruang Mihrab Bisa Dipakai Untuk Rumah Kayu Rumah Kayu Jati" src="https://i.pinimg.com/originals/59/6d/ee/596dee3c396d660eeb1da40ceca8ecd7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq_OrUdLqolzoraeQq3hbZyHzNzboJSivWJg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tinggal di pondok kayu yang sangat sederhana dengan tiga anaknya yang masih balita pasutri ini mengaku mereka tetap bahagia dan bersyukur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pondok 5x5 Jpg 240 320 Hiasan Taman Rumah" src="https://i.pinimg.com/originals/1f/dc/e4/1fdce48c720221521884e00597f25698.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW6qF-GuzUON_MSLu64ymNj8MQSBQqAnFArg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk daerah tertentu yang memiliki sumber daya alam berupa hutan dan pohon yang berlimpah pembangunan rumah kayu akan menjadi lebih hemat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Gazebo Sentuhan Ukir Kursi Bangku Tempel Murah Terpercaya Pusat Mebel Jepara Ide Halaman Belakang Gazebo Patio" src="https://i.pinimg.com/736x/23/81/a3/2381a3147b38a34019009dda6b8076be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkROGyH1tt-HJ7tUSvrXzvZaR6f1Vik0nAag';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bukan sekedar bangku biasa bangku teras kayu ini ternyata merupakan sebuah ayunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Terbaru Contoh Rumah Kebun Desain Rumah Kebun Sederhana Rumah Kebun Rumah Desain Rumah" src="https://i.pinimg.com/originals/f1/f1/d1/f1f1d1edc046bb29bce6c34f2090b4df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsm43kAGyj-WAe01xW0hUNXkcA3aJIbukR8Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>50 Ruko E Pondok Gede RT5RW11 Jakasampurna Bekasi Bar Kota Bks Jawa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampak Samping Rumah Joglo Minimalis Desain Rumah Home Fashion Rumah" src="https://i.pinimg.com/474x/7f/7c/e4/7f7ce42d32a1638854e71d1af22c875a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwUVVbF_C5rGBPSBgeNMbFE4UXmqOH5OatAw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Proses pembangunannya dilakukan secara sederhana tujuannya untuk menghindari kebisingan yang akan mengganggu lingkungan sekitarSekarang mari kita masuki pondok kayu yang indah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Satunya M Rumah Kayu Desain Rumah Rumah" src="https://i.pinimg.com/originals/4b/d7/a1/4bd7a17d519671d884248d52e708654e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwhDBafa8QxHUfrr-C13QI2XnPgG_bIyBSvA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kini banyak model gazebo yang bisa dipilih seperti konsep tradisional klasik maupun Gazebo Modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Minimalis Modern Sederhana Jatibagus Furniture Rumah Kayu Rumah Modern" src="https://i.pinimg.com/originals/3b/f9/57/3bf957364dd3cd061d106d2a5985d644.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQ1uFKUO1zEfuROEt6FL86oKzPMDO4xdo3Xf1bfPsMWRbnROK54f5A5kCYztLmIwGCrc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah kayu minimalis ini mungkin tampak sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+pondok+kayu+kecil&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+pondok+kayu+kecil&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Kisaran harga rumah kayu sederhana baik yang 1 ataupun 2 lantai mulai dari Rp 10000000000 sampai 1 milyar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Kobong Rumah Kebun Pondok Kebun Pondokan" src="https://i.pinimg.com/736x/5a/ce/1b/5ace1be9e4f81e8ee82911149ca90868.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqd73kk3Qu8Zu1RKF7z6JiX1_dK8mp_ZauGBRlsGUUUHmMznEKF-k9sBm79KYaU5A00yQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Proses pembangunannya dilakukan secara sederhana tujuannya untuk menghindari kebisingan yang akan mengganggu lingkungan sekitarSekarang mari kita masuki pondok kayu yang indah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Rumah Kayu Arsitektur Pondok Kecil" src="https://i.pinimg.com/originals/95/d2/b6/95d2b62c2ef3a0dc92199b8e9735c774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7y_0MzTvkB1zlUra_BfcKjB-tWtxXaJ0BxwQtkX7ljyMPATRtJJkUmZpQi8fiHp-xcsY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dari segi keindahan rumah kayu akan lebih memberikan kesan natural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mikro Bambu Home Fashion Rumah Arsitektur" src="https://i.pinimg.com/originals/9a/e8/6c/9ae86c1140274f365c206ba093d4b8d1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnbopI2HhSjxc-nQtLjtIhbgt1ItFDrgslPQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentukan konsep desain gazebo yang ingin dibuat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Bambu Sederhana Di 2021 Home Fashion Bambu Rumah" src="https://i.pinimg.com/originals/34/f4/4b/34f44bce84261ed7c223452a14b372bd.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNE9dZ4kr3_vxYNLMvMCld7OBlI1DAkUKIlQ';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Tinggal di pondok kayu yang sangat sederhana dengan tiga anaknya yang masih balita pasutri ini mengaku mereka tetap bahagia dan bersyukur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=pondok+kayu+simple&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=pondok+kayu+simple&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>See more ideas about rumah kayu pelan rumah reka bentuk rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Di Atas Kolam Ikan Model Minimalis Desain Terbaru Kayu Kelapa Atap Sirap Ulin Gazebo Rumah Kebun Rumah Indah" src="https://i.pinimg.com/originals/6d/7a/54/6d7a5400ffe7d0b2ad52aca276161091.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-5qMU8Z0nIPcD0taFnCeXw56YaMGxSizYI8KF2RnWlxhKMtP-kV2v8J1P1gxGKF1JYY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tips desain gazebo kayu sederhana di taman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Untuk Dijual Gazebo Bogor Gazebo Ide Halaman Belakang Patio" src="https://i.pinimg.com/originals/4f/50/d2/4f50d2ecdef20f8d029a483e543e0c89.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1M7yXJNvGFEd7YVbc224t9Afq6YeZGiJTg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Log Kabin Pondok Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Kayu Minimalis Gambar Photo Rumah Kayu Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/ed/25/31/ed2531f326e86a188509784436d2dea5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQESwAJyDn_B8tcky9mpAljTyz5PdDpqcsvYZWJD3vgXCRhSxy8oMH-ThTxWoG6UT4QRMo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Log Kabin Pondok Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bangun Rumah Minimalis Sederhana Di Desa Biaya 65 Jutaan Part 9 Finishing Youtube Membangun Rumah Rumah Minimalis Bangunan" src="https://i.pinimg.com/564x/ff/05/25/ff05256534cfef11120fa3371022a92a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7UHQlxjLWRQ8ZNv1tf3RUFvWPZB5WgcPmOw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Tingkat Model Gazebo 2 Lantai Kayu Kelapa Harga Murah Desain Rumah Eksterior Gazebo Desain Produk" src="https://i.pinimg.com/originals/e0/33/d4/e033d4a019e7fa8e22ba9bf018285979.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0j5L3ZhIOhgVFAR0OWfh1hnV3Cnd5ud-7Os5b8nXP_0Mycu6CBzxfuVTOEp686DykwaA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Proses pembangunannya dilakukan secara sederhana tujuannya untuk menghindari kebisingan yang akan mengganggu lingkungan sekitarSekarang mari kita masuki pondok kayu yang indah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Iwc" src="https://i.pinimg.com/originals/7f/6a/d9/7f6ad9a5c8770b57f5df612b731c9325.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZGcQ4dZPtJvMtj5vN6SPOh5msA1jc1XEe-8PsBat29PBUmqPH0yEyAVuf7cNpBpgHKk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagi anda yang menginginkan keindahan taman ruamh produk ini wajib di tambahkan pada taman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wooden Cottage House Plans Popular Ideas Pondok Kayu Minimalist Sederhana Country Cottage House Plans Small Cottage Homes Cottage Plan" src="https://i.pinimg.com/originals/44/fe/a8/44fea80346ff1c00ac04e72e7b7c3f63.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGPcUm9usM1qgknh3IXrfmCSj68bUBOe7KQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kayu minimalis yang bertingkat ini tampak kokoh dengan pilar-pilar kayu di sisinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Desainrumahnya Com Pondokan Pondok Kecil Rumah Pantai" src="https://i.pinimg.com/736x/d3/dd/2b/d3dd2becd81538c72d0559f48e76248b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqgdOZbdH53Dt_k2G6y9kOfXcto5ptzD0tDg';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Bukan sekedar bangku biasa bangku teras kayu ini ternyata merupakan sebuah ayunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Warung Kopi Sederhana Dari Bambu Di 2021 Warung Kopi Bambu Desain" src="https://i.pinimg.com/originals/90/ae/c0/90aec03722f0df1febc98fedfe3a6412.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFDYg3ComkkWoP2uOTxxKwZYs6iCFRQYKgA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dari segi keindahan rumah kayu akan lebih memberikan kesan natural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aneka Gazebo Glugu Bentuk Gazebo Rumah Kayu Sederhana Desaain Gazebo Jati Minimalis Mewah Desain Gazebo Jati Gambar Gazebo Jati Ga Gazebo Desain Minimalis" src="https://i.pinimg.com/originals/11/e1/ea/11e1eaa2ca9dd8c1551f04cb100e0d1e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkmDKde8RNx83S7QPI1pyR2kURj2mck0Ts6a42dTC45Ht9jC3OBaMUG4Sd1Twaqntp3zQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tapi bangku di depannya membuat rumah ini istimewa.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-tanpa-ruang-tamu.html"><i>&larr; rumah tanpa ruang tamu</i></a>
+                                                                    
+                                        <a href="/rumah-tampak-depan.html"><i>rumah tampak depan &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

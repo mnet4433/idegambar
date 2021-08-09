@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Aplikasi Desain Interior Rumah Android
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Aplikasi Desain Interior Rumah Android",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/50/3e/82/503e82e31d0d0090f2191a34bb832b0a.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=aplikasi+desain+interior+rumah+android",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Aplikasi Desain Interior Rumah Android
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Aplikasi Desain Interior Rumah Android</strong>. Tidak hanya itu Houzz juga menyediakan berbagai referensi furnitur yang bisa digunakan saat merancang desain. Homestyler Interior Design merupakan aplikasi desain rumah android terbaik dari Autodesk.</p>
+            <figure>
+        <img class="v-cover ads-img" src="/search?q=desain+rumah+2+lantai+di+lahan+sempit&amp;tbm=isch" alt="1" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='/search?q=desain+rumah+2+lantai+di+lahan+sempit&amp;tbm=isch';">
+        <figcaption>1 from encrypted-tbn0.gstatic.com</figcaption>
+    </figure>
+        <p>
+        Rumah yang baik sejatinya bukan karena terlihat mewah saja namun mampu memberikan rasa nyaman hal ini juga semakin apik saat kita menjumpai beberapa rumah dengan dimensi yang kecil namun terlihat sangat. Gak cuma konsep rumah tampak luar Planner 5D juga punya fitur yang memungkinkan kamu melakukan desain interior alias bagian dalam rumah. Anda cukup melihat gambar-gambar desain interior yang tersedia di aplikasi ini.
+    </p>
+    <h3>Jika sudah selesai merancang kamu juga bisa membagikan hasil rancangan kepada teman-teman melalui media sosial.</h3>
+    <p>Jika sudah selesai merancang kamu juga bisa membagikan hasil rancangan kepada teman-teman melalui media sosial. Houzz Interior Design Ideas adalah aplikasi desain rumah gratis yang bisa membantu kamu merancang desain interior. Planner 5D adalah aplikasi yang sangat mudah digunakan oleh siapa saja untuk menciptakan desain interior. Tentunya sangat worth to install di smartphone kesayangan karena tidak akan membuat memori penuh.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai 3 Kamar Tidur Denah Rumah Konsep Gambar Denah Rumah Minimalis Sederhana 1 Lantai 3 Rumah Minimalis Kamar Tidur Rumah Minimalis" src="https://i.pinimg.com/originals/30/fa/35/30fa35f96e30cac3e862634537e97968.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVCn1BvrXm3vJKOcXXBhvC8u-wHjfrU28WoQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini merupakan pilihan yang tepat untuk desain rumah lebih cepat dan efektif.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="85 Desain Interior Ruang Tamu Rumah Type 45 Desain Rumah Dekorasi Interior Rumah Minimalis Type 45 Desain Interior K Rumah Minimalis Rumah Ruang Tamu Rumah" src="https://i.pinimg.com/originals/6c/59/8a/6c598a4dd0997a8ebe85b034d9b15f25.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ88caPCqy8aHz9iItLvJpLH5YuXnqXWCJr36V14UcokrRgnfFovFn41xe556P5R-8UnVo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu aplikasi ini juga dibekali dengan berbagai macam furniture yang bisa Anda gunakan sebagai referensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Carisinyal" src="https://i.pinimg.com/736x/ca/8d/00/ca8d004afd69ca7808e4ec57a1ddfc8e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTGndjLUyNMao-zc7h1X0WDdAxLKOMENCfKJhTTWT9cRYuxm_P0Cu52E1aMNSbjYGnMV4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi Desain Rumah 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Apartemen Desain Ruang Tamu Desain Interior Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/90/15/e4/9015e4f5947549133854f7852aa6727a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5sgKtME0DzSu1kKVp82MdaPNICrupGQ8oLw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan aplikasi ini kamu akan diberikan estimasi biaya contohnya dengan luas ukuran dinding yang dimiliki kamu bisa diberikan besaran biaya yang kiranya diperlukan untuk mengecat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Kamar Uk 5x8 Full Interior Gambar Desain Rumah 5x8 Tukang Desain Rumah 64 Desain Rumah Minimal Desain Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/91/c3/82/91c382f04a1a46a8b9bdd424e7675fd6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDpb36mG1Z9gAUMj6MvbVJuq4pTKkAvsjvRS_RTtPB7YVFfHl1HtVLAi0LNrTz-IwNV0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Houzz Home Design Remodel adalah salah satu aplikasi desain rumah yang bisa Anda gunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Model Rumah Yang Paling Banyak Di Buru Di Dunia Maya Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/0f/de/63/0fde63c53d913092b403c1b4c5ebdc2d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxvfQ9x8hUqqFOn6mm6iw8HOqclJPxxFvCw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Siapapun bisa membuat desain rumah impian dengan aplikasi ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Gambar Rumah Kumpulan Gambar Rumah For Android Apk Download 102 Download Gambar Rumah Minimalis Sangat Sederhana Dekorasi Luar Ruangan Rumah Gambar" src="https://i.pinimg.com/474x/8d/04/9c/8d049cf2e6936d9294dbc4a0c3cadaa9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_JwjzkFgRJEM3vB1O1D1vYeXPJK2QRQefA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk PC sendiri ada salah satu yang cukup populer yaitu Adobe Photoshop dimana didalamnya juga tersedia program.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern 2 Storey House Designs Rumah Minimalis Desain Rumah Minimalis Rumah Arsitektur" src="https://i.pinimg.com/736x/e9/67/d7/e967d758f7516c375813445401a013bf--house-elevation-house-facades.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzPigr9G9KQFeLAvr4FXPzL_2shimn0HaYg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda bisa melihat berdasarkan kategorinya dan berdasarkan gayanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Aplikasi Desain Rumah Terbaik Di Hp Android Desain Aplikasi Aplikasi Desain" src="https://i.pinimg.com/564x/02/4f/b3/024fb35096654a69365c2f119db05320.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0_gjYxVNsFXZQ3mVchpwtWORZQtGpk33pRW-pq3q7laR2Oq2XherjTExhqF6t7-cibE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini dapat menggambarkan ruangan asli menjadi bentuk model 3D sebagai inspirasi dalam perancangan desain rumah yang kita inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Mewah Pake Aplikasi Android Luxury House With Pool Ho Rumah Mewah Desain Rumah Kemewahan" src="https://i.pinimg.com/originals/08/8c/d3/088cd317f0ebcb457693526177195a41.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdu3DClc0VL538wJRpQXZrqRAQtHaygaOsEA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini dapat menggambarkan ruangan asli menjadi bentuk model 3D sebagai inspirasi dalam perancangan desain rumah yang kita inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Desain Rumah Minimalis 2 Lantai 6x12 Modern Terbaru 2019 Desain Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/736x/12/c6/c2/12c6c20c70250f24276cad6a4150e921.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CPRk7i7x4KoXLjPySmi7UjYDxWMz9Dbzjg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download aplikasi desain rumah Android ini di Google Play Store.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Desain Rumah Minimalis Rumah Minimalis Rumah Tropis" src="https://i.pinimg.com/originals/fb/8b/8c/fb8b8cb30a7affdb340990caeb02a27c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Gq1MLPUBEfW8N6t_4hf4-23djvEnfNruFg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini dapat menggambarkan ruangan asli menjadi bentuk model 3D sebagai inspirasi dalam perancangan desain rumah yang kita inginkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 3 Kamar Luas 7x9 Planner 5d Minimalis House 31 Youtube Desain Desain Rumah House" src="https://i.pinimg.com/564x/da/fd/a8/dafda8574dd7889f3b42d8b3459f7bb6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt5xth8o1906zcoVVx2MyHSX2iB2quMaUkobyChBalhV4gOltC2aiuZ91KDIJoCzV3hsI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu juga tidak akan membuat ponsel menjadi lambat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Desain Rumah Minimalis 1 Lantai 2 Kamar 7x7 Gudang Tutorial Android 17 Youtube Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/564x/00/d1/01/00d101efc869e95244c57df8a0c57353.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalO78VkcnVSp9ooBvqs2h5yxLe6Kl1eSwvKH8q2EykjnrBjVtyfm_dzHx7meuD6PCS2E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sangat berguna jika kamu ingin mengatur budget yang dibutuhkan dalam merenovasi ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Desain Rumah Minimalis 12x7 Dengan 3 Kamar Tidur Gudang Tutorial Android 21 Youtube Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/564x/7a/f0/58/7af058e22d603a33244dc87f7f6c87dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcOZRgaIIiopx7UdUmhZ7MeWDbK3dkIPqdPI3BwHPFx7THdm7OQffssNanNlCp5OfLfFI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu aplikasi ini juga dibekali dengan berbagai macam furniture yang bisa Anda gunakan sebagai referensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3d 6x9 Minimalis 2 Kamar Di Android Part 3 Youtube Rumah Minimalis Desain Desain Rumah Minimalis" src="https://i.pinimg.com/564x/76/55/cf/7655cf7d8031f7da258b02367b08b1b3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNya9kSLStJ1Y-zl3b9179OBKIMzm2uCh5Mh9VQtFSLJNTDmM4w4vlz1Ze0VpqsJ5dAH0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berbeda dengan aplikasi-aplikasi lainnya Houzz Interior Design Ideas bukanlah aplikasi rancang desain atau sketsa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Kayu Triplek Rumah Mnimalis Sederhana Mungil Desain Plafon Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/0b/5b/dd/0b5bddc115bd9033f6d8d1935c3c9cdf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJdFqyI5RNRTEnb0maunHsj_l5Qm90SZP2A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berbeda dengan aplikasi-aplikasi lainnya Houzz Interior Design Ideas bukanlah aplikasi rancang desain atau sketsa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Pembuatan Game Android Murah Jasa Pembuatan Game Android Di Bandung Jasa Pembuatan Cheat Game Android Jasa Pembuatan Aplikasi Game Andr Rpg Survival Retro" src="https://i.pinimg.com/originals/50/3e/82/503e82e31d0d0090f2191a34bb832b0a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzcZBhMSt72g6fWdYMLrKOia1TZ3nyXoB0w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Homestyler Interior Design merupakan aplikasi desain rumah android terbaik dari Autodesk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Grafis Untuk Android Dan Pc Aplikasi Android Aplikasi Desain" src="https://i.pinimg.com/originals/7f/04/aa/7f04aa95092cfc85fc81eacf0672a341.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT20-YyTgdsT1VSXIqtDwkNB5nsA8RVz1MayA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bahkan beberapa aplikasi memiliki rating yang nyaris sempurna Berikut selengkapnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hapedroid Solusi Lengkap Android Game Dan Aplikasi Terbaik Denah Rumah Desain Interior Rumah Tata Letak Rumah" src="https://i.pinimg.com/originals/ba/68/f7/ba68f78c2315b4597bb68b42782fb993.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB-WIf5_z43YLFnGxI0-IXmrO3IqzURTmGnzYvZ6yb8GGb0oxFlYnLbD0oj5aAdakoRAo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Simak 10 aplikasi desain rumah dan interior terbaik untuk HP Android yang dapat Anda gunakan berikut ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Hook 2 Lantai Di Lahan 18 X 21 M2 Dr 1821 Inspirasi Desain Rumah Hook Bergaya Minimalis Modern 2 Model R Minimalis Desain Rumah 2 Lantai Rumah" src="https://i.pinimg.com/originals/16/1f/e2/161fe2dd53c2ba83ddf621fb566988c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1NpyCiYu7SsN_frJeZKa3e4bVZ7L8ERuyBg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentunya sangat worth to install di smartphone kesayangan karena tidak akan membuat memori penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Room Planner Home Design Android Apps Google Play Virtual Decor Tool" src="https://i.pinimg.com/originals/82/74/b0/8274b02dec6e94409afb8697c7ef171a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT87QDPWCIx2AEKIUO6SzQKLzIYf92FzI_IYQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Houzz Interior Design Ideas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcskg Kpit0ewyuzcny9g9co2jbl9dqyya Ivox4rjvszh 0x4tn Usqp Cau" src="/search?q=rumah+5x8&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+5x8&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Seperti dengan namanya aplikasi ini bisa anda pakai untuk mendesain rumah secara detail.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 10x9 Dengan 3 Kamar Tidur Gudang Tutorial Android 19 Youtube Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/564x/61/84/24/618424b429cb80bac7fa9cb37cf3f15b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxFmLcGjaJPU-akGDUv8fRwAzikDZ1ULdkGMP8ZE79cwcmZLbe6t1u9m5zIDgKjz1ywiU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebab saat ini sudah banyak sekali aplikasi desain rumah terbaik yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Contoh Denah Rumah Dan Tampak Depan Sisi Rumah Minimalis Model Terbaru Denah Rumah Minimalis Tampak Depan D Denah Rumah Denah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/c4/8e/c2/c48ec296664e51c9d64dc7c955460772.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGgaCjixNOwhkTl-anitmuwk6LAX3iF50DGw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tidak hanya itu Houzz juga menyediakan berbagai referensi furnitur yang bisa digunakan saat merancang desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 4x12 Arsitek Rumahan Gambar Desain Rumah 4x12 Griya Rumah 67 Desain Rumah Minimalis Ukuran 4x Rumah Minimalis Desain Desain Rumah Minimalis" src="https://i.pinimg.com/originals/54/6d/75/546d75089abff30eda44b497834dc6ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Q_WHdUM5wHBibBvdyiNSUwJGDdWwiZxDBkv93GV97d6abWaDLoZcXwORCRXXpOa6I7c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebab saat ini sudah banyak sekali aplikasi desain rumah terbaik yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 6x8 Lengkap Dengan Furniture Lik Iwan 6 Youtube Desain Rumah Desain Rumah" src="https://i.pinimg.com/originals/1e/0d/e6/1e0de6b24541eb24deaedd14f03e07c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2bnV_QOjRvG09YCb8MmpUpkmKd_Lj-Qu5iq4VnFj7O_o6R2O79wp1i0oLRK0NhdJlaE4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi Desain Rumah 3D Terbaik Memiliki rumah dengan desain yang apik merupakan sebuah impian sebagian orang dewasa dan bahkan itu juga merupakan mimpi Mi Fans.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain" src="https://i.pinimg.com/564x/cb/6f/81/cb6f81c92a17061100d6d453b247e722.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAZGVgPI-aQpJLrKYtV-s5wOU_qTCnG8Aseg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda bisa melihat berdasarkan kategorinya dan berdasarkan gayanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3 Kamar Ukuran 9x6 Gudang Tutorial Android 11 Tata Ruang Interior Desain Youtube Desain Desain Interior Desain Rumah" src="https://i.pinimg.com/564x/4d/0b/49/4d0b4948e51157621b92d2276af07e21.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwoFy6MDLo5h8YhnXiSNG-FtSubo5RXE1EBgmusjNhLmrGk8MOsgmo--04aG_SiX1He5c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu juga tidak akan membuat ponsel menjadi lambat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Planner 5d Mod Apk V1 16 3 Unlocked Home Interior Design Creator Desain Interior Desain Rumah" src="https://i.pinimg.com/474x/c8/6c/38/c86c3879f8a9d10476984af283c5b1bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OOoUuUnihjEOV2AwbZk6K3lmkrgJMLsavv9JIgw_WRVPNtpUDWqOl_HK3cP2_m2f2gM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda bisa melihat berdasarkan kategorinya dan berdasarkan gayanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/originals/1c/83/df/1c83df27e946940cd85e73afe2255e29.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCYSWdQ3zd0XlWnQTN_pU9xWYG73xerUhdWA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Melakukan perhitungan otomatis pada dinding dan lantai sesuai dengan luas ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Aplikasi Edit Video Tanpa Watermark Di Hp Android Perekam Suara Android Aplikasi Android" src="https://i.pinimg.com/736x/a6/aa/97/a6aa97f80ca14198df6773866a6407ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLDzUFo4Ua1Wg8VN2If8ncaiWT3eJuzZ7Fxw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meskipun bukan seorang arsitek keinginan ini bisa terwujud dengan mudah kok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+2+lantai+di+lahan+sempit&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+2+lantai+di+lahan+sempit&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Houzz Home Design Remodel adalah salah satu aplikasi desain rumah yang bisa Anda gunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Aplikasi Desain Rumah Gratis Android Pc Desain Perbaikan Rumah Rumah" src="https://i.pinimg.com/originals/92/d3/3a/92d33a2d88dbb99b40a5b64b571229e0.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_m3w71suVyNfGIT7mvP_54ZuxI3N53kz0YHM9T9r_YGC1nQMM520b_Gylw9Gm0VhkOaY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentunya sangat worth to install di smartphone kesayangan karena tidak akan membuat memori penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Screenshot Image Aplikasi Desain Desain Rumah Desain Interior" src="https://i.pinimg.com/originals/2f/91/8e/2f918ea319b844d646bc0713574baa17.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHum5bWc5fhb5qDdgWfImzYYQxSx-1B3WPaw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dari aplikasi yang akan kami rekomendasikan tersebut merupakan aplikasi terbaik Gratis serta memiliki jumlah donwload yang besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di 085856528717 Jasa Desain Rumah Online Terpercaya" src="https://i.pinimg.com/originals/c2/b9/74/c2b974e2e1bc977ce02a20bead6d387a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwvB5ZoCyab44vacX1dLCL_-EnfXfne-R_Cw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bahkan beberapa aplikasi memiliki rating yang nyaris sempurna Berikut selengkapnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Planner 5d Interior Design Gambar Mini Tangkapan Layar Desain Aplikasi Aplikasi Desain" src="https://i.pinimg.com/originals/7a/aa/c7/7aaac7e38357114257efaf72e6cf4f6d.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG48Nhodcmt7YjLk_dknpE25SJ5VbJ6V2WrA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu aplikasi ini juga dibekali dengan berbagai macam furniture yang bisa Anda gunakan sebagai referensi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Bangunan Bertingkat Mudah Sekali Planner 5d Desain Android Youtube Planner Android Tutorial" src="https://i.pinimg.com/564x/cf/dc/3d/cfdc3dd98fc6e97b06c01f4c28a7acea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZpfg-7mU89keL_N_CXi2sg1KTJJ0rhHBjw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gak cuma konsep rumah tampak luar Planner 5D juga punya fitur yang memungkinkan kamu melakukan desain interior alias bagian dalam rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Bagus Sederhana Gambar Rumah Bagus Sederhana Motif Karpet Lantai Ruang Tamu Rumah 75 Model Rumah Minimalis Home Fashion Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/69/39/37/693937cb2202f641bbdec966d693e542.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKi1Flmt9SX0_DqTOrRuZvOIndBrtAX9Skw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gak cuma konsep rumah tampak luar Planner 5D juga punya fitur yang memungkinkan kamu melakukan desain interior alias bagian dalam rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Rustic Ukuran 6 X 6 Desain Desain Rumah Rumah" src="https://i.pinimg.com/originals/63/e5/08/63e50830cdfd77c3666c2942c086a58f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvYQrjsYiYCLLHnSr_uUNYoVcBEpa2GOZ6iFtiX4VeJnzPLTtZA5WY3cBZ-v5czsCwGEk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi Desain Rumah Terbaik untuk HP Android 2021 Jika Anda sedang mencarinya untuk rencana membangun rumah modernrumah sederhanarumah minimalisb tenang ya sob karena saat ini tersedia beragam program yang bisa diinstall pada smartphone milik Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New Home Designs Latest Modern Homes Front Florida Marla Elevation House Plans Design Desain Rumah Kontemporer Desain Rumah Eksterior Dekorasi Minimalis" src="https://i.pinimg.com/originals/00/64/f0/0064f08373912e97ddf739b30c1b7a87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxxZrYvV_Xym9lG2PtoDbUn3wFH2ldGF1DQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berbeda dengan aplikasi-aplikasi lainnya Houzz Interior Design Ideas bukanlah aplikasi rancang desain atau sketsa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Desain Interior Rumah Minimalis Tipe 36 Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/99/97/4a/99974a0be6ba99720e839fc10489e22d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDFyVXA0RVc6xtbyWle7jevZMmgrGaWSYUjQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentunya sangat worth to install di smartphone kesayangan karena tidak akan membuat memori penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On House" src="https://i.pinimg.com/474x/77/aa/d4/77aad42da9f742d21eaa85ec23f0309d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShMSTLjD5PCciAklxI-q1vIIDkYPPsvUAiJQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Melakukan perhitungan otomatis pada dinding dan lantai sesuai dengan luas ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Arsitek Online Untuk Mendesain Cafe Atau Kedai Kopi Kedai Kopi Desain Kopi" src="https://i.pinimg.com/originals/b2/b7/24/b2b724ffea28b5b43f273bd628602db2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHRYUkxB5luDxl4MGm1XCRkCTn_jtWXfOS8A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>SketchUp merupakan salah satu aplikasi desain rumah android ringan dengan ukuran kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Aplikasi Desain Rumah Android Terbaik Fitur Lengkap Droid Ly In 2020 House Design Games Design Home App Design Home Hack" src="https://i.pinimg.com/originals/d2/4d/c6/d24dc6e947d50a46b368bc4147f6550b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5riWFmSbk3DGeRYUbMchR2p4AIAlJTiG3bz_1a4Om7zdvwJZEo2cj7hoxGCsvuYxmwUU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>MagicРlan adalah aplikasi yang berguna untuk pemula tetapi juga untuk para profesional seperti agen real estate arsitek dan desainer interior.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 5 X 8 Rumah Minimalis Desain Rumah Desain" src="https://i.pinimg.com/originals/0a/05/ec/0a05ecef81e021acfbc87e7ad9f9b88d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHUjAAq-F5aDO56si_zW1VqGdmoIbZNwrDlfIB9kkmS65LR5EVL3-tuh7L4xuBIG7bGhc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti dengan namanya aplikasi ini bisa anda pakai untuk mendesain rumah secara detail.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Anda Bisa Menjadikan Gambar Gambar Tampak Luar Atau Eksterior Desain Rumah Minimalis Modern Di Bawah Ini Sebagai Referensi Nat Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/2c/8f/79/2c8f79a600d41e2d5e7499d749ebfc1f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEfb95sZrMengm9CEZsYvkrPaQzBZ-ePzjA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan aplikasi ini kamu akan diberikan estimasi biaya contohnya dengan luas ukuran dinding yang dimiliki kamu bisa diberikan besaran biaya yang kiranya diperlukan untuk mengecat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Android Desain Rumah 3d Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/be/b0/01/beb0010a10098995bbd86dfa59d3639f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5y9cSkFrKkcT6pkSXhUwhuEAsagrN6tsFtt2_sBm8__zDrFEFFjv8oOF0_LTJgVwd3_g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentunya sangat worth to install di smartphone kesayangan karena tidak akan membuat memori penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Archives Arcadia Desain Desain Interior Interior Desain Produk" src="https://i.pinimg.com/originals/f2/98/77/f2987787b33390f4b005d9b551bed695.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0uxdx-WOwO2qoXSnwM3ciyo_iSbzWOS4HSQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download aplikasi desain rumah iPhone ini Apple App Store.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Aplikasi Desain Rumah Android Gratis Yang Mudah Digunakan 2020 Desain Desain Rumah Aplikasi Desain" src="https://i.pinimg.com/736x/81/37/cf/8137cfae8372c00bd90fa0c2e9f241f3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRwnaWvwEWf-3FW17bCMHuoxk0bFe_H-v7dOVbVhZhfKnbJ7HrJhymD6Bd-bzGSpnIs4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kali ini PONSELI akan memberikan rekomendasi beberapa aplikasi terbaik yang di segment desain rumah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-warung-sembako-minimalis-depan-rumah.html"><i>&larr; desain warung sembako minimalis depan rumah</i></a>
+                                                                    
+                                        <a href="/design-hotel-minimalis.html"><i>design hotel minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

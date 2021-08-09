@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Desain Arsitektur Rumah Minimalis
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Desain Arsitektur Rumah Minimalis",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/564x/98/9b/19/989b19d2474cef8a89a82d8887a69eb8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=desain+arsitektur+rumah+minimalis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Desain Arsitektur Rumah Minimalis
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Desain Arsitektur Rumah Minimalis</strong>. Arsitektur minimalis adalah tentang pencapaian desain yang lebih baik melalui kesederhanaan. 20 Desain Rumah Minimalis Terbaru 2021 Untuk Anda.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/564x/84/65/57/84655711f2a5289faae5afddd77a6948.jpg" alt="37 Desain Rumah Minimalis Inspiratif Dengan Atap Datar 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Da Arsitektur Fasad Arsitektur Arsitektur Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRch8Wc0JbPolNyEd4SlOjusEz29lAvWSHljg';">
+        <figcaption>37 Desain Rumah Minimalis Inspiratif Dengan Atap Datar 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Da Arsitektur Fasad Arsitektur Arsitektur Rumah from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        15 Desain Pagar Minimalis Modern Terbaru March 22 2017 322378. Arsitektur minimalis adalah tentang pencapaian desain yang lebih baik melalui kesederhanaan. Ruang-ruang yang ada dalam konsep desain arsitektur minimalis cenderung terbuka minimnya furnitur yang digunakan dan hanya di sesuaikan kebutuhan membuat ruangan terlihat besar meskipun luas lahannya sendiri tergolong sempit.
+    </p>
+    <h3>SEDANG MEMBUTUHKAN TENAGA ARSITEK PROFESIONAL.</h3>
+    <p>SEDANG MEMBUTUHKAN TENAGA ARSITEK PROFESIONAL. Teori minimalisme berfokus pada merencakan desain rumah dengan konsep simpel mulai dari material bentuk ruang detail dan warna. 12 Denah Rumah 3 Kamar Minimalis 3D 2019 August 21 2015 576853. 20 Desain Rumah Minimalis Terbaru 2021 Untuk Anda.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Rumah Minimalis Type 36 Part 1 Of 3 Denah Rumah Type 36 Renovasi Desain Interior Rumah Type 36 Ukuran Rumah Type Home Fashion Rumah Arsitek" src="https://i.pinimg.com/originals/a3/ee/34/a3ee349813d150b611cebf4d5a0f4c8d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTih1aEB6PVKvNdxzN5OT5BgtVzkBuI9Fd4Tg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 1 Lantai Rumah Minimalis Arsitektur Rumah Modern" src="https://i.pinimg.com/736x/66/22/1a/66221abe8ed24a719eda86e01675a99d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUw5Zep7p5EOjxqC4trkIzIu9XGrEtcNd_66m5Y2V6GeILsuNruK891QQkxx_RyXgrv1Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Budaya Zen sendiri identik dengan kesederhanaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Rumah Sederhana Jasa Arsitek Rumah Minimalis Jasa Desain Rumah Minimalis Jasa Desain Rumah Minimalis Modern Rumah Mewah Arsitektur Rumah Arsitek" src="https://i.pinimg.com/originals/d7/de/b8/d7deb8513b72023e95ca06658aa172d9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8tQ2NqGS15K1R5rptMNyu6YckXy1lOqKQg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti pepatah Semua Indah Pada Waktunya Begitu jugalah seni bangunan arsitektur tadi berkembang sejak awal peradaban manusia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 1 Lantai Luas 120m2 1000 Inspirasi Desain Arsitektur Rumah Minimalis Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/34/45/34/344534a29f7784259a8a4a9c9aaf4fe6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLoV1ssnTtL55J85gefgTleWTf4OrDPnk3wK3PSz-NdilEF7V0SlLHwxNt7Nu1xJbw3Uw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ide awal untuk arsitektur rumah minimalis ini salah satunya berasal dari budaya Zen yang ada di Jepang lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Kecil Minimalis 2 Lantai Desain Rumah Modern Home Fashion Ruang Tamu Tradisional" src="https://i.pinimg.com/originals/33/e1/2b/33e12be3b29c72a7a32eef105088c9fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjeaBoDZ6murLJK0oj3LgFFwi6Ch6PwfdWrwV3gWxslYZscBnCoj1mrqaifN82UoXAB90';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Minimalisme meraih popularitasnya selama bertahun tahun sebagai salah satu filosofi desain arsitektur rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern Arsitektur Minimalis Arsitektur Rumah Indah" src="https://i.pinimg.com/originals/26/de/95/26de953da15d9dd9a50d319d92aa40ec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAK_8hwmzAql6_FXIjKNqX4IVcS4rL_Aii0xQTgq7kgpbp7qQxBICLRRWYeaHCo_ARhIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Model Denah Dan Tampak Rumah Minimalis 2 Lantai Di Takalar Arsitektur Rumah Denah Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/74/6b/d3/746bd3b3890b73cfc7eea21d769ed161.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3plUHbTHs15F0p4bs6c57BssduTkAQLRvGh8bBzLmPrg7uqlkuwWbMEVgpIk9mHq6Yxs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Arsitektur Rumah Minimalis Kota Medan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Galeri Arsitek" src="https://i.pinimg.com/originals/b2/22/50/b22250939bd8736bcdd2af3b5e8378b3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr82YEIpi4gmMQJylqRMUwtijnmNI93h41JoiXOwFO0miqzLmSx4Ah_Y31i2YOJcpCX-0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tidak heran kalau konsep desain arsitektur minimalis ini sangat digemari sebagai konsep hunian di pusat kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Arsitek Rumah Modern Tropis Arsitek Desain Rumah Membangun Rumah" src="https://i.pinimg.com/originals/9f/a9/13/9fa913f314c280682c2b5887e61203ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZAASPjF6RICdK_OK5tZs-xAAu26KaC4qPh3sb8fqJTqipD5bCn-8wNrGPM7FD5RRMH8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>12 Gambar Rumah Minimalis 1 Lantai Modern 2019 March 22 2017 970945.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Linda Fachada Arsitektur Rumah Minimalis Desain Arsitektur" src="https://i.pinimg.com/originals/48/ed/f1/48edf1b9a5e501fddeed6c4b525bfe4f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnoIaPiHnErf_-jD_MxDxleUhMpvkaBw5zfA';" />
+        <small>Source: es.pinterest.com</small>
+                    <p>Sebagai biro arsitek yang berdiri tahun 2006 Emporio Architect melayani berbagai jasa desain termasuk desain rumah minimalis yang popular dan diminati saat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="36 Desain Interior Rumah Minimalis Dengan Lantai Mezzanine 1000 Inspirasi Desain Arsitektur Rumah Minimalis Rumah Minimalis Interior Rumah Rumah" src="https://i.pinimg.com/originals/2a/94/81/2a94815264339fe138e5c4f4c27082a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPNo4lPEZR2l_MhfH8MFXa3ID2GL7ozdbudQ';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Kami punya solusi untuk anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+6x15+2+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+6x15+2+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain rumah minimalis ini pun begitu sederhana tapi dapat dilihat bahwa penggunaan warna monokrom mampu membuatnya terasa lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/564x/53/30/c7/5330c708dd18199a52705677ae3659f9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzODymEoudewPjMuOr8T7KCqf0d1hASYA9Rg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yuk kita lihat desain arsitektur rumah tropis yang modern dan minimalis karya arsitek bangsa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern Arsitektur Perumahan Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/1a/d2/8b/1ad28be12c9107182bf2baf97a808b36.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYgPXa5ae_WmBT-bN2ku1Gx_s5azPcPX7jg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Budaya Zen sendiri identik dengan kesederhanaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="37 Desain Rumah Minimalis Inspiratif Dengan Atap Datar 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan K Arsitektur Desain Arsitektur Desain Rumah" src="https://i.pinimg.com/564x/cb/a0/44/cba044d5ebda4058744f4a864ae4a772.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQESIPjC28tC3dzPcCgl1CkDwkN5aNujktYZA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami punya solusi untuk anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="085856528717 Jasa Desain Rumah Minimalis Modern 2 Lantai Jasa Gambar Rumah Murah Minimalis Home Fashion Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/b8/31/69/b83169f5f3fec56ab4ac676c11d4a033.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuVpc-cwDvxg9oyZCKA1d6njfgb--gwMq1dQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah satu ini merupakan rumah pribadi arsitek Realrich Sjarief sekaligus studio firma RAW Architecture dan perpustakan arsitektur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Desain Inspiratif Rumah Minimalis 2 Lantai Dengan Balkon Terbuka 1000 Inspirasi Desain Arsitektur Teknologi Rumah Minimalis Rumah Desain Eksterior Rumah" src="https://i.pinimg.com/originals/27/c2/9b/27c29bdd5216cbd6151f1818a7612492.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn0MkzdjDJy0j_Y4a0zIw0UarTIezXkZMUEQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yuk kita lihat desain arsitektur rumah tropis yang modern dan minimalis karya arsitek bangsa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="36 Desain Interior Rumah Minimalis Dengan Lantai Mezzanine 1000 Inspirasi Desain Arsitektur Teknologi K Desain Interior Desain Interior Rumah Interior Rumah" src="https://i.pinimg.com/474x/31/6c/f2/316cf29c64621a0d6a00b14c9d462c7a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5S27DHT9BIe5bHL9oMUXjjMURQ3aT__RpFw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah minimalis ini pun begitu sederhana tapi dapat dilihat bahwa penggunaan warna monokrom mampu membuatnya terasa lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="36 Desain Interior Rumah Minimalis Dengan Lantai Mezzanine 1000 Inspirasi Desain Arsitektur Rumah Minim Desain Interior Rumah Desain Interior Interior Rumah" src="https://i.pinimg.com/564x/9b/3f/e4/9b3fe4494cc70e851dcd07d93401b738.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTgEfynyAHKNglCjPWxl2dIn5X_ENbcdkbuQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Budaya Zen sendiri identik dengan kesederhanaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Terbaru 1 Lantai Yang Unik Tampak Depan Desain Fasad Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/b6/9e/ea/b69eea189b90d73b0867ed81ffa1f807.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR06SqeFovziC0edpSaSGplaicjKGziw1YJTkWkYC4wrER_7klj9xM6_mhBKTeywk1zk68';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Rumah Minimalis Type 36 Part 2 Of 3 Denah Rumah Type 36 Renovasi Desain Interior Rumah Type 36 Home Fashion Desain Rumah Mungil Rumah Mungil" src="https://i.pinimg.com/originals/c8/4c/bb/c84cbb671a6c56c5780ab14849eda584.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrLxdpo0fNj4mg-R2Olg17h1r-_t_I2zftQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Arsitektur Rumah Minimalis Kota Medan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Dua Lantai Dengan Luas Lahan 78m2 1000 Inspirasi Desain Arsitektur Rumah Minimalis Denah Rumah Rumah Desain Produk" src="https://i.pinimg.com/originals/40/de/43/40de432e432b059d9d76667e619b20a4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrPczYdKMSMGo4zzzAOB75q2WxOEqmn4JnBRCPFi4lURmdC0QvojPk13s3OJp7S6sXSg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pencahayaan yang alami membuat bangunan terlihat sederhana dan bersih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Garis Arsitektur Arsitektur Rumah Desain Arsitektur" src="https://i.pinimg.com/originals/21/88/6d/21886da01a78348b0bf8e9eb95d0ed4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qv_lUvDX1F1UTkcREgMS3pOGEPAPbyfr5zEIeXJ3ZkKnP7XNY3ujR1LNjKGru3BrbLM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Minimalisme meraih popularitasnya selama bertahun tahun sebagai salah satu filosofi desain arsitektur rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Dan Tampak Rumah Sudut Tipe 60 Dengan Konsep Modern Minimalis Di Lahan 10x15 Jasa Arsitek Dan Interior Online Em Denah Rumah Rumah Minimalis Rumah Modern" src="https://i.pinimg.com/originals/36/82/13/368213c9501cf42ad2854af99034c980.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc4-ZLhkQNRIFRCv80nSWnM4Ul24LssRoIYApkOoYjqZN4O6bV-5DV-tdVmr4vpB9cfkY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perpaduan konkrit dan kayu membuat desain rumah terkesan industrial dan modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/564x/64/2f/53/642f535247004af85539a1c7ff62d287.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhj_R_DwdBy-3McOZ9sjiL2qa_qTYaM14MhqVtPTSXHnn6UZMlRSpRWQvj-r56E2e7cU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>15 Gambar Rumah Minimalis Modern 2 Lantai Terindah July 29 2015 584736.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="38 Desain Inspiratif Rumah Minimalis Atap Datar 1 Lantai Denah Arsitektur Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/4c/ad/19/4cad19d4c23cc98f556b7b526e794505.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUv81LEvjejpoJ9UD6YOVy5cEaxdy2XkZ_pQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagai biro arsitek yang berdiri tahun 2006 Emporio Architect melayani berbagai jasa desain termasuk desain rumah minimalis yang popular dan diminati saat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="32 Desain Rumah Minimalis Inspiratif Plus Denah Dan Lyout Perabot 1000 Inspirasi Desain Arsitektur Teknologi Konst Desain Rumah Arsitektur Rumah Rumah Mewah" src="https://i.pinimg.com/originals/3e/9f/01/3e9f01f142cec64a661f279462ff82bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4FhyJnWXlluxlgPx037CjgasIFIk3Zsz49g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda yang tinggal di Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="082335327089 Kami Adalah Penyedia Jasa Desain Rumah Minimalis Modern 2 Lantai Yang Siap Membantu Anda Secara Pr Desain Rumah Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/96/c0/5f/96c05f9cb6237f794eba9a96067b9044.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtNwsE0WJhcOb-Jczw1kS65VD5BO3iVyubQ';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Model rumah yang trend 20 tahun lalu mungkin sudah tidak disukai lagi pada saat ini bahkan ini juga mungkin akan berlaku untuk model dan desain rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/564x/98/9b/19/989b19d2474cef8a89a82d8887a69eb8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrGjMF7QE-aavoc65yS8kZRHwypK-JpEt5eg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis ini pun begitu sederhana tapi dapat dilihat bahwa penggunaan warna monokrom mampu membuatnya terasa lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="32 Desain Rumah Minimalis Inspiratif Plus Denah Dan Lyout Perabot 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Denah Rumah Arsitektur Desain Rumah" src="https://i.pinimg.com/564x/99/31/a3/9931a3829b15f70431c9c9c4ee766b1e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIGHkZuOAkqRqEoBV3e1tK6Nx-MQJni8JIABCXU8WgdF60hZcgKUT8i3aU5NfE1sIZ1m0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Perpaduan konkrit dan kayu membuat desain rumah terkesan industrial dan modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Gambar Desain Arsitektur Rumah Modern Minimalis Arsitektur Arsitektur Me Gambar Rumah Minimal Facade House House Designs Exterior House Exterior" src="https://i.pinimg.com/originals/e4/76/df/e476df021745a3a2caab1948efbe9d28.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2WnfOvfkL3_dlnIrAKS1H6onkuD04ieoyIntiVQMbc4MLk5jLsflRoiEzJJiZ1FvAEk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis masih menjadi tren hunian yang digandrungi masyarakat modern di tahun 2021.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcri9l9zcgxqiygjzprlvuw2wgoszmc3h 6oyqf9sb8zqf4n3fws Usqp Cau" src="/search?q=minimalis+6x15+desain+rumah+6x15&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=minimalis+6x15+desain+rumah+6x15&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain rumah minimalis ini pun begitu sederhana tapi dapat dilihat bahwa penggunaan warna monokrom mampu membuatnya terasa lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Minimalis Sumbercenel Rumah Minimalis Desain Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/2d/89/d7/2d89d7ccb44e14f69a982f69ba0a3bf2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2nArnjZwt0lynRc3qTmXOpTmQwTS7zH6K-pWtwaPwQ3HdNtmlvj8PDyp7k2A3pjOQh48';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perpaduan konkrit dan kayu membuat desain rumah terkesan industrial dan modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Model Desain Rumah Minimalis Sederhana Paling Keren Rumah Minimalis Rumah Indah Arsitektur Rumah" src="https://i.pinimg.com/474x/24/bf/b6/24bfb67eec8b03ea33792a203375de1a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxVcu8TGrQ_Ak3EwqKiYgmr6yqpZ0-QDK2w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Emporio Architect memiliki puluhan arsitek handal yang selama 14 tahun berhasil menciptakan lebih dari 800 karya desain di Indonesia Malaysia Nepal India Myanmar Saudi Arabia Senegal hingga Tanzania.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 3 Lantai Tampak 2 Lantai Jasa Desain Rumah Murah Jasa Arsitek Gambar Rumah Online Minimalis Mew Arsitektur Rumah Home Fashion Rumah Minimalis" src="https://i.pinimg.com/originals/ad/c3/c7/adc3c7ace17b6a42f86b0bd369a6eaa3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazuiT_sh1u8okR2X7YYxxlDkDLA-CHAwIrQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis masih menjadi tren hunian yang digandrungi masyarakat modern di tahun 2021.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Model Desain Rumah Minimalis Sederhana Paling Dicari Desain Rumah Kontemporer Rumah Kontemporer Rumah Minimalis" src="https://i.pinimg.com/originals/b8/01/05/b801051a6f5aff36cd5de05446bcc184.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8vN2vCZonkIJEstdGa6w3J-sQV6UhS0cHvspIj-xdkqbq6hJNAWuds8SaH371KJtXDo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsitektur minimalis adalah tentang pencapaian desain yang lebih baik melalui kesederhanaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="37 Foto On Project Rumah Minimalis Ala Lingkarwarna 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi D Desain Rumah Bungalow Rumah Minimalis Arsitektur" src="https://i.pinimg.com/originals/82/0f/9e/820f9e0b46192417b9f0e911859121d2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJcbM5MHff-w85dTwzWs3CuR04jZwSg4KEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>9 karakterisitik di atas menunjukkan bahwa desain rumah minimalis tidak menonjolkan kemewahan atau menunjukkan semua harta Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern Di 2021 Arsitektur Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/c6/65/46/c66546c7312b2944e3d53000637cb888.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgCxXpvJVopp2MQmkRkLRuAhY-lqqup5HFCtpqNLDC0PDAb-9MLcF6z69MVkabfQMhXek';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Demikianlah warta terbaru seputar desain rumah minimalis biar artikel diatas sanggup bermanfaat bagi kalian semuanyaSilahkan untuk Anda yang mengidamkan memulai membangun rumah minimalis Anda sanggup mengakibatkan artikel di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="37 Desain Rumah Minimalis Inspiratif Dengan Atap Datar 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Da Arsitektur Fasad Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/564x/84/65/57/84655711f2a5289faae5afddd77a6948.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRch8Wc0JbPolNyEd4SlOjusEz29lAvWSHljg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah minimalis ini pun begitu sederhana tapi dapat dilihat bahwa penggunaan warna monokrom mampu membuatnya terasa lebih lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Arsitektur Rumah Minimalis Modern Home Fashion Arsitektur Rumah Desain Arsitektur" src="https://i.pinimg.com/originals/d8/05/ab/d805ab3cf151064eea27af594ec4a00e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_YqSZpA9l5TE6Tm7zbCltdvUlbVgJLKCpgA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>12 Denah Rumah 3 Kamar Minimalis 3D 2019 August 21 2015 576853.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Foto Rumah Minimalis Ala Indonesia Ini Sering Trend Di Group Facebook 1000 Inspirasi Desain Ar Desain Rumah Bungalow Home Fashion Rumah Minimalis" src="https://i.pinimg.com/474x/26/96/b0/2696b0a799d67af977cab2d269780f7f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRRqhOR1_ured2Xp6kSEW9hZPICrdW8DaLDPS96mqnmNrCLsNP5jKzcg3EApqqPgE3Lvo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Dan Tampak Rumah Sederhana Minimalis Tipe Rumah 90 M2 Di Lahan 10x15 Denah Rumah Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/15/06/6c/15066c07f484741ebdbfbb59b7b4abd5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFbXs7xllNJLA8_PMn6UQkCZA6icV-lVHWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda yang tinggal di Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/474x/37/08/48/3708481e7c6566d61f039b6b3231448a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRip5AseI7iyv7nSXvTzVNRX7brCNMnxI1x86qmftLehvguoXYQgVoGCZ4Fr7LXi2Jhv8w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan penggunaan parquet cocok sekali dipakai untuk santai sambil minum teh di sore hari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tipe 90 Kapling 9x18 M Arsitektur Desain Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/09/45/ac/0945acb4ae8567019d065714c08d096b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZprkJLys8QyJFfRk-jCDIM4TEWcAZtnx0Ng';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah minimalis masih menjadi tren hunian yang digandrungi masyarakat modern di tahun 2021.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="37 Desain Rumah Minimalis Inspiratif Dengan Atap Datar 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi D Desain Rumah Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/cf/97/db/cf97dba346dcea394c67f80e1087e82e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgG-MryEl3J-b9b-QN86DXmk-jMUHqQYt5oqmMgazJPPGuXygOtDBdlTVPJtIuhgoB0zM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tidak heran kalau konsep desain arsitektur minimalis ini sangat digemari sebagai konsep hunian di pusat kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Type 60 Terbaru Dan Tampak Depan 032 Desain Rumah Dekorasi Luar Ruangan Rumah" src="https://i.pinimg.com/originals/44/14/e1/4414e1ef3d3abcb36ead0560d3df2de6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52FewZUTDsu796nrNCGjUfrh7UGp7_VLogQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsitektur rumah minimalis biasanya berbentuk geometris tanpa dekorasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Model Rumah Terbaru" src="https://i.pinimg.com/originals/0f/be/41/0fbe41cdf2c89e924acc665991980936.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-E24sb0IpipCEsmGYXHcUZfac_7b9n-6F6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>9 karakterisitik di atas menunjukkan bahwa desain rumah minimalis tidak menonjolkan kemewahan atau menunjukkan semua harta Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Desain Rumah Minimalis Berapa Biaya Jasa Arsitek Konsultan Arsitek Terbaik Jasa Design Renovasi Rumah Rumah Minimalis Rumah Mewah Desain Rumah" src="https://i.pinimg.com/originals/c6/35/ce/c635ce44ca703d9b865063966a9dbc0f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmdApSYTi0TkiJ7wzb3xAR-smpD_dTvVD_A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Asia Arsitek adalah perusahaan yang bergerak dalam bidang Jasa Desain Rumah Classic Minimalis Modern Tropis Mewah dll Jasa Desain Villa Jasa Desain Cottage Jasa Desain Hotel Jasa Desain Apartemen dan Jasa Desain Interior yang telah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="32 Inspirasi Pagar Rumah Minimalis Untuk 2019 Casaindonesia Com Desain Depan Rumah Rumah Arsitektur Rumah Minimalis" src="https://i.pinimg.com/564x/39/db/50/39db50f36fc53aa93e3f542d9ce95d2e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nEbPoNjwzojTx_AIiu2pDkCT3pC2IuEXyw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Yuk kita lihat desain arsitektur rumah tropis yang modern dan minimalis karya arsitek bangsa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Pdf Desain Rumah Kontemporer Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/8a/de/23/8ade23a4a34c63d413ec755b136153e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc0-ZNie3DJwqy7-2YkDhlML_Qh329kb5Wvw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>15 Desain Pagar Minimalis Modern Terbaru March 22 2017 322378.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/warna-cat-rumah-minimalis-dalam-ruangan.html"><i>&larr; warna cat rumah minimalis dalam ruangan</i></a>
+                                                                    
+                                        <a href="/wisata-rumah-kayu-batu-malang.html"><i>wisata rumah kayu batu malang &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

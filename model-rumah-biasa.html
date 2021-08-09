@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Rumah Biasa
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Rumah Biasa",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/736x/50/49/ca/5049ca65ca5cf80ee0a532cc83903cd2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+rumah+biasa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Rumah Biasa
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Rumah Biasa</strong>. Rumah idaman sederhana di desa. Pagarnya pun tak di depan namun di bagian atap rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/564x/69/c6/af/69c6af1cd3eb115198815427d9b90a87.jpg" alt="Pin Di Casas De Campo" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4pgOadN53TX4XPRa_Hz4VDE33pbP0sjo7Rw';">
+        <figcaption>Pin Di Casas De Campo from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru. Model rumah ini dapat dipindah-pindahkan dengan menggunakan kendaraan berat. Jika anda bosan dengan desain rumah yang biasa maka gaya rumah bata merah ini bisa dicoba.
+    </p>
+    <h3>40 model desain pintu utama rumah minimalis model gambar guna menerima sebuah tempat tinggal idaman seluruh bagian rumah haruslah mempunyai desain yg rupawan mulai berdasarkan eksterior interiornya.</h3>
+    <p>Beri Kursi Gantung atau Ayunan Sumber Gambar. Di kalangan generasi milenial rumah minimalis sederhana kini semakin banyak digemari. 21 Model Teras Rumah Minimalis Yang Keren Rumah Minimalis Home Fashion Desain Rumah. Seiring dengan perkembangan kemajuan dalam bidang desain rumah kini banyak sekali bermunculan konsep hunian baru seperti rumah tumbuh rumah pintar hingga rumah minimalis.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis Sederhana 1 Lantai 2 Lantai" src="https://i.pinimg.com/originals/1e/54/7d/1e547d87dc7349a49c8887fa090edf8e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYLUGUuwRKZ6ADX_nOjTBBkm1BefGD1ZHLINJF-7KgaCx-9UktmX063z5PF2QzjP5QJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tak mengherankan bisnis properti saling berlomba untuk menghasilkan model rumah sederhana terbaru yang sangat populer karena bisa menghasilkan keuntungan bisnis yang menjanjikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com House Designs Exterior My House Plans Shed Homes" src="https://i.pinimg.com/474x/dc/36/f2/dc36f2077f2584bbda5528e59371d19e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjEJnC4xXzjMI2fuWSDlmPOZy3AT30z7h-w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>40 model desain pintu utama rumah minimalis model gambar guna menerima sebuah tempat tinggal idaman seluruh bagian rumah haruslah mempunyai desain yg rupawan mulai berdasarkan eksterior interiornya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/55/11/e7/5511e711115ad9ab0a3cfae45f17b69e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqjbwchvN6ZJBMmlFZttSFsRRqM_j75tQjpqg558QLG152A5ZGGNVRd9q5hOcrbG1iMM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Rumah Minimalis Mewah Dengan Gaya Modern 1 Lantai Tampak Depan Arsitektur Rumah Minimalis Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Biaya Murah Rumah Agus Desain Rumah Sederhana Dengan Biaya Murah Ukuran 5 X 10 Estimasi Desain Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/ba/1e/1d/ba1e1d2f8feef195692572a8d0e65c0a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dMwGggp9NqHEUJbIg8Qz6rOP-k1OlzrRxw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Gambar Model Rumah Minimalis Type 36 45.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=model+rumah+sederhana+tapi+indah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=model+rumah+sederhana+tapi+indah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Ada jalan setapak dan bersambung dengan tangga menuju bawah ke arah pintu utama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Model Rumah Sederhana Di Kampung Terbaru 2020 Rumah Hijau Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/f0/67/16/f0671676753c3e022d797253804d3504.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkhaNS8p4L9xjzIW4fmlSvnADHv0GDfe15eA-YKCZCPadACLPz-njwedvfi9ZeEawsKWc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Para Karyawan Lakukan 44 Cara Menghemat Uang Untuk Beli Rumah Baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sederhana Elegan Rumah Minimalis Dekorasi Minimalis Desain Rumah" src="https://i.pinimg.com/originals/be/6a/4d/be6a4d7de04b166f66c37a8511ec14d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTFNkML3r3u4sQ-VnPHitV08jrQ6SYYwTOFUkWlDYgCm7q0mzT34Ot969wu0RDgVbkHVU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>60 gambar tampak depan rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Gambar Rumah Sederhana Tapi Terkesan Mewah 14 Desain Rumah Minimalis Rumah Minimalis House Blueprints Rumah" src="https://i.pinimg.com/originals/94/a0/42/94a042b3f01c9a51ee171cb4f2118c57.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr0LhskpZG4ny7ht9coInfI8IqqkOFxRAheBvkBjanr1gWCFrubfiJnu2-MBRNqpP3wIY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yang suka rumah ini silahkan klik di gambar untuk denah rumah dan foto-foto saat rumah ini dibangun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="19 Inspiring Minimalist Home Before And After Ideas Minimalist House Design Cool House Designs Simple House Design" src="https://i.pinimg.com/564x/b0/9b/66/b09b6669f8acb8179bed448da46c8097.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1DX39iNTkj2iCAPVJG5aIRpzzpkelVRgZA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah dengan konsep minimalis tipe 36 dan 45 termasuk paling banyak dicari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kosep Desain Rumah Minimalis 1 Lantai Mewah Nyaman Elegan Modern Istimewa Tampak Depan Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/d1/07/bd/d107bda9aa2db82de2cb94fa179b54d0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yNUmo133tLfp0Um_K-MAOv40FP29RG4CcA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah idaman sederhana di desa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kiến Truc" src="https://i.pinimg.com/474x/f1/fa/27/f1fa27b9d38fa52c623540e77d09972c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeUocvhX9pURDQ46RV0K0G1CXYJlCC5k8rQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah itulah tadi 30 desain dan model rumah unik yang mungkin bisa menjadi inspirasi Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Rumah Sederhana Tapi Mewah Untuk Tempat Tinggal Di Desa Yang Keren Rumah Minimalis Home Fashion Desain Rumah Minimalis" src="https://i.pinimg.com/originals/42/45/8c/42458c1295443c9566c69b2b0cef079f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBBO_MH_GXTd13kkJnUOwDEHhT1B9hsyF4XP_9e-c8XKk7ECJRaEQCtVvUAb2fdCrq1_Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah ini luar biasa berbentuk persegi panjang terbuat dari kayu dengan kaca-kaca yang besar dan ringan serta pemandangan indah di sekitarnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Terbaru Desain Rumah Minimalis 2016 Berbagai Type House Styles House Architect Design" src="https://i.pinimg.com/originals/3e/37/bd/3e37bd71b7ccf2f96c0de314865ab559.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8rKvnJ_9YkICgbjT4VrRLZbzqQzm2AgahQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bagaimanapun juga rumah minimalis menawarkan beberapa kelebihan yang tentu tidak bisa Anda dapatkan dari model rumah manapun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Memanjang Ke Samping Rumah Minimalis Desain Rumah Minimalis Rumah Modern" src="https://i.pinimg.com/originals/ed/80/0a/ed800a2f406c3574d63199273e0b2f66.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrG0iWdHR-8WxfLGl4mUvCSYJNV_Y4HwbL9g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hunian ini memiliki keunggulan yang tidak biasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi 99 Desain Rumah Sederhana Hijau Terunik Generasi Warna Cat Rumah Hijau Lumut Ide Rumah Minimalis 2019 Rumah Hijau Rumah Minimalis Desain Eksterior" src="https://i.pinimg.com/originals/cb/cf/d9/cbcfd937141ba8afecf2aff87aa00387.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ23Mxetf8MlodfGgaDbn2i5W7HuWJkYwCzZpf-xvH24w8l6O5mcOj4POO6r4gecW1F0Vo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah itulah tadi 30 desain dan model rumah unik yang mungkin bisa menjadi inspirasi Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah Rumah Minimalis Desain Rumah Eksterior Desain Rumah" src="https://i.pinimg.com/originals/0e/e6/40/0ee6402fc86c97104f5bae9cf13581ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMoeKoQHhasuKOtSpWOZs-isLYCD8WgElyHQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Seiring dengan perkembangan kemajuan dalam bidang desain rumah kini banyak sekali bermunculan konsep hunian baru seperti rumah tumbuh rumah pintar hingga rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Random Kpop Nc Di 2021 Denah Rumah Pedesaan Rumah Minimalis Dekorasi Rumah Pedesaan" src="https://i.pinimg.com/736x/50/49/ca/5049ca65ca5cf80ee0a532cc83903cd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsI2PMSpzFUGlI90BBzseAj3xD9BfIi-FsEA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Eksterior Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/originals/3c/1d/df/3c1ddfe8346b6f7bdcdf58a73bae0e8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP8prYsPp8JXBYcS0HiZMoRrcZlsUqulaRUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yang suka rumah ini silahkan klik di gambar untuk denah rumah dan foto-foto saat rumah ini dibangun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home" src="https://i.pinimg.com/originals/d6/e7/d0/d6e7d0b3a2cc5c0333691877149aadbe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsNQMC4tLIXitbXrbQ8XGtAosmJYwlx_hIng';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bentuk Rumah Sederhana Tapi Elegan Desain Rumah Desa Rumah Pedesaan Desain Rumah" src="https://i.pinimg.com/originals/55/44/93/554493783c5ed37fface98ed875edf0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6mgvYlUYgxJ2KLUu2N92-kqWX3aWWMge69fvaXY-zwuNN1wUBaNy4bXi41Als6e4_87Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>95 Model atap Rumah Paling Keren Terbaru-Kali ini kita akan membahas mengenai 95 Model atap Rumah Paling Keren Terbaru yang mungkin anda dicari di internetdesign ini akan kami tampilkan hingga 100 gambar paling lengkap untuk anda dari segala contoh yang anda inginkan jika anda tidak sabar berikut ini adalah 95 Model atap Rumah Paling Keren Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Pdf Desain Rumah Kontemporer Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/8a/de/23/8ade23a4a34c63d413ec755b136153e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc0-ZNie3DJwqy7-2YkDhlML_Qh329kb5Wvw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah itulah tadi 30 desain dan model rumah unik yang mungkin bisa menjadi inspirasi Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sederhana Leter L Rumah Minimalis Desain Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/7f/29/c7/7f29c7843bf5ebd1a2aca5936bd0ba2d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVjsx-ocquTU6O4Av2oHhqQ89747PcH38hRQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah dengan konsep minimalis tipe 36 dan 45 termasuk paling banyak dicari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 7x12 Dua Muka Rumah Minimalis Desain Rumah Dekorasi Luar Ruangan" src="https://i.pinimg.com/originals/68/da/f4/68daf439661f745784c325fe050dfbbf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxt9Ha2u_GIgDKuIDQfRKCggoAmV_hos1AHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan konsep minimalis modern biasanya memiliki kesan yang kaku sehingga butuh sentuhan dari alam seperti misalnya diberi batu-batuan alam pepohonan sebagai peneduh atau dengan menambahkan kolam ikan di tengah-tengan model teras rumahmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Tapi Menawan Desain Rumah Desa Rumah Arsitektur Rumah Pedesaan" src="https://i.pinimg.com/originals/3c/b7/e7/3cb7e72a0d72560901f9296f094050d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM31Gb907qRUsBXGlEtbaBNmpCJvq-42Wy3Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh Gambar Model Rumah Minimalis Type 36 45.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Macam Bentuk Rumah Sederhana Dekorasi Minimalis Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/03/46/33/034633f95cdeba2911e43421395be774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7R8biq6NoH9owXIJe9oAzBIsXUggqw22wI2BpIe0ceE6oxi9GIj5GaovA2woHNs31us';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di kalangan generasi milenial rumah minimalis sederhana kini semakin banyak digemari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Teras Rumah Sederhana Yang Cantik Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/06/4b/69/064b692c7c8a4f92c28923165ffb43c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVHLdxhapHRPSrElJyiCuVATXXYHeB1WycwI0qrC2CVXBgM4EmG6wc3QTMs6_BG-aSyPo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah idaman sederhana di desa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Dan Cantik Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/08/cc/a5/08cca591d93e35722e82608a0dfa82fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYVxOMSMWiovWX658TgQ2Ck3BRoFWNnQdGjibVtsd9c9QxrsrXwO57vhZslHOK58ql3c4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah ini luar biasa berbentuk persegi panjang terbuat dari kayu dengan kaca-kaca yang besar dan ringan serta pemandangan indah di sekitarnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Idaman Sederhana Tapi Cantik Minimalis Rumah Rumah Minimalis Rumah Home Fashion" src="https://i.pinimg.com/originals/00/52/3e/00523ea435b5a287d3c020e297703c92.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXG7M87cTydSqM17YIV9KQdHPZjz3EKmeo9gQDylkq6mvLZAC_5cmqsC74pHFvQ3D0qzM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>10 Desain Rumah Minimalis 2021 yang Murah untuk Dibangun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Bentuk Rumah Sederhana Ukuran 6x9 Terbaru 2020 Rumah Indah Rumah Denah Rumah Pedesaan" src="https://i.pinimg.com/originals/09/53/a7/0953a7c1368b8943115349e42ddbe728.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRznCBDk9GYH4JnX3YmaaJ7tHq5CYImBRBoOA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctjgx9kr2lk Fwgg Xe1gxd2rqe0tr1j9pfsnqpsnb Tlqkq2if Usqp Cau" src="/search?q=desain+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Harga lantai kayu parket solid kami per meter lebih murah karena harga lantai kayu parket kami langsung dari pabrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern House 7 05 X 10 Leter L 3 K Tidur Desain Rumah Minimalis Lantai 1 Youtube House Arch Design Minimalist House Design Small House Design Plans" src="https://i.pinimg.com/564x/bd/0d/bf/bd0dbff64b0695d6c5d5314e95d4580f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQZ7JX1G_sctrI2AQphhS90WFJ0PnFmIsLw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pagarnya pun tak di depan namun di bagian atap rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah Besar Dengan Lahan Rumah Minimalis Arsitektur Rumah" src="https://i.pinimg.com/originals/8c/41/3f/8c413f4dedef3dddf4c1aec163b161e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpvOuD9Q2lMXVFz0e39RPtHxHMXykhI6w5yQtSRgrgXlpwjVjyFapimZN_rAmOVkHlez8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>95 Model atap Rumah Paling Keren Terbaru-Kali ini kita akan membahas mengenai 95 Model atap Rumah Paling Keren Terbaru yang mungkin anda dicari di internetdesign ini akan kami tampilkan hingga 100 gambar paling lengkap untuk anda dari segala contoh yang anda inginkan jika anda tidak sabar berikut ini adalah 95 Model atap Rumah Paling Keren Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Bentuk Rumah Sederhana Ukuran 6x9 Terbaru 2020 Desain Rumah Kecil Desain Depan Rumah House Blueprints" src="https://i.pinimg.com/564x/7c/86/b9/7c86b9bdd5de4110cf6a0ff3db030fa4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4I1IyLgekYxI4QVVGsDSCXZj1RkW7UCBFwRjJLo6cuwEXNTaT9DE8OWpFJaBZB-evyZQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>40 foto gambar pintu rumah minimalis terbaru desain terkini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Rumah Minimalis Atap Asbes Desain Rumah Kumpulan 100 Model Rumah Sederhana Atap Asbes Terupdate Mod Gaya Rumah Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/5b/19/3c/5b193c591706ab6f54ee44db2c111ba2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdhLF9NVHgEAa03gk6k6Ut7NbRiVFv1eO4A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>95 Model atap Rumah Paling Keren Terbaru-Kali ini kita akan membahas mengenai 95 Model atap Rumah Paling Keren Terbaru yang mungkin anda dicari di internetdesign ini akan kami tampilkan hingga 100 gambar paling lengkap untuk anda dari segala contoh yang anda inginkan jika anda tidak sabar berikut ini adalah 95 Model atap Rumah Paling Keren Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Rumah Idaman Sederhana Di Desa Paling Bagus Rumah Pedesaan Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/originals/cf/5b/6e/cf5b6e5edbd7006cf897340ff8b784cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSowZ0mQGM1WV8EJb2IBvtbxQR0PNKHplkLsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk kamu yang suka menghabiskan waktu di luar ruangan untuk mencari angin atau bersantai desain teras rumah dengan ayunan atau kursi gantung bisa jadi pilihan yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 2 Lantai Krem Coklat Desain Rumah Minimalis Modern 2 Lantai Rhdesainrumah Model Desain Rumah House Styles House Architecture" src="https://i.pinimg.com/originals/1b/fb/79/1bfb79110be9fe0b2f57b814859a2568.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoNDa-FXHU0fxJIAQaKTb_kqJ33GN--6ruBw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gaya unik dan anti mainstream bisa anda dapatkan dengan model rumah seperti ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Sederhana Type 45 Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/736x/55/0b/29/550b297b2c341cdb3f96e420b8027d03.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjiDv5AN3D7e2QiCayQIrMxhV8oTEYrpXChXKIhaRiCaJXbfDwcMf0XIeHSJwHD75dryU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jika anda bosan dengan desain rumah yang biasa maka gaya rumah bata merah ini bisa dicoba.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Rumah Minimalis Sederhana 1 Lantai Tampak Depan Desain Rumah Eksterior Rumah Minimalis Eksterior Modern" src="https://i.pinimg.com/originals/de/4e/4f/de4e4ff0910b60635c47ce7ddd22c2de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHHrSph3wlXvKoIALH5unbE3xKarmN-h5JA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memiliki model rumah sederhana tapi indah adalah impian seluruh keluarga terutama bagi pasangan yang baru menikah dan memiliki keluarga baru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern 2 Storey House Designs Rumah Minimalis Desain Rumah Minimalis Rumah Arsitektur" src="https://i.pinimg.com/originals/e9/67/d7/e967d758f7516c375813445401a013bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAgfL-XVOba0SxOuo5aqt9hb_wO51nVaq4Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh Gambar Model Rumah Minimalis Type 36 45.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Mewah 1 Lantai Rumah Minimalis Rumah Arsitektur Kolonial" src="https://i.pinimg.com/736x/83/4e/c9/834ec92cb6f6f02a30797eb98d4ba0c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOo6-xJcAH03BDkuey-qEBx9KhmGiqh6AAe-vwPXmiB2ITm-aF0WgU028qUn5GVKBFQU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah ini luar biasa berbentuk persegi panjang terbuat dari kayu dengan kaca-kaca yang besar dan ringan serta pemandangan indah di sekitarnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tyuka Info Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/34/a6/ca/34a6cad8475f8be3dbab6f4fd0ce2673.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pV7nBoMUO6Io3sIHbBS-8bWIM7VI6CU2Rg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah idaman sederhana di desa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas De Campo" src="https://i.pinimg.com/564x/69/c6/af/69c6af1cd3eb115198815427d9b90a87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4pgOadN53TX4XPRa_Hz4VDE33pbP0sjo7Rw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah minimalis memang menjadi pilihan utama untuk desain dan model rumah saat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Teras Rumah Sederhana Cantik Rumah Minimalis Rumah Desain" src="https://i.pinimg.com/564x/83/7c/2d/837c2ddaed2aa28557d0ac5079f60c44--sederhana-rumah-minimalis.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrm6kfAznLpMv2dKNt-UtWJmK6KgUptzLbpAySGcrOrfkhE7ONuRvI2DptzTLYn2_XTYk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah idaman sederhana di desa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Rumah Minimalis Sederhana Modern Tampak Depan Rumah Minimalis Arsitektur Minimalis Warna Cat Untuk Rumah" src="https://i.pinimg.com/originals/4e/4b/e6/4e4be68d9f1e5f368cc3e7513fbe2c7e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9PjsDbeFml9qFY1HcVyyeE3D1hoCnPDcSu7lztFWL3RlaHuTkQ32EbREMR19Idqgod6Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan konsep minimalis tentunya sudah tidak terdengar asing lagi bagi semua orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Minimalis" src="https://i.pinimg.com/736x/3b/53/e2/3b53e2ab436276939daf4658ee285794.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTClRcNeA5ttxa2E0WzBkrvRv7w4FjO3NV0bp9NUQpBfxicxOZnWMSIhlTyj15y-XyCQmk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>79 Contoh Model Teras Rumah Minimalis Sederhana Terbaru 2019 Model Teras Minimalis Di 2020 Rumah Teras Rumah Minima Di 2020 Rumah Minimalis Rumah Modern Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Seperti Halnya Mendesain Rumah Yang Luas Rumah Yang Kecil Pun Memiliki Kesulitan Tersendiri Kesuli Rumah Minimalis Desain Rumah Minimalis Desain Rumah Mungil" src="https://i.pinimg.com/originals/0a/3a/ce/0a3acee468efe7b911f5cb14ab469673.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRip5wOmZOxO9KAjQ6blBWExO4l4R8-1SBzRQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Harga lantai kayu parket solid kami per meter lebih murah karena harga lantai kayu parket kami langsung dari pabrik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Perpaduan Model Desain Rumah Mewah Minimalis 8 X 10 Modern Sederh Rumah Arsitektur Rumah Mewah" src="https://i.pinimg.com/736x/ec/60/24/ec60248b9a7bba240a2ef2766615ed98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7YYrfMIBKUg7yJZ7zDdLjSqMjvBUBV1Boiw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>40 model desain pintu utama rumah minimalis model gambar guna menerima sebuah tempat tinggal idaman seluruh bagian rumah haruslah mempunyai desain yg rupawan mulai berdasarkan eksterior interiornya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Small House Design Exterior Small House Design Minimalist House Design" src="https://i.pinimg.com/originals/48/70/ae/4870aed6577e309e564b66d50f05ec15.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4cAlTzKj-yqAl7hyZvfXM9d_G5M2C6Jet5A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>15 Jenis Tanaman Bonsai Terbaik untuk Percantik Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Model Rumah Sederhana Di Kampung Terbaru 2020 Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/b7/a4/c9/b7a4c90c24095c4f2c6c73907b6c70ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWCNvQL4Cs1ufQ0FgCxFfJuBktZwSzPrnDC4nBPhsGTtMwrV0uOgo4gnCrcR5mlV3w3LI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah ini menggabungkan berbagai bentuk kubus sehingga menjadikan rumah Anda sangat merefleksikan gaya minimalis modern yang diinginkan kalangan publik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rumah Bes Rumah Minimalis Desain Rumah Kecil Home Fashion" src="https://i.pinimg.com/originals/c8/1d/bc/c81dbc6d26124f940f460d40d5813073.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgXt5GjzXj8c5S-mSAFPapodMqBdL-u29ALA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>95 Model atap Rumah Paling Keren Terbaru-Kali ini kita akan membahas mengenai 95 Model atap Rumah Paling Keren Terbaru yang mungkin anda dicari di internetdesign ini akan kami tampilkan hingga 100 gambar paling lengkap untuk anda dari segala contoh yang anda inginkan jika anda tidak sabar berikut ini adalah 95 Model atap Rumah Paling Keren Terbaru.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/dekorasi-kamar-tidur-modern.html"><i>&larr; dekorasi kamar tidur modern</i></a>
+                                                                    
+                                        <a href="/dekorasi-dalam-rumah-minimalis.html"><i>dekorasi dalam rumah minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ruang Tamu Terbuka Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Ruang Tamu Terbuka Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/63/aa/4e/63aa4e7ab24a1aa617ab2ecec9015536.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ruang+tamu+terbuka+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Ruang Tamu Terbuka Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Ruang Tamu Terbuka Sederhana</strong>. Ruang Tamu pada Desain Rumah Minimalis Sederhana Houseandland Ide Ruang Tamu pada Desain Rumah Minimalis Sederhana. Yup dengan lahan yang terbatas sebaiknya anda menggunakan furniture.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/9c/f9/3a/9cf93a16c631465b61637639ba5d83f2.jpg" alt="50 Desain Dapur Dan Ruang Makan Terbuka Jadi Satu Sederhana Minimalis Mewah Ide Dekorasi Rumah Desain Ruang Makan Ruang Makan Dapur" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTMcCyC5uzMblrpzTBefJs8TagOiRFSBeflg';">
+        <figcaption>50 Desain Dapur Dan Ruang Makan Terbuka Jadi Satu Sederhana Minimalis Mewah Ide Dekorasi Rumah Desain Ruang Makan Ruang Makan Dapur from in.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Sofa atau kursi yang kita gunakan di ruang tamu memiliki pengaruh besar pada kenyamanan ruang tamu. Salah satu dinding ruang tamu sengaja dibuat dari kaca agar cahaya lebih banyak masuk. Ruang keluarga terbuka juga bisa didesain menyatu dengan area lain di dalam rumah misalnya dengan dapur.
+    </p>
+    <h3>Desain Ruang Tamu Minimalis Sederhana Keindahan sebuah rumah minimalis memang bisa dinilai dari beberapa aspek dan ruangan-ruangan di dalamnya.</h3>
+    <p>Setidaknya cukup untuk ruang keluarga kecil dan sebuah meja makan pojok. Kondisikan Lahan Dengan Furniture Yang tepat. Contoh Formulir Permintaan Informasi. Bagian dari pekerjaan ini kamar mandi di rubah menjadi musholla seperti harapan bapak Samsul dan kamar mandi baru diletakan di belakang kamar belakang.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="23000433 510059822707829 3003330896501637306 O Jpg 1080 810 Rumah Dapur Terbuka Desain Rumah" src="https://i.pinimg.com/originals/5b/c6/4a/5bc64a53cd368fa270b1dffd11ef2d47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ8o9uGqwg-Z0MEnk-dnJGGlb6CAbtUvy5Zg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jendela besar memberikan banyak cahaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Ruangan Rumah Hiasan Dinding Ruang Tamu Minimalis Modern Dekorasi Luar Ruangan Ide Dekorasi Rumah Hiasan" src="https://i.pinimg.com/originals/cd/e9/86/cde9867b79af70fcb972dc00fc0c0a92.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT34pEdAyWuk2hIKAJuWbcgL5fkXVkA_q1TQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk membuat ruang tamu sederhana kecil terlihat lebih modern dan mewah memang tidak harus mengeluarkan banyak biaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Terbuka Sederhana Di Belakang Rumah Dapur Terbuka Desain Ruang Makan Rumah" src="https://i.pinimg.com/736x/fd/b1/ab/fdb1abda0b5593224ce344c6bf1272a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwvdfbsPiqZcuRYij8jkWBJxpmeplCZZHbgkrf_rmULkR6di_WXp6vnnZD4PA23pxLt8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Perpaduan antara warna lantai dinding dan ditambah penggunaan lampu downlight membuat ruang tamu tampak lebih hangat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctqd9vnlfxrfbd0bftluj63j6mbwoxtbpjvnwwh9pi Usqp Cau" src="/search?q=ruang+tamu+luar+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ruang+tamu+luar+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Tips Membuat Ruang Tamu Terbuka Modern Menjadi Lebih Nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Terbuka Desain Desain Teras Rumah" src="https://i.pinimg.com/564x/cb/93/1a/cb931a342c9c8d796452bd9cc8221264.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw9FGU0dVSVYdQPZkxHPtW9ZNyQiGQDsHSJg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di satu sisi dapur ruang terbuka dilengkapi dengan meja tengah dapur untuk memasak menyiapkan makanan sambil mengobrol atau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="77 Desain Ruang Keluarga Minimalis Terbuka Lesehan Elegan Klasik Dan Modern Desain Ruang Keluarga Ruang Keluarga Mewah Rumah" src="https://i.pinimg.com/originals/22/13/38/2213380640fec3711842e4a3c278830a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJw0oSfaC_Npp7coDmpKPITFm4QmdZINiR-ZlUo9bbmK3PB3Z1Z-_PPuOWG35Vxy7e1Y';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Mendesain ruang tamu terbuka minimalis di teras halaman rumah dapat kita buat menempel dengan rumah atau terpisah beberapa meter di luar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Dekor Rumah Minimalis Unik Di Ruang Keluarga Desain Ruang Tamu Rumah Desain Interior" src="https://i.pinimg.com/564x/66/bb/9a/66bb9af40f848236ea1d0bceb2ba9c67.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoB9OEGsw0itQGkdmCaRLs6wPXeNCfiwVvbg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gaya minimalis memang cocok banget jika diterapkan pada ruang tamu sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Rumah Kecil Gati Rizky Yang Minimalis Maksimal Desain Interior Rumah Minimalis Interior" src="https://i.pinimg.com/736x/ba/62/90/ba629020f8d2300d3b4bfb6c80a677b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFACmT45cy7ydEq9bvnJLUKQk3GgoOStEW4DXrgLa54Fw_jMa6-fzGPiB6im4WeSn9QIM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Penasaran dengan ruang tamu yang lagi tren.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Vidya Ayu Di House Ruang Tamu Outdoor Rumah Desain" src="https://i.pinimg.com/originals/87/d7/44/87d744fcaf530a51065161a68aa82504.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7iAXMhqJ9t53ZtZYPNhozo5cN-yiKskV_nZ3LHW4M3v1rzA4F28b8O07eocE_4RkWqeQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Namun sepertinya akan menarik jika ruangan dirumah memiliki akses cahaya lebih lega seperti ruang tamu iniFirst impression yang terlihat adalah nilai estetik dari adanya penggunaan jendela terbuka pada ruang tamu ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Interior Ruang Tamu Kecil Minimalis Desain Interior Interior Desain Kamar" src="https://i.pinimg.com/originals/60/43/5b/60435b2d2732580b0aa754dcd75589ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwpnqb0CZWXlB8aBrkD_yu91NdCEso_Mvexg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah sederhana tentu juga bisa di maknai sebagai bangunan dengan biaya yang lebih murah hal ini bukan tanpa alasan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Inspirasi Penempatan Tanaman Hias Di Dapur Agar Terlihat Lebih Cantik Di 2021 Rumah Desain Desain Produk" src="https://i.pinimg.com/originals/08/5b/aa/085baad710ac8c28fff3c216dad65673.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3y19vuBBzoOq62dNaOAvdY0eAbv2VShFKvkNOc3luT1mvC9fghsBqk67r3jhzbX71GzA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gaya minimalis memang cocok banget jika diterapkan pada ruang tamu sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Desain Dapur Terbuka Di Belakang Rumah Rumah Pontianak 99 Interior Desain Interior Desain Ruang Makan" src="https://i.pinimg.com/originals/58/83/6b/58836bf0c3d622dbb64404a076e7086a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDltl_1M5UH46IDrJRqQulTPAy11S0YgZEAobP7u_9NSIyX2kCfllDzov5-y8Lf5J041A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Disuguhi pemandangan taman tamu pun akan betah berlama-lama di sini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dekorasi Ruang Tamu 8s Home Decor Simple Living Room Decor Simple Living Room" src="https://i.pinimg.com/originals/4e/5d/c7/4e5dc79f543f6377936d441b65899856.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Hp5nfRR2GOD48ct3--LFUzdabTcGdP9__A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang tamu terbuka ini akan lebih sederhana untuk menjamu tamu yang datang ke rumah kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Bawah Tanah Home Fashion Desain Rumah" src="https://i.pinimg.com/originals/cd/9a/66/cd9a66a26731dce37385a8b74caa86b0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyiCUSNo40Yss2SB-fG-Mp4PypE9M0usnXw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Disuguhi pemandangan taman tamu pun akan betah berlama-lama di sini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="53 Dekorasi Ruang Tamu Minimalis Sederhana Yang Terlihat 53 Dekorasi Ruang Tamu Minimalis Srhana Yang Terlihat S Ruang Tamu Biru Warna Ruang Tamu Desain Kamar" src="https://i.pinimg.com/originals/8c/12/35/8c12354037def9b96d93e9627d500cbd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZFEov3S_CuMBTqRCqAOnLQaBTMeQjAcduyRfRcbpBJpC4g3DfDANgrFreWC8hwHClOkU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Mendesain ruang tamu terbuka minimalis di teras halaman rumah dapat kita buat menempel dengan rumah atau terpisah beberapa meter di luar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Idea Online Galeri Foto Interior Ruang Keluarga Furnitur Di Ruang Tamu Minimalis Interior Bar Rumah Ruang Keluarga" src="https://i.pinimg.com/originals/da/c5/90/dac5903045bbbe2d7dc76ec859515610.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6su22N3qddTQ4woD_sHOzOB7goDm6rWCzLg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya pada rumah yang minimalis ruang tamu menjadi ruang utama yang juga bergabung dengan ruangan lainnya dan terkadang memiliki fungsi bukan hanya sekedar ruang tamu melainkan juga ruang tv ruang keluarga yang disebelahnya terdapat meja makan untuk ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Konsep Ruang Makan Semi Terbuka Outdoor Modern Desain Ruang Makan Ruang Makan Ruang Makan Mewah" src="https://i.pinimg.com/originals/ca/65/a4/ca65a41f184becbe8751874d8caa13af.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-nYasK59g0cMNt8IVo1VaS-CwMOp9MnNJitxP-Zrl-77qOypNa9HVMX4SCbWolIcYBa0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sentuhan vintage untuk ruang tamu sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Sekaligus Ruang Tamu Desain Teras Desain Arsitek" src="https://i.pinimg.com/originals/b8/96/be/b896be9c12cf9f7878f4931ff677d800.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlyW29DzekkXrHyh-FqJaURReAl57jT1uvCZmA1mvBOBezZoPWnmWubEZ2WOgRzbKTi_M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang tamu pada desain rumah minimalis sederhana 1 lantai maupun 2 lantai pada dasarnya tidak berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Dekorasi Ruang Tamu Rumah Minimalis Terbaru Januari 2020 60 Model Ruang Tamu Terbuka Minimalis Modern Desainrumahnya C Home Decor Home Sectional Couch" src="https://i.pinimg.com/originals/68/2e/45/682e45080c0c28d1173613ea4beebb84.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYkU-TTBDFKo7gNCbYVGcU3AW8W6L999Zx8w';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Desain ruang tamu terbuka minimalis di teras halaman rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="77 Desain Ruang Keluarga Minimalis Terbuka Lesehan Elegan Klasik Dan Modern Desain Ruang Keluarga Ruang Keluarga Minimalis Ruang Keluarga" src="https://i.pinimg.com/originals/5d/66/f1/5d66f1eeeb4b386c7b92159c158c0f01.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTAFwHsoQCyqK5g3wRiziHe4kUp6ErbF4UNc1zxfpd7GcXVQpAnfJ5426ijMFfg1xJ9CM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Posedur Pengajuan Keberatan Informasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="77 Desain Ruang Keluarga Minimalis Terbuka Lesehan Elegan Klasik Dan Modern Desainrumahnya Com Desain Interior Interior Desain" src="https://i.pinimg.com/originals/05/04/c2/0504c20d7cda2020ac8cb7e847be470f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIPI00RbZjuHzkxlKziyJs9j2fbmIg3URk1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nggak perlu khawatir privasimu di dalam rumah terganggu berikut beberapa inspirasi sekat ruang tamu tanpa tembok yang bisa kamu aplikasikan di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jika Anda Sangat Berminat Dengan Produk Kami Silahkan Hubungi Kami Di Nomer Berikut Whatsapp 0812292 Ide Dekorasi Rumah Ide Ruang Keluarga Desain Interior" src="https://i.pinimg.com/736x/48/6a/f1/486af14035c379648bdc586ae9fbb267.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg462Pb1nLOBeIh01A5uFaZRlTqRUFaFlpIA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Formulir Permintaan Informasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ruang Tamu Ruang Keluarga Living Room" src="https://i.pinimg.com/originals/c5/d2/cd/c5d2cde8e1b3b55e96b917696a639bd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRgkeffBwa_QhX3bw20QvT9NLKFudSzdbCfA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Formulir Permintaan Informasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="41 Inspirasi Model Teras Rumah Minimalis Sederhana 2017 Dekor Rumah Dekorasi Teras Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/fa/cb/6e/facb6ee3e4095a240e021320cbcef2a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTToaGyiGxEikC_fRyUkBp6xxVKiWpsEcTIUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yup dengan lahan yang terbatas sebaiknya anda menggunakan furniture.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Rumah Minimalis Sederhana Ruang Tamu Rumah Interior Desain" src="https://i.pinimg.com/originals/ab/db/0e/abdb0e8a0771347e6e615bca1c575107.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzr7ec-bX_Ux_DvyF094SivfrAE3BOPaBfRg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang tamu terbuka ini memang sangat cocok bagi Anda yang ingin memisahkan ruangan di dalam rumah dengan ruangan di luar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com Minimalist House Design Minimalist Living Room Design Minimalist Home" src="https://i.pinimg.com/originals/82/b5/f6/82b5f6ae1fe4900033576ad393c3d085.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsT4E_Kl6YQqKVDN0TSB87oySCyahA-GvxvA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Petugas InformasiPelayanan Terpadu Satu Pintu PTSP dan Pengaduan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Interior Rumah Minimalis Type 36 90 Dengan Dapur Terbuka 1000 Inspirasi Desain Arsitektur Teknologi Desain Interior Dekorasi Ruang Cuci Interior" src="https://i.pinimg.com/originals/51/76/49/517649ede77faed3d6644a9910b4888b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyAzsL354epFLYh3uL-rveCz-W6rrZhEo4ng';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagian dari pekerjaan ini kamar mandi di rubah menjadi musholla seperti harapan bapak Samsul dan kamar mandi baru diletakan di belakang kamar belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sederhana Tapi Elegan 26 Model Gorden Minimalis Untuk Pintu Dan Jendela Ruang Tamu Rumah Ide Dekorasi Rumah Desain Interior" src="https://i.pinimg.com/originals/d7/d6/80/d7d68075e1d961ad25bd953440aef401.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNUKKkcu2zdNmsZHRyKMLqUmfeUZQOdJt7A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika kita ingin melakukan pesta kebun maka membuat ruang tamu terbuka minimalis di teras halaman rumah sangat cocok menjadi pilihan kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctqd9vnlfxrfbd0bftluj63j6mbwoxtbpjvnwwh9pi Usqp Cau" src="/search?q=teras+sekaligus+ruang+tamu&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=teras+sekaligus+ruang+tamu&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Dalam mendekorasi ruang tamu sederhana dan menggunakan furnitur ruang tamu kita dapat menggunakan sofa minimalis untuk ruang tamu sederhana di rumah kita sehingga ruang tamu ini tidak tampak sempit atau kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Desain Ruang Tamu Dan Ruang Makan Terbuka Home Living Room Home Decor Home And Living" src="https://i.pinimg.com/originals/f1/6c/bf/f16cbf7735d67b683985e513fe321693.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqIc8cNmmXr89o1WK8JZa23IOJKCKUE2hvA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Ruang Tamu Terbuka Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aksen Batu Pada Ruang Tamu Ruang Tamu Outdoor Desain Rumah Minimalis Desain Rumah Eksterior" src="https://i.pinimg.com/originals/04/e5/53/04e55348d180b7bed226c8b557126f19.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-eKEr3iJ1TalQEYsjSXW4JPyCdh6pGFh_kQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang tamu terbuka ini akan lebih sederhana untuk menjamu tamu yang datang ke rumah kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Trik Menata Rumah Sederhana Tapi Elegan Ruang Tamu Rumah Ide Dekorasi Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/ff/8a/bd/ff8abd2b4b6735fba223fc6efe2e5afd.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR00Y7twgAgam_7x1ZMh5Znu-MkvGQpLq6zQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kita dapat menambahkan beberapa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Rumah Kayu Sederhana Ruang Tamu Rumah Interior Ruang Tamu Tradisional" src="https://i.pinimg.com/originals/63/aa/4e/63aa4e7ab24a1aa617ab2ecec9015536.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ51rOgT2it-opRcSB_t9Mai21qmLD6BB1uC3E-nL851gR3O3iihkIiFqG3-Bf6FSj1miw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain ruang tamu sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Percayakan Desain 3d Interior Ruang Tamu Anda Kepada Kami Arusha Desain Diusahakan Dalam 2 3 Hari Anda Sudah Dap Desain Desain Ruang Tamu Interior Ruang Tamu" src="https://i.pinimg.com/736x/36/91/c9/3691c987663293c9758fb38c3394616f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMaVmiZqTRSvGfeCEtVpstOMlL3S0E-EBiCQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang keluarga terbuka juga bisa didesain menyatu dengan area lain di dalam rumah misalnya dengan dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Keluarga Menyatu Dengan Ruang Makan Minimalis Modern 2017 Desain Ruang Makan Dekorasi Ruang Makan Rumah" src="https://i.pinimg.com/originals/ab/0e/82/ab0e82704e33cd99e721e73b97170d13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUNr92pvE7hc0ZTDeDRljb68N_rVvtfsXHtw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kondisikan Lahan Dengan Furniture Yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Minimalis Ukuran 3x3 Shabby Chic Terbaru Kamar Dekor Desain Desain Ruang Tamu" src="https://i.pinimg.com/originals/73/7b/93/737b93da884dae5ee81593e14311b317.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIevobQnilPucmvbAgFLlRltNIRbTzyUJmKA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ruang tamu ini dapat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruangan Rumah Minimalis Sederhana Desain Ruang Tamu Ruang Tamu Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/8a/50/69/8a50690e1821ecd5a390dfc1da5052ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvVKtkL4UYjf-xGXEivaOqbMBNPYNS3jF6p3J8XqfvRg6YBHsjkf4uTMnvAB1YwzISgYo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tanpa dapur sebuah rumah tidak bisa dikatakan sempurna bahkan jika sebenarnya sang pemilik rumah tidak bisa memasak sehingga jarang menggunakan dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Desain Dapur Dan Ruang Makan Terbuka Jadi Satu Sederhana Minimalis Mewah Ide Dekorasi Rumah Desain Ruang Makan Ruang Makan Dapur" src="https://i.pinimg.com/originals/9c/f9/3a/9cf93a16c631465b61637639ba5d83f2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTMcCyC5uzMblrpzTBefJs8TagOiRFSBeflg';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Sehingga ruang tamu ini menjadi salah satu ruangan yang menjadi highlight dari rumah Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Model Lampu Hias Ruang Tamu Modern Terbaru Ruang Tamu Modern Pencahayaan Ruang Makan Dekorasi Ruang Tamu" src="https://i.pinimg.com/originals/c8/7a/74/c87a74c6c50cd63b4468578b98ec3404.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ3rnwT_ibQBwB9WN9KEv1ApFZWfpZe4uPcY1rWJ_OSF73nL70ayGTN8osDtAiaMgGVQQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Ruang Tamu Minimalis Sederhana Keindahan sebuah rumah minimalis memang bisa dinilai dari beberapa aspek dan ruangan-ruangan di dalamnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Inspirasi Sekat Pemisah Ruangan Dalam Rumah Ide Dekorasi Rumah Rumah Tanaman Dalam Rumah" src="https://i.pinimg.com/736x/09/12/e8/0912e852109f3162a25b849a4110f351.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDRmQ6xnwn30StHEAkaFIpp3ZAIMcWdPKOEteYZWo4VLTN7F7UrNKOKB8TMK30dxhWds';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cukup gunakan sofa meja kursi dan sedikit dekorasi untuk mewujudkan desain ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Ruang Tamu Mungil Ruang Tamu Rumah Desain Interior Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/c4/b8/7d/c4b87da6509eacf68bc3f4a2c7e829ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoD9bn-EuDBrZ1H7dz4fMZdfui0hAOrMCu6hb041cJ4CBdz7fNKD30S2l-hGFTlgXLbTE';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Disuguhi pemandangan taman tamu pun akan betah berlama-lama di sini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Pembatas Dapur Sederhana Desain Dapur Dapur Terbuka Rumah Minimalis" src="https://i.pinimg.com/originals/f2/24/4f/f2244f2a7968dd83cc0524dce89f24c2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzwdwOYVmAW4MJmExfT3gnOqSNaH5JiIofA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Menggunakan atap dari daun kelapa atau welit akan memberikan sensasi seolah kita sedang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Ruang Tamu Menyatu Dengan Ruang Keluarga Monica S Ideas In 2020 Home Living Room Home Decor Home And Living" src="https://i.pinimg.com/originals/a8/85/32/a885323ecd2248ab1f47d5c89f7d738a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GolHkHmbuNxf6cKklPLm1iXU0-iNAGRAF6VaDijsqtUjfQj1kWw8bLjH6FiHsTjzDh0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pada inspirasi berikut ini antara ruang keluarga dengan dapur dipisahkan dengan pintu geser yang fleksibel bisa dibuka atau ditutup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Model Ruang Tamu Terbuka Minimalis Modern Desainrumahnya Com Minimalis Modern Ruang Tamu" src="https://i.pinimg.com/736x/30/36/b0/3036b0b7e4e921eae5156f2f95f78dd7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvxOnXm08l-eHGQ5Ge1149tzoWirMgn7qK4Ndaca-DVt1elWFBUB6KMFXmy4nKOdt7Xs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gaya minimalis memang cocok banget jika diterapkan pada ruang tamu sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Dapur Terbuka Bikin Masak Kian Asyik Desain Dapur Luar Ruangan Dapur Luar Ruangan Luar Ruangan" src="https://i.pinimg.com/736x/58/dc/8e/58dc8e97f350daa6c282efa23e5b7734.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnI1QSwrTcgoZfIFFrJmVTZ2GadBlYhIYRsc1pboQzhqmavOobNvmQoaRdf58D4y9atG4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang tamu biasanya terletak di bagian depan rumah tidak lain untuk menyambut tamu yang berkunjung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Lesehan Ala Jepang Desain Interior Interior Ruang Tamu Rumah" src="https://i.pinimg.com/originals/a0/7b/9b/a07b9b481c026becbc631bdc4883266a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVtv190YOIHR2Wa4wbO96_DQYg1TM15PhhA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kondisikan Lahan Dengan Furniture Yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Interior Rumah Mungil Desain Interior Desain Rumah" src="https://i.pinimg.com/originals/a7/54/0f/a7540f457b05b1b6545c683c80b13ed5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFV36PKJUF6ksrr7fnIcy3_IT6JYr-ccYkTzGJ2HQcmjIFvJHp0xqCIhrVzTzetHem_w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ruang tamu ini dapat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Dapur Terbuka Di Halaman Belakang Rumah Dapur Terbuka Dekorasi Rumah" src="https://i.pinimg.com/originals/6f/6c/cd/6f6ccd05c7041c20629946be44cc6584.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiN5jbMmmOZIdpW0xzRLTFM3ouqjaKViADkg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rekomendasi desain ruang tamu terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="75 Desain Ruang Tamu Sederhana Minimalis Modern Ruang Tamu Memang Membutuhkan Penataan Lanjutan Setelah Ruangan Nya Ruang Tamu Rumah Desain Interior Interior" src="https://i.pinimg.com/originals/32/03/1c/32031ce290a75394c18d888b9ebda758.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPBDIAuAENfTkJMs5SICESyxbKgkJKNNPMA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sofa atau kursi yang kita gunakan di ruang tamu memiliki pengaruh besar pada kenyamanan ruang tamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3 528 Likes 78 Comments Inspirasi Desain Rumah Pp Inspirasidesainrumah On Instagram Area Belakang Tempat Dapur Da Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/2d/9e/fd/2d9efdb021c8d1c2fd3845206926e744.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYskD-jehvQ9odpx6Q05NltvZjdQLImFpCMWP00kyf0PHI5EYKiPEqo3DkZ2ZcOAYLUxo';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Sentuhan vintage untuk ruang tamu sederhana.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-ukuran-6x15.html"><i>&larr; desain rumah ukuran 6x15</i></a>
+                                                                    
+                                        <a href="/desain-rumah-walet-pdf.html"><i>desain rumah walet pdf &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

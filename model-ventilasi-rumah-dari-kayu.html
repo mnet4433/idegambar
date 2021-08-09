@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Ventilasi Rumah Dari Kayu
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Ventilasi Rumah Dari Kayu",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/ef/1e/3e/ef1e3e989167ebec0a60300c3f51434b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+ventilasi+rumah+dari+kayu",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Ventilasi Rumah Dari Kayu
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Ventilasi Rumah Dari Kayu</strong>. Loster kayu merupakan jenis loster yang terbuat dari bahan dasar kayu. Ventilasi pembuangan hanya berfungsi satu arah yakni untuk menyedot udara dari dalam agar dikeluarkan dari ruangan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/6d/df/38/6ddf38da10d74fdd27f1e07e65fd68cd.jpg" alt="Desain Ruang Tamu Kontrakan Desain Ruang Tamu Desain Desain Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMVQbKfiMYROHt0xyw2eXlapOQ_O5Cru2U13DOif8dbFWOCY28AW3rIK8v6ujjEjC4lw';">
+        <figcaption>Desain Ruang Tamu Kontrakan Desain Ruang Tamu Desain Desain Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Apr 7 2019 poin pembahasan pandangan baru 33 model ventilasi tempat tinggal dari kayu adalah. Sekarang ini model ventilasi jendela sudah banyak modelnya. Dengan semua hal ini kami sebagai produsen Loster Kayu juga tidak mau ketinggalan.
+    </p>
+    <h3>Model Ventilasi Jendela.</h3>
+    <p>Berikut ini ada beberapa model ventilasi rumah kayu yang dapat Anda pilih. Di sini kamu bisa memilih variasi bentuk dan motif loster untuk disesuaikan menurut konsep hunian termasuk memilih material loster yang biasanya terbuat dari kayu semen hingga keramik. Ventilasi rumah pertama adalah loster. Kalau jenis ventilasi rumah sebelumnya dapat bekerja secara otomatis dengan memanfaatkan pergerakan udara tipe mekanik justru menggunakan bantuan listrik.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membangun Model Ventilasi Angin Yang Sehat Di Rumah Rumah Dekorasi Rumah Modern" src="https://i.pinimg.com/originals/22/96/37/229637d67eb21775df437a8d5fdc9cf0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoYXWJNAC_tEsBiPd-jI-KqO2rwWXYTKPg6g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain memiliki ragam model dan desain yang menarik material loster juga bervariasi mulai dari semen kayu beton dan keramik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Krawangan Masjid 081380752006 Arsitektur Masjid Interior Kamar Tidur Modern Arsitektur Islami" src="https://i.pinimg.com/originals/d2/49/96/d24996baefa8d64a459c28feafead8ad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDE1VIYh-21_byXKhhURzbgjjY9Iysig7_i4iaPYB9_xhyUdS9WJhBa9yC9iB1ZbUkbQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ventilasi Kamar Mandi dengan Exhaust.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kini Hadir Telp Wa 0813 3970 7117 Harga Profil Kusen Aluminium Alexindo Sukoharjo Pintu Kayu Vari Pintu Kaca Pintu Kayu Kusen Pintu" src="https://i.pinimg.com/originals/26/de/29/26de2971e090f17dba7c4d35daa5304b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlt35g-AMOl7nHa4kFV4tAMIr2CzDsQlVBwg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Model Ventilasi Rumah Minimalis Modern merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idamanDengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1280x960 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=model+angin+angin+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=model+angin+angin+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Loster memiliki banyak desain yang sangat unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membangun Model Ventilasi Angin Yang Sehat Di Rumah Modern Ruang Bawah Tangga Rumah" src="https://i.pinimg.com/originals/c7/58/60/c75860552f778e373c64fd94e62302ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTZI7C1T-zcVxOm-Ood0YJiVZvoZ0mVgBPuVmEKuumBaJRy79KgSq-yrJGtz7F1zbUiCI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain memiliki ragam model dan desain yang menarik material loster juga bervariasi mulai dari semen kayu beton dan keramik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Masjid Menggunakan Roster Loster Kerawangan Batu Angin Angin Angin Jalusi Rumah Keramik Arsitektur" src="https://i.pinimg.com/600x315/ce/85/e9/ce85e91251b6a431152b38afa0a3c74f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy9BiwE9RmBOJs1AaNyDlWYwl2gx8lQAk76w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model jendela udara rumah minimalis contoh lubang angin rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kini Hadir Telp Wa 0813 3970 7117 Harga Profil Kusen Aluminium Alexindo Sukoharjo Pintu Kayu Vari Pintu Kaca Pintu Kayu Kusen Pintu" src="https://i.pinimg.com/originals/79/82/3a/79823a68ec7a98cd26aa0afb75a5ed0c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGZMi317a1J8Upt2uKzz_XNfFIf-nYdfQNw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hal ini membuat material ini bisa dimanfaatkan untuk membuat desain ventilasi udara yang unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Minimalis Di Bogor Nirwana Residence Desain Desain Balkon Interior" src="https://i.pinimg.com/originals/83/a9/19/83a919c45893f68910e6d9ccbdbe59a0.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWudZuPbg1eWWGPLyC3iSl7MTTgTAQwXQ8LA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Loster memiliki banyak desain yang sangat unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jendela Tradisional Ukiran Jepara Kreasi Furniture Jepara Jendela Rumah Jendela Desain Rumah Mungil" src="https://i.pinimg.com/474x/87/18/78/8718788c4209ae876b7e03c9000ac9e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kjHbux08z5OFcSsP7w54KXIYXGB8pVpAgU6kacIs1mv3DsJj7HFkQEyry8WDP3P4DqU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan bentuk dan motifnya yang unik ventilasi model ini bisa membuat rumah anda sehat dan indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="29 Ide Dekorasi Rumah Minimalis Terbaru 2017 Dekor Rumah Ide Dekorasi Rumah Rumah Minimalis Dekorasi Rumah" src="https://i.pinimg.com/originals/19/99/54/1999546e33be7a78a480b82643630d18.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbDriO7msuLkG0QxJYxSpIDuQbVbpTU_i_1g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ventilasi udara dari bambu ini cocok untuk menghadirkan nuansa natural dan etnik pada rumah pedesaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tumblr Wooden Toy Car Wooden Toys Toy Car" src="https://i.pinimg.com/originals/68/51/d4/6851d45ea57856d7b881d530032e6e85.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3LFI9cgigyf5IRiA5TsfltBH_uHERJeMT7g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain itu loster kayu ini juga sering digunakan sebagai sala satu ornamen penghiasan bangunan rumah masjid kamar dan lain sebaginya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ventilasi Rumah Jendela Kayu Jendela Desain Pintu Rumah" src="https://i.pinimg.com/564x/22/1c/a5/221ca57b9623f9e3e49a2df6a36217c0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfNa-vVRkhsvAvsC962FG6e8_5rZnzPF3PopMb5KvxfETVdl36gTKDj5O2v8f8-3z4vwA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beli Ventilasi Kayu Online berkualitas dengan harga murah terbaru 2021 di Tokopedia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Ventilasi Rumah Yang Baik Dan Sehat Kabinet Dapur Rumah Dapur" src="https://i.pinimg.com/564x/19/36/16/193616d77f9f6da2de2baf013745d959.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvT-jxHLo0PgSbvCHBGor7eXPAeZQfDT4t__rLz9pb7Keo9zq207Ypwg15aixzZw5YqFs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ventilasi pembuangan hanya berfungsi satu arah yakni untuk menyedot udara dari dalam agar dikeluarkan dari ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berikan Ruang Tamu Anda Gaya Baru Dengan Bufet Tv Mewah Kayu Jati Terbaru Ini Ini Fitur Gaya Tradisional Yang Diperbarui Dengan Kolom Kayu Jati Kemewahan Kayu" src="https://i.pinimg.com/originals/95/55/1d/95551dd938e4b0070a3bfe8253e71987.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnGH149J7e-9sBlyWnP1Dyfl07lwHKSmkRxg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Karena kesan alamiahnya tersebut sehingga model ventilasi rumah kayu biasanya berbentuk tinggi dan lebar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Promo Telp Wa 0813 3970 7117 Jasa Bending Kusen Aluminium Sukoharjo Pintu Kaca Simple Sukoharjo Jendela Pintu Kaca Kusen Pintu" src="https://i.pinimg.com/originals/af/c0/0a/afc00a5b420694176e92df09a1b371c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yvgwu9K2g0-k7BEmK4iOFWB9k_5ae7LZ5g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cocok untuk dekor luar dan dalam rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Modern 3 Lantai Desain Rumah Mewah Dengan Pertimbangan Maksimal Ventilasi Yang Baik Di Setiap Ruang In Rumah Minimalis Rumah Rumah Mewah" src="https://i.pinimg.com/originals/31/79/f1/3179f1bc8597caa0c973b397c622b06b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ144waCR7iXG6UMg12-oP9difvNZ1B8pXRmA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hal ini membuat material ini bisa dimanfaatkan untuk membuat desain ventilasi udara yang unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tempat Tidur Warna Putih Warna Cat Kamar Hitam Putih Kamar Tidur Kecil Hitam Putih Warna Cat Kamar Tidur Hi Kamar Putih Kamar Tidur Kecil Warna Cat Kamar Tidur" src="https://i.pinimg.com/originals/5b/48/c5/5b48c5e926882c3a95cee2ca2bb6c1ca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8CrLpbcmFkJB0TxMPHK5d0O1yi5PGOmitQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya ventilasi ini digunakan pada ruangan tertutup seperti kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0812 9219 2710 Call Wa Agen Pintu Rumah Hitam Putih Harga Pintu Rumah Orang Rumah Hitam Rumah Desain" src="https://i.pinimg.com/originals/8f/1c/0a/8f1c0a90d6787c413f29f5e4abcbf075.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQltiOB9heDxA4438H_zJVmJlk3kbxyfQuV46gvpVbpptVZuJYV56fUUcWFxveXuzbhIcE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan semua hal ini kami sebagai produsen Loster Kayu juga tidak mau ketinggalan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Minimalis Di Kinan City Residence Balkon Desain Balkon Minimalis" src="https://i.pinimg.com/originals/d9/79/9a/d9799a515e2e61851ddc24ef25aa8df7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuS6uxXJJKjHq8GIbs9WZoHdy5IWUSACh-g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Ventilasi Minimalis Modern 2012 yang saya buat untuk rumah minimalis modern impian saya berbentuk kotak seperti pada gambar dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ventilasi Rumah Minimalis Modern Desain Pintu Masuk Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/a0/0e/40/a00e40336296dfb4ab36b9dc104d87ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBOVMF1FJsBFPjhNiOF76XQ7jPCsmp1bXonIMd27IXN6IWVPik1ByvnA4QRlo-_ZReWk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jendela dengan ganggang berwarna abu-abu bisa membuat rumah anda semakin cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Pagar Woodplank" src="https://i.pinimg.com/originals/83/33/a3/8333a3773fa22176ca7d8422b0d65e60.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToL3Q8arWSU52TatZ6aqEp2xIqKSG2yjn1tw';" />
+        <small>Source: ro.pinterest.com</small>
+                    <p>Sekarang ini model ventilasi jendela sudah banyak modelnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumalis Desain Rumah Minimalis Desain Kamar Desain Rumah" src="https://i.pinimg.com/originals/05/4c/c8/054cc88d22d1e812532b5c3e9c355c9f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3EUaTzqFs7abohi0_65s6LhXxfBpKLHPJhg3HgeAw7dWaq2Amu6u1Ff8vSFOvw3cNpQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jendela dengan ganggang berwarna abu-abu bisa membuat rumah anda semakin cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Roster Beton Lubang 9 Minimalis" src="https://i.pinimg.com/564x/3a/10/79/3a107976fd450ba1ea95ae34cecf2db5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ek8V0-CjE4e70zR2kTbdaL-kU3WW42DjZQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada 2 jenis ventilasi pembuangan yaitu yang menggunakan baling.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kusen Pintu Alumunium Modern Sukoharjo Telp Wa 0813 3970 7117 Jendela Kusen Pintu Pintu Kaca" src="https://i.pinimg.com/originals/3c/29/32/3c29320f86ddd4b698ced1736080ad6f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTd3eXBIkMg4oSTkxNVq8LPog8nJ57MH_UXg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Ventilasi Minimalis Modern 2012 diatas dibuat dengan bahan kayu mahoni dan sudah diawetkan menggunakan obat atau peptisida.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Kontrakan Desain Ruang Tamu Desain Desain Rumah" src="https://i.pinimg.com/originals/6d/df/38/6ddf38da10d74fdd27f1e07e65fd68cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMVQbKfiMYROHt0xyw2eXlapOQ_O5Cru2U13DOif8dbFWOCY28AW3rIK8v6ujjEjC4lw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini ada beberapa model ventilasi rumah kayu yang dapat Anda pilih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Angin Angin Rumah Minimalis Minimalis Rumah Minimalis Bunga" src="https://i.pinimg.com/564x/6f/6d/47/6f6d470889236694b2eeb87d61d790e5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2F4HKJmBAaPEy8mh68SXJL_LRw8sNzTIzwbUVphiTsiUzs5qW8_zny4DOkNwQhCG-k8k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu loster kayu ini juga sering digunakan sebagai sala satu ornamen penghiasan bangunan rumah masjid kamar dan lain sebaginya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pintu Masjid Nabawi Tanpa Ukiran Kayu Jati Tpk Logam Ukiran Kayu Pintu" src="https://i.pinimg.com/474x/20/5a/5a/205a5aa8741f6961d34a968fa12c5159.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVVfpa-CSmYML0uIKT3YWUlOpaLJlfURfwJdpqAUfQ9UIFfP1T_WWimkJq0hXU4yFadk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jendela dengan ganggang berwarna abu-abu bisa membuat rumah anda semakin cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jati Mulya Indah Grub Company Rumah Kayu Rumah Interior" src="https://i.pinimg.com/474x/77/fc/6e/77fc6e40636bc4fb2fc24c28c1b4ff88.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6Zi0naSTtTecU3k9fxQ65DvoZxs30KL17MIY43odltzMjTjy4qlQ_x6JVOjMBEhq6nU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beli Ventilasi Kayu Online berkualitas dengan harga murah terbaru 2021 di Tokopedia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membangun Model Ventilasi Angin Yang Sehat Di Rumah Rumah Minimalis Rumah Home Fashion" src="https://i.pinimg.com/originals/6f/9d/28/6f9d282cce858c7dec1da87cf7e04894.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVZTQGWIcnk80shhnS1cfLjUyuR8NePmldY_FEHwcjpmRGb4rm8gBdXTWEPncb8CRZuw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jenis ventilasi unik yang satu ini bernama Loster.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Pintu Double Rumah Kayu Jati Kaca Patri Tralis Pintu Double Rumah Kayu Jati Pintu Utama Rumah Kayu Jati Pintu Kuputarung K Rumah Kayu Pintu Kayu Jati" src="https://i.pinimg.com/736x/7a/80/ad/7a80adcd781612c98ba088bf6503a9b3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgiZXbbOOYBxyETJkM9fdGujPN5ooGhxbb8g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagaimana tidak teras kayu dapat tampil dari varian model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Exclusive Telp Wa 0813 3970 7117 Kusen Aluminium Review Sukoharjo Harga Partisi Kaca Sukoharjo Kusen Jendela Pintu Kaca Pintu" src="https://i.pinimg.com/originals/2f/6d/7a/2f6d7a43ddb3e093fcc534d6248b666f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Ee2QQxoEt6QTcaW6czeUc4JY6tlDAVzJXQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>3131106224421548449792055 jual loster kayu jati lubang angin ikat isi loster angin2 rumah minimalis bahan kayu jati 1025cm 1330 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=ventilasi+atas+pintu&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ventilasi+atas+pintu&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Loster kayu merupakan jenis loster yang terbuat dari bahan dasar kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Bit Ly 2ccasrv Pagar Motif Kayu Unik Lucu Model Klasik Shabby Chic Di Cilebut Residence Pagar Motif Kayu Unik Rumah Minimalis Klasik Ide Pagar Murah" src="https://i.pinimg.com/originals/b1/46/01/b14601eb4cd01130610db9d11a8a0cb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl6xKJt-fQw9G7E0G6lC9KGc8Y2XGSBxf6ToHq8odaLgIQ5Nomh9htSemybi6uo8_SbcE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ventilasi ini sangat unik luar biasa apalagi materialnya sudah semakin bervariasi ada yang terbuat dari kayu keramik semen dan sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Model Loster Roster Beton Yang Harus Dilihat Dinding Hiasan Dekorasi Rumah" src="https://i.pinimg.com/originals/95/33/70/9533707d31789549776759b7117fca57.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQred_iJe5EJxL3ZvnmhBxNMkzAyQoRsxUGjbWLtGuU-X6MwR6TbUpTOgeLIlaGy_xHWMg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beli Ventilasi Kayu Online berkualitas dengan harga murah terbaru 2021 di Tokopedia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Daftar Harga Kusen Kayu Jendela Dan Pintu Jati Bojonegoro Nangka Mahoni Bengkirai Kamper Desain Pintu Masuk Desain Pintu Utama Kayu Desain Jendela" src="https://i.pinimg.com/474x/9e/4b/c4/9e4bc4231dbc56b454c4c4ffbd04ed65.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo_5rnxtYKIT1wQJjo16vIs4mwU2ahuY6wxQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>3131106224421548449792055 jual loster kayu jati lubang angin ikat isi loster angin2 rumah minimalis bahan kayu jati 1025cm 1330 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fentilasi Minimalis Tutorial Cara Membuat Angin Angin Roster Dengan Cepat Cetakan Viber Youtube Minimalis Cetakan Rumah" src="https://i.pinimg.com/564x/93/78/e1/9378e14f6e87a7b463ede2f601ea4f32.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyf0l_Jved-Bg0SRhmRmkBmA0RhIfXSQOlbQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini ada beberapa model ventilasi rumah kayu yang dapat Anda pilih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 3 Lantai Plus Mezanin Di Atas Lantai 3 Fungsi Ruang Servis Dilantai 1 Ruang Privat Di Lantai 1 2 Berikut Desain Rumah Desain Rumah Modern Rumah Modern" src="https://i.pinimg.com/originals/22/8d/4b/228d4bb6eaf2d24b48ff553f4fe5034c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUI-OT0dNgIHQzo18h9vuk_i76XB-lN6Oe3A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harga yang ditawarkan untuk produk jendela kayu ini sekitar Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teralis Jendela Minimalis Besi Galvanis Nako Di Water View Rancamaya Minimalis Jendela Kanopi" src="https://i.pinimg.com/736x/3b/40/c1/3b40c1375480b8f8f5dfb3e7c8b73622.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHfsDnceLK4xQTXUGdGd9G9Jw3tWddScIXew';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada 2 jenis ventilasi pembuangan yaitu yang menggunakan baling.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="21 Gambar Ventilasi Rumah Minimalis Jendela Rumah Rumah Minimalis Jendela" src="https://i.pinimg.com/originals/79/6d/4d/796d4dbaee09eebebcff58ba3183b408.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJLhHRKq-BgCcIHhoNXzfWqnqg2jjfOt8JZSwfoOFpx86T4-4rLAlfwB3uyor_VkGdQLQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jenis ventilasi unik yang satu ini bernama Loster.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Roster Terakota Roster Bata Roster Genteng Minimalis Minimalis Desain Interior Dekorasi Dinding" src="https://i.pinimg.com/originals/c5/a8/27/c5a82741d5ef57dc9049b81b5ea10a0e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6B2ukv0sl48AjCfR0RdviqSF18KiBGIas_MKuPvRg6G84ihN0nqumEceMp8KcVkYk1Oo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di sini kamu bisa memilih variasi bentuk dan motif loster untuk disesuaikan menurut konsep hunian termasuk memilih material loster yang biasanya terbuat dari kayu semen hingga keramik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Warna Cat Rumah Minimalis Teras Depan Terbaik Berikut Rekomendasi Warna Cat Rumah Minimalis Untuk Teras Rumah Minimalis Dekorasi Rumah Pedesaan Rumah" src="https://i.pinimg.com/originals/eb/3c/75/eb3c755a291584cd997a41ed9b64e29b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zK_1qajtvNromPXsGzNNBdMwRGStfQCyiQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Apr 7 2019 poin pembahasan pandangan baru 33 model ventilasi tempat tinggal dari kayu adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Jendela Kamar Minimalis Foto Gambar Wallpaper Jendela Desain Jendela Jendela Rumah" src="https://i.pinimg.com/originals/d4/bd/ab/d4bdabed92ebff3c9268fe39f8b16f78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_YjgN3RVRpyHvmIfpaLbV_fMoqMOHTKQSyL0VEtiabo0HoKeXvFBNx9Msh7bnPNYFMvM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Terbuat dari kayu meranti yang memiliki Warna yang bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Balkon" src="https://i.pinimg.com/originals/fd/7e/03/fd7e03bd567dfe882cbe905948abac35.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGA9hOxSMRYG4Qj6kC37scCssqaqfPoqMOJw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jendela almunium lebih murah dari bahan kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0812 3388 8861 Fortress Ventilasi Pintu Rumah Bahan Bangunan Pintu Kayu Kayu Alami" src="https://i.pinimg.com/originals/ea/95/30/ea9530ccd5ac064cabaa7a074f43eccf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeEh6jxUuocMCoY5DqIUfqXuJKPnzxaIZD51QaGuqmctMLvsS7s30hiHtxyNuk8yAQZQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Ventilasi Minimalis Modern 2012 diatas dibuat dengan bahan kayu mahoni dan sudah diawetkan menggunakan obat atau peptisida.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Roster Lubang 3 Merah Minimalis Penjualan" src="https://i.pinimg.com/736x/69/80/4d/69804d4ac0cd0309737c83ebda4f8102.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG4anRKUfvDFFO9oZvCXk3dgnBTamopIEmtw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain itu loster kayu ini juga sering digunakan sebagai sala satu ornamen penghiasan bangunan rumah masjid kamar dan lain sebaginya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Balkon Lantai Atas Di Depok Balkon Lantai Pondok" src="https://i.pinimg.com/originals/23/55/0e/23550e81944e0172d8b5aeff3ba9aae8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HrmOJ6VigK08c7GY-mg_FHAH9Gd5Oj0rQg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pemilihan model teras kayu tentunya menjadi sebuah keunikan dan juga keindahan tersendiri bagi pemiliknya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Roster Beton 4 Lubang Rumah Dinding Bata Bangunan" src="https://i.pinimg.com/originals/f1/5e/f9/f15ef961457866865f89d1c832c9cce7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkcbwvCh_c4JKH7XJHAHMEACJvWZIuoOnolg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ventilasi udara dari bambu ini cocok untuk menghadirkan nuansa natural dan etnik pada rumah pedesaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jendela Gebyok Dekorasi Interior Ukiran Jendela" src="https://i.pinimg.com/originals/ef/1e/3e/ef1e3e989167ebec0a60300c3f51434b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ68T2zINUNiOkHcLF1ZVerXW35tACiPgAvbW_bTAcKcOwzN2Go6tEpv3BlbIb_bXYZh_E';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beli Ventilasi Kayu Online berkualitas dengan harga murah terbaru 2021 di Tokopedia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Loster Murah 087779398498 Cv Putra Usaha" src="https://i.pinimg.com/736x/d0/58/4a/d0584ab7ae584bd832be5585042fb01b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfWpjq5Q4v9UykDLUU42Gx5mMD70LgaTu6w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya ventilasi ini digunakan pada ruangan tertutup seperti kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tembok Ventilasi Udara Di Rawamangun Jakarta Minimalis Kanopi Pintu" src="https://i.pinimg.com/736x/e4/2b/00/e42b00a98cd21c97cba8ce68943bf055.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP81x0kGr5OGQFi6drc77kTfrRin5JMo_-Cw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ventilasi Rumah Mekanik 5.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-3-kamar-tidur.html"><i>&larr; desain rumah 3 kamar tidur</i></a>
+                                                                    
+                                        <a href="/desain-rumah-120m2-dengan-kolam-renang.html"><i>desain rumah 120m2 dengan kolam renang &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

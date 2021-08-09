@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Tingkat Belakang Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Tingkat Belakang Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/ab/03/6e/ab036e5701a4bb4f31d310d37d99a7bc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+tingkat+belakang+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Tingkat Belakang Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Tingkat Belakang Sederhana</strong>. Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru. Sementara di perkotaan mayoritas mengambil tema rumah minimalis dengan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="/search?q=desain+rumah+minimalis+2+lantai+6x12&amp;tbm=isch" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsi7ly6hyhjbi1o 6ka42bn510ilwsbmtyedf9mixg Usqp Cau" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis+2+lantai+6x12&amp;tbm=isch';">
+        <figcaption>Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsi7ly6hyhjbi1o 6ka42bn510ilwsbmtyedf9mixg Usqp Cau from encrypted-tbn0.gstatic.com</figcaption>
+    </figure>
+        <p>
+        50 Rumah Tingkat Minimalis Belakang Gif. Desain rumah tingkat sederhana tapi elegan. Jul 24 2019 45 berita baru denah rumah sederhana panjang ke belakang berikut contoh desain denah rumah minimalis type 36 sumber jsx55.
+    </p>
+    <h3>Rumah dan perumahan gambar rumah tingkat belakang.</h3>
+    <p>Rumah tingkat sederhana juga memiliki manfaat tersendiri yaitu Anda dapat memetakan tipe area berdasarkan tingkatan rumah Anda. Selamat mendesain rumah impian anda. Semakin panjang lahan maka anda akan memiliki keleluasaan untuk mengembangkan rumah ke arah belakang. Sehingga pada bagian bawah dibuatlah ruangan seperti kamar tamu ruang makan serta dapur sebagai keperluan jika ada tamu.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas" src="https://i.pinimg.com/564x/3b/68/29/3b6829e7d0559f6e279a0cf17bf2d711.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXrTOgnu1I7VLhH2v2APptKjez52ehefKtWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>SNI 17262012 tentang Tata cara perencanaan ketahanan gempa untuk struktur bangunan gedung dan non gedung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Eksterior Rumah Minimalis 2 Lantai Desain Rumah 75 Model Rumah Minimalis 2 Lantai Sederhana Modern Tip Home Fashion Desain Eksterior Rumah Minimalis" src="https://i.pinimg.com/originals/ab/03/6e/ab036e5701a4bb4f31d310d37d99a7bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrxNPQ8_BDZXp4CF6BRAPKzVCx01gK0QApNtr_SWmUo8LA0eVTKtMwgVZaam2uTDpu9E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah tipe 36 dapat dibangun di atas tanah seluas 60 m2 atau 72 m2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Minimalis" src="https://i.pinimg.com/736x/0d/fa/d1/0dfad1dabe7c386648adbaeb55ca6429.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbPHjxIsxR1TyO8EO74sfSSpUklV5Jbttzw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konstruksi rumah sederhana harus memenuhi persyaratan sebagai berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Decor That I Love" src="https://i.pinimg.com/originals/6f/71/8c/6f718c425698e6cf305ed2a072d6ddd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3vK7rCv3BCgZKjnCSu-gZLgVnRSfLXFpQw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat No.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Contoh Model Desain Tangga Rumah Minimalis Modern Sederhana Rumah Minimalis Desain Rumah Minimalis Desain Eksterior" src="https://i.pinimg.com/originals/87/b1/2b/87b12b3326ac700851889c556e0c959d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xM4jUKEU_4EqKSyUcoEO-jp9yetPSg8FdDAkXviD2GTnFsfU11tKUMKmcNyXNS7w8Fg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah dan perumahan gambar rumah tingkat belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrignusvn10suotuv7gyqvvdnmvyigz9zbiev5enpcsfvuxo1e9 Usqp Cau" src="/search?q=gambar+balkon+minimalis+modern&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=gambar+balkon+minimalis+modern&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>45 Bentuk dan Model Rumah Sederhana di Kampung Tapi Mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Pak Iwan Luas 300m2 Jasa Arsitek Jakarta Desain Rumah 2 Lantai Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/2b/40/0e/2b400eb6016b4808f4c9a853506a8ae6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMwX1iagPAGk_5xQI_OaBJOo3AqBmGmA4qtQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dan perumahan gambar rumah tingkat belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Den Rumah Minimalis Desain Rumah Bungalow Desain Rumah Minimalis" src="https://i.pinimg.com/originals/b5/0d/de/b50dde0db960cff5fa4426f92a8c3e1e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWjzFmwigIDtSqph-WlZvEmena92JjGbPsQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah tingkat belakang sederhana termasuk salah satu image dari pembahasan 45 desain rumah tingkat 2 3 lantai modern terbaru 2019.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Design Rumah Kecil Model Denah Desain Rumah Minimalis Idenahrumah Com Holiday And Duplex House Design 2 Storey House Design Modern Small House Design" src="https://i.pinimg.com/originals/a6/a0/c7/a6a0c7bfbcf78baf289af6ae8ea65985.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX5aFYLefE69X9iUIKkx9ov73AYkWmHPV6wbkBNRAinehsZbfdqIA6sp9UdJZmOyF-Big';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hunian rumah tingkat sederhana akan memiliki nilai jual yang tinggi dengan desain modern dan visualisasi yang menarik akan memberikan daya tarik baru untuk anda pecinta rumah minimalis apalagi bagi anda yang tinggal dikota besar dengan lahan yang semakin sempit terpinggirkan danterbatas nampaknya memiliki hunian rumah tingkat sederhana bisa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Indah" src="https://i.pinimg.com/564x/80/6a/c1/806ac15c1b14f91aecb50a4bf4f29aec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxzsN8o3mAQGTiFffiLBcBUg7YhjRvjFbErw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Misalkan saja lantai bawah dapat digunakan sebagai publik area.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Desain Rumah Minimalis 2 Lantai 6x12 Modern Terbaru 2019 Desain Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/736x/12/c6/c2/12c6c20c70250f24276cad6a4150e921.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTyWBg8TGwf_Smost4qDAuPNH9hFnn5e5ejZ9cgQZce0VH-EdxM7WWjruDzIZopzXXy2A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah rumah seperti itu tentu menjadi impian dan harapan anda dan keluarga untuk menghuninya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="14 Denah Rumah Minimalis 2 Lantai Modern Sederhana 2020 Dekor Rumah Rumah Minimalis Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/e2/f3/c5/e2f3c5aa28d873a0bf9b42fc115d4ee3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1L4kDwB4eSckb5S2FZw_rmBzckSaRI4MKXwuJEZ-Nyk-fS6cbgMcyG2jOBc1nM3AUDxQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1000x833 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 2 Lantai 7x15 Dengan Kolam Renang Dan 4 Kamar Small House With Pool Youtube Desain Rumah Minimalis Kolam Renang Rumah Minimalis" src="https://i.pinimg.com/564x/a4/40/15/a44015ed984e0cd6b52fa979ef7c2456.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ZwO3qgUfSqYNJCWUJrnDFdsGz7hwjfyyADYwTnYt5KfB9xwS6cCbz7ztfSj4Fcutwsw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beragam konsep bisa kamu terapkan untuk membuat rumah minimalis dengan desain modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Lantai Posisi Tanah Miring Desain Rumah Minimalis Di Lahan Miring Dengan Tampilan Berke Desain Rumah Minimalis Rumah Minimalis Rumah" src="https://i.pinimg.com/600x315/a9/23/26/a92326719c0ef701249bd50d7bf5c6e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPBsl7Fra5Bc1W0n22MFCT_yyoSSq96y8GC3CXqyLVVdcQCjeOwrPRMuQg3yhBTFYtMKE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Misalkan saja lantai bawah dapat digunakan sebagai publik area.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsi7ly6hyhjbi1o 6ka42bn510ilwsbmtyedf9mixg Usqp Cau" src="/search?q=desain+rumah+minimalis+2+lantai+6x12&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+minimalis+2+lantai+6x12&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Punya tanah melebar ke samping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Sederhana Type 45 Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/736x/55/0b/29/550b297b2c341cdb3f96e420b8027d03.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU2qXwmfZIwkiZkcThBSNnYH0L8I8cuG4frQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Memiliki rumah di kampung jelas berbeda dengan rumah di daerah kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Ukuran 9x6 2 Kamar Tidur 1 Mushola Dan Hal Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/cb/91/f4/cb91f4c339daa59054eff1de3ed4af90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlmGruHIZH38etYgShjq8-UgvJk_2Jvp6vYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga pada bagian bawah dibuatlah ruangan seperti kamar tamu ruang makan serta dapur sebagai keperluan jika ada tamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Unduh 100 Desain Rumah Kecil Lantai 2 Dibelakang Terbaru Gratis Rumah Minimalis Desain Rumah Minimalis Home Fashion" src="https://i.pinimg.com/originals/1c/a5/d5/1ca5d55021370d614fbc0140dd82abad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ax8s8poKbk_3Ql_bgauMZizzc7e35Md3Pw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>58 Gambar Design Tempat Tinggal Terbaik Pada 2020 Tempat Tinggal Denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Teras Dan Balkon Rumah Bertingkat Desain Rumah 2 Lantai Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/ed/23/92/ed239287a78002fad8a13bf68a23c0cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWktpamwE7oXMghJN4YW3xvxIQwwZbsMmcjsoSgf57Yp_C8mdkcFSNKqWIg3ANR0aBKmk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut ini ada 30 inspirasi desain rumah 4x6 meter minimalis dan sederhana yang bisa dijadikan inspirasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tinggal Minimalis 2 Lantai Atap Full Dak Beton Info Rumah Minimalis 2 Lantai Atap Beton Expo Desain Desain Rumah Rumah Minimalis Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/61/ee/b2/61eeb22948f4856b4fd65571e93f1fdd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRCs07GJDqOP0ViUUd-CGGWk82lHCFPHa-B1oQPSxqrZ6JSqOJPqxeC-6VSPLNoYkf9gI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana tapi indah taman tengah house at kranggan karya akanoma yu sing sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Model Atap Rumah Minimalis Yang Cantik Nan Menawan Desain Rumah Eksterior Desain Villa Modern Desain Rumah Modern" src="https://i.pinimg.com/originals/61/91/3a/61913a20a8c9e0b6b1555c6c56515369.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA9a4o1zldBneW-4F1zFiFzKGQWRgxWo1XxK8ReilDwGoQQsUEoFHwD-h-Nq-6i6rJJuw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>More contoh tempat tinggal sederhana panjang ke belakang images.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana Ukuran 6x6 Tampak Depan Terbaik Desain Rumah Minimalis Ukuran 2 Kamar Deagam Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/12/6e/3d126ea34e66af8d4c8b06231c62b775.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs9ql4HIk1oOCANkW4joUNuyTcJZ19AV7142jRcOjoQZ0UukJC5VLX3GdeOoFLsZ66VDc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah tingkat belakang sederhana termasuk salah satu image dari pembahasan 45 desain rumah tingkat 2 3 lantai modern terbaru 2019.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Denga Rumah Minimalis Cat Rumah Eksterior Desain Rumah Minimalis" src="https://i.pinimg.com/600x315/23/57/b2/2357b276b537103566c87d62e3b9f87b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Pz6F2BHwlNWJdvTifnArJVnzR4fY9LQS2A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana tapi indah taman tengah house at kranggan karya akanoma yu sing sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bentuk Rumah Sederhana Tapi Elegan Desain Rumah Desa Rumah Pedesaan Desain Rumah" src="https://i.pinimg.com/originals/55/44/93/554493783c5ed37fface98ed875edf0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9HHIhWKouGbHIr3WxEtGlmMG4YAWn8TBNSA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah 4x6 Semakin mahalnya harga tanah dan sedikitnya lahan kosong konsep rumah minimalis kian digemari masyarakat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 1 Lantai Atap Miring Desain Rumah Minimalis Bentuk Atap Miring Rumah Minimalis Rumah Minimalis Desain 25 De Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/7b/b4/f5/7bb4f590837d11cb5e6a3854336880db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-S9nDxJy1HJXZzgcNPWi2HbrfUR5oH6iHC8SMnX_ixu4K839q2hAYkStsbbF4f33I5OY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Apalagi dengan semakin terbatasnya lahan tipe rumah tingkat makin diminati banyak orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai 8x12 Denah Rumah Arsitektur Rumah Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/a4/92/0c/a4920ce52bc05c1804c1575ec14cf5fb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhANhVAJerV0kRR78keShtCP6trG4PkUg4gw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Semakin panjang lahan maka anda akan memiliki keleluasaan untuk mengembangkan rumah ke arah belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Dibawah Jalan Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/e1/4b/96/e14b96a01c98089700d14e171c76026f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTyRofXE4n2Rc7iPsxzK1OsRTjDJO-N_ICO2bpQox2DziEDBWcyLqBNDOlMlGchaYkPA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dan perumahan gambar rumah tingkat belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="9 Model Desain Rumah Minimalis Sederhana Paling Dicari Desain Rumah Kontemporer Rumah Kontemporer Rumah Minimalis" src="https://i.pinimg.com/originals/b8/01/05/b801051a6f5aff36cd5de05446bcc184.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjbAaURr07mn1dN3iAZetpkhdWEyU-D5FLA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena rumah merupakan tempat yang digunakan untuk berlindung dari terik matahari dan terpaan air.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Denah Rumah Minimalis 2 Lantai Sederhana Dengan Gaya Modern Type 45 Desain Rumah 2 Lantai Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/af/15/2b/af152b3fe66b8d36a05962c80e28fc52.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsfSupSh56Cuhk3HfbmS2FHTFnrlCpSlFxEsgR0t4aRcCtxACElcC-aa7zkOCNIEp6h3Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana tapi indah taman tengah house at kranggan karya akanoma yu sing sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Desainrumahnya Com Arsitektur Arsitektur Modern Desain Rumah Minimalis" src="https://i.pinimg.com/originals/c5/ae/9c/c5ae9c2a0b29b1524d5a1ee993da1233.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFyotDifpG7Roak4l2ZA9tYBR9kysJ0ZshQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena rumah merupakan tempat yang digunakan untuk berlindung dari terik matahari dan terpaan air.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis 2 Lantai Sederhana Kecil Rumah Minimalis Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/90/00/40/900040d251598d2f84d661b99c82b946.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYmZGjqSJ8mg0PAg_IX-6E-vHPWX8HLH23qw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah tipe 36 dapat dibangun di atas tanah seluas 60 m2 atau 72 m2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Bentuk Atap Yang Paling Sederhana Berbentuk Horizontal Tanpa Pertemuan Sisi Terdiri Dari 2 Atap Pelana Yan Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/60/57/39/6057390a8fba878965819aae07c8ffea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgmB3SITtOxoEGbST7UYV9me9hkLzH5EVKwg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat No.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Lantai Yang Ramah Untuk Anak Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/64/b3/e0/64b3e0bd39eb2f67f790bce0ec37a7e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqbaPW31IJgaaRqgElwi0Vu1HWmCFmayvvanM1S4V5OX5ISLeT15TAsCC97XWYI9Wc7UQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah minimalis tidak membutuhkan lahan yang terlalu luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 2 Lantai Tampak Belakang 200x150 Contoh Gambar Denah Rumah Sederhana 1 Lantai 4 Kamar Tidur Rumah Rumah Minimalis Desain Rumah 2 Lantai" src="https://i.pinimg.com/736x/8b/79/8c/8b798c1e1b5e1a15f96d8b5a60a3700e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThMejobtp9tA3UchLawG96PPQKnPLzUGlBEaaH0qa2miQaMagVWKnxDy2CMmV_uEnj0zU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Taman Belakang Rumah Minimalis 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Denah Rumah Minimalis 3 Kamar Tidur 1 Lantai 2021 Beserta Keterangannya Dekor Rumah Rumah Minimalis Rumah Denah Rumah" src="https://i.pinimg.com/originals/03/11/14/03111484bf460676f4c2ffe0fe40f2f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPGVsEiffLkwRaI7pprAs4sZO_6DPcok4TA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana tapi indah taman tengah house at kranggan karya akanoma yu sing sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 10x12 M Dengan Kolam Renang Youtube Home Fashion Rumah Desain Rumah" src="https://i.ytimg.com/vi/JmJIk70XoUA/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpNd9fG0uPW4C6sT3LMCQUywZttm8FpdWrcQd_eKmJltu0wXYH6LUnntoivUeeiudGXvI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat No.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="65 Desain Rumah Minimalis Modern 2 Lantai Di Hook Desain Model Rumah Hook 2 Lantai 15 X 13 M2 Berdiri Dia Rumah Minimalis Desain Rumah Minimalis Rumah Tropis" src="https://i.pinimg.com/originals/d7/37/b8/d737b87ac1bd35ff84594d9c976ace51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkKhx9_1a8bULXsiz5Ag-hCHBN-8H5d2wPA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya tipe rumah 36 m2 mempunyai 2 kamar tidur 1 ruang tamu yang menyatu dengan ruang keluarga dapur dan 1 kamar mandi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern House 13x10 4 K Tidur Desain Rumah Minimalis Lantai 1 Youtube Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/564x/28/ee/16/28ee161354d4d2e9da892a3a60709c50.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvAmC50VJl-ZL56_3BUjfGEKevBpJwJ3U4wA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Padahal dengan dekorasi dan desain yang tepat rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Inspirasi Desain Rumah Atap Miring 2 Lantai Desain Rumah Kecil Rumah Desain Rumah" src="https://i.pinimg.com/originals/10/15/c8/1015c857b0fb3fff71d256372bc8dea1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8nebSufsOsiLQcsjZygYCyf_d0SZwjjT5GQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>45 Bentuk dan Model Rumah Sederhana di Kampung Tapi Mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tingkat Belakang House Styles Home House" src="https://i.pinimg.com/originals/32/1c/a9/321ca9be60e949fe304c4b37506dd6c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBNSrpuY8v-i39ifgSNDfmNhqVekLGLFzsMUdulKyhEaPXaGpj6_NAVqVv-9PRniG0DFA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Banyak orang yang berpendapat jika rumah dengan 2 lantai lebih terlihat menarik dan gagah serta megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Remarkable Contemporary Interior Indoor Outdoor Ideas Modern House Plans House Exterior Modern Bungalow" src="https://i.pinimg.com/originals/b6/cd/82/b6cd82cbcdfe83b99a5e4a71f5b8e960.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-6ktEzeR2dBov95d_s5NvHR8WuZ-QV8fgZA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat No.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Mungil" src="https://i.pinimg.com/564x/9f/60/d9/9f60d9bf1aba3130c7b5faa9b0c65ffd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZqtYLycq-44vu9kxo5ksc3pul1eYAqvJARA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di pedesaan kebanyakan rumah dibangun dengan model sederhana dan fungsional memiliki ruangan-ruangan yang luas serta halaman depan dan belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 7x10 Habis 80 Jt Mantab Youtube Modern Bungalow House Modern House Floor Plans Exterior Door Styles" src="https://i.pinimg.com/564x/c4/52/82/c45282ef28bcc3df839cb8eb7a1b7699.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThEG-VZj7xnohFC1ogxKeLbpfouNSLCazanw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah tingkat sederhana tapi elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Minimalis Di Instagram Desain Rumah Minimalis Ukuran Tanah 10m X 20m Dengan Luas Bangunan 113 M Da Denah Rumah Pedesaan Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/fd/80/10/fd80108e8268b7868c370f9963a1d39b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0reqRMW5PBJSyLkWQyHdH3ClitElddVOAg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah tingkat sederhana tapi elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Model Rumah Terbaru" src="https://i.pinimg.com/originals/0f/be/41/0fbe41cdf2c89e924acc665991980936.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-E24sb0IpipCEsmGYXHcUZfac_7b9n-6F6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga pada bagian bawah dibuatlah ruangan seperti kamar tamu ruang makan serta dapur sebagai keperluan jika ada tamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Gambar Tampak Depan Rumah Minimalis 1 Lantai Sebuah Rumah Yang Nyaman Selalu Diidentikkan Dengan Rum Desain Rumah Bungalow Rumah Minimalis Membangun Rumah" src="https://i.pinimg.com/originals/e2/8b/b0/e28bb07b0103c820767dcc3b783c3f4d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3H7Rb78kKP1FHhkxvzFkCLom0_vKvk2FLIg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>SNI 28472013 tentang Persyaratan Beton Bertulang Untuk Bangunan Gedung 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Rumah Minimalis Modern Tampak Belakang Rumah Minimalis Desain Rumah Minimalis Rumah Tropis" src="https://i.pinimg.com/originals/f3/42/92/f34292b6c9ec14370159fddff1c695a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8n6Oa7TAjNWBefSRgOQvr9jYPYql6TL-4YowuZBfWNL2Toc2q6zYgDUuAmllU-Pml78';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana tapi indah taman tengah house at kranggan karya akanoma yu sing sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/736x/28/c1/4f/28c14f85d98548e0ebe41419b19c1ae3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGqtThpqOcSQWCRLm0j-gRkX_WcpSd94z8iw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1000x833 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6 X 7 M Satu Lantai Dgn 2 Kamar Youtube Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/90/1b/54/901b548a62e1c18801b9b9fe46300efa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh423ePlL6NOJkEZRSZ8s7F58ofYQu4uPVwAAOk2BuQbaq4I3AKqG1SY94M8IHhEJBtl4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Unduh 80 Desain Rumah 2 Lantai Dengan Taman Belakang Terbaru Gratis Desain Rumah 2 Lantai Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/46/6d/59/466d594cb2352c1324d37af6774b8f1e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpigCXQ2bktQ_MyoGjqhRk6aY637rNGvU1g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>58 Gambar Design Tempat Tinggal Terbaik Pada 2020 Tempat Tinggal Denah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-sederhana-dan-minimalis.html"><i>&larr; rumah sederhana dan minimalis</i></a>
+                                                                    
+                                        <a href="/rumah-sederhana-tapi-indah.html"><i>rumah sederhana tapi indah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Tangga Rumah Tingkat
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Tangga Rumah Tingkat",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/65/3c/dc/653cdc66f911e5f87e158363c19cd17b.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+tangga+rumah+tingkat",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Tangga Rumah Tingkat
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Tangga Rumah Tingkat</strong>. Betapa nikmatnya menghilangkan capek setelah seharian beraktifitas dengan menikmati suasana bersama keluarga. Lebar 80cm atau lebih untuk pengguna dominan 1 orang Desain Tangga Minimalis Yang Sesuai Dengan Ukuran Rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="/search?q=desain+tangga+minimalis+cantik&amp;tbm=isch" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct3ixvpxpqpgqa2nzvqj Mxgkwzp3zos6p0strfuyq0utwurqap Usqp Cau" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='/search?q=desain+tangga+minimalis+cantik&amp;tbm=isch';">
+        <figcaption>Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct3ixvpxpqpgqa2nzvqj Mxgkwzp3zos6p0strfuyq0utwurqap Usqp Cau from encrypted-tbn0.gstatic.com</figcaption>
+    </figure>
+        <p>
+        Luas tangga yang ideal untuk rumah minimalis tidak terlalu ramai adalah 80-120 cm. Keramik Tangga Rumah bertingkat tentunya tidak lepas dari adanya anak tangga yang menghubungkan antara lantai 1 dengan lantai 2. Perhitungan ini dapat digunakan dengan catatan mempertimbangkan dimensi rumah Anda.
+    </p>
+    <h3>Model teras rumah yang nyaman tentunya akan membuat tamu serta pemilik rumah juga merasa nyaman.</h3>
+    <p>Model Tangga Y Untuk Rumah Mewahh. Sebaiknya pilih lokasi yang tidak terlalu mencolok namun cukup strategis untuk di akses. Desain tangga kayu pada rumah tingkat diwilayah perkotaan menjadi favorit dan solusi kebanyakan orang karena lahan yang tersedia sangat terbatas hingga mereka membangun rumah hingga keatas untuk memenuhi kebutuhan dalam properti maupun rumah impian. Jika lahan bangunan rumah Anda termasuk tidak memungkinkan untuk diperluas maka salah satu cara untuk mengakalinya adalah mendesain tangga unik di dalam rumah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Proyek Kami Bayu Welding Rumah Rumah Minimalis Dekorasi Rumah" src="https://i.pinimg.com/736x/3a/a9/0e/3aa90ebdd5e3b2ae9183c259bdfd8f5b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMa53Cv7-UznwpS-lzvoNiRn7MSDw2jbjWpndFgy4IX4z15svWQVL5EvQaBBEnhAv1wAk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah dengan balok menonjol di lantai 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Tangga Minimalis Rumah Rumah Minimalis Dekorasi Rumah" src="https://i.pinimg.com/474x/96/2c/65/962c659749c7e51c6908174b6055830e--untuk-rumah-rumah-minimalis.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9mnvvzZS15JBB3sLxW5HPk5F2V5s1ZA97RKwknladGYoqihomVICRCp0rvy1FpizMPdA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga Model L Rumah Tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Review Lemari Bawah Tangga Hpl Di Pondok Kelapa Jakarta Timur Produksi Lemari Pakaian Dan Lemari Dapur Custom Untuk Seluruh Wilay Tangga Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/22/1d/f5/221df532410f8e63a17a14375462f0e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3CkAUTymvKAIY4gzr2EToQACKgZ0aIWftQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain fungsinya tangga juga bisa di bentuk sedemikian rupa dengan desain yang beragam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Balkon Minimalis Google Search Ide Pagar Tangga Desain Tangga Tangga" src="https://i.pinimg.com/originals/13/00/b3/1300b347acd0d694240e53dfd2a235c3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqE217SXtSlBxM_jvRtel49rzrdoCS7GYVoNNgjSWE-tbIh3YYSxrGw58_PtsN8TAgxo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Tangga Y Untuk Rumah Mewahh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Railing Tangga" src="https://i.pinimg.com/736x/7b/24/f3/7b24f38b4d6fb54d60efad56b0503d88.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxzxKvn9yhyg0fraLTqi0d0W44z68c-DvfDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model teras rumah yang nyaman tentunya akan membuat tamu serta pemilik rumah juga merasa nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Staircase Design Ideas Stairways Design Ideas Modern Staircase Design Staircase Design For Small Home Stairs Design Stairs Design Modern Staircase Decor" src="https://i.pinimg.com/originals/1b/c1/d8/1bc1d852308449f1b43d338051dc7818.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJeH33JvjS-TuT9QbFpc_boHOBNfoxyKcJHIcukOPrI-lVqE-sXo8RRU-9uJp-QWG0vw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sentuhan karya seni yang dipadupadakan dengan konsep rumah anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Tangga Rumah Minimalis Sederhana Dan Cantik Tips Memilih Model Tangga Rumah Minimalis Desain Tangga Rumah Minimalis Minimalis" src="https://i.pinimg.com/474x/b6/93/a4/b693a43602217806ee6d388a73c2a852.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi2_PMEhmTDrJtknKaLR6_Gppidnc2CyYect-lKUF15Of4HUPuD3xc4pKv0UWCzq9CFAM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Tangga Besi Untuk Rumah Tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Kecil Bawah Tangga Kamar Tidur Minimalis Kecil Ruang Keluarga Minimalis Kamar Tidur Minimalis" src="https://i.pinimg.com/originals/d3/64/ea/d364eab8cd79d4a4768a2b63326087fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPZDvfP2GbH445NDwjq2bA5Dg2spU919AoUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seiring perkembangan trend desain dan interior model tangga rumah juga kian menarik unik dan serba kreatif.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Contoh Model Desain Tangga Rumah Minimalis Modern Sederhana Rumah Minimalis Desain Rumah Minimalis Desain Eksterior" src="https://i.pinimg.com/originals/87/b1/2b/87b12b3326ac700851889c556e0c959d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xM4jUKEU_4EqKSyUcoEO-jp9yetPSg8FdDAkXviD2GTnFsfU11tKUMKmcNyXNS7w8Fg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Terkadang selalu saja ada ide yang unik dengan desain tangga kayu setiap rumah ada yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Rumah Minimalis Modern 2 Lantai Rumah Minimalis Rumah Penyimpanan Bawah Tangga" src="https://i.pinimg.com/originals/02/a2/ee/02a2ee26f0b2bff929634a6db4f924f2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRpKOKmEnA3Urk1hTDPpHutD-kYp01q5bKmyeedzg-xfToC3xB_hAWYYY6Ji7k4AyR4IE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model tangga yang sering dibuat dengan bahan besi ini adalah tangga melintar sehingga menampilkan Desain Tangga Minimalis yang unik dan irit tempat karena hanya membutuhkan space atau lahan setengah bagian dibandingkan model tangga belok arah atau lurus karena tidak membutuhkan tinggak kemiringan Contoh Model Tangga Rumah Tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Minimalis Di Kinan City Cibinong Jual Kanopi Tralis Tangga Minimalis Kanopi" src="https://i.pinimg.com/originals/2c/1f/15/2c1f154536a176549324b41f803fa0f8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Cp6XCDkn9bKXaaZF31SJaezhQSJg_hu5MQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Tingkat 2 dengan 4 kamar tidur LT.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Terbaru Dengan Keramik Cantik Rumah Minimalis Rumah Desain" src="https://i.pinimg.com/originals/67/92/22/679222606e97531f93bc78cdef2e920f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwn4Sqe1VhwcKqd-b81Mwl5ufgsiezjxGWRsx5sutIP7ZL7AAHSo1pxvOunoSPR-wWUhk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah dengan balok menonjol di lantai 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Tangga Minimalis Tangga 35 Desain Tangga Rumah Minimalis Tingkat Sederhana Terbaru Desain Rumah Kecil Rumah Rumah Minimalis" src="https://i.pinimg.com/736x/f7/5f/d2/f75fd23bb0f6b1e176c5e057dd45ea5d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF02n0nCdFMFFyLWglorgRIV7r8ChmovsjYbjKDSNMDWyihavG57nxoS6vd0lW-p9qa3E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk ukuran rumah yang melebihi lahan yang dimiliki rumah minimalis 2 lantai dapat anda jadikan solusi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Modern Minimalis Maret 2015 Rumah Rumah Minimalis Desain" src="https://i.pinimg.com/originals/e7/9f/79/e79f7982ee5334c43af7acf81775ce83.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPOlzJ6LMqJ0t48nKweeX5GFbst7FTINKF46N8CLT0GOwptR3PlZY6kd4RmE81ySrchOM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah yang paling banyak menggunakan model tangga seperti ini adalah rumah minimalis yang memiliki lantai tidak terlalu tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Kayu Rumah Tingkat Sala" src="https://i.pinimg.com/564x/f0/44/30/f044307352b82a55807ee9acca45472e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQewXVnwzgLPf4sKPhk8VMjX8F1PrOF2mnFZmBKJWfXGRVb3L0LAoImQqJpBeIeoOjyDiA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model tangga teras rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gallery Gambar Railing Tangga Besi Tempa Mewah Klasik Modern Pagar Besi Tempa Mewah Klasik Minimalis Modern Jakarta Modern Klasik Tangga" src="https://i.pinimg.com/originals/37/8f/47/378f473ce83f812d6f21e39d60b919e8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjH32bWBrQ8bVDpz652wbDGttKnet64zph0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ragam motif keramik tangga yang eye catching dengan kombinasi warna yang mewah elegan dan minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="28 Model Tangga Rumah Mewah Bertingkat 2017 Terbaru Dekor Melingkar Tangga Modern Rumah Mewah Arsitektur Interior" src="https://i.pinimg.com/originals/a2/c8/46/a2c84634c3991563950d44955e03c4dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OLFVl3daAS4s9dUkvk0cXGf4vG0pj1GKXA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep Terbaru 23 Gambar Model Tangga Rumah Tingkat Minimalis - Hunian trend terkini merupakan impian penghuni rumah yang tentunya rumah dengan konsep yang indah dan cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Putar Melingkar Rumah Minimalis Tangga Rumah" src="https://i.pinimg.com/170x/76/7e/10/767e10f7da764979d1b59a5516a94e2e--tangga-rumah-minimalis.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTgmNI9Pk2Bx7b1GVHoFSrwjBlegjlq7H_2g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seiring perkembangan trend desain dan interior model tangga rumah juga kian menarik unik dan serba kreatif.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Pembuatan Railing Tangga Balkon 085732141033 Jasa Pasang Pembuatan Canopy Pagar Tangga Kusen Minimalis Tangga Rumah Desain Rumah" src="https://i.pinimg.com/736x/87/e5/9c/87e59c93966331a144974653b4a41d3e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ07FNfJZPiK-2wvt4AGP4sDwiYF8AtdTGCw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ukuran ideal untuk membuat tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Besi Tempa Putih Tangga Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/82/de/5c/82de5c1cd5e6045e406d68c4898aa774.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhfQrLde3-C_dzjlSiUl01z1nrK2ftzQgOQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bentuk tangga rumah yang sedap memang dapat saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Pascal Dikenda Di Exterieur Maison Tangga Desain Eksterior Rumah Indah" src="https://i.pinimg.com/564x/4b/06/bd/4b06bd7d00326c945c7ca6b253fceaa6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-iSIe42o-A6r397z2F4yp7_fc_-wwl7U3zQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep Terbaru 23 Gambar Model Tangga Rumah Tingkat Minimalis - Hunian trend terkini merupakan impian penghuni rumah yang tentunya rumah dengan konsep yang indah dan cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=ukuran+tangga+rumah+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ukuran+tangga+rumah+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Bentuk tangga rumah yang sedap memang dapat saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Malang Interior Nganjuk Interior Blitar Interior Jombang Interior Tulunga Desain Rumah Eksterior Desain Rumah Bungalow Rumah Minimalis" src="https://i.pinimg.com/originals/7f/11/df/7f11dfdf818ae1ca24065ec95c935e3a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmzODKsn5vl85oG9vtD8TncxyS_-t8AdGWbDesByrzaQpdJ1YpSAWHLaiAOvIP_-DxuM';" />
+        <small>Source: cz.pinterest.com</small>
+                    <p>Tangga Model L Rumah Tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Railing Tangga Minimalis Modern Dengan Holder Tangan Kayu Harga Terjangkau Hubungi Www Appasco Com 08125227383 Tangga Arsitektur Rumah Minimalis" src="https://i.pinimg.com/736x/18/83/a0/1883a0ed1e79a0ee6521c4574fb0b659.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-6pu36MBh5QaEHAaTUCN7dxVRwYHSOUEMjQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model tangga ini cukup simpel yaitu arahnya vertikal miring dan hanya 1 arah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Almari Bawah Tangga Minimalis Modern Kreasi Furniture Jepara Rumah Desain Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/3d/64/dd/3d64ddab243145c9ff0b108a76431e74.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9QHu_cGfrcjJl3WaGqFz3I-izdhYL6pCrA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Umumnya desain anak tangga akan dibuat biasa saja dan beberapa terlihat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Appasco Di Kanopi Desain Rumah Minimalis Tangga" src="https://i.pinimg.com/736x/cf/cd/16/cfcd16c455658bf60f229e9d99f93bbd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmGt_zHUW6sgaNdggJCOGfZ_JfvtNmQOtmJA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Tangga Rumah Minimalis 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Sederhana Railing Tangga Layang Besi Tempa Klasik Dengan Besi Tempa Tanpa Ornamen Alferon Alferrom Desain Tangga Rumah Indah Arsitektur" src="https://i.pinimg.com/474x/5c/5b/74/5c5b743f49bd690f75e834be9ebc8137.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1gyCqslZmHN_GB9b2CaWbUOGwLA_zjPF86A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hal penting pertama sebelum membuat tangga kayu adalah pemilihan lokasi dari tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Tangga Trap Besi Untuk Rumah Minimalis Tangga Desain Tangga Rumah Minimalis" src="https://i.pinimg.com/474x/5a/bd/c0/5abdc0a6ccf37e452296fd2c7b5f7c90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaogovneBT_JTCL-QbKBBA-RyLK1OX72OcFQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang paling banyak menggunakan model tangga seperti ini adalah rumah minimalis yang memiliki lantai tidak terlalu tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Besi Untuk Rumah Tingkat Dan Perkiraan Biaya Pembuatannya Rumah Rumah Minimalis Desain Tangga" src="https://i.pinimg.com/originals/2e/5a/0e/2e5a0ea4e2754873e29daac886a272e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrDFO-jgEFWX7kVIt6ZB7mSOKMJ4hseg-iLyq1dikIG7-JGcCTgfpl5QsxyRNpeRtHXps';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Tangga Y Untuk Rumah Mewahh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Beton Rumah Minimalis Desain Tangga Rumah Minimalis Desain" src="https://i.pinimg.com/originals/f7/af/a2/f7afa2b71e8341459e104507b88325af.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32HVr1rHoJlnhZBRJz1hP6bS5n1pc295uddeiCMdF_8fYG3HtOdbeLTgvkPZQyGq8ZSs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Terakhir lebar yang pas ialah minimal 27 cm.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Esf Copy Desain Interior Eksterior Rumah Modern" src="https://i.pinimg.com/originals/b2/da/2c/b2da2c7c40c2c0b8351e4c6e7e235de2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfUk5Im-ZaM_fSHBBqfA3VAfSAUVATZ_JqFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sentuhan karya seni yang dipadupadakan dengan konsep rumah anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Besi Tempa Modern Klasik Klasik Desain Tangga Tangga" src="https://i.pinimg.com/originals/24/90/8b/24908bbcd7e98a21c9f1ba18bd5a84eb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWzFCupg9mOV8nj3YsXzrh0MyBgOv-14G_Ug';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model tangga teras rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Tulungagung Lemari Bawah Tangga Fungsional Desain Depan Rumah Kecil Desain Pintu Utama Kayu Desain Depan Rumah" src="https://i.pinimg.com/originals/28/74/2f/28742f61a923b0ded3f3dd0332737c4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXiMcU1oOSJNOJn0-t0omxtXYpefwx2jfAPw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebaiknya pilih lokasi yang tidak terlalu mencolok namun cukup strategis untuk di akses.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Model Tangga Kayu Minimalis Dan Modern Rumah Rumah Minimalis Rumah Kayu" src="https://i.pinimg.com/originals/a2/25/6e/a2256e9f620bf49fdfcf130007e42d6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyEofXQrwexmJDnaHo7FCAthW51FqMEZWNVZTm2NlRKuePueIHqkcTjMDtSE_3BmBJbk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain tangga kayu pada rumah tingkat diwilayah perkotaan menjadi favorit dan solusi kebanyakan orang karena lahan yang tersedia sangat terbatas hingga mereka membangun rumah hingga keatas untuk memenuhi kebutuhan dalam properti maupun rumah impian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Malang Interior Jombang Interior Nganjuk Interior Blitar Interior Tulungagung Inte Interior Penyimpanan Bawah Tangga Rumah" src="https://i.pinimg.com/originals/39/92/89/399289fbcb9737185b755f1ef8885464.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-eCJctxflig8E7RIy6pelg9z-lh6jqXgkA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>35 Model Tangga Rumah Minimalis 2 Lantai Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Besi Tempa Klasik Klasik Tangga Membangun Rumah" src="https://i.pinimg.com/originals/65/3c/dc/653cdc66f911e5f87e158363c19cd17b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxGFbHq50loxoce9nwpRm9l4acYeARfU31Ew';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tangga Model L Rumah Tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Minimalis Di Bekasi Timur Jual Kanopi Termurah 08125227383 Rumah Desain Tangga Rumah Minimalis" src="https://i.pinimg.com/originals/78/25/3b/78253b94c0637cadf1531e256fa05c5e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-nbuHFgCGDT4DGytIv2yUkwkjAcVeWvycoWz7usDo7byEx0MWyYfiG3B5IDjYvUZsvs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lebar 80cm atau lebih untuk pengguna dominan 1 orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Tangga Minimalis" src="https://i.pinimg.com/originals/27/ef/3a/27ef3aa37ed183b2a08f9a3aeec8b57a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0kExZIM7XgmxJpgp1ohWDhmmv6iwbPRdkw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ukuran ideal untuk membuat tangga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Rumah Bertingkat Rumah Minimalis Rumah Tangga" src="https://i.pinimg.com/originals/a4/8b/c3/a48bc36c7ef9cde8c197979d3469e9e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQIvZJ21WNp0ur_F1Rjv8evfvKkUQ6EkW1fR6PMVwTpTcAzeRgkRuegmRZZxrIJHnbGY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Tangga Besi Untuk Rumah Tingkat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Tangga Rumah Kos 2 Lantai Rumah Dekorasi Rumah Desain" src="https://i.pinimg.com/originals/cc/87/29/cc8729655f7a0ba578269eee96df0592.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdpgtNOakttMwxLieW4nNyI8ztJ6aFfrpe9w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Agar tidak salah gunakan jasa arsitek profesional untuk menghindari kesalahan struktural.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tangga Lemari Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/57/51/fb/5751fb527d9ffd934a4fcddab2d8fb63.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYDo7ZTEPw_FHlwnVSBEletOsX7NdOGPwtdg';" />
+        <small>Source: es.pinterest.com</small>
+                    <p>Tangga adalah sebuah konstruksi yang dirancang untuk menjadi penghubung antara dua tingkat vertikal yang punya jarak satu sama lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Pembuatan Railing Tangga Minimalis Di Tangerang Rumah Indah Rumah Minimalis Rumah" src="https://i.pinimg.com/170x/64/c3/75/64c37501d55025c870e7503517e407ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRPerwqvxtoYTullBPThrb1Ze3THvO1OoAg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang paling banyak menggunakan model tangga seperti ini adalah rumah minimalis yang memiliki lantai tidak terlalu tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Minimalis Tangga Rumah Yang Aman Tips Memilih Tangga Yang Sesuai Untuk Hunian Anda Desain Rumah Mungil Rumah Desain Rumah" src="https://i.pinimg.com/564x/86/84/50/86845092a2a74bd4bf22ab29d5b278f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmnoi_5zlCqthB4zfyJLi42sEg26xuDouJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebaiknya pilih lokasi yang tidak terlalu mencolok namun cukup strategis untuk di akses.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Furniture Kediri Furniture Minimalis Interior Minimalis Desain Minimalis Rumah Minimalis Rak Tv Backdrop Tv Lemari Bawah Tang Interior Desain Desain Dinding Tv" src="https://i.pinimg.com/originals/ed/b1/58/edb158affee8b89650949375416cffdd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEC8IVIpQnRmCEVqqugu4HVd-9OMfr8mBOiw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model tangga yang bisa Anda pilih yakni dengan bentuk yang melengkung ataupun lurus jika space yang tersedia untuk tangga memang cukup luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tukang Railing Tangga Besi Tangerang Serpong Bsd Pamulang Ciputat Bintaro Graha Raya Dekorasi Rumah Rumah Tangga" src="https://i.pinimg.com/originals/52/5a/04/525a0409311df8d070910baf31398a11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_LGlGR2C6yRBCigwJcQYD_SxQL7erZScgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Harga Lebih Terjangkau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Railing Tangga Minimalis Besi Galvanis Di Puri Kinaya Bogor Minimalis Tangga Desain Tangga" src="https://i.pinimg.com/736x/69/69/13/696913ee7c4a5bd77221545d923be96c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj78076GJlYIqo7knFyx0WqEJ0QA7ZISFp4w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain tangga kayu pada rumah tingkat diwilayah perkotaan menjadi favorit dan solusi kebanyakan orang karena lahan yang tersedia sangat terbatas hingga mereka membangun rumah hingga keatas untuk memenuhi kebutuhan dalam properti maupun rumah impian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Rumah Minimalis 2 Lantai Modern Rumah Minimalis Rumah Kamar Loteng" src="https://i.pinimg.com/originals/96/d2/f9/96d2f991974d3741e270c62c6a310328.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJn85vuWGmyvMzcKdMLChdr4nfKWCnLXSdIkELhthSpkaGuNDhsZtP7Nq0g8y3_Vg8wJA';" />
+        <small>Source: pl.pinterest.com</small>
+                    <p>Betapa nikmatnya menghilangkan capek setelah seharian beraktifitas dengan menikmati suasana bersama keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Tangga Besi Untuk Rumah Tingkat Dan Perkiraan Biaya Pembuatannya Staircase Storage Staircase Design Stairs Design" src="https://i.pinimg.com/originals/60/08/46/600846dc0a5aa722afe8055d00e59581.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYEz4PqIDpRqS3wq7Wx4_9NOYhZlHRnS9hwBC0HcfC8RAMtjrtHsdhXTxLwcLAQGnoqI0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lebar 80cm atau lebih untuk pengguna dominan 1 orang Desain Tangga Minimalis Yang Sesuai Dengan Ukuran Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Tangga Rumah Minimalis Terbaru Modern Rumah Minimalis Rumah Desain" src="https://i.pinimg.com/originals/ad/03/b6/ad03b6d62c154586e62425e6e1e563ad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gryEN-gCw0nYN7sOHV-7Cgdp7R6XC4GOCl0egESCJGcrUj4ZmrO40y3qb00dA3x5gb8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>75 model desain rumah minimalis 2 lantai sederhana modern tampak depan merancang desain rumah minimalis memang masih menjadi pilihan yang cukup populer saat ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct3ixvpxpqpgqa2nzvqj Mxgkwzp3zos6p0strfuyq0utwurqap Usqp Cau" src="/search?q=desain+tangga+minimalis+cantik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+tangga+minimalis+cantik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Model tangga ini cukup simpel yaitu arahnya vertikal miring dan hanya 1 arah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/pagar-elegan-rumah-minimalis.html"><i>&larr; pagar elegan rumah minimalis</i></a>
+                                                                    
+                                        <a href="/ok-google-rumah-mewah.html"><i>ok google rumah mewah &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

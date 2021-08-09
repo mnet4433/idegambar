@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Ruangan Rumah Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Ruangan Rumah Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "/search?q=desain+ruang+tamu+minimalis+elegan&amp;tbm=isch",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+ruangan+rumah+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Ruangan Rumah Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Ruangan Rumah Sederhana</strong>. Dalam model rumah sederhana tapi indah kunci utama adalah terletak pada kenyamanan dengan cara memaksimalkan setiap ruang sehingga tetap bisa membebaskan ruang gerak Anda. Ruang Makan yang Sederhana Pilihan rancangan ruang makan sederhana yang selaras dengan desain interior sederhana rumah minimalis.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/d3/b0/fc/d3b0fce588e4c3a644e32d5913fb9f23.jpg" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Desain Rumah Rumah Minimalis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRJJ4D1m-Qjy2eYBXU3mgoUZkLTPLRWYCqrH9HOpEBN6_LPYO96PUmRmTFXbFTmfHaePI';">
+        <figcaption>20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Desain Rumah Rumah Minimalis from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        1 Model Rumah Sederhana Conch House untuk Pribadi yang Simple. Kemudian jendela kaca besar ada di samping pintu utama dan ruangan di samping ruang tamu. Contoh Rumah Sangat Sederhana Terbaru Rumah Pedesaan Dekorasi Minimalis Desain Rumah.
+    </p>
+    <h3>Model teras rumah minimalis desain cantik dan sederhana ini dijamin bikin rumahmu tambah homey.</h3>
+    <p>Model Rumah Sederhana Tipe 45. Padahal dengan dekorasi dan desain yang tepat rumah sederhana bisa disulap menjadi rumah. Aneka contoh model rumah minimalis terbaru untuk berbagai type baik untuk 1 lantai atau lebih bisa di terapkan untuk rumah minimalis modern atau sederhana Dekorasi Rumah Bergaya Coastal Suasana Rumah yang Nyaman dan Santai. Sama seperti model rumah yang lain maka bisa dibuat dengan tambahan beberapa ruang tidur dan dapur sederhana.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="85 Desain Interior Ruang Tamu Rumah Type 45 Desain Rumah Dekorasi Interior Rumah Minimalis Type 45 Desain Interior K Rumah Minimalis Rumah Ruang Tamu Rumah" src="https://i.pinimg.com/originals/6c/59/8a/6c598a4dd0997a8ebe85b034d9b15f25.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ88caPCqy8aHz9iItLvJpLH5YuXnqXWCJr36V14UcokrRgnfFovFn41xe556P5R-8UnVo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana yang memiliki luas bangunan 45 m² cocok untuk dihuni keluarga kecil yang memiliki satu atau dua orang anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 1 Lantai 5 Kamar Home Design Decor Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/a0/8b/06/a08b0605cce8bbcb47f4ccc54658d516.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGF0AVHfw0-Xhc1GwRsJXZW7jj7OUId7YWqFNdtEMtCQXReqIchwN00g3kQHmdGWQ-xxs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain ruang tamu yang indah tentu akan memberikan efek lebih bagi para tamu yang datang ke rumah Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Tamu Kecil Bergaya Klasik Vintage Desain Interior Dekorasi Ruang Tamu Kecil Ruang Tamu Rumah" src="https://i.pinimg.com/originals/8c/af/12/8caf123a2ac6965dffb7497bf1c258ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3uv_YoCqnwDOIqZG-vE924LkP2hmgC0usEw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana yang memiliki luas bangunan 45 m² cocok untuk dihuni keluarga kecil yang memiliki satu atau dua orang anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="90 Comfy And Nice Living Room Ideas Trendy Living Rooms Shabby Chic Decor Living Room Living Room Decor Rustic" src="https://i.pinimg.com/originals/7e/a6/41/7ea641576e86031883720e789ae1bdec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc47yAjE4cfcspPqcL56QQQFTN_1943MzFug';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk kamu yang suka menghabiskan waktu di luar ruangan untuk mencari angin atau bersantai desain teras rumah dengan ayunan atau kursi gantung bisa jadi pilihan yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Teras Rumah Sederhana Cantik Rumah Minimalis Rumah Desain" src="https://i.pinimg.com/originals/83/7c/2d/837c2ddaed2aa28557d0ac5079f60c44.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFsUaR_OJm4IIiizHbZqR9yUmURtcll5RvA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>10 Model Rumah Sederhana Indah dan Menawan untuk Happy Living.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Denah Rumah 3 Kamar Ukuran 7x9 Paling Dicari Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/14/f8/fd/14f8fd3b2e9d891f12e34678cf187c17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZsPmo2Tuq2E0OzIt42zmoPebIt__qPQciw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah dengan dua pilar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="75 Desain Ruang Tamu Sederhana Minimalis Modern Interior Desain Interior Ruang Tamu Rumah" src="https://i.pinimg.com/474x/6f/ed/b9/6fedb914e88e62daa1254d3e28d362e7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOirw49UNj8LGVDiNa7LlS_To6yiEs_6WuTifeVlUg8ylWRKioFQ74PPmNQIHFINgegxI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dan Model Ruang Tamu Minimalis Sederhana Ukuran 33 Berbicara tentang rumah tentunya tidak ada batasan topik yang pasti untuk menjelaskan tentang segala sesuatu yang mengacu pada rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Model Desain Rumah Minimalis Rumah Modern Rumah Sederhana Rumah Impian Rumah Idaman Rumah Asri Rumah 2 Lantai Ru Rumah Kayu Desain Rumah Desain" src="https://i.pinimg.com/originals/d1/90/dc/d190dc274800b171dd2248ddc7f1e863.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvVuG23J1PVx1YrZghFehegkXc1qp7TD4VD1PMIVt125KDbecSGmu8AKQQ81iYF68y3o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah type ini memiliki 4 kamar tidur dan 3 kamar mandi memiliki teras di bagian belakang dan samping rumah serta mempunyai tempat garasi mobil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=ruang+tamu+minimalis+modern&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ruang+tamu+minimalis+modern&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>1 Model Rumah Sederhana Conch House untuk Pribadi yang Simple.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Type 45 3 Kamar Terbaru Rumah Minimalis Ruang Keluarga Minimalis Denah Rumah" src="https://i.pinimg.com/originals/2e/3c/e1/2e3ce18a1eb1c1c7a0cdef6028c82231.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutskE7O2NrNOXwhw2NSWfO84idryjjmJxNFjeU77Tp0g4fGvRztHD8ub0Yi4PyzdDor4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4 Model Rumah Panggung Sederhana yang Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Desain Interior Ide Penataan Rumah Ruang Tamu Rumah" src="https://i.pinimg.com/originals/0e/bb/4d/0ebb4dc38458eaf07b4d69efe17b99ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDb0fLHlyqcrPZoyS9LLx1_uHLQmKnnLs-OW1vAcMmp3z1igEZ1rvU-K4XkyVfB84Oge8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beri Kursi Gantung atau Ayunan Sumber Gambar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Tidur 1 Mushola Dalam Rumah Terbaru Denah Rumah Rumah Rumah Modern" src="https://i.pinimg.com/originals/63/56/6a/63566a1c97914ba299f0077e3791f43e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSomvHHXJibvhawga-swCDICOtJULaiz42E6A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ruang Makan yang Sederhana Pilihan rancangan ruang makan sederhana yang selaras dengan desain interior sederhana rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/d3/b0/fc/d3b0fce588e4c3a644e32d5913fb9f23.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRJJ4D1m-Qjy2eYBXU3mgoUZkLTPLRWYCqrH9HOpEBN6_LPYO96PUmRmTFXbFTmfHaePI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aneka contoh model rumah minimalis terbaru untuk berbagai type baik untuk 1 lantai atau lebih bisa di terapkan untuk rumah minimalis modern atau sederhana Dekorasi Rumah Bergaya Coastal Suasana Rumah yang Nyaman dan Santai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Rumah Kecil Gati Rizky Yang Minimalis Maksimal Desain Interior Rumah Minimalis Interior" src="https://i.pinimg.com/originals/cf/2d/df/cf2ddfa4cc886a9bc5c14a5410a03ad9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBkfiC4cFJhQOJlGjOV8U71zr-2nWVBtmLQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dan Model Ruang Tamu Minimalis Sederhana Ukuran 33 Berbicara tentang rumah tentunya tidak ada batasan topik yang pasti untuk menjelaskan tentang segala sesuatu yang mengacu pada rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Interior Rumah Mungil Desain Interior Desain Rumah" src="https://i.pinimg.com/originals/a7/54/0f/a7540f457b05b1b6545c683c80b13ed5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrqIqQvQ2_IhGdUsL5ZD2Wm5ZtA925I5Srg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bagaimanapun juga rumah dapat disebut sebagai tempat yang paling penting yang tidak ada tandingannya dengan tempat-tempat yang lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Rumah Kampung Minimalist Living Room Modern Minimalist Living Room Minimalist Living Room Design" src="https://i.pinimg.com/originals/e5/60/b0/e560b02f7980cd83be4eedb31ca246a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUzTghxIw57KXa2bjEdHfgapzUh-bici09A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam model rumah sederhana tapi indah kunci utama adalah terletak pada kenyamanan dengan cara memaksimalkan setiap ruang sehingga tetap bisa membebaskan ruang gerak Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketsa Denah Rumah Kecil 1 Kamar Tidur Terbaru 3d Rumah Denah Rumah Desain Interior Rumah" src="https://i.pinimg.com/originals/98/2d/3a/982d3a9a6fc74a1b100a280734dd808d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT71kLbB1kZ0lm6LBcDb0EBXG4ZnTbiwqqiwg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Di tanah yang kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=desain+ruang+tamu+minimalis+elegan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+ruang+tamu+minimalis+elegan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Biasanya rumah dengan desain ini masih menyatukan ruang tamu dengan ruang keluarga cukup hanya di sekat oleh tirai atau sekat kayu yang dapat dibongkar sewaktu waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/736x/49/ca/f7/49caf7f6dcbb6d337ba0b34b801bb4cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9fAI4KmN2ij0MLNTRCQPWVvYqbr7eheSJA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain ruang tamu yang indah tentu akan memberikan efek lebih bagi para tamu yang datang ke rumah Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Partisi Ruang Tamu Minimalis Modern Sederhana Ide Ruang Tamu Modern Ide Dekorasi Rumah Desain Produk" src="https://i.pinimg.com/736x/f5/16/01/f516013f879b08894843c3b532025ed8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZdR5EAMks3auW1xF7SfojwtqqPMMUazOpNw';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Desain dan Model Ruang Tamu Minimalis Sederhana Ukuran 33 Berbicara tentang rumah tentunya tidak ada batasan topik yang pasti untuk menjelaskan tentang segala sesuatu yang mengacu pada rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 3 Kamar Tidur Denah Rumah Minimalis 3 Kamar Ukuran 6x12 3dimensi 3d Denah Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/46/50/22/465022a6b8ef4d91fe017c2ffcd3af4e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkhcdyOvI3cBdSn_R863vk8R--My4rcDE-8g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah sederhana bukan berarti hanya asal jadi saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 3 Kamar Ini Menggambarkan Tiga Kamar Yang Berhadapan Dan Ruang Tamu Diapit Ditengah Permainan Garis Pada Rumah Denah Rumah Desain Rumah" src="https://i.pinimg.com/564x/14/70/ed/1470edacec4f433b3ac7cb48c752e02a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdsdX-zUrttXSaeeSoo-ZK5-QSkshYDjNSg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="75 Desain Ruang Tamu Sederhana Minimalis Modern Ruang Tamu Memang Membutuhkan Penataan Lanjutan Setelah Ruangan Nya Ruang Tamu Rumah Desain Interior Interior" src="https://i.pinimg.com/originals/32/03/1c/32031ce290a75394c18d888b9ebda758.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmRRtcSut-zy7fouFPNopl0GjtoiZlnlVxXzYeTziyLrQbploSl0AFV6_UJBk66akfV20';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk kamu yang suka menghabiskan waktu di luar ruangan untuk mencari angin atau bersantai desain teras rumah dengan ayunan atau kursi gantung bisa jadi pilihan yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Gambar Rumah Minimalis Sederhana Gambar Rumah Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/71/ef/8d/71ef8d4b5039d2d9a1c93188087a30bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4VLw_6BzxeBpjHdEEbAHy9znRD7v0gPAWAud5UQ2NuIKvYieR2eGclHBwN6wo6qI8JIk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Padahal dengan dekorasi dan desain yang tepat rumah sederhana bisa disulap menjadi rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 2 Lantai Desain Rumah Denah Rumah Rumah" src="https://i.pinimg.com/originals/7e/c9/41/7ec941e4faef6945d45cb35285bc4362.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShtSJjyu1M4OC0gLar3kEj6xh1CJowhf1EwQ';" />
+        <small>Source: tr.pinterest.com</small>
+                    <p>Untuk kamu yang suka menghabiskan waktu di luar ruangan untuk mencari angin atau bersantai desain teras rumah dengan ayunan atau kursi gantung bisa jadi pilihan yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/originals/8a/87/91/8a879149ec5ce20bef24a2ff6a148403.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55p0MEewk1GGwMr5aQhEP-74KrW19TPecTjtqMHi9h33iyWXsJWUd0h1Q-tz4BitkomM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagaimanapun juga rumah dapat disebut sebagai tempat yang paling penting yang tidak ada tandingannya dengan tempat-tempat yang lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Denah Rumah Minimalis 3 Kamar Tidur Type 36 Denah Rumah Rumah Minimalis Denah Rumah 3d" src="https://i.pinimg.com/originals/3b/de/9e/3bde9e1d48e5700bfe1c3a32a2342cd1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8N0LaZszzpMK6o7EGxDsvpSdP933O6LkDng';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Design Model Ruang Tamu Rumah Mungil Minimalis Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Type 36 Desain Interior Rumah Minimalis Elegan Layout De Minimalist Living Room Minimalist Living Room Design Modern Minimalist Living Room" src="https://i.pinimg.com/originals/d0/36/95/d036958b725da0b0abe923a782fb3d35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9usuzYAH_17bbcgGATJA2vmHob7fpgY_q2nthqlDh8iwpDG_ZqdxiIFQxTRS3G2eO_60';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Walaupun berada di luar bangunan teras rumah merupakan salah satu bagian paling berperan dalam menentukan keindahan sebuah hunian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Dapur Terbuka Bikin Masak Kian Asyik Desain Dapur Luar Ruangan Dapur Luar Ruangan Luar Ruangan" src="https://i.pinimg.com/736x/58/dc/8e/58dc8e97f350daa6c282efa23e5b7734.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIdrVCj1dL9iK6aIoT9I5FXk1ntp9In5nog';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Model Ruangan Rumah Sederhana Modern merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Plan Rumah Sederhana Ukuran 5x7 Denah Rumah Rumah Minimalis Desain Interior" src="https://i.pinimg.com/originals/0e/0c/d6/0e0cd6068c41889c5c5bd7acd3d585f8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0MQiURF2bF3SiowvMrnTbKHY8wLozsoBa1g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>15 Jenis Tanaman Bonsai Terbaik untuk Percantik Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Vintage Klasik Ruang Tamu Rumah Desain Interior Interior" src="https://i.pinimg.com/originals/e0/9f/7a/e09f7a5bf5916f54502f5c4d028ae9f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH10o_dkV5uZeW2yO7oIs_d1YFOKdvHX1iyDOiYAdndVeWyqNgkObwptxSX2imcbfgqiY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Walaupun berada di luar bangunan teras rumah merupakan salah satu bagian paling berperan dalam menentukan keindahan sebuah hunian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi Idea Ruang Tamu Kecil Sederhana Ilham Dekorasi Ruang Tamu Rumah Ide Ruang Keluarga Desain Interior" src="https://i.pinimg.com/736x/50/e9/1a/50e91a9eb2ebe11f025e9fc43055abc2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhDK-pTMsQ89papg3Cx8p2Sub7JE9IsNcJA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Teras Rumah Minimalis dan Sederhana 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruangan Penuh Cinta Ini Tentu Harus Anda Pikirkan Konsep Desainnya Serta Penataan Yang Memberikan Kenyaman Saat Berkumpulnya Rumah Minimalis Denah Rumah Rumah" src="https://i.pinimg.com/originals/1a/fd/af/1afdaf53d363762a5c99a03ab6a031bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Tf8QGjMJBAHo94DteIdauF-K8y_uvXO8Ug';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Sketsa Denah Rumah Sederhana 1 Kamar Tidur Denah Rumah Ide Apartemen Ruangan Kecil" src="https://i.pinimg.com/originals/35/ce/1e/35ce1e337f432b836d8500ffbc6179fd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGrniVz4U6mIKL9Rf8hNLCYHGfGr4l3Kgrkw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aneka contoh model rumah minimalis terbaru untuk berbagai type baik untuk 1 lantai atau lebih bisa di terapkan untuk rumah minimalis modern atau sederhana Dekorasi Rumah Bergaya Coastal Suasana Rumah yang Nyaman dan Santai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Plafon Ruang Tamu Sederhana Elegan Ruang Tamu Rumah Desain Interior Desain Interior Rumah" src="https://i.pinimg.com/originals/ec/25/b2/ec25b2f4985f60e38805ac9c4b19216c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrWFBvj1iHm5w0UUach6XO0CuWv-8VYZ08dw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sekeliling rumah bisa ditanam beberapa pohon besar yang rindang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Ide Inspiratif Interior Ruang Tamu Minimalis Rumah Type 36 60 Atau 36 72 Ide Ruang Keluarga Ide Dekorasi Ruang Tamu Desain Interior" src="https://i.pinimg.com/originals/b0/80/ee/b080eef4d2593de763041c821ac3bb3e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTvwEd206mtL2LcpqXWC2tllxIb8KVQzQp2LB3_mk_XgdbOdP2vuz0YygNdt8kdeTNUc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini juga memiliki panjang yang berbeda-beda ada yang 6 X 10 meter ada juga 12 X 5 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="55 Contoh Desain Dapur Minimalis 3x3 Cantik Dan Modern Terbaru Desain Dapur Minimalis Rumah Tips Dekorasi Rumah Desain Produk" src="https://i.pinimg.com/736x/d4/38/c9/d438c9446715e5fc0bd65a0ad200367d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Za1Hog8KhhlG81U1woq_kMBs54GAWsB_wg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah type ini memiliki 4 kamar tidur dan 3 kamar mandi memiliki teras di bagian belakang dan samping rumah serta mempunyai tempat garasi mobil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Dapur Outdoor Semi Terbuka Luar Ruangan Rumah Desain Dapur Luar Ruangan Tata Letak Dapur Dapur Terbuka" src="https://i.pinimg.com/originals/3a/8c/3c/3a8c3c306f24d4274ea3663b2d801c1a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCeWy6Q-WFVI91KFejA7bSMfpFTUIwTYclLw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Ruamg Tamu Kecil Minimalis Sederhana - Ruang tamu merupakan tempat dimana Anda menerima tamu jadi bisa dibilang ruang tamu merupakan kesan pertama orang-orang mengenai rumah Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 2 Lantai 2 Kamar Tidur 3d Denah Rumah Desain Rumah 2 Lantai Denah Rumah 3d" src="https://i.pinimg.com/originals/bd/54/b5/bd54b5629387f28518e9574c496ac13a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjrboBD-sVtSolSbwxL_LaTy94oyCSgznIg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah kecil sederhana ini bukan kecil dalam artian rumah yang sempit namun lebih karena menggunakan desain yang sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Pintu Utama Ruang Tamu Ruang Tamu Rumah Desain Ruang Tamu Rumah" src="https://i.pinimg.com/originals/4f/b1/4b/4fb14b72b1487ac79514028e45b0f830.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0122psf7GaVRSFkjxk2ro_WFxY5QOgnP-QTsLp-lsjB9-Afym7qyxA8g0RXJsOEMwVc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model teras rumah minimalis desain cantik dan sederhana ini dijamin bikin rumahmu tambah homey.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 4x12 Arsitek Rumahan Gambar Desain Rumah 4x12 Griya Rumah 67 Desain Rumah Minimalis Ukuran 4x Rumah Minimalis Desain Desain Rumah Minimalis" src="https://i.pinimg.com/originals/54/6d/75/546d75089abff30eda44b497834dc6ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS3BuT0SrAy44F47AV4_hwhkfEfi2vx_S_WA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Area yang umumnya berada di bagian depan bangunan samping atau bahkan ada di belakang bangunan ini akan merupakan bagian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Ruang Tamu Sederhana Minimalis Modern Desain Interior Ide Dekorasi Rumah Interior" src="https://i.pinimg.com/564x/cd/f3/6b/cdf36b004ff7070ee08329a700af061c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_1XBa79-8CT_D63qQQe2kUGdbcTN_6NVTBW3dvHsgcBkBXntpq4ZSAaKcjo7JEVe2oY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam model rumah sederhana tapi indah kunci utama adalah terletak pada kenyamanan dengan cara memaksimalkan setiap ruang sehingga tetap bisa membebaskan ruang gerak Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Desain" src="https://i.pinimg.com/originals/0a/fa/f1/0afaf1dae9e2f77fd35ed741a25b84b7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQa3rpGSyf6dbiB1zfKOWCiDLqs4j7LbirMZsoblXomK8DCDOmIx-7VPE1EnwaJoUV0xc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>15 Jenis Tanaman Bonsai Terbaik untuk Percantik Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Inspiratif Desain Interior Rumah Minimalis Type 36 90 Dengan Warna Elegan 1000 Inspirasi Desa Desain Interior Ide Dekorasi Ruang Tamu Ide Ruang Keluarga" src="https://i.pinimg.com/originals/e6/ef/8d/e6ef8db53ef5538cca534b256614864e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx6D5gTUS25h8AxIS-nqfl3_lwSlCSNzJJSyUT86xtokQWmn5fExVwKx45xaYeJUereTk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana yang memiliki luas bangunan 45 m² cocok untuk dihuni keluarga kecil yang memiliki satu atau dua orang anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Mushola Dan Tempat Wudhu Dalam Rumah" src="https://i.pinimg.com/originals/bd/a0/df/bda0dfe5866525e78b0746ab7696b0d9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv4Ve-8jlYo13bLGCJwwWmVt9g6oqrRj-Q6w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sama seperti model rumah yang lain maka bisa dibuat dengan tambahan beberapa ruang tidur dan dapur sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Kecil Mungil Sederhana Terbaru Desain Ruang Makan Rumah Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/ff/cd/98/ffcd981518c1ff38c97798e1ce30da4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR349hE8i5wte-0ioQ7gdiUF1ppisZ_PbJYCQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana yang memiliki luas bangunan 45 m² cocok untuk dihuni keluarga kecil yang memiliki satu atau dua orang anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/564x/d0/5a/40/d05a400c0b297edeb60dc89df049f098.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzAIegfFDnm0DeX_xzyFIyb_NYi9NXKAb8dQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kemudian jendela kaca besar ada di samping pintu utama dan ruangan di samping ruang tamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Tamu Rumah Kayu Sederhana Ruang Tamu Rumah Interior Ruang Tamu Tradisional" src="https://i.pinimg.com/originals/63/aa/4e/63aa4e7ab24a1aa617ab2ecec9015536.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ51rOgT2it-opRcSB_t9Mai21qmLD6BB1uC3E-nL851gR3O3iihkIiFqG3-Bf6FSj1miw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Itulah beberapa contoh model keramik ruang tamu yang sederhana dan minimalis untuk rumah anda sehingga rumah terlihat lebih bersih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mit Liebe Semoga Terinspirasi Ayoo Dekor Rumahmu Sekece Ini Jangan Lupa Tag Home Decors Ideas 2020 Desain Interior Ide Dekorasi Ruang Tamu Interior" src="https://i.pinimg.com/originals/6a/73/31/6a7331fec3a2dcc88e74cf40f6972678.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXbir2o91mn8YRp2RAfzSPvBV1sry02e5IVFyPtUa8xQTU6Aqm0eYauIZFBDsn7jBpVV0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>10 Model Rumah Sederhana Di Kampung Terbaru 2020 Rumah Minimalis Desain Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Gambar Ruangan Rumah Minimalis Sederhana Gambar Desain 106 Ruangan Rumah Minimalis Sederhana Type 36 Mod Rumah Minimalis Ruang Tamu Rumah Desain Interior" src="https://i.pinimg.com/originals/54/8b/d6/548bd6049445ff8bd35da26e9de6fa18.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bq4gXGniw13HXXckEI2kOzDjRSoV1yGVbTQ_itfiKPICkQbzsihTZY0t2XaImDNkFBs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>10 Model Rumah Sederhana Di Kampung Terbaru 2020 Rumah Minimalis Desain Rumah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-desain-minimalis.html"><i>&larr; rumah desain minimalis</i></a>
+                                                                    
+                                        <a href="/rumah-bergaya-amerika-modern.html"><i>rumah bergaya amerika modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

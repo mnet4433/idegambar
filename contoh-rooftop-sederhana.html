@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contoh Rooftop Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Contoh Rooftop Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/6b/ff/51/6bff5108c0337c65a8677ef4eadb2940.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=contoh+rooftop+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Contoh Rooftop Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Contoh Rooftop Sederhana</strong>. 6 Desain Rumah Minimalis Modern Anti Mainstream Beserta RAB-nya Model atap rumah gudang shed roof. Tempat tinggal minimalis 2 lantai serba guna dengan rooftop.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/8a/78/41/8a7841bdd73d78b64356d9fe322ed099.jpg" alt="Asia Arsitek 7 Desain Rumah Rumah Mewah Desain Rumah Desa" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI4c45TRapS28tqV8eGNORZ1t9mPEYmgL2aw';">
+        <figcaption>Asia Arsitek 7 Desain Rumah Rumah Mewah Desain Rumah Desa from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Berikut beberapa desain modern untuk teras di atap rumah atau rooftop yang dapat menjadi sumber inspirasi. Desain rumah minimalis 6x15m 2 lantai lengkap dengan rooftop ruang ruangnya meliputi. Konsep kolam renang terbukaoutdoor dengan decking conwood dan material lantai keramik yang tidak terlalu mencolok.
+    </p>
+    <h3>Desain rumah 2 lantai ber atap rooftop dilahan 10 x 12 m2 desain rumah minimalis sederhana 6 10 dengan rooftop garden youtube rumah minimalis 2 lantai serba guna dengan rooftop desain patio halaman belakang rumah minimalis 19 desain rumah minimalis 2 lantai kekinian lengkap beserta contoh rumah dijual rumah minimalis 2 5 lantai dengan rooftop dan.</h3>
+    <p>Contoh Gambar Desain Rooftop Rumah Minimalis Terkini. Untuk yang mempunyai atap dak bisa membuat taman yang hijau di atas rumah. Desain kolam renang terbuka di rooftop dipadukan dengan decking conwood serta material lantai dari keramik yang tak terlalu mencolok. Kece banget kan ini.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casa En El Pueblo" src="https://i.pinimg.com/564x/88/95/dd/8895ddd7d7f63c9ea039899ed0b2e7f3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8v4jiZ4wAvWTEFVFaz0gAhKJeBmHnIEcI5Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur outdoor pada desain taman rooftop Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 3x4 2 Kamar Tidur Tiny House Indonesia Diseno Casas Pequenas Casas Pequenas Casas" src="https://i.pinimg.com/originals/b4/0f/3b/b40f3b2ed856b1e736363a39db16066d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqxZKCdxp51rZAl0Amc-YtV5gNRh_0ZiKSlA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Konsep kolam renang terbukaoutdoor dengan decking conwood dan material lantai keramik yang tidak terlalu mencolok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Rooftop Garden Taman Atap Taman Atap Dekorasi Taman Kebun Atap" src="https://i.pinimg.com/originals/46/3b/ea/463beafd82b58d14e3454237b430a8e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzYGRMWxhQ3jil2vIjGBR0KBkudtJLcD4guQn6h3mE2JkQkV_2gRhGZ1KZRQDBRnPg2w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di bawah ini akan dibahas beberapa ide rooftop garden yang sangat menawan yuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teras Depan Rumah Minimalis Modern 1 Lantai Rumah Minimalis Desain Eksterior Rumah" src="https://i.pinimg.com/736x/b0/82/72/b082729b617c5b623d977097ad1f6c70.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7CZ8zaEKDqcv-OsJyGrBch8q54OCAcPj4CEYYE472KbgyweZshJVy5JpOms_9IFBalf4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sayang sekali jika rooftop tidak digunakan meski memang baik jika atap rumah hanya diberi genteng atau semacamnya tetapi akan lebih baik jika rooftop digunakan untuk sebuah ruangan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Desainrumahnya Com Arsitektur Arsitektur Modern Desain Rumah Minimalis" src="https://i.pinimg.com/originals/c5/ae/9c/c5ae9c2a0b29b1524d5a1ee993da1233.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFyotDifpG7Roak4l2ZA9tYBR9kysJ0ZshQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilihan tanaman untuk mengisi taman juga banyak ada yang untuk indoor maupun outdoor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Daumi R Bakhtiar On Dream House Minimalist Garden Small Balcony Decor House Plants Decor" src="https://i.pinimg.com/originals/ad/10/d2/ad10d2d71f15cdb5eb8823c01e4d48ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZuKVP_f9RACGKOAHVREzGugM0nkIJPb3l2Q';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Desain kolam renang terbuka di rooftop dipadukan dengan decking conwood serta material lantai dari keramik yang tak terlalu mencolok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrzkea6y5osezkhmytot8tqx Nfcqccwdyargr5kpgomyulanlk Usqp Cau" src="/search?q=desain+teras+rooftop+rumah+kecil&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+teras+rooftop+rumah+kecil&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Kece banget kan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Korean Rooftop Design Arsitektur Desain Arsitektur Desain" src="https://i.pinimg.com/originals/63/4c/aa/634caa41dd34d5f83a1f477f801521d6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBlbPYKLLdl5FiqE6ogYTboJrQXGO6ERq2bzl8HiJ4W09G02SAJcGkGj4f7le9_NJmp4U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh rancangan kolam renang di rooftop selanjutnya yakni dengan desain kolam renang di mana konsep kolam dibuat sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18 Contoh Model Desain Tangga Rumah Minimalis Modern Sederhana Rumah Minimalis Desain Rumah Minimalis Desain Eksterior" src="https://i.pinimg.com/originals/87/b1/2b/87b12b3326ac700851889c556e0c959d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xM4jUKEU_4EqKSyUcoEO-jp9yetPSg8FdDAkXviD2GTnFsfU11tKUMKmcNyXNS7w8Fg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah 2 lantai berbentuk kubus flat top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Unduh 101 Desain Rumah Kecil Sederhana Plus Toko Paling Baru Gratis Desain Rumah Kontemporer Rumah Minimalis Desain" src="https://i.pinimg.com/originals/ff/9b/0b/ff9b0bf20d79fcba4071fbf5abf19ab0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2t7yiATtda6Pn9j3KFIPaA8qG6_mRpeGMtw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>25 Ide Kreatif Desain Taman Rooftop Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Salwalanscape Blogspot Com 2018 10 Tukang Taman Sidoarjojasa Pembuatan Html Taman Kebun Taman Halaman" src="https://i.pinimg.com/474x/0f/b5/a1/0fb5a13c6b5b357626340ad86c930a6b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVQVCgJmldAt2es-F_CwPlB-bsJLQfNc_u-A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sisa lahan tidak terlalu luas gak masalah dengan desain sederhana Anda bisa membuat taman di samping rumah yang bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Asia Arsitek 7 Desain Rumah Rumah Mewah Desain Rumah Desa" src="https://i.pinimg.com/originals/8a/78/41/8a7841bdd73d78b64356d9fe322ed099.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI4c45TRapS28tqV8eGNORZ1t9mPEYmgL2aw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Desain Rumah Rooftop 15 Desain kolam ikan di dalam rumah bikin ruangan makin adem.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="105 Gambar Rumah Minimalis Sederhana Bertingkat Desain 105 Gambar Rumah Minimalis Sederhana Bertingkat Gam Home Fashion Rumah Minimalis Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/f5/02/18/f5021830becae67105396fcde02eceeb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-LuDhCUoJe_vNgIQ57BnH6uFZo0KtzB7xOw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Cafe Rooftop Desain Minimalis 1001 Foto Gambar Desain Rumah Minimalis Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Renovasi Rumah Type 36 78 Jadi 2 Lantai 4 Kamar Tidur Youtube Renovasi Rumah Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/c4/39/7b/c4397b5bb1acac25b60e129f734d5f39.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbxIvuhn0ipdXSIjRq5A3kCfS0XhvjvWAnw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kolam renang terbuka di rooftop dipadukan dengan decking conwood serta material lantai dari keramik yang tak terlalu mencolok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqqfz Y7rh Urexfz7kvzelj4scy5v1bmgdaybplgphm Cgceiz Usqp Cau" src="/search?q=desain+rooftop+rumah+sederhana&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rooftop+rumah+sederhana&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Contoh Gambar Desain Rooftop Rumah Minimalis Terkini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Rumah 1 Lantai Plus Roof Top Garden Ukuran Lahan 6m X 12m Luas 72m2 Luas Bangunan 51 M2 Estimasi Biaya Bangun Rp Desain Rumah Rumah Bangunan" src="https://i.pinimg.com/736x/56/9f/5b/569f5be049516638a47aeed7668e6f31.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdIF2rB5KZLrdPvIjCDa61_oPUcZplfRwCG__wFwvh1KICzW8oJrNf1cuRb1KoXcvYrBc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sisa lahan tidak terlalu luas gak masalah dengan desain sederhana Anda bisa membuat taman di samping rumah yang bagus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 6x12 M 2 Lantai 3 Kamar Tidur Dengan Balkon Depan Youtube Desain Rumah Kontemporer Desain Rumah Kecil Desain Rumah" src="https://i.pinimg.com/564x/85/30/bf/8530bfda3c0a7f19fb3d1608dc7a4f4d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBgHWAQSigjc8TDpi56SMiDupCPAjcmUqTQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>6 Desain Rumah Minimalis Modern Anti Mainstream Beserta RAB-nya Model atap rumah gudang shed roof.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wah Rumah 6x9 1 Lantai Ada Rooftop Roof Garden House Youtube Rumah Indah Arsitektur Rumah Ide Dekorasi Rumah" src="https://i.pinimg.com/564x/c8/7a/21/c87a2166a6a6f772dce8bfe85b74dfb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvw1dp-_Vv-qaIGXdLk74DroqC7-qtmV5FFOD99JRJ9Qfe2QwPj6BuIzZi2jBt95xu8U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilihan tanaman untuk mengisi taman juga banyak ada yang untuk indoor maupun outdoor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Atap Rumah Datar Untuk Tampilan Kontemporer Arsitektur Desain Villa Modern Rumah Arsitektur Modern" src="https://i.pinimg.com/originals/07/ec/b1/07ecb1743cbc6865926aa54a1e332963.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzNnhOvO9SAm7ivTK18hE-yUWcjtcJH66FQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kolam renang rooftop sederhana pinterestcouk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Contoh Foto Cat Rumah Minimalis Sederhana Luxury Rumah Sederhana Kuning Mewah Inilah Ca Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/7b/b3/75/7bb375487a825a7f7d517c7d04bd1354.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnll5TVUfvXqHtTP1UWqAone21Yukwgy5gWQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>20 Contoh Desain Rooftop Rumah Minimalis Terkini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Keramik Teras Rumah Minimalis Rumah Idaman Impian Kita Rumah Minimalis Rumah Teras" src="https://i.pinimg.com/originals/bb/31/c8/bb31c8dce45dc41b6c7211cd64d4d234.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwIJ0RVJK2tW_GCpGjxEA2UNJ8sxCTGCw5_w';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Contoh desain kolam renang di lantai 2 rooftop pool Contoh selanjutnya desain kolam renang lantai 2 ini konsepnya dibuat sangat sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 2 Lantai Serba Guna Dengan Rooftop Atap Teras Desain Patio Desain Atap" src="https://i.pinimg.com/originals/45/10/05/4510051019d514e862344292676f3e76.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ4AR2h-0rFKUhwpWRgm5O8eEHgt8MyHtLwRQjlcBSj8xSIfxi00NfelGZz9pz4K-791s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Atap ini terdiri atas dua bidang miring yang ujung atasnya bertemu pada satu garis lurus biasanya orang menyebutnya dengan bumbungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Alasan Menggunakan Atap Rooftop Atap Kanopi Rumah" src="https://i.pinimg.com/originals/f4/ac/34/f4ac3426ac8c0f37034a08c81e1802cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9XSFO4iWnoAyb0Ed_Nm88naQhYhAz27fgCm_U2pXJ68LLP26hDXDT4YUjEWaQ7iCnBM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ada yang bisa ditempatkan di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini Dia Tanaman Yang Cocok Untuk Roof Garden Tanaman Eksterior Halaman" src="https://i.pinimg.com/originals/91/92/f0/9192f0890af8ebb4f04aa069851b4b48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIlWIHjJ8ceQkPpgu5lfMKfulAnozc5kOiQnCyTe8Ldu34a4cLDkUK6RJX2cgEbJJ1bHQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Minimalis yang baik yaitu resolusi 750x565 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Ole Gunnar Di Yang Saya Simpan Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/a9/c5/08/a9c508728c684a9b90f1b0a227afb52e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-mu45-cuKgc1h4ACUGoe3n9d7hOtPRUpug';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kondisi lahan yang terbatas juga memungkinkan menjadi salah satu alasan rooftop rumah digunakan untuk menambah ruangan ataupun untuk dijadikan ruang bermain dan bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 6x15m 2 Lantai Lengkap Dengan Rooftop Rumah Minimalis Rumah Arsitektur Desain Rumah Minimalis" src="https://i.pinimg.com/originals/e0/26/f5/e026f51006385d008823f2f1601f9d32.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Gn324x3miMK8WQadx5aeaIZzgAZTUDIOyUGiJm7etsy6ZUU9bA71DT0CE7AkDrYzQjk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tempat tinggal minimalis 2 lantai serba guna dengan rooftop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Gambar Model Kanopi Rumah Minimalis Desainrumahnya Com Rumah Minimalis Minimalis Kanopi" src="https://i.pinimg.com/originals/47/bb/50/47bb5042f15e9cd549dd844612450e60.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmpsgdud_AhIHoZZb_0YMVuD3VOU7SrRBvA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kece banget kan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Menata Ruang Untuk Rumah 60m2 Properti Liputan6 Com Desain Rumah Minimalis 60m2 Bergaya Elegan Dan Mode Rumah Minimalis Desain Rumah Minimalis Minimalis" src="https://i.pinimg.com/736x/38/9c/18/389c187ae4b77ee86703fc5916fdfaea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkcjJeCYIqkrd2tukWeov0r0VESwfXKIApDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kondisi lahan yang terbatas juga memungkinkan menjadi salah satu alasan rooftop rumah digunakan untuk menambah ruangan ataupun untuk dijadikan ruang bermain dan bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 7x10 M Split Level 3 Kamar Tidur 1 5 Lantai Dengan Rooftop Youtube Rumah Desain Denah Rumah Kecil" src="https://i.pinimg.com/564x/8c/6e/a1/8c6ea18907128e2fbd3dda977d9c5116.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRTfEVZg799N_ekDEXIc-D1O3f8eKZk_X90w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>20 Contoh Desain Rooftop Rumah Minimalis Terkini Design 09 12 2019 Rumah minimalis yang identik dengan lahan yang tidak begitu luas pun bisa memiliki rooftop yang cantik dan nyaman Kita hanya perlu memahami apa saja hal yang harus diketahui agar rooftop rumah minimalis yang ingin kita ciptakan menjadi nyaman dan indah Ada beberapa hal yang perlu diperhatikan untuk membuat desain rooftop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kanopi Rumah Minimalis Saat Ini Banyak Yang Menggunakan Rangka Baja Ringan Disamping Harganya Lebih Murah Tampilan Kanopi Minimalis Jug Kanopi Minimalis Rumah" src="https://i.pinimg.com/originals/1a/2b/22/1a2b2261ff40ca7a9e0aca0f49c605b5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpawuL8MZom34STHxcsHP1tBe5u0HnOOZ6EA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kalau yang ini sih sederhana saja tapi tetap bikin nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kedai Kopi Minimalis Outdoor Restaurant Design Cafe Shop Design Coffee Shop Design" src="https://i.pinimg.com/564x/ba/0f/52/ba0f52460e3b3377d4323812656d8007.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNp7TwhcmDEpHMkZOoH72ebThxWDz1wl212e27Z37IVyUKdJsyxE3yYIVfgEDhaXXD0Hc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tempat tinggal minimalis 2 lantai serba guna dengan rooftop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Di Atas Kolam Ikan Model Minimalis Desain Terbaru Kayu Kelapa Atap Sirap Ulin Gazebo Rumah Kebun Rumah Indah" src="https://i.pinimg.com/originals/6d/7a/54/6d7a5400ffe7d0b2ad52aca276161091.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy020N0wXSAwpZigmjtsQTDBoksmczbGQslQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pilihan tanaman untuk mengisi taman juga banyak ada yang untuk indoor maupun outdoor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Minimalis Jati Solid Kreasi Furniture Jepara Gazebo Garden Cottage Tempat Duduk Taman" src="https://i.pinimg.com/736x/d4/2b/23/d42b233f3b15235a3c371857eb3ab667.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJU5b8Z470L0S9nHkUK4jlwT4mJLrGx0_Qw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah untuk kami akan membahas mengenai desain dan denah rumah minimalis ukuran 9 x 12 m dengan rooftop dan interior yang nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 3 Kamar 2 Lantai Warna Eksterior Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/da/c0/60/dac060137939206a574a82106c5a009b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLvlxRjz_u9EWxGpAwS2ZKywIxXGieT0gURQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Percantik Rooftop Inilah Langkah Langkahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Desain Taman Samping Rumah Yang Indah Dan Juga Sejuk Rumah Rumah Minimalis Eksterior" src="https://i.pinimg.com/originals/7e/63/ef/7e63efc3d10032ecd8c296a991b2fc25.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIn7RzYNaLq-Mnj02gEhpB0iHR33r2DqO5XQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Minimalis yang baik yaitu resolusi 750x565 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Rooftop Minimalis Desain Rumah Modern Contoh Pemanfaatan Atap Rumah Minimalis 2 Lantai Kebun 34 M Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/f0/d9/fc/f0d9fce7b7d9ad180efc8f33a3e60384.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIVaK5HnglE62ugSGuetevu3PkHLEUlir_DwOh4AgcT0sMdQww1pTx9baqxM0O_TpYx0c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh desain rooftop atap rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Taman Minimalis Modern Patio Rumah Kebun Ide Halaman Belakang" src="https://i.pinimg.com/originals/e4/37/f6/e437f68460a78341ef8b7549a10e346b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhJsOLf8_0M0u-EXz1LoEp5Gqr7jsXdaRyQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Desain Rumah Rooftop - 20 Contoh Desain Rooftop Rumah Minimalis Terkin i.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Asri Di Depan Teras Idea Online Teras Halaman Belakang Patio Dekorasi Tanaman Rumah" src="https://i.pinimg.com/originals/fc/35/5a/fc355a1fa4be67de54f287a7b3fbfd1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwP1HdTj3fwuoZxKrD36jZwFX5ERxtmBbQXw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tempat tinggal minimalis 2 lantai serba guna dengan rooftop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Rumah Kecil Modern Depan Rumah Ide Berkebun Kebun Kecil Desain Kebun Modern" src="https://i.pinimg.com/originals/d2/b2/18/d2b2185de8efcbfebd2ac610acc4a90e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJjYKDydiN-eFUK2snuE16j6JJCceOXpPqA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tempat tinggal minimalis 2 lantai serba guna dengan rooftop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Harga 100 Juta Desain Rumah Modern Rumah Minimalis Tipe 36 Dibawah 100 Juta Miegames Bangu House Styles House High Quality Wallpapers" src="https://i.pinimg.com/564x/c7/bd/40/c7bd4078b00383a60d5bd674e282c54d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-7n5doJkYwX9kgIRtkSVkAV4nKonUoIWEg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kondisi lahan yang terbatas juga memungkinkan menjadi salah satu alasan rooftop rumah digunakan untuk menambah ruangan ataupun untuk dijadikan ruang bermain dan bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 5x10m Dengan Roof Garden Dan Carport Youtube Desain Desain Rumah Rumah" src="https://i.pinimg.com/originals/89/2e/4b/892e4b80f364d9430328d838a008a9ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-Bq62QajckiWWHSMfSpA8sCWtORUXbUeSJRI5q1_6Orbjtuc8e7PeP02RHk33hvoHIM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kursi yang di desain panjang melingkar dan contoh desain rumah rooftop terbuat dari kayu ini cocok digunakan untuk berkumpul dengan teman atau keluarga dalam jumlah yang cukup banyak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Related Image Desain Teras Pertamanan Belakang Rumah Halaman Belakang" src="https://i.pinimg.com/564x/6f/a4/99/6fa499893716b1cb044b89a0948eeb07.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X-8bfEBiHUDLUbqZeRQuPfUrncLewM6cPmV7KRiM2WwtsttEZtPsZZvEI_zf39tlpBE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Konsep kolam renang terbukaoutdoor dengan decking conwood dan material lantai keramik yang tidak terlalu mencolok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Contoh Gambar Taman Rumah Minimalis Yang Mungil Sederhana Tapi Cantik Ide Berkebun Ide Taman Depan Ornamen Taman" src="https://i.pinimg.com/originals/3c/bb/85/3cbb85896940762a554628ee872fc05f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-P6m8hkNhFLCh-jrRXoGPC9u4OfK6ah-QD6T--TCTSj1lPrgSEShaiNvuvU16DRtnYnY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Memiliki teras di atap rumah dapat menjadi suatu kesenangan tersendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Arsitektur Modern Minimalis Desain" src="https://i.pinimg.com/originals/3d/46/93/3d4693738b5a39b14422f891fdb63c70.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8G99i5ccLDDdH4FWfeQ2hchyafDl7BgbdA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tempat tinggal minimalis 2 lantai serba guna dengan rooftop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Terbuka Sederhana Di Belakang Rumah Dapur Terbuka Desain Ruang Makan Rumah" src="https://i.pinimg.com/originals/fd/b1/ab/fdb1abda0b5593224ce344c6bf1272a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwvdfbsPiqZcuRYij8jkWBJxpmeplCZZHbgkrf_rmULkR6di_WXp6vnnZD4PA23pxLt8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah untuk kami akan membahas mengenai desain dan denah rumah minimalis ukuran 9 x 12 m dengan rooftop dan interior yang nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ketika Motif Batik Menjadi Elemen Estetis Arsitektur Majalah Griya Asri Arsitektur Taman Atap Taman" src="https://i.pinimg.com/originals/6b/ff/51/6bff5108c0337c65a8677ef4eadb2940.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPasHNgC2Elih1MhcR3D6qLsps2Cvd3dDZQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis 6x15m 2 lantai lengkap dengan rooftop ruang ruangnya meliputi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pot Minimalis Panjang 75x20x20 Lengkap Dengan Tanaman Bambu Air Harga 250 000 Tanaman Tanaman Dalam Rumah Kebun" src="https://i.pinimg.com/originals/36/99/76/369976d0384fec60f13a5b81a4ee9b6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmx8EdcNENRXfRjB0vartl47FwxXWerjLkJnughf_b44P3Tyvaew5mVGwrMWNLqwUKhXw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Minimalis yang baik yaitu resolusi 750x565 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 3x12 Meter 2 Lantai 2kamar Rooftop Dan Mushola" src="https://i.pinimg.com/236x/94/95/36/94953687ecd3c7c501b8b1f16f49df6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdS4D4OmBAnRVwTgHYbDH0VuvqVPweMTKd0ECp-OHO2bHt5iZ9kQpx7QPJ3CwZips7XUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kolam renang rooftop sederhana pinterestcouk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Model Atap Rumah Minimalis Sederhana Dengan Konsep Modern Yang Terbaik Tahun Ini Dijamin Akan Membuat Anda M Rumah Minimalis Rumah Dekorasi Luar Ruangan" src="https://i.pinimg.com/originals/11/fe/59/11fe5915634ddf6b32c820e31dc55fb6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhjfaYWNuyCEj1KWdnaQLw4EnmiBaxD-PAqyj_uDWG595xFq7abP0rFs1kr4GoTRiK42s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kondisi lahan yang terbatas juga memungkinkan menjadi salah satu alasan rooftop rumah digunakan untuk menambah ruangan ataupun untuk dijadikan ruang bermain dan bersantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 5x12 3 Kamar Tidur Dengan Rooftop Desain Desain Rumah Rumah" src="https://i.pinimg.com/originals/18/e0/d3/18e0d357b0a8fa8e41cfd0c7546b2512.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUC0jGCV_cAXiePxzod_GsWNDhrk1z0KgLdaHRgc9GV6ZEvxF5284kNbuJahwm-YBsOOI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>20 Contoh Desain Rooftop Rumah Minimalis Terkini Design 09 12 2019 Rumah minimalis yang identik dengan lahan yang tidak begitu luas pun bisa memiliki rooftop yang cantik dan nyaman Kita hanya perlu memahami apa saja hal yang harus diketahui agar rooftop rumah minimalis yang ingin kita ciptakan menjadi nyaman dan indah Ada beberapa hal yang perlu diperhatikan untuk membuat desain rooftop.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/dinding-depan-rumah-minimalis.html"><i>&larr; dinding depan rumah minimalis</i></a>
+                                                                    
+                                        <a href="/galeri-rumah-minimalis.html"><i>galeri rumah minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

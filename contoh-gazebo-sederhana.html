@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contoh Gazebo Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Contoh Gazebo Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/45/cc/1a/45cc1a3d4f0bd29def709263ac29c672.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=contoh+gazebo+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Contoh Gazebo Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Contoh Gazebo Sederhana</strong>. Rumah gazebo bambu selanjutnya cara membuat gazebo kayu sebagai contoh gazebo kayu jati minimalis maupun Gazebo Minimalis Murah di Surabaya adalah desain pergola kayu selanjutnya gazebo mini sebagai contoh desain gazebo bambu maupun model pergola kayu tentu saja bikin gazebo selanjutnya rangka atap gazebo kayu begitu juga di sini gazebo tiang beton dan dekorasi gazebo. Berikut ada beberapa model gazebo kayu sederhana yang bisa dijadikan inspirasi untuk membuat gazebo minimalis di rumah idaman anda.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/600x315/ec/32/fc/ec32fc1ec8f5b1a2bd4b5ae85f10eb49.jpg" alt="60 Desain Gazebo Minimalis Bambu Dan Kayu Desainrumahnya Com Gazebo Bambu Minimalis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_lHvGHduusR8BpF9Q67s45OnZnzdpGagomPISZyE2K56QVLmX3GA3bXhMWHNTQsxijY';">
+        <figcaption>60 Desain Gazebo Minimalis Bambu Dan Kayu Desainrumahnya Com Gazebo Bambu Minimalis from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Model Gazebo Kayu Sederhana di Taman. Jasa Pembuatan Gazebo Sederhana Garut by ARINIE GAZEBO pengrajin gazebo kayu kelapa. Model gazebo taman minimalis selain gazebo minimalis dari baja ringan seperti jual gazebo bekas selanjutnya model gazebo bambu selain gazebo minimalis diatas kolam ikan juga harga gazebo bali selanjutnya gazebo kayu jati mewah sebagai contoh harga gazebo taman minimalis termasuk detail gazebo dan gazebo sederhana dan murah selain joglo kayu kelapa sebagai tambahan harga gazebo taman sebagai tambahan harga gazebo bambu sebagai contoh Gazebo.
+    </p>
+    <h3>Gazebo Unik Minimalis - Gambar atau foto berjudul Gazebo Unik Minimalis ini adalah bagian dari artikel Model Gazebo untuk Rumah Minimalis.</h3>
+    <p>Hanya dengan menggunakan alat seadanya taman sederhana ini dapat terlihat sangat menawan. Gazebo Konsep Bambu Ala Gubuk Petani. Sebagai contoh untuk gazebo yang mampu menampung 4 orang maka luas yang ideal adalah 2x2 meter. Gazebo Etnik Pinggir Perkebunan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Contoh 35 Model Atap Rumah Minimalis 1 Lantai Sederhana Gaya Rumah Disertai Gambar Rumah Minimalis Gaya Rumah Home Fashion" src="https://i.pinimg.com/originals/0e/18/5a/0e185a13b4b932bf7e75ebc8143e608b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf0dD9gdk90TZ62gFlOoBfPMBaQV-l-ZmL6Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Saung Bambu Murah Di Jakarta 081386988879 Suplier Saung Gazebo Desain Restoran Luar Ruangan Rumah" src="https://i.pinimg.com/474x/22/ec/c6/22ecc68a67105d67e793511fc9021b7a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPFbuB0npmf6-AqTYSAM3P0uaf1wuoz4tD-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ingin inspirasi gazebo bambu yang paling simpel dan tidak ribet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Ayunan Ukuran Ayunan Kayu 120 Cm Jual Ayunan Kayu 120 Cm Harga Aayunan Kayu 120 Cm Gambar Ayunan Kayu 120 Cm Model Ayunan Ka Ayunan Kayu Desain" src="https://i.pinimg.com/originals/61/70/5f/61705f3946ba668c4a5bbfcf58bde7e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbmbYDZwawQj3LrF7uaIpEkJurfww2oimUQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gazebo Unik Minimalis - Gambar atau foto berjudul Gazebo Unik Minimalis ini adalah bagian dari artikel Model Gazebo untuk Rumah Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Model Desain Rumah Minimalis Sederhana Paling Keren Rumah Minimalis Renovasi Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/474x/07/39/d1/0739d19349a7da4ab34d0f918f28a8c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ZC8MeFCNqCnr20O2ysJnimVbRDyZIug_iQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gazebo gazebo bagus gazebo mojokerto gazebo sederhana harga gazebo di mojokerto jual gazebo mojokerto pengrajin gazebo bambu tukubagus Lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Joglo Modern Sederhana Arsitektur Rumah Indah Desain Rumah" src="https://i.pinimg.com/474x/45/4b/4f/454b4f935798f6e197f889bd5fddfa90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRraOIuosaAgFcVslSwA2Zsh8Qy_sPVqsLbcQ';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Ingin inspirasi gazebo bambu yang paling simpel dan tidak ribet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=saung+bambu&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=saung+bambu&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Taman Gazebo Taman Vertikal Taman" src="https://i.pinimg.com/originals/61/6f/d8/616fd8285319deff75c87b4a1ceafbc5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjHcbQmhHPOD9Iiz3cIeJ8eR97Gq7n3bE2dyW7zVgTt1oWGyMVbNGU5lkOea1SR_-eF9s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Modern sederhana - Memiliki taman luas di halaman depan atau belakang rumah tentu kurang lengkap jika tidak dihiasi dengan saung atau gazebo.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Minimalis Di Atas Kolam Ikan Model Gazebo Modern Segi 4 Jual Gazebo Harga Murah Desain Gazebo Sederhana Untuk Taman Gazebo Kolam Ikan Kolam" src="https://i.pinimg.com/originals/4c/85/0a/4c850ade62e84359b0ffb22b9a48a155.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IFFIEzLeApgYnz3yGZztS706FYwK5XKCDUZub85hJ3f3JTVXi8TLlP7TAHN6l359RD4';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Contoh desain gazebo rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Warehouse View Model Gazebo Home Design" src="https://i.pinimg.com/originals/1c/5e/28/1c5e28d3add523b915fe59f1e2aecb49.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvbGXX7Ty0r-dLNaG0c4dqFm4ekoOq7o1UVA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Harga Gazebo Kayu Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Kayu Kelapa Gazebo Kayu Desain Arsitektur" src="https://i.pinimg.com/originals/94/12/08/9412088c81e0ba2e6a840574b97971e7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBWKeYB5vMMSymPhlfi5gODGdQkUQ63PMfw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konten sembunyikan 10 Model Gazebo Bambu Minimalis 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Gazebo Jati Ukiran Masa Kini Model Desain Gazebo Halaman Rumah Spesifikasi Gazebo Jati Minimalis Trend Gazebo Glugu Terbaru Gazebo Rumah Kebun Desain" src="https://i.pinimg.com/736x/5b/0e/85/5b0e8580602844c5d5211205907439d0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfRy16k5Nn-uYsxzNAoyxam0wGW-8-WEEkPjmYbsVFAPmi7Gt7E-hIPA7ziE4vdWLj7c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ingin inspirasi gazebo bambu yang paling simpel dan tidak ribet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Warung Kopi Sederhana Dari Bambu Di 2021 Warung Kopi Bambu Desain" src="https://i.pinimg.com/originals/90/ae/c0/90aec03722f0df1febc98fedfe3a6412.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFDYg3ComkkWoP2uOTxxKwZYs6iCFRQYKgA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adapun jenis gazebo taman model minimalis ada beberapa jenis seperti gazebo kayu ukir jepara gazebo bambu gazebo baja itulah beberapa jenis yang gazebo paling laris di pasaran sekarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Gazebo Taman Gazebo Jepara Gazebo Taman Model Gazebo Toko Mebel Kursi Tamu Minimalis Klasik Jepara Gazebo Rumah Baru Desain" src="https://i.pinimg.com/originals/62/48/0c/62480ccbaa2eb1cc50e043d414ef8fe7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeD-YKEhckbXwShqLXhKq6rBPQCyhl3fUaJwpX7sEWGCOLKcDixo2hfMAHu9198BDyZsw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gazebo Konsep Bambu Ala Gubuk Petani.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gazebo" src="https://i.pinimg.com/originals/44/e0/31/44e0318bacebc23b77a1a88ca78a4369.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNb_9Xahg8YH4xIkl4jbPNA0QMxfhE13_IQqeK3xJ-A412ypyEuTWuNSZuItsp2qPlkRc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>53 Inspirasi Desain Air Mancur Cantik di Taman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Pos Satpam Sederhana Desain Desain Arsitektur Arsitektur" src="https://i.pinimg.com/600x315/d4/ec/86/d4ec86dc3372778493a79cab63336d32.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6Ciq24-8Pxy_yBgTwQPbGlfNtG-QUFFDUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda bisa melihat Gazebo Unik Minimalis ini dengan beberapa dimensi baik kecil menegah besar hingga dimensi aslinya yaitu 640 x 575 px.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Joglo Tampak Depan Rumah Desain Rumah Arsitektur" src="https://i.pinimg.com/originals/f4/ad/8d/f4ad8d09a6d39b6d3d6263bc6f246945.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxRE7HpZZBo_oxxwIO9FYC3LIcAB3iYrCFg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gazebo kayu sederhana dan jual gazebo bekas jogja juga harga gazebo kayu mahoni selain harga gazebo bambu juga harga gazebo baja ringan selain gazebo minimalis murah di purworejo jual gazebo surabaya tentu saja ukuran standar gazebo termasuk ukuran gazebo yang ideal begitu juga di sini gazebo minimalis dari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Gazebo Minimalis Bambu Dan Kayu Desainrumahnya Com Gazebo Bambu Minimalis" src="https://i.pinimg.com/600x315/ec/32/fc/ec32fc1ec8f5b1a2bd4b5ae85f10eb49.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_lHvGHduusR8BpF9Q67s45OnZnzdpGagomPISZyE2K56QVLmX3GA3bXhMWHNTQsxijY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kebanyakan gazebo untuk bersantai seperti ini berada di bagian halaman belakang rumah tentu hal tersebut tidak paten.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Di Atas Kolam Ikan Model Minimalis Desain Terbaru Kayu Kelapa Atap Sirap Ulin Gazebo Rumah Kebun Rumah Indah" src="https://i.pinimg.com/originals/6d/7a/54/6d7a5400ffe7d0b2ad52aca276161091.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-5qMU8Z0nIPcD0taFnCeXw56YaMGxSizYI8KF2RnWlxhKMtP-kV2v8J1P1gxGKF1JYY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kebutuhan gazebo biasanya diletakkan di ruang terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Gazebo Minimalis Bambu Dan Kayu Gazebo Desain Bambu" src="https://i.pinimg.com/600x315/a1/6e/6d/a16e6d0af25419cc44c94b8320f5e993.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXHYHepNMt-kKc2xcO29Z4ApCyBN7ebSEr91APlXS0MsK6al9uFmfv5woz3FSIpRhbAk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gebangperut Mojogebang Kemlagi Mojokerto Jawa Timur 61353 Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Contoh Penerapan Rumah Joglo Di Hunian Modern Mewah Dan Antik Modern Rumah Kemewahan" src="https://i.pinimg.com/736x/ac/96/87/ac9687ff6da4603576b9ff9ec3aeea18.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKnLXFDJ9thIyQG0dFmJVSsaeg4aXmSBRLA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gebangperut Mojogebang Kemlagi Mojokerto Jawa Timur 61353 Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Minimalis Sederhana Untuk Taman Gazebo Atap Teras Ide Halaman Belakang" src="https://i.pinimg.com/originals/31/88/ea/3188ea9c89caaf5d9b58c3e249594f87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4g2cG5d-JtWOCg8Xv_pmJUKuj1ZJuSgO_DrCnI6sdZltR66swpXUSHy_3vy7rgS_FpjI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebagai contoh untuk gazebo yang mampu menampung 4 orang maka luas yang ideal adalah 2x2 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Kayu Kelapa Atap Sirap Ini Cocok Untuk Anda Tempatkan Di Taman Rumah Anda Gazebo Ini Akan Membuat Rumah Anda Terlihat Semakin Mew Gazebo Minimalis Kayu" src="https://i.pinimg.com/originals/39/18/54/391854e88c7aa82ad1398982bd6c2db3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCwIwcjGcxRKk_weuIBjsFy_KG8AgCrgNkw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Adapun jenis gazebo taman model minimalis ada beberapa jenis seperti gazebo kayu ukir jepara gazebo bambu gazebo baja itulah beberapa jenis yang gazebo paling laris di pasaran sekarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gazebo" src="https://i.pinimg.com/474x/84/1e/36/841e361e660d55908a1f9207dc99ad85.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGK5TknupsYxOC2LOqEg8m5ExjaqBZCPMtSA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Adapun jenis gazebo taman model minimalis ada beberapa jenis seperti gazebo kayu ukir jepara gazebo bambu gazebo baja itulah beberapa jenis yang gazebo paling laris di pasaran sekarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Lesehan Model Modern Kayu Jati Gazebo Modern Minimalis" src="https://i.pinimg.com/originals/58/07/4a/58074aaf5e73e933cbc14aaa657d1a86.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUpAeSLpiN-HXBe-CZbWk1hf26zuzaaaxyZc5DdBd3h-FbsdmlPhAtXG6m0GMnN1m_V24';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kebutuhan gazebo biasanya diletakkan di ruang terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Terbuka Sederhana Di Belakang Rumah Dapur Terbuka Desain Ruang Makan Rumah" src="https://i.pinimg.com/originals/fd/b1/ab/fdb1abda0b5593224ce344c6bf1272a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6BUXT5rshTgDxYSbVeqH_oRxXfaeabON_VA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jasa Pembuatan Gazebo Sederhana Garut by ARINIE GAZEBO pengrajin gazebo kayu kelapa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gazebo Kayu" src="https://i.pinimg.com/originals/f2/90/74/f2907487c174042c00fecdd9c2251746.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUz2TeLkHAVAiDROgELYnOUkX2g8PogYdcAMDA14S24iAEQhXGpsj4T5ag6prLylEUjJc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Posted by Unknown at 740 PM.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Ayu Kusumawati Di Dekorasi Rumah Taman N Halaman Taman Halaman Belakang Teras Halaman Belakang Ide Halaman Belakang" src="https://i.pinimg.com/originals/00/5f/db/005fdb49e76fcd34be70ce4fed10951e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9dUV-hYfefGGRy7cZ1EXorgoguRN6JB2Jw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh desain gazebo pada rumah minimalis modern - Jika Anda merupakan tipe orang yang suka menghabiskan waktu senggang dengan cara bersantai mungkin gazebo merupakan bangunan yang dapat Anda ciptakan guna menunjang hal tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Kayu Jati Gazebo Kayu Kayu Jati" src="https://i.pinimg.com/originals/b1/e5/74/b1e57472e301e707157c4b39bab01715.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkzLzdAiMGZ7TdO2lt977UGHlDIeG9qH6Ssg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gazebo Etnik Pinggir Perkebunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Tiang Teras Rumah Minimalis Modern Dengan Taman Sempit Serta Teras Rumah Batu Alam Rumah Minimalis Rumah Rumah Impian" src="https://i.pinimg.com/originals/45/cc/1a/45cc1a3d4f0bd29def709263ac29c672.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlt5l2VathNDOiPH71ztpgsL2AzlNuWnmPsw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>53 Inspirasi Desain Air Mancur Cantik di Taman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Minimalis Rumah Joglo Rumah Panggung Minimalis Home Fashion Rumah Kayu Gazebo" src="https://i.pinimg.com/originals/bb/e8/c2/bbe8c29a4f05604c5004b0e09cd81497.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fwGZAwmPj-9GNBK-1bbkyHK41kR4YnN6WQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh desain gazebo pada rumah minimalis modern - Jika Anda merupakan tipe orang yang suka menghabiskan waktu senggang dengan cara bersantai mungkin gazebo merupakan bangunan yang dapat Anda ciptakan guna menunjang hal tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Membuat Gazebo Minimalis Pada Hunian Rumah Gazebo Rumah Kebun Kolam Ikan" src="https://i.pinimg.com/600x315/bd/f1/be/bdf1be62de5599090888d493ae993dfa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiTKZK9XykFFQ7Q_Y_GF0aCKr_n_isasS8kg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh gazebo dari baja ringan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Teras Rumah Yang Elegan Dan Nyaman Home Fashion Rumah Arsitektur Desain Rumah" src="https://i.pinimg.com/originals/6e/1d/3c/6e1d3cfa864c012b23c9ecdf7e1f7b5e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDr38RrZSC62GUG_1cFoxHISQItoaPLVckdQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gebangperut Mojogebang Kemlagi Mojokerto Jawa Timur 61353 Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gayebo Kayu Jati Minimalis Murah Simpel Gazebo Tak Hanya Sekedar Tempat Untuk Melepas Penat Dan Stres Ta Teras Halaman Belakang Gazebo Dekorasi Tanaman Rumah" src="https://i.pinimg.com/originals/75/e8/11/75e8110b0d79a8abec648fea2eccc587.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiVGckLg2_8Ya46miE-0AgoJPQHyJkwBQyefOdNH8DqTS8yH0H8emZHgKmQGgXt1g4QEk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gazebo gazebo bagus gazebo mojokerto gazebo sederhana harga gazebo di mojokerto jual gazebo mojokerto pengrajin gazebo bambu tukubagus Lokasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Gazebo Taman Belakang Minimalis Gazebo Desain Taman Kecil Desain Taman" src="https://i.pinimg.com/originals/e9/5c/99/e95c9945596b1536ffdfc396c1a508a1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bqhzO1hshpI3tuy1FUlKchP1XHaiaXyv4Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Konten sembunyikan 10 Model Gazebo Bambu Minimalis 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gazebo Kayu Kelapa" src="https://i.pinimg.com/474x/15/f3/ce/15f3ce43236afdb5702bc31875838b08.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUX71EmmtpIWifiFwWtIpw1xhyhvl1271Atsc8d1l0VIOYMNSlOt2bXmfNtYGfyyyEz0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ada beberapa model gazebo kayu sederhana yang bisa dijadikan inspirasi untuk membuat gazebo minimalis di rumah idaman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Jati Ukir Jepara Majapahit Gazebo Desain Kayu" src="https://i.pinimg.com/originals/03/80/e4/0380e4659c7e9005b4e4486ddd301e11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ0Mespx16s3ckuZwzjgfot1HbVDbbkOyeew';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cukup dengan meniru gazebo bambu yang ditempatkan di halaman rumah seperti contoh gambar diatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Kayu Jati Minimalis Model Yang Cocok Untuk Taman Rumah Anda Di Desain Dengan Model Persegi Gazebo Kayu Jati Minimalis Menggunakan Ata Gazebo Kayu Modern" src="https://i.pinimg.com/736x/a7/51/42/a7514281dc94edf3dcb559c1ff976ffa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfn1Wj4mZUSCC4qLJzbeJeA_tpZG0PojK5xmMBhiE5IgUISirmr5S4Ftc5Jd4QwQ3VITM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Terdapat dua pilihan untuk atap gazebo ini transparan atau tertutup penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Kayu Jati Dan Kayu Kelapa Rahmah Jati Furniture Di 2021 Gazebo Ukiran Kayu Desain Rumah Desa" src="https://i.pinimg.com/originals/7d/61/85/7d6185760e675f19a4768d6d5ec1c819.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHN38LZ_20r_Ccih9nseD6DvJRTst03MUHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gebangperut Mojogebang Kemlagi Mojokerto Jawa Timur 61353 Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gazebo" src="https://i.pinimg.com/736x/1b/e2/43/1be2430a8960bb1463775d3c8769999f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrfd7vFjGiX_jjUKceMs_xyIl1F-tBiVBX60IWbV8_qDcoCd9crOIHewesE1sYNAceWY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ada beberapa model gazebo kayu sederhana yang bisa dijadikan inspirasi untuk membuat gazebo minimalis di rumah idaman anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/5e/44/f5/5e44f5988dcf979f10688aad985c0caf.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIEHmi-ee0S8GYtDvmdklOO7ki-CwPXICZ4g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Modern sederhana - Memiliki taman luas di halaman depan atau belakang rumah tentu kurang lengkap jika tidak dihiasi dengan saung atau gazebo.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsiborbfuqtczmvgfse98asrzdgtbrmitlqlepwnog Usqp Cau" src="/search?q=gazebo+bambu+unik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=gazebo+bambu+unik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Inspirasi gazebo minimalis untuk didepan rumahGazebo adalah salah satu fasilitas dengan ruang-ruang terbuka sebagai alternatif tempat berkumpul dan melakukan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kedai Kopi Minimalis Outdoor Restaurant Design Cafe Shop Design Coffee Shop Design" src="https://i.pinimg.com/564x/ba/0f/52/ba0f52460e3b3377d4323812656d8007.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVnh40wOuk4aDYH0znUQ8SvDEjX9zKI8EZw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Modern dan Sederhana yang terdapat pada kategori Eksterior Rumah Gazebo dan diunggah oleh Lukita Purnamasari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="This Photo Is Genuinely A Striking Design Procedure Patiogazebo Modern Gazebo Gazebo Patio Gazebo" src="https://i.pinimg.com/736x/a0/7c/eb/a07ceb3391661a785607f848eb92a6b6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDAZ7b_NUMwQ2Mx-y193AtNyhGjqipuYUUavGRT0zUN-eFEV-BX_dqqWKImfKSDVKI5Ug';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh desain gazebo rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Dengan Pagar Gazebo Hut House Garden Design" src="https://i.pinimg.com/originals/67/92/6c/67926ca05514ee81f0ac54f3ff1432a0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrU7nhoNRy9L0zClvmcOgoQTTEt0bIGz2oWitjoPlNvcfIK8lIMXcinEAvBFW2y_ppVCE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Anda bisa melihat Gazebo Unik Minimalis ini dengan beberapa dimensi baik kecil menegah besar hingga dimensi aslinya yaitu 640 x 575 px.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Gazebo Kayu Kelapa Murah Kayu Kelapa Di Kenal Kuat Dan Awet Di Segala Cuaca Dan Iklim Sangat Cocok Digunakan Untu Desain Rumah Desa Rumah Kebun Gazebo" src="https://i.pinimg.com/originals/78/ca/4d/78ca4d8f34785b59f5b39e0f3dfa7051.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXrMzenl0F3ejIqZBL1DNaHqS4AtcIJ1L-Y9nz7-t4-Ia3RKSr3ln9Qw3_VTulXYU_5Fc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Modern dan Sederhana yang terdapat pada kategori Eksterior Rumah Gazebo dan diunggah oleh Lukita Purnamasari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Minimalis Kayu Kelapa Klasik Gazebo Rumah Kayu Desain" src="https://i.pinimg.com/originals/d4/01/1d/d4011dab0d6b5ecdb2dabcd7103e3468.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvfnEtOagNUU3JHPJGDKJLvzL2UZRiF8zUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model taman yang satu ini terkenal dengan taman yang tidak harus mengeluarkan banyak biaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Tingkat Model Gazebo 2 Lantai Kayu Kelapa Harga Murah Desain Rumah Eksterior Gazebo Desain Produk" src="https://i.pinimg.com/originals/e0/33/d4/e033d4a019e7fa8e22ba9bf018285979.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0j5L3ZhIOhgVFAR0OWfh1hnV3Cnd5ud-7Os5b8nXP_0Mycu6CBzxfuVTOEp686DykwaA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk mengetahui Gazebo Sederhana lengkap dengan info harga silakan KLIK DI SINI.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Denah Rumah Minimalis Modern Terbaru 10x12 3 Kamar Tidur Atap Limas Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/93/3a/82/933a82d8ed4bcba97e170e3b174d66b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_Fs76gJAmmKVTb1cSAXcfFpgSSWfvFzseg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Terdapat dua pilihan untuk atap gazebo ini transparan atau tertutup penuh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gazebo Minimalis Jati Solid Kreasi Furniture Jepara Gazebo Garden Cottage Tempat Duduk Taman" src="https://i.pinimg.com/736x/d4/2b/23/d42b233f3b15235a3c371857eb3ab667.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbzmPgxVpA8bbtI18nwpcLE9noi7AYxBUtvGlwVnjgeBF6Vq7_9oY-L7JDqVVsilO3vRI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cukup dengan meniru gazebo bambu yang ditempatkan di halaman rumah seperti contoh gambar diatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tukang Kolam Minimalis Kediri Jasa Pembuatan Kolam Koi Minimalis Kediri Wingsang Garden Patio Rumah Kebun Ide Halaman Belakang" src="https://i.pinimg.com/474x/27/a4/33/27a43300d2e89aaf78e16001f28b617b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJWK2wGw7zk5pVdZioYiv1FG8-0Lob0tLUJA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hanya dengan menggunakan alat seadanya taman sederhana ini dapat terlihat sangat menawan.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/denah-rumah-mewah-3d.html"><i>&larr; denah rumah mewah 3d</i></a>
+                                                                    
+                                        <a href="/denah-rumah-minimalis-5x7.html"><i>denah rumah minimalis 5x7 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

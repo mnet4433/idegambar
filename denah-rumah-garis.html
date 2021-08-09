@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Rumah Garis
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Rumah Garis",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/c2/e8/f3/c2e8f34c612f5c2205fed4dea1532624.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+rumah+garis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Rumah Garis
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Rumah Garis</strong>. September 8 2019 at 350 am _0 stars. Desain dan Denah Rumah Minimalis Ukuran 6 x 8 M Sederhana Tampak Lebih Lega Cocok Untuk di Desa - Selamat datang di halaman kami Inspirasi Dekorasi Rumah Pada postingan kali ini kita akan ulas Desain dan Denah Rumah Minimalis Ukuran 6 x 8 M Sederhana Tampak Lebih Lega Cocok Untuk di Desa Disini semua telah di siapkan khusus buat andaDalam postingan Gambar Denah Rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/474x/96/1a/01/961a019d786885e88e47442118d6bd37.jpg" alt="Pin Di Contoh 1 Lantai" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5kJstzZstdGReeRSBL_1PdplfhYO7HGQEvQ';">
+        <figcaption>Pin Di Contoh 1 Lantai from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Desain lengkap rumah 1 lantai tipe 105 m2 di lahan 1015 meter. Salah satu jenis yang paling banyak dikembangkan oleh para developer perumahan yaitu desain tempat tinggal sederhana 612. OFFSET perwakilan dari garis As Rumah yang pada setiap sisi terluar sejauh 100 ke arah luar denah.
+    </p>
+    <h3>Desain lengkap rumah tinggal 2 lantai di lahan 10156 meter Kategori.</h3>
+    <p>Desain Rumah Compact Garis Awal Desain Rumah Pelangi Gambar Lainnya Ini adalah contoh dari postingan 100 Contoh Denah Rumah Compact Terbaru selain gambar diatas ada ratusan gambar dengan tipe yang sama dibawah ini. Desain lengkap rumah tinggal 2 lantai di lahan 10156 meter. Anda bisa membuat balkon dengan ditambah nuansa taman kecil agar rumah anda terlihat lebih asri. Itulah kumpulan desain rumah minimalis update terbaru yang sanggup kita berikan untuk Anda semuanya.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Sketsa Rumah 4 Kamar Tidur Tertata Rapi Denah Rumah Tata Letak Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/e7/38/49/e73849300af35fb1689a71b0dead22a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywa8gr2vX3s-un-cGzGenV5Cg2T3omLC6UA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain lengkap rumah tinggal 2 lantai di lahan 10156 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain" src="https://i.pinimg.com/originals/7e/57/a7/7e57a7d0584d12497fe86c0ba3fc012c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0OgFqmHm_opFPPYVdkNDf_EHueU3-0OGnq6ZoQB6sdbaZpYxYx4zOTKx2vQMoakgeus';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jenis denah rumah minimalis tipe 90 ada dua yaitu denah yang simpel dan denah yang sangat detail.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bagusnya Desain Rumah Minimalis Ukuran 7 X 15 Istimewa Untuk Denah Rumah Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/7d/8d/dc/7d8ddc4c63fdbaf54105dbb508a81580.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFa6SzJaJ5YMeSKGoaG32hzD6ul6WjIMYjfw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain lengkap rumah tinggal 2 lantai di lahan 10156 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gh" src="https://i.pinimg.com/originals/35/5c/e8/355ce87476721273a72406c0275f912f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp3tC-_qFKAJzy5Vxj3Za6qBLsH28UAJbTIwwdoZt7ohbRsiFincdlx9I_tDemohPSxA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tujuan penelitian ini adalah untuk menggali lebih dalam peranan garis tersebut yang di wujudkan dalam desain interior rumah tinggal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Tampak Depan" src="https://i.pinimg.com/originals/fe/4c/6e/fe4c6e784c4210b28f6b527856ac5bb8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSysUla-9ncj-cs9SFE7LzxgVD5FRg7MEeE4g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah yang satu ini cocok untuk anda yang memiliki lahan cukup luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Contoh 1 Lantai" src="https://i.pinimg.com/474x/96/1a/01/961a019d786885e88e47442118d6bd37.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5kJstzZstdGReeRSBL_1PdplfhYO7HGQEvQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kumpulan Desain Rumah Minimalis Elegan dan Modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Dan Tampak Rumah Sederhana Minimalis Tipe Rumah 90 M2 Di Lahan 10x15 Denah Rumah Arsitektur Desain Rumah" src="https://i.pinimg.com/originals/15/06/6c/15066c07f484741ebdbfbb59b7b4abd5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTm9siJO-T9dhuaKr8cAmZwwuScJD2jp81S7_OXG455pQj6Zk9wKZaUMdOoN6cQIggoI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain lengkap rumah tinggal 2 lantai di lahan 10156 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home 3" src="https://i.pinimg.com/564x/c2/2b/07/c22b0735286061b1954ca4c6f14c2354.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7CCDas-5zmHBuUDSYQVdKXRnJNaSs6lNFyw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jenis denah rumah minimalis tipe 90 ada dua yaitu denah yang simpel dan denah yang sangat detail.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah House Blueprints Denah Desain Rumah" src="https://i.pinimg.com/originals/bc/3c/cb/bc3ccb15046c9d7741ab662c115c9676.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnrcp7C7_LaspQznsZurP02yToGbKpJqeYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tujuan penelitian ini adalah untuk menggali lebih dalam peranan garis tersebut yang di wujudkan dalam desain interior rumah tinggal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/ab/9a/d3/ab9ad3503122f69a782c28ba66375a68.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTaJ9oZuP9FhISyZponltxs62fmpwo4F25Xw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain lengkap rumah tinggal 2 lantai di lahan 10156 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 2 Lantai Luas Tanah Dan Tipe Rumah Desain Rumah 2 Lantai Lantai" src="https://i.pinimg.com/originals/04/4d/ef/044defa46b00f954ba502f18773893f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbvt-iY-MlV4MA78I8YwqpVxTRjW5pvV22g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lihat gambar dibawah kecuali pada teras karena direncanakan ada dak beton 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Gambar Rumah 2 Dimensi Denah Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/5d/e5/a5/5de5a51fdf9cdd9cb7175855fe329a43.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Ujxu6Lm8kXY_LInNosRtUIQ8HMTR7YWwXbFrH1XQLuD4xkCyZWw5nu7JatgFpCthXLE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah Rumah 12 Jenis Garis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 1 Lantai Luas Tanah Dan Tipe Modern House Floor Plans House Blueprints House Design" src="https://i.pinimg.com/originals/92/36/c8/9236c8cf0fc5314e75a663df2dd40ee6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8H---LPw6RzuczsfyFgsnD3VTycJxs81zDQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah Rumah Garis from kumpulan gambar denah dan tampak berbagai macam tipe.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Portofolio Desain Exterior" src="https://i.pinimg.com/originals/8f/a1/d5/8fa1d530b831ddeeb8d89a6c3a702e01.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVbnDBQGQCfaGIW1A-TxEaTpmCcBRqBkDOv-Sj0lga4DgyLIYEtw8nmMB_Z_dljP47Rec';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>OFFSET perwakilan dari garis As Rumah yang pada setiap sisi terluar sejauh 100 ke arah luar denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sehat Modern Minimalis Di Makassar Jasa Desain Arsitektur Dan Interior Jpg 1 584 1 600 Pixe Desain Rumah Kontemporer Denah Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/1b/2e/05/1b2e053a50f629e51092f999cc8a599b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnS1Jk8jHyFz-aNvkMHoh2Fswzkh4jToY8jKJJTDB-kcALheub3T85ioJ3Ygh-qKZO8g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Katalog Desain Rumah Garis Print Katalog.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Eps 27 Desain Rumah Modern Minimalis 9x12 3 Kamar Tidur Youtube Desain Rumah Rumah Modern Rumah" src="https://i.pinimg.com/564x/5c/09/04/5c0904996b73380f0171ab556b7fe1f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBFO5amZCUvNaBLp3Q76i3lv4AiK3l-Ax0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk membuat garis atap 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Minimalis Di Instagram Desain Rumah Minimalis Ukuran Tanah 10m X 20m Dengan Luas Bangunan 113 M Da Denah Rumah Pedesaan Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/fd/80/10/fd80108e8268b7868c370f9963a1d39b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0reqRMW5PBJSyLkWQyHdH3ClitElddVOAg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Rumah Garis from kumpulan gambar denah dan tampak berbagai macam tipe.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Arsitektur Desain Interior Di Instagram Rumah Tipe 110 220 Ukuran Tanah 11x20 M Architecture Homedesign H Rumah Minimalis Arsitektur Rumah Desain Rumah" src="https://i.pinimg.com/originals/84/c1/9f/84c19f25b5232bbf12b5298f691e67d1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13sDnZBeVew0VDBdA2NFFryInk7xgOGg24Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>September 8 2019 at 350 am _0 stars.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Garis Arsitektur Arsitektur Rumah Desain Arsitektur" src="https://i.pinimg.com/originals/21/88/6d/21886da01a78348b0bf8e9eb95d0ed4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qv_lUvDX1F1UTkcREgMS3pOGEPAPbyfr5zEIeXJ3ZkKnP7XNY3ujR1LNjKGru3BrbLM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain lengkap rumah 2 lantai tipe 84 di lahan 65 x 11 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Type 300 1 Lantai 4 Kamar Tidur Denah Rumah Denah Rumah 3d Desain Rumah Mungil" src="https://i.pinimg.com/originals/fc/55/2a/fc552afecf55be85d7f21a3e7febf148.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFtMC8Ju27K1v9Z3DkPwjq0JDQb9W5bO_prA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Exterior 12601 Kali Dilihat Desain lengkap rumah tinggal 2 lantai di lahan 10156 meter Reviewed by admin on Wednesday July 8th 2020.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Gambar Denah Dan Tampak Berbagai Macam Tipe Rumah Rumah Garis Arsitektur Desain Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/fe/71/d4/fe71d4b53212676bd27441e837732518.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjF38xBkkd1P4hy_1Zmc83SC-3G0PXmqTKheaHH6iZ8zjzz1I62S2S7qmih1yjph1tGlI';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Jenis denah rumah minimalis tipe 90 ada dua yaitu denah yang simpel dan denah yang sangat detail.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Contoh Gambar Denah Rumah Minimalis Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/600x315/e9/50/61/e950612f6ca5ee0d6a697983a3483f8e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsauiUl3zsefy-GiUOxlJ9aHnO11jZQU8RHA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain lengkap rumah 1 lantai tipe 105 m2 di lahan 1015 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Dan Tampak Rumah Sudut Tipe 60 Dengan Konsep Modern Minimalis Di Lahan 10x15 Jasa Arsitek Dan Interior Online Em Denah Rumah Rumah Minimalis Rumah Modern" src="https://i.pinimg.com/originals/36/82/13/368213c9501cf42ad2854af99034c980.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc4-ZLhkQNRIFRCv80nSWnM4Ul24LssRoIYApkOoYjqZN4O6bV-5DV-tdVmr4vpB9cfkY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Posted on November 3 2008 by faisalashar Untuk mengatur ketebalan garis pada gambar AutoCAD amat mudah dengan cara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Garis Arsitektur Rumah Denah Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/8f/11/cf/8f11cf2c7726057f29eaa9f6e31b3664.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6IxaaToqMB6JvENU9dRwTBP3il-Nh3C59QZfGXMmAzKdaZz8M8sU_lFGDoFsxUlmTuI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Posted on November 3 2008 by faisalashar Untuk mengatur ketebalan garis pada gambar AutoCAD amat mudah dengan cara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Takalar Rumah Garis Dipercayakan Oleh Ibu Niar Yang Merupakan Teman Sma Untuk Mengerjakan Proyek Desai House Blueprints Desain Rumah Arsitektur" src="https://i.pinimg.com/originals/be/97/ab/be97abf66064f8fa9c2cca03463d3bd3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Z5DpG8Jc16wxRQQBes2vl4U2lqBYRaL3Pw';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Denah Rumah Dan Garis Atap Tahun Ini - kamu yang mempunyai desain rumah dan denah rumah keren hidupnya akan lebih tenang sebab kamu dapat mengefesienkan waktu untuk merapikan tempat tinggal serta denah rumah dan menata tempat tinggal dan denah rumah supaya tetap rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tampak Rumah Denah Rumah Desain Rumah Makassar Rumah Garis Sebagai Arsitek Di Makassar Merancang Rumah Tipe 90 M Arsitektur Desain Rumah Denah Rumah" src="https://i.pinimg.com/originals/e3/e4/10/e3e4107ba4f9a63799c37d1eea106980.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUxy9UxaR3gTRp6f-3x6C4Eur7yPpS2FibWQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jenis denah rumah minimalis tipe 90 ada dua yaitu denah yang simpel dan denah yang sangat detail.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrggyqbbdg0mp4al1cnlfjf1sw4zkyh Hkcyph0bz5wtbmaosx Usqp Cau" src="/search?q=denah+rumah+4+kamar+1+mushola&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+4+kamar+1+mushola&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Tujuan penelitian ini adalah untuk menggali lebih dalam peranan garis tersebut yang di wujudkan dalam desain interior rumah tinggal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 2 Lantai Luas Tanah Dan Tipe Denah Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/02/4d/6f/024d6f5ec634a98950782b7307eed361.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5iUYwTvPR8tSxVuPCRsNaKAGc-MGWE6Svcbp5GYDdVLktB6pQMzgapImw19cvDzPpc0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain lengkap rumah 2 lantai tipe 120 di lahan 819 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Takalar Rumah Garis Dipercayakan Oleh Ibu Niar Yang Merupakan Teman Sma Untuk Mengerjakan Desain Rumah Bungalow Desain Depan Rumah Desain Rumah" src="https://i.pinimg.com/originals/4c/f1/d9/4cf1d90a8f673a44731bb7e228ca7838.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9wdQamq6HZCdur-sKSUMnxvze-CiGEw9xuxbb3l1xarqy8YcVQQOyJrbYx18Sr7nj62w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lihat gambar dibawah kecuali pada teras karena direncanakan ada dak beton 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/c2/e8/f3/c2e8f34c612f5c2205fed4dea1532624.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRGAzZcHQSDmR4_SlMESybRzr3ddfl0LqHA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Rumah 11 Ketebalan Garis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Rumah Tinggal 1 Lantai Milik Ibu Saskiah Di Kab Bone Sulsel Jasadesain Konsultan Arsitek Rumah I Arsitektur Denah Rumah Denah Rumah Pedesaan" src="https://i.pinimg.com/originals/ee/9e/0e/ee9e0e4f2c3ee4a6745944ac74c68632.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQhyh25rGtMFyN0oj-u9ve1CXaaiuzKS2yRsagXI2Z0rWcET1bFaRmc_PB1_jJB_vVOE8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pola garis vertikal yang diaplikasikan baik pada fasad maupun di berbagai elemen ruangan telah membuat tampilan rumah selalu terlihat super elegan sampai kapan pun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Modern" src="https://i.pinimg.com/originals/a6/a9/1c/a6a91c2888ee244318b19c726eb123b6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VjZiZ8guGYfdHU0oMGuLrrqyaQkFSN1nI4F_XCfsxAB2QKs3wxEj0LRbzlpHs1LiLvM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Posted on November 3 2008 by faisalashar Untuk mengatur ketebalan garis pada gambar AutoCAD amat mudah dengan cara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/a0/03/6d/a0036d73968ae795813a293980b82e59.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNuTU_PQd31t9Cdsck-Oujya9Gr5FkDpaQsCgbl7Wp6E6Y68UJUH9ZcI55qfp_A7F42s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain lengkap rumah tinggal 2 lantai di lahan 10156 meter Kategori.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas" src="https://i.pinimg.com/564x/3b/68/29/3b6829e7d0559f6e279a0cf17bf2d711.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXrTOgnu1I7VLhH2v2APptKjez52ehefKtWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Rumah Garis from kumpulan gambar denah dan tampak berbagai macam tipe.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Rumah Mewah 1 Lantai 4 Kamar Desain Rumah Modern Gambar Rumah Minimalis Denah Rumah Rumah Mewah Desain Rumah" src="https://i.pinimg.com/originals/a0/9e/96/a09e969bb6a65749fe3cd14b0b9cafe8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbrYUsFkIeTBFUeryGRRLM2mvQPTFqbNhqA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Minimalis 2 Lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Makassar Rumah Minimalis Denah Rumah Denah Rumah Pedesaan" src="https://i.pinimg.com/originals/ae/8c/22/ae8c229c07438800cca5937c54f3434a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN9hu4UjRKtctVHGjdBitWScOdVK6ySWP7g';" />
+        <small>Source: co.pinterest.com</small>
+                    <p>Desain lengkap rumah 1 lantai tipe 105 m2 di lahan 11520 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah" src="https://i.pinimg.com/originals/4b/90/1b/4b901b2010ba6b31e3def531ff932871.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS96MeLLicANz5qZpQmAXPcyqAEcYoY3zqNpg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Saya ingin disain spt ini namun teras depannya apakah bisa dirubah agak lebar dan sy ingin ada garasi dg 2 mobil yg memanjang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Portofolio Desain Exterior" src="https://i.pinimg.com/originals/d5/d8/2b/d5d82b13e671fa54beb0badcdcae8641.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMU0sWCW-AaLPx0p23QCXyIIwX_j-OfhE0A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Minimalis 2 Lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Garis Rumah Minimalis Modern Tipe 60 Di Lahan Sudut 10x1 Desain Rumah Bungalow Rumah Minimalis Rumah" src="https://i.pinimg.com/736x/7a/54/a9/7a54a992229d87fe515fefdbf9a645d1--rumah-garis-rumah-minimalis.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ6HWaRxd1VmrcP5Xws340jEUREkl99Vx01Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Denah Rumah Dan Garis Atap Tahun Ini - kamu yang mempunyai desain rumah dan denah rumah keren hidupnya akan lebih tenang sebab kamu dapat mengefesienkan waktu untuk merapikan tempat tinggal serta denah rumah dan menata tempat tinggal dan denah rumah supaya tetap rapi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Bima Bima Di Home Denah Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/2b/d4/e8/2bd4e8bf42aaa91707145cc0e9ca2020.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIhBds8EwzPFMeG09nmi3gVUpMn47GUwfGs6ZEr7XkE9jO9uIUoAh2gZxy3HJX4fYa26w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah yang simpel biasanya hanya dihiasi dengan garis batas ruangan dan juga bertulisakan keterangan ruangan beserta dengan ukurannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/38/0c/b4/380cb406863439ed4f2a3e812ef3ee88.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNZFgpw8Pt7FYBwd9_lXmIn9mb4VA7ou8bzg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Posted on November 3 2008 by faisalashar Jenis garis atap adalah garis putus-putus untuk merobahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Aylah" src="https://i.pinimg.com/originals/87/3f/a8/873fa8408d5a11fd7f181b7db45497e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9yeFdg4ZFm-ro3hwYLjY-7KDCq8iam9rfA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Minimalis 2 Lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrly8o9ugn5wvuuqkhbezjtdq2fxotuyj6olprjjibdjo5paxl0 Usqp Cau" src="/search?q=ukuran+10x15+desain+rumah+10x15&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ukuran+10x15+desain+rumah+10x15&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Seperti di rumah modern ini permainan garis-garis vertikal yang dilakukan tim StudiograPh Architects telah membuat desain rumah tampak estetik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Youtube Rumah Garis" src="https://i.pinimg.com/originals/c3/a0/98/c3a098c42f18528244f21285f6771d73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfIP7kzenhNX09Oxkm-A9illIrtk5CxEx_A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kumpulan Desain Rumah Minimalis Elegan dan Modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Kecik" src="https://i.pinimg.com/originals/04/a5/14/04a514d7e7796a672ec8e955bf1d28f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvxbuwR-nfaFn3L_ys6ZyGo8IS0uIT3UCy2g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain lengkap rumah 2 lantai tipe 120 di lahan 819 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Desain Rumah" src="https://i.pinimg.com/originals/d6/59/f1/d659f1049916add6103ef9930c6211e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHLfZcSSTaorDOQg_7V1STzxBR2gaJxRAVd0u7N7M6dU2MC-i9bjHToMEfP-kHkkKO8lA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Matikan semua layer kecuali layer As Rumah dan layer ATAP layer Atap buat dulu ya 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tipe 50 M2 Sehat Denah Rumah The Plan Tata Letak Rumah" src="https://i.pinimg.com/originals/ab/da/07/abda078d550512aa3c5bfa5c79005bf4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCxa73NMw-zoWwFaEoAZaLKzlzYcsLBsgYjg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Matikan semua layer kecuali layer As Rumah dan layer ATAP layer Atap buat dulu ya 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Beragam Desain Rumah Denah Dan Tampak Dari Berbagai Tipe 36 45 54 70 90 Dll Dengan Kualitas Photoreal Desain Rumah Eksterior Rumah Arsitektur Home Fashion" src="https://i.pinimg.com/originals/11/74/0d/11740de4f886f0e0895231fbac1d0b1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxaKjgMhWCmjCz0oj3olWV3oKiR7oFYgjU_ERdeU1BXLXyBpz8K3cKZ1DgqXGkqc00ZWc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain lengkap rumah 1 lantai tipe 105 m2 di lahan 1015 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Youtube Rumah Garis" src="https://i.pinimg.com/originals/a9/d2/17/a9d2172dfd3d332d22ace75946fcb694.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYbFGIyKsWQtE7xeC3dx8byZsMFjcN9eOUVxbhxpug1-4ZPBO2NRg-j9xbSlyy6wwMpuM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pola garis vertikal yang diaplikasikan baik pada fasad maupun di berbagai elemen ruangan telah membuat tampilan rumah selalu terlihat super elegan sampai kapan pun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah" src="https://i.pinimg.com/736x/78/89/98/788998cab032ebdc4f893d682b752c22.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhC8tCVKSFHmIlLrMoE2OLDDgiVsQ_U-dkfPQ37Krs3UnAiKByeFw3PjwTACfmLEXrBU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Peranan garis yang kuat adalah merupakan salah satu ciri dari konsep minimalis yang ada pada desain interior rumah tinggal.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/desain-rumah-jadul-modern.html"><i>&larr; desain rumah jadul modern</i></a>
+                                                                    
+                                        <a href="/desain-rumah-elite.html"><i>desain rumah elite &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

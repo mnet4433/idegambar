@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Desain Front Office Minimalis
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Desain Front Office Minimalis",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/1f/b3/b2/1fb3b266de7dd0ad7b90454deccd9bb3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=desain+front+office+minimalis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Desain Front Office Minimalis
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Desain Front Office Minimalis</strong>. Area belakang front office ini kami desain untuk area kerja yaitu berupa meja kerja yang kami desain minimalis modern juga. Proposal pembangunan masjid lantai 2.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/fd/d3/69/fdd369fdcafab259c62e3c54aa59aa02.jpg" alt="Kitchen Set Kediri Jasa Interior Termurah Kediri Jasa Interior Kediri Jasa Desain Interior Rumah Interior Rum Interior Desain Interior Ruang Tamu Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBvsnd7XzettQCna_Fg4VisMIevptVi_ZqKP7Gl_h4zYYy89jJbJEDiNpDg9UROKF-lLQ';">
+        <figcaption>Kitchen Set Kediri Jasa Interior Termurah Kediri Jasa Interior Kediri Jasa Desain Interior Rumah Interior Rum Interior Desain Interior Ruang Tamu Rumah from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Front office bisa menciptakan lebih banyak data tentang pelanggan dengan mengajukan persoalan kepada mereka pula. Perpaduan warna merah dan biru saya masukkan ke desain sebagai image dari logo digital print ini karena memang awalnya dominan warna merah dan biru. Desain interior front office digital print ini saya desain dengan konsep minimalis.
+    </p>
+    <h3>Desain front office minimalis dari dizeen studio Front office merupakan ruang yang langsung berhubungan dengan pelanggan serta umumnya ialah tempat awal yang dihubungi pelanggan kala mereka datang ke suatu gedungkantorindustri.</h3>
+    <p>Untuk desain front office minimalis Hubungi 0821-4513-2829 Selain harga penyedia layanan jasa pembangunan sebuah rumah yang sudah meninggi di kota surabaya harga penyedia layanan desain front office minimalis sekolah-sekolah juga sudah mengalami kenaikan yang sangat signifikan. Jasa desain interior kantor interior kantor jakarta front office area murah dan online oleh pt max interior jakarta front office arearuang kantor terutama ruang front office. Bentuk desain sofa dan coffe table yang simple dan sederhana membuat kesan ruangan menjadi luas. Gambar potongan kantor 2 lantai.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Meja Pelayanan Sederhana Terbaru Rumah Kantor Interior Granit" src="https://i.pinimg.com/originals/08/b7/36/08b736bc9259dc096684bb8f57aed351.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCYhAYdTRDVgBpt7PGlWzZUnuOjTiNvNayvw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ingin mempunyai desain bangunan seperti ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Marketing Wahyu 0821 7724 7777 Wa 0857 7949 7777 Sari 0821 8326 0005 Wa Ana 0856 4667 2712 Desain Kantor Modern Desain Lobi Interior" src="https://i.pinimg.com/600x315/43/96/86/4396867680806365bb9d2862e4778b7e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkzqg77Qwd_Uf5gb7CS4KYpTAI5Xk626bkQsxBMECBKCQ5HsQYs0si7A0DMugi5QeGGw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh RAB bangunan kantor 2 lantai ukuran 6x8.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Front Office Minimalis" src="https://i.pinimg.com/564x/b7/c3/08/b7c3081c3796111bd229c4867d088f3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-MbOVwPG6gPKQdVyZJODTc4lGlqOPamT7W5rWSJEpBpHwBRQG_ZQEksydq7-uJ3MGf-Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain front office minimalis dari dizeen studio Front office merupakan ruang yang langsung berhubungan dengan pelanggan serta umumnya ialah tempat awal yang dihubungi pelanggan kala mereka datang ke suatu gedungkantorindustri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Muaro Jambi Interior Sarolangun Interior Tanjung Jabung Barat Desain Interior Modern Interior Desain Produk" src="https://i.pinimg.com/474x/c4/c3/33/c4c3336be264c20680dc38c17b19fae0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFs0gUHOgsKZRhp_lbiqjhQ-yI3pR2VYp7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Batas area ini antara area meja resepsionis dan area kerja kami desain dengan bahan gypsum dengan rangka metal hollow.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Desain Minimalis Kantor" src="https://i.pinimg.com/564x/32/b1/c5/32b1c50a0b27cfd2d783683d506ebdd1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAn4nyO6qIQpVcVTOvgRmnvh3dO3IwsKwaDeukoXHwHDkXPNthHPr1idlu7UtiWo5ni4s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Medical Office Decor Dental Office Design Modern Office Design Office Designs Office Counter Design Modern Offices Clinic Interior Design Clinic Design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Meja Kantor Interior Desain Interior Desain" src="https://i.pinimg.com/originals/c2/00/8c/c2008c5902c8c72f1736d8ccbf28d541.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGNX0KY7MFdpnF9958e6MIlDLrZffo8qG7g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar rumah minimalis 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Customer Service Interior Desain Desain Interior" src="https://i.pinimg.com/originals/2a/cc/3e/2acc3e6a522c5f4aa7fd91c1e82477e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_o6B_1r9lu3rgM7K5HJThnqZcGZD1RO-izA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain interior front office.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Desain Interior Kanor Polres Interior Desain Interior Desain" src="https://i.pinimg.com/originals/5b/8d/38/5b8d384a9c9fb1ae377c3ce83f173243.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJGpuCMS7yfFxvt5-fkJS_9r0D-iIjBjWwEA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini desain interior front office minimalist modern karya Desain Arsitek Jogja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Madiun Interior Kantor Ruang Pelayanan Interior Rumah Kantor Desain Interior" src="https://i.pinimg.com/originals/31/87/03/3187032ec5e26b99dc86ea059663b798.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRs2JPi9gA219Bfl5MPuZdh9eUEc5WNMzyuA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk desain front office minimalis Hubungi 0821-4513-2829 Selain harga penyedia layanan jasa pembangunan sebuah rumah yang sudah meninggi di kota surabaya harga penyedia layanan desain front office minimalis sekolah-sekolah juga sudah mengalami kenaikan yang sangat signifikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Desain Desain Kantor Minimalis" src="https://i.pinimg.com/564x/13/f2/8b/13f28b5702691f96b733cf9345502e67.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEQB6294G3V7zubw5Rm-cg1pjFC1yVvZ-ljtzo_YQngmv8lgpHdn55HLGX_r-z-oT8Ld0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ingin mempunyai desain bangunan seperti ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=lobby+kantor+modern&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=lobby+kantor+modern&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Bentuk desain sofa dan coffe table yang simple dan sederhana membuat kesan ruangan menjadi luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Image Result For Interior Rumah Candratama Rumah Kantor Desain Interior Interior" src="https://i.pinimg.com/474x/2e/19/03/2e190371757f289bc6187e6a981b6c15.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXK1tbqhHAOX_d6e775liV1tUWvjbi_ysVRg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Diarea depan terdapat lounge yang berfungsi sebagai ruang tunggu pelanggan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Desain Interior Kantor Meja Resepsionis Lobby Design" src="https://i.pinimg.com/564x/13/40/63/134063ce20626190c4bed17ce7e090e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj81AjlMHUvsfTdLHCAi7gGUPZ9fES6F022FiHhECareodt6TT_GHaUEzMdVxxcWgIZAs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh gambar ruko satu lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Sinjai Interior Soppeng Interior Takalar Interior Tana Toraja Interior Desain Interior Desain" src="https://i.pinimg.com/originals/0b/5b/37/0b5b37ca5f1a58f22b39dfbc5306c4b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-VqElFHU15iCeMcYm8gYYYIDw9KA7cqGwg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk desain front office minimalis Hubungi 0821-4513-2829 Selain harga penyedia layanan jasa pembangunan sebuah rumah yang sudah meninggi di kota surabaya harga penyedia layanan desain front office minimalis sekolah-sekolah juga sudah mengalami kenaikan yang sangat signifikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqqa02fdp2lovc Gcuddnuhxltoezsmncnx4hwevuxfg1ux3vrr Usqp Cau" src="/search?q=desain+meja+resepsionis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+meja+resepsionis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Contoh gambar ruko satu lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Kantor Kediri 193 Desain Interior Interior Ide Interior" src="https://i.pinimg.com/originals/d3/3a/f3/d33af3aa57e7cc957c6625296fe4f43f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDGGoUnHWmY89rfzO-vXl4xVkz3sEuIQQpEZb38eJZrBYo8PMSkQYqqKYUWRJ_ztp65Es';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Batas area ini antara area meja resepsionis dan area kerja kami desain dengan bahan gypsum dengan rangka metal hollow.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kediri Ruang Lobby Kantor Receptionist Ruang Kerja Kediri Malang Surabaya Desain Interior Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/8b/29/96/8b29966883ef1eb80c34747b2c00e446.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjE3u4GBVstGfBW4ATqYfJwzyY9CAqOhbgAYUt-6doTP0qBtYAc8Nw9CldDzZ1lDdqLg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar rumah minimalis 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Ruang Pertemuan Trenggalek Meja Resepsionis Interior Desain Interior" src="https://i.pinimg.com/originals/1f/b3/b2/1fb3b266de7dd0ad7b90454deccd9bb3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDYfglgRUwTh29ctm7A1vBlTWXZl2TvOagw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain interior front office digital print ini saya desain dengan konsep minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kantor Desain Kantor Rumah Interior" src="https://i.pinimg.com/originals/94/64/d7/9464d71a18901f9c45c169dcacba74ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWt3v7hJ7iz_b4BgTU8aCExmOPx1uYHyXxmw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut ini desain interior front office minimalist modern karya Desain Arsitek Jogja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Dekorasi Kantor Salon Interior Design Desain" src="https://i.pinimg.com/564x/ef/ba/da/efbada8367c78aab32d21b9198ba0da1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIi7C2RmdVA7Oqly6Ml6cEBHIR9wKluBAxhlpEx58Re8uhKDQns_1j6acXjbwQ74xbbFM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Office Minimalis Modern Halim Luxury and Casual Bayside Conference Room Interior Design of The national Building on Jayapura Interior Desain apartemen minimalis modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Tulungagung Ruang Loket Minimalis Interior Desain Interior Interior Rumah" src="https://i.pinimg.com/originals/11/db/9a/11db9a3324af49dad9d3be9726b61a77.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpGhuyBm2nkvZ5-rhj7e7DiecdcFfR92oIRE8OcZSa0dLn4i6O5tmR6Cm__SYPA9j8xoc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah minimalis 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern Minimalist Lobby Interior Kantor Minimalis Surabaya Sigiarchitect Interior Desain Kamar Desain" src="https://i.pinimg.com/originals/e5/08/78/e5087885616dae45bd9243cb31c3e7dd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4S81Ub8RPu2WUdglpufB1Ci3MfxIAZ1EUZFm2FV7c_s9XEEQFWGEhWHw6Taq9yJ6QKi8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar rumah minimalis 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Set Kediri Jasa Interior Termurah Kediri Jasa Interior Kediri Jasa Desain Interior Rumah Interior Rum Interior Desain Interior Ruang Tamu Rumah" src="https://i.pinimg.com/originals/fd/d3/69/fdd369fdcafab259c62e3c54aa59aa02.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBvsnd7XzettQCna_Fg4VisMIevptVi_ZqKP7Gl_h4zYYy89jJbJEDiNpDg9UROKF-lLQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain arsitek bangunan Project Pln Latumenten Front Office Project ini diselesaikan oleh Rinto Katili Ssn MM tahun penyelesaian 2013.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Desain Minimalis Ide" src="https://i.pinimg.com/564x/06/ee/d3/06eed344728fcf3b2e9ae59a83861556.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlsbDL43k5kHKxBpAOC3xl_27IfCfPMuY7OaVFCTlHIkrVsj9D9TYClLEAGleI34EbRnQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Diarea depan terdapat lounge yang berfungsi sebagai ruang tunggu pelanggan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Ide Dekorasi Rumah Desain Minimalis" src="https://i.pinimg.com/564x/90/70/0f/90700f776d8295502476b4c140df883b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZRMb5XpfLmkWcVJNqTeotPBf1bVFjVCNAJOJV0iUnXM3zdV11y6FpEwGM3a6cQR2iEfI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk desain front office minimalis Hubungi 0821-4513-2829 Selain harga penyedia layanan jasa pembangunan sebuah rumah yang sudah meninggi di kota surabaya harga penyedia layanan desain front office minimalis sekolah-sekolah juga sudah mengalami kenaikan yang sangat signifikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Meja Resepsionis Meja Resepsionis Rumah Kantor Interior" src="https://i.pinimg.com/originals/28/56/b0/2856b08655def24acc162a778617f582.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzB-2Jc8irQqrL3tmJisD6h9ovzFZ4M-l6Jg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsip kategori Front Office situs Gambar Desain Arsitek untuk informasi referensi gambar desain arsitek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kantor Minimalis Interior Trenggalek 081252474309 Desain Interior Interior Desain" src="https://i.pinimg.com/736x/49/66/72/496672df96644459648e74c4ec8d007d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRWNI3gtKWJV-2uUBkG2zsicj5es-lb3To_w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Batas area ini antara area meja resepsionis dan area kerja kami desain dengan bahan gypsum dengan rangka metal hollow.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Meja Resepsionis Minimalis Meja Resepsionis Lobby Design Resepsi" src="https://i.pinimg.com/originals/52/37/07/523707e161df75e97bbb268f721d0d73.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQ9FyLs_UscYkpG7PMpJctlgpbVPBVQVu5fKqq7MYmCytVDYaeUIdNWZAGtJ56CDS-v4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh gambar ruko satu lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Desain Kantor Modern Desain Interior Kantor Interior Kantor" src="https://i.pinimg.com/564x/41/c5/ef/41c5ef0a9f208fbd2962693ebf53256c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-t7-Zrey0DkoKLLuBAtqduF9kipEeRWrP93aiNA-HO0OlMHhmoITCGc8XTjSNQ7ZkGJA';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Bentuk desain sofa dan coffe table yang simple dan sederhana membuat kesan ruangan menjadi luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Furniture Kediri Resepsionis Puskesmas Kantor Desain Interior Minimalis 2016 1 Interior Interior Ruang Tamu Desain Interior" src="https://i.pinimg.com/originals/bb/6a/68/bb6a68a5f187bc827f7c93a5b3e774e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyMXowB2oHY6_ApRBCrCKUH4qtJP5gVozVHfgjnoVj0-jBrbmI4NhQRLBnzjiokUTrnsM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain front office minimalis dari dizeen studio Front office merupakan ruang yang langsung berhubungan dengan pelanggan serta umumnya ialah tempat awal yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Desain Interior Kantor Minimalis Modern Yang Indah Desain Kantor Rumah Desain Interior Rumah Desain Interior" src="https://i.pinimg.com/originals/d6/71/57/d6715729010db768d29ff3d42e27ae33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOf7yD5W5WkDIrhOBBqxUWUCErlySxSqSvIw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh RAB bangunan kantor 2 lantai ukuran 6x8.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Advertising Reklame Interior Percetakan Digital Printing Palu Toko Reklame Indonesia Interior Ruangan Kantor Desain Kantor" src="https://i.pinimg.com/originals/cc/83/33/cc8333e717f26d5ffd644a2dce5a9690.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeHgve8nlraLb8AVw6F3Pcmil3I4EegZTvXQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kantor bergaya kontemporer industrial dan modern ini bernuansa sangat berbeda dan dinamis untuk memancing ide-ide.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Marketing Wahyu 0821 7724 7777 Wa 0857 7949 7777 Sari 0821 8326 0005 Wa Ana 085 Desain Interior Modern Desain Kantor Modern Interior" src="https://i.pinimg.com/originals/ec/76/e7/ec76e7c4ac7f66eddc3027a1fb912a05.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd-27bZOw0nU2xKiiSdjdK-6iMqHLjdynrRw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Office Minimalis Modern Halim Luxury and Casual Bayside Conference Room Interior Design of The national Building on Jayapura Interior Desain apartemen minimalis modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Interior Puskesmas Kediri Desain Meja Pendaftaran Kediri Desain Meja Pelayanan Puskesmas Kediri Meja Resepsionis K Interior Desain Desain Interior Kantor" src="https://i.pinimg.com/originals/ac/30/9c/ac309ce5c2d2c4fe8daed4d1400f7739.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThQxceWFh0X43rBsjm-landrrH1qzsxrNcoA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Batas area ini antara area meja resepsionis dan area kerja kami desain dengan bahan gypsum dengan rangka metal hollow.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Meeting Desain" src="https://i.pinimg.com/originals/b8/26/51/b82651e0c104361e2d4671473713b8ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlZdTKq9n8Wx9tRXo3WQ3muB7SqZuZtY9Iw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Interior Front Office Minimalis Modern karya Desain Arsitek Jogja Kesan minimalis sangat terasa sewaktu kita memasuki ruangan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Puskesmas Nganjuk Desain Interior Interior Meja Resepsionis" src="https://i.pinimg.com/originals/34/fa/d8/34fad848ca16e268f9c2984223cf33c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOVDNzlTyeyVdqe_pVrtJfv17VoFNf2CugSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini desain interior front office minimalist modern karya Desain Arsitek Jogja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kantor Malang Interior Kantor Surabaya Interior Kantor Kediri Interior Kantor Nganjuk Interior Kantor Tulungagung Inte Desain Interior Interior Desain" src="https://i.pinimg.com/originals/44/63/00/446300dbe793a547290ce6fef446f7a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsEptc1WhG03uNDkb77EGa0JPSi7ZwyHAh7Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar rumah minimalis 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Minimalis Desain Penyimpanan" src="https://i.pinimg.com/564x/8c/ca/b7/8ccab7a651a0e4c857411d98b37ffd2f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNagvAa2k7LZh1Wc_MnLrnIxhjjQBxIsXwM6XGqhaeCkYC0oH7MIGGEIjhsgyfqxyZLT4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar potongan kantor 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kantor Minimalis Madiun Desain Interior Interior Desain Interior Kantor" src="https://i.pinimg.com/originals/8a/3a/91/8a3a91eab459e515d5d3e09c53ef5b9a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ8XxOK2PbZ9oKNIb5lbU14qxLf2S2iMPHIQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bentuk desain sofa dan coffe table yang simple dan sederhana membuat kesan ruangan menjadi luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Meja Pada Front Office Interior Desain Minimalis" src="https://i.pinimg.com/736x/a2/8d/2b/a28d2b4fb913c21d3c18b129549d4eca.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZAJ5WWuol2XjFcXdnUsFk3xGGdpHAYpboRA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Area belakang front office ini kami desain untuk area kerja yaitu berupa meja kerja yang kami desain minimalis modern juga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Ruang Pelayanan Nuansa Merah Granite Front Office Interior" src="https://i.pinimg.com/736x/6b/6d/ca/6b6dcad59d60f1505c6b40aa5906e53f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz_r0cAhWPFQ6JVJnIeYlGbRilwQONr2Y--g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Office Minimalis Modern Halim Luxury and Casual Bayside Conference Room Interior Design of The national Building on Jayapura Interior Desain apartemen minimalis modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kantor Minimalis Interior Surabaya 081252474309 Interior Desain Interior Ide Dekorasi Rumah" src="https://i.pinimg.com/736x/20/89/c9/2089c90122bce2ebcac861f5d728800d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt38YAknR0kpM9TNfdPhxZfxpyyenZwpAi1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perpaduan warna merah dan biru saya masukkan ke desain sebagai image dari logo digital print ini karena memang awalnya dominan warna merah dan biru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Front Office Minimalis Yang Terlihat Simpel Elegan Dizeen Desain Desain Arsitektur Desain Kantor" src="https://i.pinimg.com/564x/b7/91/a8/b791a856b5149b85885e1bbd8b38f1f2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSucWOVS5Hue3CaJPUHdKCAJRNZ-VIKb57arAfjVJo4U3ovHD-8z5Tq3lERou28r7nl9Zw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kesan minimalis sangat terasa sewaktu kita memasuki ruangan ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Meja Resepsionis Minimalis Hotel Decor Hotel Desain Meja Resepsionis" src="https://i.pinimg.com/originals/ae/1f/1d/ae1f1db5282ef206f6f14239ce61881d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXfEekoJmCNZfwfVRSxuGi815ideCn3s7ZlQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kantor Lega dan Berseni Front Office BBDO Indonesia karya Delution Architect tahun 2015 Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Malang Interior Nganjuk Interior Blitar Interior Jombang Interior Tulungagung Interior Tre Interior Desain Interior Desain" src="https://i.pinimg.com/originals/06/09/d5/0609d574b787f5301b8eda0cc17b3052.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHbQoHZetVeFjKlFrAVPSp-RuBJT5Hm73Hxg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsip kategori Front Office situs Gambar Desain Arsitek untuk informasi referensi gambar desain arsitek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Sumedang Interior Tasikmalaya Interior Bandung Interior Banjar Desain Interior Kantor Interior Desain" src="https://i.pinimg.com/originals/f5/ca/ae/f5caaef9b072c39ea27bbfd6ced4fd98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm5TYHKKbdQPyx4I-eyGANu3av-tN7UaAvUQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk bahan finishing interior front office ini adalah bahan multipleks lapis HPL.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="33 Desain Inspiratif Meja Resepsionis Minimalis Meja Resepsionis Desain Interior Kantor Desain" src="https://i.pinimg.com/originals/47/1d/55/471d555dbc090457be7e4ab155ad2cb8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv8E3TRoaABrm557aSGMoMnmmri12RHO1qzAt8T5Ujamkr6aHfgPGeSiWSel8ULFx27zA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Batas area ini antara area meja resepsionis dan area kerja kami desain dengan bahan gypsum dengan rangka metal hollow.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Nganjuk Backdrop Puskesmas Desain Minimalis Desain Kantor" src="https://i.pinimg.com/originals/b0/f7/6b/b0f76b1f1099d12f9896b23f762bdd2c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIloqORKsRZxwLNX06DiTGLOt85egZSSxXw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain arsitek bangunan Project Pln Latumenten Front Office Project ini diselesaikan oleh Rinto Katili Ssn MM tahun penyelesaian 2013.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kantor Pemerintahan Desain Interior Kantor Interior Desain Interior" src="https://i.pinimg.com/originals/43/6f/57/436f578ace2b707649f57f055d9a1173.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5SyspNCY91CnbJrZRU3LKo6Y2UoaRvpUt3ofiKsmvH2gB2HhbE_aiZ1JNbr4G6CCzCM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk desain front office minimalis Hubungi 0821-4513-2829 Selain harga penyedia layanan jasa pembangunan sebuah rumah yang sudah meninggi di kota surabaya harga penyedia layanan desain front office minimalis sekolah-sekolah juga sudah mengalami kenaikan yang sangat signifikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Kantor Kediri 268 Desain Interior Rumah" src="https://i.pinimg.com/originals/ae/45/bf/ae45bfd1d8e96a4f36147376e1ad7f3f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL0Eo-Ut4duF83dlos0kjhwzROmtx5DvR4oA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini desain interior front office minimalist modern karya Desain Arsitek Jogja.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-jadul-modern.html"><i>&larr; rumah jadul modern</i></a>
+                                                                    
+                                        <a href="/rumah-impian-minimalis-sederhana.html"><i>rumah impian minimalis sederhana &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

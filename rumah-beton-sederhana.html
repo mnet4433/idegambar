@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Beton Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Beton Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/1a/b5/6c/1ab56cff7ff269ce0aa015b30ea5e754.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+beton+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Beton Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Beton Sederhana</strong>. 36 Info Top Pagar Rumah Beton Sederhana - Hunian trend terkini adalah harapan pemilik rumah yang tentunya rumah dengan konsep yang sejuk. Kamu dapat memberi kombinasi berbagai macam warna pada rumah yang menggunakan genteng beton.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/08/f2/c6/08f2c6eb757601cb61a2977b00f75dcc.jpg" alt="Desain Teras Samping Rumah Minimalis Desain Eksterior Rumah Minimalis Desain Eksterior Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uZ65dywKr-yKZPtv-jII42n5k9cX9oCBXf6vXHoIZDwv_4sSVVRTmZWRS9tjE_efKPc';">
+        <figcaption>Desain Teras Samping Rumah Minimalis Desain Eksterior Rumah Minimalis Desain Eksterior Rumah from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Setelah membaca dan mengikuti pengarahan modul ini pengguna akan mengerti dan mampu mengerjakan pembangunan rumah sederhana. Panel Pintu lengkap dengan daun pintu 2 panel Gambar 312 panel pintu. Konsep Bangunan Tahan Gempa.
+    </p>
+    <h3>Penelitian ini merencanakan struktur beton bertulang dengan tujuan 1 Menghitung beban gravitasi dan gempa yang bekerja pada bangunan rumah sederhana 2 Menentukan dimensi balok dan kolom.</h3>
+    <p>Konsep Bangunan Tahan Gempa. Setelah membaca dan mengikuti pengarahan modul ini pengguna akan mengerti dan mampu mengerjakan pembangunan rumah sederhana. 36 Info Top Pagar Rumah Beton Sederhana - Hunian trend terkini adalah harapan pemilik rumah yang tentunya rumah dengan konsep yang sejuk. Bahkan ambruk tidak terkecuali bangunan2 beton modern disana.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="24 Desain Rumah Modern 1 Lantai Dengan Pintu Samping Desain Depan Rumah Cat Rumah Eksterior Arsitektur" src="https://i.pinimg.com/originals/d7/66/cb/d766cb71a1607f1eaaa05d77bb56047f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_cIn0r7YTa-jF4wgh6xEbo68Lc6Ptfm5pw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kalau kamu suka dengan sentuhan yang lebih lokal dan tradisional kombinasi beton dan genteng mungkin adalah jawabannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Pagar Rumah Minimalis Warna Putih Warna Eksterior Rumah Rumah Beton Desain Arsitektur" src="https://i.pinimg.com/236x/45/54/fa/4554fa8a1c65a1af977e504bd11574cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8yarixwYNNZoKTVF8D5OWjgbJjkYKAv95RQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di tanah yang kecil ini lengkap dibangun garasi bahkan taman yang kecil tapi indah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 5 7 Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/87/d1/33/87d133d157a612c092f6c611644118bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLIWOwrD4JPpJGp6tjuvk7VO9O81Y1d4pXeg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar 311 penel dinding 10.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Contoh Gambar Baru Kampung Pedesaan Rumah Minimalis Sederhana Desainkamarrumahminimalis Desain6x12 Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/736x/a0/4c/23/a04c235cd37cd0a5bdfadd7f71066179.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkS_q3WnhsqBxH_DcWz_r-NRcj0102mcj9_Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hunian ini terlihat sederhana dengan memadukan material kayu dan beton pada dinding luar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sangat Sederhana Sekali Desain Rumah Kecil Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/87/42/ab/8742ab7ee6b2671acb7442b9742587a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgk8QE9maQvPntuTJuC3rjxK5ogcpiIVEBbw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>10 Model Rumah Sederhana Indah dan Menawan untuk Happy Living.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="37 Foto On Project Rumah Minimalis Ala Lingkarwarna 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi D Desain Rumah Bungalow Rumah Minimalis Arsitektur" src="https://i.pinimg.com/originals/82/0f/9e/820f9e0b46192417b9f0e911859121d2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJcbM5MHff-w85dTwzWs3CuR04jZwSg4KEg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Web READYMIXCOID sebagai supplier produk beton ready mix beton precast dan juga jasa sewa pompa beton Web ini milik perusahaan Mitra Solusi Konstruksi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="26 Contoh Teras Rumah Modern Terbaru 2018 Desain Rumah Minimalis 2018 Rumah Minimalis Rumah Modern Rumah" src="https://i.pinimg.com/736x/c8/75/8f/c8758f70f776648c3a7b51b5666d94d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScoelVkkmmH5NnnnP0W0dJaXFXRgcMF9lj4eIb_TOmfR0w_pohk5ys109Qgx1S664ya2I';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Panel Pintu lengkap dengan daun pintu 2 panel Gambar 312 panel pintu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layanan Jasa Gambar Rumah Rumah Toko 2 Lantai Di Tulungagung Desain Rumah 2 Lantai Rumah Rumah Minimalis" src="https://i.pinimg.com/736x/f3/89/5e/f3895ec2bac5402655e6dc187e5fc71e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0oto67l56lv1KRAoHEads-22fADse-9VzBg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>4 Model Rumah Panggung Sederhana yang Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pagar Minimalis 2019 Google Search Fence Pinterest Rumah Beton Rumah Minimalis Rumah Batu" src="https://i.pinimg.com/736x/30/1a/f6/301af604d8b989eb0025147bcec61ea7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIsux6aP3yl64108riZ-3mlCvFOGNwTLVUk86GH7rj_fmOuFd5aZ6sFv0eWg--Rsv_4AU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Panel dinding berukuran 120 x 240 cm 5 panel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Yang Dirancang Andreas Indarto Ini Atapnya Sederhana Perpaduan Antara Atap Miring Dan Dak Beton Adanya Bata Expos Desain Fasad Desain Rumah Rumah" src="https://i.pinimg.com/736x/d1/e0/a6/d1e0a625fac9425cd7e3b564bc2f563a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHyG4uYaQBydCTJb2fR3Iy7BQfyihGUrasTQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beton mempunyai sifat yang lemah terhadap beban tarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="23 Model Rumah Yang Paling Banyak Di Buru Di Dunia Maya Rumah Desain Rumah Desain" src="https://i.pinimg.com/originals/0f/de/63/0fde63c53d913092b403c1b4c5ebdc2d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-GvjbF3hzf_IiNY5BSNID-WsoDnwGuTNRGDq2RU0iv1brWdKjQMmtKF3bGqFU_mzuAp8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>36 Info Top Pagar Rumah Beton Sederhana - Hunian trend terkini adalah harapan pemilik rumah yang tentunya rumah dengan konsep yang sejuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Minimalis Sederhana Gambar Rumah Desain Rumah Eksterior Rumah Minimalis Rumah Arsitektur" src="https://i.pinimg.com/originals/34/a8/1c/34a81cc1b26bd4852c36282390a02a92.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16deCpvoK-F5Fmo-Dm07MyYwmv62iX8vcX_aUyEM3upo1JVn2GS4BH_cNHjJTwufhCww';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>36 Info Top Pagar Rumah Beton Sederhana - Hunian trend terkini adalah harapan pemilik rumah yang tentunya rumah dengan konsep yang sejuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kontrakan Desain Rumah Eksterior Desain Rumah Rumah" src="https://i.pinimg.com/originals/7c/30/ab/7c30abbf03701eeb2429333a9177d248.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM5k5Afxp6l1mMkR7wowgwWSX3ZaFYuKWTNQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Panel dinding berukuran 120 x 240 cm 5 panel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern Type 43 46 55 57 64 72 78 80 86 Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/db/1a/fa/db1afa79966d573ed87b9da3b4dc59cd.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9PCrbpOqWG_9rRpNPnRti-2UVUpGEkVXZTQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>10 Model Rumah Sederhana Indah dan Menawan untuk Happy Living.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern Atap Dak Beton Dirumahku Com Rumah Minimalis Atap Cor Arsitek Ru Desain Rumah Bungalow Desain Rumah 2 Lantai Desain Depan Rumah" src="https://i.pinimg.com/originals/6b/ae/e9/6baee918477acb527304f1015dfab888.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE80H-cdHrAYVV5L_sFekvKVTP1aSqbwIrG0H5RSduNFAlsndbC1pSXFNi--rEy9ZOgMA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4 Model Rumah Panggung Sederhana yang Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Split Level Cantik Sederhana Dan Modern Renovasi Rumah Net Rumah Bawah Tanah Home Fashion Desain Rumah" src="https://i.pinimg.com/originals/cd/9a/66/cd9a66a26731dce37385a8b74caa86b0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyiCUSNo40Yss2SB-fG-Mp4PypE9M0usnXw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Beton mempunyai sifat yang lemah terhadap beban tarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Harga 80 Juta Model Rumah Harga 80 Juta Model Rumah Terbaru Model Model Rumah Harga 80 Juta Model Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/1a/b5/6c/1ab56cff7ff269ce0aa015b30ea5e754.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYGBsSl3Bwx4DLN0vIYumAqdEuKXm_Nkq0Xi5KK1AqYCzcKO9YQrHtpGzBIwCBrWpfxY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Konsep Bangunan Tahan Gempa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Pagar Tembok Minimalis Modern Eksterior Rumah Rumah Arsitektur Rumah Hijau" src="https://i.pinimg.com/originals/5d/b6/ec/5db6ecf651cd622fa4a54dd841fc58db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxexJi3GxQWW-NOwQlCrIdBcJg53IIfJxtvA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar 311 penel dinding 10.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Ole Gunnar Di Yang Saya Simpan Renovasi Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/bc/77/e6/bc77e6ea650c7334838ba32737fd25ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKUIE7Fp6FBEVz6AfFN5zKyz1PQKhCPjc_zEaDZqRp4bXS9SPGMekAZYjKfPIEQn2oMb4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ada teras balkon ruang tamu hingga ruang keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Ter Update Desain Rumah Minimalis Warna Eksterior Rumah Rumah Minimalis Dekorasi Minimalis" src="https://i.pinimg.com/originals/bb/c0/c6/bbc0c67d4eeb5c3bd9427ac0846022a0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOfQm48_uJPhkVzBZkXgobWcjAPgxPA5oM5g';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Setelah membaca dan mengikuti pengarahan modul ini pengguna akan mengerti dan mampu mengerjakan pembangunan rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Tapi Indah Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/22/47/8d/22478da289343f8517330bbb485cab5a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgsqXIYTBqHcCMWiyNu0Y8eAFlH_CzDSFzH9r6foYBYVeD-Nj_NeZBGARJvN3Fb5Gy6SA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Konsep Bangunan Tahan Gempa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sederhana 2 Lantai Desain Rumah Modern Rumah Minimalis Desain Rumah Mungil" src="https://i.pinimg.com/originals/4d/ac/1b/4dac1bec7edd1b29478a34aa4c694a36.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxhVS0dnvVHMwHXrAowUD9n6H-Ea1WZCrqg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga struktur beton diberi tulangan besi untuk menambah kekuatan menahan beban tarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Cari Rumah" src="https://i.pinimg.com/originals/18/18/0e/18180e977ecd40d02949055af92cb824.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJ0di360AC9QSmgTDEHxq0s_ln8q6LeVOHQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 Campuran beton terdiri dari 1 semen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Modern Atap Beton Rumah Minimalis Arsitek Desain Rumah" src="https://i.pinimg.com/originals/c2/99/33/c299331e3930b0b261dc39ce552f7301.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf0eod_D4Gqk6lNlxC238qP4aDFUZQhHpihg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Setelah membaca dan mengikuti pengarahan modul ini pengguna akan mengerti dan mampu mengerjakan pembangunan rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Inspirasi Desain Rumah 10x12 Paling Bagus Variasi Atap Dak Beton Atap Rumah Desain Rumah" src="https://i.pinimg.com/originals/a6/b4/f9/a6b4f95b8760e94f4a8dfaecd79e16f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2BIxdNIfjZuCgdEwoIOKbw0z6wTYfcs0D3faX3HGuiko2RH0q35aDw2T2DBtNf_TrPl8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga struktur beton diberi tulangan besi untuk menambah kekuatan menahan beban tarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Sederhana Ukuran 6x6 Tampak Depan Terbaik Desain Rumah Minimalis Ukuran 2 Kamar Deagam Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/3d/12/6e/3d126ea34e66af8d4c8b06231c62b775.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs9ql4HIk1oOCANkW4joUNuyTcJZ19AV7142jRcOjoQZ0UukJC5VLX3GdeOoFLsZ66VDc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jangankan di Aceh atau Yogya bangunan2 modern di Amerika atau Jepang yang super2 modern ternyata tidak mampu melawan kekuatan alam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Model Kanopi Beton Minimalis 2019 Terbaru Rumah Beton Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/61/88/23/618823debe0b26965d3e32217198842c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnoafQ1vk41-LIq-d3kGH3TDyDvTQ7gLpROnercG-Qn6qt1e53BmSRWMeP4clikPjrY64';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Beton mempunyai sifat yang lemah terhadap beban tarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menata Rumah Tipe 36 Agar Terasa Makin Luas Dan Nyaman Rumah Minimalis Desain Rumah Eksterior Desain Rumah" src="https://i.pinimg.com/originals/3f/27/89/3f2789fffcef9c14e85ca0513903d2c7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSx40ozmAZyF9bHwz2FTanjLuzfp_-JYQEIA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 Model Rumah Sederhana Conch House untuk Pribadi yang Simple.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Rumah Minimalis Sederhana Di Kampung Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/52/53/3a/52533a387b907de5522fa218df3df4e3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDQYweZrVHUmXV-f952tpDZ00Vs_bAzku9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>10 Model Rumah Sederhana Indah dan Menawan untuk Happy Living.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Model Pagar Rumah Minimalis Sederhana Dan Elegan Sejasa Com Desain Pagar Modern Desain Depan Rumah Pagar" src="https://i.pinimg.com/736x/06/bd/78/06bd78408a8880afc80c862f4c672b53.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zwCIxJY0yorm_dOVftjqCzmjC6fdjspd8A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gambar Rumah Sederhana dengan Perpaduan Kayu dan Beton Ekspos d algadode Tampil estetik gambar rumah sederhana yang satu ini memadukan elemen kayu pada bagian atas dan beton ekspos pada bagian bawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=teras+rumah+cantik&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=teras+rumah+cantik&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Sehingga struktur beton diberi tulangan besi untuk menambah kekuatan menahan beban tarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="17 Desain Rumah Dengan Teras Dak Minimalis Rumah Rumah Indah Desain" src="https://i.pinimg.com/originals/92/6a/d2/926ad2fb5709970aa6ff3f4bed2c9808.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHrL6IB3egUMbZJuwxFpc20hc3GG0w9PV7g1NNEbzdLiYSCSyqRL6xSm6eAU-vYJfs0Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hunian ini terlihat sederhana dengan memadukan material kayu dan beton pada dinding luar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Pagar Tembok Minimalis Cantik Sederhana Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/88/eb/38/88eb38388efdfb868b21978a490e5ffe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlsTFs23MrP_I4zJQa3fswh2KBbSphIK_ZA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Perlu diperhatikan penambahan air dilakukan sedikit demi sedikit dan disesuaikan agar beton dalam keadaan pulen tidak terlalu encer dan tidak terlalu kental.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Sederhana Dengan Model Teras Batu Alam Rumah Minimalis Arsitektur Rumah Impian" src="https://i.pinimg.com/originals/d1/47/28/d1472835c870e478fb88bc3892873d89.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HxorRSURT65TlEGlwGnGsErlWRAS3nPPXIV71Tb4WVTGX4zSRfh8HEoTRSZyXaJeuVo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pondasi rumah sederhana bukan berarti tidak kuat sebagai penopang bangunan hanya saja jenis pondasi yang digunakan adalah berjenis pondasi dangkal dan cocok untuk tipe rumah satu lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Rumah Minimalis Sederhana Model Rumah Terbaru Rumah Minimalis Desain Rumah Minimalis Rumah Hijau" src="https://i.pinimg.com/originals/e5/4f/09/e54f09fd60099ed3acacf46e4a0ecef2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJKV1er0Ae1jKfpitkqSBTHK1BgRdLm1vIJ-K_pPXdyhYg2boF9VNJQHcbbFLgvn-2HQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pondasi rumah sederhana bukan berarti tidak kuat sebagai penopang bangunan hanya saja jenis pondasi yang digunakan adalah berjenis pondasi dangkal dan cocok untuk tipe rumah satu lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/de/f7/c9/def7c93efa77517046d716da6d71c718.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA0jSy305kDH0JqWRz092-rlBUkwr_3sorOQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tinggal Minimalis 2 Lantai Atap Full Dak Beton Info Rumah Minimalis 2 Lantai Atap Beton Expo Desain Desain Rumah Rumah Minimalis Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/61/ee/b2/61eeb22948f4856b4fd65571e93f1fdd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWaehBf4QgFjfNNVdaZP2mgLAb4_paBdqmw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam pembangunan rumah sederhana hendaklah mengacu pada Peraturan Menteri Pekerjaan Umum dan Peru ma han Rakyat No5PRTM2016 sehingga konstruksi rumah yang terbangun sesuai dengan Standar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hugedomains Com House Designs Exterior My House Plans Shed Homes" src="https://i.pinimg.com/474x/dc/36/f2/dc36f2077f2584bbda5528e59371d19e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-bpwXboeY-6taCQWuWGGOyOsiSyshKylmvimluo0cW0le8UCcnE2yMrE7E9mOXH5B2RY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hunian ini terlihat sederhana dengan memadukan material kayu dan beton pada dinding luar rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Tampak Mewah Dengan Dana 500 Jutaan Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/5b/b2/a8/5bb2a8554bb51fe3be2ea6c09436c666.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj6PjHdg3dZG_owSvfxLcqrsJOtT20GjnjpQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meskipun tergolong rumah sederhana dan minimalis namun jenis rumah prefabrikasi memiliki fasilitas yang lengkap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+atap+dak+1+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+atap+dak+1+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Jangankan di Aceh atau Yogya bangunan2 modern di Amerika atau Jepang yang super2 modern ternyata tidak mampu melawan kekuatan alam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Inspiratif Model Rumah Sederhana Di Pedesaan Dengan Atap Limas Rumah Rumah Indah Desain" src="https://i.pinimg.com/originals/32/77/1f/32771f9671f9527a00ba857816f58e7e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rq61MnfwgSs23cKz4kbJfbU9UVIE4J9CbJJLhB7jbTNX1gPlv0G-LUSfvXHiVEMHt2U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 Campuran beton terdiri dari 1 semen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana 9x12 Minimalis Modern Youtube Desain Rumah 9 X 12 M 3 Kamar Tidur 2 Km Wc Mushola Rumah Minimalis Desain Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/54/9b/21/549b21a016e547faeba07a9ca6e9838b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqWlujh0M1z2-zuWLrVlru4sCqlHaFJ-wPw6Oq48ZV4I8SKDATgUCvixQoI-w-xK0SJo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>10 Model Rumah Sederhana Indah dan Menawan untuk Happy Living.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Pagar Rumah Terbaru Desain Pagar Modern Ide Pagar Murah Desain Eksterior" src="https://i.pinimg.com/originals/1a/2b/d7/1a2bd7d6a31cfccec408121c9c9e24d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY6aQH6-HxLHrvyAX3r4jAIG0Rga9PBKXMjQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Yang harus diperhatikan dalam struktur beton adalah mutu beton atau fc.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bangun Renovasi Rumah Membuat Rumah Desain Rumah Murah Rumah Renovasi Furniture Rumah Harga Rumah Sederhana Jasa Desain Renovasi Rumah Home Fashion Rumah" src="https://i.pinimg.com/originals/66/59/41/665941f196667ef8828435e3f8200c3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQlio06ahw1Co8-WbgIvQHSm-44PBP1_-CHQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Panel Pintu lengkap dengan daun pintu 2 panel Gambar 312 panel pintu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="17 Desain Rumah Dengan Teras Dak Minimalis Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/originals/34/72/45/34724593bdeaabaacadcca5445ed42aa.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSluHDjRlC50rOzzi-NSYg2rGFW76eM49ralzTV17jPIDQvFBS-5xPXeAXvN7lFzzPXA-o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Struktur beton dan besi tulangan dikenal dengan istilah struktur beton bertulang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Samping Rumah Minimalis Desain Eksterior Rumah Minimalis Desain Eksterior Rumah" src="https://i.pinimg.com/originals/08/f2/c6/08f2c6eb757601cb61a2977b00f75dcc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uZ65dywKr-yKZPtv-jII42n5k9cX9oCBXf6vXHoIZDwv_4sSVVRTmZWRS9tjE_efKPc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Web READYMIXCOID sebagai supplier produk beton ready mix beton precast dan juga jasa sewa pompa beton Web ini milik perusahaan Mitra Solusi Konstruksi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Desain Pagar Rumah Minimalis Rumah Beton Rumah Home Fashion" src="https://i.pinimg.com/564x/3f/6a/4f/3f6a4fb535985ef689fa7068a56392d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9gXW0achHKd-VwrVbRMqXCRsK6ZqHC9qNg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar Rumah Sederhana dengan Perpaduan Kayu dan Beton Ekspos d algadode Tampil estetik gambar rumah sederhana yang satu ini memadukan elemen kayu pada bagian atas dan beton ekspos pada bagian bawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Teras Rumah Dengan Batu Alam Desain Rumah Bungalow Rumah Batu Rumah Minimalis" src="https://i.pinimg.com/originals/35/0b/fc/350bfcdf9c49cd3549548c0b07ca84ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ8gsYF7K_nNT8ATR1p0F7PHKrIyr9q9kHFg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Struktur bangunan Rumah Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sederhana Modern 1 Lantai Exterior House Renovation House Paint Design Modern House Design" src="https://i.pinimg.com/originals/1c/26/52/1c26527df9ee0f32f8cf466029b289ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl40I0RYiybgYYX44TsuoMagfNVMtvT1C2PMsRDWVTifhfpKQjzVi-Plnb7s3UBjIwjok';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bahkan ambruk tidak terkecuali bangunan2 beton modern disana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="40 Model Pagar Tembok Minimalis Bicara Tentang Membangun Sebuah Rumah Ada Banyak Hal Yang Harus Anda Perhati Rumah Beton Rumah Minimalis Desain Pagar Modern" src="https://i.pinimg.com/originals/7e/66/e2/7e66e2dbef7744b9b2fc8d3fae849e37.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7IzvbYxhSZxqjSkDSPd4ddUiS29LYQwdx1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam pembangunan rumah sederhana hendaklah mengacu pada Peraturan Menteri Pekerjaan Umum dan Peru ma han Rakyat No5PRTM2016 sehingga konstruksi rumah yang terbangun sesuai dengan Standar.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-tingkat-kayu.html"><i>&larr; rumah tingkat kayu</i></a>
+                                                                    
+                                        <a href="/rumah-termewah-di-dunia-2019.html"><i>rumah termewah di dunia 2019 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

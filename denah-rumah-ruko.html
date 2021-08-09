@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Rumah Ruko
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Rumah Ruko",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/66/bb/6b/66bb6b2eaa4c93388bb3f753e130737c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+rumah+ruko",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Rumah Ruko
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Rumah Ruko</strong>. Model Rumah Toko Modern Minimalis Terbaru. Contoh Gambar Desain Rumah Ruko Minimalis Terkini.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/7d/61/33/7d6133b6723b30ffe19205d75bad108b.png" alt="Pin Di Sweet Home" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0qZK5a5cDTgOhKsBRW5Tgktej73hewowPSaUzESXMeZG-G9pw26AfkCRsrCxtXF9Xdk';">
+        <figcaption>Pin Di Sweet Home from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Desain Arsitektur Rumah Ruko Bangunan. 50 desain ruko minimalis 1 2 dan 3 lantai tampak depan - Memiliki properti yang bisa menjadi tempat tinggal sekaligus tempat usaha merupakan salah satu ide yang bagus sehingga bisa menghemat pengeluaran Anda untuk membeli dan membangun properti yang memang harganya selalu naik. Denah ruko 1 lantai di internet cukup banyak karena gambar ruko nya sendiri biasanya bisa disesuaikan dengan denah.
+    </p>
+    <h3>Halo sahabat desain rumah minimalis kali ini saya akan bagikan desain ruko minimalis yang direquest oleh Bpk.</h3>
+    <p>Jadi desain bagian depan rukonya seperti rumah biasa yaitu terdapat pintu utama jendela serta tidak ketinggalan teras rumah. Pastikan desain rumah dan ruang usaha rukorukan anda sudah fix dan sesuai seperti yang anda inginkan baru kemudian anda masuk pada tahapan konstruksi. Aksen kaca yang besar pada fasade memberikan kesan mewah pada ruko ini. Jika anda sebagai pemilik ruko maka kenyamanan ruko adalah hal yang penting untuk diperhatikan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/originals/1c/83/df/1c83df27e946940cd85e73afe2255e29.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCYSWdQ3zd0XlWnQTN_pU9xWYG73xerUhdWA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Misalnya toko baju coffe shop serta usaha lain yang bisa untuk mendatangkan pengunjung untuk berlama-lama di dalam ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Arsitektur Modern Minimalis Desain" src="https://i.pinimg.com/150x150/3d/46/93/3d4693738b5a39b14422f891fdb63c70.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmr1cKVoARIic_frVYR0ZNwRm-uY-ZCNGrjw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan membuat ruko anda bergaya minimalis bersih rapi dan modern maka tentu akan banyak orang yang ingin menyewa ruko anda apalagi harga sewa ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Lebar 6x18 2lantai Ini Alternatif Dari Post Sebelumnya Lantai 2 Nya Full Alias Dimaksimalkan Penuh Hehehe Dan Kamar U Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/06/d3/66/06d366a7067dfa642abe5592cbf60869.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbtWL8Pn6Abey-X4ybCUmgKn1jQJ9ft0eKA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini beberapa tips dalam membuat desain kantor di ruko yang perlu kita perhatikan agar kantor kita terstruktur dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Ruko Minimalis 1 Lantai Check More At Http Desainrumahkita Net Desain Rumah Ruko Minimalis 1 Lantai Desain Desain Eksterior Rumah" src="https://i.pinimg.com/originals/fe/61/cc/fe61cc994c625e1553ba687bdb63ed3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VzndnCaVbA6JXK32LMf9MsRXSmbTgWpZPMJfePPtiJoF4IauND_fOvKWK2VtDVESSiQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jasa desain ruko minimalis desain ruko 1 lantaidesain ruko 2 lantaidesain ruko 3 setelah selesai di lakukan pembuatan gambar perencanaan desain rumah tinggal anda akan masuk pada proses pelaksanaan bangun rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Penda Lamtim Di Shoplot Designs Di 2020 Denah Rumah Ruko Minimalis" src="https://i.pinimg.com/736x/1c/3c/d9/1c3cd9507e6ecc0ce2bc32af661410e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlmwCxhZsD5Az-J9zvq-j1SlK7uG24iNsd7w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Upah pekerja bangunan pun bervariasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern 1 Lantai Rumah Minimalis Arsitektur Rumah Modern" src="https://i.pinimg.com/236x/74/8e/35/748e35e80fb978c86e634e3974c129d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzMhKtwR7OWugocyLRNZPIY5C6ahXqab5yg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut ini beberapa tips dalam membuat desain kantor di ruko yang perlu kita perhatikan agar kantor kita terstruktur dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home Decor" src="https://i.pinimg.com/474x/57/f1/c9/57f1c90a9b51d6b499e550edfcf9f39f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3EAN4QU5CcaAn2cJjhO69wVjTYwK7T8to7NCU5uapyz-OAFiroK9c09HnZhjb0BmTfXg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini beberapa tips dalam membuat desain kantor di ruko yang perlu kita perhatikan agar kantor kita terstruktur dengan baik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Toko" src="https://i.pinimg.com/564x/3b/9f/c1/3b9fc165b49c93dac884b4156582fca3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFrvY9N-GNSq8ZPKxIwsbcl2MYLp-xjR29g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Misalnya toko baju coffe shop serta usaha lain yang bisa untuk mendatangkan pengunjung untuk berlama-lama di dalam ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 1 Lantai 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Rumah" src="https://i.pinimg.com/originals/11/1d/d2/111dd25308b240e615a2beefeca38fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFR_GJdq1XHDaNgPJuT1rQ1B8RP0sgObc5SA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jadi desain bagian depan rukonya seperti rumah biasa yaitu terdapat pintu utama jendela serta tidak ketinggalan teras rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Ruko Tipe Sudut 6x15 Citraraya Cikupa Little Ginza Arsitektur Ruko Lantai" src="https://i.pinimg.com/originals/e5/c5/ae/e5c5ae98b2f3c9b70524c2205cee1069.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpGZgXmGstOmWRdhRxHTqIC5U0v73eGL5U2hn1FW2xASIkq4obR0FJcB4v-GH6DhBC348';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk ruko di atas sangat cocok bagi anda yang ingin memiliki ruko dengan 1 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ruko 2 Lantai 7x10 M Yang Terkini Denah Rumah Lantai Rumah" src="https://i.pinimg.com/originals/25/50/3d/25503defa35ebb1a7831b1884b4e5b45.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRK-Hp05On_VPY25heCIoIhWdYR3uCHETL8FTkFR1pjD-HpmYsbFfLBOzi6tNEfCGwp2o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam Desain Ruko Minimalis yang nyaman akan membawa kehangatan dan kenyamanan bagi para penghuni rumah ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai Luas 125m2 Luas Total Bangunan 138m2 Termaksud Teras Dan Balkon Ukuran Tanah 8m X 16m Luas Lahan 12 Denah Rumah Lantai Rumah" src="https://i.pinimg.com/originals/e6/21/5d/e6215d1543cc150df85f6d3c87fb2a14.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSWIS1iC_K9mbRfnfL87t7RTlMX9tLACXQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tertarik nggak memiliki ruko minimalis seperti itu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Saat Ini Perkembangan Dunia Usaha Berkembang Pesat Banyak Orang Yang Memut Minimalis Desain Denah Desain Rumah" src="https://i.pinimg.com/474x/fe/5a/ea/fe5aea7d7fdb5070db0b63e264c6d5b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPokbOfdSAlM8lUMcrRXKxPow7FqSC0dT8QA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain ini terlihat minimalis dengan jendela yang besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layanan Jasa Gambar Rumah Rumah Toko 2 Lantai Di Tulungagung Desain Rumah 2 Lantai Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/f3/89/5e/f3895ec2bac5402655e6dc187e5fc71e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZao5-Ne39NwYJt1E9eyKcsDLZcKoqy13HhyTBobNo-hl_ttRJv0W99g9nOarkp6HpGmo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aksen kaca yang besar pada fasade memberikan kesan mewah pada ruko ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Modern Ruko Rumah Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/7d/41/62/7d4162ade2252c4736e0d96e6011dc91.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPylMizbbfRiaBfddU-G0wS6qJfhZJ94S4Ag';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mengingat harga material bangunan antara satu daerah dan daerah lain di Indonesia tidak sama maka lokasi ruko akan sangat menentukan berapa besar biaya pembangunan ruko yang perlu disiapkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Kimora Thezorabsd Tipe 8 Denah Rumah Ruko Apartemen" src="https://i.pinimg.com/originals/73/3d/29/733d294174e5035ee9dff42694156683.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl44fnm1LGU_QSDDzqm3Q1NfZTp2lUWIulbg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Misalnya toko baju coffe shop serta usaha lain yang bisa untuk mendatangkan pengunjung untuk berlama-lama di dalam ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="126 Contoh Desain Ruko Sederhana 2 Lantai Paling Keren Desain Rumah Ruko 2 Lantai Minimalis Denah Rumah Ruko 2 Lantai 7x10 M Yang Lantai Denah Rumah Desain" src="https://i.pinimg.com/736x/5c/0d/d8/5c0dd843e9aeae69482dcd95d3495df7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFowPJ7djN3Onc0nRsP5o_hUjp9EmIMPoydWS_ujgHB8YCAYf5ehblyRmE4cKnW9nUHQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yah meskipun tidak secara detail dan lengkap tetapi anda sudah bisa membuat ruko dengan desain gratis dari internet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Denah Rumah Dan Toko Minimalis Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/474x/3e/86/29/3e86290736133b0cc09118322cc95a68.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF6QpM4oMCb9wRgkIKKY_h5dMwIm2GnJXsFQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut ini merupakan kumpulan desain rumah milik Indo Design Center dengan kategori ruko 2lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Saat Ini Perkembangan Dunia Usaha Berkembang Pesat Banyak Orang Yang Memutuskan Menjadi Minimalis Rumah Desain" src="https://i.pinimg.com/originals/df/09/e2/df09e2636ad9dd4a18894035f91890e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0x3meLQmDGsgZKOGYc_ZQ_4ULzE8U2_rQwQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah minimalis 2 lantai sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Ruko Minimalis 2 Lantai Desain Eksterior Arsitektur Home Fashion" src="https://i.pinimg.com/originals/01/14/52/01145298bc95eb2aa3f0b688f7d35cdc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQNe1aE3wR3M1sm64QjRQVWZa-5LRb52fRzQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>2701 likes 2 were here.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Terbaru 2015 Denah Rumah Desain Rumah 2 Lantai Rumah Minimalis" src="https://i.pinimg.com/originals/2d/d3/3c/2dd33cda285f28a5d18f78d7fac29e23.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwuQ7iY9F1SxE8nKsnNuoeJZBL1ylRqxCoA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun warna hitam ini dipadukan dengan aksen garis berwarna kuning dan merah terang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Toko Minimalis Modern Ukuran 8x16 3 Kamar Tidur 1 Lantai Desain Rumah Kecil Desain Eksterior Rumah" src="https://i.pinimg.com/originals/0a/ac/43/0aac43c75156f707772c611de1f306f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYHL-p00c52rB0NsnlPSGKNa7UQ1WoXfDDhxWX6AZ34e9Kbhaq044lxdtX1MWers4k1LQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mengingat harga material bangunan antara satu daerah dan daerah lain di Indonesia tidak sama maka lokasi ruko akan sangat menentukan berapa besar biaya pembangunan ruko yang perlu disiapkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruko Minimalis 2 Lantai Arsitektur Klasik Arsitektur Sketsa Arsitektur" src="https://i.pinimg.com/originals/db/d0/da/dbd0da985d45ba6b08879a1cea1034bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDO27oAsGJVR_GWqO7_IJzUSyT7FmopwWgqEsNlZBWkMAlHYU04rVKL57NVoBcuB-2XY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ruko Mewah Nuansa Abu-Abu Aksen Orange bentuk Melengkung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Eksterior Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/originals/3c/1d/df/3c1ddfe8346b6f7bdcdf58a73bae0e8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP8prYsPp8JXBYcS0HiZMoRrcZlsUqulaRUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yah meskipun tidak secara detail dan lengkap tetapi anda sudah bisa membuat ruko dengan desain gratis dari internet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Ruko Tipe Standar 4 5x15 Citraraya Cikupa Little Ginza Rumah Lantai Ruko" src="https://i.pinimg.com/originals/b7/e2/fa/b7e2fa532d1bd5eceeb1f7c80a16ff0a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnwAVjD8V_oEVAja8HGDgV28-BR9orTy-TIVD7l1a8qmk87BKg6zNtAcS_jkSbFh7Xgw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan Desain terkini harga yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ruko 2 Lantai 7x10 M Yang Minimalis Denah Rumah Desain Rumah 2 Lantai Lantai" src="https://i.pinimg.com/originals/6d/01/1a/6d011a63550703994ae6963dc1a969fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOyFVjMdjJgjl2mO64XKSZqcIj0Nad0OLi-UwX4DoW5-xxJqKVOw06xaONp-t1VveX4Rk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tips Mendesain Rumah Ruko Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 003 Contoh Desain Rumah Tinggal 1 Lantai Di Lahan Denah Rumah Desain Rumah Rumah" src="https://i.pinimg.com/originals/68/a5/d1/68a5d16709e11a6d95de73679a6646d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFILV4HfZeOYm9Ex68wh0eXl2qplZSDJeiltAcXPnyJqv7rUWm5pDvtr5XK6wF0XYd_Q4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain cafe dan rumah makan ruko Jika kalian ingin mendesain cafe yang berada di ruko 2 lantai konsep desain ini bisa dicontoh Desain cafe ruko 2 lantai Ketika ruko yang kalian sewa untuk usaha cafe terbatas kalian bisa terinspirasi dengan desain cafe kecil di bawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Sweet Home" src="https://i.pinimg.com/originals/7d/61/33/7d6133b6723b30ffe19205d75bad108b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0qZK5a5cDTgOhKsBRW5Tgktej73hewowPSaUzESXMeZG-G9pw26AfkCRsrCxtXF9Xdk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ruko minimalis dengan lebar 5 meter ini terlihat serasi dengan perpaduan nuansa abu-abu dengan aksen orange dan kuning.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Rhafi Dilla Di Kost Desain Kamar Hotel Denah Rumah Lantai" src="https://i.pinimg.com/originals/e0/18/53/e01853afe1a69c82bd60d1b9f52eebf7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9dxIblg3zrS7bWXJDwGCchpljYHC6dw0Vw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kami Bergerak dibidang jasa pembuatan Desain Arsitektur untuk Rumah Ruko bangunan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruko Minimalis Desain Desain Rumah Rumah" src="https://i.pinimg.com/236x/1c/18/c1/1c18c1294aa9948e5b2e4adccb9e34f0--minimalis-desain.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoeFx4VIB4AJAGvkD-cd1GEOgLzcOGp63SBQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Arsitektur Rumah Ruko Bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Saat Ini Perkembangan Dunia Usaha Berkembang Pesat Banyak Orang Y Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/9d/9c/f1/9d9cf138e5f1e4bbd8675a4901b10854.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UIErtCXvSr3fxnKnz6S-lTxgKBZZKEkMNQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tips Mendesain Rumah Ruko Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Model Rumah Terbaru" src="https://i.pinimg.com/564x/84/b5/5e/84b55eb430379b9a67f7e4561599300c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM2Ilpkp2Q2xQyyyiAYisJ2q1plaUAMVyA1g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagi para pengusaha yang memiliki budget besar mereka bisa menyewa atau membeli gedung untuk membuka toko atau untuk tempat usahanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruko Terbaru 2014 Desain Properti Indonesia Ruko Desain Arsitektur" src="https://i.pinimg.com/originals/b5/8a/f1/b58af15c1765f13f64174baf95bc7def.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwlVLxLeSRyEVmdrSaheVYGSnhw1yRdEEow';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain cafe dan rumah makan ruko Jika kalian ingin mendesain cafe yang berada di ruko 2 lantai konsep desain ini bisa dicontoh Desain cafe ruko 2 lantai Ketika ruko yang kalian sewa untuk usaha cafe terbatas kalian bisa terinspirasi dengan desain cafe kecil di bawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Gambar Desain Ruko Minimalis 2 Lantai Terbaru Desain Denah Rumah Minimalis House Design House Design" src="https://i.pinimg.com/originals/1f/94/d0/1f94d0d54bcef411b61ba7ecd57b466b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMSRkqzZB3CE3vPMA06WegneIFQjLEar5u4kLcFjjNC4muGh-TnyssWEmU5kR6IpVDHU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tampak depan ruko minimalis 2 lantai Rumah Desain 2000 Rumah Desain 2000.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Menciptakan Desain Ruko Minimalis 2 Lantai Yang Elegan Casas Casa Terrea Luar" src="https://i.pinimg.com/originals/95/1f/78/951f78613e4910f5ff4776b4e6598121.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMLKSqj-4ugRorPmQLXsP6USEIsw_WiE10bwtS3PtHytwWH9owkE4orBOyC8DpxVrYgto';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Model Rumah Toko Modern Minimalis Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=denah+ruko+2+lantai+4x12&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+ruko+2+lantai+4x12&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Ruko Mewah Nuansa Abu-Abu Aksen Orange bentuk Melengkung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctlaffclvkjazpxjd3lrdbt9w5amc4hoxalt Eqrcfytayoqstm Usqp Cau" src="/search?q=ruko+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=ruko+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Jika anda sebagai pemilik ruko maka kenyamanan ruko adalah hal yang penting untuk diperhatikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ruko 2 Lantai 7x10 M Yang Bagus Denah Rumah Ruko Lantai" src="https://i.pinimg.com/originals/11/b8/b9/11b8b94c1ce76552a283a4609e8c506c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44w-0j8BSZoPiQ8Pr3o2A-VVMd60UFI3hkCSqyVnYf-gcN3ZCjyyzqNX_Qkv2F-UapKk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentukan tema konsep desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Selain Rumah Ada Juga Jenis Rumah Toko Atau Ruko Modern Yang Hingga Sekarang Masih Populer Di Tengah Masyarakat Desain Rumah Kontemporer Rumah Minimalis Desain" src="https://i.pinimg.com/originals/26/82/f6/2682f6a576c01647c70f554da44dbabf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSJ6egE1kUYwluzyoFz3Fu6J5g1owHonvgg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tips Mendesain Rumah Ruko Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruko 2 Lantai Sederhana Youtube Lantai Ruko Desain" src="https://i.pinimg.com/564x/07/7b/27/077b27941d853dcc03e8db6275b7d4a4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReKUSDFFpz3bxdxC3gfQRBRycVOGfaLJa5vzEjxA1uhAVOhlLW8nnkqwQHJF5_vsVFhDI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Misalnya toko baju coffe shop serta usaha lain yang bisa untuk mendatangkan pengunjung untuk berlama-lama di dalam ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Desainrumahnya Com Informasi Dan Tips Mengenai Rumah Minimalis Arsitektur Arsitektur Modern Rumah Minimalis" src="https://i.pinimg.com/564x/1a/2d/93/1a2d93ed4aaa514d8cec5e12f7b37ea1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQae4OdyM67gtQWiJiaYtn5KOhjNNpUcOHQnw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan membuat ruko anda bergaya minimalis bersih rapi dan modern maka tentu akan banyak orang yang ingin menyewa ruko anda apalagi harga sewa ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Denah Ruko 2 Lantai 2015 Denah Rumah Desain Rumah Minimalis Lantai Rumah Desain" src="https://i.pinimg.com/originals/86/f9/a3/86f9a3629bbaf932140a0aea83ca7944.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyM-36VGhlcqY9yHcivfmsROy-2I7obQT_ScZJWGHsoiC0ynhnZCv2V7paamUL9713aqQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jadi desain bagian depan rukonya seperti rumah biasa yaitu terdapat pintu utama jendela serta tidak ketinggalan teras rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Ruko Lantai Modern" src="https://i.pinimg.com/originals/66/bb/6b/66bb6b2eaa4c93388bb3f753e130737c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5XYz31Vvv0wBei0RKpKSYKq1GddCJmJoy8Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain ini terlihat minimalis dengan jendela yang besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Pondasi Rumah Dan Ruang Usaha Ruko Atau Rukan 1024x669 Jpg 1024 669 Rumah Lantai Desain" src="https://i.pinimg.com/originals/8b/6f/ac/8b6facd12dc8c826d4583283f9290f02.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWscmT6S4BVvNYiNo6UlHaOEUvgkCmNzPSmg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Gambar Desain Kantor di Ruko Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Dan Tampak Kreasi Rumah House Design Drawing Office Layout Plan Small Office Floor Plan" src="https://i.pinimg.com/736x/95/29/9e/95299e606769566b77a2c47ebd12d59c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBqyMiKukJgPmxoMAWVd2sfvf42CAo3WRK7uVa0ox-gS-3uIFTj_bEa0r2p-bG83m33E';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah minimalis ada banyak cara untuk mendapatkan kenyamanan dan juga kesenangan meski tinggal dalam sebuah rumah kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 804 Diatas Lahan 8 X 16 M2 Rumah Minimalis Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/82/18/2d/82182dfd7e1d8c640785050a980e69ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4j_M7tPUaL6mVbzsURXjHHP9kzd3SIHQseA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan perpaduan warna yang kontras tersebut membuat tampilan ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Ruko Minimalis Sederhana Rumah Desain Rumah Desain" src="https://i.pinimg.com/474x/6e/2b/43/6e2b434aa73f735a778d12bbc8edff7d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPy46CRUpTcbdRmBpeaMED7_cDikgSh5X0PQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Halo sahabat desain rumah minimalis kali ini saya akan bagikan desain ruko minimalis yang direquest oleh Bpk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Saat Ini Perkembangan Dunia Usaha Berkembang Pesat Banyak Orang Yang Memutuskan Menjadi Pe Rumah Ruko Desain" src="https://i.pinimg.com/originals/b3/bf/81/b3bf815cf52a76e0641496d1bd1df2cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTcJs1lrWcKMV7VmhXSLTlN5y64ObRZDDVQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denda - Aceh Sebelumya saya berterimakasih kepada beliau telah mengijinkan desain ini saya bagikan kepada sahabat desain rumah minimalis semua Semoga mendapatkan pahala dari Alloh swt Beliau juga telah memberi masukan kepada kami mengenai desain penataan ruang desain ruko.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Desain Ruko 2 Lantai Minimalis Dan Modern Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/ca/6e/9b/ca6e9b8b5d83abdfcb6d27c585696925.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsXeRuVvzsqfr8LBUZp-Zntxtdfk8lAQOAiYeD2p21H6qe4PF1h88PjZTuNk_yJ4ZPo6w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika anda sebagai pemilik ruko maka kenyamanan ruko adalah hal yang penting untuk diperhatikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Mungil" src="https://i.pinimg.com/564x/51/e8/7f/51e87f7826bfcb042c192ed064db8bef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ezzRQtwzzbSrhv1hC6Ya2CpD_SXUnItp3jo_3Q8_Ti4b6QNh5QCcqzeLZkiIhROnLoo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berbagai desain rumah telah kami rancang mulai dari rumah hunian 1 lantai sampai sampai dengan desain rumah mewah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/di-dalam-rumah-minimalis.html"><i>&larr; di dalam rumah minimalis</i></a>
+                                                                    
+                                        <a href="/desain-warung-makan-kecil-sederhana.html"><i>desain warung makan kecil sederhana &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Kamar Tidur Kecil Minimalis Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Kamar Tidur Kecil Minimalis Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/b5/5d/10/b55d10e1b62f0b6bc0c016392ae20cda.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+kamar+tidur+kecil+minimalis+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Kamar Tidur Kecil Minimalis Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Kamar Tidur Kecil Minimalis Sederhana</strong>. Desain Kamar Tidur Kecil Untuk Tamu. Desain Scandinavians dengan Lantai Keramik.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/474x/48/fe/16/48fe16ee0c2327aead2aa4c854bfcc24.jpg" alt="Pin Di Barang Untuk Dibeli" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9zQgLXE4KPst5THhrKOw8MsqLHGMBFqEEw';">
+        <figcaption>Pin Di Barang Untuk Dibeli from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Desain Kamar Tidur Kecil Untuk Tamu. Desain Kamar Tidur Gaya Scandinavian. Desain Kamar Tidur Minimalis di Loteng.
+    </p>
+    <h3>Desain Kamar Tidur Ukuran 23 Meter Dalam mendekorasi kamar tidur yang bagus dan nyaman memang bisa dibilang tidak mudah dan juga tidak sulit.</h3>
+    <p>Salah satu desain kamar yang diminati adalah desain kamar tidur minimalis. Hanya saja pemilihan perabot dan penempatannya tetap perlu diperhatikan. Desain Kamar Tidur Sederhana yang. Furnitur pada desain kamar tidur sederhana ini ditata dengan cukup simpel yaitu sebuah kabinet kecil tempat meletakkan pernak-pernik esensial.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Tidur Minimalis 3x3 Terbaru Bedroomdesign3x3 Dekorasi Kamar Tidur Remaja Kamar Tidur Anak Perempuan Interior" src="https://i.pinimg.com/originals/73/49/a9/7349a9deae44430d58f143f8863cff36.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnIcBkAT4ImD5ywXSPwE5PaRG2K7iQoSLD-xVdAJEQg3F54q0pfYOwYwx4pubhF_UcAY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sejak jaman dahulu perkembangan desain jendela berubah sepanjang waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="60 Dekorasi Kamar Tidur Minimalis Yang Mudah Dicoba Ide Dekorasi Kamar Ide Cat Kamar Tidur Ide Dekorasi Kamar Tidur" src="https://i.pinimg.com/474x/2c/5d/da/2c5dda5d4cbe1b3a551f3b94b80d1235.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfSXFbJrT1s0aK7pSJGJdHeZaFhJJJ_1ohWw3G24G_kliAVNxAouiSHybGIuiSDzhkVqU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Jendela Kamar Tidur Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Foto Desain Kamar Sederhana Elegan Paling Bagus Model Kamar Desain Interior Kamar Tidur Pink Kamar Wanita" src="https://i.pinimg.com/originals/31/3e/99/313e997ecfdb68f94cc405cc8a3986f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiwkDMMayBeuDKrhlcCbRE2IcLGX6LMs6HM3XSSyVmcjKODXb8xQumW-1VqEyibAeD28s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Kamar Tidur Kecil Untuk Tamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Minimalis Kamar Mandi Sederhana Gaya Kamar Mandi Hiasan Kamar Mandi Dekorasi Kamar Mandi Kecil" src="https://i.pinimg.com/originals/2d/24/c4/2d24c48f0781bc33f21542695ea69b0b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3eDdvUCZ4NEwa2mqltfuIaeLbSlzHN4O1Cg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar tidur merupakan salah satu dari bagian rumah yang sangat penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Tidur Remaja Perempuan Dan Mewah Girls Bedroom Kamar Tidur Anak Anak Ide Kamar Tidur" src="https://i.pinimg.com/originals/19/fb/be/19fbbef6e1c926593150831c4c760e17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbBwF1Dxv0kxEiYiJaoXtqH4Tzijd9PIbzg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya untuk kamar tidur ukuran 33 hanya muat untuk kasur lemari dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketsa Denah Rumah Kecil 1 Kamar Tidur Terbaru 3d Rumah Denah Rumah Desain Interior Rumah" src="https://i.pinimg.com/originals/98/2d/3a/982d3a9a6fc74a1b100a280734dd808d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc0AQbw67EtDUBmrlfCZDD5dZD329eZef_tzCyhqrJPfQJdmoKeaAv2wm9e9lzaJoxo-4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain kamar tidur sederhana ini juga terlihat feminin namun bukan tidak mungkin jika diolah dengan variasi dekorasi yang berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/0f/02/26/0f0226a8ef3ad56040a730bbbd98f334.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmumLZNhBQ5hA9umeELne18585SunxwEkwN0yJLLZgQlHNfOUxvnnaQDvH6lUOY7lVkq8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Jendela Kamar Tidur Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Fai" src="https://i.pinimg.com/originals/7f/39/2c/7f392c1e5bf9ea3afce9d61177e742e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLfa_BF_Cnjd5WYYGXZ6lKFJVH6LnhQustrA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wallpaper Kamar Tidur Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Rumah Minimalis Desain Interior Rumah Design Interior Rumah Interior Rumah Sederhana Interior Rumah Mungil Desain Interior Interior Kamar Tidur Kecil" src="https://i.pinimg.com/originals/36/24/08/362408b9cf140ae5d1805d63338dd2cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcji43oVqcUT_a0OkVpXeNsAscZhU3Zk84VA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasanya untuk kamar tidur ukuran 33 hanya muat untuk kasur lemari dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Kost Ukuran 3x3 Kamar Mandi Dalam Interior Desain Desain Rumah" src="https://i.pinimg.com/originals/43/92/66/43926622188f40a0e5cf57a3a596f691.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCmX4Q8rnB5S9XcQgvUYiwCYWChuH7DR5iw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Inspirasi Desain Kamar Tidur 33 Berwarna Pink.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kamar Kecil" src="https://i.pinimg.com/originals/01/3b/68/013b68e5ad49673a17b645041c460f52.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxbNpCcTpjQO_rh1jsK2FXwA9MEHvy-kBoQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar tidur merupakan salah satu dari bagian rumah yang sangat penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Anak Minimalis Ayimelna91 Ide Dekorasi Kamar Ide Dekorasi Kamar Tidur Ide Kamar Tidur" src="https://i.pinimg.com/originals/74/f8/9b/74f89b7aa7b751599264c4d203161b78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdLS8V-5fCCO8RYqbQD4QdMRNFvHkkthDS74Z8KfYVowCNNfUFvTjM12ZOYOGCILCsbu8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>50 Desain Kamar Tidur Kecil Yang Unik Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Dekorasi Kamar Tidur Sempit Remaja Sederhana Agar Terlihat Luas Terbaru Ide Dekorasi Kamar Tidur Ide Dekorasi Kamar Penataan Kamar Tidur" src="https://i.pinimg.com/564x/ac/f5/bb/acf5bb48642c5960fa7c29898d1d2f48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgupDpF7809o8zlbQAdi0gI6TsmI_zBtMFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain 1 Desain kamar tidur 33 meter dianggap ideal untuk sebuah ruangan dengan kasur double.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar 3x3 Kamar Tidur Rumah Kamar Tidur Minimalis Kecil Rumah" src="https://i.pinimg.com/originals/8e/a7/f8/8ea7f873297d8363b705cd8ec742467d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5b5q97K5xcVlxrkFpxafEvIkOFYv5l2d7QA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Semua yang ada di dalam ruang tidur Anda wajib memiliki apa yang disebut dengan tema desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Joanita Di Wooden Furniture Ide Kamar Tidur Kamar Tidur Kamar Tidur Rumah" src="https://i.pinimg.com/originals/ef/21/3b/ef213bf620efd30c2b2245c6945f1c6b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJDxxpCHv4x6evDSePJlrVN9it2XOGq2cN4j4037odWyux5NDzeK7OMLF2OaFpt8kWYw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hal yang berbeda ada pada pertimbangan berdasarkan ukuran dan luas kamar tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Interior Kamar Tidur Ukuran Kecil Yang Make Over Kamar Tidur Suami Istri 3x3 Minimalis Girls Bedroom Paint Boy Bedroom Design Bedroom Design" src="https://i.pinimg.com/736x/78/16/7d/78167d53b27c8bb5bebc5446ea19f91a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN0g3azyypFegqQlEeabnleNS5n1A7H9perw4VCYBX7O261T1eMmql4Wf7c6FSan9hSRw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Ukuran 23 Meter Dalam mendekorasi kamar tidur yang bagus dan nyaman memang bisa dibilang tidak mudah dan juga tidak sulit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Foto Kamar Tidur Sederhana Sempit Tapi Bagus Nyaman Ide Kamar Tidur Desain Interior Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/e8/3d/cf/e83dcfda80cf389a9f8e181519b0f7bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqwZCZMpkrkaKDrZ1-pAVd-5n7-xxxGNHGy5QT1Vdx3wbt0HJa2PXdXUXNDQTKuyjzX4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Kamar Tidur Sederhana Warna Putih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Tidur Sederhana Interior Madiun Kamar Tidur Bernuansa Putih Ide Kamar Tidur Desain Furnitur" src="https://i.pinimg.com/originals/17/a1/40/17a1404383c804f3dd97dfdc0e4c3067.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIZ7BIW7ycShwBqYUfNvcxKtMAE5ui1ujqOg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Kamar Tidur Minimalis di Loteng.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Stella R Di Rumah Idaman Ide Dekorasi Kamar Tidur Ide Dekorasi Kamar Ide Kamar Tidur" src="https://i.pinimg.com/originals/3a/1b/7c/3a1b7cbbead43a308e42040b8408664d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfv5ZLJpRdQo1sV4snV-FFMS9J3Rqnej71rw';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Desain Kamar Tidur Ukuran 23 Meter Dalam mendekorasi kamar tidur yang bagus dan nyaman memang bisa dibilang tidak mudah dan juga tidak sulit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcr0zvrtp5ekbflxdt954nl08dwrmlfnw46cuzfnazpxqfxglcj Usqp Cau" src="/search?q=dekorasi+kamar+tidur+remaja&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=dekorasi+kamar+tidur+remaja&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Kemudian tempat tidur sederhana dengan warna yang senada dengan kamar diletakan menempel pada dinding dan di bagian sampingnya diletakan meja berukuran kecil yang dilengkapi dengan barang dekorasi seperti vas bunga serta barang dekorasi lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Home Decor Kamar Tidur Gadis Remaja Ide Kamar Tidur Ide Dekorasi Kamar Tidur" src="https://i.pinimg.com/736x/aa/08/a3/aa08a3948f74b4725481f2b4357b7e60.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOIFoG2weje0rinxbWCFbWF1k_TsEYCpjD6leNyJLxRmoe2DYham9Stb-c02ONqks2PBo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Walaupun kecil Anda masih tetap bisa mendesainnya dengan nyaman dan elegan dengan berbagai jenis interior desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warna Cat Kamar Yang Bagus Biru Putih Kamar Tidur Biru Warna Cat Kamar Tidur Rumah" src="https://i.pinimg.com/originals/ca/76/75/ca767549f551a121f0b3035ad7a315fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNt8ZbKarymae_ApRMx0Uq9KWmZzGl5b2c2w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Walaupun kecil Anda masih tetap bisa mendesainnya dengan nyaman dan elegan dengan berbagai jenis interior desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="100 Foto Desain Kamar Sederhana Elegan Paling Bagus Kamar Tidur Kecil Desain Interior Dekorasi Apartemen Kecil" src="https://i.pinimg.com/originals/92/2e/85/922e8505ef507206fe2a5be2e836efc0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRouEupWqYHMIqonXUo8W7mgGhg1jO7vytkUnWiLdtlTOHT7zVsw3wq4kzkfhpH0jtqdAY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Minimalis Terbaru 2019.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Mandi Minimalis Kamar Mandi Kecil Kamar Mandi Kecil Desain Kamar Mandi Kecil Gaya Kamar Mandi" src="https://i.pinimg.com/originals/59/26/17/59261774709598b789aabf8f586f5c40.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDwVuzSPkZDrv7JdZWcryZrib-Z3Y70Ez8Q';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Apalagi jika anak anda perempuan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/236x/09/a8/97/09a897f5520f636e86b3caa0f1bb52f6--girls-bedroom-kamar-anak.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZFdX1z7Z62ZuETl6xUUVppwfVXGpJc1LzkQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Walaupun kecil Anda masih tetap bisa mendesainnya dengan nyaman dan elegan dengan berbagai jenis interior desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Kost Ide Dekorasi Rumah Desain Apartemen Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/02/c9/50/02c95042048e29b3fde4305752eae018.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGI7BEtxBZ-nwuegtqfEPPmME_SQvCBJTkWw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Karena biasanya anak laki-laki akan lebih pendiam namun biasanya anak perempuan akan jadi lebih perasa saat mereka beranjak remaja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Barang Untuk Dibeli" src="https://i.pinimg.com/474x/48/fe/16/48fe16ee0c2327aead2aa4c854bfcc24.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9zQgLXE4KPst5THhrKOw8MsqLHGMBFqEEw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selama ini kamar tidur yang nyaman identik dengan ruangan luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Tidur Minimalis Simple Keren Dekorasi Kamar Kecil Ide Kamar Remaja Gaya Kamar Tidur" src="https://i.pinimg.com/originals/da/da/8a/dada8a0aa252b0204f137904c31e9305.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDLNwOatLnw59OqlU97g9YZBdn4YywakCLkiApVltTP5KBInKdm5kj_UGkJb1doY6u15Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain kamar tidur sederhana ini juga terlihat feminin namun bukan tidak mungkin jika diolah dengan variasi dekorasi yang berbeda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Giấy Dan Tường Mau Xanh La Zicxa Com Trong 2021 Thiết Kế Phong Thiết Kế Phong Ngủ Trang Tri Phong Ngủ" src="https://i.pinimg.com/736x/6b/bf/f7/6bbff74265e4230623a213eda8887f06.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqULPhwgMeqfY1X3efBYJVrzYwlEM0-OzUKjNOp4m7b24tLN_PeC8gAes-jHdMXEkjDLc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Walaupun kecil Anda masih tetap bisa mendesainnya dengan nyaman dan elegan dengan berbagai jenis interior desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="45 Ideas For Craft Room Modern House Bedroom Decor Small Room Bedroom Bedroom Diy" src="https://i.pinimg.com/474x/ee/0f/27/ee0f2773e63f9cec0fe1af2817720e4f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqnAq9HNRlXAaO1h4AlbBwcvZ2V1o3SvghlA';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Desain Kamar Tidur Sederhana yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Tidur Bergaya Minimalis Modern Desain Interior Interior Home Decor" src="https://i.pinimg.com/originals/d7/e4/ee/d7e4ee7998b3d41612ded2bf27cfe813.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7-MtfBfASrB-bu5vLmiZ2YE-5qn7MJoRnrw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Walaupun kecil Anda masih tetap bisa mendesainnya dengan nyaman dan elegan dengan berbagai jenis interior desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Desain Interior Ide Kamar Tidur Kecil Ide Kamar Tidur" src="https://i.pinimg.com/originals/32/b3/17/32b31747abae8c45001bc88d5be22685.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxNuc5wA8MS0yZHGjRRt_OsIp6hY1tZhmQl9xs3Fjm1MQv4QYgg-nLC37UHRZy6xWi8q4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Kecil Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/c4/f6/40/c4f640897e6fb83440f45612d3e65e1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsY3ioG51Q341oD7mgeMIJJXaWnv86MjD82w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Interior Kamar Tidur Kecil Cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctplvhet9agt9f4ehuxiqkb4p3vyzceag1rxei0wawe1pn1vmxg Usqp Cau" src="/search?q=desain+kamar+tidur+sempit+2x2&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+kamar+tidur+sempit+2x2&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain ini sangat cocok untuk pemilik kamar yang memang juga simpel dalam kehidupan sehari-harinya baik itu bekerja berpakaian maupun bersosialisasi dengan sekitarnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Girls Bedroom Ideas Ide Dekorasi Kamar Tidur Ide Dekorasi Kamar Ide Kamar Tidur" src="https://i.pinimg.com/originals/22/70/6c/22706c6528df8d68d7e1bf3f8ef062b9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzIxPHqxEj1UoDMLtvvU8XTGMIW8wyAApWsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Kecil Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Tamu Shabby Chic Minimalis Dengan Warna Cat Pink Dipadu Dengan Wallpaper Dinding Ide Dekorasi Rumah Dekorasi Ruang Tamu Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/35/c2/4d/35c24dd9539d377f801beadad2b31a64.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBUDuWHgUF9FygSZM4tjgOBRsNom5JA0uoXugKImivPAX5HOvKlnJhwO61lDLWalH3QFo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamar Tidur Ukuran Kecil dan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kamar Tidur Anak Minimalis Ukuran 3 X 3 Desain Interior Kamar Tidur Kecil Interior" src="https://i.pinimg.com/originals/c6/b3/a8/c6b3a88681c880ad088b37d4384b6c09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9A0GgfkyTHZ9YUb_15UAfGM9Oy69tNRKJ27-KtvD_bPh3F5eyb2pYoBpuWtMRtfiqjdw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Kamar Tidur Sempit Minimalis Sederhana - Mendesain kamar tidur sempit yang tidak memiliki lahan yang luas adalah salah satu hal yang susah-susah gampang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Home And Decorating" src="https://i.pinimg.com/originals/6b/04/37/6b0437511f6c8dd4f3fa4469e6c5a59d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVagv7OR8axDUFKlB8OE5tGamZvW0EBp0mVA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain 1 Desain kamar tidur 33 meter dianggap ideal untuk sebuah ruangan dengan kasur double.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Latest Bedroom Interior Design Ideas Page 11 Of 11 Home Decor Ideas Bedroom Diy Kids Bedroom Girl Bedroom Decor" src="https://i.pinimg.com/736x/8e/5c/eb/8e5ceb75ff017e1465816796ea7cb9ee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1m2kT35XzLUSyZVJOJ_kfbMyWZqyB1PHpeA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hanya saja pemilihan perabot dan penempatannya tetap perlu diperhatikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Cara Menata Interior Kamar Berukuran Mungil Ide Dekorasi Kamar Kamar Tidur Kecil Ide Kamar Tidur" src="https://i.pinimg.com/originals/7e/93/68/7e9368e946a1e0c04ed50acda9116326.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMNg6VNG7gzkQ_DM9kUZ0d9QE04O1EQpY-p11qGzOP3vSVHNLVFO0fJmEKoC3VC1N1Qw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan desain yang sederhana namun tetap terlihat modern kamar tidur minimalis juga bisa diaplikasikan pada kamar dengan ukuran kecil seperti kamar tidur 22 33 atau 34.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Kost Ide Dekorasi Kamar Tidur Ide Dekorasi Kamar Ide Kamar Tidur Sederhana" src="https://i.pinimg.com/originals/a2/fc/29/a2fc29d68d5743c2b254e999672022b6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxLnu2NvxnA_QfHh7g79lwprYabw5xGdFQKA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah ini memiliki dua taman depan dan belakang yang bisa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Dinding Kamar Tidur Sederhana Girls Bedroom Desain Ruangan Kecil Ide Kamar Tidur Sederhana" src="https://i.pinimg.com/originals/b5/5d/10/b55d10e1b62f0b6bc0c016392ae20cda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Sj_tUFxnXBTD-oErRKgN1SggCx2qbO_M-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Minimalis di Loteng.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kamar Tidur Sempit" src="https://i.pinimg.com/originals/06/b4/4f/06b44f83d315c75714e502b4d32dd920.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2kMe4uuyjlpufCBdzEXBXawRbn6H8Ck8qBZQDQ7HQVcakyPL3FfcxQ2CVx_D_NMPXaaA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wallpaper Kamar Tidur Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Menanti Jodoh End Di 2021 Kamar Tidur Anak Perempuan Kamar Mandi Anak Perempuan Dekorasi Kamar Anak Perempuan" src="https://i.pinimg.com/564x/9b/e1/b7/9be1b736cbb0a8672ed33a6810bf4d39.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yOljK-f_JIrjegbqafs1m_IQ1ie3X3iYgPa848KDnPE06rx3afel7aFBHyjTZUe8OAw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Minimalis Selamat datang teman teman yang senagi hari saya akan membahas mengenai tentang dekorasi kamar tempat tidur minimalis desain rumah minimalis 3 kamar tidur desain kamar tidur ukuran 34 desain kamar tidur anak perempuan minimalis sederhana desain kamar tidur kecil sederhana desain kamar tidur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warna Cat Kamar Tidur Romantis Biru Putih Kombinasi 2 Warna Warna Cat Kamar Tidur Kamar Tidur Biru Desain" src="https://i.pinimg.com/originals/f9/6a/14/f96a14f61727acbff20ec83d184e8cd2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4j9kIeM6JBmOL5CksY-zxedXojEj8oogFbQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Secara umum si pemilik rumah akan menghabiskan waktunya untuk istirahat dan bersantai di kamar tidur dibanding dengan ruang lainnya seperti ruang makan ruang tamu dan lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Anak Cewek Kamar Tidur Anak Perempuan Girls Bedroom Desain" src="https://i.pinimg.com/originals/e4/6e/ec/e46eec3fd88723b4227fe7f113a44e34.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXpjAKM30DZbmcITQR6Ot_WCx01RIveVvi7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mendesain kamar tidur sempit tidak hanya membuat desain interior untuk menghemat ruang tetapi juga mengkombinasikan gaya dekorasi dengan luas ruangan sehingga menghasilkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dekorasi Kamar Tidur" src="https://i.pinimg.com/originals/6b/81/74/6b817446ff260162f6a5d0eff48f7566.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4tilHdKbrKeRSmCauwENcnCW_0BK4Tyr1g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Kecil Yang Unik - Di setiap rumah kamar tidur adalah ruang utama dan ruangan paling pribadi bagi pemilik rumah oleh karena itu desain serta penempatan furniture haruslah ditata sebaik mungkin dan senyaman mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Tidur 3x3 Terbaru Dekorasi Kamar Tidur Buatan Sendiri Ide Kamar Tidur Ide Dekorasi Kamar" src="https://i.pinimg.com/originals/e2/fe/ca/e2fecaeec7af2ff011d804d5a525639a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRPTGCHPSZHnTszS0I4cWBbcWO-hpxy_OLZF-vfIVkiEL-G6UrGbELV1qD3KsJ1x47lAo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Kamar Tidur Kecil Yang Nyaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah Mungil Minimalis" src="https://i.pinimg.com/originals/92/4d/a6/924da6d65962eb213f02e6919306ffb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtMYrhuK6LXNmdDIbXoi-srVlGjGOf8pY7g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamar tidur kecil minimalis tidak harus menjadi sebuah kekurangan dari ruang utama di rumah Anda yang minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Belajar Anak Dengan Ruang Belajar Sederhana Desain Ruang Belajar Ide Kamar Tidur Desain Interior" src="https://i.pinimg.com/originals/b5/2b/ac/b52bac6dff3e632ab05f2403119b0d6e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi87fP-bnfPC97uWoeEtx4KmnRI1RRsLbM3w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Kamar Tidur Sederhana yang.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/teras-samping-rumah-kayu.html"><i>&larr; teras samping rumah kayu</i></a>
+                                                                    
+                                        <a href="/teras-rumah-joglo-minimalis-terbaru.html"><i>teras rumah joglo minimalis terbaru &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

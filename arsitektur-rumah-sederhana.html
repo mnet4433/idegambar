@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Arsitektur Rumah Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Arsitektur Rumah Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/3c/b7/e7/3cb7e72a0d72560901f9296f094050d2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=arsitektur+rumah+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Arsitektur Rumah Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Arsitektur Rumah Sederhana</strong>. Rumah yang didesain dengan pendekatan fungsional ini mencoba memadukan gaya kolonial modern dan minimalis tropis sehingga sangat cocok dengan kondisi iklim di indonesia. Contoh perhitungan tarif jasa arsitek berdasarkan ukuran bangunan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/22/47/8d/22478da289343f8517330bbb485cab5a.jpg" alt="Model Rumah Sederhana Tapi Indah Rumah Minimalis Desain Rumah Minimalis Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYLczXw-hA4uLc1tvPOQEaxdrObK1N46mTQ';">
+        <figcaption>Model Rumah Sederhana Tapi Indah Rumah Minimalis Desain Rumah Minimalis Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Seperti pada gambar tersebut rumah didesain dengan 1 kamar tidur ruang tamu dapur toilet dan halaman kecil. Contohnya bambu dan granit yang umum dipakai sebagai bahan utama interior dari arsitektur rumah kontemporer. Model rumah sederhana tapi indah berikut disebut Rumah Kesemek karya duatitik architecture yang merupakan renovasi rumah lama tahun 1920-an.
+    </p>
+    <h3>Type 36 type 60 2 kamar ide lainnya.</h3>
+    <p>Kamu dituntut untuk bisa menyampaikan keinginan personalmu dengan jelas pada arsitek yang kamu percaya. Berikut ini 45 denah dan desain rumah sederhana yang inspiratif dan trendi dengan ragam konsep. Nah berikut ini kami akan menampilkan 20 gambar rumah karya arsitek. Rumah sederhana merupakan salah satu jenis rumah yang memilki karakteristik desain dan model yang cukup sederhana namun untuk saat ini tampilan rumah sederhana bisa dimodifikasi sedemikian rupa menjadi sebuah tampilan yang indah dan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Perpaduan Model Desain Rumah Mewah Minimalis 8 X 10 Modern Sederh Rumah Arsitektur Rumah Mewah" src="https://i.pinimg.com/736x/ec/60/24/ec60248b9a7bba240a2ef2766615ed98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScML4goHN7hRE4UDPdlUDVWEPD0ieP-sPr40_prZqMzcheH6R3zL7I7AExH75laG9dqs8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsitektur Rumah Putih Abu-abu dan Hitam Menjadi Warna Dominan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sederhana Namun Terlihat Modern Dan Dinamis Dengan Aksen Roster Yang Di Tempel Didinding Sebagian Sebagai P Arsitektur Rumah Rumah Nyaman Rumah" src="https://i.pinimg.com/originals/d5/c4/ce/d5c4ce72d2a670c34dfa00fddb1cce07.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtYK09DCsJwauX4H1Hez1cI_ChBAOQCmrtr54E7q2373M7dIb8M5qLotbyuCgoxazc5o8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hasil karya arsitek Indonesia tak kalah memukau dengan para arsitek dari luar negeri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Call Wa 0813 5828 2515 Jasa Arsitek Desain Rumah Kediri Desain Rumah Rumah Arsitek" src="https://i.pinimg.com/originals/53/fd/a5/53fda570bc175fc164c47c4d55740dc6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRudLD9RyppE4XbXOHhAxyiW1tguN_8JkSw7Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Elemen utama dari arsitektur rumah ini antara lain memanfaatkan material yang dapat didaur ulang dan tidak berbahaya bagi lingkungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Rumah Sederhana Jasa Arsitek Rumah Minimalis Jasa Desain Rumah Minimalis Jasa Desain Rumah Minimalis Modern Rumah Mewah Arsitektur Rumah Arsitek" src="https://i.pinimg.com/originals/d7/de/b8/d7deb8513b72023e95ca06658aa172d9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-PrXPYMkNjWWGI6Lmwyj_15iz382O7b2f9Uqi0jnJDox9Ul8JVNoGOnwoMURjVkkNFdc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Sederhana - Jasa Bangun Rumah Renovasi Rumah Jasa Design Arsitektur Jasa Gambar Rumah Jasa Desain Interior Arsitek Rumah Mewah Langsung ke isi Tempat Kursus Kami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Lantai 6x12 Rumah Minimalis Desain Rumah Minimalis Arsitektur Minimalis" src="https://i.pinimg.com/originals/36/6d/5e/366d5ee8e4860f6ca342022630eeb867.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rseDbunCPTxYWs5l0dSWqlEkUnjfbGtm_Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah yang didesain dengan pendekatan fungsional ini mencoba memadukan gaya kolonial modern dan minimalis tropis sehingga sangat cocok dengan kondisi iklim di indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Gambar Rumah Sederhana Tapi Terkesan Mewah Rumah Pedesaan Rumah Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/e8/07/29/e807290be0230f92e6f3f2c50fc9777f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsF9i5GPasc-MdzZUguNUTsqCzuoIxVC1nkhoPI-dAQWbuETkRLFLib17QF5APDaqCeVA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana tapi indah berikut disebut Rumah Kesemek karya duatitik architecture yang merupakan renovasi rumah lama tahun 1920-an.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Idaman Sederhana Tapi Mewah Eksterior Rumah Desain Rumah Bungalow Desain Rumah Minimalis" src="https://i.pinimg.com/originals/a6/a7/3a/a6a73a6e4ee7dffe79384a463fd83130.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzuemV89UQLYqAOE9LWDHIjwbdmS9p054aHA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perusahaan kami adalah salah satu layanan jasa arsitektur bangunan rumah yang dapat menangani desain minimalis mewah tropis kontemporer industrial klasik atau desain rumah lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Bentuk Rumah Sederhana Ukuran 6x9 Terbaru 2020 Rumah Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/ea/37/99/ea3799dc9c19d374c3d079b6b8044ed8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFRHAoWFstfxk-tO-7yXt6rGlqnwYGFxcgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah yang didesain dengan pendekatan fungsional ini mencoba memadukan gaya kolonial modern dan minimalis tropis sehingga sangat cocok dengan kondisi iklim di indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Terbaru 1 Lantai Yang Unik Tampak Depan Desain Fasad Arsitektur Desain Eksterior" src="https://i.pinimg.com/originals/b6/9e/ea/b69eea189b90d73b0867ed81ffa1f807.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHODHGQT-8LKTzHgBN6siLE2gn2ZAJQsToGw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Rumah Sederhana Di Desa Rumah Minimalis Rumah Pedesaan Desain Rumah Minimalis" src="https://i.pinimg.com/originals/79/11/67/791167ae8a20159adebb43d848b6265f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1gEhYHNPULVX3hurr_aSr1MQNcICyKjgVFDnVSlXQL8KoAt1IdT86Yiz5e4Yhbbh5LaE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Elemen utama dari arsitektur rumah ini antara lain memanfaatkan material yang dapat didaur ulang dan tidak berbahaya bagi lingkungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Sederhana Tapi Indah Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/22/47/8d/22478da289343f8517330bbb485cab5a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYLczXw-hA4uLc1tvPOQEaxdrObK1N46mTQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contohnya bambu dan granit yang umum dipakai sebagai bahan utama interior dari arsitektur rumah kontemporer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Mewah Dengan Gaya Modern 1 Lantai Tampak Depan Rumah Minimalis Arsitektur Rumah Mewah" src="https://i.pinimg.com/originals/0d/73/3f/0d733fe14b762168e1b725f1346fba94.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4TL_Jyo_Qy4OFWB8QulAENgXFC3XgZir_w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna monochrome ini membuat rumah minimalis Anda terlihat sederhana bersih namun tetap elegan dan mendapatkan kesan lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Model Rumah Sederhana Di Kampung Terbaru 2020 Rumah Hijau Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/f0/67/16/f0671676753c3e022d797253804d3504.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9kfIRPqEMvQnqz1Z3_TOYDw5pJu-LCBQ7LA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Namun jangan keliru walaupun tarif arsitek di metode ini dihitung berdasarkan pengalaman dan skill namun menurut Ikatan Arsitek Indonesia IAI sejak 2012 terdapat ketetapan minimum honorarium arsitek yaitu sebesar Rp200 ribu per meter persegi atau 7 dari nilai fisik bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Contoh Rumah Minimalis Sederhana Modern Tampak Depan Rumah Minimalis Arsitektur Minimalis Warna Cat Untuk Rumah" src="https://i.pinimg.com/originals/4e/4b/e6/4e4be68d9f1e5f368cc3e7513fbe2c7e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO2FRG6fV9j49QVA89Mv3t1bjMToArEEkV1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamu dituntut untuk bisa menyampaikan keinginan personalmu dengan jelas pada arsitek yang kamu percaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Bentuk Rumah Sederhana Ukuran 6x9 Terbaru 2020 Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/fd/cd/62/fdcd629f21b29fe062d386d4d3881544.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKT3Tye93cVudqWwQccdQWw7gc44hMc7A-j4jJhp8izto4Of9khshXKBBzhBmKKpeuwZU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsitektur Rumah Putih Abu-abu dan Hitam Menjadi Warna Dominan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern 2 Storey House Designs Rumah Minimalis Desain Rumah Minimalis Rumah Arsitektur" src="https://i.pinimg.com/originals/e9/67/d7/e967d758f7516c375813445401a013bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAgfL-XVOba0SxOuo5aqt9hb_wO51nVaq4Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah berikut ini kami akan menampilkan 20 gambar rumah karya arsitek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Type 45 Modern Tampak Depan Rumah Minimalis Rumah Arsitektur Kolonial" src="https://i.pinimg.com/originals/47/1a/62/471a626d34c7c8e0126a3a4b3a757134.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWKQEqAWLp5CPCt2KG1MFMLMQVOzZ_dHfGBkH0xqNzgOz3YRzKefnQdPCBBAHlNtjnuqk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsitektur rumah sederhana Arsitektur rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Sederhana Rumah Minimalis Rumah Indah Rumah Arsitektur" src="https://i.pinimg.com/originals/c4/59/d4/c459d422c15b3ab28105720282d4fb6d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjBEJtQSmXIuSwCJgZONVd9hNhYossSwCVNQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>3 warna netral seperti putih abu-abu dan hitam adalah warna dominan yang sering digunakan pada arsitektur rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Rumah Sederhana Jasa Arsitek Rumah Minimalis Jasa Desain Rumah Minimalis Jasa Desain Rumah Minimalis Modern Jasa Desain Min Arsitek Desain Rumah" src="https://i.pinimg.com/originals/78/c1/c9/78c1c93e1570bb30d4613c27e0ee8279.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV1YGnN0bOMQ52KUeKb33KCiZlasipdD9pWS_EoIW351XjjUEezCvuBGtAlBXTrVbdeno';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana merupakan salah satu jenis rumah yang memilki karakteristik desain dan model yang cukup sederhana namun untuk saat ini tampilan rumah sederhana bisa dimodifikasi sedemikian rupa menjadi sebuah tampilan yang indah dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Foto Rumah Minimalis Sederhana Modern Tampak Depan Rumah Minimalis Desain Rumah Rumah" src="https://i.pinimg.com/originals/83/1c/e5/831ce507ad4dfb76d50812f4c0a2bd7a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9A5cCp3QP_95iG6z-VR1CTvdkis0-UG95ow';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Denah dwg - Jasa Desain Rumah Jakarta Jasa Gambar Rumah Jasa Arsitek Rumah Jasa Interior Rumah Jasa Renovasi Rumah Jasa Bangun Rumah Jasa Desain Rumah Minimalis Murah 2017 Harga Biaya Jasa Desain Arsitek Rumah 2017 Rumah Mewah Rumah Trop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Koleksi Foto Desain Rumah Minimalis Sederhana Terbaru Rumah Minimalis Rumah Indah Arsitektur Rumah" src="https://i.pinimg.com/originals/a4/88/83/a488833593c5d83015ab516db967f241.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSREDUj9xwFBX6gae7ZQPJ8G0f3sSLfvoNwuRhnDkTrvDCfzrDFVeYJR-EbFln-NnuTtyA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nah berikut ini kami akan menampilkan 20 gambar rumah karya arsitek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sign In Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/dd/03/86/dd03863bcf38ab4ee13cd1d227074ccd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Y0DAjb7Ist9PGCJ2HcPzEH-v8qC5VKXHNw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perusahaan kami adalah salah satu layanan jasa arsitektur bangunan rumah yang dapat menangani desain minimalis mewah tropis kontemporer industrial klasik atau desain rumah lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Sederhana Namun Terlihat Modern Dan Dinamis Dengan Aksen Roster Yang Di Tempel Didinding Sebagian Sebagai Pe Arsitektur Arsitektur Modern Rumah" src="https://i.pinimg.com/originals/18/7d/bc/187dbc6ce1d01da842fd8735afcf4d6f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLLNaR-o9iNc7KdvXDH0e0eqVTerOAtDp_Yg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Seperti pada gambar tersebut rumah didesain dengan 1 kamar tidur ruang tamu dapur toilet dan halaman kecil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Call Wa 0813 5828 2515 Cari Arsitek Rumah Banyuwangi Arsitek Rumah Arsitektur" src="https://i.pinimg.com/originals/55/8b/ae/558bae6579c32c1130906061f8d41671.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUX_pvREYsONEvteslMW2iQbItWkFnmHED9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hasil karya arsitek Indonesia tak kalah memukau dengan para arsitek dari luar negeri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Perumahan Gaya Minimalis Modern Terbaru Eksterior Rumah Modern Rumah Arsitektur Rumah Minimalis" src="https://i.pinimg.com/originals/df/9a/a6/df9aa6381abd3680c0852f69dffca0c4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrD_8vBYbbKFurLGMnyb_iFMXNHNM6fBgsmg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warna monochrome ini membuat rumah minimalis Anda terlihat sederhana bersih namun tetap elegan dan mendapatkan kesan lapang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Menggambar Desain Rumah Sederhana Khas Rumah Di Kampung Ukuran 6 X 9 Youtube Rumah Arsitektur Modern Desain Rumah" src="https://i.pinimg.com/564x/ec/a7/b3/eca7b3b0b795a34affd299e002e294b3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStadR2fRcPnz4sZBnm6xxF6RfyaQziAfaGzg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami memberikan jasa desain bangunan rumah dengan paket lengkap yang disertai gambar 3D dari sisi depan belakang serta samping untuk memudahkan anda memahami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrluixugkpzonk4doexnbwtmltr Eynl27egdxn0adhznay0hru Usqp Cau" src="/search?q=contoh+rumah+sederhana+terbaru&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=contoh+rumah+sederhana+terbaru&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Untuk rumah ukuran 4x6 kamu bisa membuatnya terlihat lebih luas dengan tidak membuat terlalu banyak ruangan di rumah kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Idaman Sederhana Modern Arsitektur Arsitektur Rumah Desain Rumah" src="https://i.pinimg.com/originals/8c/31/ca/8c31ca81117a732a52a7b1e24294b37d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXuVTN01g1Wtg8Wkq4ejiwIqg_KPuW9BhBRMV957nrzXd_JWQMstdoyUHROTlN0RIUbI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Hasil karya arsitek Indonesia tak kalah memukau dengan para arsitek dari luar negeri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="99 Desain Rumah Minimalis Sederhana Modern Inspirasi Rumah Idaman Desain Rumah 2 Lantai Arsitektur Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/51/30/e1/5130e1bc759ce95de3d2c8bf07131788.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6N1gjJ7nV9wGPNrh55mMuI62SCj-bpTnSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Proses realisasi atau pembangunan denah rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Portofolio Desain Exterior" src="https://i.pinimg.com/originals/e1/68/6f/e1686f052f61ce9856269cf3c39b59e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJLhuUK_DHz7DBSaCjLKmcYaSJ3UJnL9-e0vGfj_ZgdX07gaF09i30zZVOcOubuVpr1Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam membangun rumah baru yang menjadi impian tahapan perencanaan menjadi begitu penting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Terbaru Desain Rumah Sederhana Tapi Elegan Dengan Batu Alam Dan Ta Rumah Home Fashion Denah Rumah" src="https://i.pinimg.com/originals/43/57/8f/43578f9a7da23932dfd3df1abd3320dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR98LK4kcVI63Y2B9BapDViZl7obksIlk9MjheYt7AM-0S-HINoaMT6uPB3_663WsqRLsg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Elemen utama dari arsitektur rumah ini antara lain memanfaatkan material yang dapat didaur ulang dan tidak berbahaya bagi lingkungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsvojjbewwbt4an6blc1ccfb2coxposekniei 4 9d9kr9v4gsq Usqp Cau" src="/search?q=rumah+minimalis+modern&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+minimalis+modern&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Contoh perhitungan tarif jasa arsitek berdasarkan ukuran bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Khas Rumah Di Kampung Menggunakan Google Sketchup Youtube Rumah Arsitektur Rumah Indah" src="https://i.pinimg.com/564x/5b/59/e0/5b59e093da05bdac403313ee49e44866.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7et6rjOtMb9kxprW2I4tpjoNwNHimtNl8Xw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Type 36 type 60 2 kamar ide lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Minimalis Type 36 Modern Dan Elgant Renovasi Rumah Net Home Fashion Rumah Minimalis Arsitektur" src="https://i.pinimg.com/originals/32/a0/01/32a0012a3a8472248fd8fa798865df78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5QslFrFfCA0sCBuqPzKs_UWSUZ4fLPqRXPCoh8c4Mk4XZpO0dSbimj070eHhBqm-TNEQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsitektur Rumah Putih Abu-abu dan Hitam Menjadi Warna Dominan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Bentuk Rumah Sederhana Ukuran 6x9 Terbaru 2020 Desain Rumah Bungalow Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/88/cc/f0/88ccf08a329825307a1272d7d8572ae2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDj4w_dLU-G7F2ipxDvnbJHg1FcxQ43r1Rjw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Sederhana - Jasa Bangun Rumah Renovasi Rumah Jasa Design Arsitektur Jasa Gambar Rumah Jasa Desain Interior Arsitek Rumah Mewah Langsung ke isi Tempat Kursus Kami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/736x/49/ca/f7/49caf7f6dcbb6d337ba0b34b801bb4cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9fAI4KmN2ij0MLNTRCQPWVvYqbr7eheSJA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Proses realisasi atau pembangunan denah rumah sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Idaman Sederhana Di Desa Desain Rumah Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/55/11/e7/5511e711115ad9ab0a3cfae45f17b69e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzJSCiA_nhfcNVG5omMQTRtFuc9F2L7ZJTA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsitektur rumah minimalis sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Call Wa 0813 5828 2515 Gambar Rumah Minimalis Modern Kediri Desain Rumah Arsitek Rumah Pedesaan" src="https://i.pinimg.com/originals/38/e6/ce/38e6ce4575faa8d2d8759c6935d0fafc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuysjrrUIgIwI5N4KFBxocHE5orQhiqip-6w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karya mereka tak hanya memberikan tampilan yang indah pada hunian namun berbagai desain interior yang dihasilkan pun memberikan kita inspirasi dan ide yang menarik untuk dapat diaplikasikan pada rumah kita.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis 2 Lantai Sederhana Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/66/20/98/6620982c0c35aefbbae68791c03a8967.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlzcF_UuPpSPlIEYJX9nb-QKMoodnLKZDvbg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah berikut ini kami akan menampilkan 20 gambar rumah karya arsitek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Desain Rumah Sederhana Minimalis Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/cc/67/d7/cc67d76cde879c0910a6ce6c71fcc436.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoHikp1O-R7kCUTSXJ5R6dnqMMTiWhlxFcTQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami memberikan jasa desain bangunan rumah dengan paket lengkap yang disertai gambar 3D dari sisi depan belakang serta samping untuk memudahkan anda memahami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Sederhana Arsitektur Desain Eksterior Arsitektur Rumah" src="https://i.pinimg.com/originals/77/5d/8a/775d8aef844df058a6d7819b70c902a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl3Sf4N_rNCM9gWdOGsKxu0u553GKv-cAqWw';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Untuk rumah ukuran 4x6 kamu bisa membuatnya terlihat lebih luas dengan tidak membuat terlalu banyak ruangan di rumah kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Model Rumah Sederhana Di Kampung Terbaru 2020 Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/b7/a4/c9/b7a4c90c24095c4f2c6c73907b6c70ed.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfAuC3T1gwfQk97b7-lG6zNfxgSPYviPGE4Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk rumah ukuran 4x6 kamu bisa membuatnya terlihat lebih luas dengan tidak membuat terlalu banyak ruangan di rumah kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Sederhana Dengan Model Teras Batu Alam Rumah Minimalis Arsitektur Rumah Impian" src="https://i.pinimg.com/originals/d1/47/28/d1472835c870e478fb88bc3892873d89.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HxorRSURT65TlEGlwGnGsErlWRAS3nPPXIV71Tb4WVTGX4zSRfh8HEoTRSZyXaJeuVo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kamu dituntut untuk bisa menyampaikan keinginan personalmu dengan jelas pada arsitek yang kamu percaya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Arsitek Desain Rumah Dan Renovasi Rumah Sederhana Denah Rumah Rumah Minimalis Denah Rumah 2 Kamar Tidur" src="https://i.pinimg.com/originals/92/ce/65/92ce65cd98925f77d3f5165200618396.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRrA3v0m6T4XpHU0Uc05rCqA7z-ZiO6vwJTvHEqeLbw24tr85E3tuf56yvKCJBYfY9_mk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Denah dwg - Jasa Desain Rumah Jakarta Jasa Gambar Rumah Jasa Arsitek Rumah Jasa Interior Rumah Jasa Renovasi Rumah Jasa Bangun Rumah Jasa Desain Rumah Minimalis Murah 2017 Harga Biaya Jasa Desain Arsitek Rumah 2017 Rumah Mewah Rumah Trop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Bentuk Arsitektur Rumah Sederhana 4 Kamar Dan Mushola Dengan T Arsitektur Rumah Arsitektur Rumah" src="https://i.pinimg.com/originals/c2/2f/b0/c22fb0aeedb662a20d117a2acede01a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwL10YmxblfOAbf7WyRqLkcJkmB9mGHg43REWj0FPsodExcOJDFBA_M-1JPT8PCEv9L5U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contohnya bambu dan granit yang umum dipakai sebagai bahan utama interior dari arsitektur rumah kontemporer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Gambar Rumah Sederhana Tapi Terkesan Mewah 14 Desain Rumah Minimalis Rumah Minimalis House Blueprints Rumah" src="https://i.pinimg.com/originals/94/a0/42/94a042b3f01c9a51ee171cb4f2118c57.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr0LhskpZG4ny7ht9coInfI8IqqkOFxRAheBvkBjanr1gWCFrubfiJnu2-MBRNqpP3wIY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>3 warna netral seperti putih abu-abu dan hitam adalah warna dominan yang sering digunakan pada arsitektur rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="50 Contoh Rumah Minimalis Sederhana Model Terbaru Rumah Minimalis Rumah Arsitektur Rumah" src="https://i.pinimg.com/originals/dc/e6/39/dce6391eeea7bcbb85ff4a4be8c7f2c2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoCfdOhbqpPcsfro-KoUJHepV5ZGZlo0B_DZlhqhFN9yLuaHDhcrOmnjL5RyebdyF_24';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsitektur rumah sederhana ini akan menyelesaikan masalah rumah sederhana anda sebuah bangunan yang minimalis dengan lahan yang sempit dan terbatas akan dibuat menjadi sebuah bangunan yang elegan dengan ruangan yang terlihat lebih luas dan menarik serta nyaman untuk dihuni.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Tapi Menawan Desain Rumah Desa Rumah Arsitektur Rumah Pedesaan" src="https://i.pinimg.com/originals/3c/b7/e7/3cb7e72a0d72560901f9296f094050d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM31Gb907qRUsBXGlEtbaBNmpCJvq-42Wy3Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model rumah sederhana tapi indah berikut disebut Rumah Kesemek karya duatitik architecture yang merupakan renovasi rumah lama tahun 1920-an.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Model Rumah Sederhana Gallery Taman Minimalis Rumah Minimalis Warna Eksterior Rumah Rumah Modern" src="https://i.pinimg.com/736x/df/ac/a8/dfaca8e19c28927c312dda76c54fe4f9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQya_zBnDgVNyPrXDSTywOWA6fEiel2OMNXvoqfCIZstR0v55uhmGEPFIH2eDSxydyh_18';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contohnya bambu dan granit yang umum dipakai sebagai bahan utama interior dari arsitektur rumah kontemporer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Bangun Rumah 30 Juta Saja Dijamin Jadi Dan Indah Membangun Rumah Rumah Minimalis Desain Eksterior" src="https://i.pinimg.com/originals/1e/da/ce/1edace02443738ef67358581c9ea58b7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJss37wR6uhe6LKjByaEHcV26NEsLw1dyHvFgrHAEe8fpsN7ENvReM6GvnYq0BPrD_4JA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun jangan keliru walaupun tarif arsitek di metode ini dihitung berdasarkan pengalaman dan skill namun menurut Ikatan Arsitek Indonesia IAI sejak 2012 terdapat ketetapan minimum honorarium arsitek yaitu sebesar Rp200 ribu per meter persegi atau 7 dari nilai fisik bangunan.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/ornamen-dinding-luar-rumah-minimalis.html"><i>&larr; ornamen dinding luar rumah minimalis</i></a>
+                                                                    
+                                        <a href="/pagar-gerbang-rumah-minimalis.html"><i>pagar gerbang rumah minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

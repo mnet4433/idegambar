@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Warung Makan Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Warung Makan Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/736x/98/0e/c0/980ec00f514012ba717f8bf6742293bd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+warung+makan+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Warung Makan Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Warung Makan Sederhana</strong>. Bagi para pemula dengan desain yang sederhana dan minimalis tentu akan menguntungkan karena pada saat awal memulai bisnis akan. Desain Warung Makan Sederhana Depan Rumah - - Rumah yang nyaman dan indah selalu dikaitkan dengan rumah besar dengan lahan luas dan desain yang modern megah dan elagan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/d8/60/a3/d860a3c9ab57ea41559495c04036730a.jpg" alt="Gambar Denah Rumah Dan Ukuran Keterangan 1 Denah Rumah Rumah Desain" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6b5zNbQCesJOmjT-idhi7rktS74eW-Q0wKHsKqtldVKJTwUFZneceQp85OZACPDC7lE';">
+        <figcaption>Gambar Denah Rumah Dan Ukuran Keterangan 1 Denah Rumah Rumah Desain from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Warung Makan Yang Rapi Pastikan bahwa seluruh komponen dalam warung makan sudah tertata dengan benar dan rapi. Bagi para pemula dengan desain yang sederhana dan minimalis tentu akan menguntungkan karena pada saat awal memulai bisnis akan. Desain warung bambu pinggir jalan desain warung bambu lesehan sederhana warung bambu minimalis desain warung kopi dari bambu model warung bambu minimalis desain rumah makan bambu sederhana model warung sederhana desain warung makan sederhana dari bambu.
+    </p>
+    <h3>Poin pembahasan Inspirasi 31 Desain Warung Bambu Sederhana adalah.</h3>
+    <p>30 Desain Warung Makan Yang Perlu Dicontoh Desain id Penempatan dekorasi mewah di warung yang sederhana akan merusak konsep dan membuat pelanggan tidak jadi datang karena dikhawatirkan harga makanan di warung tersebut tergolong mahal Sebaliknya jika target pasar kamu adalah menengah ke atas dekorasi yang terlalu simpel akan membuat pikiran bahwa makanan terasa terlalu mahal untuk ukuran warung. Bagi para pemula dengan desain yang sederhana dan minimalis tentu akan menguntungkan karena pada saat awal memulai bisnis akan. Gambar diatas bisa anda unduh gratis dengan mudah dan cepat silahkan tekan tombol download dibawah ini. Contoh banner spanduk warung makan nasi yang unik dan.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Tampak Depan Samping Belakang Desain Rumah Kontemporer Desain Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/07/ec/2b/07ec2b002e7286213c445b40e1e33085.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_jm6lGO1uzGf7Hcq8vnuT3CQ5YhzvwJDDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Home Desain Desain Spanduk Warung Makan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 5 Kt Di Lahan 10x15 M Denahrumah Desainrumah Arsitek Iderumah Idedesain Architect Housefloorplan Floorpla Denah Rumah Rumah Rumah Indah" src="https://i.pinimg.com/originals/d0/b9/c6/d0b9c636402c1d1d1f802fefde1cd86f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQCEnfM6eSnGfQb6nlM5qb0KHTigs9YkYJg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Persaingan yang ketat memaksa pengusaha warung makanan untuk berikir kreatif dengan memasang spanduk yang unik untuk menarik minat pembeli.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Type 70 1 Lantai 6 Jpg 550 784 Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/f0/91/bf/f091bfc9b5196d8ecdc0880855eee343.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouI9g4l1oArdOPPT4qpo1v-M0fNA0Q48avA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>- Untuk memiliki desain warung yang berkarakter menarik sampai kelihatan elegan dan modern dapat tercipta dengan cepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Dan Denah Rumah Minimalis Type 60 Denah Rumah Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/05/01/79/0501791395655fd1dedec1d0f7ae0e11.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx74f9GjvaC5Y_NMZT7l178LfYOG70vWxN9g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>- Untuk memiliki desain warung ada sekomponen orang menggunakan jasa arsitek untuk sekedar berkonsultasi atau bekerjasama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 1 Lantai 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Rumah" src="https://i.pinimg.com/originals/11/1d/d2/111dd25308b240e615a2beefeca38fab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZEn_TfzXFKe9MSmM7lz0_hA3OhfZCuZOeffzr-UwmhbL3aGZvWz4-Gizyr0VFw8GBnQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Download Now 69 Desain Rumah Minimalis Dengan Warung Desain Rumah Minimalis Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Desain Rumah" src="https://i.pinimg.com/originals/d6/59/f1/d659f1049916add6103ef9930c6211e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuFDBbkKCE5GOpikQYigFxQhnuqSmzkuJ_w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Now Desain Warung Makan Cantik Dan Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Minimalis 1 Lantai Ini Merupakan Desain Rumah Gratis Yang Kami Berikan Kepada Bapak Yon Rumah Arsitektur Denah Lantai Rumah Desain Rumah" src="https://i.pinimg.com/736x/0b/d6/81/0bd6814c4cae1cf40f2ecdf73b9cb86b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIZfWs8M_1CRPYly7dkHC-mVm9NyOxAnTe6B-mVSIxSOTffgPdL92m1toCcdiwaou6U0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Home Desain Desain Spanduk Warung Makan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Minimalis Sederhana Desain Rumah 6x10 2 Kamar Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/564x/07/0e/92/070e92a51ad9c8adf56e37b1bbeb63a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLJCQYikMngkWUV9HkeyZftCZ9a8ROjoRTtw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Poin pembahasan Inspirasi 31 Desain Warung Bambu Sederhana adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Denah Rumah Minimalis 3 Kamar Tidur 1 Lantai 2021 Beserta Keterangannya Dekor Rumah Rumah Minimalis Rumah Denah Rumah" src="https://i.pinimg.com/originals/03/11/14/03111484bf460676f4c2ffe0fe40f2f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPGVsEiffLkwRaI7pprAs4sZO_6DPcok4TA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain warung makan atau restoran yang sederhana dan minimalis biasanya lebih disukai oleh para pebisnis pemula di dunia kuliner walaupun tidak menutup kemungkinan seorang yang sudah pro juga menyukai konsep atau desain restoran yang minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Denah Rumah 3 Kamar Tidur Ada Garasi Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/60/de/de/60dede26dce8941c1cd448b09b3e3840.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeDBg5JhrKYoUEoA2HvZVsdBGSeDBhNn10zLrXbYTxF3Xo5n0LOHwGWa0VhgXttr_QW74';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur dan ruang makan minimalis sederhana jika anda memiliki rumah dengan lahan terbatas dan ingin memiliki ruang makan untuk keluarga maka tidak ada salahnya jika anda membuat sebuah konsep desain dapur dan ruang makan terbuka sederhana minimalis yang jadi satu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Sketsa Rumah Sederhana Lengkap Rumah Denah Rumah Denah Lantai" src="https://i.pinimg.com/originals/01/eb/48/01eb48d6f9641300f8ef68c546002871.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrYCzTuXqSFEDpFFFj5ZKxBqJ7PuTx1ByZ0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain warung bambu pinggir jalan desain warung bambu lesehan sederhana warung bambu minimalis desain warung kopi dari bambu model warung bambu minimalis desain rumah makan bambu sederhana model warung sederhana desain warung makan sederhana dari bambu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Dan Tampak Rumah Sederhana Minimalis Tipe Rumah 90 M2 Di Lahan 10x15 Denah Rumah Arsitektur Desain Rumah" src="https://i.pinimg.com/originals/15/06/6c/15066c07f484741ebdbfbb59b7b4abd5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFbXs7xllNJLA8_PMn6UQkCZA6icV-lVHWg';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Contoh banner spanduk warung makan nasi yang unik dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=denah+rumah+2+lantai&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+rumah+2+lantai&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Jika mengharuskan menyewa tempat usaha sekalipun tidak diperlukan tempat yang luas dan megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Rumah Mewah 1 Lantai 4 Kamar Desain Rumah Modern Gambar Rumah Minimalis Denah Rumah Rumah Mewah Desain Rumah" src="https://i.pinimg.com/originals/a0/9e/96/a09e969bb6a65749fe3cd14b0b9cafe8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbrYUsFkIeTBFUeryGRRLM2mvQPTFqbNhqA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>35 Desain Warung Makan Sederhana Top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain" src="https://i.pinimg.com/originals/7e/57/a7/7e57a7d0584d12497fe86c0ba3fc012c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0OgFqmHm_opFPPYVdkNDf_EHueU3-0OGnq6ZoQB6sdbaZpYxYx4zOTKx2vQMoakgeus';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Warung makan sederhana juga bisa didirikan di depan rumah apabila rumah anda di pinggir jalan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Denah Rumah Minimalis 1 Setengah Lantai Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/73/5b/b7/735bb7abe8af558b2c6e127b82d9d90f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzSULfP8lPzgt3hjHtitizCPbjdNjAJwK_w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>35 Desain Warung Kopi Outdoor Sederhana Motif Masa Kini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Terbaru Denah Rumah Minimalis Sederhana Untuk Kamar Tidur Rumah Desain Desain Rumah" src="https://i.pinimg.com/originals/e1/ca/a1/e1caa1e6591c44873e5aa9520d270d68.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7E97dsjuql8dmeyI78aYwIrwPnW1ztMOtBtHuGy_f8d5zvX206nU82TwJbgpR4dTq-1I';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Terdapat sepuluh desain rumah makan yang mudah diwujudkan dan juga cukup menarik untuk membuat konsumen ingin datang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Diy" src="https://i.pinimg.com/originals/2f/51/6a/2f516a8b6d2cfb544ec2a7ca3d6cf2af.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyd_081l_2Vr4HNSlbz8wIWFYB3qcoJMoCLQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh banner spanduk warung makan nasi yang unik dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/ab/9a/d3/ab9ad3503122f69a782c28ba66375a68.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTaJ9oZuP9FhISyZponltxs62fmpwo4F25Xw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain warung bambu pinggir jalan desain warung bambu lesehan sederhana warung bambu minimalis desain warung kopi dari bambu model warung bambu minimalis desain rumah makan bambu sederhana model warung sederhana desain warung makan sederhana dari bambu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Gambar Denah Desain Rumah Minimalis Dengan 4 Kamar Tidur Denah Rumah Desain Rumah Kontainer Denah Desain Rumah" src="https://i.pinimg.com/originals/97/a3/4a/97a34a767087d92d1bd878e75e07cd4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVESDSZsfD8jtQgUxpx1MJeVf7JeIe3KU33jSgGYdBTdnKURNBSaU93YzHHDW0lD1A9M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagi para pemula dengan desain yang sederhana dan minimalis tentu akan menguntungkan karena pada saat awal memulai bisnis akan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="92 Gambar 7 Gambar Desain Dan Denah Rumah Minimalis Modern 1 Lantai Dari Rumah Minimalis Sederhana Kamar 2 Des Denah Rumah House Blueprints Desain Rumah Desa" src="https://i.pinimg.com/originals/5a/7e/57/5a7e578bb2613aabeb1e9b961f10ab0a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPohgVO5-Vuwkl2wyYTWadefrVrD4oNVTNA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dapur dan ruang makan minimalis sederhana jika anda memiliki rumah dengan lahan terbatas dan ingin memiliki ruang makan untuk keluarga maka tidak ada salahnya jika anda membuat sebuah konsep desain dapur dan ruang makan terbuka sederhana minimalis yang jadi satu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Model Denah Rumah Minimalis 1 Lantai Luas 137m2 Luas Total Bangunan 153m2 Termaksud Teras Ukuran Denah Rumah Rumah Minimalis Denah Rumah 4 Kamar Tidur" src="https://i.pinimg.com/originals/cf/65/d1/cf65d15bbcc4cc5ea0eee86493bbfc1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGHLZR8dH19e6Trg94Kf-H0HYPIMeiNfxhRXHLRqVR_2f9eB78_70lSwTi_bXmfl50Oig';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Now 29 Inspirasi Layout Rumah Makan Terbaru Denah Rumah Denah Rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Cafe Restoran 2 Lantai Desain Restoran Restoran Desain" src="https://i.pinimg.com/originals/3e/43/d7/3e43d7b92f17824eb8480bf4bf36b0f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSKfyOYJ3fVBH6h72WHfwUDENZCIa0hd__m3uvw-nKVpf97ILGCF1DiOGLyeSgu0nj44Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>35 Desain Warung Kopi Outdoor Sederhana Motif Masa Kini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Ukuran Tanah 6x9 1 Lantai Idaman Rumahminimalispro Com Denah Rumah House Blueprints Rumah" src="https://i.pinimg.com/736x/af/2b/57/af2b57df4eb57f76dcdf8623cc36bd57.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpFyABg1CZ5VUO3YD42x21BRSz12hwEJOO0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Terdapat sepuluh desain rumah makan yang mudah diwujudkan dan juga cukup menarik untuk membuat konsumen ingin datang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 003 Contoh Desain Rumah Tinggal 1 Lantai Di Lahan Denah Rumah Desain Rumah Rumah" src="https://i.pinimg.com/originals/68/a5/d1/68a5d16709e11a6d95de73679a6646d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFILV4HfZeOYm9Ex68wh0eXl2qplZSDJeiltAcXPnyJqv7rUWm5pDvtr5XK6wF0XYd_Q4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Now 69 Desain Rumah Minimalis Dengan Warung Desain Rumah Minimalis Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tinggal 10x26 M2 Building Plans House Architectural House Plans House Plan Gallery" src="https://i.pinimg.com/564x/56/06/4b/56064ba4eb274b8d91abda02d9ba72be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ID1qdi8HMXJy1vgzAHKq1RBsYp6CTALKXQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain warung makan atau restoran yang sederhana dan minimalis biasanya lebih disukai oleh para pebisnis pemula di dunia kuliner walaupun tidak menutup kemungkinan seorang yang sudah pro juga menyukai konsep atau desain restoran yang minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain" src="https://i.pinimg.com/564x/cb/6f/81/cb6f81c92a17061100d6d453b247e722.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAZGVgPI-aQpJLrKYtV-s5wOU_qTCnG8Aseg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuka warung makan sederhana bisa dengan modal minim tidak seperti membuka restoran yang mumbutuhkan modal yang cukup besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Dan Denah Rumah Minimalis Type 60 Denah Rumah Desain Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/16/73/bf/1673bfd37247d4ccbdf5214ac175095e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2CTG4CC19SYiKF2tm_AZkoCQbOrPHQH0UIHC-dRrOKlhmJKszrQDUyNv7c8gCFBdg7lk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika mengharuskan menyewa tempat usaha sekalipun tidak diperlukan tempat yang luas dan megah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Gambar Denah Rumah Ukuran 8x10 3 Kamar Tidur Denah Rumah Denah Rumah 4 Kamar Tidur Sketsa Desain Interior" src="https://i.pinimg.com/originals/a0/ce/fb/a0cefbdb187d9fe201acf7f7def99773.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4zqMsV1Bwn6-KE2mLV-sDAMOxl9VQhkcAB3JTWHtf1vALJ91vZ9WF4LzwH2bLkV7Bsu0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain warung makan atau restoran yang sederhana dan minimalis biasanya lebih disukai oleh para pebisnis pemula di dunia kuliner walaupun tidak menutup kemungkinan seorang yang sudah pro juga menyukai konsep atau desain restoran yang minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Denah Rumah 3 Kamar Tidur 1 Mushola Kenapa Tidak Rumah Desain Rumah Rumah Minimalis" src="https://i.pinimg.com/736x/a5/cd/81/a5cd81306ce35f6c2a0fde093a35a7f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe4OEgZzQCTZ_KZUrp9_KpQkRs_1puPX_X-Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuka warung makan sederhana bisa dengan modal minim tidak seperti membuka restoran yang mumbutuhkan modal yang cukup besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Nokbontot" src="https://i.pinimg.com/originals/22/8b/fd/228bfd448ee058036419f72558c2641a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Bfz5oXhothQ_4dY1FF1RK4_zbiK20Uh0sg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>52 Desain Warung Makan Lesehan Sederhana Inspirasi Top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Ukuran 13x17 M2 4 1 Lantai 4 Buah Kamr Tidur Tampak Depan Denah Rumah Rumah Denah Rumah 4 Kamar Tidur" src="https://i.pinimg.com/originals/8b/06/19/8b0619b18ed1be70735f7852fb8f7624.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvztUaxdlaBq54EwT5ottsjKi0eauzml5YAYKUUqCWC5saQW-oUTIcrB19YMUAoZ-9PDA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika anda memiliki pandangan dalam membuat kreativitas yang berkaitan dengan desain warung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ini 16 Contoh Gambar Denah Rumah Minimalis Beserta Keterangannya Denah Rumah 4 Kamar Tidur Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/68/8a/0c/688a0c006cb413fce8b85a6db868564b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjLO8TJz2alE3bp2fupe0vuAUwIptSF0iTw6ADK8icTBh4IPmGbhiEVnARdwqRaTwNnM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain rapi warung makan haruslah bersih dan tidak terkesan asal jadi meskipun perlengkapan di warung makan berjumlah terbatas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Sederhana 4 Kamar Tidur Model Rumah Minimalis Craftsman Floor Plans Architecture House House Design" src="https://i.pinimg.com/originals/f8/1d/83/f81d83b4e9c45c033793e75d88604bc4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT71H1mdyBQuXpRA_qniANdW2aH78Ya-VV-lQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Membuka warung makan sederhana bisa dengan modal minim tidak seperti membuka restoran yang mumbutuhkan modal yang cukup besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Warung Kopi Sederhana Pinggir Jalan Di 2021 Warung Kopi Desain Kopi" src="https://i.pinimg.com/originals/0e/88/30/0e88306e2c3717c7a6f668103a8ba481.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR39NZ1I8pmYzh8kxDTuy_m6KsMnAR3CcqSKg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warung makan baik yang berlokasi di jalan jalan raya hingga gang gang memiliki ciri khas terpasang spanduk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Humdecor 104 Gambar Pondasi Rumah Minimalis Sederhana Denah Pondasi Rumah Minimalis 3 Kamar Huniankini Denah Pondasi Rumah 3 Ka Floor Plans Home Home Decor" src="https://i.pinimg.com/originals/c7/94/7a/c7947a7548d543cc42e9482565eeab87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZu5l7_kD_-JeApvyxUrU6_IeFnLilNz4iVeeG_IZQrh2TX2MjuIm7Ol-vaEf7KSUtTco';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>- Mempunyai desain warung adalah salah satu harapan terbesar untuk setiap keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Satu Lantai Luas 144m2 4 Kamar Tidur Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/e3/b1/c0/e3b1c05408b793f1c90540bfa81bf3e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP1lT_0hoPXenp3mJ4r3B7vQygAS327OgEgue49ntUz-MD12xrqwPCEX_5_-SQRqLZO04';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Usaha Warung Makan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=layout+denah+cafe&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=layout+denah+cafe&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Membuka warung makan sederhana bisa dengan modal minim tidak seperti membuka restoran yang mumbutuhkan modal yang cukup besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Rumah Dan Ukuran Keterangan 1 Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/d8/60/a3/d860a3c9ab57ea41559495c04036730a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6b5zNbQCesJOmjT-idhi7rktS74eW-Q0wKHsKqtldVKJTwUFZneceQp85OZACPDC7lE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Warung makan sederhana juga bisa didirikan di depan rumah apabila rumah anda di pinggir jalan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ruko 2 Lantai 7x10 M Yang Minimalis Denah Rumah Desain Rumah 2 Lantai Lantai" src="https://i.pinimg.com/originals/6d/01/1a/6d011a63550703994ae6963dc1a969fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpk4R-U1beiA416he7kfSCSOTkanG0mV3Pcg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>35 Desain Warung Makan Sederhana Top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah" src="https://i.pinimg.com/736x/98/0e/c0/980ec00f514012ba717f8bf6742293bd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcWX-loLRNkeHciYlDpKUx0wpXfRQJjEbg1A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>35 Desain Warung Makan Sederhana Top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Denah Dan Denah Rumah Klasik Rumahmen 44 Ide Desain Rumah Klasik Sederhana Terbaru Dan Terkeren Gambar Denah Rumah Terbaik Desain Denah Rumah Klasik" src="https://i.pinimg.com/originals/02/3b/71/023b71a269c714596e3414cbbc154d90.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLlB2ICVfyAC7pX9bT6nKrytA4hDkYdy_rw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>35 Desain Warung Kopi Outdoor Sederhana Motif Masa Kini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Memanjang 1 Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/c2/85/4d/c2854de13db37e6f80abc81a2417bdf4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQbCNrT8OlRFKbGfFM_uPyHnYyb1a4v5GN3mv9EEQAsaEOgPJzRldJZM9T5yNwF9sQ_EI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika anda memiliki pandangan dalam membuat kreativitas yang berkaitan dengan desain warung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Makan Kecil Mungil Sederhana Terbaru Desain Ruang Makan Rumah Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/ff/cd/98/ffcd981518c1ff38c97798e1ce30da4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR53CXEQMHYadTsNaYPYleLlPb11wlHJx5ZDwt5dppGHx_8_bYLE2ehOoqrHvSHqDVe2EI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bagi para pemula dengan desain yang sederhana dan minimalis tentu akan menguntungkan karena pada saat awal memulai bisnis akan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="42 Gambar Dan Denah Rumah Minimalis Type 60 Denah Rumah Rumah Minimalis Tata Letak Rumah" src="https://i.pinimg.com/originals/3f/56/2f/3f562f4400373a6eeb9866044530cd3d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXRqopI_fxc841ka_FJWpTXqJ1krzTQclGsVfFXR9defnTBXZBM3dMGtqGqASDKPus1uk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Waktu untuk menghilangkan penat selesai bekerja ialah dengan bersantai bersama keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Dengan Ruang Jahit Penelusuran Google Denah Rumah Kamar Tidur Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/a2/e4/f3/a2e4f38223f9fdfdf6bd54b72c76d592.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RHhkIrAjsyUc5-zavDzcdrBluhUI53nU1Mbh-4T_25fT-Z0HhK7HlJrrHaMvEvV7hD8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Persaingan yang ketat memaksa pengusaha warung makanan untuk berikir kreatif dengan memasang spanduk yang unik untuk menarik minat pembeli.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aneka Denah Rumah Minimalis 2 Lantai Denah Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/4e/4f/72/4e4f72f10dbbba6d6efc150e78f5aad5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFe8LNGjLduW-15G64E3OxepMohspQQxSRA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Waktu untuk menghilangkan penat selesai bekerja ialah dengan bersantai bersama keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Ukuran 6x12 Terbaik Dan Terbaru Denah Rumah Rumah Minimalis Desain Gudang" src="https://i.pinimg.com/originals/43/f2/b5/43f2b58085d7383d962dae5fc226c4a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGTu3V0J2aiTNU1hQSCXbbYfDMO0Nfqp3hw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>52 Desain Warung Makan Lesehan Sederhana Inspirasi Top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/da/1b/c4/da1bc459906d4171d8c015a04fd2c0b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3Wkkmeff_LrPeiwpTSkNlukQL3SSFEkuyQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Download Now Desain Warung Makan Cantik Dan Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Rumah Tinggal 1 Lantai Milik Ibu Saskiah Di Kab Bone Sulsel Jasadesain Konsultan Arsitek Rumah I Arsitektur Denah Rumah Denah Rumah Pedesaan" src="https://i.pinimg.com/originals/ee/9e/0e/ee9e0e4f2c3ee4a6745944ac74c68632.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcI4p3bVJ_6H028BEiP6iMF9Ta5uALZNselw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>- Mempunyai desain warung adalah salah satu harapan terbesar untuk setiap keluarga.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-mewah-tingkat-3.html"><i>&larr; rumah mewah tingkat 3</i></a>
+                                                                    
+                                        <a href="/rumah-mewah-seharga-1-triliun.html"><i>rumah mewah seharga 1 triliun &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Dapur Kost Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Dapur Kost Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/e2/c3/29/e2c3291b307b4ecaac1682370a9b3152.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dapur+kost+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Dapur Kost Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Dapur Kost Sederhana</strong>. Berikutnya ada dapur outdoor bergaya modern minimalis dengan tema monokrom yang diberi pembatas berupa pintu kaca berukuran besar. Contoh dapur minimalis kecil yang satu ini sangat pas terutama bagi yang sudah bosan dengan beragam furniture yang menempel pada bagian dinding.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/42/1c/c6/421cc6581c62c14ea0b4f9fae29bd783.jpg" alt="Simple Kitchen Set Grogol Desain Dapur Kecil Dekorasi Rumah Dapur Tata Letak Dapur" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2e-5sJ6Vzk8qn7mzj-WtBMLphporXzzB4fdI-_MZpido1Dq3jU42-hwiaa5HP4SYMa3M';">
+        <figcaption>Simple Kitchen Set Grogol Desain Dapur Kecil Dekorasi Rumah Dapur Tata Letak Dapur from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Khidmat Extend Dapur Porch Ceiling Tiles Contractor Ubahsuai. Kania jamin kamu bisa lebih bahagia melihat dapur sederhana dan rapi hasil perawatan kamu. Inspirasi Dapur Minimalis Dapur Rumah Minimalis Sederhana Sampai Modern - Duration.
+    </p>
+    <h3>Jika diperlukan kamu bisa menambahkan kabinet untuk menyimpan alat masak agar dapur terlihat lebih rapi.</h3>
+    <p>Lihat juga resep Tteokbokki Kue beras dari Korea ala Dapur Anak Kos enak lainnya. Desain kamar kost kamar mandi dalam dan dapur gambar kamar kost sederhana desain kamar kost kecil desain kamar kost rapih biaya murah desain dapur kost cara menata kamar kost sederhana desain kamar kost kreatif desain kamar kost ukuran 3x3. Anda tidak perlu kitchen set yang berlebihan untuk dapur minimalis dan sederhana anda cukup dengan tiga meja dapur yang ditata sedemikian rupa seperti di atas anda sudah bisa memanfaatkan ruang yang tidak terlalu luas dengan baik. Inspirasi Dapur Minimalis Dapur Rumah Minimalis Sederhana Sampai Modern - Duration.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Daftar Harga Kitchen Set Minimalis Murah Terbaru 2020 Di 2020 Dapur Rumah Rak Dapur" src="https://i.pinimg.com/originals/83/c0/e9/83c0e99da93be6eb2523fb9b43da0e07.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMm-qCFHePdWH4CIFTDzu-nAaO1jt_VFZh2-umn7ymDM9RqflzFBfcOjmdJviWMFONr8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meskipun anda hanya berstatus menyewa kamar kosan tersebut namun anda juga berhak untuk menata kamar sesuai dengan selera anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bar Cafe Desain Interior Desain Furnitur Interior" src="https://i.pinimg.com/originals/61/23/4a/61234a8a6d1ef44f880c32430154d734.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9wdraqZZSxe1TfILCX1-sTGyGPtryuu8Tg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh gambar desain rumah kost minimalis 1 2 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/474x/be/3e/cb/be3ecbf074553a8a160847cee1ccffdb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVWdOsBzFtufPFqXlBHgacXLfXqSipnk8oUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur Dengan Kitchen Island.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/98/b6/c2/98b6c2b6f9935f62f735f11220d246a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuKrp13-ukWD5l6KyQay1CQBeBAyXNH7rKiA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi dan Ide pembahasan tentang desain dapur dengan judul artikel 15 Dapur Mini Kost Yang Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Desain Dapur Apartemen Terbaru 2016 Bar Mini Dapur Mini Desain Dapur" src="https://i.pinimg.com/originals/a1/d7/c9/a1d7c9df9a02b489fc7e9658b96d38ac.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc1zTV8TX73XZBQEctRnfy8_qu8M9ZmPenly9-uP12BLVSb-JFpeoJIxao4GgGNZF-aVc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah sederhana dengan garasi mobil dan kebun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Pembuatan Kitchen Set Harga Murah Terjangkau Di Depok Kitchen Set Depok Kitchen Set Murah Furniture Lemari Dapur Furniture Dapur" src="https://i.pinimg.com/474x/a1/27/ea/a127eac3deb2275a971f9b4961203e70.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUHu26ObPgB1-kdsWLGopiV6qIRWNJPUaPKQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pastikan kalau benda-benda tersebut selalu bersih dan kosong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Sofia Nissa Di Desain Interior Rumah Di 2020 Interior Dapur Dapur Keramik Dinding" src="https://i.pinimg.com/564x/60/44/8a/60448a748928f3fa3922be87a7624e06.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfexaNcGwq0S-2_XXkubKoBuDso1m7JV7pnGOCIOQnu-a53RYWKu1YfDIlsfJ1ZXAMdBo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>20 Desain Kamar Kost yang Sukses Menarik Minat Anak Kos Jangan lupa pula memberikan fasilitas dapur kamar mandi yang mencukupi jemuran dan lain sebagainya sehingga anak kost merasa betah dan nyaman Sebagai rumah kedua kamar kost harus didesain dan ditata senyaman mungkin dan jangan lupa menjaga kebersihannya Untuk mendesainnya tidak harus mengeluarkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ide Ide Untuk Rumah" src="https://i.pinimg.com/474x/45/cd/df/45cddf54dbb508d1eacc6533c29b54df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTIylLd0ynEjLKIwQGD5AYrh8gQz-ekI5qQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Ruang Makan Minimalis Sederhana 2017 Ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Supaya Terlihat Luas Model Dapur Desain Dapur Apartemen Minimalis" src="https://i.pinimg.com/originals/97/a4/47/97a447c6c690e4a3415c81dc84197e2a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoPyVZzATOxhcaJvUtWiRjNbu2g4WzZSAoD3V05UoZrNPlfdeicuM1VaEsin-2s3ygCdk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena jiwa keterpaksaan untuk segera menyelesaikan tugas akhir kuliah yaitu skripsi maka ane memberanikan diri untuk kembali merantau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pilihan Cara Menata Dapur Tanpa Kitchen Set Sederhana Di 2021 Dapur Kecil Dapur Dekorasi Dapur Kecil" src="https://i.pinimg.com/originals/19/6f/19/196f199122f2a65d1e19faf741aa76f9.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXG-4Z3B5dahLVFAoocezM0KgRkbMUzV3nUo2oW2N9AbnAtYRQTZwq2o6vV13HoTnq-l4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cukup sederhana dan tidak membutuhkan banyak tempat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="16 Desain Dapur Minimalis Youtube Dapur Minimalis Desain Dapur Dapur" src="https://i.pinimg.com/564x/e5/e2/4a/e5e24a1b4c120bda5a5b0c0afc83f930.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkmh4bolxWs1Jt4q34fY35b0VjcCh3IOEv9q97YVHNLfDI_RHLML-1rUVErJtliY8QWus';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh dapur minimalis kecil yang satu ini sangat pas terutama bagi yang sudah bosan dengan beragam furniture yang menempel pada bagian dinding.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Ruang Makan Dan Ruang Komunal Rumah Kos Pontianak Arsitektur Rumah Arsitektur Denah Lantai Rumah" src="https://i.pinimg.com/600x315/ed/cf/37/edcf37599f6b2f1388141325136eb743.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bYYkNNN2eQlFCRuSEb9i72XLWFqi_mp9Ew';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kurang lebih 7 jam perjalanan menggunakan sepeda mesin alias motor dari kampung menuju ke kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah 2 Blok Rumah Kos Yang Berdempetan Namun Terkesan Lebih Luas Dan Longgar Desain Kamar Hotel Desain Rumah Bungalow Membangun Rumah" src="https://i.pinimg.com/originals/f9/3b/3a/f93b3a9a5191ce195fa50560fb20c59d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTJ7yYz7UkDgGr1oauvkq6bmzFnTfw8mxnytTi5llSuPE3RU4mSggXjpZZb8XMOLiR2zw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain dapur minimalis sederhana juga tidak membutuhkan banyak peralatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Tipe 45 70 M2 2 Kamar Tidur 1 Kamar Mandi Ruang Tamu Dapur Tempat Jemur Teras Garasi 2 Mobil Harga 550 Juta Lokasi Br Kaj Rumah Garasi Bali" src="https://i.pinimg.com/originals/ea/65/00/ea65001a1299fabb102858fe13f5c256.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUvzhQ46JFiAfYasOLfkzXPu5uErOu5POpeg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah sederhana dengan garasi mobil dan kebun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Design Kamar Kos Dapur Mini Dapur Mini Dapur" src="https://i.pinimg.com/originals/0e/8d/72/0e8d72f9e4aceca83e95acf93e568f0e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqWEXWzFdsa-ZvU2pIZkmQ53rEdiQr2u00OKrE_VJ8SGvP5iwVM1yYP9anQ2TQFzPtZ3s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kombinasi mural pada permukaan dinding dengan keramik dapur bermotif batik menghasilkan sentuhan yang unik sekalipun tampil lebih modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Set Lemari Dll Di Instagram Kitchen Set Lurus Villa Pertiwi Depok Real Portofolio Projects Furniture Mi Dapur Cantik Dapur Minimalis Desain Dapur" src="https://i.pinimg.com/originals/f5/02/22/f50222c2fb1a0e1af67f90f503854957.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8ML6zBwOuc7TpNEDsJjV-XZiX4tUKKMbhphJktY2tjZZd-pypZfhnjDAi4ZYXuIhznU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Minimal kompor wastafel cuci piring dan sedikit ruang untuk meletakan bahan makanan saja sudah cukup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membangun Rumah Kost Kostan Dari Sederhana Hingga Mewah Desain Tipe Rumah Interior Dapur Desain Interior Rumah" src="https://i.pinimg.com/474x/ec/e0/e5/ece0e50f608fb689a7d3923bf58df94f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxGIWU12bllD_NKLtT6eqTW5w_lqz0ScJCCOQEr4dQZQ203C5WqNQmvnZJsvLfNB9OSc4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Desain Rumah Kost Minimalis Sederhana Posted by Unknown On 5 52 AM Selain rumah hunian biasa yang minimalis ternyata ada rumah kost minimalis yang pastinya didesain khusus buat orang yang menyewa per ruangan atau per kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Set Under Stair Storage Location Bukit Nirwana Residences Bogor Contact Us 0812 8140 7556 Dapur Tangga Ruang Makan" src="https://i.pinimg.com/originals/f4/e7/a6/f4e7a64f86632fca336bd20f11320638.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKH3_0EeRPnzoSTfniFRtrxMJtAR4h-3ASDg';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Media Mirza 832289 views.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Inspirasi Desain Rumah Kontrakan Sederhana Dan Modern Punya Desain Rumah Kontainer Rumah Desain" src="https://i.pinimg.com/564x/14/9c/1e/149c1e3a4b7166889625df3390d8af3e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR52TjVNr48slkmmazKO6wTQZhHO2DV9oWk9rRmyMBNAI5LQjtQoUkL-Yy8U4i9WSW_-I4';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Contoh dapur minimalis kecil yang satu ini sangat pas terutama bagi yang sudah bosan dengan beragam furniture yang menempel pada bagian dinding.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Interior Rumah Dan Kost Modern 2 Lantai Ibu Wenny Di Jakarta Di 2020 Desain Dapur Interior Interior Rumah" src="https://i.pinimg.com/originals/3a/90/cd/3a90cdea8cf07b522e3aba568369c3a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__35Qbx6ElayV_oyTmQZNrR7FRhL-Le6KqEHh2dkY7c2QNsXNyXn3zPJhSbyYA4jkN-w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah 2 lantai sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bentuk Tubuhmu Ditentukan Juga Oleh Isi Kulkas Mu Herbalifeid Diet Buanglemak Coachdesy Coachbangil Koleksi Kulkas Pembentukan Tubuh Dapur" src="https://i.pinimg.com/736x/cd/36/a6/cd36a6aaa1041418f2a9cc371c891062.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUToAR4Kre2-A7zG5sihZ3-q6Icaqj_kpLWHSL7kqcbMnNE8Pp2k0dDpLlxnFKGAm1Kw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Media Mirza 832289 views.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Best And Awesome Kitchen Wall Tile Ideas You Must Try Teracee Dekorasi Minimalis Keramik Dinding Desain Apartemen" src="https://i.pinimg.com/originals/70/f7/8f/70f78fd635c2e75c2cd87b56a8a62033.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3J1k4qeKFqfhI9ZHQJfdypqhzrS7ZAWIKUg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Renovate Dapur Rumah Jadi Besar Selesa Dan Cantik Mkk Plaster.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kamar Kost Ukuran 3x3 Kamar Mandi Dalam Interior Desain Desain Rumah" src="https://i.pinimg.com/originals/43/92/66/43926622188f40a0e5cf57a3a596f691.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxsfzk4ue08GLimwa_llw5ZRnuze2u3f6AgS6r_FEdAWTN60K7-C600uHwN0x24P5ah3Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain dapur kecil dengan meja makan mini bar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Desain Dapur Minimalis Sederhana Dan Modern Terbaru 2017 Dekor Rumah Desain Produk Ide Dekorasi Rumah Rumah" src="https://i.pinimg.com/originals/a9/9a/fe/a99afe742102c773f0d7f8f7925e68be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJkbl1Toujvx3dN4UWdZZV9cf_qULNFp02HeqfGmgNDgn-WgD821al9qEcOQGkxO71cbI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kurang lebih 7 jam perjalanan menggunakan sepeda mesin alias motor dari kampung menuju ke kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="18485768 1043421855793244 4452892590589393144 N Jpg 960 960 Rumah Interior Desain Interior" src="https://i.pinimg.com/originals/0c/11/69/0c11698ad9dd1886853d5c52191b28db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCwcWkKI_hWOYbhrwWYWKpKwFIV3r6V2BWeA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Khidmat Extend Dapur Porch Ceiling Tiles Contractor Ubahsuai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Kamar Mandi Pink Sederhana Sederhana Di 2020 Ide Kamar Mandi Hiasan Kamar Mandi Gaya Kamar Mandi" src="https://i.pinimg.com/originals/e7/95/23/e79523e8e7569a2fc5e83e06d7e1d236.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs_69YoQRcr2xXqQOgQVFWBCAhdAxD4zBB6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan desain kamar yang nyaman masalah seakan hilang begitu masuk kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kitchen Set Minimalis Mungil Warna Putih Desain Dapur Kecil Dekorasi Kamar Mandi Kecil Desain Lemari Dapur" src="https://i.pinimg.com/originals/0e/22/11/0e22112da3e6244fefeb851395cc4e3a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThok9w3oOMk4KHu4KcPKuqWZbknw1ADIrPGw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Desain Rumah Kost Minimalis Sederhana Posted by Unknown On 5 52 AM Selain rumah hunian biasa yang minimalis ternyata ada rumah kost minimalis yang pastinya didesain khusus buat orang yang menyewa per ruangan atau per kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost 2 Lantai Terbaru Cat Rumah Minimalis Desain Rumah Rumah Denah Rumah" src="https://i.pinimg.com/564x/bf/f0/aa/bff0aa52383c3ddd88625bcd253901b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpomD9dZX0FF656MR_9dmsufZpgAHJURwuVkADxrqRXsXvKG5osS5CBX7oWC77sGW-BM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Oleh sebab itu ada beberapa rekomendasi dapur sederhana dan minimalis berikut ini yang bisa kamu kulik inspirasinya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 36 Desain Rumah Di Lahan 4x13 M Untuk Kos Kosan Desain Kos Modern Minimalis 2 Lantai Youtube Rumah Desain Modern" src="https://i.pinimg.com/564x/d8/3d/f5/d83df53a77077e16ecc312fccb60d0e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iq2yY2ClVG8Ukykhl5huIZ8KGrsjSywGtw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Reno Rumah Kos Sederhana Pandan Damai 2 Kuantan Dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost 10 Kamar Rumah Membangun Rumah Desain" src="https://i.pinimg.com/originals/f5/35/30/f535303c3c6e01a39d239461d0ed01a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGfb6N6HfHlR_C7hB5-Ej28gyyBXQlqbSHg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kania jamin kamu bisa lebih bahagia melihat dapur sederhana dan rapi hasil perawatan kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kamar Kost Rapi Biaya Murah Rumah Desain Renovasi Rumah" src="https://i.pinimg.com/736x/10/49/17/104917ba4dd7ef87f36f8fa00a206e8c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSujxrIhpszrTLsv0aWTVobru6k_lQ_X3h-tg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>63 Gambar Dapur Minimalis Sederhana Mungil Nan Cantik - Sebuah rumah jika tidak ada ruangan untuk memasak dan mengolah makanan yang biasa kita sebut sebagai dapur pastinya tidak akan memenuhi standar rumah sehat dan ramah lingkungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membangun Rumah Kost Kostan Dari Sederhana Hingga Mewah Desain Tipe Rumah Desain Dapur Modern Dapur Rumah Dapur Minimalis" src="https://i.pinimg.com/564x/ac/17/52/ac1752805e9c78ddeee6dade78ddb783.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wzc0OBmyd7-tafDH5JPm20sZh2jPxF3RdydujpUxVQLDsYk0OmwLHWtOtq1O3mwx3PY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan memakai Cookpad kamu menyetujui Kebijakan Cookie dan Ketentuan Pemakaian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Alhamdulillah Kami Telah Memiliki Rumah Di Kawasan Kampus Dimana Hampir Setiap Rumah Dikontrakan Utk Mahasiswa Kuliaha The Plan Denah Lantai Rumah Denah Rumah" src="https://i.pinimg.com/originals/f1/c7/2e/f1c72e295c4097ce560d2bd3d526349c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvPBdhO09DUdazQ2PdhRzoOoshxCQaN8RuhA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Renovate Dapur Rumah Jadi Besar Selesa Dan Cantik Mkk Plaster.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=denah+kamar+kost+3x3+kamar+mandi+dalam&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=denah+kamar+kost+3x3+kamar+mandi+dalam&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Awali hari-hari di dapur sederhana dan rapi dengan memperhatikan beberapa fitur penting dapur seperti wastafel dishwasher rak piring hingga gadget dapur lainnya yang berfungsi serupa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/30/42/d4/3042d40d268984cb30b096fbeefa9c9a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7bHD3J4xMsv0g1rfDQ7xLGsVPfy8ZdIxhw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pastikan kalau benda-benda tersebut selalu bersih dan kosong.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Rumah Paid Promote On Instagram Ruang Makannya Mbak Mafamarissa Selamat Pagi Alhamdulillah Masih Di Rumah Ide Dekorasi Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/b1/f2/ec/b1f2ec7557034b7b9436d2fa0adb9364.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyPq3iJRn5CdjHcLLAZAIDF27LT506gqEp4w';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Khidmat Extend Dapur Porch Ceiling Tiles Contractor Ubahsuai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Simple Kitchen Set Grogol Desain Dapur Kecil Dekorasi Rumah Dapur Tata Letak Dapur" src="https://i.pinimg.com/originals/42/1c/c6/421cc6581c62c14ea0b4f9fae29bd783.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2e-5sJ6Vzk8qn7mzj-WtBMLphporXzzB4fdI-_MZpido1Dq3jU42-hwiaa5HP4SYMa3M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh dapur minimalis kecil yang satu ini sangat pas terutama bagi yang sudah bosan dengan beragam furniture yang menempel pada bagian dinding.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Desain Rumah Kontrakan 2 Lantai Desain Rumah Lantai Rumah" src="https://i.pinimg.com/originals/85/5f/ec/855feca025eb4330eb8b63e50e098025.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIHCgsCG5Q2y_BgN--j3eZubpcsFhxfYiM2g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Renovate Dapur Rumah Jadi Besar Selesa Dan Cantik Mkk Plaster.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Kamar Mandi Minimalis Ukuran 1x2 Kamar Mandi Minimalis Kamar Mandi Hijau Hiasan Kamar Mandi" src="https://i.pinimg.com/originals/8b/4f/fe/8b4ffeeb32f80c1809cc5565929ba8b7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSJ-0ZgM-wDyHZbhOOXaL-s2dBSaWNdNlZ9Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Minimal kompor wastafel cuci piring dan sedikit ruang untuk meletakan bahan makanan saja sudah cukup.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Set Jati Belanda Dapur Rumah Kayu Jati" src="https://i.pinimg.com/originals/9c/8f/da/9c8fda7ebb3561c9cf81bc49e61d128d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmPYUF_y_6PrHdpP1XhHPbD6ROa0MSC7GDfw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah sederhana dengan garasi mobil dan kebun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tempat Kost Di Tanah 10x23 M Tempat Parkir Adalah Salah Satu Sarana Penting Yang Harua Ada Pada Sebuah Kost Eksk Desain Kamar Hotel Membangun Rumah Rumah" src="https://i.pinimg.com/564x/d1/13/57/d11357556abc14e42b17ba06ec59bab6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9PfZnSuV8ynSjk-cEs8oDWu1bjYPEIr0-g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah rumah type 36 minimalis sederhana desain 3d 2d kamar mandi minimalis ukuran 21 5 m 22 m atau 23 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Dapur Minimalis 3 3 Terbaik Tahun 2020 Dapur Minimalis Desain Desain Dapur" src="https://i.pinimg.com/originals/c7/fc/41/c7fc4169371e047c73544ae244f5db9f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYKx-nalCrr8QAo69e6lS9K4wC8tYq8h50k9j32BJLPn6BTIG3x0O6ub9CvXoYN7SYtQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kania jamin kamu bisa lebih bahagia melihat dapur sederhana dan rapi hasil perawatan kamu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=dapur+kost+minimalis&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=dapur+kost+minimalis&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Awali hari-hari di dapur sederhana dan rapi dengan memperhatikan beberapa fitur penting dapur seperti wastafel dishwasher rak piring hingga gadget dapur lainnya yang berfungsi serupa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Petakan Di Lahan 6x15 M2 Denah Rumah The Plan Desain Rumah" src="https://i.pinimg.com/originals/4c/49/2e/4c492edc57c525e11f656acf0be29a07.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuTzQ3y1qzpA2Ql-6-Mw4jIYImBtV-IBy0Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Media Mirza 832289 views.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Set Jati Belanda Kabinet Dapur Lemari Dapur Ide Dapur" src="https://i.pinimg.com/originals/9b/83/62/9b836239127523f6f3b6d47691bb638d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThuYMvZooO3vjR8PBt19YnTVhNthQ99HOiAQ';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>2 Desain modern nan simpel untuk dapur anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost 2 Lantai Minimalis Sederhana 14 Kamar Desain Rumah Kost 2 Lantai Rumah Desain Rumah Rumah Indah" src="https://i.pinimg.com/564x/ae/d2/8f/aed28f018f9c13cdd081b47fad38b40a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBBpwFjEwd2MpSMHlg9RoPsyJvD5st3MIjw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh dapur minimalis kecil yang satu ini sangat pas terutama bagi yang sudah bosan dengan beragam furniture yang menempel pada bagian dinding.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Desain Rumah" src="https://i.pinimg.com/736x/b6/42/59/b6425942a92ed5c9f26a50572a44c574.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMoRJ33xbBrB6ts272-IV9DccIU7_GUHnqwA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Renovation Rumah Cara Mengira Harga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Ukuran 4 X 6 Desain Rumah Rumah Desain" src="https://i.pinimg.com/originals/e2/c3/29/e2c3291b307b4ecaac1682370a9b3152.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRT3bTg6CGqMCKxr3kr0lyhSpgvnwCWsHzeQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan desain kamar yang nyaman masalah seakan hilang begitu masuk kamar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Agnia Amalia Di Dream Home Design Boarding Apartment Minimalist Dapur Rumah Dekorasi Rumah Dapur Dapur Luar Ruangan" src="https://i.pinimg.com/736x/b8/a5/f3/b8a5f349a06c34f53f7a551b3a4cf9cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JCvpPmklcoqv4wekuAW4P_KYrnSRhmgAI-wdhewyHZP8eZcHNHU8pUlV07xX8n211T0';" />
+        <small>Source: sk.pinterest.com</small>
+                    <p>Menu Sahur Sederhana Mudah dan Lezat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Super Buc Harga Miring Turun Harga 1 4 M Nego Dijual Kos Kosan 2 Lantai Luas Tanah 150 M2 Luas Bangunan 200 M2 10 Kamar Tidur Kamar M Desain Rumah Arsitek" src="https://i.pinimg.com/originals/be/5b/e5/be5be54cbc3d8b5177cef632da4c81c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHelnAA5pHpslrKNotJggoT2oTmaT-lL8oA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut adalah kumpulan menu sahur sederhana untuk yang mudah dan praktis dimasak serta tentunya biaya murah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-kayu-joglo-modern.html"><i>&larr; rumah kayu joglo modern</i></a>
+                                                                    
+                                        <a href="/rumah-kayu-sederhana-di-kampung.html"><i>rumah kayu sederhana di kampung &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

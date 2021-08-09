@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Design Kantor
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Design Kantor",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/1a/d8/41/1ad841ca685232d66e7d2399d59655a3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=design+kantor",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Design Kantor
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Design Kantor</strong>. Desain interior kantor yang terakhir adalah milik 68 Clairmont Free Space. Arranging things like windows and furniture properly might help to improve employees productivity indirectly.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/fe/9e/c3/fe9ec3e6b0ddb538f595c729c8edc561.jpg" alt="Kantor Pajak Desain Interior Desain Ruang Tamu Desain Interior Kantor" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRhfmLHF-fHqrXGma5fDslUGrI1IEYoQVK7w';">
+        <figcaption>Kantor Pajak Desain Interior Desain Ruang Tamu Desain Interior Kantor from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Jika difikirkan lagi kata-kata tersebut memang ada benarnya mengingat begitu banyak waktu yang anda habiskan di kantor dibandingkan rumah sendiri. Ya kantor adalah tempat rutinitas bagi orang-orang yang bekerja. Salah satu inspirasi yang paling menarik untuk design kaca kantor yang maksimal sehingga menarik calon pelanggan yaitu dengan memilih motif alam.
+    </p>
+    <h3>Kantor rasanya hal yang membosankan jika membahas tentang kantor.</h3>
+    <p>Salah satu inspirasi yang paling menarik untuk design kaca kantor yang maksimal sehingga menarik calon pelanggan yaitu dengan memilih motif alam. Dengan campuran dari beberapa warna seperti abu-abu hitam dan putih menghadirkan suasana kantor dengan warna netral tetapi juga menambah kesan. Dengan memilih tema seperti ini otomatis area kantor akan terlihat segar dan alami. Hal ini bisa dilakukan dengan memilih design gambar dedaunan yang hijau berpadu dengan bunga yang senada.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Team Room Desain Interior Kantor Desain Kantor Modern Interior Kantor" src="https://i.pinimg.com/474x/0b/6e/78/0b6e78615031e39ec4c0fbda91b690fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6SBrT5qYAXvB_HjIZ0U40_iwKghcbRvfMyA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>How you design your office interior could affect your work environment in the future.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Desain Interior Kantor Minimalis Modern Yang Indah Desain Interior Desain Interior Kantor Interior" src="https://i.pinimg.com/originals/0d/48/21/0d48213f5f77de6c68e6949ca4328e52.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr_jFI6kA9oX4vdgCFJ80Rn4DWalitDbPTduchxdtjwPLsySBJdYirhycTwQ7ZNJcQuSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Saat ini lingkungan kerja di kantor telah berubah menjadi lebih terbuka kami akan memberikan solusi design interior kantor penyediaan furnitur seperti kursi meja kabinet atau sistem partisi meja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Kantor Milenial Warna Cerah Yang Buat Bahagia Desain Interior Desain Studio Desain" src="https://i.pinimg.com/originals/51/e9/db/51e9db878e7f6ae07c22b4480d99bd35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgGBoXOMN0GKut1tLGpSvgCylxxrfOhjozMdY5ZE_1-J1IuDeUnU4MCJGXGBwfzanTtSw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Para karyawan ini tidak hanya sebentar berada di kantor melainkan berjam-jam bahkan seharian saat lembur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Furniture Kediri Resepsionis Puskesmas Kantor Desain Interior Minimalis 2016 1 Interior Interior Ruang Tamu Desain Interior" src="https://i.pinimg.com/originals/bb/6a/68/bb6a68a5f187bc827f7c93a5b3e774e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyMXowB2oHY6_ApRBCrCKUH4qtJP5gVozVHfgjnoVj0-jBrbmI4NhQRLBnzjiokUTrnsM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kantor pemerintah kantor komersial kantor profesional dan kantor bisnis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Eksterior Interior Desain Jasa Desain Kantor Pelayanan Desa Minimalismurah Berkualitas Interior Desain Desain Interior" src="https://i.pinimg.com/170x/cb/7c/9f/cb7c9fa0e4c0479d711d7baa9c132061.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-bWHSk4Js1BqRJ6GV9VqxqPn97oskaZuUg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam mendesain kantor di ruko ini tentu kita harus membagi- bagi ruangan pada tiap lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Preview Desain Renovasi Ruang Notaris Dan Ruang Asisten Berdasarkan Denah Dan Foto Lokasi Existing Kantor Notaris Ruangan Notari Desain Produk Desain Interior" src="https://i.pinimg.com/564x/cb/e4/3f/cbe43fdcec65f2e81a46f7bb81557886.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4EvwzM9rnVglioGglcf3WTz8h9mdqoPjwsg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan demikian sebuah desain interior kantor harus dibuat sebaik mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Interior Design Kantor Terbaik Di Indonesia Konsultan Interior Design Gratis Visualisasi Gambar 3d Utk Ruang Meeting S Desain Interior Interior Desain" src="https://i.pinimg.com/736x/1c/5b/bd/1c5bbdd9a80e2cb49b18bbda05dbac6d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8GGvl61nTHCCA1nwQqUCBPxVLj6rDGvMnYVCRhdFtB-tAtF3bpqZfsVu0TaEvhN3A4Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam mendesain kantor di ruko ini tentu kita harus membagi- bagi ruangan pada tiap lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Termurah Jasa Renovasi Interior Kantor Semarang 0822 9000 9990 Desain Interior Kantor Desain Furnitur Interior Rumah" src="https://i.pinimg.com/originals/8f/1d/41/8f1d41023d5710167b611ab96bd9f4f0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacVManNEJqMxBsMqh06vrg1H-6nCVU_9ieg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kami akan merancang sesuai design interior kantor Anda untuk memenuhi kebutuhan furnitur Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Ruang Kerja Kantor Minimalis Nyaman Txt Desain Interior Desain Ruang Kerja" src="https://i.pinimg.com/originals/92/71/bf/9271bf0283451b7323c9182190ac471b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS102SKug9s-vhSCl4sAWKHvZH5wNHfKyXqRg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Storage Cabinet Kabinet Penyimpanan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqluxob6hxst8eak0iguuo3mtkz51hyovxqurvcpei20cumuh2j Usqp Cau" src="/search?q=desain+ruang+kantor+sederhana&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+ruang+kantor+sederhana&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>How you design your office interior could affect your work environment in the future.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Direktur Desain Desain Interior Rumah Kantor" src="https://i.pinimg.com/originals/6b/7d/b0/6b7db00a4f92d695589d1d86866fb299.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5PZ5fKQrXAUMVzrzf1YR4E103C-uT2oWQ_aBM26YfQCi-02lOdmgJccIrc017j3Rn4jo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>We compiled 7 important things to pay attention to in designing your office interior to its best.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Ruang Meeting Minimalis Yang Sedang Trend Dizeen Desain Kantor Modern Desain Interior Interior" src="https://i.pinimg.com/564x/91/41/89/9141897349d235939d1f7213494bd131.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI4FgBITuNCjp55Wpxe4nG8PRGgm6VJijQPw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Membagi kantor ke dalam beberapa kategori yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kantor Perusahaan Top Dunia Dengan Desain Yang Nyaman Desain Interior Kantor Desain Interior Desain Produk" src="https://i.pinimg.com/originals/7d/c5/19/7dc519b32fa04685366c5618b3363228.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc8jT-RaC86yN3hxRvkSkiftH66Ozi52zrgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kantor pemerintahaan awal-awal terdapat dibalai kota dimana balai kota tersebut digunakan untuk banyak fungsi seperti pengadilan lantai atas untuk ruang pengadilan lalu lantai bawah untuk pasar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kantor Malang Interior Kantor Surabaya Interior Kantor Kediri Interior Kantor Nganjuk Interior Kantor Tulungagun Desain Interior Interior Rumah Kantor" src="https://i.pinimg.com/originals/2c/3d/19/2c3d19c44b21897105d6538d830c4658.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPiM3dXQXn3WLGR7qLC7m5lo3zf0-yySV9Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bahkna banyak orang yang mengatakan kantor adalah rumah kedua selain rumah tinggal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Plus Minus Tatanan Ruang Kantor Terbuka Jakarta Startup Founder 101 Jakarta Perabotan Kantor Ruang Kantor Desain Produk" src="https://i.pinimg.com/originals/f4/21/1c/f4211c2d25bfe3543a4f08cf6feff5fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKQ0xCOTZORHsNaQj_yEyvE6bCCGrzTHyY1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan campuran dari beberapa warna seperti abu-abu hitam dan putih menghadirkan suasana kantor dengan warna netral tetapi juga menambah kesan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Kantor Type Minimalis Desain Interior Kantor Desain Kantor Rumah Desain Kantor Modern" src="https://i.pinimg.com/originals/89/60/2e/89602e9fd48a7dc34d3386d881b65003.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEy_Wwm6UT2QUkra5KFencWyzTLXdgnLq9HVq0OH-zwDTHRXPeD8ERsZ2hgMZvMFU6Dew';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ya kantor adalah tempat rutinitas bagi orang-orang yang bekerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Desain Ruang Kerja Industrial Elegan Desain Interior Kantor Desain Interior Interior Kantor" src="https://i.pinimg.com/originals/59/c1/2f/59c12f20fd2a3ddc8d7a9f277d987b98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuG-WZH8t327AQM-h-KzFUgs0WWX1b_qd9CQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk kantor dengan ukuran kecil sebaiknya kita mengambil konsep yang sederhana konsep minimalis modern konsep monokrom konsep nuansa putih dan beberapa konsep lainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Ide Desain Interior Ruko Minimalis Untuk Kantor Kecilmu Di 2021 Desain Interior Desain Kantor Rumah Kantor Arsitektur" src="https://i.pinimg.com/originals/86/6e/49/866e493d9032ec96de8b03864b8cc632.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVlJMqJA5_VvxCbckFFOZlyln98x5Cr4SExhnJjLsX7SFgSTRi7AYkIbAfvVtxzBOgys';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Usahakan meja anda selalu bersih dinding dicat putih atau setidaknya cerah sehingga ruang terasa lebih lega.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Meja Kerja Simple Desain Meja Kerja Direktur Sangat Simple Design Meja Kerja Direktur Sangat Simple Desain Meja Meja Kerja Desain Meja Kerja Teak" src="https://i.pinimg.com/originals/c5/e7/cf/c5e7cf1c3922a57a89a67a1b1cdadbd8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqzbQCal_3c5zoR4Mp6N6_pj-Rx2t1ePAbQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>How you design your office interior could affect your work environment in the future.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern Minimalist Lobby Interior Kantor Minimalis Surabaya Sigiarchitect Interior Desain Kamar Desain" src="https://i.pinimg.com/originals/e5/08/78/e5087885616dae45bd9243cb31c3e7dd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4S81Ub8RPu2WUdglpufB1Ci3MfxIAZ1EUZFm2FV7c_s9XEEQFWGEhWHw6Taq9yJ6QKi8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami akan merancang sesuai design interior kantor Anda untuk memenuhi kebutuhan furnitur Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Selamat Datang Di Tukang Perabot Medan Kami Ialah Perusahaan Yang Bergerak Dalam Bidang Desain Interior Me Desain Interior Interior Desain Interior Ruang Tamu" src="https://i.pinimg.com/originals/18/24/2e/18242e6cdb477d99e6f21da5c6c47e3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa71tuIkBrvoRa7HYvIA0taMYJIH4CqFdxRQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Interior design companies can be involved as much or as little as the client desires.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Minimalistic Home Office 04 Desain Kantor Rumah Desain Interior Modern Interior Kantor" src="https://i.pinimg.com/originals/ab/13/2c/ab132c2deffcba1ca4767dbe388f6b4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSykHgEdYwW8NGrk0it0RZutHxONrIOewswWA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kami akan merancang sesuai design interior kantor Anda untuk memenuhi kebutuhan furnitur Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Kerja Eksekutif Dari Bebitalia Mrd Desain Kantor Rumah Interior Kantor Desain Interior Kantor" src="https://i.pinimg.com/originals/b3/78/2f/b3782ffb8c46f0fed2d7f626106a2e10.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1WbZjUJWqvAVX9wzvMU9t0Zwo5DRyCFfl_TBw8nLGeupJDAw80gFvTYrhGSdW3XTKub8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>How you design your office interior could affect your work environment in the future.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kediri Desain Interior Kantor Kediri Desain Lobby Kantor Kediri Desain Interior Ruang Kerja K Ide Dekorasi Rumah Interior Desain Interior" src="https://i.pinimg.com/originals/5e/ab/4c/5eab4c6a7229a513aa5b481d5cc295c1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjrwDUYvZWiW5SlNt7U6Ln3SM2VTZSBCSBQ9a9SoysZ6t1wmo5cEZH1HjXgeEgjU4Czo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Gedung Perkantoran Modern 2 Lantai Bangunan gedung perkantoran milik Bapak Yudi di kota Serang Banten dengan lahan 23X30 M2 diminta membuat desain kantor 2 lantai dengan konsep modern dan fungsional pemanfaatan ruang interior untuk operasional 3 perusahaan didalamnya dengan catatan beberapa ruang dimanfaatkan bersama ruang rapat besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kabin Kantor Penggunaan Warna Gelap Dan Top Table Marmer Hitam Serta Lampu Meja Kecil Terdapat Rak Buku Di Belakang Rumah Mewah Ide Dekorasi Rumah Rumah" src="https://i.pinimg.com/originals/1a/d8/41/1ad841ca685232d66e7d2399d59655a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6cycyr2m-xCY44iR5v1Cma7UTIImnlmk5ItBp7tHnZsDnca3U_KvIn684G7DDSRjEXs4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Usahakan meja anda selalu bersih dinding dicat putih atau setidaknya cerah sehingga ruang terasa lebih lega.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inexpensive Working Space Design Ideas On A Budget 21 Desain Kantor Modern Desain Ruang Kerja Desain Kantor" src="https://i.pinimg.com/originals/62/fb/7a/62fb7a90fe21c067fbb890bc6b24a4e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvecp1tDFHka3v7o-Erc7lluU-MxiHCIcL9w';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Bagian yang bergerak cepat seperti pemasaran atau trading berada pada lantai dasar atau lantai yang mudah dijangkau.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Desain Ruang Kantor Minimalis Di Rumah Pribadi Rumah Desain Interior Interior" src="https://i.pinimg.com/originals/93/a0/10/93a01058df23efb886d040eb526efa95.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ4cqHqKQfSm0zfb-DQldrZllKQ9zfuBk-R_nmAR9Vo-uEGsei57iL6Cpj3mtc094ynyI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Membagi kantor ke dalam beberapa kategori yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+kantor+kecil&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+kantor+kecil&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Membagi kantor ke dalam beberapa kategori yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Open Space Open Space Interior Design Design" src="https://i.pinimg.com/originals/3e/f1/f3/3ef1f3c484dc33018a36fd034953d404.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS77T9Hre9t0KqZMqUyhpcfZTyHACftex3Ng';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>How you design your office interior could affect your work environment in the future.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Ruang Meeting Minimalis Yang Sedang Trend Dizeen Desain Kantor Modern Desain Interior Desain Produk" src="https://i.pinimg.com/564x/83/d1/d9/83d1d9622abdfe908e1aaf048c45fe81.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGilWdzd5n-m5sfa2aXcyMEMWspbR2A5GC1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami akan merancang sesuai design interior kantor Anda untuk memenuhi kebutuhan furnitur Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Ruko Minimalis Modern Jasa Design Pos Shop Kantor Pos Toko Keperluan Sekolah Desain Interior Rumah Interior Desain" src="https://i.pinimg.com/736x/39/fd/65/39fd6526d8988299c1afe244b70b965e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxFMY17kTSMlGLytrpO5441FKs-tKPb7Idmg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam pemilihan konsep desain untuk kantor kecil minimalis ini sebenarnya tidak jauh berbeda dengan konsep desain rumah minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Desain Interior Kantor Minimalis Modern Yang Indah Desain Interior Interior Desain Kantor Modern" src="https://i.pinimg.com/originals/85/ed/2b/85ed2b0506739b28735ccb763e0cf88c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSDwIqORROKj0KxZcAQtSHKYEzuRiS2kuQE0KSJJvi7yH0FOwQwoSMWD_tUUI_1o6XC4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Ruang Kantor Modern dan Minimalis - Kantor adalah tempat dimana anda mengerjakan pekerjaan anda sehari-hari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Bali Desain Interior Kantor Ruko Minimalis Interior Yg Memberi Kombinasi Indah Dan Menarik Untuk Anda Kami Menyediak Interior Desain Interior Desain" src="https://i.pinimg.com/originals/07/fb/8d/07fb8d015e90e1e6cc7eba0c76666f02.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEzKZgdyfH9H_TSoA-b8qtN2w1FJIOEMQrdg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arranging things like windows and furniture properly might help to improve employees productivity indirectly.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Ruang Kerja Kantor Minimalis Nyaman Txt Desain Interior Interior Desain" src="https://i.pinimg.com/originals/3e/24/57/3e2457e6f571bea8b18b62dbc60c6d26.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-eRdB1GrtXE3CQ5Z2fBU1o0LMSEeF6Z5rcHy4sOQbsR5ZUBLc4FjVyO50mAiSZ-rRCD4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>We compiled 7 important things to pay attention to in designing your office interior to its best.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Customer Service Minimalis Murah Desain Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/9d/04/73/9d04739bf157d49b6cf46d1e940afe09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNi8t1fVyOcE-UKg0HdOcUEdknTIlgae4r5A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain interior kantor yang terakhir adalah milik 68 Clairmont Free Space.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="32 Most Popular Tech Office Design Ideas Desain Interior Kantor Desain Kantor Desain Interior" src="https://i.pinimg.com/originals/37/ae/c1/37aec1283ea99126291c63c8c2abc79c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaywzieFV4BVK6TqPz3hjnvNPVwZTlG7zgIfiGJ55KSSTkk8QqF942JmcEjBvbBw-Xaoo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>How you design your office interior could affect your work environment in the future.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kantor Minimalis Dan Modern Desain Interior Interior Desain Produk" src="https://i.pinimg.com/originals/a8/70/65/a870659c03335c5526aa9b3070fdc148.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZT-Ml6GT--_LtkqpayQ5FmBL4MzDWGM39nYC1Q3AJ6cmuXkmVLfpapf9H6gDRLHlapEk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kantor ini terletak di Toronto Kanada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Ruang Kerja Lengkap Dengan Perpustakaan Pribadi Desain Kantor Rumah Desain Interior Kantor Interior Kantor" src="https://i.pinimg.com/originals/55/b4/26/55b42663f4e9f4008f5b598f3330a272.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6sjmcg66opuTomDjINm_ZcsHT8_OUJjNosauKpqDscHmY9Jp5OzFfw9vmw35fGhag7_4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bahkna banyak orang yang mengatakan kantor adalah rumah kedua selain rumah tinggal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kantor Minimalis Modern 085888 690006 Desain Interior Desain Interior Kantor Interior" src="https://i.pinimg.com/originals/db/f4/f8/dbf4f81ca051e32e09b164e706dfe94a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5PsGk7JIq0LjflZgAZ1icq-vlrJrI_khcWDrk3xQTZQmjiBxF7jVHja2xtQ2MpjqrwD4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Baik itu kantor pemasaran kantor distribusi agen suatu produk tertentu dan lain sebagainya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kediri Ruang Lobby Kantor Receptionist Ruang Kerja Kediri Malang Surabaya Desain Interior Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/8b/29/96/8b29966883ef1eb80c34747b2c00e446.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrzG3LqGyzfiNZhqWeR4QVXjLEzrLjAqSKw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Merupakan perusahaan yang bergerak di bidang desain interior dan kontraktor design and build.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Ruang Kerja L Img By Flick Com Desain Kantor Rumah Desain Interior Kantor Desain Kantor" src="https://i.pinimg.com/originals/58/d0/ed/58d0edbf6a6ab7fe367311fdc2f871d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7SjLctL1voD4EGHM9gbEQF6GHNVohUmwFpA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yang mengerjakan proyek interior hunian maupun bangunan komersial dari proses desain sampai proses pengerjaan di lapangan dengan di dukung tenaga kerja yang profesional dan ahli di bidang nya Solusi desain interior kantor akan mencerminkan nilai-nilai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Office Interior Design By Maxima Arsitek Medan 2019 Desain Interior Kantor Desain Interior Interior Kantor" src="https://i.pinimg.com/564x/36/8e/a0/368ea0028cacbc4d959fba305e782b56.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmrrganU7zO3HvAFKU52iBa9gr8jqF4dmgw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dengan memilih tema seperti ini otomatis area kantor akan terlihat segar dan alami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kantor Pajak Desain Interior Desain Ruang Tamu Desain Interior Kantor" src="https://i.pinimg.com/originals/fe/9e/c3/fe9ec3e6b0ddb538f595c729c8edc561.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRhfmLHF-fHqrXGma5fDslUGrI1IEYoQVK7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Usahakan meja anda selalu bersih dinding dicat putih atau setidaknya cerah sehingga ruang terasa lebih lega.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Marketing Wahyu 0821 7724 7777 Wa 0857 7949 7777 Sari 0821 8326 0005 Wa Ana 0856 4667 2712 Desain Kantor Modern Desain Lobi Interior" src="https://i.pinimg.com/originals/43/96/86/4396867680806365bb9d2862e4778b7e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTapxXLHYdPzCFuLugxDu3YlGcTHmcUUtW5Pw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Saat ini lingkungan kerja di kantor telah berubah menjadi lebih terbuka kami akan memberikan solusi design interior kantor penyediaan furnitur seperti kursi meja kabinet atau sistem partisi meja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Interior Kantor Pelayanan Dengan Ruang Tunggu Desain Furnitur Meja Resepsionis Meja Kantor" src="https://i.pinimg.com/originals/8f/59/90/8f5990f6fc6f78d71bb3dac2cc16644d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCiseTL7NUNwbHodVA9RM7_WCSOu0VOwPCJg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kantor pemerintahaan awal-awal terdapat dibalai kota dimana balai kota tersebut digunakan untuk banyak fungsi seperti pengadilan lantai atas untuk ruang pengadilan lalu lantai bawah untuk pasar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Kantor Untuk Memberikan Nuansa Berbeda Desain Ruang Kerja Desain Interior Desain Rumah" src="https://i.pinimg.com/originals/33/5d/6a/335d6afbf226e747a9d229193754c02c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6urS80hKIpspvAX_A9hz-hddSl2C5jFADNkd-W1R_IvAmgudZI3xhPsRfPZ3s5vcbdY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kantor adalah tempat bekerja para karyawan dari sebuah perusahaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Kerja Kantor Minimalis Penelusuran Google Desain Kantor Modern Desain Kantor Rumah Desain Interior Modern" src="https://i.pinimg.com/originals/27/db/97/27db9749804dd0d82f2139e2a61225e1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3vpCgf5cEuTDNr5zgJYZUeKImt7iH9iLBog';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kami akan merancang sesuai design interior kantor Anda untuk memenuhi kebutuhan furnitur Anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Desain Interior Kantor Minimalis Modern Yang Menawan Interior Desain Interior Desain" src="https://i.pinimg.com/originals/f3/02/ea/f302eab0549564911883f7bd157b9bd3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSku5DXbFtTzviezJEEjGjv0trr5G5_HVDj_wR76Y5j63aun-329gUx5vamEIdYv0grQsY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ya kantor adalah tempat rutinitas bagi orang-orang yang bekerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Ruko Minimalis Modern Jasa Design Ruko Kantor Notaris View Area Direktur Dan Staf Desain Produk Desain Modern" src="https://i.pinimg.com/474x/7d/dd/1c/7ddd1cceb54e0b68f903aa3d8dab9111.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH_1Ch0JwicGHYIUwzqtK9czvQcXzZ6oUN7g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kantor adalah tempat bekerja para karyawan dari sebuah perusahaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Interior Kediri Desain Interior Kediri Kitchen Set Kediri Interior Kamar Kediri Interior Kantor Kediri Jasa Interior Desain Interior Interior Ruang Kerja" src="https://i.pinimg.com/originals/cb/54/a0/cb54a0f48ecfedc002f721606a6c8e08.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIb5cR0gyEwGwP3TgKKPjSCfvBZGBCxw39jQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ukuran ruang dan memori dari furniture kantor lama diharapkan membuat pegawai yang sudah setia selama 13 tahun tetap betah di kantor baru.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-elit-mewah.html"><i>&larr; rumah elit mewah</i></a>
+                                                                    
+                                        <a href="/rumah-estetik-sederhana.html"><i>rumah estetik sederhana &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

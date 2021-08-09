@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Dapur Cafe Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Dapur Cafe Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/1f/23/1f/1f231f2c25ac4728a5e4e70685a77005.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dapur+cafe+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Dapur Cafe Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Dapur Cafe Sederhana</strong>. Pilihlah warna hangat seperti putih atau cream agar memberikan kesan luas. Desain Cafe Minimalis Rumahan Ukuran Kecil Jika kalian tau trend cafe kekinian menempatkan meja bar di cafe rumahan adalah solusi terbaik Desain Cafe Minimalis Rumahan Sederhana.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/b5/59/a0/b559a0eddeea4cd47e092a909d6573ef.jpg" alt="Gerobak Di Dapur Rumah Idea Online Rumah Interior Dapur Rumah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF8gCYzta7JOIasIhISHyjw3bm5F4t0VNFvLZLsuLSq0fgqR2JKuJw4uR3H3tNxD_LU6A';">
+        <figcaption>Gerobak Di Dapur Rumah Idea Online Rumah Interior Dapur Rumah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Sangat Rekomedasi Untuk Dapur Ukuran 33Yanng Di Mana Space nya memang sangat Ngepas Untuk Model Desain Seperti ini. Desain Cafe Minimalis Rumahan Simple. Terlepas dari model dapur minimalis yang diminati desain dapur minimalis bisa dijadikan referensi dapur minimalis.
+    </p>
+    <h3>Dapur cafe kecil model dapur cafe sederhana dapur cafe terbuka desain dapur cafe sederhana dapur minimalis desain mini bar cafe dekorasi ruang makan ala cafe interior rumah ala cafe 8 Desain Rumah Ala Cafe Untuk Rumah Sederhana RumahLia com Sumber.</h3>
+    <p>Jika Anda ingin menghadirkan desain dapur sederhana unik dengan konsep ala cafe maka desain dapur diatas dapat dicontek. Dapur cafe terbuka dapur cafe kecil desain dapur cafe sederhana dapur minimalis desain dapur mini bar mungil mini bar cafe gambar mini bar minimalis desain mini bar sederhana Contoh Desain Dapur Cafe Paling Bagus Dan Keren1 Sumber. Menulis pilihan menu di papan tulis dengan kapur tak pernah basi. Gambar diatas merupakan gambar dengan judul Desain Dapur Dan Bar Cafe Sederhana Yang diupload oleh Mietha Fanza dengan kategori postingan Cafe.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rak Terbuka Desain Restoran Restaurant Bar Desain Lobi" src="https://i.pinimg.com/originals/da/63/4e/da634e9cf322643fd7bc3b8619d0085a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRO_ur_I899TVsD-XHb36Uc-rc6IS-IMfnVUahLgxH8PZc4Z_wi4MumeThEPaCxs976bg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika Anda ingin menghadirkan desain dapur sederhana unik dengan konsep ala cafe maka desain dapur diatas dapat dicontek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Dengan Model Keramik Dinding Dapur Yang Lagi Ngetren Desain Interior Desain Dapur Sweet Home" src="https://i.pinimg.com/600x315/fd/da/d2/fddad27e72fe155d0f30df1202c88d2a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM7smlghu3gKis5mOEIwwGmgUqTyRsd8EGwA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun kali ini yang akan saya bahas dari dapur cafe yang memiliki ukuran kecil dan cukup sederhana untuk kita pergunakan sebagai desain dapur yang cukup modern sehingga dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="55 Gambar Meja Dapur Minimalis Keramik Granit Kayu Dll Dapur Modern Kecil Desain Dapur Kecil Meja Dapur" src="https://i.pinimg.com/originals/0f/f1/58/0ff1581d3f2500d2d9023cba268a6b73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvxw0Hvy2M27TG7vdchbbtlraYO2BgrXVUg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Cafe Minimalis Rumahan Ukuran Kecil Jika kalian tau trend cafe kekinian menempatkan meja bar di cafe rumahan adalah solusi terbaik Desain Cafe Minimalis Rumahan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Desain Dapur Kecil Yang Bikin Memasak Lebih Cepat Desain Dapur Kecil Dapur Rustic Dapur Kecil" src="https://i.pinimg.com/originals/df/c7/0b/dfc70b9bfd5742a877781c0a6294093d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUZ1uq_nB8EoO_fM_PYCvnhYpELeCPFZhuZrFY5sIBRlFVwJK7jmMNgqIOwbwTZm1-YcQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dominan warna ungu dengan model gorden kolong dapur yang cantik 27.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Rumah Lumajang Dekorasi Interior Lumajang Dekorasi Interior Cafe Lumajang Dekorasi Ruma Dekorasi Ruang Makan Dekorasi Interior Dekorasi Rumah Mewah" src="https://i.pinimg.com/originals/6b/0f/f7/6b0ff7bd89280346041d5cdedae1e0c8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdOdcJW7UXj4_6RAAskcAn75OpboPjaSD-Rw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur cafe kecil model dapur cafe sederhana dapur cafe terbuka desain dapur cafe sederhana dapur minimalis desain mini bar cafe dekorasi ruang makan ala cafe interior rumah ala cafe 8 Desain Rumah Ala Cafe Untuk Rumah Sederhana RumahLia com Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Kukkik Di Kedai Khasembon Interior Kafe Desain Desain Produk" src="https://i.pinimg.com/564x/8b/df/e4/8bdfe43bf5b0bb9a8816650b068e9796.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYM4mtaUEUuBMli9af2YE0_LsxaITpimjX6Vv0CntL9WBvdg9PwzUHv1WOcrgzyR29BQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dapur minimalis yang menggunakan kitchen set dengan nuansa serba hitam ini semakin elegan dengan tambahan meja bar unik berbahan kayu alami.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Foods" src="https://i.pinimg.com/originals/ee/1d/82/ee1d822153bdd79c244473ee13a56b17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_zSW0dUVyD7cv83UHIKHKb6M_iYOd8Ppsop74t4HhVHCaITVPzAlXWjkhkDZvf24A38';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kalian Hanya Butuh Multiplex Dengan Ketebalan 2-4Cm Sudah Cukup Untuk Di Jadikan Top Table.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=desain+warung+kopi+sederhana+pinggir+jalan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+warung+kopi+sederhana+pinggir+jalan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Bagi para pengusaha baru tak perlu khawatir.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bar Cafe Desain Interior Desain Furnitur Interior" src="https://i.pinimg.com/originals/61/23/4a/61234a8a6d1ef44f880c32430154d734.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9wdraqZZSxe1TfILCX1-sTGyGPtryuu8Tg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hiasan di cafe ini hanya menggunakan kursi yang dipasang terbaik dan digantung di atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Dapur Rumah Minimalis Desain Dapur Dapur Rumah Dapur" src="https://i.pinimg.com/originals/26/da/58/26da581ec74d4bc6a0f984ab8e72709f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZMay2hpxlxq0u4IU2fndFLAeyegUS3MS2stwAjmah0bHOekzgRJUlMb48ejhxzzO5CE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meja dapur dibuat lengkap sebagai tempat perangkat dapur biasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Minimalis Keren Kece Instagram Dekorasi Rumah Dapur Desain Dapur Dapur Minimalis" src="https://i.pinimg.com/originals/7d/0f/66/7d0f66484990103c6b2c8b53a09b8530.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAs5vcWOGksUUZ8YTzXOyfysCMZdvdzNCBwJhwmRyxk8J-tkjg4KKYMcb-STOfI1SHybM';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur dengan rak kayu sederhana dan pilihan keramik berwarna cokelat 25.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Cafe Sederhana Dapur Luar Ruangan Luar Ruangan Desain Exterior Rumah" src="https://i.pinimg.com/originals/6e/b3/79/6eb379d6b811da7288592e9bc4979228.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_d8usyMv6GVEYcHMtcuzu5joldX5HovRmA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lampu gantung modern memberi kesan dapur ini tampak mewah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Minimalis Pantry Mini Bar Desain Interior Ide Dapur Dekorasi Rumah" src="https://i.pinimg.com/originals/29/4a/0a/294a0a5911ec347474f6f759b5a54b8a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVrj2tfKL00jRbeo9xJkrIaFKo8MjHSNijEhUvNXZNaie8fGEMA172zogrXMMvgJ5Gdps';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun kali ini yang akan saya bahas dari dapur cafe yang memiliki ukuran kecil dan cukup sederhana untuk kita pergunakan sebagai desain dapur yang cukup modern sehingga dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Dapur Dan Ruang Makan Interior Dapur Desain Dapur Dapur" src="https://i.pinimg.com/736x/26/da/03/26da03b85812b37af190bf9ecaf5f01b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIMUJzissnUkbcShfvLLqNGu6iH-YIG-8og';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Apalagi dipadukan dengan desain meja kursi yang luar biasa seperti ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Mini Bar Dapur Minimalis Kayu Jati Belanda Dapur Rustic Cabinet Kayu Jati" src="https://i.pinimg.com/736x/5b/a5/58/5ba55828a5aaca5657999601d154f112.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rvP-ndJbXrY27c5U1jAsmIFQCOHMAdr3IxpOCG0EuMCWt872j3fU3aAslnSjXElbV14';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bagi para pengusaha baru tak perlu khawatir.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Shabby Chic Arcadia Design Architect Dekorasi Rumah India Desain Interior Home Deco" src="https://i.pinimg.com/originals/29/84/18/298418298bf24a69489051123fe5ea0d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQhAxgcl6Sz7ZayFp9MJnr5WqRFRp905caeQ';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Bagi para pengusaha baru tak perlu khawatir.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dhiptadi Discovered This Gem A Coffeeshop Inside A Container Desain Restoran Kedai Kopi Warung Kopi" src="https://i.pinimg.com/736x/5a/e6/8b/5ae68bd5f7f5d455e84ce94d32b14179.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqVPyfDoup6KjPDXJQWWTJQvZilLLV-dlOA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>16 Gambar Dapur Cafe Ukuran Kecil Unik Di setiap rumah pastinya memiliki dapur dari mulai ukuran besar hingga ukuran kecil atau bisa anda sesuaikan dengan ruangan yang telah di miliki rumah tersebut sebagai desain dapur yang cukup menarik juga di buat dengan sepraktis mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Doni Rochiyudin Di Kedai Khasembon Desain Interior Kafe Interior Kafe Desain Dapur" src="https://i.pinimg.com/736x/77/c5/ef/77c5ef39925760f2400ccfca1f802216.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMslWhCccPtqZKCm0rwPMVs9qJebWPisFiTsIoZ9ldk6x9ZHWOzjnqVPLiQWx0xcHZ9eA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pilihlah warna hangat seperti putih atau cream agar memberikan kesan luas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Warung Kopi Minimalis Rumah Diy Sweet Home Dapur Luar Ruangan" src="https://i.pinimg.com/474x/95/09/ce/9509ce96952cbe7b0803e78e2c7c0d55.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhBXGgEy3AyDFInoLs1iCTs35kaB7VB1Y9Iw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur dengan rak kayu sederhana dan pilihan keramik berwarna cokelat 25.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Dapur Terbuka Sederhana Desain Dapur Luar Ruangan Kamar Outdoor Bar Outdoor" src="https://i.pinimg.com/originals/74/ed/d0/74edd0a8579ed38af84d289de6564d1d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFbqDQgwNzkVPnRp4oBPLZ2A13uQ604nNuiw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain tidak dapat memenuhi standar ketiadaan dapur di rumah tentu akan menjadi problematika tersendiri bagi pemilik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Minimalis Murah Desain Dapur Kecil Dapur Rumah Dekorasi Rumah Mungil" src="https://i.pinimg.com/originals/40/3d/6a/403d6aaae416b8372a3bc2fb84fdfdee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5U25bCf3bndpGETEAvZJdlii2zs14hkC60g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dominan warna ungu dengan model gorden kolong dapur yang cantik 27.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Container Cafe 2 3d Model Cgtrader Rumah Kontainer Kedai Kopi Ide Dapur" src="https://i.pinimg.com/564x/72/6b/b4/726bb4e716a7f4d66c0aecf047e47372.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG9ydIdIK1SDLMA1cRL8_3zkZhKqAObSdJ1A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mendirikan cafe menjadi salah satu upaya untuk menarik banyak keuntungan dari kegemaran anak-anak muda yang suka akan kegiatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Proyek Untuk Dicoba" src="https://i.pinimg.com/originals/8d/2b/59/8d2b5981f47dbd3e6fb6eac9406f5285.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe4fVETiOcnfvYUxoJFT5GMJ48vAXaV_YOyQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cafe minimalis ternyata bisa juga didesain dan didirikan di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Coffee And People Cafe Interior Desain Interior Kafe Desain Restoran Kedai Kopi" src="https://i.pinimg.com/originals/d6/7c/89/d67c894e2dcdbeb22a5ec841921a2da2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb64AfTnvdOG9EbFv8G8M4aBmKIq82hr1dL7nRbaXS4V3ffxsXBP-6RuAQIDGlhhFBYhw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dapur cafe kecil model dapur cafe sederhana dapur cafe terbuka desain dapur cafe sederhana dapur minimalis desain mini bar cafe dekorasi ruang makan ala cafe interior rumah ala cafe 8 Desain Rumah Ala Cafe Untuk Rumah Sederhana RumahLia com Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Foto Desain Dapur Semi Outdoor Di Belakang Rumah Desain Dapur Luar Ruangan Dapur Terbuka Dekorasi Rumah Dapur" src="https://i.pinimg.com/originals/79/1d/09/791d09ab6af2d5382fac033c8dcb79d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJZg2TLoap6hODfMSotL3R64pCe3v2pmwDR7K4aGXuIgKt-KlU3SF3QXtlVu_DW1BqBc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cafe minimalis ternyata bisa juga didesain dan didirikan di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Meja Bar Di Dapur Rumah Desainrumahanda Com Dapur Rumah Dapur Rumah" src="https://i.pinimg.com/originals/30/53/bd/3053bd9798cb148d301eae0a9e37cf07.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXGwkKn1CFaY56nss_iTc2Oz1wIl1mw7Kejw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Meja dapur dibuat lengkap sebagai tempat perangkat dapur biasa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gerobak Di Dapur Rumah Idea Online Rumah Interior Dapur Rumah" src="https://i.pinimg.com/originals/b5/59/a0/b559a0eddeea4cd47e092a909d6573ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF8gCYzta7JOIasIhISHyjw3bm5F4t0VNFvLZLsuLSq0fgqR2JKuJw4uR3H3tNxD_LU6A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cafe minimalis ternyata bisa juga didesain dan didirikan di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Desain Warung Kopi Sederhana Pinggir Jalan 1000 Inspirasi Desain Arsitektur Teknologi Konstruksi Dan Kreas Interior Kafe Warung Kopi Desain Interior Kafe" src="https://i.pinimg.com/736x/f1/b6/30/f1b630b63b05299651f6e04a906ca342.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWwejc4Hy6bNUv8ryTxa2Ta4V1LxsLhzdGqN8odZOdOnx7RyNQbj-3zH9kQ-sE2wnlZU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Paduan warna dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Dapur Minimalis Manis" src="https://i.pinimg.com/236x/4c/9e/36/4c9e365406e595147bf0bf890acfe579.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQcf-u5sv1Zj7tkUQcyDjD36HYSCcLSEp6g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Paduan warna dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Model Kitchen Set Minimalis Dapur Kecil Sederhana Namun Modern 2020 Dekor Rumah Ide Dekorasi Dapur Tata Letak Dapur Dekorasi Rumah Dapur" src="https://i.pinimg.com/originals/cf/32/d8/cf32d8d024d2d353beaf290468cf3b87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl6_V3ayE0uCnKQlqwbN4T9I81i7NRSoMB_Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Paduan warna dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Referensi Rumah Cantik On Instagram Kehadiran Mini Bar Di Dapur Rumah Dapat Difungsikan Sebagai Pengganti Meja M Ide Ruang Keluarga Dekor Ide Dekorasi Rumah" src="https://i.pinimg.com/originals/97/9d/bf/979dbfcab988c4287dc974cec5c226c4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVFcWsXpLyH7VqT85jd00Gl9yzfsPkElaf4A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur cafe kecil model dapur cafe sederhana dapur cafe terbuka desain dapur cafe sederhana dapur minimalis desain mini bar cafe dekorasi ruang makan ala cafe interior rumah ala cafe 8 Desain Rumah Ala Cafe Untuk Rumah Sederhana RumahLia com Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kitchen Set Sederhana Terbaru Interior Dapur Dapur Desain Dapur" src="https://i.pinimg.com/originals/9d/69/ae/9d69ae27ccaf9032b222fc35f3d61eaf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdWF86smcEym4-93MWtzVW8O6rrFLIG4KQsA';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Ketika dekorasi dapur minimalis sederhana yang paling utama adalah dalam pemilihan warna.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Interior Dapur Minimalis Bertema Monokrom Yang Dikombinasikan Dengan Aksen Natural Inspirasi Desain R Interior Monokrom Interior Dapur Dapur Minimalis" src="https://i.pinimg.com/originals/e9/d6/f1/e9d6f1f8e8b63c9ab2349b9fc585a7c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSli8MXDYebDZN483Toor5IaFbvw7bPeofVm15fKxWaBUlCVAmI2kQ4YFEQh7ab3G7R_kE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>63 Gambar Dapur Minimalis Sederhana Mungil Nan Cantik - Sebuah rumah jika tidak ada ruangan untuk memasak dan mengolah makanan yang biasa kita sebut sebagai dapur pastinya tidak akan memenuhi standar rumah sehat dan ramah lingkungan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mini Bar Rumah Tinggal Mini Bar Kamar Hotel Dan Mini Bar Terbaru Cafe Karya Rocka Jati Rumah Bar Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/4f/25/04/4f25047a7864d550f3603c76657b1522.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGGvrO5gvOF3ab1VCOBXdCUVYimnJwzYLbg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cafe minimalis rumah kaca.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Motif Keramik Dapur Dapur Minimalis Keramik Dinding Dapur" src="https://i.pinimg.com/originals/85/ed/63/85ed6359dba11240b7e1e85588516a58.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-UvfN9yWCpZo_h9rh-EMRxy0Fd1_exnNejw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain tidak dapat memenuhi standar ketiadaan dapur di rumah tentu akan menjadi problematika tersendiri bagi pemilik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Shabby Chic Dengan Kithcen Set Ide Dekorasi Rumah Desain Dapur Dapur" src="https://i.pinimg.com/originals/27/73/70/277370d0e7ed18332c644d37c837af1b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy3iN4hyopN-moe9tF_ejT0jqIQBB_unPW1g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hiasan di cafe ini hanya menggunakan kursi yang dipasang terbaik dan digantung di atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ruang Makan Minimalis Sederhana Lagu Ngetren 2017 Desain Ruang Makan Rumah Desain" src="https://i.pinimg.com/originals/1f/23/1f/1f231f2c25ac4728a5e4e70685a77005.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPRDpBrsU8B1h4FYAdhG71jbWtXvwHysmdFw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sangat Rekomedasi Untuk Dapur Ukuran 33Yanng Di Mana Space nya memang sangat Ngepas Untuk Model Desain Seperti ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konsep Open Storage Pada Desain Dapur Sederhana Tata Letak Rumah Desain Interior Dekorasi Rumah" src="https://i.pinimg.com/736x/dc/01/8e/dc018eb71ee4f85c38ac7c1aad56021e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_iXYEJ0Npit4NXJ-tBIC4r14yxYd9PFyQyg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Gambar diatas bisa anda unduh gratis dengan mudah dan cepat silahkan tekan tombol download dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Dapur Minimalis Ukuran Kecil Yang Cantik Renovasi Dapur Kecil Desain Dapur Kecil Dekorasi Rumah Dapur" src="https://i.pinimg.com/originals/93/62/a6/9362a671403724692e379a248c2b9ac3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKpzPFqLlFYQZk86YTRBv9wAAES9v8qJY-7eUarB89IRQ5ceCWo10PZE1e10bDLaApjRE';" />
+        <small>Source: tr.pinterest.com</small>
+                    <p>Hanya saja ditambah dengan meja dapur yang juga digunakan untuk meja makan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dapur Mini Bar Sederhana Interior Rumah Bar Rumah" src="https://i.pinimg.com/originals/07/8d/54/078d542e94958404b24e990dbff525b3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSldvMZ0aVfuvmr807jTKFlGJ7iODxOw4s_wQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain tidak dapat memenuhi standar ketiadaan dapur di rumah tentu akan menjadi problematika tersendiri bagi pemilik rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Rv Ski Di Kedai Khasembon Restaurant Interior Design Interior Kafe Warung Kopi" src="https://i.pinimg.com/736x/75/55/51/755551896cb88f4c0d852a034d61b699.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTD0JFSPAaQ9l4ULGWdIVPq25WCOiSdrqhcjxerRwogx5LhxUk1NV3LlBtxrtysuLrD4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Sebuah dapur ala cafe yang sederhana bisa menjadi dapur Korea yang sangat menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Desain Interior Cafe Kecil Bergaya Klasik Vintage Dan Modern Dizeen Desain Interior Interior Meja Kopi Palet" src="https://i.pinimg.com/564x/db/19/33/db1933c9ad68b7098fe1fc3612294cb4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYg5gTXKkEZHadNlFW5rhIC5Q8_o9yiIo1FhoyNl5nSWJisq8gcZO-WUlPKmfwoweg73w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dapur dengan suasana klasik seperti di cafe-cafe yang instagramable 24.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Kitchen Set Sederhana Dapur Rumah Aksesori Dapur Interior Vintage" src="https://i.pinimg.com/originals/b8/bc/2b/b8bc2be31c75fa8e86849eb8d4b732ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyA7dooygrXIVrYZ7gsyMIGGWXRV2NMxotsrk2WkmdgXuVoxJylzu3kESLacpzb23189E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>16 Gambar Dapur Cafe Ukuran Kecil Unik Di setiap rumah pastinya memiliki dapur dari mulai ukuran besar hingga ukuran kecil atau bisa anda sesuaikan dengan ruangan yang telah di miliki rumah tersebut sebagai desain dapur yang cukup menarik juga di buat dengan sepraktis mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Interior Kediri Kitchen Set Model U Ide Dapur Desain Interior Desain Dapur Kecil" src="https://i.pinimg.com/736x/a5/e8/9c/a5e89cdf000ceac5c56b0fd27fe306de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWnGEkokKRvMHdU0eUcZ9Zk4zuLUQSpez0SkA16447eX0SZds0fy8FF-9Fs5ISMp6JUo4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena Saya akan share beberapa inspira.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Dapur Sederhana Konsep Minimalis Desain Interior Ide Dekorasi Rumah Dapur Luar Ruangan" src="https://i.pinimg.com/564x/89/b6/64/89b6640493d2be6c2653bcb9a0b02c4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrIVJYAR3edM6uwAanXystklswyxK7ipsmEQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Cafe Minimalis Rumahan Ukuran Kecil Jika kalian tau trend cafe kekinian menempatkan meja bar di cafe rumahan adalah solusi terbaik Desain Cafe Minimalis Rumahan Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="2 849 Curtidas 10 Comentarios World Of Coffee Worldofcoffeeofficial No Instagram Hey Boooy Rumah Desain Kafe Kedai Kopi" src="https://i.pinimg.com/originals/a5/cb/aa/a5cbaa377c3d6d805e135ab2cd32eecd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0q0z6UcLKlHcesy7Ib0iQZkHJt1i4t_9BQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mendirikan cafe menjadi salah satu upaya untuk menarik banyak keuntungan dari kegemaran anak-anak muda yang suka akan kegiatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Vladimira Dosedelova Di Kuchyne A Jidelny Desain Dapur Kecil Ide Dekorasi Dapur Dapur Diy" src="https://i.pinimg.com/736x/1c/1d/45/1c1d45b3d0a9262c4aae01c8333ef4f4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq58IXrB4zIeGh5XAqb4va2JS6zVFM21IBeQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Idealnya desain cafe sederhana harus memikat supaya suasana tetap nyaman dan pengunjung tak segan-segan berlama-lama di sana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+warung+kopi+rumahan&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+warung+kopi+rumahan&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Mendirikan cafe menjadi salah satu upaya untuk menarik banyak keuntungan dari kegemaran anak-anak muda yang suka akan kegiatan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Irwansyah Di Kedai Khasembon Interior Kafe Warung Kopi Kopi" src="https://i.pinimg.com/736x/b7/03/9a/b7039a543118f0105e9e65cb69e92e3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvLxG3-MQFwdx1QEMC3XS957JPkaCMeQ_cccji7wGqeYBwBi8FBYzeeHMYjlWR0utvSfs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Meja Dapur Cafe Sumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Ruang Makan Kecil Menyatu Dengan Dapur Minimalis Mewah Terbaru Dapur Modern Dapur Kontemporer Dekorasi Rumah Dapur" src="https://i.pinimg.com/originals/e5/23/98/e52398ab6340617445b757e6e1121c7b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUpH8KByJaTpLw2z1T60loDfBQ2VuI_2USQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dominan warna ungu dengan model gorden kolong dapur yang cantik 27.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/atap-rumah-limasan-modern.html"><i>&larr; atap rumah limasan modern</i></a>
+                                                                    
+                                        <a href="/bangunan-joglo-modern.html"><i>bangunan joglo modern &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Model Kontrakan Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Model Kontrakan Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/d3/1c/a2/d31ca21d89b641a059bf0b572fd5ea0d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=model+kontrakan+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Model Kontrakan Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Model Kontrakan Sederhana</strong>. KUMPULAN DESAIN RUMAH KOS KONTRAKAN Jasa Desain Rumah Minimalis Jasa Desain Rumah Murah Jasa Desain Rumah Online Jasa Arsitek Rumah Jasa Gambar Rumah Jasa Bangun Rumah Jasa Desain Interior Jasa Arsitek Rumah Mewah Jasa Renovasi Rumah Jasa Desain Rumah Minimalis 1 Lantai Arsitek Terbaik Profesional 2018. 13 Denah Rumah Kontrakan Sederhana Trend Masa Kini - Para desainer rumah terutama komponen denah rumah memiliki tantangan tersendiri dalam menciptakan rancangan atau desain bentuk denah rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="/search?q=desain+rumah+kost+minimalis+2+lantai+dan+biaya&amp;tbm=isch" alt="3" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='/search?q=desain+rumah+kost+minimalis+2+lantai+dan+biaya&amp;tbm=isch';">
+        <figcaption>3 from encrypted-tbn0.gstatic.com</figcaption>
+    </figure>
+        <p>
+        Saat ini banyak model-model baru yang dicari oleh desainer denah rumah indah secara komposisi maupun bentuknya. Desain Denah Rumah Kontrakan Sederhana Ekonomis Minimalis Tips Dalam Mendesain Usaha Rumah Kontrakan Kost. Desain rumah kontrakan sederhana Ketahuilah rumah kontrakan yang dibangun dengan konsep sederhana tapi mengutamakan kebersihan dan kerapian pada bagian fasad tentu bisa jadi nilai tambah tersendiri.
+    </p>
+    <h3>Sebab rumah Kontrakan Sedehana sederhana tidak memubutuhkan lahan yang luas dan cocok untuk dibangun di daerah perumahan.</h3>
+    <p>Olxcoid Desain Rumah Kontrakan Minimalis 5x3 m yang Baik Sibambo via. Berbagai Pilihan Desain Rumah Kontrakan minimalis. Pastinya yang perlu di optimalisasi adalah jumlah ruangan yang banyak untuk kontrakan tersebut. Berbagai Ukuran Kasur Single Double Queen King Size.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Contoh Gambar Desain Rumah Kost Minimalis Sederhana Row House Design Hotel Room Design Urban Design Architecture" src="https://i.pinimg.com/originals/92/6e/1b/926e1bbfa5a6dc5d9dd1988c66e150be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOcizfJurLWaRAUVIUKIJ0gf6-_Wgnv2qqkXts72BXk5cBDaVrT0GFWWB2LOd6orL00uA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jadi meskipun tidak membutuhkan banyak lahan hunian ini bisa tetap miliki 3 buah kamar tidur 1 kamar mandi di lantai atas dan 1 di lantai bawah ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Rumah Kost Sederhana Jpg 640 480 Membangun Rumah Rumah Desain Rumah" src="https://i.pinimg.com/originals/1e/56/eb/1e56ebdfd099373c8c610b34f34c1a71.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYrGMJixnM5WIvZyCHt9on4m2HiIbpDnnR-sDQilVzAryyiQyw3kzHQmeEQpYGxGbYPA4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model pagar minimalis sederhana ini menggabungkan material besi dengan tembok untuk mengimbangi komposisi pagar agar terlihat lebih terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/564x/60/9e/74/609e7482d7831aaa36093de8b4b7174a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-ttCleJr87JBTtbvBzmdNq1zRMljz6ybSg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Rumah Minimalis Oleh Ilham Akbar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost 2 Kamar Tidur Desain Rumah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/1f/c6/1c/1fc61c44327c35b3d0fa430f5fff3f10.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKX8F1xKeqjYB7soulMvKfuRbweN-IKvgB8w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Usaha menjanjikan ini mampu mendatangkan omset besar yang begitu menggiurkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost 2 Lantai Sederhana Jasa Desain Desain Kamar Hotel Desain Rumah Rumah" src="https://i.pinimg.com/originals/7c/45/48/7c454830e7a68e29919aafa770c03e0f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2X3sWcF_YtE5GuimDoS6oLTnK5A4yo0F_avc6LbWCDMvL1JbfZSXS_6m_r2yavcOvO38';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah rumah kontrakan yang paling marak di Indonesia adalah kontrakan petakan dimana rumah berjejer dengan sekat antar rumah desain sederhana serta berukuran standar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=desain+rumah+kos+kosan+yang+sehat&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+kos+kosan+yang+sehat&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Inspirasi desain rumah kontrakan minimalis yang modern membangun rumah kontrakan atau kos kosan dewasa ini bisa menjadi investasi jangka panjang yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kontrakan Sederhana Minimalis Yang Nyaman Untuk Di Huni Desain Desain Rumah Dekorasi Luar Ruangan" src="https://i.pinimg.com/236x/7e/34/f7/7e34f7b18f7684dfda701063a88e753d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZ6Aal4FlNFJ7mOqAOAU7ANxUcCcri1p6A9g3_pslEjUYIkl_t7b_ofaAAr9xrfOt52c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi desain rumah kontrakan minimalis yang modern membangun rumah kontrakan atau kos kosan dewasa ini bisa menjadi investasi jangka panjang yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membangun Rumah Kost Kostan Dari Sederhana Hingga Mewah Desain Tipe Rumah Renovasi Rumah Desain Rumah Rumah" src="https://i.pinimg.com/originals/d6/84/2e/d6842ee7baf2e88785f886ca98cb11f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeZaEaS4di0dvY4WtwVjRkw1V4ZVowTqsZ-8mhD84SU-f44B5-KXUgqJFvrGdWx9VdSo';" />
+        <small>Source: za.pinterest.com</small>
+                    <p>Sebab rumah Kontrakan Sedehana sederhana tidak memubutuhkan lahan yang luas dan cocok untuk dibangun di daerah perumahan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Desain Rumah Kost Mahasiswa Dan Karyawan Tren 2015 Tabloid Fasad Rumah Modern Rumah Arsitektur Modern Desain Rumah" src="https://i.pinimg.com/originals/f4/93/08/f49308a2e0ff51fc6b1ec96fea21e09c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW7q9m0wiO1_s7lXjx_G1oW_uXJ4i7PImWGA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ketiga faktor tersebut merupakan hal sederhana sebelum kita mendesain sebuah rumah kontrakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Contoh Gambar Desain Rumah Kost Minimalis Sederhana Hostels Design Small Apartment Building 3 Storey House Design" src="https://i.pinimg.com/originals/11/bd/b1/11bdb1bd098b945ef2e25027fe4dae6f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWPTJRjt2TvDLNCRvzQmkAtJgmSCVdDwR_TrYsTAfaUBB0ib3u_eRtdnQah8qemU3VoQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Dan Trik Dalam Bisnis Kost Kostan Artcon Bali Desain Rumah Eksterior Arsitektur Hotel Rumah" src="https://i.pinimg.com/originals/4a/b5/a3/4ab5a30f5a4332bd1d200e3f9725d140.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM5v9hwBli9QY0aZQIx_svZfxVSqavq4yteQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Inspirasi Desain Rumah Kontrakan Minimalis yang Modern.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kos Sederhana Membangun Rumah Rumah Desain Rumah" src="https://i.pinimg.com/736x/6d/dc/d8/6ddcd80990be3ee050ab23ab04a1b42d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8yDnEJFN3gNR6Mc9Q9XpLO0fYjH83n1Nmw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rencana Dan Biaya Bangun Rumah Kos Kosan Cocok Bagi Anda Yang Sedang Mencari Ide Untuk Membangun Rumah Kost Dan Ingin Memban Rumah Membangun Rumah Desain Rumah" src="https://i.pinimg.com/originals/a4/64/44/a4644425f9ef6a1d19e093bf32a419b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYU9mQApXVDNJz0hBZncUR-mcUOs4bxYCXw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pastinya yang perlu di optimalisasi adalah jumlah ruangan yang banyak untuk kontrakan tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ide Konsep Desain Rumah Kost Desainrumahminicom Arsitektur Desain Rumah 2 Lantai Desain Rumah" src="https://i.pinimg.com/originals/cb/60/a4/cb60a4773e4fab7fa8ecb676b5c79faa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82ilSK8K13TFr4QMmACOZbGInoD5cHj8MAw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Denah Rumah Kontrakan Sederhana Ekonomis Minimalis Tips Dalam Mendesain Usaha Rumah Kontrakan Kost.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Super Buc Harga Miring Turun Harga 1 4 M Nego Dijual Kos Kosan 2 Lantai Luas Tanah 150 M2 Luas Bangunan 200 M2 10 Kamar Tidur Kamar M Desain Rumah Arsitek" src="https://i.pinimg.com/originals/be/5b/e5/be5be54cbc3d8b5177cef632da4c81c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P8GIs_PPfmouwudie8o_9lmrbqMWZnSYoF_vzAIMt09uSeHIkXTFiDeQLOuyIqmcADc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda juga bisa melakukan permainan warna untuk lantai 1 dan 2 nya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost Minimalis 1 Lantai Yang Membuat Nyaman Penghuninya Http Www Bikinrumah Net 15445 Desain Rumah Kost Rumah Desain Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/5c/79/01/5c79018d6300ac6c41972337e3ead290.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv_iI-Y5YRhpcw9LZrQqj1K9-Cki__m_Du8w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah adalah tempat dimanan prioritas untuk pulang sesudah kita kerja dimana sebuah keluarga dibentuk dan wadah dimana menumbuhkan cinta untuk pasangan juga kepada anak-anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Planos Casa" src="https://i.pinimg.com/originals/d4/d2/f2/d4d2f27d7417c998453a55c1d2a2134a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkhP1ga8ZkhUXoyg0KLDeEWdwT4FjOw-9Og';" />
+        <small>Source: tr.pinterest.com</small>
+                    <p>Berbagai Ukuran Kasur Single Double Queen King Size.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Rendi Ramdani Di Model Rumah Minimalis Fasad Rumah Modern Desain Kamar Hotel Arsitektur" src="https://i.pinimg.com/564x/34/58/82/34588204b0a4c69b19d6df22562d7dce.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzCFKj4kfM-trLsWNjKjfpwrVPPPi86IkNyhSb0vIs_eSXJP5lQOwTCH0MhVTWmrK3ntQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Model Kamar Tidur dengan Ranjang Klasik dan Elegan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di 0822 9000 9990 Jasa Bangun Rumah Kost Tingkat Didepok Terbaik" src="https://i.pinimg.com/736x/ec/b9/3b/ecb93b935f201b4f2af7959349313d17.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgoT46lP6wdE0TTFrVmxbObFHmnlcXb1JP3DPBOZa3RdhyO_TC-D5l-N4nBQqE16dEp5Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ketiga faktor tersebut merupakan hal sederhana sebelum kita mendesain sebuah rumah kontrakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Bangun Rumah Kontrakan Semarang 0822 9000 9990 Berkualitas Planta De Quitinete Projetos De Casas Casas Para Alugar" src="https://i.pinimg.com/originals/d3/1c/a2/d31ca21d89b641a059bf0b572fd5ea0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBIfoqobO_EkaArXK8gikMx2diSw1GJpcpEHFWmqtYia8V4H1auNnYwlC3mprODxDHVYg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Jadi meskipun tidak membutuhkan banyak lahan hunian ini bisa tetap miliki 3 buah kamar tidur 1 kamar mandi di lantai atas dan 1 di lantai bawah ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kost Kostan Mewah 2 Lantai Jpg 800 600 Rumah Membangun Rumah Desain" src="https://i.pinimg.com/originals/27/f5/f3/27f5f38cd640e845cb8026b3eb21b61c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVz6LUXl4_4WNuebzkSAJobyGivuu_rr9QuA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Type 60 Model Minimalis Sederhana Modern Terbaru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Inspirasi Desain Rumah Kontrakan Sederhana Dan Modern Punya Rumah Minimalis Desain Rumah Kontemporer Desain Rumah" src="https://i.pinimg.com/564x/74/50/73/745073f689182af4da75faf5330a351f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYYKhueEQ98-9t6-g3Il1TkvEndXiIIu6XUoW1n2Mf8EO5CWrh5JU2b7i0vTyF_o60OS8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana yang memiliki luas bangunan 45 m² cocok untuk dihuni keluarga kecil yang memiliki satu atau dua orang anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Desain Rumah Kost Modern Fasad Rumah Modern Desain Kamar Hotel Arsitektur" src="https://i.pinimg.com/originals/ac/07/f5/ac07f5cffcded994db2a6382a9f8615f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCd7ab18Mh6L8YhStmAT3EjJwhmIOL9L8sacS1BezgUvVnd11JoqnJmwu6Z_dGtehp678';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>13 Denah Rumah Kontrakan Sederhana Trend Masa Kini - Para desainer rumah terutama komponen denah rumah memiliki tantangan tersendiri dalam menciptakan rancangan atau desain bentuk denah rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Page Not Found Desain Rumah Kontainer Rumah Desain" src="https://i.pinimg.com/originals/d8/77/0f/d8770fb68683ba7266d59d58840630ba.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OfiUNAolu3TmMVt4XxvvgboPk02tIoVuEiFLNww-Q5piOz3FcmwJe4ckNGFsC0FAAeQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pastinya yang perlu di optimalisasi adalah jumlah ruangan yang banyak untuk kontrakan tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Kos Kosan Spesifikasi Bangunan Luas Bangunan 80 M2 1 Lantai 160 M2 2 Lantai Luas T Desain Rumah Eksterior Desain Kamar Hotel Rumah" src="https://i.pinimg.com/originals/c6/c5/6a/c6c56a310fe224b4400257befbbd633c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXJZf344aqAiuJ48Q09MZMtY8UgHaDr2iSA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah kontrakan akan tersaji gambarnya pada postingan yang akan kami bahas kali ini karena modern ini investasi kontrakan menjadi incaran demi kehidupan yang cerah di masa depan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="29 Model Atap Rumah Minimalis Sederhana Dan Mewah Terbaru 2018 Dekor Rumah Desain Rumah Bungalow Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/ae/47/48/ae4748797d44fff4dc07aba5d5af16e4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTizvQrgoICg5eqN14FrPVZ9Niabvt00iRXjQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Ketiga faktor tersebut merupakan hal sederhana sebelum kita mendesain sebuah rumah kontrakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Tanah Kavling Small Apartment Building Design House Plan Gallery Row House Design" src="https://i.pinimg.com/originals/1b/3f/1b/1b3f1b5b5a63d6dda6dd355227d66321.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToLisjchfYj-zil-NUHEx3DCZmM2DncvOXO8aNdnSZla_yHZFqAGmRVQf1rB6ol9w0IfU';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>13 Denah Rumah Kontrakan Sederhana Trend Masa Kini - Para desainer rumah terutama komponen denah rumah memiliki tantangan tersendiri dalam menciptakan rancangan atau desain bentuk denah rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost 10 Kamar Rumah Membangun Rumah Desain" src="https://i.pinimg.com/originals/f5/35/30/f535303c3c6e01a39d239461d0ed01a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGfb6N6HfHlR_C7hB5-Ej28gyyBXQlqbSHg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Kontrakan Sedehana anda bisa membangun dalam 1 lantai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="11 Contoh Gambar Desain Rumah Kost Minimalis Sederhana Apartments Exterior Hostels Design House Paint Exterior" src="https://i.pinimg.com/originals/a8/7e/20/a87e200d2bb6d7a17f917e639a4a7901.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQQexkUnbSZl1Y1w3TQ-7IACNRQzW8ijX4o_VEK5_8d1MV9NFPXo4P1yFWHdcEZdUBeU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aneka Model Sprei dan Selimut yang Wajib dicoba.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Page Not Found Rumah Desain Rumah Desain Rumah Kontainer" src="https://i.pinimg.com/originals/05/7b/d9/057bd991335b9445a6740739afa2618a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqDnunkypE-T2vW_bN7z52LQPd-zP7r9BDeCof1n9zItWHEKbHpkfLphEU1NWF_fOIhKQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model pagar minimalis sederhana ini menggabungkan material besi dengan tembok untuk mengimbangi komposisi pagar agar terlihat lebih terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Desain Rumah Kontrakan Sederhana Terbaik Desain Kamar Hotel Denah Rumah Rumah" src="https://i.pinimg.com/originals/fd/12/d5/fd12d5320dea0ba771c1904801f83ca4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcAuM-h1GxclorkHBhDi7SibE64St8-PxDkA';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Rumah adalah tempat dimanan prioritas untuk pulang sesudah kita kerja dimana sebuah keluarga dibentuk dan wadah dimana menumbuhkan cinta untuk pasangan juga kepada anak-anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Inspirasi Desain Rumah Kontrakan Sederhana Dan Modern Punya Eksterior Rumah Modern Desain Rumah Rumah" src="https://i.pinimg.com/564x/90/70/bf/9070bf3983d4d62563625c5718fdb332.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9uGZK8yQTUjzeCOdPK-Xj5weBbBnY8rAkg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pastinya yang perlu di optimalisasi adalah jumlah ruangan yang banyak untuk kontrakan tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 36 Desain Rumah Di Lahan 4x13 M Untuk Kos Kosan Desain Kos Modern Minimalis 2 Lantai Youtube Rumah Desain Modern" src="https://i.pinimg.com/564x/d8/3d/f5/d83df53a77077e16ecc312fccb60d0e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iq2yY2ClVG8Ukykhl5huIZ8KGrsjSywGtw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jadi meskipun tidak membutuhkan banyak lahan hunian ini bisa tetap miliki 3 buah kamar tidur 1 kamar mandi di lantai atas dan 1 di lantai bawah ruang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Petak Rumah Kontrakan Rumah Sewa Rumah Penyewaan Desain" src="https://i.pinimg.com/236x/32/d2/69/32d2697deec88c2f65301e2b3fdea404.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlS-TJnn35emXy85OWyKCrTQr2fr1z2mmjQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah rumah kontrakan yang paling marak di Indonesia adalah kontrakan petakan dimana rumah berjejer dengan sekat antar rumah desain sederhana serta berukuran standar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Rumah Kost Atau Kontrakan Minimalis Sederhana Desain Rumah Minimalis" src="https://i.pinimg.com/236x/52/61/a5/5261a5b8f3e3fa7ad34f0b59e267481c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9eJa3KAAWZSdDCtSby7ai0YGACjjzZ4qRnOf6CxATeVQFlpXRP9zZp7KeTLme0YDHK2s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Teruntuk Anda yang ingin membangun rumah kontrakan minimalis untuk ditempati bersama istri dan anak-anak kami memiliki beberapa contoh desainnya yang terdiri atas beberapa bentuk dan model.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Pembatas Ruangan" src="https://i.pinimg.com/564x/ce/42/6b/ce426b6e531d5aa5eea456b172615700.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPPi4vPexVNa4Z34VCTbLuEY9ouVFLXsqOLg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model rumah sederhana tipe 45 memiliki teras depan rumah yang dapat dijadikan garasi satu unit mobil dan taman kecil pada halaman belakang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kos Kosan Minimalis 3x3 M Luas Tanah 45m2 Amatir Desain 38 Youtube Desain Rumah Mungil Desain Arsitektur Jepang" src="https://i.pinimg.com/736x/02/52/e0/0252e0ee66326383591ab9719f97e8e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZC4gMWpeivakOBfmhPJ5GkwNc8AMCSmQ7Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Rumah Minimalis Oleh Ilham Akbar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kontrakan Desain Rumah Eksterior Desain Rumah Rumah" src="https://i.pinimg.com/originals/7c/30/ab/7c30abbf03701eeb2429333a9177d248.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7RTeGAds2WHMmtlDuQj9wPubgRRLkGRNuTKh7BVBEoz31Xl_AWd9LEDJOUkREaI7H66g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>103 Gambar Rumah Kontrakan Sederhana Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Desain Rumah Kontrakan 2 Lantai Rumah Desain Rumah Desain" src="https://i.pinimg.com/474x/8b/67/1d/8b671d65810d1effee67b9bb010d29e7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThDoH9GSs8nMsIvSEvgIz9NP-g1tFjyYNq_g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah dengan model minimalis diprediksi saat tahun 92 telah tumbuh tetapi belum sengetren saai ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tips Memulai Investasi Rumah Kontrakan Bagi Investor Pemula Membangun Rumah Rumah Bangunan" src="https://i.pinimg.com/600x315/ab/59/7e/ab597e3e08570b32ad384e9f5d32f72c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-zES90j0hRqt6DtkcRSmZjnlM_Dw0dDJRs4yh83sv3NmkWuZFZSlUr5pbY4gfe0u-I7Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model Rumah Sederhana Tipe 45.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kost Minimalis Sederhana Hotel Room Design Small Apartment Layout Apartment Layout" src="https://i.pinimg.com/736x/41/fa/f1/41faf15d5543dfc16d609968684339d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS356-1ftaD9TYvB2O2Ibq_DP58nH-SRxQSd6-vuJufoYEXFySnbYY_SYILB4Z0S8iGDHQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah dengan model minimalis diprediksi saat tahun 92 telah tumbuh tetapi belum sengetren saai ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aslm Wr Wb Ustadz Andan Saya Rencana Mau Bangun Rumah Kontrakan Petakan 4 Petak Atau 4 Pintu Di Atas Tanah Ukuran 10 X 20 Home Fashion Desain Rumah Arsitektur" src="https://i.pinimg.com/600x315/fe/ac/ff/feacff22eea483fb6f1e06055675cda0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwrrQeq8OThsY5JhH5yC8WiT75m93jaRas9Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah adalah tempat dimanan prioritas untuk pulang sesudah kita kerja dimana sebuah keluarga dibentuk dan wadah dimana menumbuhkan cinta untuk pasangan juga kepada anak-anak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=desain+rumah+kost+minimalis+2+lantai+dan+biaya&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+kost+minimalis+2+lantai+dan+biaya&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Inspirasi desain rumah kontrakan minimalis yang modern membangun rumah kontrakan atau kos kosan dewasa ini bisa menjadi investasi jangka panjang yang tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Jadi Bangun Rumah Minimalis Sederhana Di Desa Biaya Rp 65 754 000 Youtube Membangun Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/15/1b/e2/151be28b852363dc025d32791d4dcda1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYps0CEqmcdqaeb1axacrRoFA_ixhBMSFrA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tipe dan Jenis Jenis Bahan Material Kasur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Casas De Campo" src="https://i.pinimg.com/564x/69/c6/af/69c6af1cd3eb115198815427d9b90a87.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4pgOadN53TX4XPRa_Hz4VDE33pbP0sjo7Rw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda juga bisa melakukan permainan warna untuk lantai 1 dan 2 nya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Pagar Tembok Minimalis Cantik Sederhana Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/88/eb/38/88eb38388efdfb868b21978a490e5ffe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlsTFs23MrP_I4zJQa3fswh2KBbSphIK_ZA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>KUMPULAN DESAIN RUMAH KOS KONTRAKAN Jasa Desain Rumah Minimalis Jasa Desain Rumah Murah Jasa Desain Rumah Online Jasa Arsitek Rumah Jasa Gambar Rumah Jasa Bangun Rumah Jasa Desain Interior Jasa Arsitek Rumah Mewah Jasa Renovasi Rumah Jasa Desain Rumah Minimalis 1 Lantai Arsitek Terbaik Profesional 2018.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 15 Inspirasi Renovasi Rumah Subsidi Type 36 Secouple Desain Rumah Minimalis Sederhana Low Budget Youtube Rumah Renovasi Rumah Renovasi" src="https://i.pinimg.com/564x/32/ec/51/32ec51ea3dfb5d4ce78b17a55ffbba51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_FU77MUy1yvtvBrMnLHbYUVfQI4OhVrYYg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nah rumah kontrakan yang paling marak di Indonesia adalah kontrakan petakan dimana rumah berjejer dengan sekat antar rumah desain sederhana serta berukuran standar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Minimalis Rumah 2017 Minimalis Rumah Minimalis Minimalis Rumah Kecil Minimalis Rumah Modern Minimalis Rumah 2 Lantai Min Rumah Minimalis Rumah Baru Rumah Mewah" src="https://i.pinimg.com/originals/12/7b/53/127b53b82ed54d0f182ef43761d87ddc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqNNQoJYa-Se0jaLdVhgYA3lLy_ygFPen34Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>103 Gambar Rumah Kontrakan Sederhana Minimalis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Gambar Untuk Desain Rumah Kontrakan 2 Lantai Rumah Lantai Desain Rumah" src="https://i.pinimg.com/474x/44/ef/e9/44efe965faf0f6d7dd94c0d16ac6b869.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkmKIK2n2BDTXmIsdC4bi5W_1CMrsAZwEUQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model pagar minimalis sederhana ini menggabungkan material besi dengan tembok untuk mengimbangi komposisi pagar agar terlihat lebih terbuka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Inspirasi Desain Rumah Kontrakan Sederhana Dan Modern Punya Rumah Hotel Desain Arsitektur" src="https://i.pinimg.com/564x/e3/f5/2d/e3f52d1151912d7f1b2439af63e48930.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgNzAijN5dJ5dQ8AcqXTj7iSYP9buRxPkV1A';" />
+        <small>Source: cz.pinterest.com</small>
+                    <p>Usaha menjanjikan ini mampu mendatangkan omset besar yang begitu menggiurkan.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/denah-rumah-ukuran-9x15m.html"><i>&larr; denah rumah ukuran 9x15m</i></a>
+                                                                    
+                                        <a href="/desain-apartemen-minimalis.html"><i>desain apartemen minimalis &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

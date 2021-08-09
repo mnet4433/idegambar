@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Denah Rumah Trapesium
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Denah Rumah Trapesium",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/564x/98/1d/b7/981db77b07d110c7dfe23242545a850d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=denah+rumah+trapesium",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Denah Rumah Trapesium
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Denah Rumah Trapesium</strong>. Inspirasi Desain Tema Trapesium Yang Cantik Inspirasi Desain Tema Trapesium Yang Cantik. Di karenakan hunian dan denah rumah model ini bisa gampang buat membersihkannya.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/a2/d9/f7/a2d9f7ae3cedecf19113bf4eaf1185a3.jpg" alt="Gambar Contoh Dan Denah Rumah Minimalis 2 Lantai Terbaik Desain Rumah Minimalis 2 Lantai Beserta Denahnya Rumah Minimalis Denah Rumah Desain Rumah Minimalis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAXzJSnWeUeZIgil-q_T8dw9_eeeFktRt7bQ';">
+        <figcaption>Gambar Contoh Dan Denah Rumah Minimalis 2 Lantai Terbaik Desain Rumah Minimalis 2 Lantai Beserta Denahnya Rumah Minimalis Denah Rumah Desain Rumah Minimalis from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Desain rumah kayu kontemporer. Arsitek Indo Kontraktor I Jasa Arsitek dan Kontraktor Proyek rumah ini dibangun di atas lahan berbentuk trapesium dengan ukuran 144 m2. Saya ingin membangun rumah minimalis 2 lantai pada lahan tanah berbentuk trapesium.
+    </p>
+    <h3>Rumah panggung identik dengan citra tradisionalnya yang kental.</h3>
+    <p>Hal ini penting karena akan sangat mempengaruhi penyesuaian pada desain rumah yang akan dibangun. Desain Rumah Hook dengan Tanah Trapesium Sungguh sesuatu yang menyita waktu. Tapi apa daya semua harus diselesaikan. Konsultasi Desain HousingEstate Jakarta - Saya baru saja membeli rumah tipe 37206 di sebuah klaster perumahan di Semarang.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Modern Minimalis 2 Lantai Bp Andri Jpg Jpeg Image 711 972 Pixels Scaled 68 Desain Rumah 2 Lantai Rumah Modern Desain Rumah" src="https://i.pinimg.com/originals/1c/56/68/1c5668af9e35ac73a903a45a2e8e08b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWV16t8nOGOnJdkTxJJ2kAFgvKRDFpORGAjA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wwwlihatcoid Gambar taman belakang rumah dengan desain modern - desain Source.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="424 Likes 6 Comments Idedenahrumah On Instagram Rumah 2lt Di Lahan Melebar Denahrumah Desainrumah Arsitek Id Rumah Denah Rumah Desain Rumah" src="https://i.pinimg.com/originals/ce/27/ec/ce27ec915dc5fd255f66aa124376cb6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3Kh8emUIir-crTzqNr70Int5EvTd3mykig';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pagi semuasaya mau bangun rumahtapi bentuk tanah nya trapesium saya bingung mau desain rumah nya bentuk bgimanaukuaran tanahnya920 tolong bantu pa arsitek kasih gambar nya model yg gimana yg cocok untuk dibanguntrimakasih.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Surabaya Barat Citraland Tipe Turquoise Tata Letak Rumah Desain Rumah Denah Rumah" src="https://i.pinimg.com/originals/24/ec/5c/24ec5c3599952f1c384b3a7fe0cf92ff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgKDRu42UUvegNo95d53a05JMPMskDwY7-uoWPEk9GMwS2MdGWbtEoyuDJ79dKJE8-4E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selamat pagi arsitek aria dan tim.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Surabaya Barat Citraland Tipe Cassandra Desain Rumah Denah Lantai Rumah Denah Rumah" src="https://i.pinimg.com/originals/17/c7/d8/17c7d8bc4002b6660fdd625fc34e3574.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXUVzHICzl9Icq6pIzbFnNDfN7ja4jEpMazSFRYb_j9tiRbQ8yrHRBo9SWaZO-yJMca8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Denah Rumah Pojok Trapesium Mewah - Anda yang memiliki model rumah serta denah rumah keren keseharian akan nyaman karena kamu bisa meminimalis waktu buat membersihkan hunian serta denah rumah serta mengatur tempat tinggal dan denah rumah kembali lebih menarik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Belle Fleur Citra Raya Denah Rumah Arsitektur Lantai" src="https://i.pinimg.com/originals/0b/c3/e8/0bc3e877795139cfd854ce4124140058.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy44jCcxacnsotY90_dUYRt3I-Dlxhvo6wzA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tapi apa daya semua harus diselesaikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Contoh Dan Denah Rumah Minimalis 2 Lantai Terbaik Desain Rumah Minimalis 2 Lantai Beserta Denahnya Rumah Minimalis Denah Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/a2/d9/f7/a2d9f7ae3cedecf19113bf4eaf1185a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAXzJSnWeUeZIgil-q_T8dw9_eeeFktRt7bQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain ini cocok untuk memanfaatkan lahan yang tidak rata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tipe Hallington Citragran Cibubur Arsitektur Denah Rumah Rumah" src="https://i.pinimg.com/originals/0f/5b/cc/0f5bcc900b52407228ee905579cf9329.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThWFMs9-3iQNe0ahYrQo80eoj_FCn4XwZS3YH-8Xg8hkKdzMJxMMhGBMNerhfPCzBBdUY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Penggunaan kaca pada pintunya menjadikan rumah ini tidak terlihat pengap dan memberikan kenyamanan bagi penghuninya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/00/9e/fd/009efd727ba4273516d7fe3bbbdc2cfa.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2dtx_LOaZcKJ7gLl30yOpM5XpprgqatcjJw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah ini dibuat sedemikian rupa menyesuaikan kondisi permukaan tanah rata yang berada di antara 2 bebatuan dan mendapatkan banyak sinar matahari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcr8u Cxy9towb4h 4sz4mwyp7pd18euoznwtmy9bwbu1k1n1i0m Usqp Cau" src="/search?q=lahan+trapesium+denah+rumah+trapesium&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=lahan+trapesium+denah+rumah+trapesium&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Desain rumah unik geometris dengan bentuk trapesium.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2lt Di Lahan 9 X 23m Good Design For Everyone With Affordable Price Desain Denah 250rb 100m2 Luas Bangunan Sil Rumah Denah Rumah Arsitektur" src="https://i.pinimg.com/474x/9a/ea/03/9aea0365d2732683bd4ac4d44b1ddbbe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7eedr_ttCED-0RSVtoEX5kbugMgIKmCDivk3C6ihN2Ske2xatscbiqV2R1cSwC9-qUw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah ini terlihat sangat unik dengan bentuk trapesium.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/736x/0a/bd/a5/0abda58dd6f471431d51e90ccbabc0e7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGzbflCt1Ee2biZxcRUrb-t9w1iKa25Okjg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bentuk tanah yang berbentuk segitiga ini memberikan tantangan bagi tim kami pada saat mendesain denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Refferensi Desain Rumah" src="https://i.pinimg.com/originals/3e/0a/2f/3e0a2f61c7228b437377983c217f5379.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Aer-JnSngO_9ejy3xtL5q_p_Zjv3rc_1hQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah ini terlihat sangat unik dengan bentuk trapesium.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Minimalis Ukuran 7x12 Me 2 Kamar Tidur 2 Lantai Denah Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/98/1d/b7/981db77b07d110c7dfe23242545a850d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7BF16xk4NomqAz75j9adEj4fpIAeSBq6AYK-Cc6hZP4MEu1SXtHNFbJWj5pm2psNElTQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah Kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah 2 Lantai Kolam Renang Desain Fasad Rumah Modern Minimalis Berdiri Diatas Lahan Berbentuk Trapesium 2 Fasad Rumah Modern Desain Fasad Rumah Mewah" src="https://i.pinimg.com/600x315/79/1f/d6/791fd6c45a72a572fc124f3a0ab31580.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWS4H0K343UpPdNE0b321NqKMdLBAswq0XKw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tanahnya menghadap utara dan bagian depan rumah ke arah timur merupakan jalan buntu rumah di pojok tapi bukan hoek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Blueprint" src="https://i.pinimg.com/originals/70/7e/71/707e7147aa08e78bf6a015f0d2808f6c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl76LCho83bH3-aX8EOMLW35qI-2YWWOx-MA';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Arsitek Indo Kontraktor I Jasa Arsitek dan Kontraktor Proyek rumah ini dibangun di atas lahan berbentuk trapesium dengan ukuran 144 m2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="16 Model Desain Atap Rumah Datar Terbaik Masa Kini Deagam 25 Desain Atap Rumah Minimalis Modern Terbaik 2020 35 Model Gaya Rumah Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/4c/b0/ae/4cb0ae899b6322077cec669af5a4bd79.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlAAC7F6PQbNcWf0xji1mXWBg5bFl62xr2Ow';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selamat pagi arsitek aria dan tim.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Ukuran 9x10 Yg Terbaru Denah Rumah Denah Lantai Rumah Denah Lantai" src="https://i.pinimg.com/originals/f0/a8/af/f0a8af2481d7141ccd51ef40bc5f7b57.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmIQunplAmAZYWOINSM3bRXaiOX1L9R0YwPG_dbhktrEueojufw4J6BvriO1Bi08VmBrY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bercirikan dua bidang trapesium dengan kemiringan 30-40 derajat yang bertemu di puncak bubungan atap pelana cocok untuk Indonesia yang beriklim tropis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 4x11 Dengan 3 Kamar Tidur Dan Ruang Ruang Di Dalam Rumah Yang Bikin Kamu Terkejut Youtube Desain Rumah Rumah Desain" src="https://i.pinimg.com/564x/d2/71/5c/d2715c989e88eeaafb0f6ff8605bf651.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZA_3My19r1cFvwVIgjc9pKtlcNN6NtrMHFQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di karenakan hunian dan denah rumah model ini bisa gampang buat membersihkannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dav Studio Youtube Denah Rumah Kecil Tiny House Rumah Minimalis" src="https://i.pinimg.com/564x/38/54/10/385410f51b39dd1d30c9b4002a52ce3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWRLk8O8SVWW4LyvHWbFZPSvAz5gU3zNxHCQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan bentuk kaveling yang tidak standar mohon dibantu dibuatkan denah pengembangan satu lantai dengan kebutuhan ruang tambahan kamar tidur utama dapur menyatu dengan ruang makan menghadap taman ruang keluarga ruang cuci jemur dan gudang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pengembangan Rumah Di Lahan 108m2 Lantai Dasar Jangan Terlalu Banyak Diubah Ubah Ya Mas Itu Pesan Klien K Denah Lantai Rumah Arsitektur Denah Rumah" src="https://i.pinimg.com/originals/d5/90/87/d5908719c812466196e1b4b25702675e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvMmEX7dw6opBndXuHI545FpeYDC7lc1rpGSypGYkIqme4FK08ex_YUH5Sy5TiRMuXLQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hal ini penting karena akan sangat mempengaruhi penyesuaian pada desain rumah yang akan dibangun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Mewah 2 Lantai Luas 800 M2 Dengan Tata Letak Ruang Sesuai Fengshui Menempati Kavling Hook X2f Pojok X2 Rumah Mewah Desain Rumah 2 Lantai Rumah" src="https://i.pinimg.com/originals/03/85/95/038595fec3c4ed6be64184513d5963f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-kBsFQ0lsXHD1xljVcyYv7PMzTvibFVHfA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dan selama 2-3 bulan itulah jarang sekali aku menunggui ziya di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah 3 Kamar Tidur 1 Mushola Dalam Rumah Terbaru Denah Rumah Rumah Desain Rumah" src="https://i.pinimg.com/736x/c4/2d/fa/c42dfa23d37496ee165cae924e6ba6fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzVjAfeyscnm18bfiq8eqqkX-i3RGND1zEzoU85F2_GnyFDf1V1hyk4kaBLSkAdQHZHI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wwwlihatcoid Gambar taman belakang rumah dengan desain modern - desain Source.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Onal Ardiansyah Di Struktur Arsitektur Desain Denah Rumah" src="https://i.pinimg.com/736x/d3/49/20/d3492055196d3bd5ad3763ec53ccc864.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiNUKLkzf4IEoG0e6nFFYY6VfS54DB6HuKHw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Arsitek Indo Kontraktor I Jasa Arsitek dan Kontraktor Proyek rumah ini dibangun di atas lahan berbentuk trapesium dengan ukuran 144 m2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Refferensi Desain Rumah" src="https://i.pinimg.com/564x/85/23/18/852318f8403c99ebefd98bc0c0d55f70.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQOG7QtQA9wxaCWhOvwYc0I3zt98Z77uVNLg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pekerjaan yang memakan kebersamaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Palm Spring Jakarta Garden City Casas De Dos Pisos Planos De Casas Planos Arquitectonicos" src="https://i.pinimg.com/originals/9a/98/87/9a98875d76a739d91dc9c00463cfd53c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxC3dZmoRiff3RA-6NaJZ2MKkcbHmJgZhLXA';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Desain dan Model Rumah Panggung Minimalis Modern Sederhana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Modern 3 Lantai Desain Rumah Mewah Dengan Pertimbangan Maksimal Ventilasi Yang Baik Di Setiap Ruang In Rumah Minimalis Rumah Rumah Mewah" src="https://i.pinimg.com/originals/31/79/f1/3179f1bc8597caa0c973b397c622b06b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ144waCR7iXG6UMg12-oP9difvNZ1B8pXRmA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di sebelah timur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Architecture Plan Denah Rumah Rumah Desain" src="https://i.pinimg.com/originals/61/75/16/617516fc6576438dcfc0c9a5f9a3bcb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz7I313x5MYL6xwuNUjHMQVpzt3hxtEUAxdgB4w1JDxi0aRzxVQliPpizkLPQUadXFcb0';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Konsultasi Desain HousingEstate Jakarta - Saya baru saja membeli rumah tipe 37206 di sebuah klaster perumahan di Semarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Rumah Tinggal 2 Lantai Modern Tropis Eksterior Rumah Modern Rumah Desain Fasad" src="https://i.pinimg.com/originals/ce/d3/11/ced3111a049e375ae869c6b0646353c0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL5dy0zj4jj2JvDPwQsis6x6B_7rkF8qKdGA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Oleh karena itu perlu adanya persiapan awal terlebih dulu sebelum membangun rumah minimalis di lahan trapesium.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2 Lt Di Tanah 90 M2 Denahrumah Desainrumah Arsitek Iderumah Idedesain Architect Housefloorplan Denah Rumah Rumah Desain Rumah 2 Lantai" src="https://i.pinimg.com/originals/96/90/74/969074e50838cc68ee341cfc966b8295.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjouo3X7_ac4dlVYHii9wU3V2SXU5XF0Rq-YV-7XRJtVAaqoiDaoT80r4iB_HZ_zfvbQQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1946 arsitektur No comments.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Layoutsketchup Aplikasi Layout Sketchup Kita Sebetulnya Udah Mulai Gunakan Layout Sketchup Di Tahun 2015 Dan Beberapa Desain Klien Desain Rumah Denah Rumah" src="https://i.pinimg.com/originals/96/a2/a4/96a2a48c399e3b1014584183ed18cada.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwKK0qBDjp6GCg2286pv8sx7T_mBIGci83g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Konsultasi Desain HousingEstate Jakarta - Saya baru saja membeli rumah tipe 37206 di sebuah klaster perumahan di Semarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cluster Luxmore Greenwich Park Bsd City Denah Rumah Arsitektur Rumah" src="https://i.pinimg.com/originals/f1/9a/e3/f19ae3a2623c290bdcaaebb31909e325.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV4Ng9Zrojg9Pt_0_TUpA0nUgw9B9UnvPxRQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di beberapa tempat rumah adat warisan leluhur pun mengambil konsep rumah panggung seperti yang bisa kita jumpai di Jawa Barat Sumatera Selatan atau Sulawesi Utara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="406 Likes 1 Comments Idedenahrumah On Instagram Pengembangan Rumah Di Lahan 108m2 Lantai Dasar Jangan Terlalu Banyak Lantai Lantai Dasar Rumah" src="https://i.pinimg.com/originals/01/9b/de/019bde2c3b30422f76bbe88e9d772d9c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jH-21WmThHYaEE_ZxGmmkLpvtHF7Yebu8A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pekerjaan yang memakan kebersamaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Surabaya Barat Citraland Tipe Magnolia Tata Letak Rumah Desain Rumah Denah Rumah" src="https://i.pinimg.com/originals/d0/15/c1/d015c1739b7cdd611db15b1f1bfb091a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ZZc3NXT_uC2JtMlibtDzkH_XjUzIKO4AAYP2UeqVdc6E_whze9OmRhR5GewT2hEp5f8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah Kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Minimalis 3 Lantai Hook Home Fashion Desain Rumah 2 Lantai Rumah" src="https://i.pinimg.com/736x/31/ad/54/31ad544be72ffd0e5cdb0fb7362a23e3--rumah-mewah-minimalis.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZx4TecsL7FvcS22TrNZhnm0I3yj_wU8VCAw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Arsatama Architect mengoptimalkan pengerjaan rumah tinggal ini untuk memenuhi keinginan sebuah keluarga kecil yang terdiri dari pasangan suami istri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah 2 Lantai Kolam Renang Desain Fasad Rumah Modern Minimalis Berdiri Diatas Lahan Berbentuk Trapesium 2 Rumah Mewah Desain Fasad Fasad Rumah Modern" src="https://i.pinimg.com/originals/97/76/30/977630758c623b44186fe9f7a4797341.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyGQqVLWLdoKqij6Kx3NupWQ9gtboNYVZgvQiFMPkC6myW7-Qaaz2vl2DJH5dzgfVsgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bentuk tanah yang berbentuk segitiga ini memberikan tantangan bagi tim kami pada saat mendesain denah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="85 Likes 2 Comments Idedenahrumah On Instagram 2 Became 1 2 Kapling Jadi 1 Rumah Lower Floor Plan Klien Kami Mem Rumah Denah Lantai Rumah Denah Rumah" src="https://i.pinimg.com/originals/ad/33/eb/ad33ebdf23f0e4e4a9e2c4a3183f14a0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6au7aGLBvvHkMHd53UNGaPcpWXr-qJBwGw';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Hal ini dikarenakan bentuk lahan trapesium yang unik dan tidak simetris sehingga diperlukan cukup banyak penyesuaian untuk membuat bangunan rumah dan taman tampak seimbang dan normal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Denah Tipe Aurora Basic Cluster Avani Homes Summarecon Karawang" src="https://i.pinimg.com/originals/56/ad/8d/56ad8d1d3ac98bb7e86a18fbce89dd51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2OAxIxVFedSX_6vbSPP5B2qni40YiMA_0FsSVigCwfJAcHchYqZp4iZ9ev4uWN6bfDw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Banyak kekurangan disana sini namanya juga masih tahap belajar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="D A N E T T E Denah Rumah Rumah Apartemen Kecil" src="https://i.pinimg.com/originals/87/66/a0/8766a07c0c8ef86919785c0374de4961.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0zOsE8EhmHdoAJA_kwcApUbQmotfwPu4p0iCLobfHJPsOi9CdjG4fihp0lfPaUjOF4nQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wwwlihatcoid Gambar taman belakang rumah dengan desain modern - desain Source.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah Minimalis Terbaru" src="https://i.pinimg.com/originals/e6/6b/9d/e66b9dc0ddeebe03226512d5c76bf77f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQE6Wu9L2cCwybNF7HqRhV5JN51kH6u1ojv-Ui2NDNRfGX_lp_OayUf33BN8t8QJES3wk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah di Lahan Trapesium.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Di Lahan 8 X 18 M2 Dr Rm 801 Desain Rumah Jakarta Desain Rumah 2 Lantai Rumah Desain Rumah" src="https://i.pinimg.com/600x315/ff/1e/37/ff1e37542310aa9ba0a593ceb9268cda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhCbIogspYveC0Vr_uiif_Fq6RymcCwvef25q2tuQ9SwaM9mOeiwhDnMu3ioYfTLds5g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di beberapa tempat rumah adat warisan leluhur pun mengambil konsep rumah panggung seperti yang bisa kita jumpai di Jawa Barat Sumatera Selatan atau Sulawesi Utara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Refferensi Desain Rumah" src="https://i.pinimg.com/originals/fc/d3/cc/fcd3ccdda1f302a23ebb7fb4394a8b2e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuan60xxuFaqKkCoy5WMDgNdYtD9rTOw_fw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain Rumah Hook dengan Tanah Trapesium Sungguh sesuatu yang menyita waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 5 Kt Di Lahan 10x15 M Denahrumah Desainrumah Arsitek Iderumah Idedesain Architect Housefloorplan Floorpla Denah Rumah Rumah Rumah Indah" src="https://i.pinimg.com/originals/d0/b9/c6/d0b9c636402c1d1d1f802fefde1cd86f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkRaPwgm4g9HbgVau_WrFeACM-9HLPE71elyzFELYP880SXhfdGIO5V7jTuETgCZiMJhY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah atap pelana bisa ditemukan dengan mudah di berbagai wilayah di Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Jenis Gambar Rumah Hook 2 Lantai Minimalis Yg Ideal Dari Rumah Hook Minimalis Modern 2 Lantai Desaineropa Desainkamarru Rumah Minimalis Home Fashion Rumah" src="https://i.pinimg.com/originals/7e/8b/4c/7e8b4cab4b28829f6ca76fdf304a104e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_6fdu2U5vyzvAn0Bxty2YZ9A2iKqwiR6acw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah di Lahan Trapesium Housing Estate.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=desain+rumah+10x20&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=desain+rumah+10x20&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Konsultasi Desain HousingEstate Jakarta - Saya baru saja membeli rumah tipe 37206 di sebuah klaster perumahan di Semarang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="13 Model Rumah Minimalis Terbaru 2020 Lengkap Dekor Rumah Rumah Minimalis Fasad Rumah Modern Desain Fasad" src="https://i.pinimg.com/474x/0e/0a/f9/0e0af98257b2728bb2156b1b831d1ab8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO5v3y2nDfZzG9X5a6QPAUHYV98CzWwWMRgA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tapi apa daya semua harus diselesaikan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2 Lantai Di Lahan Trapesium Alt 2 Setiap Lahan Punya Karakternya Sendiri Sendiri Termasuk Bentuknya Klien Kami Yang Denah Rumah Rumah Lantai" src="https://i.pinimg.com/originals/9d/5d/6a/9d5d6a813ffaa013800a5f25cbc60aeb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpn0Bq-BdyP21yhBWiucfE7ABNTB6Wvho5C09E6R60v4AO_DOIacz4TCv0Hq2cK8eKklU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wwwlihatcoid Gambar taman belakang rumah dengan desain modern - desain Source.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah 2 Lantai Di Lahan Trapesium Setiap Lahan Punya Karakternya Sendiri Sendiri Termasuk Bentuknya Klien Kami Y Denah Rumah Rumah Denah Lantai Rumah" src="https://i.pinimg.com/originals/17/f8/94/17f894ae962104d35ee71c8e20bcc908.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWK56VFtyHRKJcu5XKrsuHFsrdvo1gPs2t4gXMJczkkR1K15rIG_EKID73IirSqRduatk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desainrumahmodern rumahmodern rumahminimalis rumahtropis rumahklasik Desain rumah 2 lantai bergaya klasik mewah dengan total luas bangunan 266 m2 terdi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Refferensi Desain Rumah" src="https://i.pinimg.com/564x/1c/86/d8/1c86d86185a42b2668c90959525c870c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgtuigQev--a4fc8f26uGFYEBEuwMC_ZUFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Di tahap satu ruangan terdiri dari kamar tidur utama satu kamar tidur anak kamar mandi ruang keluarga ruang makan dan dapur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis 2 Lantai Kavling Hook Desain Rumah Arsitektur Rumah Rumah Indah" src="https://i.pinimg.com/originals/4e/c5/3a/4ec53a92e0452be5defa4c64704b72af.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS03ft_TkAeiihfX4yERWKMi-1oPgCapLmuSQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Inspirasi Desain Tema Trapesium Yang Cantik Inspirasi Desain Tema Trapesium Yang Cantik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 2 Lantai Di Lahan 8 X 18 M2 Dr Rm 801 Desain Rumah Jakarta Desain Rumah 2 Lantai Rumah Desain Rumah" src="https://i.pinimg.com/originals/ff/1e/37/ff1e37542310aa9ba0a593ceb9268cda.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bbaKRYmT_pZWQtLVSMXgextc8a-A3N_3Iz6PxAx__vCPn4_VEbmvl3Oi46Xn5yez7LU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain rumah kayu kontemporer.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/gambar-rumah-minimalis-klasik.html"><i>&larr; gambar rumah minimalis klasik</i></a>
+                                                                    
+                                        <a href="/gambar-rumah-minimalis-modern-2020.html"><i>gambar rumah minimalis modern 2020 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

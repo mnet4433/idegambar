@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Asri Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Asri Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/originals/0c/d7/90/0cd790cf229a0be5d52094428e6b9fcd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+asri+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Asri Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Asri Sederhana</strong>. Bayangkan kalau kamu memiliki desain rumah asri seperti ini kerja dari rumah pun pastinya betah. Rumah Idaman Sederhana di Desa yang Menarik dan Asri Suasana pedesaan yang masih terkesan asri dan sejuk akan memberikan nuansa yang berbeda untuk pembangunan sebuah rumah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ec/c9/8f/ecc98f21b7e04d018ae591d3187cb1f8.png" alt="41 Inspirasi Model Teras Rumah Minimalis Sederhana 2021 Dekor Rumah Rumah Rumah Minimalis Minimalis" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUB-hveDN1kgDCP9BoiDks7KSt7z9k2UiArA';">
+        <figcaption>41 Inspirasi Model Teras Rumah Minimalis Sederhana 2021 Dekor Rumah Rumah Rumah Minimalis Minimalis from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Rumah asri yang memberi kenyamanan yang tercipta melalui komposisi perpaduan antara layout ruangan desain interior dan eksterior dan material bangunan. Aa Gym memiliki sebuah rumah yang menjadi tempat tinggalnya bersama keluarga. Sekian dari saya terima kasih dan sampai jumpa di lain waktu.
+    </p>
+    <h3>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</h3>
+    <p>Yang terpenting tanaman tersebut mampu menghasilkan udara segar dan indah dipandang. Maka perbanyaklah pot dan tanaman. Namun mari kita mulai dengan fasad utama karena lokasi ini memberi kesan pertama. Satu hal lagi usahakan untuk memberi variasi pada tanaman yang dipilih baik dari segi jenis warna hingga ukuran.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Klasik Modern 2 Lantai Plus Denah Dan Tampak Desain Rumah Minimalis Sederhana Dan Asri Rumah Desain Rumah Lantai" src="https://i.pinimg.com/originals/cc/39/9a/cc399a865d3309070b5c1105a6ed055c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ05XSIXzRNTJw_-BM_gRUCsdKQF2iviegrPeEZsQoS_SuJiMtvXFKwfjBWgrDjI1oJMsQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aa Gym memiliki sebuah rumah yang menjadi tempat tinggalnya bersama keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Apakah Anda Membutuhkan Tanah Kavling Di Sidoarjo Kota Tanah Kavling Di Sidoarjo 2017 Tanah Kavling Di Waru Sidoarjo Tanah Kav Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/e0/14/c6/e014c6ce6c028ccca024f1fa838b4f40.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkE0SH_mLDTMOxR2IbPeFgvqT3GoXh7dSBjw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>DesainrumahASRICom merupakan Studio Desain rumah dan bangunan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Griya Minimalis Terbaru Griya Minimalis Modern Griya Minimalis 2 Lantai Griya Minimalis 2018 Griya Minimalis Type 36 Griya Min Modern Rumah Minimalis Kemewahan" src="https://i.pinimg.com/originals/cc/d7/e8/ccd7e8c5b95dd2d6eedfee91cf3cb7e2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwTdoFup0JfPT3zfXkhtrbNuU_ea-bUEK7A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tips By rumahasri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dekorasi Taman Depan Rumah Minimalis Sederhana Ide Taman Depan Taman Halaman Belakang Halaman Belakang Kecil" src="https://i.pinimg.com/originals/23/12/63/231263621cd4747052efd0dfdb32838a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfRPLe9kRBtIrkk9hp2IyRxGLJrpydmez2qiaUfmyIAa_KPgz8Se5h2JEmTnako-EZzk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 Model Rumah Sederhana Conch House untuk Pribadi yang Simple.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Home Co Id Garden Taman Villa Bergaya Kolonial Desain Rumah Desa Desain Rumah Bungalow Arsitektur Kolonial" src="https://i.pinimg.com/originals/22/0f/1b/220f1b36819fd0acca8fcc5dbfaf3730.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXglJrG3SdGAYcJOaT-vi0XvTy8Vp4Nb_GA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara paling mudah dan sederhana adalah dengan berinvestasi membangun atau membeli rumah asri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Cantik Asri Sederhana Rumah Pedesaan Arsitektur Desain Rumah Minimalis" src="https://i.pinimg.com/originals/14/42/45/144245cd95a17ade3f3c5acb9a0ece59.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWxL0D4k97VYl_vaLQU4VJKz41IDHlffg_mKSbEJKXWN1KoWaVQVX19s5OmuOkD_Be90';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kolam Ikan dan Taman Desain rumah nyaman dan asri yang menghadirkan kolam ikan dan juga taman dengan beragam tanaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Tinggal Pesanan Bpk Ramadhan Aceh Full Vidio Info Jasa Desain Online Wa 08179907234 Youtube Desain Rumah Desain Rumah Eksterior Home Fashion" src="https://i.pinimg.com/564x/6d/a2/28/6da228be2af0002530ff0281f2cd99e0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5PehDPQzOBmN5AzSQPFgBsYhIUrApID_XVQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun seiring dengan perubahan masa jenis hunian yang seperti itu semakin susah ditemui.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Adat Jawa Paling Asri Arsitektur Rumah Tropis Desain Rumah" src="https://i.pinimg.com/originals/ef/ed/0c/efed0cbb2c0a4253e1da4db1894e0e7a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pyEXa2vOkdYf_jZTtPs0MTWaA9IfotRRmmYWBoJbvksp1TMt7H38m9q7kgQdGto2y9U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk lahan di samping rumah jika ada sisa manfaatkan juga menjadi kebun rumah yang asri Desain Rumah Kebun Contoh 20.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Hook 2 Lantai Di Lahan 18 X 21 M2 Dr 1821 Inspirasi Desain Rumah Hook Bergaya Minimalis Modern 2 Model R Minimalis Desain Rumah 2 Lantai Rumah" src="https://i.pinimg.com/originals/16/1f/e2/161fe2dd53c2ba83ddf621fb566988c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1NpyCiYu7SsN_frJeZKa3e4bVZ7L8ERuyBg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mungkin kamu terpikir untuk hijrah dari hiruk pikuk suasana kota ke desa yang damai nyaman dan asri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Desain Rumah Sederhana Di Desa Asri Bikin Betah Rumah Pedesaan Desain Rumah Desa Rumah" src="https://i.pinimg.com/originals/20/77/d8/2077d819c8fd6ba14312d44cc5c9fad9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Q6ZRdFt77t7mGVIOqm6OP0Ek99Joh01QAA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bayangkan kalau kamu memiliki desain rumah asri seperti ini kerja dari rumah pun pastinya betah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Desain Rumah Sederhana Di Desa Asri Bikin Betah Di 2021 Arsitektur Kolonial Rumah Rumah Bersejarah" src="https://i.pinimg.com/474x/0f/87/a0/0f87a014933e8eabdcb33df72d59b2b1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmSwjfSIjyW_bM9I-ul9y0NJKZC0k9VXPk_DCNxLy3zQXlDGawFqgup67b12RoIGM1b0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dinding kayu biasanya erat kaitannya dengan rumah antik atau tradisional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Idaman Konsep Rumah Minimalis Nan Mewah Desain Rumah Minimalis Mewah Dan Modern 1 Lantai House Rumah Minimalis Mewah Ter Home Fashion Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/52/ee/3f/52ee3ffdb723e1e872f95070da5f86f6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLV74MaardciUwk5XvPvopgecODl5i42NDjA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aa Gym memiliki sebuah rumah yang menjadi tempat tinggalnya bersama keluarga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Temukan Segala Yang Ditawarkan Scribd Termasuk Buku Dan Buku Audio Dari Penerbit Penerbit Terkemuka Mulai Coba Gr Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/f9/90/d3/f990d3a3065834701ec229e22a5e6ff3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmF2Z4sxDUtzj-77to7eM02d4Yht_GF_dBw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut potret rumah Aa Gym seperti dilansir channel youtube Princess Amanda Official.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis 8 5 X 19 Satu Lantai 4 Kamar Tidur Youtube Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/736x/6e/91/e9/6e91e9e1b8f20c06dbc6a988325f9226.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR75I8M64FR3F-LR5QDZcE6zUX4JxDeoo4i_A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah sederhana tipe 36 ini memanfaatkan tanah yang dimiliki dengan sebaik mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja S Rumah Pedesaan Rumah Kayu Desain Rumah Desa" src="https://i.pinimg.com/originals/ec/80/da/ec80da23c37747b69da305a6c20170e9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7WGdV184saqzpfO6vCGseUuz6SUyXmoy3Rl2hVw9gO25hz2U7bfKyaRgKJKNfijonFY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Asri dengan Halaman Depan yang Rimbun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Subang Asri Titi Asri House Koridor Bandoeng Tempo Doeloe Kota Baru Parahyangan Rumah Subang Asri Titi Desain Rumah Bungalow Rumah Tiang Gaya Arsitektur" src="https://i.pinimg.com/originals/48/a4/2d/48a42da13d88c87cae1d2a2d02a3f020.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_5mVgs2OZLyjWCSTgC08VWRwWvrUflU5GYUbXmtEaDrzJjnDHBnKRXFg8XbvT2ATYOk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4 Desain Rumah Di Bandung Yang Sedang Ngetrend.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Ideas For The House" src="https://i.pinimg.com/originals/aa/7a/06/aa7a06caf9a8a04d36de13b3189878ba.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNIOMZDL-0yYrlHroHmJBh30Y-hGhRntL7eCHLeF0bX6-eZCobEbs-pcV59IPmXQmYtw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah Sederhana di Desa 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Model Desain Rumah Minimalis Rumah Modern Rumah Sederhana Rumah Impian Rumah Idaman Rumah Asri Rumah 2 Rumah Minimalis Rumah Modern Desain Rumah" src="https://i.pinimg.com/736x/d5/6c/0f/d56c0f0c6d5a793732bb52e03a4e13ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOeFq_xLxi-Gyb8lnRsjW2VtOyj5TGY9EfBazKV5yy2RrvhzLEqD6czC67ZJUHJXw3bIc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memang setiap orang atau pasangan selalu memiliki keinginan yang berbeda beda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Bentuk Rumah Sederhana Ukuran 6x9 Terbaru 2020 Rumah Arsitektur Arsitektur Rumah" src="https://i.pinimg.com/originals/ea/37/99/ea3799dc9c19d374c3d079b6b8044ed8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFRHAoWFstfxk-tO-7yXt6rGlqnwYGFxcgQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mungkin kamu terpikir untuk hijrah dari hiruk pikuk suasana kota ke desa yang damai nyaman dan asri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Teras Rumah Minimalis Sebagai Pengganti Ruang Tamu Eksterior Rumah Teras Pedesaan Rumah Kebun" src="https://i.pinimg.com/736x/5f/67/00/5f670035d6d8bca9297c5661c3f81b47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6PpOnCQFkWAWd0J1iJuIh_KdWKXgyYzxRchBbzOIwwPj3RFVHSVbSY1XzopeVd0JMnA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selamat Datang di DesainrumahASRICom.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Apakah Anda Membutuhkan Rumah Nyaman Dan Asri Rumah Nyaman Sederhana Rumah Nyaman Asri Rumah Nyaman 2018 Rumah Nyaman Sidoar Rumah Minimalis Rumah Nyaman Rumah" src="https://i.pinimg.com/originals/97/df/06/97df065febf1284f20d5d41cdba74455.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGRaxJDMFm1C564laKk_MUOGrJvPM64bi5JBXRPwVeDP1Y7XkTxo5gN43xpXrzcwcmWI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>4 Model Rumah Panggung Sederhana yang Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="28 Gambar Kartun Pekarangan Rumah Inspirasi Gambar Rumah Sederhana Di Kampung Dan Desa Yang Menarik Memiliki Sebuah Hunian Te Pekarangan Gambar Gambar Kartun" src="https://i.pinimg.com/736x/a9/45/1f/a9451f0c7c3629478c8b1e27d8fa8d0a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rYKXMBomN6rHOTQXrEToNmtHRbbu-hFwqvSPTJlU7OYqV-y_1-4Xm-arK88OKXJwsew';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dinding kayu biasanya erat kaitannya dengan rumah antik atau tradisional.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Untuk Lebih Hijau Dan Asri Buatlah Taman Minimalis Yang Sederhana Di Depan Maupun Di Belakang Rumah Kumpul Desain Rumah Minimalis Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/736x/d3/a2/b4/d3a2b40f12b365047882f3ba99054962.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScrZ4mMQ3p9UOeeA475VtQ0RBHTqj3VqFuFQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mau rumah yang asri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Apakah Anda Membutuhkan Jual Rumah Perumahan Jaya Harmoni Jual Rumah Perumahan Kahuripan Nirwana Jual Rumah Perumahan Puri Su Rumah Indah Rumah Minimalis Rumah" src="https://i.pinimg.com/originals/8d/c2/0c/8dc20c649a0551c287005ffe4c996665.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCC2xR5HwuKU0g9NpVwAhv4stPtHA10p74gg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sekian dari saya terima kasih dan sampai jumpa di lain waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="70 Desain Rumah Kayu Minimalis Sederhana Dan Klasik Rumah Kayu Desain Fasad Rumah" src="https://i.pinimg.com/originals/f7/2b/ab/f72babffce2969cc8fe09cadf92c5d35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeJrDLWLcQHU6JiGbvA_K3RIAdF34AeG8Izw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Maka perbanyaklah pot dan tanaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Rumah Kebun Rumah Kayu Arsitektur Rumah" src="https://i.pinimg.com/originals/15/0f/a3/150fa33a47c57c31a6dc123e11be0f3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqMhI8-iVfTznxoSbSG-BcbkilR7QRKjkbYQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk lahan di samping rumah jika ada sisa manfaatkan juga menjadi kebun rumah yang asri Desain Rumah Kebun Contoh 20.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mahakarya Rumah Villa Candi Singosari 2 Lantai Sosrobhuwono Singhasari Mansions Malang House Styles" src="https://i.pinimg.com/564x/4e/c4/75/4ec475233434e0af0e21d43af3b3fa34.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lKi2NdFFAiX-2Gco3JifbWuv9naUMSGchA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berikut potret rumah Aa Gym seperti dilansir channel youtube Princess Amanda Official.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="63 Desain Rumah Minimalis Gaya Belanda Desain Rumah Model Rumah Minimalis Gaya Eropa Desain Rumah Modern Berga Rumah Minimalis Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/originals/c9/65/1a/c9651ae72ff22238454001439a7d4a6e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-x4T2BDmdRUo9eEdg3byWhmdzOMM4ZDbvvA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Desain rumah asri sederhana yang memanfaatkan tanaman sebagai pelindung rumah dan juga penyejuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Panggung 6x10 Kesan Tradisional Bentuk Unik Home Fashion Rumah Desain Rumah" src="https://i.pinimg.com/originals/c2/27/de/c227ded3b0903cce4dd91de1b1210c09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoY9Kecx3uXD0hLave6rMhpBgpeEkGoVC0A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Saat membangun atau merenovasi rumah Anda perlu merencanakan setiap detail dari dinding engsel lantai ke pintu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Taman Rumah Yang Asri Dan Sejuk Desain Halaman Depan Desain Halaman Ide Taman Depan" src="https://i.pinimg.com/originals/76/13/d2/7613d22422ed9997e5daf5a92c19ab99.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCFnlYnIiuYpEMogm4tyuwyiceCoWXQoYKtf8tV9Pu-Ez0dFKEpNBjEywFFKvm_mw3L2Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara pendudukan di desa biasanya sederhana dan juga memiliki beberapa fitur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Denah Gambar Rumah Minimalis Ukuran 7 X 8 Terbaru Rumah Arsitektur Rumah Minimalis Desain Rumah" src="https://i.pinimg.com/originals/ef/90/20/ef9020d39a5f8e7cee7275f9b3318b5c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4mgFQKRgyX_WLH1c-uqFgoRheX5VfAFXqg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Tips By rumahasri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Teras Rumah Minimalis Asri Credit Lenimizzle Favorithome Potretrumahkece Rumahcantik Rumahidama Rumah Minimalis Rumah Warna Eksterior Rumah" src="https://i.pinimg.com/736x/5b/11/02/5b1102f1fe319ed08938e47ef921d977.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBlcMC48cHVmK29twmmdmXD7axsyQS6iCPAuPnlyIx3YZ5oXctunQhoWJNsYvz9hFFLs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>4 Model Rumah Panggung Sederhana yang Unik.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kumpulan Model Desain Rumah Minimalis Rumah Modern Rumah Sederhana Rumah Impian Rumah Idaman Rumah Asri Rumah 2 Lantai Ru Rumah Kayu Desain Rumah Desain" src="https://i.pinimg.com/originals/d1/90/dc/d190dc274800b171dd2248ddc7f1e863.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvVuG23J1PVx1YrZghFehegkXc1qp7TD4VD1PMIVt125KDbecSGmu8AKQQ81iYF68y3o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jangan terhalang oleh biaya perawatan dan pembangunan yang mahal apalagi sebenarnya konsep taman depan rumah sederhana sudah cukup memadai untuk menghadirkan tampilan hunian yang asri.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Sederhana Cantik Asri Rumah Kayu Rumah Indah Rumah" src="https://i.pinimg.com/originals/fd/f3/92/fdf392ed7bdf650f3102cef42641cab9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyfT-QX1zHLPonPHSDB1MQ_k7oJdWLcdggJQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk desain rumah kebun yang simple dan sederhana bisa mencontoh desain berikut Desain Rumah Kebun Terbaik 21.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Model Rumah Idaman Sederhana Di Desa Paling Bagus Rumah Pedesaan Dekorasi Rumah Pedesaan Rumah Kayu" src="https://i.pinimg.com/originals/cf/5b/6e/cf5b6e5edbd7006cf897340ff8b784cb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWozLke8uHrVlqd5Ig4n_HnSAV1Lh7QaUoMt61oEQcEJ-ZL-On8e6AuC0Z6nFW9JASES4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Dekorasi Rumah Taman On Instagram Bagus Banget Rumahnya Asri Dan Sejuk Pic By Pietarosari Desain Eksterior Rumah Dekorasi Rumah" src="https://i.pinimg.com/originals/44/6c/d2/446cd28f9d0f5f00abe1f19c462a4bb1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHC1aog6-SFKLkCkxBig9vf0yqR6boBrlp2tJHDpSWDa82YM6XnzmvmxvMUU3F4KJZR0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kolam Ikan dan Taman Desain rumah nyaman dan asri yang menghadirkan kolam ikan dan juga taman dengan beragam tanaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Istimewa Dekat Pegunungan Asri Dan Sejuk Rumah Pegunungan Apartemen" src="https://i.pinimg.com/736x/07/68/06/076806e6be7d1cef7f7387242b92a86b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9K9FRjQ9Gt-sHs4o-dDZpuiuFMJXYKbktw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Memang setiap orang atau pasangan selalu memiliki keinginan yang berbeda beda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Tropis 1 Lantai Di Desa Rumah Tropis Home Fashion Rumah" src="https://i.pinimg.com/564x/86/3b/a4/863ba4903301e19fb121f119b648fa77.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7rxagZD3CTK7tZOQtnjt-9Y1-SWinxnrUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Maka perbanyaklah pot dan tanaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=model+rumah+sederhana+tapi+indah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=model+rumah+sederhana+tapi+indah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>RUMAH SEDERHANA Memiliki hunian yang hijau adalah idaman setiap orang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Satunya M Rumah Kayu Desain Rumah Rumah" src="https://i.pinimg.com/originals/4b/d7/a1/4bd7a17d519671d884248d52e708654e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwhDBafa8QxHUfrr-C13QI2XnPgG_bIyBSvA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun pada saat ini rumah-rumah moderen juga menambahkan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrluixugkpzonk4doexnbwtmltr Eynl27egdxn0adhznay0hru Usqp Cau" src="/search?q=contoh+rumah+sederhana+terbaru&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=contoh+rumah+sederhana+terbaru&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Klik untuk membagikan di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Modern Bentuk L Deagam Design Lingkar Warna 15 Inspirasi Desain Rumah Minimalis 1 Lantai Contoh Model Atap Rum Rumah Minimalis Minimalis Rumah" src="https://i.pinimg.com/originals/0c/d7/90/0cd790cf229a0be5d52094428e6b9fcd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwy6ZlMVpFUGhkK2ueM455euLgrwXtQHSUA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk desain rumah kebun yang simple dan sederhana bisa mencontoh desain berikut Desain Rumah Kebun Terbaik 21.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/736x/c5/12/d3/c512d38691f0f2dd8a468d2206f7fd01.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNrgZpxnGPl8raghuKoaVJcE3cvPOs7YVdD2r1_veKQh2pbRpWBC0OOv6xW34cMc4PS0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara pendudukan di desa biasanya sederhana dan juga memiliki beberapa fitur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Minimalis Didalam Rumah Nuansa Asri Romantis Keren Abiss Ide Halaman Belakang Pertamanan Belakang Rumah Desain Ruang Makan" src="https://i.pinimg.com/originals/f3/b7/b2/f3b7b23b4d6dc4d352665e4af969b557.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtJiGAZ8uw2HFom5d_HkTeTyZF-YuKM9yQLkuoV6UypNlj8ThseIZhQy9_98r2ZqKALuk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Wah banyak juga ya gambar rumah sederhana di desa mungkin kamu ingin mendesain rumah serupa di kota.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Asri Di Depan Teras Idea Online Teras Halaman Belakang Patio Dekorasi Tanaman Rumah" src="https://i.pinimg.com/originals/fc/35/5a/fc355a1fa4be67de54f287a7b3fbfd1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSelXmKHfFpe3yF0zweYL6ipjpg4ZLYR6YfVuEUHl0VDztzQbdiwwDp_MGBmwuy28l3fJg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bayangkan kalau kamu memiliki desain rumah asri seperti ini kerja dari rumah pun pastinya betah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="41 Inspirasi Model Teras Rumah Minimalis Sederhana 2021 Dekor Rumah Rumah Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/ec/c9/8f/ecc98f21b7e04d018ae591d3187cb1f8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUB-hveDN1kgDCP9BoiDks7KSt7z9k2UiArA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Klik untuk membagikan di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Denah Rumah" src="https://i.pinimg.com/564x/b4/97/40/b49740fb7ed712d2fa35fd5fb9ce2969.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1un8UpWZt3zTupbGmiVc27rx2VQ_zaT9QuQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>2 Model Rumah Sederhana Trailer untuk Seorang Traveler Sejati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Minimalis Desain Rumah Idaman Desain Taman Dalam Rumah Minimalis Asri Dan Mempesona Desain Rumah Minimalis Desain Rumah Idaman Desain Rumah Desain Kebun Modern Taman Dalam Ruang Zen Garden" src="https://i.pinimg.com/originals/7b/4a/da/7b4ada71e101140f24a07b1135e34992.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXAtFmREcW4vgVKHfP11K2no6Z9hYF5jZn1g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kami melayani jasa desain rumah dan bangunan secara Online Dengan sepenuh hati kami siap membantu Anda dalam proses desain mulai dari pengkonsepan sampai dengan akhir proses desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="16 Model Desain Atap Rumah Datar Terbaik Masa Kini Deagam 25 Desain Atap Rumah Minimalis Modern Terbaik 2020 35 Model Gaya Rumah Rumah Minimalis Minimalis" src="https://i.pinimg.com/originals/4c/b0/ae/4cb0ae899b6322077cec669af5a4bd79.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlAAC7F6PQbNcWf0xji1mXWBg5bFl62xr2Ow';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Meski sederhana Andapun tetap harus memperhatikan nilai estetika yang bisa didapat dari desain yang simpel ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Desain Rumah Minimalis Sederhana Di Kampung Yang Bisa Jadi Favorit Istri Homeshabby Com Design Home Plans Home Decoratin Di 2021 Rumah Desain Teras Rumah Pallet" src="https://i.pinimg.com/originals/ec/37/f5/ec37f5e660c55386d849918008c19dd5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDOkCm7DLuhe_Y89NCy_tToB7CtENe3sZqw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>3 Model Rumah Sederhana Gabled Roof Hunian Eksklusif Melankolis.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-minimalis-tanpa-atap-genteng.html"><i>&larr; rumah minimalis tanpa atap genteng</i></a>
+                                                                    
+                                        <a href="/rumah-minimalis-type-36.html"><i>rumah minimalis type 36 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

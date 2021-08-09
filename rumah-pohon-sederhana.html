@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Pohon Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Pohon Sederhana",
+  "datePublished": "2021-08-09",
+  "image": "/search?q=rumah+pohon+kecil&amp;tbm=isch",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+pohon+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Pohon Sederhana
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Pohon Sederhana</strong>. Apalagi jika rumah pohon memiliki desain yang unik dan kreatif. Pada umumnya sebuah rumah pohon sederhana berukuran 88 dan membutuhkan cabang ranting minimal berdiameter 12.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/55/3e/4d/553e4da77015d25cb15a8d04be279512.jpg" alt="Cara Membuat Miniatur Rumah Sederhana Dari Stik Es Krim Miniatur Rumah Rumah Miniatur" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4jiUfaGLhdl6x7pWBNPi-JOl-16Nd2vWoMRx_vo2LhlVK_Bs5r-bmFJksfvBVkMAdIA';">
+        <figcaption>Cara Membuat Miniatur Rumah Sederhana Dari Stik Es Krim Miniatur Rumah Rumah Miniatur from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Kamu memerlukan 2 pohon yang saling berdekatan dan dengan besar yang sama. Apalagi jika rumah pohon memiliki desain yang unik dan kreatif. Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1280x720 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.
+    </p>
+    <h3>Taman rumah minimalis sederhana cantik dan modern tentu merupakan dambaan setiap pemilik rumah.</h3>
+    <p>Selain dianggap merupakan cerminan karakter pemilik rumah taman yang tertata rapi juga memperindah rumah secara keseluruhan. 200 Contoh Gambar Model Desain Rumah Minimalis Idaman Sederhana Modern Dan Mewah Renovasi Rumah Net Rumah Minimalis Desain Rumah Desain. Kamu memerlukan 2 pohon yang saling berdekatan dan dengan besar yang sama. 51 Contoh Desain Rumah Unik Minimalis Sederhana di Indonesia dan Dunia.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Miniatur Rumah Pohon Sederhana Dari Stik Es Cream Desain Rumah Pohon Rumah Pohon Miniatur Rumah" src="https://i.pinimg.com/originals/be/06/2e/be062e501a43205c08093909a046cdc7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJaQPKynNrtUP9UzG5zIF8WeeC6nbJvaJIHu0p3lqQkljqWB41mI-13wIDUFvCxSpaoSI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hal ini dimaksudkan untuk menyamarkan rumah pohon tersebut dengan lingkungan di sekelilingnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Pagar Kayu Jati Minimalis Sederhana Pagar Kayu Pagar Desain" src="https://i.pinimg.com/originals/96/a8/ca/96a8ca13239d986e03e0aef10e93b10f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlzipX1Fl34UXH4sBzwYiBeyFS6sOoPO70bw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasa dilihat di film-film rumah pohon adalah rumah yang di bangun di atas pohon dan ruangannya sendiri tidak terlalu banyak sebab disesuaikan juga dengan ukuran pohonnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Taman Asri Di Depan Teras Idea Online Teras Halaman Belakang Patio Dekorasi Tanaman Rumah" src="https://i.pinimg.com/originals/fc/35/5a/fc355a1fa4be67de54f287a7b3fbfd1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSelXmKHfFpe3yF0zweYL6ipjpg4ZLYR6YfVuEUHl0VDztzQbdiwwDp_MGBmwuy28l3fJg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selain dapat digunakan itu rumah pohon juga bisa dimanfaatkan menjadi tempat wisata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah 7x12 Dua Muka Rumah Minimalis Desain Rumah Dekorasi Luar Ruangan" src="https://i.pinimg.com/originals/68/da/f4/68daf439661f745784c325fe050dfbbf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWlqe5PBouROf3bJPPyes155pdw-Li8_tUSQPjkoDRGCagcKhFxSwJWgzJ8wmNbJN9xyg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>200 Contoh Gambar Model Desain Rumah Minimalis Idaman Sederhana Modern Dan Mewah Renovasi Rumah Net Rumah Minimalis Desain Rumah Desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Lantai 2 Sederhana Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/736x/b2/e7/3c/b2e73cdfbd10ef2f85bc9796a271d7d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXg6vebnqfgOL0shQ_6ajrgR03HOCwEve5g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dengan gambar desain Desain Rumah Modern yang baik yaitu resolusi 1280x720 setidaknya dapat terlihat jelas guna memenuhi desain rumah yang sedang anda ingin ciptakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Rumah Type 45 Cocok Untuk Keluarga Baru Dekorasi Luar Ruangan Rumah Desain Rumah" src="https://i.pinimg.com/originals/9c/14/7d/9c147d7646985dc7a5fdc87a251f0609.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9UKKLru4FfQIJ2LY2QSeJgSE2_IkdiG8fQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>200 Contoh Gambar Model Desain Rumah Minimalis Idaman Sederhana Modern Dan Mewah Renovasi Rumah Net Rumah Minimalis Desain Rumah Desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Terkeren 26 Gambar Rumah Sederhana Ukuran 6x9 Di Kampung Bentuk Dan Gambar Rumah Sederhana Dikampung Sebagian Besar Orang Home Fashion Rumah Membangun Rumah" src="https://i.pinimg.com/736x/84/71/72/847172c2f6333953eddaba0e32e03e2c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlSu23FY3MiFLCFEWpz4bQlR5L2koU0pnQXg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Minecraft Medieval Pt6 - YouTube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Pohon Dari Bambu Situs Properti Indonesia Desain Rumah Pohon Rumah Pohon Desain" src="https://i.pinimg.com/originals/b7/07/f0/b707f03a1605be10427c7e874ffe60a9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe4b--vzk1N7fUNn8v3Z18_L-007IM3VJqg1EVZuJfLKNZ6TBBoHxC9tTpnQYrdHL3HBk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Hal ini dimaksudkan untuk menyamarkan rumah pohon tersebut dengan lingkungan di sekelilingnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Desain Rumah Desain Rumah Minimalis Malang Desain Rumah Modern Desain Rumah Sederhana Desain Interior R Rumah Minimalis Desain Interior Rumah Desain" src="https://i.pinimg.com/originals/6f/e9/20/6fe920223d222ede222b9f035c682e09.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUvjhynJhcWSYKW5yTqPTrn9UfzPk5Cef-g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebab proyek ini membutuhkan perencanan dan kontruksi yang matang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu Kobong Rumah Kebun Pondok Kebun Pondokan" src="https://i.pinimg.com/736x/5a/ce/1b/5ace1be9e4f81e8ee82911149ca90868.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqd73kk3Qu8Zu1RKF7z6JiX1_dK8mp_ZauGBRlsGUUUHmMznEKF-k9sBm79KYaU5A00yQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah bercat hijau terasa sangat santai karena menyatu dengan pohon-pohon besar di sekitarnya begitu pula dengan garis pohon.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Jadi Bangun Rumah Minimalis Sederhana Di Desa Biaya Rp 65 754 000 Youtube Membangun Rumah Rumah Rumah Minimalis" src="https://i.pinimg.com/564x/15/1b/e2/151be28b852363dc025d32791d4dcda1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYps0CEqmcdqaeb1axacrRoFA_ixhBMSFrA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>200 Contoh Gambar Model Desain Rumah Minimalis Idaman Sederhana Modern Dan Mewah Renovasi Rumah Net Rumah Minimalis Desain Rumah Desain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Wallpaper Idea Download" src="https://i.pinimg.com/originals/1b/d5/e3/1bd5e36d9a943ab7f70f4c1e433c0617.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVHwUZy1N7XIuLG17-XOUN7Eje8vz-1NRqXw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Minecraft Medieval Pt6 - YouTube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Gladak 1 Kamat Tidur Rumah Dekorasi Luar Ruangan Rumah Beton" src="https://i.pinimg.com/originals/da/56/2b/da562b1bd3b3ecaaba14a53017ca373c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0U3u1HNLz7rgIy6IRYpnflICptPfl2GK9qhonRpjBt3zB-m8hc0uI9bpkfPFUOShiYfQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah idaman sederhana di desa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah" src="https://i.pinimg.com/564x/e3/24/bf/e324bf65e6a07bc3beb5239faf3cab23.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NPLdaf-ra-yMjc8TfO6HA5duHGkJeKvpYw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Miniatur Rumah Pohon Sederhana Dari Stik Es Cream Rumah Pohon Miniatur Rumah Rumah Pedesaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Miniatur Rumah Sederhana Dari Stik Es Krim Miniatur Rumah Rumah Miniatur" src="https://i.pinimg.com/originals/55/3e/4d/553e4da77015d25cb15a8d04be279512.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4jiUfaGLhdl6x7pWBNPi-JOl-16Nd2vWoMRx_vo2LhlVK_Bs5r-bmFJksfvBVkMAdIA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Pohon Taman Safari Indonesia Cisarua Jawa Barat Berlatar hutan tropis di perbukitan kaki Gunung Gede Pangrango rumah pohon ini merupakan inovasi unik terbaru yang dilakukan oleh pengelola Taman Safari Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Tukang Taman Jawa Tengah Jasa Pembuatan Taman Dengan Berbagai Macam Konsep Taman Seperti Taman Minimalis T Taman Apartemen Taman Dalam Ruang Taman Tropis" src="https://1.bp.blogspot.com/-VvyFlAPbz1A/Xf72QNMVXsI/AAAAAAAAAKQ/sjZA7tXNXIkUoG6MDEDzXD3qzHikR7o2QCLcBGAsYHQ/s1600/jasa-taman%252C%2Bjasa-taman-surabaya%252C%2Bjasa-taman-gresik%252C%2Bjasa-taman-pasuruan%252C%2Bjasa-taman-sidoarjo%252C%2Bjasa-taman-malang%252C%2Bjasa-taman-jakarta%252C%2Bjasa-taman-mojokerto5.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwkPS0wp5tYB4RcguS6gt5XCJ-wLrpGu0gSA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Pohon Sederhana merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Rumah Pohon Paling Unik Di Dunia Punya Indonesia Keren Banget Rumah Pohon Pohon Rumah" src="https://i.pinimg.com/originals/20/04/aa/2004aa6df7e4dc1e5ac9485355df82c7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRitTsh7tmOM-EhmUnvr12mJ76VmqdA3dveKTifICqmbH7we0USgavKgIs1759asq6v5t0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Rumah pohon ini dilengkapi dengan jembatan gantung yang menghubungkan tangga dengan teras.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Model Rumah Minimalis Tanpa Atap Modern Dengan Banyak Kaca Arsitektur Arsitektur Rumah Arsitektur Modern" src="https://i.pinimg.com/originals/9d/73/3c/9d733cbca8a9250fcaf52de66129a952.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_fSdzComteU9E5RUaLZKcVPHuXrjyPk0bxA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Contoh Rumah Bambu Sederhana - Cara membuat rumah pohon dari kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Bisnis Maket Rumah Maket Rumah Dari Stik Es Rumah Miniatur Rumah Dekorasi Luar Ruangan" src="https://i.pinimg.com/originals/c4/41/24/c44124ef6b963677f42ee42d731300cf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVcuBIaxc0Bx3xuGxWPvETTlOG0AYTo11KPw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain dapat digunakan itu rumah pohon juga bisa dimanfaatkan menjadi tempat wisata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ep 55 Desain Rumah 7x5 Denah Warung Muka Melebar Rumah Minimalis 7x5 2 Lantai Youtube Rumah Rumah Minimalis Minimalis" src="https://i.pinimg.com/564x/89/02/49/890249d2f645809a0576a5a254ffc537.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMla7uGfziy7hFyU8jyIBZ98mz9l8F6FXlQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebab proyek ini membutuhkan perencanan dan kontruksi yang matang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Kayu 70 M2 7 X 10 Rumah Kayu Di Bandung Di 2021 Rumah Kayu Desain Rumah Pohon Rumah Kebun" src="https://i.pinimg.com/originals/6e/cb/d7/6ecbd7e355c3edc932c7266546ef1d47.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtTfr7PJhsToz6hamxCvoU3pWcQzZHSy1IRrMrxoEj5T9cn-fwG89RB-hOYWslMlmF6ng';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasa dilihat di film-film rumah pohon adalah rumah yang di bangun di atas pohon dan ruangannya sendiri tidak terlalu banyak sebab disesuaikan juga dengan ukuran pohonnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Miniatur Rumah Adat Jawa Dari Kardus Miniatur Rumah Adat Jawa Timur Dari Kardus Rumah Miniatur Rumah Rumah Minimalis" src="https://i.pinimg.com/originals/b6/dd/09/b6dd09e1c7fc3a6b89a05cf331d1902f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3w3C09AJ2KldRAv4rMLq-dqOu0mV1OEP1OpBIesVgqrJzLzmTqPLjrspfQAIBEurusjc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain tidak membutuhkan modal yang besar rumah juga indah dipandang mata dan membuat kamu betah di rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pohon Besar Artificial Tanaman Pohon Taman Dinding" src="https://i.pinimg.com/736x/20/77/51/2077513e242095530c6c29ddde64b220.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmU6p0APlECT5g8fbSsj6JPnqCIoSHWSTMA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah pohon model ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Gambar Mewarnai" src="https://i.pinimg.com/736x/c3/3c/91/c33c913bebe2939f25d95ee957608521.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiCSopCzwfJ6RhgO6iHMMFdCKG6vTVR7z6K5wkYB6nhH4Q8HkzolsfcNkjMPiL-Cq5QU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Desain Rumah Pohon Sederhana merupakan kumpulan desain rumah yang dirancang untuk menjadi ide maupun inspirasi desain rumah untuk menciptakan hunian idaman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="54 Desain Rumah Sederhana Di Kampung Yang Terlihat Cantik Dan Mewah Desain Rumah Kecil Desain Rumah Rumah" src="https://i.pinimg.com/originals/95/cc/30/95cc30d32c97bfaf4f5f830498a2f28d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKx5N2UMKsFtkN7mRYyFlkuH1SB6wANoukA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamu memerlukan 2 pohon yang saling berdekatan dan dengan besar yang sama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Pojok Proposal Maket Rumah Maket Plan Rumah Minimalis Miniatur Rumah Boneka Miniatur Rumah Rumah" src="https://i.pinimg.com/originals/35/46/8b/35468b8a70ccd78bde4b1be4b6390edb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5U8Ey-DthZU4XpQxp65oRR70LQAkm16ALlDo_SAzdXummtaabukTqRA08AUn5-CcZtQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah pohon ini memiliki desain yang cukup sederhana dan tidak ada bedanya daripada rumah pohon yang lain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gambar Rumah Kayu Keren Desain Rumah Kayu Modern Mewah Rumah Kayu Minimalis Modern Rumah Kayu Arsitektur Rumah Pohon" src="https://i.pinimg.com/originals/bf/2f/a5/bf2fa5324446fd346678e60c17bc688c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8GGQTkqJQYH2-RbzG_wTsIZ8V3rdQKWK0gHHFz527p_zRKzwKF00985H7-e-SGQOPxA8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>51 Contoh Desain Rumah Unik Minimalis Sederhana di Indonesia dan Dunia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Batik Modern Nusantara Rumah Minimalis Eksterior Rumah Modern Desain Eksterior" src="https://i.pinimg.com/originals/ca/6f/10/ca6f10c929f6f8001cf97991aa347eff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsmM9DM13kushHsO8rRxykRtrmRkdt_uW1Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Miniatur Rumah Pohon Sederhana Dari Stik Es Cream Rumah Pohon Miniatur Rumah Rumah Pedesaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Kayu Minimalis Klasik Dan Sederhana Membangun Rumah Dapat Dibangun Dengan Bahan Material Apa Saja Salah Satunya Mem Rumah Kayu Rumah Arsitektur" src="https://i.pinimg.com/originals/79/c9/79/79c97935f4859dbcff8671626a2c79c2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjiRrSJWctWfcQEJR1ZJ_nq-SX61lBpc27jGZtDfk5vPU42ztiylmpY1nnBkVZEfLdm0c';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah pohon model ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Rumah Minimalis Sederhana Di Kampung Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/52/53/3a/52533a387b907de5522fa218df3df4e3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDQYweZrVHUmXV-f952tpDZ00Vs_bAzku9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga keseimbangan pohon dan teras terlihat seimbang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Desain Rumah Minimalis Denah Modern 2 Lantai" src="https://i.pinimg.com/originals/4c/ff/83/4cff837cbcea47eff45374cfc0a5df85.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNOxNV0mcdvy1t8vY9K2LzRrxfYvPzSHc7xapM72dPFPFOTbH7MFxTIjrlq0jMxBV8gxI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Apalagi jika rumah pohon memiliki desain yang unik dan kreatif.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1" src="/search?q=rumah+pohon+kecil&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=rumah+pohon+kecil&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Bahkan dapat meningkatkan harga rumah bersangkutan jika hendak dijual.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menggambar Rumah Pohon Anak Anak Bermain Dan Pemandangan Tepian Tel Cara Menggambar Gambar Rumah Pohon" src="https://i.pinimg.com/originals/b8/72/df/b872dfdc1cab8ba52438f640a2e07802.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREw6cL5OW_3zYprLWIOzTdNghQAZC_RIkwnb-TVJ8jHpPlWDkoAHhpqIN_O6wGUz2gREc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Biasa dilihat di film-film rumah pohon adalah rumah yang di bangun di atas pohon dan ruangannya sendiri tidak terlalu banyak sebab disesuaikan juga dengan ukuran pohonnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Maket Rumah Bisnis Maket Rumah" src="https://i.pinimg.com/originals/1a/08/12/1a08122fc2b26b4900309957aa6744c0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLh7-Fa5g9Vo8KPIWlzdtksNHgdu2qdQQ8w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh Rumah Bambu Sederhana - Cara membuat rumah pohon dari kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ada Garasi Teras Dan Taman Sederhana Di Depan Rumah Di Samping Rumah Juga Ditanam Pohon Pohon Sehingga Sirkulasi Rumah Minimalis Desain Rumah Minimalis Rumah" src="https://i.pinimg.com/564x/c1/97/4a/c1974a70c545907a85d3e1cf2a4766e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifWlg4e2nSD-6R9E9jzw2Mm7-OJr7eqwaPQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain dianggap merupakan cerminan karakter pemilik rumah taman yang tertata rapi juga memperindah rumah secara keseluruhan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Di Kampung Desain Produk Desain Rumah Desain" src="https://i.pinimg.com/736x/e2/d9/09/e2d9092a87880f5928a8e70b97b1e0a6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXnY8ijHBzgDHFyH3nkqUdTtaQ1cSnoxVCA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pohon ideal untuk rumah pohon meliputi ek maple cemara dan apel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Pohon Untuk Anak Tersayang Rumah Pohon Rumah Kebun Rumah" src="https://i.pinimg.com/originals/22/25/17/22251719f2222edd171d575a15a2ec31.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV41AF4BHTscVNWpjV65hFJtHLJIX99Zmr6vvY-rE-G6aZo6lXlN2SMYKxFP0JPHGd_Qc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumah Pohon Taman Safari Indonesia Cisarua Jawa Barat Berlatar hutan tropis di perbukitan kaki Gunung Gede Pangrango rumah pohon ini merupakan inovasi unik terbaru yang dilakukan oleh pengelola Taman Safari Indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Renovasi Bangunan Sidoarjo Renovasi Bangunan Rumah Di Sidoarjo Renovasi Bangunan Kantor Di Sidoarjo Renovasi Bangunan Tok Renovasi Rumah Surabaya Renovasi" src="https://i.pinimg.com/originals/82/26/56/822656145cd33dcca691d2174438d182.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQowyebFgfhLRpoW4WJ3mVPOSqUb03Kk--o3Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bahkan dapat meningkatkan harga rumah bersangkutan jika hendak dijual.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bali Travel Guide Kekinian On Instagram Berbuah Dari Racikan Ide Pemilik Green School Sekaligus Jewellery Maker Terba Bali Travel Bali Travel Guide Instagram" src="https://i.pinimg.com/originals/4a/cf/97/4acf970d0ca632a58b48b876a0297d42.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqF5EhDnPglOsXQz7L6vpr6q7L-bnNnIav9w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>51 Contoh Desain Rumah Unik Minimalis Sederhana di Indonesia dan Dunia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Catatan Ardi S Family Awal Mula Adanya Babu Dan Kacung Di Indonesia Arsitektur Kolonial Arsitektur Klasik Arsitektur" src="https://i.pinimg.com/originals/d8/a2/57/d8a2572afe44319e545b44fbc2d01abd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFVOlVCrPpeLlXzGGzV8y7QUcWvKbj5N5Kw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain dianggap merupakan cerminan karakter pemilik rumah taman yang tertata rapi juga memperindah rumah secara keseluruhan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Youtube Pola Desain Rumah Rumah Minimalis Dan Rumah 1 Gambar Denah Desain Rumah Minimalis Mewah Pinggir S Rumah Minimalis Desain Rumah Desain Rumah Minimalis" src="https://i.pinimg.com/736x/c2/25/1d/c2251d7d119e6d2e39d88a9ed98f9d2b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTyHRZYpgv5Ll2U_MAD4IeIKhYUyKDZ-0CxQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Model yang sederhana dan menarik ini di bangun di bagian batang pohon bawah sehingga tidak terlalu tinggi Kamu akan dengan mudah untuk naik kesana.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Rumah Unik Maket Rumah Kebaya Dari Kardus Maket Rumah Betawi Dari Kardus Rumah Kardus Rumah Miniatur Rumah" src="https://i.pinimg.com/originals/40/81/08/4081081bf48e4c11441e280805f64647.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0pyHDqY51gYEbkkTrmdWdH-LnHq4EDVxz77mzBNyB05WcUuUtmJc7seY7M6bAyBzjk6s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Apalagi dengan penambahan ayunan di bagian bawah yang bisa kamu manfaatkan untuk bersantai menikmati.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maket Pagar Rumah Minimalis Maket Pionering Rumah Maket Rumah Ramah Lingkungan Miniatur Rumah Rumah Flanel Rumah" src="https://i.pinimg.com/originals/ee/00/c6/ee00c6ccf961c69e2486d030372562b5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS295PbPBeLKp5mN3_PQqI1oTkMRphxx-ssFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Selain dapat digunakan itu rumah pohon juga bisa dimanfaatkan menjadi tempat wisata.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Batu Sikat Motif Bunga Motif Batu Sikat Terbaru Motif Batu Sikat Sederhana Motif Batu Sikat Minimalis Terbaru Harga Batu Sikat Batu Sika Bali Dinding Batu Batu" src="https://i.pinimg.com/736x/01/35/cf/0135cf4ad459736cd54ef75cfa6c10e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQyq0LDJKXuI-I-U96r5MWhl89DYzQlJZJQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Anda sebaiknya meminta seorang ahli pohon untuk memeriksa pohon Anda sebelum mulai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Rumah Kecil" src="https://i.pinimg.com/564x/7b/ce/3e/7bce3ee8dc46321411ee2c810074727f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZpRNyIXwdpPB9aCJPpQgaFW64kRs66naU4g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Membuat Rumah Pohon Sederhana dari Kayu Bambu Rumah pohon bisa menjadi wahana bermain anak tempat persembunyian dan aksen eksterior rumah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqh Tjdj1tudqvjlsb9ocuy1jebrnm9h8jh Qzgdjpoetuctanb Usqp Cau" src="/search?q=menggambar+rumah&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=menggambar+rumah&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p>Siapa sangka rumah pohon dari desain rumah bambu sederhana excellent property.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Call Wa 0813 5828 2515 Rumah Minimalis Sederhana 1 Lantai Probolinggo Rumah Desain Rumah Arsitek" src="https://i.pinimg.com/originals/d7/dd/d2/d7ddd2aba950bae57cbe559a586ffd35.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-xMdsi6kuV61__PIF63cQnsiCa-Wmx_2egg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sehingga keseimbangan pohon dan teras terlihat seimbang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Sederhana Desa Desain Produk Desain Desain Rumah" src="https://i.pinimg.com/originals/81/41/b0/8141b016b6802a514f16e086dc31b732.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxPamYOV2hLO_IefVlNjHY4Uj9zPRCNabS1dpAb6uGzgTharFTnJifSAxnatqUZ1GGsAw';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Biasa dilihat di film-film rumah pohon adalah rumah yang di bangun di atas pohon dan ruangannya sendiri tidak terlalu banyak sebab disesuaikan juga dengan ukuran pohonnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Galeri Model Rumah Minimalis 2 Lantai Tampak Depan Pesona Rumah Rumah Minimalis Desain Rumah Minimalis Arsitektur" src="https://i.pinimg.com/originals/05/0f/bf/050fbf74b9da9e93b53a46f379b31255.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKCOVdFK2_iTpEsIG5wNDEc9KyjAnvxS__A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh desain rumah bambu modern minimalis reviewed by unknown on wednesday april 3 2013 rating.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Tiket Masuk Dan Rute Menuju Kampung Enam Wajak Malang Spot Rumah Pohon Terbaru Http Www Dakatour Com Harga Tiket Masuk Dan R Rumah Pohon Rumah Pohon" src="https://i.pinimg.com/originals/73/cd/be/73cdbe3cfc1fd27bedef05d6e59b49a5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc5b0d2kRbfp_uV27QzoQWuuoxZFIm0kgW0JMatlb6bTfnUztw2SahJWABhiDbWHhh11Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>200 Contoh Gambar Model Desain Rumah Minimalis Idaman Sederhana Modern Dan Mewah Renovasi Rumah Net Rumah Minimalis Desain Rumah Desain.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rumah-2-lantai-modern-minimalis.html"><i>&larr; rumah 2 lantai modern minimalis</i></a>
+                                                                    
+                                        <a href="/ruang-tamu-sederhana-cantik.html"><i>ruang tamu sederhana cantik &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

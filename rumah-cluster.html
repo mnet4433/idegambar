@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Cluster
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Kang Hamdan"
+  },
+  "headline": "Rumah Cluster",
+  "datePublished": "2021-08-09",
+  "image": "https://i.pinimg.com/474x/f8/41/9e/f8419ec8bc9df18fdf8118914ca90ec6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gambar Desain Rumah",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumah+cluster",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16164237.highperformancecpmnetwork.com/46/fc/8f/46fc8f0cb3be5e854f0e7f595f13a603.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumah Cluster
+            </a>
+        </h1>
+        <p>
+                            Gambar Desain Rumah. Cari Gambar Desain Rumah? Cari Aja disini.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4526973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4526973&amp;101" alt="free counter with statistics" border="0" /></a></noscript>
+<!-- Histats.com  END  -->        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumah Cluster</strong>. </p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/5e/5f/50/5e5f508c5f97b8d8c839e55489a83e68.jpg" alt="Rumah Minimalis Modern Cluster Maninjau Asya Jakarta Cluster Terbaru Harga Mulai 3 15 M Perumahan Modern Di Tepi Danau Rumah Minimalis Rumah Rumah Modern" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55Pi2oZXpStFd62UbjbRSgPRIodEDtKMRIHKxZvsXaWhnCG4inHAcs1Ge_EhhOtMYNCc';">
+        <figcaption>Rumah Minimalis Modern Cluster Maninjau Asya Jakarta Cluster Terbaru Harga Mulai 3 15 M Perumahan Modern Di Tepi Danau Rumah Minimalis Rumah Rumah Modern from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        
+    </p>
+    <h3></h3>
+    <p> </p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Bandung Barat Padalarang Jayamekar Cluster Ebony 2 Lantai Harga Murah Terjangkau Cicilan Rumah Ikea Kota Bandung" src="https://i.pinimg.com/originals/af/f1/86/aff1867b35e0aaae253afda4ab0ae9ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zktujiU-Vs2CYDNadyXrMOsupfVpxO6Q4Qq7YNSvpzAD3hL4CiXddgzvxKnYGSQoryE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inspirasi Desain Rumah Anda Desain Rumah Cluster Rumah Denah Rumah Rumah Minimalis" src="https://i.pinimg.com/736x/6a/0b/9a/6a0b9abae5daf708bff067c0dc978b07.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3pQUdYwo_pYZ0QyteE895FjC1whyI4aKJd4-xyRLN4d0E4zgBzIpe2B2YRzExoqVFOZU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Grand Mahkota Cluster Terbaik Outdoor Decor Home Outdoor" src="https://i.pinimg.com/474x/e4/ff/a1/e4ffa1990b537fb701689d18e45c3017.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5YEJYNivTyCmCU2VQENJdZ_rDCImpCttBDxpsCRIbUH2ujnpltIL9oVpU4iLOXDGx7fY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The River Parung Panjang Cluster Perumahan Terbaru Bogor Rp 247 Jutaan Rumah Apartemen Ruko" src="https://i.pinimg.com/originals/f1/75/2b/f1752bb778ce66db566fe8ad23cb2af5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WPUrm9qRI-wGN-oQUUKNp47ICBbEj9xd4w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pre Launching Penjualan Perdana Perumahan Cluster Terbaru Alam Sutera Dengan Nama Cluster Leora Konsep Terbaru Rumah Cluster L Home Fashion Denah Rumah Rumah" src="https://i.pinimg.com/564x/5b/4b/dd/5b4bddd9e7bab5065d1a57e04d49b488.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzyaK4g96osR_JVDVUBEERnVr7Yv49jC_zUw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Tipe 31 Di Cluster Everton Royal Sentraland Btp Makassar Makassar Rumah Bangunan" src="https://i.pinimg.com/originals/d9/73/43/d973438b570c4989cc7220d3ac2263a5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CXOtaEDE8rLIsNS_4TCpfWdAijjuZq9ykQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Wa Hp 081357153390 Outdoor Decor All Over The World Open" src="https://i.pinimg.com/originals/1b/bf/a7/1bbfa7bbde3dee287b96ef47becc14c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7SpGNyvAZEJ4pyq51N6VLd2DkzPQSJwOdXV5iyWtYvudnHcEBLgK2FjYqYfxeUVe7T2U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Minimalis Wa Hp 081357153390 Outdoor Decor Installation All Over The World" src="https://i.pinimg.com/originals/82/36/5a/82365a00375fd8ddea8da054ebc149ac.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPa2kJZkZc7Z09u_-I-uqexgSi-lsWvew1Wg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Desain Rumah Cluster Tanpa Pagar Yang Sedang Nge Hits Arsitag Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/62/8b/2b/628b2b624692343e9413089fd2222e7e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXCDJg7FEmM5y_BwUUDIprou6q0ce7XTAFIgxkmla-3BVMRTrw2Y2BYIhSJ5RFEUZZWfo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Cluster Svaha Forresta Design Menarik Dengan Konsep Hutan Kota Bata Merah Rumah Kota Hutan" src="https://i.pinimg.com/736x/4f/a4/cf/4fa4cf716fab87b3d726bb541d333787.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFCEjEBPIe1oqknQDD1-L16ium06uC9nmoFw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Minimalis Moderen Desain Rumah Minimalis Desain Rumah Eksterior Eksterior Rumah Modern" src="https://i.pinimg.com/564x/23/13/06/2313063bc91932158d0d1ac616f256b5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9HFivwWdfNlb9OdE5A13HtqoyuGK8LvSsQauE4nuPKKt4ZEISKk64kz4Tm7rTjCPe4xY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sering Salah Persepsi Ini Perbedaan Rumah Cluster Dan Town House Arsitektur Modern Arsitektur Arsitektur Perumahan" src="https://i.pinimg.com/originals/fa/a7/46/faa74695702397e4cb5578f49457807e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoHG14GzYEipKlN31196Z4sHBk4EXvVFxJR_P8k2qqMiVPgbnkiMjmqwhnWDYMcAeg3o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Murah Minimalis Sistem Cluster Di Kreo Larangan Minimalis Rumah Rumah Nyaman" src="https://i.pinimg.com/originals/87/44/e9/8744e95ecc2ee4767d2d7c5c4597cb07.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSoi4CUxBsxGmpFoCoHQAXcAf_VKKCPoOhQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Alexandrite At Diamond Hill Cluster Of Citrasun Garden Semarang Desain Rumah Semarang Rumah" src="https://i.pinimg.com/originals/72/66/9a/72669af42f98731d4a084f1194a3eb4c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxOYLe8mvrzy6rs3mqBKh8Ft4iK0GgnvbAoA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Cluster Cordella Townhouse Pondok Benda Pamulang Tangerang Selatan Rumah Apartemen Pondok" src="https://i.pinimg.com/originals/89/ce/e8/89cee8d37b658fd199767bd13f1459a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWv5jTEDSS05l26B4OjLw245rM4lHtHj7JQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dijual Rumah Cluster Modern Di Puri Nirwani Estate Jedong Malang House Styles Outdoor Decor House" src="https://i.pinimg.com/originals/44/e6/1c/44e61c46e7960291f9559dfbb01e4b0b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgULgdZv0P73WXuJsxRq_6_6mlDIu1kYi-8Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Cluster Kireina Park Bsd City" src="https://i.pinimg.com/originals/07/ea/de/07eadefecb114cdc32be3a12433dad57.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4PECGTf88obNO3udHqtxEhQmViHyv76qH7w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3" src="/search?q=pelan+rumah+cluster&amp;tbm=isch" width="100%" onerror="this.onerror=null;this.src='/search?q=pelan+rumah+cluster&amp;tbm=isch';" />
+        <small>Source: encrypted-tbn0.gstatic.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Cluster Rumah Indah Rumah Minimalis Membangun Rumah Rumah" src="https://i.pinimg.com/originals/0f/b4/ff/0fb4ff0965203ac40712077fc2b57585.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIo5Bh5gq1fbRGWBldI-duZh99C-BWuSMGID0knW8D0fam-w3Ur-GxfKHwc4QRmYNwyGk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Baru Bandung Barat Padalarang Jayamekar Ikea Lotte Grosir Harga Murah Cicilan Ringan Rumah Kota Bandung Ikea" src="https://i.pinimg.com/originals/74/33/47/7433476b697fe0aa7dfd8769d9d578df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1Tf44T-G1_4H7VUrl8qVwLAnO3kbtYSk9A';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Bagus Di Perumahan Cluster Japunan Asri Di Magelang Rumah Penyewaan Tempat Ibadah" src="https://i.pinimg.com/736x/3c/b9/06/3cb9065a1a6aa9819d776ce8e01207d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-zxVCISrNVG7D5Bg1V9MEfWo7tkH_kujEA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tipe Alona A Lb 170 Lt 239 Rumah 2 Lantai Bergaya Modern Tropis Ini Berada Di Cluster Flinder Park Citragran Ci Arsitektur Rumah Rumah Modern Desain Rumah" src="https://i.pinimg.com/originals/4f/98/d8/4f98d869391928c2c70988c52fd321b5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2XQ9qidRRiswuJXvowXsgIrFPycOwaLveww';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Desain Rumah Cluster Minimalis Terbaik 2016 Lihat Rumah Minimalis Rumah" src="https://i.pinimg.com/474x/f8/41/9e/f8419ec8bc9df18fdf8118914ca90ec6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5f3HhnxyNTi-4neqrIO8pPe-82x6K7YHLAsOOPPNXk9oY0JdtCYgckZyGV4k_Y8vzIUU';" />
+        <small>Source: in.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Review Cluster Perumahan Green Aurellia Part 1 Rumah Ultra Minimalis Harga Diskon Abis Rumah Minimalis Paris" src="https://i.pinimg.com/originals/d3/1b/52/d31b52280e9089629017d4146e2e93d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkZcZ5pWRsWLbGllf8wqGcA9BNen_ICLtZzVO29ds5qyPDaEdPtzQFduezPqaCP0ne9U';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bali Resort Bogor Rumah Cluster 300 Jutaan Rumah Arsitektur Bali Resort" src="https://i.pinimg.com/474x/6a/44/83/6a4483c7a2e6e8941f3c508596db9062.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWdhBanHOQcM8LGBSh9PsJq5kafcu_YwZZVmsY0X-ZwFlWzQzvKuAqVlnsj6Mcwokv_NE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="5 Desain Rumah Terbaru Untuk Hunian Berkelas Rumah Denah Rumah Rumah Indah" src="https://i.pinimg.com/originals/6f/7b/50/6f7b50600768d609c33aed3b3e8f8661.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD05ECUP3B6hby_og45_K1Ei5LHnrtCk_w_hbquUKZpFYMmPr3JsTn9zGudjGm-upnJ1w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Baru Dijual Murah Dalam Perumahan Cluster Di Nogotirto Dalam Ringroad Yogyakarta Rumah Rumah Baru Yogyakarta" src="https://i.pinimg.com/originals/49/e4/b0/49e4b04a1cb420033173a810deba78dd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl1OXVVM1wz9pgByHKnNkLRgmBjdG5ohCBP56aXS3F8B35wgJkLyWcDpdJvRRHyYYQOn4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Minimalis Modern Cluster Maninjau Asya Jakarta Cluster Terbaru Harga Mulai 3 15 M Perumahan Modern Di Tepi Danau Rumah Minimalis Rumah Rumah Modern" src="https://i.pinimg.com/originals/5e/5f/50/5e5f508c5f97b8d8c839e55489a83e68.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55Pi2oZXpStFd62UbjbRSgPRIodEDtKMRIHKxZvsXaWhnCG4inHAcs1Ge_EhhOtMYNCc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Lakewood Navapark Bsd Tipe 12 Navaparkbsd Rumah Kemewahan Desain" src="https://i.pinimg.com/originals/f0/d1/3d/f0d13de5b6968f445a97a1c6a6de405d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheJCdgsnXfO9V85SuxFf7Por5DFA8Gpg3wg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Jatikramat Bekasi Rumah Minimalis Rumah Rumah Modern" src="https://i.pinimg.com/originals/f6/a1/4b/f6a14b0747cbb6f48ef7b37a254a3a9f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORzVoe5K0fK0MvjC-qT5GKfD4_PhX2TRdS8DQdHq7TqRB9hc4AK61thhPdI2x723snXk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Cluster Kireina Park Bsd City" src="https://i.pinimg.com/originals/95/ea/90/95ea90affbf572daaadf8cc42379aaaf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREk4UIUoOVJ0TvQCWSPyYO2QEOfh0YXtokYQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Type 45 90 Di Cluster Padma Panji Buwono Residence Residences Outdoor Decor Home" src="https://i.pinimg.com/originals/9a/be/d5/9abed53281bf5a73e9047d22f98cdf31.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4C7qVsXFeLRKZulbzQQ5ZXwA7RunFTnia9g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Springville Residence Bekasi Type Marigold Residential Residence Houses Perumahan Cluster Properti Realestate Arsitektur Desain Rumah Rumah" src="https://i.pinimg.com/originals/4d/47/ee/4d47ee1664b323312030c14d1dbaccf5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHV2oZZKzXgrM7leHt9ZsIsq9_T6NHqLa3-w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Dp 0 Di Kota Bekasi Kpr Kota" src="https://i.pinimg.com/736x/44/39/63/4439632a7ef094e6694c9f752358eda1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTICPOt2ldHud0fHlbtjdblMxoA4LvfxV_LQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Rumah Cluster Type 36 Rumah Minimalis Dekorasi Minimalis Desain Rumah Minimalis" src="https://i.pinimg.com/originals/d9/2b/cc/d92bccd777b423b3784d6a5b99daa4b2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaJDGJkYbJOwKDZa_1xh8jn-P2TwPvKSvj05oQZtj6SkKl05TPzT0MzsB34RZL4jXqxAQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Bandung Selatan Model Superimposed Panyirapan Soreang Cempaka Ciwidey Harga Murah Ringan Rumah Lantai Rumah Impian" src="https://i.pinimg.com/originals/38/1a/8e/381a8e947d4f2d378b24c7d86f67e84a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-0teMQioPCFv1ivhNxzJPoYK1Y3Y4-fu6Rg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Neo Benevento Villaggio Citraraya Desain Rumah Eksterior Desain Depan Rumah Rumah Arsitektur" src="https://i.pinimg.com/originals/b2/28/02/b22802e4ebd48c19dfc74b01067f0605.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIFYOmyACK_9Zo0jxPS6yXWRSw5NJFjKZ7f9wstqrw5ulSVPPxwCThB_laCYcitcRgMdU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Mewah Minimalis Di Sidoarjo Wa Hp 081357153390 Outdoor Structures Outdoor Decor Pergola" src="https://i.pinimg.com/originals/6a/b5/83/6ab583335255feea20e027c2b5ab1857.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJP_4LBHJ7Inq6fUNP0Qp8z-J8p5dQ9vxt0Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Padasuka Teraace Bandung Rumah Minimalis Rumah Desain Rumah" src="https://i.pinimg.com/originals/c6/bd/b6/c6bdb6a1cf4dd18a7cce46924fa2b148.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqgrIT9Cr4gqMX0LcnD-U5_-awLgetla2Pg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sampai Terima Kunci Rp 7 5 Juta Perumahan Cluster 2 Lantai 3 Kamar Tidur Perumahan Harjamukti Youtube Lantai Tidur Rumah" src="https://i.pinimg.com/564x/fc/48/26/fc4826f44920be7be790dd0fe0faa474.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLXJtiuEfRZXFeokxWNZcv2zFUV8QtkMxcA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Dijual Di Jombang Terlengkap Rumah Com Graha Duta Residence Cluster Terbaik Fasilitas Terlengkap Di Kota Jombang 081282723506 Rumah Kota Ruang Tamu" src="https://i.pinimg.com/736x/99/53/c0/9953c08d70453d374bc2329d1f023314.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQflHusmrEX_Dvs1Rkwljhjkm42gpVKloEQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Baru Cluster Kenanga Lobunta Land Cirebon Arsitektur Rumah Arsitektur Rumah" src="https://i.pinimg.com/originals/47/a1/89/47a189f886ebe92dab379f29bb9a4662.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzXxHyo4eZxoWT08bGbWamLqi77VfrDvA7IvIfIFPxW7dkj22RDMSUmgOXWwAhnmnHUgY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Informasi Desain Rumah Cluster 2 Lantai Prosforjda Denah Rumah Desain Rumah Kontainer Rumah Minimalis" src="https://i.pinimg.com/736x/c6/70/34/c67034ff249b45eac60b986b88b60b04.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ2JlV8cSSwGFPVsltcUec4AEjikY9_SPHaS2My9ecZwEKX7YPIzWWD5U5O3evMRe35_g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Terbaru Grand Harvest Surabaya Barat House Styles House Mansions" src="https://i.pinimg.com/originals/42/16/d3/4216d31edb9bc41a21907b2a44d201a6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaziJyT_nz6byhM1ZYivYZGbGN7_RCdEy7CQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumah Cluster Cantik Lokasi Di Depok Rumah Ini Di Rancang Untuk Keluarga Pilihan Yang Menginginkan Rumah Idaman Yang Sesuai Dengan Budget Rumah Apartemen Kpr" src="https://i.pinimg.com/originals/ec/fb/36/ecfb3668a469cc33aa80a0ceeb47cbf7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzc80G-kVyNUlmswMkz1BfAhJF3OFeXJLaw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="0878 8293 1155 Tlp Wa Cluster Murah Cluster Bekasi Cluster Bekasi Barat Rumah Minimalis Rumah Rumah Mewah" src="https://i.pinimg.com/originals/16/b1/56/16b15649fccf14202fa13a225cf54a6c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWfb_EwKO4FxeC7ICNJl-3QnMzg_DaBhkvg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Murah Bekasi Kota Perumahan Murah Di Bekasi Perumahan Murah Bekasi Bekasi Jawa Barat Info Jelas Hubungi Bp Made Rumah Minimalis Rumah Minimalis" src="https://i.pinimg.com/originals/df/84/19/df8419d0bc56ee87fc56229cd9898ff5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCLxmLpSVuPmXYrYCQEuHVm3eeHj9GzTWpRA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Perumahan Cluster Gland Ciganitri Terusan Buahbatu Desain Rumah Bungalow Desain Rumah Eksterior Desain Fasad" src="https://i.pinimg.com/originals/97/14/ea/9714ea54de83840a583272897466d014.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvTl9PBl0gTBDpY9O76dhE9LMTtw8Sl19TTmu_LUomTDHBqxEDMVWg1C9uE0JpNq5rTs0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free 10 Bulan Angsuran Rumah Dp 10juta Type 36 72 Cluster Taman Cemara Asri Karawang Rumah Tempat Ibadah" src="https://i.pinimg.com/736x/49/6c/b4/496cb48bf81004720c66bfbc2b497e0c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sponcPH9JiPT8rp7LPvc_f2uQhmviWlFgg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p></p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Rumah Cluster 2 Lantai Harga 1 Lantai Home Outdoor Decor Garage Doors" src="https://i.pinimg.com/474x/ae/62/73/ae6273fdb8e535041771fffea226c031.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDc9XUHb3FSLOQZmyhus2eyeoZW3RvvkFT4A';" />
+        <small>Source: www.pinterest.com</small>
+                    <p></p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/ruang-tamu-minimalis-type-21.html"><i>&larr; ruang tamu minimalis type 21</i></a>
+                                                                    
+                                        <a href="/ruang-tamu-idaman.html"><i>ruang tamu idaman &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//pl16217656.highperformancecpmnetwork.com/67/ee/79/67ee79b0d4bcd736fa718802dc4878c9.js'></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
